@@ -305,7 +305,7 @@ function Drawer({
     onToast("Cảm ơn bạn! Phản hồi đã được ghi nhận.");
   };
   const copy = async () => {
-    await navigator.clipboard?.writeText(resource.sourceUrl);
+    await navigator.clipboard?.writeText(resource.source.messageUrl || resource.sourceUrl);
     onToast("Đã sao chép link tài liệu.");
   };
   return (
@@ -340,7 +340,7 @@ function Drawer({
           <p className="url">{resource.sourceUrl.replace("https://", "")}</p>
         </section>
         <div className="drawer-actions">
-          <button className="primary" onClick={() => onToast("Trong phiên bản thật, hệ thống sẽ mở bài đăng hoặc tài liệu gốc.")}>Mở tài liệu gốc ↗</button>
+          <button className="primary" onClick={() => window.open(resource.source.messageUrl || resource.sourceUrl, "_blank")}>Mở tài liệu gốc ↗</button>
           <button className="secondary" onClick={copy}>Sao chép link</button>
         </div>
         <section className="feedback">
@@ -369,9 +369,9 @@ function Home({ search }: { search: (query: string) => void }) {
           {suggestions.map((query) => <button key={query} onClick={() => search(query)}>{query} <span>↗</span></button>)}
         </div>
         <div className="stats">
-          <div><b>{resources.length}</b><span>Tài liệu mock</span></div>
-          <div><b>5</b><span>Kênh Discord</span></div>
-          <div><b>6</b><span>Loại nội dung</span></div>
+          <div><b>{resources.length}</b><span>Tài liệu Discord</span></div>
+          <div><b>{new Set(resources.map(r => r.sourceChannel)).size}</b><span>Kênh Discord</span></div>
+          <div><b>{new Set(resources.map(r => r.type)).size}</b><span>Loại nội dung</span></div>
           <div><b>Top 5</b><span>Kết quả có nguồn</span></div>
         </div>
       </section>
@@ -529,7 +529,7 @@ export default function Page() {
                     <small>
                       {route === "search"
                         ? `${response?.retrievalMode === "hybrid" ? "Hybrid semantic" : "Tìm kiếm từ khóa"} • tối đa 5 kết quả`
-                        : "Dữ liệu demo nội bộ"}
+                        : "Dữ liệu từ Discord"}
                     </small>
                   </div>
                   {shown.length ? (
@@ -539,7 +539,7 @@ export default function Page() {
                           key={resource.id}
                           resource={resource}
                           onDetail={() => setSelected(resource)}
-                          onSource={() => setToast("Trong phiên bản thật, hệ thống sẽ mở bài đăng hoặc tài liệu gốc.")}
+                          onSource={() => window.open(resource.source.messageUrl || resource.sourceUrl, "_blank")}
                         />
                       ))}
                     </div>
@@ -555,8 +555,9 @@ export default function Page() {
       {toast && <div className="toast" role="status">✓ {toast}</div>}
       <footer>
         <span>Discord Knowledge Hub</span>
-        <small>AI chỉ xếp hạng • Dữ liệu mô phỏng • Nguồn luôn hiển thị</small>
+        <small>AI chỉ xếp hạng • Dữ liệu Discord • Nguồn luôn hiển thị</small>
       </footer>
     </>
   );
 }
+
