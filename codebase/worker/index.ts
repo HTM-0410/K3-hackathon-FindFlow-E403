@@ -12,6 +12,8 @@ interface Env {
       };
     };
   };
+  /** Optional shared secret để bot xác thực khi POST vào /api/realtime/ingest */
+  REALTIME_INGEST_TOKEN?: string;
 }
 
 interface ExecutionContext {

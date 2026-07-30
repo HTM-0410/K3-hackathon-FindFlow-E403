@@ -1,7 +1,7 @@
 // Script để chuyển classified_all_output.json → classified-resources.generated.ts
 const { readFile, writeFile } = await import("node:fs/promises");
 
-const INPUT = "C:/Users/Admin/Downloads/classified_all_output.json";
+const INPUT = "C:/Users/Admin/Downloads/classified_all_output (1).json";
 const OUTPUT = "app/data/classified-resources.generated.ts";
 
 const raw = JSON.parse(await readFile(INPUT, "utf8"));
@@ -41,7 +41,7 @@ function deriveChannelId(rec) {
 const resources = items
   .filter((rec) => rec && rec.id)
   .map((rec) => {
-    const type = normalizeType(rec.resource_type || rec.type);
+    const type = normalizeType(rec.resource_type || rec.ResourceType || rec.type);
     const tags = safeArray(rec.tags);
     const keywords = safeArray(rec.keywords);
     const sharedAt = rec.created_at || "2024-01-01T00:00:00Z";

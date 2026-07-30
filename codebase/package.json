@@ -14,7 +14,8 @@
     "embeddings:generate": "node --experimental-strip-types scripts/generate-embeddings.ts",
     "eval:golden": "node scripts/run-golden-set.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "bot": "node --experimental-strip-types --no-warnings scripts/discord-bot.ts"
   },
   "dependencies": {
     "discord.js": "^14.27.0",

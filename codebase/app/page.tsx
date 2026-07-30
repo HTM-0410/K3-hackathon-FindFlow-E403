@@ -36,10 +36,10 @@ const typeIcons: Record<ResourceType, string> = {
   guide: "◇",
 };
 const suggestions = [
-  "Slide hướng dẫn làm Hackathon",
-  "Code mẫu gọi OpenAI API",
-  "Quy định tính điểm XP",
-  "Link workshop Prompt Engineering",
+  "Hướng dẫn tải slide bài giảng trên Vlearn",
+  "Codelab Day 4 Prompt Engineering Tool Calling",
+  "Repo K3-AI-Product-Hackathon",
+  "Cách phòng chống Prompt Injection trong AI Agent",
 ];
 const defaultFilters: Filters = {
   type: "all",
@@ -70,6 +70,9 @@ function AppHeader({
         </button>
         <button className={route === "resources" ? "active" : ""} onClick={() => navigate("/resources")}>
           Kho tài liệu
+        </button>
+        <button onClick={() => window.location.assign("/realtime")}>
+          ⚡ Realtime
         </button>
       </nav>
       <span className="cp-badge">
@@ -155,9 +158,40 @@ function FilterPanel({
         Kênh Discord nguồn
         <select value={filters.channel} onChange={(event) => update("channel", event.target.value)}>
           <option value="all">Tất cả các kênh</option>
-          {[...new Set(resources.map((resource) => resource.sourceChannel))].map((value) => (
-            <option key={value}>{value}</option>
-          ))}
+          {(() => {
+            const split = (raw: string) => {
+              const parts = raw.split(" - ");
+              return parts.length >= 2
+                ? { category: parts[0].trim(), channel: parts.slice(1).join(" - ").trim() }
+                : { category: raw.trim(), channel: raw.trim() };
+            };
+            const groups = new Map<string, Set<string>>();
+            resources.forEach((resource) => {
+              const { category, channel } = split(resource.sourceChannel);
+              if (!groups.has(category)) groups.set(category, new Set());
+              groups.get(category)!.add(channel);
+            });
+            const collator = new Intl.Collator("vi", { sensitivity: "base", numeric: true });
+            return [...groups.entries()]
+              .sort(([a], [b]) => collator.compare(a, b))
+              .map(([category, channels]) => {
+                const channelList = [...channels].sort(collator.compare);
+                const single = channelList.length === 1 && channelList[0] === category;
+                return (
+                  <optgroup key={category} label={category}>
+                    {channelList.map((channel) => {
+                      const value = single ? category : `${category} - ${channel}`;
+                      const label = single ? channel : channel;
+                      return (
+                        <option key={value} value={value}>
+                          {label}
+                        </option>
+                      );
+                    })}
+                  </optgroup>
+                );
+              });
+          })()}
         </select>
       </label>
       <label>

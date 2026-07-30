@@ -10,5 +10,6 @@ declare module "cloudflare:workers" {
     GEMINI_API_KEY?: string;
     GEMINI_MODEL?: string;
     GEMINI_EMBEDDING_MODEL?: string;
+    REALTIME_INGEST_TOKEN?: string;
   };
 }
