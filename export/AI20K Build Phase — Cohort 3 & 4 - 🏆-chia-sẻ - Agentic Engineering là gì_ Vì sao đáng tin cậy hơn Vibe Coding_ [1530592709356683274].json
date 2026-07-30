@@ -1,0 +1,330 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530592709356683274",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Agentic Engineering là gì? Vì sao đáng tin cậy hơn Vibe Coding?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:16:05.5390273+07:00",
+  "messages": [
+    {
+      "id": "1530592709356683274",
+      "type": "Default",
+      "timestamp": "2026-07-25T22:08:58.948+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Gần đây mình thấy hai khái niệm được nhắc đến khá nhiều là **Vibe Coding** và **Agentic Engineering**. Dù đều tận dụng AI để hỗ trợ phát triển phần mềm, nhưng cách tiếp cận lại rất khác nhau.\n\n**Vibe Coding** là phong cách lập trình dựa nhiều vào AI để sinh code nhanh. Người phát triển mô tả yêu cầu, AI tạo mã, sau đó chỉnh sửa đến khi chạy được. Cách này rất phù hợp để làm prototype, học công nghệ mới hoặc kiểm chứng ý tưởng trong thời gian ngắn. Tuy nhiên, khi dự án lớn dần, việc thiếu quy trình kiểm soát có thể dẫn đến code khó bảo trì, khó kiểm thử và khó đảm bảo chất lượng.\n\nTrong khi đó, **Agentic Engineering** xem AI như một **thành viên trong quy trình phát triển**, không chỉ là công cụ sinh code. AI được giao vai trò cụ thể như phân tích yêu cầu, lập kế hoạch, viết mã, tạo test, review code, kiểm tra chất lượng và lặp lại khi phát hiện lỗi. Mỗi bước đều có mục tiêu, tiêu chí đánh giá và cơ chế xác minh kết quả.\n\nTheo mình, điểm khiến Agentic Engineering đáng tin cậy hơn không phải vì AI thông minh hơn, mà vì **quy trình đáng tin cậy hơn**. Thay vì chỉ hỏi *\"AI viết được code chưa?\"*, cách tiếp cận này luôn hỏi thêm *\"Code đã được kiểm thử chưa? Có đạt yêu cầu không? Có bằng chứng để xác nhận không?\"*.\n\nCó thể tóm tắt sự khác biệt như sau:\n\n* **Vibe Coding:** Nhanh, linh hoạt, phù hợp khám phá ý tưởng và làm sản phẩm mẫu.\n* **Agentic Engineering:** Có quy trình, có kiểm chứng, phù hợp xây dựng sản phẩm thực tế và phát triển lâu dài.\n\nMình nghĩ đây cũng là xu hướng các đội ngũ AI Engineering đang hướng tới: không chỉ dùng AI để **viết nhanh hơn**, mà còn dùng AI để **xây dựng quy trình phát triển phần mềm đáng tin cậy hơn**.",
+      "author": {
+        "id": "623416152973901834",
+        "name": "hoainem1401",
+        "discriminator": "0000",
+        "nickname": "G04-T138 - Hoài Nam",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "623416152973901834",
+              "name": "hoainem1401",
+              "discriminator": "0000",
+              "nickname": "G04-T138 - Hoài Nam",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530592810581889154",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-25T22:09:23.082+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: Agentic Engineering là gì? Vì sao đáng tin cậy hơn Vibe Coding?",
+      "author": {
+        "id": "623416152973901834",
+        "name": "hoainem1401",
+        "discriminator": "0000",
+        "nickname": "G04-T138 - Hoài Nam",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530596241510109294",
+      "type": "Reply",
+      "timestamp": "2026-07-25T22:23:01.079+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Anh có thể chia sẻ thêm một số phương pháp và công cụ làm Agentic Engineering hiệu quả được không ạ?",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "623416152973901834",
+              "name": "hoainem1401",
+              "discriminator": "0000",
+              "nickname": "G04-T138 - Hoài Nam",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "623416152973901834",
+          "name": "hoainem1401",
+          "discriminator": "0000",
+          "nickname": "G04-T138 - Hoài Nam",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530592709356683274",
+        "channelId": "1530592709356683274",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530597987997454409",
+      "type": "Reply",
+      "timestamp": "2026-07-25T22:29:57.474+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hi b, đây là nhưng chia sẻ theo kinh nghiệm thực tế của mình, bạn có thể thao khảo nhé : \nthứ nhất : nên multi-agent để mỗi AI có thể làm 1 công việc cụ thể , kiểu nó giảm lỗi do AI phải làm nhiều việc mà k biết cụ thể việc gì ấy\n2 : giống như vibe coding =)) cũng nên prompt chuẩn để quản lí context tránh nó có mấy lỗi như kiểu bịa câu trả lời ấy\n3: cái này có vẻ quan trọng nhất , hôm cx có thầy nói tới ấy : human - in - loop : ncl quyết định cuối cũng vẫn cần do con ng phê duỵet\n=)) chốt lại thì nó có thể nghĩ AI trở thành một đồng đội có quy trình làm việc rõ ràng, có khả năng phối hợp với mình =)) tránh để nó thay thế mình",
+      "author": {
+        "id": "623416152973901834",
+        "name": "hoainem1401",
+        "discriminator": "0000",
+        "nickname": "G04-T138 - Hoài Nam",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1238124018834341968",
+          "name": "vuong0232_30712",
+          "discriminator": "0000",
+          "nickname": "G21 - T100 - Bùi Hoàng Vương",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530596241510109294",
+        "channelId": "1530592709356683274",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530600790039986277",
+      "type": "Reply",
+      "timestamp": "2026-07-25T22:41:05.533+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Okie, thanks ông nhiều! Chia sẻ hữu ích lắm ạ!",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "623416152973901834",
+              "name": "hoainem1401",
+              "discriminator": "0000",
+              "nickname": "G04-T138 - Hoài Nam",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "623416152973901834",
+          "name": "hoainem1401",
+          "discriminator": "0000",
+          "nickname": "G04-T138 - Hoài Nam",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530597987997454409",
+        "channelId": "1530592709356683274",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}

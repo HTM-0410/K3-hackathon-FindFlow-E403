@@ -1,0 +1,77 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531269227884052564",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Multi-Agent đang bị thần thánh hoá?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:17:49.3374962+07:00",
+  "messages": [
+    {
+      "id": "1531269227884052564",
+      "type": "Default",
+      "timestamp": "2026-07-27T18:57:13.534+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "***TL;DR: Với nhiều bài toán AI hiện nay, việc bổ sung skills cho một agent thường hiệu quả hơn việc chia thành nhiều agent. Lý do là ít mất context, nhanh hơn, rẻ hơn và dễ bảo trì hơn.***\n\nMột thời gian trước, kiến trúc phổ biến là chia mọi thứ thành nhiều agent:\n\nPlanner → Research → Coding → Review → …\n\nNghe rất hợp lý, nhưng khi đưa vào production lại phát sinh khá nhiều chi phí.\n\nMỗi lần agent chuyển việc cho agent khác đều phải truyền context. Điều đó đồng nghĩa với:\n\n* Tăng latency.\n* Tốn token.\n* Dễ mất thông tin.\n* Khó debug khi kết quả sai.\n\nTrong nhiều trường hợp, chi phí của những lần “handoff” này còn lớn hơn chính tác vụ mà agent thực hiện.\n\nTrong khi đó, Skills tiếp cận theo hướng khác.\n\nThay vì tạo thêm một agent, ta bổ sung cho cùng một agent nhiều kỹ năng chuyên biệt.\n\nVí dụ:\n\n* Skill đọc tài liệu.\n* Skill viết SQL.\n* Skill review code.\n* Skill gọi API.\n\nAgent vẫn giữ nguyên context xuyên suốt, chỉ kích hoạt đúng skill khi cần.\n\nĐiều này mang lại nhiều lợi ích:\n\n* Ít truyền context hơn.\n* Phản hồi nhanh hơn.\n* Dễ tái sử dụng giữa nhiều dự án.\n* Đơn giản hơn trong việc đánh giá và bảo trì.\n\nĐiều đó không có nghĩa Multi-Agent đã lỗi thời.\n\nNếu các tác vụ thực sự độc lập, cần chạy song song, có quyền truy cập khác nhau hoặc cần nhiều chuyên gia phối hợp, Multi-Agent vẫn là lựa chọn phù hợp.\n\nNhưng với phần lớn ứng dụng AI hiện nay, câu hỏi đầu tiên có lẽ không còn là:\n\n*“Mình cần thêm một agent nữa không?”*\n\nMà là:\n\n*“Việc này có thể chỉ là một skill của agent hiện tại không?”*\n\nĐôi khi, một agent giỏi với nhiều skills lại hiệu quả hơn cả một đội agent phải liên tục nói chuyện với nhau.",
+      "author": {
+        "id": "1529844266573238354",
+        "name": "lolavine777",
+        "discriminator": "0000",
+        "nickname": "T082 - Nguyễn Đăng Long - 01934",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "T082 - Nguyễn Đăng Long - 01934",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

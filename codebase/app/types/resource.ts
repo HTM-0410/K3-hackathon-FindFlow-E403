@@ -50,9 +50,17 @@ export interface SearchFilters {
 
 export type SearchStatus =
   | "success"
+  | "needs_clarification"
+  | "rejected"
   | "low_confidence"
   | "no_match"
   | "fallback";
+
+export interface ClarificationOption {
+  label: string;
+  query: string;
+  resourceId?: string;
+}
 
 export interface RankedResult {
   resourceId: string;
@@ -65,6 +73,13 @@ export interface SearchResponse {
   status: SearchStatus;
   interpretedNeed: string;
   clarification?: string;
+  clarificationReason?:
+    | "ambiguous_reference"
+    | "ambiguous_time"
+    | "broad_query"
+    | "multiple_intents";
+  clarificationOptions?: ClarificationOption[];
+  rejectionReason?: "unrelated" | "unsupported_action" | "personal_data";
   results: RankedResult[];
   traceId: string;
   retrievalMode?: "hybrid" | "lexical";

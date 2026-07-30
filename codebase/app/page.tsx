@@ -4,6 +4,7 @@ import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
 import { resourceById, resources } from "./data/resources";
 import { fallbackRank, normalizeText } from "./lib/search";
 import type {
+  ClarificationOption,
   Resource,
   ResourceType,
   SearchResponse,
@@ -184,17 +185,67 @@ function ResourceCard({
 function SearchNotice({
   status,
   clarification,
+  options,
   traceId,
+  onClarify,
 }: {
   status: SearchStatus;
   clarification?: string;
+  options?: ClarificationOption[];
   traceId: string;
+  onClarify: (query: string) => void;
 }) {
+  const [answer, setAnswer] = useState("");
   if (status === "success") return null;
+  if (status === "needs_clarification") {
+    const submit = (event: FormEvent) => {
+      event.preventDefault();
+      if (answer.trim().length >= 2) onClarify(answer.trim());
+    };
+    return (
+      <section className="clarification-card" aria-live="polite">
+        <div className="conversation-line user-line">
+          <span>Bạn</span>
+          <p>Yêu cầu này cần được làm rõ trước khi tìm.</p>
+        </div>
+        <div className="conversation-line assistant-line">
+          <span>Trợ lý tìm kiếm</span>
+          <div>
+            <b>Mình cần bạn xác nhận một chi tiết</b>
+            <p>{clarification}</p>
+            {options?.length ? (
+              <div className="clarification-options">
+                {options.map((option) => (
+                  <button
+                    key={`${option.label}-${option.query}`}
+                    type="button"
+                    onClick={() => onClarify(option.query)}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
+            ) : null}
+            <form className="clarification-reply" onSubmit={submit}>
+              <input
+                aria-label="Trả lời câu hỏi làm rõ"
+                value={answer}
+                onChange={(event) => setAnswer(event.target.value)}
+                placeholder="Hoặc nhập chủ đề/tài liệu cụ thể…"
+              />
+              <button disabled={answer.trim().length < 2}>Tiếp tục tìm</button>
+            </form>
+          </div>
+        </div>
+        <small>Chưa có tài liệu nào được chọn • Trace: {traceId.slice(0, 8)}</small>
+      </section>
+    );
+  }
   const copy = {
     fallback: ["Tìm kiếm cơ bản đang được sử dụng", clarification],
     low_confidence: ["Hệ thống chưa đủ chắc chắn", clarification],
     no_match: ["Không có kết quả đủ căn cứ", "Hãy thử thêm chủ đề, loại tài liệu hoặc thời gian chia sẻ."],
+    rejected: ["Yêu cầu nằm ngoài phạm vi", clarification],
   }[status];
   return (
     <div className={`search-notice ${status}`} role="status">
@@ -460,7 +511,16 @@ export default function Page() {
             </div>
           ) : (
             <>
-              {route === "search" && response && <SearchNotice status={response.status} clarification={response.clarification} traceId={response.traceId} />}
+              {route === "search" && response && (
+                <SearchNotice
+                  status={response.status}
+                  clarification={response.clarification}
+                  options={response.clarificationOptions}
+                  traceId={response.traceId}
+                  onClarify={performSearch}
+                />
+              )}
+              {response?.status !== "needs_clarification" && response?.status !== "rejected" && (
               <div className="results-layout">
                 <FilterPanel filters={filters} setFilters={setFilters} showRelevance={route === "search"} />
                 <section className="results">
@@ -486,6 +546,7 @@ export default function Page() {
                   ) : <EmptyState clear={() => setFilters(defaultFilters)} navigate={navigate} />}
                 </section>
               </div>
+              )}
             </>
           )}
         </main>

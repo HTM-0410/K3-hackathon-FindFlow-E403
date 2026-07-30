@@ -1,0 +1,212 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531319733905784962",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Cách mình xử lý vấn đề Context và Token khi làm việc với AI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:08:50.9996252+07:00",
+  "messages": [
+    {
+      "id": "1531319733905784962",
+      "type": "Default",
+      "timestamp": "2026-07-27T22:17:55.108+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình dùng AI (Claude Code, Gemini CLI...) gần như mỗi ngày. Token bị đốt ở 2 chiều: input — AI đọc dư thứ không cần, và output — AI trả lời dài hơn mức cần. Mình xử lý riêng từng chiều: input thì tổ chức lại thông tin để AI biết đi đâu lấy gì, output thì ép kỷ luật giao tiếp.\n\nChiều INPUT: routing thay vì quét toàn bộ\nNguyên tắc chung: đừng để AI \"quét hết rồi lọc\" — dạy nó đi thẳng vào đúng chỗ. Mình áp ở 2 nơi: ghi chú cá nhân và code.\n\nVới ghi chú — Second Brain\n\nMình có 1 vault Markdown chứa toàn bộ context về mình. Dùng nhiều AI tool, mỗi tool đọc 1 file cấu hình riêng — ban đầu chép luật giống hệt vào cả 3 file, sửa 1 chỗ quên chỗ khác. Giờ cả 3 chỉ còn vài dòng \"biển chỉ đường\" trỏ về 1 file gốc duy nhất, sửa 1 chỗ mọi AI cùng cập nhật.\n\nFile gốc có luật đầu: \"Routing trước, tìm sau — KHÔNG quét toàn bộ.\" Kèm bảng thư mục nào chứa gì, khi nào đọc. Câu hỏi hẹp → tra bảng, đi thẳng. Câu hỏi rộng → đi theo \"dấu vết\" liên kết, đọc trọn 1 chủ đề. Tách rõ \"Bối cảnh\" (dữ liệu lâu dài, đáng nhớ sâu) với \"Kết nối\" (nhật ký, đọc nông).\n\nCó 5 cấp độ tổ chức thông tin (routing → wiki → vector search → knowledge graph → tự vận hành), nhưng chỉ lên cấp khi cấp hiện tại thực sự nghẽn — YAGNI áp cho kiến trúc thông tin.\n\nVới code — CodeGraph\n\nVấn đề tương tự nhưng cho code: AI phải grep, đọc file, dò import chỉ để biết hàm này gọi ở đâu. Mình dùng CodeGraph: index cục bộ parse sẵn symbol + quan hệ trong repo, tự đồng bộ khi code đổi. Bắt buộc có ở mọi repo, không đợi thấy chậm mới cài.\n\nSecond Brain và CodeGraph cùng 1 ý tưởng — routing table — áp cho 2 loại dữ liệu khác nhau.\n\nChiều OUTPUT: kỷ luật trả lời\nDù input đã gọn, AI vẫn hay trả lời dài dòng, rào trước đón sau — cũng là token phải trả. Mình dùng skill Caveman: ép trả lời câu cụt, bỏ phần đưa đẩy, giữ nguyên phần quan trọng (code, lệnh, lỗi). Trả lời ngắn nhiều khi lại chính xác hơn, vì AI ít đất để lan man. \nCaveman: https://github.com/JuliusBrussee/caveman\nCodegraph: https://github.com/colbymchenry/codegraph",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - JuliusBrussee/caveman: \uD83E\uDEA8 why use many token when few to...",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "timestamp": null,
+          "description": "\uD83E\uDEA8 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman - JuliusBrussee/caveman",
+          "color": "#1E2327",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": [
+            {
+              "id": "",
+              "name": "\uD83E\uDEA8",
+              "code": "rock",
+              "isAnimated": false,
+              "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1faa8.svg"
+            }
+          ]
+        },
+        {
+          "title": "GitHub - colbymchenry/codegraph: Pre-indexed code knowledge graph, ...",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "timestamp": null,
+          "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local - co...",
+          "color": "#1E2327",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "☝️",
+            "code": "point_up",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/261d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531319833705189508",
+      "type": "Default",
+      "timestamp": "2026-07-27T22:18:18.902+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Input giải bằng kiến trúc thông tin — thiết kế sao cho AI biết chính xác đi đâu lấy gì, cho cả ghi chú lẫn code. Output giải bằng kỷ luật giao tiếp — ép AI nói ít, nói đúng trọng tâm. Dựng hệ thống 1 lần, mỗi phiên sau tự động gọn, đúng, không trả token cho thứ không ai hỏi.",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531320187532611646",
+      "type": "Default",
+      "timestamp": "2026-07-27T22:19:43.261+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Điểm hay khi xây dựng Second Brain đó là càng làm việc nhiều thì kiến thức + kinh nghiệm sẽ lên rất nhanh, khẩu vị của bạn về design, FE, BE, thiết kế hệ thống dùng framework nào, bảo mật ra sao, đã gặp những lỗi gì,.... đều được log lại hết.",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

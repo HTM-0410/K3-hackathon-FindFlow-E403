@@ -1,0 +1,226 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531853069627818004",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[T-059] Ponytail: Giúp AI Coding viết ít code hơn và tiết kiệm token lên đến 22%",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:04:17.5984585+07:00",
+  "messages": [
+    {
+      "id": "1531853069627818004",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:37:12.253+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Khi dùng Claude Code, Codex hay Cursor, AI đôi khi biến một yêu cầu đơn giản thành hàng loạt file, thư viện và lớp code không cần thiết. Điều này khiến dự án phức tạp hơn, đồng thời tốn thêm token để tạo, đọc và sửa code.\n\nPonytail là một skill giúp AI coding agent ưu tiên giải pháp đơn giản nhất trước khi viết thêm code.\n\nPonytail hoạt động thế nào?\nTrước khi tạo code mới, Ponytail hướng AI kiểm tra:\nChức năng này có thực sự cần không?\nTrong dự án đã có code tương tự chưa?\nNgôn ngữ hoặc trình duyệt có hỗ trợ sẵn không?\nCó thể tận dụng thư viện hiện có không?\nCó thể giải quyết bằng một thay đổi nhỏ hơn không?\nChỉ khi các cách trên không phù hợp, AI mới viết thêm code.\n\nTheo benchmark của tác giả, Ponytail giúp giảm trung bình khoảng 54% số dòng code, 22% token, 20% chi phí và 27% thời gian. Kết quả thực tế phụ thuộc vào từng dự án.\n\nCách cài đặt :\n\nClaude Code\n/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail\n\nCodex\ncodex plugin marketplace add DietrichGebert/ponytail\ncodex plugin add ponytail@ponytail\n\nGemini CLI\ngemini extensions install https://github.com/DietrichGebert/ponytail\n\nCursor\nSao chép file .cursor/rules/ponytail.mdc vào thư mục .cursor/rules/ của dự án.\n\nCách sử dụng\nSau khi cài đặt, hãy mở một phiên làm việc mới. Ponytail sẽ tự động được áp dụng khi AI xử lý các tác vụ coding, nên bạn không cần gọi skill trong mỗi prompt.\nBạn chỉ cần giao việc như bình thường, ví dụ :\n\nThêm chức năng xuất danh sách đơn hàng thành CSV.\n\nPonytail sẽ yêu cầu agent đọc code hiện tại, tìm giải pháp có sẵn và chỉ viết thêm phần tối thiểu cần thiết.\n\nMột số lệnh hữu ích:\n/ponytail full: chế độ mặc định.\n/ponytail ultra: kiểm tra code thừa mạnh hơn.\n/ponytail-review: xem lại phần code vừa thay đổi.\n/ponytail-audit: kiểm tra toàn bộ dự án.\n\nChúc mọi người xây dựng được nhiều sản phẩm AI hữu ích mà tốn thật ít tiền model nhé!\nVideo so sánh: https://youtu.be/2xuFcmUAQUc?si=VrTvqh8gQhC1AZJ4\nRepository: https://github.com/dietrichgebert/ponytail",
+      "author": {
+        "id": "590017970101813288",
+        "name": "walte_2",
+        "discriminator": "0000",
+        "nickname": "T059 - Phạm Gia Bảo - 01506",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/590017970101813288/2b2b7c8945914c779e56465c03770743.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531853070198374400",
+          "url": "https://cdn.discordapp.com/attachments/1531853069627818004/1531853070198374400/Screenshot_2026-07-29_092345.png?ex=6a6c0a58&is=6a6ab8d8&hm=d7a39d0fc61681355e8c92dc9f0c90b7fb330cc816f2ec5184d08761b8b8b59d&",
+          "fileName": "Screenshot_2026-07-29_092345.png",
+          "fileSizeBytes": 39048
+        }
+      ],
+      "embeds": [
+        {
+          "title": "GitHub - DietrichGebert/ponytail: Makes your AI agent think like th...",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "timestamp": null,
+          "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/7BBgBs6gMyXDlOJRfMT3-k_10Ad_mcSNPxqo0VMzO_0/%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAVCODYLSA53PQK4ZA%252F20260729%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20260729T021336Z%26X-Amz-Expires%3D300%26X-Amz-Signature%3Ddef24be5fd8bd569c7a6a0e22d9a8836d05b50484df152567353c0ed3711a038%26X-Amz-SignedHeaders%3Dhost%26jwt%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTI5MTUxNiwibmJmIjoxNzg1MjkxMjE2LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.qmcmu4ODpIkz3Ms8DhD7CrabeP2YolrRIFF7EV1vFpk/https/repository-images.githubusercontent.com/github-production-repository-image-32fea6/1266797999/b20d9cb8-11f0-4db8-965a-7e22ab2b6bb6",
+            "canonicalUrl": "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1266797999/b20d9cb8-11f0-4db8-965a-7e22ab2b6bb6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260729T021336Z&X-Amz-Expires=300&X-Amz-Signature=def24be5fd8bd569c7a6a0e22d9a8836d05b50484df152567353c0ed3711a038&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTI5MTUxNiwibmJmIjoxNzg1MjkxMjE2LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.qmcmu4ODpIkz3Ms8DhD7CrabeP2YolrRIFF7EV1vFpk",
+            "width": 1280,
+            "height": 640
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "This Claude Code Plugin Writes 94% Less Code (ponytail)",
+          "url": "https://www.youtube.com/watch?v=2xuFcmUAQUc",
+          "timestamp": null,
+          "description": "Ponytail is a Claude Code plugin that makes your AI agent think like the laziest senior dev in the room and that's a compliment. It enforces the YAGNI principle at every step, forcing your agent to reach for native platform features and standard library solutions before writing a single line of custom code, cutting your costs by up to 77%. In th...",
+          "color": "#FF0000",
+          "author": {
+            "name": "Better Stack",
+            "url": "https://www.youtube.com/channel/UCkVfrGwV-iG9bSsgCbrNPxQ"
+          },
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/xDZU_JLMnYJLe14HwIEBnxBG-0ttL5gIkzYy12Uf3FE/https/i.ytimg.com/vi/2xuFcmUAQUc/maxresdefault.jpg",
+            "canonicalUrl": "https://i.ytimg.com/vi/2xuFcmUAQUc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "video": {
+            "url": "https://www.youtube.com/embed/2xuFcmUAQUc",
+            "canonicalUrl": "https://www.youtube.com/embed/2xuFcmUAQUc",
+            "width": 1280,
+            "height": 720
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "GitHub - DietrichGebert/ponytail: Makes your AI agent think like th...",
+          "url": "https://github.com/dietrichgebert/ponytail",
+          "timestamp": null,
+          "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/f-Bw1Lvuxh2hQ9J2gvTwDUp-xpFawTYS2GKzeNOFd-A/%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAVCODYLSA53PQK4ZA%252F20260729%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20260729T023712Z%26X-Amz-Expires%3D300%26X-Amz-Signature%3D314ccde255536468f8afa894718e2b823d709f87fe6a2344ce4be9d4ac4e1419%26X-Amz-SignedHeaders%3Dhost%26jwt%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTI5MjkzMiwibmJmIjoxNzg1MjkyNjMyLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.pciX-ge-CYVrLU7yDAOOENwRRHtdVms4zlx1WNlNJMs/https/repository-images.githubusercontent.com/github-production-repository-image-32fea6/1266797999/b20d9cb8-11f0-4db8-965a-7e22ab2b6bb6",
+            "canonicalUrl": "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1266797999/b20d9cb8-11f0-4db8-965a-7e22ab2b6bb6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260729T023712Z&X-Amz-Expires=300&X-Amz-Signature=314ccde255536468f8afa894718e2b823d709f87fe6a2344ce4be9d4ac4e1419&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTI5MjkzMiwibmJmIjoxNzg1MjkyNjMyLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.pciX-ge-CYVrLU7yDAOOENwRRHtdVms4zlx1WNlNJMs",
+            "width": 1280,
+            "height": 640
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "590017970101813288",
+              "name": "walte_2",
+              "discriminator": "0000",
+              "nickname": "T059 - Phạm Gia Bảo - 01506",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/590017970101813288/2b2b7c8945914c779e56465c03770743.png?size=512"
+            },
+            {
+              "id": "1263493356806475826",
+              "name": "quanghadev_78283",
+              "discriminator": "0000",
+              "nickname": "T059 - Nguyễn Quang Hà - 01424",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1263493356806475826",
+              "name": "quanghadev_78283",
+              "discriminator": "0000",
+              "nickname": "T059 - Nguyễn Quang Hà - 01424",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE31",
+            "code": "scream",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f631.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1263493356806475826",
+              "name": "quanghadev_78283",
+              "discriminator": "0000",
+              "nickname": "T059 - Nguyễn Quang Hà - 01424",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531856451495002253",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:50:38.553+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "dùng ngon phết",
+      "author": {
+        "id": "1263493356806475826",
+        "name": "quanghadev_78283",
+        "discriminator": "0000",
+        "nickname": "T059 - Nguyễn Quang Hà - 01424",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

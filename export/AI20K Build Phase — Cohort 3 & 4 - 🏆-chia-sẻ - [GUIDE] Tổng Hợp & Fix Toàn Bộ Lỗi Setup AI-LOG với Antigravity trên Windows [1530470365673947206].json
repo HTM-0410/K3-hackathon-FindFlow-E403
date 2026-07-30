@@ -1,0 +1,444 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530470365673947206",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[GUIDE] Tổng Hợp & Fix Toàn Bộ Lỗi Setup AI-LOG với Antigravity trên Windows",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:17:03.4486417+07:00",
+  "messages": [
+    {
+      "id": "1530470365673947206",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:02:49.941+07:00",
+      "timestampEdited": "2026-07-25T14:13:51.265+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "sau khi clone mọi người có thể add file này vào root repo để agent đọc và xử lí luôn nhé",
+      "author": {
+        "id": "1052229395596714014",
+        "name": "huii2806",
+        "discriminator": "0000",
+        "nickname": "T129 — Nguyễn Viết Huy — 01081",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1052229395596714014/eec2762d451ab7377f660c81b49f0ff1.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530470365950902422",
+          "url": "https://cdn.discordapp.com/attachments/1530470365673947206/1530470365950902422/message.txt?ex=6a6c489a&is=6a6af71a&hm=52aefde0c44778bc0440e839b304fd938e7d144128835c521ed64306e421e398&",
+          "fileName": "message.txt",
+          "fileSizeBytes": 6941
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "1052229395596714014",
+              "name": "huii2806",
+              "discriminator": "0000",
+              "nickname": "T129 — Nguyễn Viết Huy — 01081",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1052229395596714014/eec2762d451ab7377f660c81b49f0ff1.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530472021539164201",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:09:24.73+07:00",
+      "timestampEdited": "2026-07-25T14:17:40.94+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người, trong quá trình setup dự án template **AI20K Build Phase** trên môi trường **Windows** (kết hợp sử dụng **Antigravity IDE**), mình có gặp một số lỗi phổ biến do sự khác biệt giữa môi trường Linux/macOS (trong README) và Windows PowerShell. \n\nDưới đây là tổng hợp chi tiết **5 vấn đề thực tế + Nguyên nhân + Cách khắc phục triệt để** để mọi người setup mượt mà 100%!\n\n## \uD83D\uDCCC 1. Lỗi khởi tạo venv & kích hoạt môi trường (`python3.11` / `source`)\n### ❌ Hiện tượng\nKhi chạy theo hướng dẫn ở Bước 2:\n```powershell\npython3.11 -m venv .venv\n# Lỗi: python3.11 : The term 'python3.11' is not recognized...\nsource .venv/bin/activate\n# Lỗi: source is not recognized...\n```\n### \uD83D\uDD0D Nguyên nhân\n- `python3.11` và `source` là cú pháp Bash của Linux/macOS. \n- Trình khởi chạy Python trên Windows PowerShell thường được gọi qua `py` hoặc `python`.\n### ✅ Cách khắc phục\nChạy các lệnh chuẩn dành cho Windows PowerShell:\n```powershell\n# 1. Tạo venv bằng Python 3.11 (hoặc python -m venv .venv)\npy -3.11 -m venv .venv\n\n# 2. Kích hoạt venv trên PowerShell\n.\\.venv\\Scripts\\Activate.ps1\n\n# 3. Cài đặt thư viện\npip install -r requirements.txt\n```",
+      "author": {
+        "id": "1052229395596714014",
+        "name": "huii2806",
+        "discriminator": "0000",
+        "nickname": "T129 — Nguyễn Viết Huy — 01081",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1052229395596714014/eec2762d451ab7377f660c81b49f0ff1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCCC",
+          "code": "pushpin",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4cc.svg"
+        },
+        {
+          "id": "",
+          "name": "❌",
+          "code": "x",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/274c.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD0D",
+          "code": "mag",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f50d.svg"
+        },
+        {
+          "id": "",
+          "name": "✅",
+          "code": "white_check_mark",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530472117458440323",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:09:47.599+07:00",
+      "timestampEdited": "2026-07-25T14:17:58.796+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## \uD83D\uDCCC 2. Lỗi Git Pre-push Hook (`cannot spawn .git/hooks/pre-push`)\n### ❌ Hiện tượng\nKhi thực hiện `git push`, terminal báo lỗi không chạy được script hook:\n```text\nerror: cannot spawn .git/hooks/pre-push: No such file or directory\nerror: waitpid for (NULL) failed: No child processes\nerror: failed to push some refs...\n```\n### \uD83D\uDD0D Nguyên nhân\n- Khi chạy script setup hook mặc định trên PowerShell (`Set-Content`), file `.git/hooks/pre-push` được tạo ra có gắn ký tự **UTF-8 BOM** (`\\xef\\xbb\\xbf`) và định dạng xuống dòng kiểu Windows (**CRLF** `\\r\\n`).\n- Trình chạy Git Bash không thể đọc được file shell script có BOM/CRLF này.\n### ✅ Cách khắc phục\nCập nhật script [`scripts/setup_hooks.ps1`](file:///c:/Users/ADMIN/Desktop/P-129/scripts/setup_hooks.ps1) để ghi file định dạng **UTF-8 No BOM** và ký tự xuống dòng chuẩn Unix (**LF**):\n```powershell\n# Sửa nội dung file scripts/setup_hooks.ps1\n$HookFile = '.git/hooks/pre-push'\n$HookBody = \"#!/usr/bin/env bash`n# Pre-push: sweep recent Antigravity / Gemini prompts, then submit AI logs.`nbash scripts/_pyrun.sh scripts/log_antigravity.py --auto || true`nbash scripts/_pyrun.sh scripts/submit_log.py || true`nexit 0`n\"\n\n$Utf8NoBom = New-Object System.Text.UTF8Encoding $false\n[System.IO.File]::WriteAllText((Get-Item $HookFile).FullName, $HookBody, $Utf8NoBom)\nWrite-Host \"[ai-log] Git pre-push hook installed.\"\n```\nSau đó chạy lại lệnh setup hook:\n```powershell\npowershell -ExecutionPolicy Bypass -File scripts\\setup_hooks.ps1\n```",
+      "author": {
+        "id": "1052229395596714014",
+        "name": "huii2806",
+        "discriminator": "0000",
+        "nickname": "T129 — Nguyễn Viết Huy — 01081",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1052229395596714014/eec2762d451ab7377f660c81b49f0ff1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCCC",
+          "code": "pushpin",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4cc.svg"
+        },
+        {
+          "id": "",
+          "name": "❌",
+          "code": "x",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/274c.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD0D",
+          "code": "mag",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f50d.svg"
+        },
+        {
+          "id": "",
+          "name": "✅",
+          "code": "white_check_mark",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530472220952887419",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:10:12.274+07:00",
+      "timestampEdited": "2026-07-25T14:18:59.45+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## \uD83D\uDCCC 3. Git Push thành công nhưng Log KHÔNG lên Dashboard BTC (`AI_LOG_SERVER not set`)\n### ❌ Hiện tượng\nLệnh `git push` chạy qua hook mà không báo lỗi, nhưng trên Dashboard của BTC vẫn không có log mới. Kiểm tra log thấy dòng:\n```text\n[ai-log] AI_LOG_SERVER not set — skipping submission.\n```\n### \uD83D\uDD0D Nguyên nhân\n- File launcher [`scripts/_pyrun.sh`](file:///c:/Users/ADMIN/Desktop/P-129/scripts/_pyrun.sh) ưu tiên gọi `python` của hệ thống (Global Python) thay vì Python trong môi trường ảo `.venv`.\n- Python hệ thống chưa cài gói `python-dotenv` nên script không thể đọc được các cấu hình `AI_LOG_SERVER` và `AI_LOG_API_KEY` từ file `.env`.\n---\n### ✅ Cách khắc phục\nCập nhật [`scripts/_pyrun.sh`](file:///c:/Users/ADMIN/Desktop/P-129/scripts/_pyrun.sh) để ưu tiên nhận diện và thực thi Python trong `.venv` trước:\n```bash\n# Sửa đoạn đầu của scripts/_pyrun.sh\nif [ -x \".venv/Scripts/python.exe\" ]; then\n  PY=\".venv/Scripts/python.exe\"\nelif [ -x \".venv/bin/python\" ]; then\n  PY=\".venv/bin/python\"\nelif command -v python3 >/dev/null 2>&1; then\n  PY=python3\n...\n```\n\uD83D\uDC49 **Kết quả sau khi fix**: Khi `git push`, màn hình sẽ xuất hiện thông báo nộp log thành công:\n```text\n[antigravity-log] Logged 11 prompt(s) from Antigravity IDE.\n[ai-log] Submitted 12 entries → 202\n```\n*(Mã HTTP `202` = Server BTC đã ghi nhận thành công!)*",
+      "author": {
+        "id": "1052229395596714014",
+        "name": "huii2806",
+        "discriminator": "0000",
+        "nickname": "T129 — Nguyễn Viết Huy — 01081",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1052229395596714014/eec2762d451ab7377f660c81b49f0ff1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCCC",
+          "code": "pushpin",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4cc.svg"
+        },
+        {
+          "id": "",
+          "name": "❌",
+          "code": "x",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/274c.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD0D",
+          "code": "mag",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f50d.svg"
+        },
+        {
+          "id": "",
+          "name": "✅",
+          "code": "white_check_mark",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC49",
+          "code": "point_right",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f449.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530472318629838868",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:10:35.562+07:00",
+      "timestampEdited": "2026-07-25T14:19:22.588+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## \uD83D\uDCCC 4. Lỗi Server FastAPI không chạy được (`Errno 10048: Port 8000 in use`)\n### ❌ Hiện tượng\nKhi chạy `uvicorn src.main:app --reload --port 8000`, gặp lỗi:\n```text\nERROR: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8000): only one usage of each socket address is normally permitted.\n```\n### \uD83D\uDD0D Nguyên nhân\nCổng `8000` đang bị một tiến trình Python hoặc ứng dụng khác chạy ngầm chiếm giữ từ trước.\n### ✅ Cách khắc phục\nTìm và tắt tiến trình đang chiếm port 8000 trên PowerShell:\n```powershell\n# 1. Tìm PID của tiến trình chiếm cổng 8000\nGet-NetTCPConnection -LocalPort 8000 | Select-Object LocalAddress, LocalPort, OwningProcess\n\n# 2. Tắt tiến trình đó (thay PID bằng số tìm được)\nStop-Process -Id <PID> -Force\n\n# 3. Chạy lại server\nuvicorn src.main:app --reload --port 8000\n```\nMở trình duyệt truy cập: `http://localhost:8000/docs` để kiểm tra.",
+      "author": {
+        "id": "1052229395596714014",
+        "name": "huii2806",
+        "discriminator": "0000",
+        "nickname": "T129 — Nguyễn Viết Huy — 01081",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1052229395596714014/eec2762d451ab7377f660c81b49f0ff1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCCC",
+          "code": "pushpin",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4cc.svg"
+        },
+        {
+          "id": "",
+          "name": "❌",
+          "code": "x",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/274c.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD0D",
+          "code": "mag",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f50d.svg"
+        },
+        {
+          "id": "",
+          "name": "✅",
+          "code": "white_check_mark",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530472396048568560",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:10:54.02+07:00",
+      "timestampEdited": "2026-07-25T14:19:50.827+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## \uD83D\uDCCC 5. Lưu ý về Git Workflow & Đổi tên nhánh\n1. **Vì sao phải xóa `.git` rồi init lại?**\n   - Giúp tách dự án của nhóm thành một repo độc lập, xóa lịch sử commit mẫu của BTC để BTC chấm điểm đúng đóng góp thực tế của đội bạn.\n2. **Xử lý nhánh `master` -> `main`**:\n   - Khi gõ `git init` trên Windows, Git thường mặc định tạo nhánh `master`. Hãy đổi sang `main` để đồng bộ với GitHub:\n     ```powershell\n     git branch -m master main\n     ```\n3. **An tâm test trên nhánh riêng**:\n   - Git Pre-push Hook của BTC hoạt động trên **mọi nhánh**. Bạn có thể checkout sang nhánh thử nghiệm (ví dụ: `git checkout -b test-setup`) rồi `git push -u origin test-setup` để kiểm tra AI Log mà không lo làm ảnh hưởng đến nhánh `main` của các thành viên khác trong nhóm.\n\uD83C\uDFAF **Tóm lại Checklist cho người mới setup trên Windows**:\n1. `py -3.11 -m venv .venv` & `.\\.venv\\Scripts\\Activate.ps1`\n2. `pip install -r requirements.txt`\n3. Sửa `setup_hooks.ps1` & `_pyrun.sh` (nếu dính lỗi BOM/PATH) -> Chạy `powershell -ExecutionPolicy Bypass -File scripts\\setup_hooks.ps1`\n4. Cập nhật `AI_LOG_API_KEY` trong `.env`\n5. `git push` và tận hưởng log tự động nộp lên Dashboard BTC! \uD83D\uDE80",
+      "author": {
+        "id": "1052229395596714014",
+        "name": "huii2806",
+        "discriminator": "0000",
+        "nickname": "T129 — Nguyễn Viết Huy — 01081",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1052229395596714014/eec2762d451ab7377f660c81b49f0ff1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCCC",
+          "code": "pushpin",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4cc.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83C\uDFAF",
+          "code": "dart",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3af.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDE80",
+          "code": "rocket",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530474861837815888",
+      "type": "Reply",
+      "timestamp": "2026-07-25T14:20:41.91+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDCAF",
+      "author": {
+        "id": "1052229395596714014",
+        "name": "huii2806",
+        "discriminator": "0000",
+        "nickname": "T129 — Nguyễn Viết Huy — 01081",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1052229395596714014/eec2762d451ab7377f660c81b49f0ff1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530470365673947206",
+        "channelId": "1530470365673947206",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCAF",
+          "code": "100",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4af.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 7
+}

@@ -61,6 +61,7 @@ export async function rankWithGemini(
                 "Xét query theo title, summary, tags, topic, sourceChannel, sharedAt và isOfficial.",
                 "Với deadline, điểm, XP, quy định hoặc rubric, ưu tiên nguồn isOfficial=true.",
                 "Nếu không đủ căn cứ, dùng low_confidence hoặc no_match; không đoán.",
+                "Query mơ hồ, nhiều ý định và ngoài phạm vi đã được kiểm tra trước khi gọi bạn; chỉ xếp hạng một nhu cầu rõ ràng.",
                 "matchScore là độ khớp ước tính 0-100, không phải xác suất.",
               ].join("\n"),
             }],

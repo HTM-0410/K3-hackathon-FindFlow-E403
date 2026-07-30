@@ -1,0 +1,159 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531576759508664331",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Lưu ý luật dữ liệu hiện hành khi làm demo (đặc biệt khi chưa có quyền truy cập dữ liệu nội bộ )",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:06:54.253126+07:00",
+  "messages": [
+    {
+      "id": "1531576759508664331",
+      "type": "Default",
+      "timestamp": "2026-07-28T15:19:14.787+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình thấy nhiều đề tài dễ cần đụng tới dữ liệu khách hàng/cư dân/giao dịch..., nhưng hiện học viên chưa được cấp quyền truy cập dữ liệu nội bộ của các công ty trừ khi tự liên hệ và được đồng ý. Mình tổng hợp nhanh vài điểm luật hiện hành để mọi người xử lý đúng ngay từ khâu thu thập dữ liệu cho demo, tránh phải làm lại sau này.\n\n1. Hai văn bản đang áp dụng\n\nLuật Bảo vệ dữ liệu cá nhân (số 91/2025/QH15), hiệu lực từ 1/1/2026 — luật riêng đầu tiên của Việt Nam về bảo vệ dữ liệu cá nhân, xác lập quyền được biết, đồng ý, truy cập, sửa, xóa dữ liệu của công dân. Nghị định 13/2023/NĐ-CP vẫn song song áp dụng trong giai đoạn chuyển tiếp.\nLuật Dữ liệu (số 60/2024/QH15), hiệu lực từ 1/7/2025 — chủ yếu về cơ sở dữ liệu quốc gia/dữ liệu mở, ít liên quan trực tiếp tới demo cá nhân nhưng có nêu nguyên tắc chung khi xử lý dữ liệu số.\n\n2. Điểm cần nhớ khi làm demo (chưa có quyền truy cập dữ liệu nội bộ)\n\nDữ liệu \"nhìn thấy công khai\" (group Facebook, review app, hồ sơ MXH) không đồng nghĩa được tự do thu thập — nếu gắn với một cá nhân xác định được (tên, SĐT, khuôn mặt...), việc scrape/lưu trữ vẫn là hành vi xử lý dữ liệu cá nhân, cần căn cứ hợp pháp (thường là sự đồng ý).\n\nDữ liệu nhạy cảm — sức khỏe, tài chính, trẻ em, sinh trắc học — bị siết chặt hơn hẳn. Đề tài đụng nhóm này nên dùng dữ liệu ẩn danh hoặc synthetic, không dùng dữ liệu thật chưa xử lý.\n\nKhông tự tìm cách lấy dữ liệu nội bộ doanh nghiệp (CRM, ticket, giao dịch...) dù có khả năng truy cập — chỉ dùng khi công ty chính thức cấp quyền.\nNếu bắt buộc dùng dữ liệu công khai có yếu tố cá nhân, nên ẩn danh trước khi đưa vào demo/báo cáo — bỏ tên, SĐT, ảnh mặt...\n\nBài này là mình tổng hợp theo hiểu biết cá nhân từ văn bản công khai, không phải tư vấn pháp lý chính thức. Bạn nào cần áp dụng cụ thể nên đọc trực tiếp văn bản luật hoặc hỏi người phụ trách pháp lý của khóa.",
+      "author": {
+        "id": "694368143598026774",
+        "name": "hieeus8944",
+        "discriminator": "0000",
+        "nickname": "T032 -Nguyễn Chí Hiếu - 01931",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "427017404258844673",
+              "name": "vietthang5605",
+              "discriminator": "0000",
+              "nickname": "VietThang",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/427017404258844673/b6292a455e804948f8fc1d314f6a2241.png?size=512"
+            },
+            {
+              "id": "670145855587876874",
+              "name": "_nguyentruong",
+              "discriminator": "0000",
+              "nickname": "trườngNgủYêu",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/670145855587876874/a7258882363e2bc44c5f2be147cea0e8.png?size=512"
+            },
+            {
+              "id": "754978551002038303",
+              "name": "letiennn",
+              "discriminator": "0000",
+              "nickname": "letiennn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531578263938404504",
+      "type": "Default",
+      "timestamp": "2026-07-28T15:25:13.471+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay quá b ơi, đúng vấn đề mình đang cần giải quyết",
+      "author": {
+        "id": "670145855587876874",
+        "name": "_nguyentruong",
+        "discriminator": "0000",
+        "nickname": "T032 - Nguyễn Văn Trường - 01974",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/670145855587876874/a7258882363e2bc44c5f2be147cea0e8.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531578741812367492",
+      "type": "Default",
+      "timestamp": "2026-07-28T15:27:07.405+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ x",
+      "author": {
+        "id": "754978551002038303",
+        "name": "letiennn",
+        "discriminator": "0000",
+        "nickname": "T032 - Lê Anh Tiến - 01145",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

@@ -1,0 +1,84 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531205658131824701",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Dùng AI sao cho hiệu quả - 3 cách ứng dụng AI vào trong công việc",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:21:19.9071412+07:00",
+  "messages": [
+    {
+      "id": "1531205658131824701",
+      "type": "Default",
+      "timestamp": "2026-07-27T14:44:37.324+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1529747325034037298",
+        "name": "tungnt04",
+        "discriminator": "0000",
+        "nickname": "T202 - Nguyễn Thanh Tùng - 01871",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529747325034037298/05a9ab57621f577652747110e26fb7ba.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531205658521899181",
+          "url": "https://cdn.discordapp.com/attachments/1531205658131824701/1531205658521899181/3_cach_dung_AI_e_tiet_kiem_1_gio_moi_ngay.pdf?ex=6a6c5265&is=6a6b00e5&hm=567532831cfac485b1b332b84e9fe26e6a8e6bca0f29db2f6daa97a9cd897b92&",
+          "fileName": "3_cach_dung_AI_e_tiet_kiem_1_gio_moi_ngay.pdf",
+          "fileSizeBytes": 52108
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1529747325034037298",
+              "name": "tungnt04",
+              "discriminator": "0000",
+              "nickname": "T202 - Nguyễn Thanh Tùng - 01871",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529747325034037298/05a9ab57621f577652747110e26fb7ba.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

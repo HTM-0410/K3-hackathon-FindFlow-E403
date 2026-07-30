@@ -1,0 +1,118 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531487118184939631",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Các bước triển khai AI Chatbot",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:07:49.410681+07:00",
+  "messages": [
+    {
+      "id": "1531487118184939631",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:23:02.63+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "1. Xác định mục tiêu & phạm vi:\n\n- Quyết định rõ Chatbot làm gì (ví dụ: giảm 60% câu hỏi tuyển sinh lặp lặp), phục vụ ai, chạy ở đâu, xử lý chủ đề gì và cần dữ liệu gì.\n\n2. Chọn nền tảng No-Code:\n\n- Thay vì tự viết code (tốn thời gian, chi phí cao), chọn các giải pháp no-code như Chatbase để triển khai nhanh, dễ huấn luyện dữ liệu nội bộ và tích hợp đa nền tảng.\n\n3. Khởi tạo Chatbot ban đầu:\n\n- Đăng ký Chatbase, tạo chatbot mới, đặt tên và thiết lập câu lệnh hướng dẫn ban đầu (System Instruction) để chạy thử nghiệm năng lực giao tiếp cơ bản.\n\n4. Huấn luyện dữ liệu chuyên biệt (Retrain):\n\n- Tải lên các tài liệu chuyên ngành (PDF, văn bản, link website...) liên quan đến lĩnh vực cần hỗ trợ (ví dụ: quy chế tuyển sinh, học phí, hạn nộp hồ sơ) để bot trả lời chuẩn xác.\n\n5. Tinh chỉnh & Tùy biến giao diện:\n\n- Nâng cấp mô hình (vd: chuyển sang GPT-4), điều chỉnh mức độ sáng tạo (Temperature), thiết lập khung văn phong và đổi màu sắc/tin nhắn chào mừng cho khớp với giao diện website.\n\n6. Triển khai (Deploy):\n\n- Chuyển trạng thái sang Public, sao chép đoạn mã JavaScript/HTML được cấp và dán vào backend website để chatbot vận hành hỗ trợ người dùng 24/7.",
+      "author": {
+        "id": "461100458786816032",
+        "name": "thiendz1ngaunhat",
+        "discriminator": "0000",
+        "nickname": "T071 - TranDucThien - 02032",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "461100458786816032",
+              "name": "thiendz1ngaunhat",
+              "discriminator": "0000",
+              "nickname": "T071 - TranDucThien - 02032",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1030659866081120346",
+              "name": "minhyeuem_",
+              "discriminator": "0000",
+              "nickname": "Đỗ Nhật Minh 2A202601085",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531487908416983133",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:26:11.036+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn bạn đã chia sẻ",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

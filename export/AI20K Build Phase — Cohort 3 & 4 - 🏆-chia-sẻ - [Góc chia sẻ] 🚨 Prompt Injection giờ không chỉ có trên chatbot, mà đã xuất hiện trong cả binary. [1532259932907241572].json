@@ -1,0 +1,94 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1532259932907241572",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[Góc chia sẻ] \uD83D\uDEA8 Prompt Injection giờ không chỉ có trên chatbot, mà đã xuất hiện trong cả binary.",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:01:47.1379243+07:00",
+  "messages": [
+    {
+      "id": "1532259932907241572",
+      "type": "Default",
+      "timestamp": "2026-07-30T12:33:56.018+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hai nghiên cứu từ Naval Postgraduate School cho thấy một kiểu tấn công mới nhắm vào AI reverse engineering agent.\n\nKẻ tấn công nhúng các chuỗi văn bản mang tính \"instruction\" vào binary. Khi AI dùng Ghidra hoặc GhidraMCP để decompile, những chuỗi này được đưa vào context của LLM và có thể khiến AI phân tích sai chương trình.\n\nĐiều đáng sợ là binary vẫn hoạt động hoàn toàn bình thường. Runtime không bị thay đổi. Thứ bị tấn công là AI analyst đang đọc kết quả decompile.\n\nMột nghiên cứu dùng Genetic Algorithm + AutoDAN để tối ưu prompt độc hại, nghiên cứu còn lại tập trung vào việc phát hiện và giảm tác động của prompt injection trong output của decompiler.\n\n\uD83D\uDCA1 Điều đáng suy nghĩ là vấn đề này không chỉ tồn tại trong cybersecurity.\n\nBất kỳ AI Agent nào đọc dữ liệu từ nguồn không đáng tin cậy (source code, comment, log, HTML, PDF, metadata, tool output...) rồi tự đưa ra quyết định đều có nguy cơ bị đánh lừa.\n\nNếu đang xây dựng AI Agent, tối thiểu nên:\n\nTách instruction khỏi dữ liệu.\nPhát hiện prompt injection trước khi gửi vào LLM.\nBuộc agent trích dẫn bằng chứng.\nChạy trong sandbox.\nGhi log tool call.\nGiữ quyền phê duyệt cuối cùng cho con người.\n\n\uD83D\uDC49 Một nguyên tắc đáng nhớ khi thiết kế AI Agent:\n\nĐừng để mô hình coi mọi thứ trong context đều là instruction.\n\nnguồn: https://arxiv.org/abs/2605.30667",
+      "author": {
+        "id": "855807068874342420",
+        "name": "thanhpro08",
+        "discriminator": "0000",
+        "nickname": "G17 - T192 - Nguyễn Tuấn Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [
+        {
+          "id": "1532259933742043167",
+          "url": "https://cdn.discordapp.com/attachments/1532259932907241572/1532259933742043167/ChatGPT_Image_Jul_30_2026_12_32_46_PM.png?ex=6a6c33c4&is=6a6ae244&hm=cca575b167212313c0cf395ebf02b003407bbf8761c0f7e4239d1a9532bf5664&",
+          "fileName": "ChatGPT_Image_Jul_30_2026_12_32_46_PM.png",
+          "fileSizeBytes": 1805960
+        }
+      ],
+      "embeds": [
+        {
+          "title": "Automatically Attacking Software Reverse Engineering AI Agents",
+          "url": "https://arxiv.org/abs/2605.30667",
+          "timestamp": null,
+          "description": "Software tools for reverse engineering executable binary files, such as Ghidra, enable malware analysts to safely conduct robust static analysis without having access to original source code. Coupled with the analytic power of large language models (LLM), agentic systems enabled with tools, such as GhidraMCP, can allow analysts to automate a pre...",
+          "color": "#FFFFFF",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/YXb6sZ-DbghIhLdEwCCP_7HvgAz754qtRYvd1kOTXyE/https/arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+            "canonicalUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+            "width": 1200,
+            "height": 700
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC49",
+          "code": "point_right",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f449.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,345 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531943640467898448",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Graph Engineering: Vì sao bạn nên quan tâm đến Graph Engineering",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:03:32.5870151+07:00",
+  "messages": [
+    {
+      "id": "1531943640467898448",
+      "type": "Default",
+      "timestamp": "2026-07-29T15:37:06.024+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Như các bạn đã trải nghiệm trong các bài lab, công việc của chúng ta không chỉ dừng ở việc gọi một API và in ra câu trả lời. Và chính đề tài mà chúng ta chọn cũng sẽ yêu cầu rất nhiều bước: crawl dữ liệu, tóm tắt, kiểm tra chéo, sinh code, chạy test, viết báo cáo... Đây chính xác là loại bài toán mà một Agent đơn lẻ chạy theo vòng lặp \"nghĩ – làm – kiểm tra\" (Loop Engineering) sẽ đuối sức, vì toàn bộ trạng thái công việc phải nhồi nhét vào một cửa sổ ngữ cảnh duy nhất.\nGraph Engineering giải quyết đúng vấn đề đó bằng hai ý tưởng cốt lõi mà bạn có thể áp dụng ngay vào đồ án của mình: chia vai trò và chia sẻ trạng thái.\n**Ý tưởng 1: Đừng bắt một Agent làm hết mọi việc**\nCách tiếp cận phổ biến nhất khi mới học prompt là viết một system prompt \"biết tuốt\". Nhưng càng mở rộng scope thì Agent càng dễ quên, lẫn lộn và bạn càng khó debug.\nBài học rút ra cho đồ án: hãy thử tách một Agent \"vạn năng\" thành nhiều Agent chuyên trách, mỗi Agent chỉ có một nhiệm vụ rõ ràng. Khi một bước sai, bạn chỉ cần xem log của đúng node đó.\n**Ý tưởng 2: Trạng thái công việc nên nằm ngoài, không nằm trong \"đầu\" của Agent**\nNếu các Agent chỉ nói chuyện với nhau qua tin nhắn nối tiếp, hệ thống của bạn thực chất vẫn là một chuỗi Loop lồng nhau, không phải Graph thật sự.\nĐiểm khác biệt nằm ở Shared State: một vùng dữ liệu chung (có thể đơn giản là một object JSON, một file, hoặc một bảng trong database) nơi các Agent đọc và ghi kết quả trung gian. Agent không cần nhớ toàn bộ lịch sử hội thoại, chỉ cần đọc đúng phần state mình cần.\n**Ý tưởng 3: Song song hoá những gì có thể song song hoá**\nMột lợi ích thực tế khác của tư duy Graph là các nhánh việc độc lập có thể chạy đồng thời thay vì tuần tự. Nếu đồ án của bạn cần phân tích nhiều tài liệu, kiểm tra nhiều tiêu chí độc lập (ví dụ: tính đúng, tính bảo mật, hiệu năng), hoặc gọi nhiều nguồn dữ liệu khác nhau\n**Gợi ý áp dụng vào đồ án**\n1. Phân rã vai trò -> 2. Thiết kế Shared State -> 3. Tìm điểm song song hoá -> 4. Thiết kế Agent tổng hợp",
+      "author": {
+        "id": "852195348306722836",
+        "name": "ntdung175",
+        "discriminator": "0000",
+        "nickname": "T021 - Nguyễn Trọng Dũng - 01965",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [
+        {
+          "id": "1531943640694263858",
+          "url": "https://cdn.discordapp.com/attachments/1531943640467898448/1531943640694263858/maxresdefault.jpg?ex=6a6bb5f2&is=6a6a6472&hm=bff9f2c387536346ac4f6203e7b4ddf33ace4f6a4e0a5bb688e71ee267765931&",
+          "fileName": "maxresdefault.jpg",
+          "fileSizeBytes": 144927
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "678982833628250148",
+              "name": "heromine99",
+              "discriminator": "0000",
+              "nickname": "Karma",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+            },
+            {
+              "id": "690503871402868807",
+              "name": "thanhfdc",
+              "discriminator": "0000",
+              "nickname": "Công Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+            },
+            {
+              "id": "852195348306722836",
+              "name": "ntdung175",
+              "discriminator": "0000",
+              "nickname": "T021 - Nguyễn Trọng Dũng - 01965",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "997107892253642782",
+              "name": "torung7036",
+              "discriminator": "0000",
+              "nickname": "T137-Trần Tuấn Trung-01769",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/997107892253642782/641e7aad0d7807b4328287ca5ea5f549.png?size=512"
+            },
+            {
+              "id": "1025407325651083305",
+              "name": "chukhanh0180",
+              "discriminator": "0000",
+              "nickname": "Chu Khanh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1025407325651083305/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+            },
+            {
+              "id": "1529717549716082728",
+              "name": "vutung0103",
+              "discriminator": "0000",
+              "nickname": "Vũ Tùng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531944617703112835",
+      "type": "Default",
+      "timestamp": "2026-07-29T15:40:59.015+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "kien thuc rat bo ich voi minh, thanks bro",
+      "author": {
+        "id": "997107892253642782",
+        "name": "torung7036",
+        "discriminator": "0000",
+        "nickname": "T137-Trần Tuấn Trung-01769",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/997107892253642782/641e7aad0d7807b4328287ca5ea5f549.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "852195348306722836",
+              "name": "ntdung175",
+              "discriminator": "0000",
+              "nickname": "T021 - Nguyễn Trọng Dũng - 01965",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531945109619347566",
+      "type": "Default",
+      "timestamp": "2026-07-29T15:42:56.297+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay nha",
+      "author": {
+        "id": "1025407325651083305",
+        "name": "chukhanh0180",
+        "discriminator": "0000",
+        "nickname": "T047 - Chu Thị Yến Khanh - 01739",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1025407325651083305/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDEF6",
+            "code": "\uD83E\uDEF6",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1faf6.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "852195348306722836",
+              "name": "ntdung175",
+              "discriminator": "0000",
+              "nickname": "T021 - Nguyễn Trọng Dũng - 01965",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531947070565650502",
+      "type": "Default",
+      "timestamp": "2026-07-29T15:50:43.823+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bổ X.3,14",
+      "author": {
+        "id": "690503871402868807",
+        "name": "thanhfdc",
+        "discriminator": "0000",
+        "nickname": "T230 - Diêm Công Thành - 01689",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE0D",
+            "code": "heart_eyes",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f60d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "852195348306722836",
+              "name": "ntdung175",
+              "discriminator": "0000",
+              "nickname": "T021 - Nguyễn Trọng Dũng - 01965",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531972676862611556",
+      "type": "Default",
+      "timestamp": "2026-07-29T17:32:28.84+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "nice bro",
+      "author": {
+        "id": "747120974654210220",
+        "name": "stylish_courgette_71678",
+        "discriminator": "0000",
+        "nickname": "T009-Trương Công Đạt-01449",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "852195348306722836",
+              "name": "ntdung175",
+              "discriminator": "0000",
+              "nickname": "T021 - Nguyễn Trọng Dũng - 01965",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}

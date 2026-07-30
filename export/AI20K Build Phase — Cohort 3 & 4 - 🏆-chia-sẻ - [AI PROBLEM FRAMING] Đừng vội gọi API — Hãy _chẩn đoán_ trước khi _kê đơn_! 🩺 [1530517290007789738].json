@@ -1,0 +1,185 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530517290007789738",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[AI PROBLEM FRAMING] Đừng vội gọi API — Hãy \"chẩn đoán\" trước khi \"kê đơn\"! \uD83E\uDE7A",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:11:16.1337229+07:00",
+  "messages": [
+    {
+      "id": "1530517290007789738",
+      "type": "Default",
+      "timestamp": "2026-07-25T17:09:17.574+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ẩn dụ: LLM API = intern siêu giỏi nhưng đãng trí (mất trí nhớ sau mỗi lần gọi - stateless) và hiểu theo nghĩa đen (nói mơ hồ → trả lời mơ hồ).\n\n1. 4 khái niệm nền của LLM API\nToken & Context Window: \"trí nhớ tạm\" có hạn — vượt quá, model quên phần đầu. Prompt ngắn, đúng trọng tâm luôn thắng prompt dài lan man.\nSystem vs User Prompt: System = quy tắc sống còn suốt hội thoại; User = task cụ thể lượt này. Nhồi hết vào 1 prompt to đùng = lỗi \"file hướng dẫn khổng lồ\" ở cấp độ prompt.\nTemperature: thấp (~0) → chính xác, hợp code/extract; cao → sáng tạo, hợp brainstorm. Chọn sai là nguyên nhân âm thầm gây \"lúc đúng lúc sai\".\nStatelessness: mỗi API call là lần gặp đầu tiên. Muốn nó \"nhớ\" thì phải tự gửi lại toàn bộ lịch sử mỗi lần gọi.\n2. Defining the AI Problem — khung T.O.S.C\nTask type: Classification / Generation / Extraction / Reasoning / Agent-action?\nOutput shape: văn xuôi hay JSON schema cố định? Cần code xử lý tiếp → luôn ép structured output.\nSuccess criteria: \"đúng\" nghĩa là gì — độ chính xác, độ dài, đúng format?\nConstraint: latency, chi phí token, dữ liệu nhạy cảm?\n\n\"Garbage problem statement in, garbage API call out.\" Model mạnh không cứu được đề bài tệ.\n\n3. 3 nguyên tắc thực dụng\nXác định Task Type trước khi viết prompt.\nĐịnh nghĩa Output Shape bằng ví dụ cụ thể (1 JSON mẫu > cả trang mô tả).\nĐừng giả định API \"nhớ\" gì — bạn phải tự mang theo state mỗi lần gọi.\n\n(AI viết)",
+      "author": {
+        "id": "1363509015069462648",
+        "name": "chutuanviet1302",
+        "discriminator": "0000",
+        "nickname": "T161 - Chu Tuấn Việt - 01082",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1363509015069462648/79b329ba9b180a5c80d40fd992de82f1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1363509015069462648",
+              "name": "chutuanviet1302",
+              "discriminator": "0000",
+              "nickname": "T161 - Chu Tuấn Việt - 01082",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1363509015069462648/79b329ba9b180a5c80d40fd992de82f1.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531155793347608736",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:26:28.633+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "đúng đúng",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1363509015069462648",
+              "name": "chutuanviet1302",
+              "discriminator": "0000",
+              "nickname": "T161 - Chu Tuấn Việt - 01082",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1363509015069462648/79b329ba9b180a5c80d40fd992de82f1.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531158810692030585",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:38:28.024+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "đúng đúng",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1363509015069462648",
+              "name": "chutuanviet1302",
+              "discriminator": "0000",
+              "nickname": "T161 - Chu Tuấn Việt - 01082",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1363509015069462648/79b329ba9b180a5c80d40fd992de82f1.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

@@ -1,0 +1,215 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530832702968696972",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[T-121] Opus 4.8 hay Opus 5?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:06:35.9626139+07:00",
+  "messages": [
+    {
+      "id": "1530832702968696972",
+      "type": "Default",
+      "timestamp": "2026-07-26T14:02:37.884+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tl;dr: Opus 4.8 hiện nay mình đánh giá phù hợp hơn trong việc coding thay vì Opus 5.\n\nHiện tại mình đang sử dụng Claude Subscription cho cả công việc hằng ngày lẫn coding. Ở công ty, mình dùng Claude để phân tích dữ liệu sản phẩm, viết báo cáo, tổng hợp các vấn đề người dùng gặp phải và đề xuất hướng xử lý. Với nhóm công việc này, mình gần như không thấy sự khác biệt rõ rệt giữa Opus 4.8 và Opus 5. Cả hai đều đáp ứng rất tốt.\n\nĐiểm khác biệt lớn nhất xuất hiện khi mình coding.\n\nWorkflow của mình gần như luôn chạy Claude Code với Effort: High. Lý do là mình muốn agent tự phân tích, chia nhỏ vấn đề và xử lý gần như toàn bộ task trước khi mình review lại. Cách làm này giúp mình tiết kiệm rất nhiều thời gian, đặc biệt với các dự án lớn hoặc phải maintain codebase.\n\nThứ mình quan tâm nhất không phải benchmark mà là context window. Hiện tại, Opus 4.8 trên Claude Code Desktop có thể sử dụng khoảng 1M context trước khi gợi ý Compact, trong khi Opus 5 chỉ khoảng 200K context. Với những project lớn, nhiều module, 200K context khá nhanh đầy.\n\nĐặc biệt khi làm UI, lượng context tăng rất nhanh vì phải đọc component, design system, assets và nhiều lần chỉnh sửa. Với Opus 5, mình thường phải compact hoặc mở session mới khá sớm. Trong khi đó, Opus 4.8 vẫn giữ được workflow liền mạch, nên gần như toàn bộ task UI mình đều giao cho 4.8.\n\nNếu task của bạn nhỏ, scope rõ ràng và không cần giữ nhiều context thì Opus 5 vẫn là một lựa chọn tốt. Tuy nhiên, với workflow của mình thì mình chưa thấy đủ lý do để chuyển hẳn sang Opus 5.\n\nNgoài Claude, mình cũng đã dùng qua Antigravity, Codex, Kiro,... Với các task nhỏ, mình lại có xu hướng dùng GPT-5.6 Sol nhiều hơn. Dù benchmark không nổi bật bằng Opus 5, nhưng theo trải nghiệm cá nhân, model này giữ được nhiều context hơn (mình ước lượng khoảng 375K) nên xử lý các phiên làm việc dài khá thoải mái. Nếu bạn sẵn sàng chi trả thì có thể trải nghiệm Kiro với spec-driven agent khá phù hợp dự án lớn (bỏ qua vụ lỗi 429).",
+      "author": {
+        "id": "713652099086417981",
+        "name": "qijanna",
+        "discriminator": "0000",
+        "nickname": "T121 - Lê Quang Huy - 01821",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530832703258230834",
+          "url": "https://cdn.discordapp.com/attachments/1530832702968696972/1530832703258230834/image.png?ex=6a6c488d&is=6a6af70d&hm=8bde6efb337f4f4ea2c3f725cbdb1fa04c4f808bee47dcb38bda9605f947a8ec&",
+          "fileName": "image.png",
+          "fileSizeBytes": 24866
+        },
+        {
+          "id": "1530832704357007492",
+          "url": "https://cdn.discordapp.com/attachments/1530832702968696972/1530832704357007492/image.png?ex=6a6c488e&is=6a6af70e&hm=eecf6ca7755bb48fc55cf8a09177d61ce5fd88958217c9b1ea0459b55f5ca009&",
+          "fileName": "image.png",
+          "fileSizeBytes": 28734
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 7,
+          "users": [
+            {
+              "id": "449131901454778370",
+              "name": "daotungbach",
+              "discriminator": "0000",
+              "nickname": "T121 - Đào Ngọc Bích - 01745",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/449131901454778370/4e706eecd9574d32a66087a7c59d8fd2.png?size=512"
+            },
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "691727915175641108",
+              "name": "nabito5800",
+              "discriminator": "0000",
+              "nickname": "Nabito",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/691727915175641108/4f644bc45d1975a6e23ba5e42a40adde.png?size=512"
+            },
+            {
+              "id": "713652099086417981",
+              "name": "qijanna",
+              "discriminator": "0000",
+              "nickname": "T121 - Lê Quang Huy - 01821",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+            },
+            {
+              "id": "1021469290869833848",
+              "name": "huydeptrai0838",
+              "discriminator": "0000",
+              "nickname": "T055-Dương Quang Huy-01346",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1021469290869833848/f72442186f03fc1d710b7f5768f9f3df.png?size=512"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531606271323541584",
+      "type": "Default",
+      "timestamp": "2026-07-28T17:16:30.952+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ủa mình thấy opus đang để context là 1M mà nhỉ",
+      "author": {
+        "id": "691727915175641108",
+        "name": "nabito5800",
+        "discriminator": "0000",
+        "nickname": "T158 - Phạm Phúc Minh - 01153",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/691727915175641108/4f644bc45d1975a6e23ba5e42a40adde.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531606271030198332",
+          "url": "https://cdn.discordapp.com/attachments/1530832702968696972/1531606271030198332/image.png?ex=6a6bcd3e&is=6a6a7bbe&hm=d0e6aec11d5ea3469332a62c4906e96b47ef4e8d19670184f3248c4ca3862281&",
+          "fileName": "image.png",
+          "fileSizeBytes": 29722
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531607844477075496",
+      "type": "Default",
+      "timestamp": "2026-07-28T17:22:46.021+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình vừa check lại thì Opus 5 vừa mới update thì phải, có vẻ dùng khá ổn áp, để thử xem như nào.",
+      "author": {
+        "id": "713652099086417981",
+        "name": "qijanna",
+        "discriminator": "0000",
+        "nickname": "T121 - Lê Quang Huy - 01821",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

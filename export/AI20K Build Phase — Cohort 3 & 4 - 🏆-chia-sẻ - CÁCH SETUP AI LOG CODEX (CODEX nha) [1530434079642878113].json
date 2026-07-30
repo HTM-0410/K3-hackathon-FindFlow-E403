@@ -1,0 +1,224 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530434079642878113",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "CÁCH SETUP AI LOG CODEX (CODEX nha)",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:17:14.2498989+07:00",
+  "messages": [
+    {
+      "id": "1530434079642878113",
+      "type": "Default",
+      "timestamp": "2026-07-25T11:38:38.677+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào cả nhà, nếu bạn đang gặp vấn đề AI log với Codex như mình thì mình có một cài cách setup sau. tất cả mình thực hiện trên vs code . tất cả chỉ là vấn đề của mình và mong muốn chia sẻ nếu các bạn bị tương tự. vui vẻ nha\n\nVấn đề của .codex/hooks.json. File ban đầu thiếu: \"type\": \"command\"\nCodex hiện tại chỉ chạy handler có type: \"command\". Thiếu trường này thì hook được nhìn thấy nhưng không hoạt động đúng.\nVấn đề của scripts/log_hook.py. Script ban đầu luôn trả về: {\"status\": \"logged\"}. Đây là JSON hợp lệ với một số công cụ như Gemini, nhưng không đúng schema output của Codex UserPromptSubmit\n\nBƯỚC 1: CẤU HÌNH API KEY ENV\n- Vào VS code clone git ( git clone ....link...)\n- Tạo một file mới .env và copy nội dung file .env.example qua\n- Vào Phoenix lấy key tại mục API keys\n- Tại AI_LOG_API_KEY hãy pasted key bạn vừa lấy vào thay cho key của BTC\nBƯỚC 2: TẮT PYTHON.EXE\nmục đích: tránh Alias Microsoft Store \n- Setting - App - Advandced app setting - App execution aliases - tắt python3.exe và python.exe ( nếu có)\nBƯỚC 3: SET LẠI CẤU HÌNH CHO .codex/hooks.json và .scripts/log_hook.py\n- .codex/hooks.json\n{\n  \"description\": \"Log Codex prompts for AI20K\",\n  \"hooks\": {\n    \"UserPromptSubmit\": [\n      {\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"name\": \"log-prompt\",\n            \"command\": \"bash scripts/_pyrun.sh scripts/log_hook.py --tool=codex\",\n            \"commandWindows\": \"scripts\\\\_pyrun.cmd scripts\\\\log_hook.py --tool=codex\",\n            \"timeout\": 10\n          }\n        ]\n      }\n    ],\n    \"Stop\": [\n      {\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"name\": \"log-stop\",\n            \"command\": \"bash scripts/_pyrun.sh scripts/log_hook.py --tool=codex\",\n            \"commandWindows\": \"scripts\\\\_pyrun.cmd scripts\\\\log_hook.py --tool=codex\",\n            \"timeout\": 10\n          }\n        ]\n      }\n    ]\n  }\n}",
+      "author": {
+        "id": "954646600532230214",
+        "name": "nguyenthanhhoan01201",
+        "discriminator": "0000",
+        "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530434079994937454",
+          "url": "https://cdn.discordapp.com/attachments/1530434079642878113/1530434079994937454/image.png?ex=6a6c26ce&is=6a6ad54e&hm=ea7ebadbb339c22340f5698dc3f08cb2d91edab46688e93a84ddeea490964e36&",
+          "fileName": "image.png",
+          "fileSizeBytes": 326691
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 7,
+          "users": [
+            {
+              "id": "805815688244887622",
+              "name": "chungnguyen1083064",
+              "discriminator": "0000",
+              "nickname": "Chungnguyen108",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "952878042856955925",
+              "name": "danhnahh",
+              "discriminator": "0000",
+              "nickname": "danhnahh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/952878042856955925/85cc0e852a1048b841bb395cb2fc7707.png?size=512"
+            },
+            {
+              "id": "954646600532230214",
+              "name": "nguyenthanhhoan01201",
+              "discriminator": "0000",
+              "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+            },
+            {
+              "id": "1464142308927602855",
+              "name": "nguyenngocduongn2004",
+              "discriminator": "0000",
+              "nickname": "G07 - T150-Nguyễn Ngọc Dương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1487383527925481582",
+              "name": "trang.luong",
+              "discriminator": "0000",
+              "nickname": "Luong Thanh Trang",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1487383527925481582/af14ff258f3902e4d3ca120208b81b42.png?size=512"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530434109753786459",
+      "type": "Default",
+      "timestamp": "2026-07-25T11:38:45.856+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "-  .scripts/log_hook.py\nthay:   print(json.dumps({\"status\": \"logged\"}))\nbằng:  if tool != \"codex\":\n                  print(json.dumps({\"status\": \"logged\"}))\n\nBƯỚC 4: CÀI ĐẶT HOOKS\n- Sử dụng luôn terminal trong vs chạy:\npowershell -ExecutionPolicy Bypass -File scripts\\setup_hooks.ps1\nbáo Setup complete là oke\nBƯỚC 5: Thử thôi\ntrong terminal vs gõ: codex (hãy chắc chắn tải codex cli rồi nha)\nchat thử và kiểm tra .ai-log xem có file session.jsonl không",
+      "author": {
+        "id": "954646600532230214",
+        "name": "nguyenthanhhoan01201",
+        "discriminator": "0000",
+        "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532275693541392556",
+      "type": "Default",
+      "timestamp": "2026-07-30T13:36:33.646+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "thankiu my fr nhe",
+      "author": {
+        "id": "1487383527925481582",
+        "name": "trang.luong",
+        "discriminator": "0000",
+        "nickname": "G12 - T029 - Lương Thanh Trang",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1487383527925481582/af14ff258f3902e4d3ca120208b81b42.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "954646600532230214",
+              "name": "nguyenthanhhoan01201",
+              "discriminator": "0000",
+              "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

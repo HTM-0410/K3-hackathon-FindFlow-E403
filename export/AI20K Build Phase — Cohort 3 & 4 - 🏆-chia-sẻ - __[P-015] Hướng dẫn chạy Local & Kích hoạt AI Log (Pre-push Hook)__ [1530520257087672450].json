@@ -1,0 +1,365 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530520257087672450",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "**[P-015] Hướng dẫn chạy Local & Kích hoạt AI Log (Pre-push Hook)**",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:10:56.3509803+07:00",
+  "messages": [
+    {
+      "id": "1530520257087672450",
+      "type": "Default",
+      "timestamp": "2026-07-25T17:21:04.981+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**[P-015] Hướng dẫn Quickstart Local & AI Log (Pre-push)**\n\nChào team \uD83D\uDC4B, base setup cho P-015 (FastAPI + LangGraph, Python 3.13) đã xong. Các bạn làm theo checklist bên dưới để chạy local và bật pre-push hook nhé.\n\n---\n### \uD83D\uDCCB Checklist\n- [ ] Copy `.env.example` → `.env` (điền API Keys)\n- [ ] Install deps: `python -m pip install -r requirements.txt`\n- [ ] Test local: `python -m pytest -q` (6/6 pass)\n- [ ] Run server & test endpoint chat\n- [ ] Setup pre-push hook (Windows)\n- [ ] Test AI log: `python scripts/submit_log.py`\n\n---\n### \uD83D\uDCBB Lệnh PowerShell (Copy-paste)\n\n1️⃣ **Tạo file .env & cài thư viện:**\n```powershell\nCopy-Item .env.example .env -Force\npython -m pip install -r requirements.txt\n```\n\n2️⃣ **Chạy Test & Khởi chạy Server (từ Repo Root):**\n```powershell\npython -m pytest -q\n$env:PYTHONPATH=(Get-Location).Path\npython -m uvicorn src.main:app --host 127.0.0.1 --port 8000\n```\n\n3️⃣ **Test Chat Endpoint:**\n```powershell\n$body = @{ message = 'Xin chao' } | ConvertTo-Json\nInvoke-RestMethod -Method Post -Uri '[http://127.0.0.1:8000/api/v1/chat](http://127.0.0.1:8000/api/v1/chat)' -ContentType 'application/json' -Body $body\n```\n\n4️⃣ **Cài Git Hook AI Log (Windows):**\n```powershell\npowershell -ExecutionPolicy Bypass -File .\\scripts\\setup_hooks.ps1\n```\n\n---\n### \uD83D\uDEE0️ FAQ — Fix lỗi nhanh\n\n\uD83D\uDEA8 **1. `ModuleNotFoundError: No module named 'src'`**\n\uD83D\uDC49 Set `PYTHONPATH` trước khi uvicorn: `$env:PYTHONPATH=(Get-Location).Path`\n\n\uD83D\uDEA8 **2. Lỗi `cannot spawn .git/hooks/pre-push` hoặc WSL**\n\uD83D\uDC49 Dùng PowerShell chạy: `powershell -ExecutionPolicy Bypass -File .\\scripts\\setup_hooks.ps1`\n\n\uD83D\uDEA8 **3. `submit_log.py` báo `No logs to submit`**\n\uD83D\uDC49 Do `.ai-log/session.jsonl` đang rỗng, cần tương tác qua Antigravity/Gemini để sinh log hoặc add entry mẫu.",
+      "author": {
+        "id": "452011766717743105",
+        "name": "nhockiuzzz",
+        "discriminator": "0000",
+        "nickname": "G13-T015-NguyễnQuangHuy-01873",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "768850116589125652",
+              "name": "quangdao4104",
+              "discriminator": "0000",
+              "nickname": "Quang Đào",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1159515762164244531",
+              "name": "tien_05371",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Đặng Tiến Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDC4B",
+          "code": "wave",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44b.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCCB",
+          "code": "clipboard",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4cb.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCBB",
+          "code": "computer",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4bb.svg"
+        },
+        {
+          "id": "",
+          "name": "1️⃣",
+          "code": "one",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/31-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "2️⃣",
+          "code": "two",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/32-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "3️⃣",
+          "code": "three",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/33-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "4️⃣",
+          "code": "four",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/34-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDEE0️",
+          "code": "tools",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6e0.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDEA8",
+          "code": "rotating_light",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6a8.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC49",
+          "code": "point_right",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f449.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531157075290489012",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:31:34.272+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "thêm cả lệnh chạy trên hệ điều hành khác nữa bạn \uD83D\uDE42",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "G13-T015-NguyễnQuangHuy-01873",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "G13-T015-NguyễnQuangHuy-01873",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE42",
+          "code": "slight_smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f642.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531159042821591090",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:39:23.368+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hữu ích lắm lun á!",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "G13-T015-NguyễnQuangHuy-01873",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531363534720733366",
+      "type": "Reply",
+      "timestamp": "2026-07-28T01:11:58.036+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "### \uD83C\uDF4E\uD83D\uDC27 macOS / Linux (Bash / Zsh)\n```bash\n# 1. Setup env & deps\ncp .env.example .env\npython3 -m pip install -r requirements.txt\n\n# 2. Test & Run Server (từ repo root)\npython3 -m pytest -q\nPYTHONPATH=. uvicorn src.main:app --host 127.0.0.1 --port 8000\n\n# 3. Setup Hook & Test API\nbash scripts/setup_hooks.sh\n đây bạn ơi giờ tôi mới check",
+      "author": {
+        "id": "452011766717743105",
+        "name": "nhockiuzzz",
+        "discriminator": "0000",
+        "nickname": "G13-T015-NguyễnQuangHuy-01873",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1159515762164244531",
+          "name": "tien_05371",
+          "discriminator": "0000",
+          "nickname": "G21 - T100 - Đặng Tiến Thành",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1531157075290489012",
+        "channelId": "1530520257087672450",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83C\uDF4E",
+          "code": "apple",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f34e.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC27",
+          "code": "penguin",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f427.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 4
+}

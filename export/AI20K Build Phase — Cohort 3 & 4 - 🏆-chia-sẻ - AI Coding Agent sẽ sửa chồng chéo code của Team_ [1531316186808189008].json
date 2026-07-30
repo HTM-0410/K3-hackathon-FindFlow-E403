@@ -1,0 +1,94 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531316186808189008",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "AI Coding Agent sẽ sửa chồng chéo code của Team?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:18:57.3423464+07:00",
+  "messages": [
+    {
+      "id": "1531316186808189008",
+      "type": "Default",
+      "timestamp": "2026-07-27T22:03:49.414+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hello cả nhà, nay mình được thầy chia sẻ cách quản lý AI coding của Team. chia sẻ với ae tí nha, đóng góp chung cùng phát triển.CMT nếu tooioi sai hoặc thiếu nhé.\n\nlink này sạch: https://viblo.asia/p/huong-dan-nhap-mon-vibe-coding-tu-y-tuong-den-san-pham-bA4688blLKv\n\nKhi làm việc nhóm ae sẽ gặp nhiều AI coding agent khác nhau claude, codex...Vấn đề cốt lõi không phải là sử dụng AI nào, mà là KHÔNG KIỂM SOÁT ĐƯỢC PHẠM VI thay đổi và trách nhiệm của thành viên sử dụng AI.\n\nCách xử lý tốt nhất là ae áp dụng ba nguyên tắc:\n- Giới hạn phạm vi thay đổi, bắt buộc review và người sử dụng AI phải chịu trách nhiệm hoàn toàn với code được commit.\n\n1. Giới hạn phạm vi AI được phép sửa\nMỗi prompt cần ghi rõ, hoặc chắc cú thì làm task nào hãy tạo .md cho task đó. trong đó ae quy định\n- File hoặc module được phép thay đổi.\n- Khu vực không được phép sửa.\n- Không tự ý refactor ngoài yêu cầu.\n- Phải báo trước nếu cần sửa thêm file. ( ae chú ý phần này, có nhiều ae sẽ bật 'full access' là toang đấy)\n\n2. Chia rõ quyền sở hữu code ( cái này ae phải nên thống nhất ngay từ đầu, ai làm gì, quản lý như nào, ai chịu trách nhiệm...)\n  Mỗi module cần có người chịu trách nhiệm. Những khu vực quan trọng như database, authentication, shared contract và CI/CD phải được người code tốt nhất (không hẳn là tốt nhất nhưng có khả năng nhất). mỗi người làm trên một branch riêng, mỗi lần chỉ nên sửa một vấn đề cụ thể.\n\n3. Người sử dụng phải hiểu code\nNgười code vào dự án vẫn phải:\n- Hiểu code làm gì.\n- Kiểm tra xem có ảnh hưởng phần khác không.\n- Chạy thử và kiểm tra lỗi.\n- Chịu trách nhiệm nếu code gây ra vấn đề.\n\n4. Dùng hệ thống để bắt buộc review\nTeam nên cấu hình GitHub để:\n- Không ai được push trực tiếp vào main.\n- Pull Request phải có thông báo.\n- Build và test phải chạy thành công.\n- Phần code quan trọng phải được đúng người phụ trách duyệt.\nGitHub hỗ trợ protected branch, ruleset, status check và yêu cầu Code Owner review trước khi merge.",
+      "author": {
+        "id": "954646600532230214",
+        "name": "nguyenthanhhoan01201",
+        "discriminator": "0000",
+        "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Hướng Dẫn Nhập Môn Vibe Coding: Từ Ý Tưởng Đến S...",
+          "url": "https://viblo.asia/p/huong-dan-nhap-mon-vibe-coding-tu-y-tuong-den-san-pham-bA4688blLKv",
+          "timestamp": null,
+          "description": "Khi công nghệ AI ngày càng phát triển, Vibe Coding cũng đang trở nên phổ biến hơn bao giờ hết. Ý tưởng chính của Vibe Coding rất đơn giản: bạn mô tả bằng ngôn ngữ tự nhiên điều mình muốn xây dựng, và...",
+          "color": "#5488C7",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/__K49bw3W3EHhG3NF92KFAxrF4822O62IkdXo_hZ50I/https/images.viblo.asia/fde2226c-e9f5-48a2-b984-6c6cfdd6fc87.png",
+            "canonicalUrl": "https://images.viblo.asia/fde2226c-e9f5-48a2-b984-6c6cfdd6fc87.png",
+            "width": 825,
+            "height": 433
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "954646600532230214",
+              "name": "nguyenthanhhoan01201",
+              "discriminator": "0000",
+              "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

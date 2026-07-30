@@ -1,0 +1,95 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530989893952733265",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Tại sao 80% thời gian của một dự án AI nằm ở Data và Workflow, chỉ 20% là Model?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:18:03.1991334+07:00",
+  "messages": [
+    {
+      "id": "1530989893952733265",
+      "type": "Default",
+      "timestamp": "2026-07-27T00:27:15.135+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tại sao 80% thời gian của một dự án AI là Data & Workflow, chỉ 20% là Model?\n\nKhi mới học AI, mình từng nghĩ phần quan trọng nhất là chọn model: GPT hay Gemini, XGBoost hay Transformer... Nhưng càng tham gia dự án, mình càng nhận ra model chỉ là một mảnh ghép của cả hệ thống.\n\nPhần lớn thời gian của một dự án thực tế lại nằm ở những việc như:\n\n* Hiểu đúng bài toán và pain point của người dùng.\n* Thu thập, làm sạch và chuẩn hóa dữ liệu.\n* Thiết kế pipeline xử lý dữ liệu.\n* Viết test và đánh giá bằng các metric phù hợp.\n* Triển khai, theo dõi log và cải thiện sau khi đưa vào sử dụng.\n\nMột model mạnh cũng không thể bù đắp cho dữ liệu kém chất lượng. Câu nói  \"Garbage In, Garbage Out\" vẫn luôn đúng: dữ liệu đầu vào không tốt thì đầu ra khó có thể tốt.\n\nHơn nữa, ngày nay việc sử dụng các mô hình mạnh đã trở nên dễ dàng hơn rất nhiều. Chúng ta có thể dùng GPT, Gemini, Llama hay Qwen chỉ qua vài dòng API. Điều tạo nên sự khác biệt không còn nằm ở việc dùng model nào, mà ở việc xây dựng dữ liệu, workflow và quy trình đánh giá đáng tin cậy.\n\nTheo mình, đây cũng là lý do các doanh nghiệp đầu tư nhiều vào Data Engineering, MLOps và AI Engineering. Model có thể thay đổi rất nhanh, nhưng dữ liệu chất lượng và workflow tốt mới là nền tảng giúp một sản phẩm AI hoạt động ổn định và có thể mở rộng.\n\nMột dự án AI thành công không phải vì chọn được model mạnh nhất, mà vì giải quyết đúng bài toán bằng dữ liệu tốt và một quy trình đủ tin cậy.",
+      "author": {
+        "id": "623416152973901834",
+        "name": "hoainem1401",
+        "discriminator": "0000",
+        "nickname": "G04-T138 - Hoài Nam",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "623416152973901834",
+              "name": "hoainem1401",
+              "discriminator": "0000",
+              "nickname": "G04-T138 - Hoài Nam",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "755413244394471514",
+              "name": "khoi1140329",
+              "discriminator": "0000",
+              "nickname": "T138 - Ngô Minh Khôi - 01927",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1521412926391586907",
+              "name": "dfc12122002",
+              "discriminator": "0000",
+              "nickname": "Ga` Trầm Cảm",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

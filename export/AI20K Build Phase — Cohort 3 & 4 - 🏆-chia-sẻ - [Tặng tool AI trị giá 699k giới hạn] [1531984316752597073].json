@@ -1,0 +1,250 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531984316752597073",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[Tặng tool AI trị giá 699k giới hạn]",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:03:22.5396308+07:00",
+  "messages": [
+    {
+      "id": "1531984316752597073",
+      "type": "Default",
+      "timestamp": "2026-07-29T18:18:44.006+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chúng mình đang cần các thông tin thực tế. Chúng mình mong các bạn sẽ hỗ trợ điền khảo sát với cảm nhận chân thực nhất. Để thay lời cảm ơn chúng mình sẽ gửi tặng các tool vô cùng hữu ích là quà tặng cho các bạn ở page cuối nha \uD83E\uDD70\uD83C\uDF89\n\nhttps://docs.google.com/forms/d/e/1FAIpQLSeQy23sxAWRQ_PABwAlZy_iREDeQhiDIbEC_KYyWliXsioRag/viewform?usp=dialog",
+      "author": {
+        "id": "1037349661633155142",
+        "name": "hoamai0422",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Thị Hoa Mai - 01317",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1037349661633155142/f74bdb2c00cd4624536bba5bc74f5aaf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Khảo sát trải nghiệm tìm & thuê căn hộ/studio (HCM & H...",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSeQy23sxAWRQ_PABwAlZy_iREDeQhiDIbEC_KYyWliXsioRag/viewform?usp=dialog",
+          "timestamp": null,
+          "description": "\uD83C\uDFE0 Chỉ khoảng 7 phút — hãy giúp team AAA xây dựng trợ lý AI có khả năng gợi ý đúng những căn nhà thật sự ĐÁNG ĐI XEM.\n\uD83D\uDD12 Nội dung khảo sát được bảo mật. Email chỉ được sử dụng để gửi quà cảm ơn.\n\uD83C\uDF81 Hoàn tất khảo sát và để lại email, bạn được chọn 1 trong...",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/RUeDq0a1l41MXE2PTP_6SBM_V4Eij8z0e9054fAOZBo/https/lh6.googleusercontent.com/SNsLeZdPMDWZe7KkuZH6tvtR-5f7-FpSPyvD2Oupeet5h5wqX2Dfta17-bXUjkwz4LzAYwNn0ha7P68%3Dw1200-h630-p",
+            "canonicalUrl": "https://lh6.googleusercontent.com/SNsLeZdPMDWZe7KkuZH6tvtR-5f7-FpSPyvD2Oupeet5h5wqX2Dfta17-bXUjkwz4LzAYwNn0ha7P68=w1200-h630-p",
+            "width": 200,
+            "height": 200
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": [
+            {
+              "id": "",
+              "name": "\uD83C\uDFE0",
+              "code": "house",
+              "isAnimated": false,
+              "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3e0.svg"
+            },
+            {
+              "id": "",
+              "name": "\uD83D\uDD12",
+              "code": "lock",
+              "isAnimated": false,
+              "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f512.svg"
+            },
+            {
+              "id": "",
+              "name": "\uD83C\uDF81",
+              "code": "gift",
+              "isAnimated": false,
+              "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f381.svg"
+            }
+          ]
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "354120640237797377",
+              "name": "ytesect21",
+              "discriminator": "0000",
+              "nickname": "Mr P",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/354120640237797377/31fdcdc9bfdb4601044ae9f3bbb86d88.png?size=512"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "1037349661633155142",
+              "name": "hoamai0422",
+              "discriminator": "0000",
+              "nickname": "T038 - Trần Thị Hoa Mai - 01317",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1037349661633155142/f74bdb2c00cd4624536bba5bc74f5aaf.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83E\uDD70",
+          "code": "smiling_face_with_3_hearts",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f970.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83C\uDF89",
+          "code": "tada",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f389.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531985175616028734",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-29T18:22:08.775+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: [Tặng tool AI trị giá 699k giới hạn]",
+      "author": {
+        "id": "1037349661633155142",
+        "name": "hoamai0422",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Thị Hoa Mai - 01317",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1037349661633155142/f74bdb2c00cd4624536bba5bc74f5aaf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531987334860636251",
+      "type": "Default",
+      "timestamp": "2026-07-29T18:30:43.579+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Các bạn ơi mình chọn option không tìm nhà gần đây, xong đến đoạn sau form lại có câu như này, mình gợi ý các bạn nên để thêm option other vào nhé @@, vì có case như mình là không tìm nhà lâu hơn khoảng ở trên các đáp án",
+      "author": {
+        "id": "1525362771770867732",
+        "name": "a1vin14105",
+        "discriminator": "0000",
+        "nickname": "GR16 - T112 - Lương Quốc Khánh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531987334613176500",
+          "url": "https://cdn.discordapp.com/attachments/1531984316752597073/1531987334613176500/image.png?ex=6a6bdea3&is=6a6a8d23&hm=0fab7f279645022da216913ed23fd73574acef0347c2602ec3df8236c4ff1bd5&",
+          "fileName": "image.png",
+          "fileSizeBytes": 20453
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "1037349661633155142",
+              "name": "hoamai0422",
+              "discriminator": "0000",
+              "nickname": "T038 - Trần Thị Hoa Mai - 01317",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1037349661633155142/f74bdb2c00cd4624536bba5bc74f5aaf.png?size=512"
+            },
+            {
+              "id": "1529724336989016151",
+              "name": "hoangquanhq137",
+              "discriminator": "0000",
+              "nickname": "Tran Hoang Quan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

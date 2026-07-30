@@ -1,0 +1,95 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531509068034867274",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Làm Slide Bằng AI: Dùng HTML Cho Nhanh, Prompt Đúng Ý",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:17:45.2785395+07:00",
+  "messages": [
+    {
+      "id": "1531509068034867274",
+      "type": "Default",
+      "timestamp": "2026-07-28T10:50:15.882+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thay vì ngồi loay hoay đổi màu, chỉnh khung trong PowerPoint cả buổi, mình hay nhờ AI làm slide bằng HTML. AI viết code làm hiệu ứng, màu sắc mượt hơn hẳn, lại xem trước được ngay.\nĐể không phải sửa đi sửa lại, mình thường làm theo các bước sau:\n\n1. Chốt nội dung trước, chưa vội tạo file\nĐừng bảo AI \"làm slide đẹp cho mình\" ngay. Hãy kêu nó viết outline tiêu đề + ý chính từng trang dạng văn bản trước. Bạn đọc và duyệt nội dung cho chuẩn rồi mới bắt đầu chuyển sang khâu thiết kế.\n\n2. Mô tả màu sắc và phong cách rõ ràng\nTránh nói chung chung \"làm đẹp nhé\". Hãy cho AI biết cụ thể:\n-Màu sắc: Cho mã màu hex hoặc tả gu (tông tối công nghệ, pastel nhẹ nhàng...).\n-Phong cách & Font: Minimalist, hiện đại hay trang trọng; dùng font không chân (sans-serif)...\n-Tỷ lệ & Bố cục: Chọn khung 16:9, chia cột hay dùng icon thay ảnh.\n\n3. Test trước 1 slide mẫu\nNhờ AI làm thử slide bìa trước. Khi mình ưng style đó rồi mới bảo AI áp dụng cho toàn bộ các trang còn lại.\n\n4. Xuất file và hoàn thiện\nKêu AI xuất code HTML hoàn chỉnh. Nếu bài dài trên 12 trang, bạn nên chia ra làm từng cụm 5 trang một cho mượt.\n\nTrick mình hay dùng:\n-Gói gọn chữ: Giới hạn 1 tiêu đề + tối đa 4 ý ngắn/trang.\n-Nhất quán: Yêu cầu dùng chung 1 kiểu font, cùng cỡ tiêu đề cho toàn bộ bài.\n-Sửa chuẩn mục tiêu: Sửa trang nào chỉ cần dặn \"chỉ sửa trang 3, giữ nguyên các trang khác\".",
+      "author": {
+        "id": "869749036838711307",
+        "name": "khie.em",
+        "discriminator": "0000",
+        "nickname": "T220 - Nguyễn Thế Khiêm - 01036",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "869749036838711307",
+              "name": "khie.em",
+              "discriminator": "0000",
+              "nickname": "T220 - Nguyễn Thế Khiêm - 01036",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "887721042976596000",
+              "name": "hoanglinh1056",
+              "discriminator": "0000",
+              "nickname": "Hoàng Linh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/887721042976596000/20cb4202d17c175ac2f9a3be76294d7e.png?size=512"
+            },
+            {
+              "id": "1001846191836901486",
+              "name": "minu_2k5",
+              "discriminator": "0000",
+              "nickname": "minu2k5",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

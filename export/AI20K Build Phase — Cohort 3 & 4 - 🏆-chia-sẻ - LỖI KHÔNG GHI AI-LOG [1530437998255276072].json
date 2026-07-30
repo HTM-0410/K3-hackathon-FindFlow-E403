@@ -1,0 +1,86 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530437998255276072",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "LỖI KHÔNG GHI AI-LOG",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:17:07.5896715+07:00",
+  "messages": [
+    {
+      "id": "1530437998255276072",
+      "type": "Default",
+      "timestamp": "2026-07-25T11:54:12.947+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Xin chào mọi người,\nMình test và phát hiện lỗi ở script _pyrun.sh: script ưu tiên tìm python3 trước. Trên Windows, python3 luôn trỏ vào file placeholder giả do chính Windows tự sinh sẵn tại %LOCALAPPDATA%\\Microsoft\\WindowsApps\\python3.exe (không phải do mình cài) — file này tồn tại nên script coi như \"tìm thấy\", nhưng chạy lên thì lỗi (báo redirect Microsoft Store). Vì script dùng exec nên dừng ngay tại đây, không bao giờ rớt xuống thử python — trong khi Python thật (python.exe) đang nằm sẵn ở %LOCALAPPDATA%\\Programs\\Python\\Python312\\ và hoàn toàn chạy tốt, nhưng không bao giờ được dùng tới. Hệ quả: log AI usage (.ai-log/session.jsonl) không bao giờ được ghi trên Windows, ảnh hưởng bất kỳ ai cài Python theo đúng hướng dẫn Quick Start của template.\n\n\nCách khuyến nghị: Settings → Apps → Advanced app settings → App execution aliases → tắt toggle python.exe và python3.exe. Đây là cách Microsoft cho phép chính thức, không cần quyền admin, không lo bị Windows Update ghi đè lại.",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,122 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530757186005766297",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Lập team xong rồi? Đừng brainstorm ý tưởng.",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:15:14.1517847+07:00",
+  "messages": [
+    {
+      "id": "1530757186005766297",
+      "type": "Default",
+      "timestamp": "2026-07-26T09:02:33.237+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "***TL;DR: Đừng vội brainstorm hay code. 48 giờ đầu tiên sẽ quyết định cả 6 tuần tiếp theo.***\n\n## 1. Giới thiệu thật nhanh\n\nDành khoảng 15 phút để mỗi thành viên chia sẻ:\n\n* Mạnh về gì? (AI, Backend, Frontend, Business…)\n* Đã từng làm dự án nào chưa?\n* Muốn đảm nhận vai trò nào trong team?\n\n## 2. Thống nhất cách làm việc\n\nChốt ngay:\n\n* Kênh liên lạc (Discord, Messenger…)\n* Lịch họp cố định ngoài mentor duty\n* Công cụ quản lý (Notion, Trello,…)\n\nThống nhất sớm sẽ giúp cả đội tránh cập rập về sau.\n\n## 3. Research song song\n\nKhi đề bài công bố, mỗi thành viên hãy tự nghiên cứu 2–3 hướng giải quyết trước buổi họp tiếp theo. Cách này giúp đội có nhiều góc nhìn hơn thay vì bám vào ý tưởng đầu tiên được nhắc đến.\n\n## 4. Phân vai tạm thời\n\nChưa cần cố định, nhưng nên có người phụ trách:\n\n* Điều phối tiến độ\n* AI/Backend\n* Frontend/UX\n* Business/Pitch\n\nVai trò hoàn toàn có thể thay đổi sau khi chốt đề tài.\n\n## 5. Đặt mục tiêu cho tuần đầu\n\nĐừng đặt mục tiêu “xây sản phẩm”. Thay vào đó:\n\n* Chốt đề tài\n* Xác thực tính khả thi\n* Có roadmap rõ ràng\n* Mỗi người đều biết mình sẽ làm gì từ tuần sau\n\n> Một tuần đầu dành cho việc ra quyết định tốt sẽ tiết kiệm nhiều tuần sửa sai về sau. Đừng vội code khi cả đội còn chưa thống nhất hướng đi.",
+      "author": {
+        "id": "1529844266573238354",
+        "name": "lolavine777",
+        "discriminator": "0000",
+        "nickname": "T082 - Nguyễn Đăng Long - 01934",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "805128408568692786",
+              "name": "hoanghoanghoanghoang.",
+              "discriminator": "0000",
+              "nickname": "G02 - T168 - Lê Việt Hoàng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "853647680718241792",
+              "name": "noble_chipmunk_94959",
+              "discriminator": "0000",
+              "nickname": "kiyo",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "953303308267815003",
+              "name": "hieu2511",
+              "discriminator": "0000",
+              "nickname": "ChuQuangHieu",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1525362771770867732",
+              "name": "a1vin14105",
+              "discriminator": "0000",
+              "nickname": "a1vin",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+            },
+            {
+              "id": "1527561125980405780",
+              "name": "ducnguyennvan",
+              "discriminator": "0000",
+              "nickname": "T015 - Nguyễn Văn Đức - 01422",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1527561125980405780/96a38f45827bace8e5750e545ffd55ed.png?size=512"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "T082 - Nguyễn Đăng Long - 01934",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

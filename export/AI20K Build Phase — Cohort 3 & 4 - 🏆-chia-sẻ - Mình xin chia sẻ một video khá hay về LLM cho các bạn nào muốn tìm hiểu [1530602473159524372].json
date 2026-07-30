@@ -1,0 +1,104 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530602473159524372",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Mình xin chia sẻ một video khá hay về LLM cho các bạn nào muốn tìm hiểu",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:18:10.522119+07:00",
+  "messages": [
+    {
+      "id": "1530602473159524372",
+      "type": "Default",
+      "timestamp": "2026-07-25T22:47:46.82+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Qua bài giảng Day 1 về LLM, mình muốn chia sẻ thêm về một video cho các bạn muốn hiểu LLM một cách có hệ thống, bài giảng “Building Large Language Models” của Stanford CS229.\n\nGiá trị lớn nhất của video là giúp ta có được bức tranh tổng thể về cách một mô hình ngôn ngữ lớn được xây dựng. Thay vì chỉ tập trung vào attention hay Transformer, video đi qua các thành phần quan trọng như dữ liệu, tokenizer, quá trình huấn luyện, cách đánh giá mô hình và các bước biến một base model thành trợ lý có thể làm theo hướng dẫn.\n\nĐể tạo ra một LLM thực sự, chúng ta còn phải trả lời hàng loạt câu hỏi khác:\n\n- Dữ liệu được thu thập, làm sạch và trộn như thế nào?\n- Tokenizer ảnh hưởng ra sao đến chất lượng và chi phí?\n- Nên chọn kích thước mô hình và lượng dữ liệu thế nào?\n- Pretraining khác instruction tuning và alignment ở đâu?\n- Làm thế nào để đánh giá một mô hình ngoài vài benchmark accuracy?\n- Chi phí huấn luyện, inference và serving đến từ những thành phần nào?\n\nSau khi xem, bạn chưa thể tự xây dựng ngay một LLM hoàn chỉnh, nhưng sẽ có một bản đồ kiến thức rõ ràng hơn. Bạn sẽ biết những khái niệm nào quan trọng, chúng liên hệ với nhau ra sao và nên học sâu phần nào tiếp theo.\n\nĐây là một video tổng quan tốt cho người chưa chuyên sâu về AI, sinh viên, lập trình viên hoặc bất kỳ ai muốn hiểu LLM ở mức hệ thống thay vì chỉ biết một vài thuật ngữ rời rạc. Bài giảng cũng nhấn mạnh rằng dù kiến trúc mạng neural là quan trọng, nhưng trong thực tế công nghiệp, dữ liệu, phương pháp đánh giá và hệ thống mới là những yếu tố quyết định sự thành công của một mô hình ngôn ngữ lớn\n\nLink video:\nhttps://youtu.be/9vM4p9NN0Ts?si=uexXkeBN_d-DzWoG",
+      "author": {
+        "id": "906049859713376308",
+        "name": "cavani4756",
+        "discriminator": "0000",
+        "nickname": "T090 - Nguyễn Văn Minh - 01972",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/906049859713376308/041d2f6eef44aba38f3017b053f56c03.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Stanford CS229 I Machine Learning I Building Large Language Models ...",
+          "url": "https://www.youtube.com/watch?v=9vM4p9NN0Ts",
+          "timestamp": null,
+          "description": "For more information about Stanford's Artificial Intelligence programs visit: https://stanford.io/ai\n\nThis lecture provides a concise overview of building a ChatGPT-like model, covering both pretraining (language modeling) and post-training (SFT/RLHF). For each component, it explores common practices in data collection, algorithms, and evaluatio...",
+          "color": "#FF0000",
+          "author": {
+            "name": "Stanford Online",
+            "url": "https://www.youtube.com/channel/UCBa5G_ESCn8Yd4vw5U-gIcg"
+          },
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/KYQzGOHAVbCVjREc1xeIDl0MkEOdDINpkgcPhy6_VUE/https/i.ytimg.com/vi/9vM4p9NN0Ts/maxresdefault.jpg",
+            "canonicalUrl": "https://i.ytimg.com/vi/9vM4p9NN0Ts/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "video": {
+            "url": "https://www.youtube.com/embed/9vM4p9NN0Ts",
+            "canonicalUrl": "https://www.youtube.com/embed/9vM4p9NN0Ts",
+            "width": 1280,
+            "height": 720
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

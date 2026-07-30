@@ -1,0 +1,198 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530912790624075898",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Chia sẻ kinh nghiệm thực chiến build AI Product với Vibe Coding",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:12:59.888173+07:00",
+  "messages": [
+    {
+      "id": "1530912790624075898",
+      "type": "Default",
+      "timestamp": "2026-07-26T19:20:52.269+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chắc hẳn các bạn AI20K đã, đang hoặc sẽ dùng Vibe Coding để build AI Product. Mình viết bài này để chia sẻ một số kinh nghiệm gần 2 năm build AI Product thực tế cho doanh nghiệp, hy vọng sẽ giúp các bạn có thêm một góc nhìn và phương pháp xây dựng sản phẩm hiệu quả hơn.\n\n**1. Vibe Coding là gì?**\n\nHiểu đơn giản:\n\nVIBE = Nghĩ, thiết kế và truyền đạt ý định (Intent) cho AI.\nCODE = AI xây dựng, kiểm tra, triển khai và tối ưu hệ thống.\n\nQuy trình cơ bản sẽ là:\n**Ý tưởng → AI sinh code → Preview → Review → Test → Deploy Preview → Production**\n\nVới sự phát triển mạnh của AI Agent, IDE Agent và Agent Coding, nhiều người hiện nay nghĩ rằng Vibe Coding đơn giản chỉ là \"ra lệnh cho AI rồi để AI viết 100% code\".\n\nTheo mình, đó mới chỉ là phần nổi của tảng băng thôi.\n\n**2. Vậy có phải biết viết prompt là đủ?**\n\nKhoảng năm 2024, khi AI Agent chưa phát triển mạnh (thời mình làm với v0, Lovable hay VS Code AI đời đầu), AI chủ yếu generate từng đoạn code theo từng prompt, khả năng đọc context còn ngắn và gần như không có memory dài hạn. AI thường tạo cái mới nhưng lại quên những gì vừa làm trước đó.\n\nLúc đó, để AI code đúng và hạn chế bug, bạn phải có kỹ năng Prompt Engineering rất tốt.\n\nNhưng từ giữa năm 2025, khi Cursor, Windsurf, Claude Code, Codex, Antigravity... kết hợp với MCP và hệ sinh thái Tool Use phát triển mạnh, cách làm đã thay đổi rất nhiều.\n\nCác model hiện đại có khả năng xử lý lượng context rất lớn, hiểu được nhiều tài liệu, nhiều file và nhiều quyết định của dự án hơn trước.\n\nTrọng tâm bây giờ không còn là Prompt Engineering - viết prompt thật dài, thật hay, thật logic.\n\nMà đã chuyển sang Context Engineering - kỹ thuật thiết kế, tổ chức và cung cấp đúng ngữ cảnh để AI có thể hiểu và làm việc như một thành viên trong team.\n\nAI giờ đây có khả năng đọc và hiểu một lượng dữ liệu rất lớn. Vì vậy, bài toán của Vibe Coding hiện đại không còn là viết prompt hay, mà là cung cấp đúng context và cùng AI xây dựng hệ thống.\n\nVậy làm thế nào? Đọc tiếp ở dưới ->",
+      "author": {
+        "id": "1485332134079238215",
+        "name": "david_463771",
+        "discriminator": "0000",
+        "nickname": "T038- Hoang - 01198",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530912791081259070",
+          "url": "https://cdn.discordapp.com/attachments/1530912790624075898/1530912791081259070/Screenshot_2026-07-26_at_19.19.55.png?ex=6a6bea64&is=6a6a98e4&hm=d6e83c7756431a6da2ffbf8e824ede08478212ba7bbe8e15ad988c6341250302&",
+          "fileName": "Screenshot_2026-07-26_at_19.19.55.png",
+          "fileSizeBytes": 535445
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "865235650806939678",
+              "name": "phamtienanh",
+              "discriminator": "0000",
+              "nickname": "anhpt",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/865235650806939678/21ef2c7057c8f19aed6bc7c9f5e9cb45.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1529724336989016151",
+              "name": "hoangquanhq137",
+              "discriminator": "0000",
+              "nickname": "Tran Hoang Quan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530913942543667240",
+      "type": "Default",
+      "timestamp": "2026-07-26T19:25:26.908+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**3. Làm sao để Vibe Coding hoàn chỉnh?**\n**Giai đoạn 1: TRƯỚC KHI CODE**\nĐây là bước quan trọng nhất quyết định AI có hiểu đúng \"Vibe\" của bạn hay không. Nếu context sai thì code sinh ra gần như chắc chắn sẽ sai.\n\n**1. PLAN (Lập kế hoạch)**\n- Xác định rõ bài toán cần giải quyết.\n- Sản phẩm phục vụ ai?\n- Business logic và mục tiêu của sản phẩm là gì?\n- Thay vì nghĩ theo từng tính năng riêng lẻ, hãy nghĩ theo góc nhìn của cả hệ thống. Các Agent nào sẽ tương tác với nhau?\n\n**2. SPEC (Khóa yêu cầu)**\n- Viết PRD hoặc SPEC cho dự án.\n- Mô tả business flow, database, API, UI guideline và các ràng buộc kỹ thuật.\n- Quan trọng nhất là đưa đúng và đủ dữ liệu. AI cần context về dự án cũ, API hiện có, tài liệu nền tảng... để hạn chế hallucination.\n\n**3. SETUP (Môi trường & Công cụ)**\n- Lựa chọn model AI phù hợp cho từng tác vụ.\n- Thiết lập IDE, workspace và môi trường phát triển.\n- Chuẩn bị prompt, rules, context, memory và các công cụ AI cần thiết trước khi bắt đầu code.",
+      "author": {
+        "id": "1485332134079238215",
+        "name": "david_463771",
+        "discriminator": "0000",
+        "nickname": "T038- Hoang - 01198",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530915229838479431",
+      "type": "Default",
+      "timestamp": "2026-07-26T19:30:33.823+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Giai đoạn 2: Trong khi code**\n\nĐừng yêu cầu AI viết toàn bộ ứng dụng trong một prompt. Hãy chia nhỏ bài toán.\n\n**1. Build foudation (Xây móng)**\n- Khởi tạo cấu trúc thư mục.\n- Boilerplate.\n- Design System\n- Routing\n- Authentication.\n- Database Schema.\n- Kiến trúc hệ thống.\n\nĐảm bảo phần móng đủ vững trước khi xây UI hoặc tính năng.\n\n**2. Build từng phần**\n\n- Thay vì làm xong toàn bộ Frontend rồi mới đến Backend, hãy xây từng tính năng hoàn chỉnh theo luồng:\n\nUI ->  Business Logic -> Database\n\nBạn mô tả trải nghiệm mong muốn -> AI sinh code -> Bạn review -> AI chỉnh sửa -> Lặp lại cho từng tính năng.\n\n**3. TEST (Human-in-the-loop)**\n\n- Sau khi AI sinh code, hãy chạy ngay.\n- Đừng cố đọc toàn bộ source code để tìm bug.\nThay vào đó:\n- Đưa log lỗi cho AI.\n- Đưa ảnh UI bị lệch.\n- Đưa stack trace.\nAI sẽ xử lý nhanh và chính xác hơn nhiều.\nCó thể kết hợp AI để tự động sinh Unit Test và mở rộng sang Integration Test khi cần để hạn chế lỗi khi scale.",
+      "author": {
+        "id": "1485332134079238215",
+        "name": "david_463771",
+        "discriminator": "0000",
+        "nickname": "T038- Hoang - 01198",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530917630674866336",
+      "type": "Default",
+      "timestamp": "2026-07-26T19:40:06.227+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Giai đoạn 3: Sau khi code**\nĐưa sản phẩm từ môi trường Lab ra thực tế.\n\n**1. Preview**\nDeploy lên môi trường Staging hoặc Preview (Vercel, Netlify...) để kiểm thử trên nhiều thiết bị.\n\n**2. Fix**\n- Khi có bug -> Khoanh đúng file hoặc module bị lỗi.\n- Chỉ cung cấp đúng context của phần đó cho AI.\n- Không nên đưa toàn bộ source code chỉ để sửa một bug nhỏ. Điều này vừa tốn context vừa khiến AI dễ sửa nhầm những phần đang hoạt động ổn định.\n\n3. Production\nTriển khai chính thức.\n\n4. Measure\n- Gắn tracking.\n- Logging.\n- Thu thập phản hồi người dùng.\n- Phân tích hiệu năng.\n- Tiếp tục quay lại bước PLAN cho phiên bản tiếp theo.\n\n**Kết luận**\n\nRất nhiều người hiện nay chỉ là \"Vibe Coder thuần\".\nHọ biết chat với AI nhưng chưa hiểu về thiết kế hệ thống và cách xây dựng context cho AI.\n\nKết quả là AI có thể sinh ra những đoạn code chạy được ở giai đoạn đầu, nhưng khi ghép thành một sản phẩm thực tế thì rất khó mở rộng, bảo trì và vận hành.\n\nVibe Coding không phải là kỹ năng viết prompt.\nĐó là kỹ năng thiết kế một hệ thống để AI có đủ ngữ cảnh làm việc.\nPrompt chỉ giúp AI tạo ra một đoạn code.\nContext mới giúp AI hiểu được toàn bộ sản phẩm. \nĐây là kỹ thuật vibe coding cơ bản nhất để bạn có thể tạo ra sản phẩm có thể production hoàn chỉnh. Dĩ nhiên ở thời diểm hiện tại còn có nhiều kỹ thuật khác như  Agent Engineering -> AI Product Engineering ->... nữa để Agent tự làm việc tốt hơn, kiểm soát Agent tốt hơn vì Model AI ngày càng thông minh càng nguy hiểm.\n\nChúc các bạn thành công!",
+      "author": {
+        "id": "1485332134079238215",
+        "name": "david_463771",
+        "discriminator": "0000",
+        "nickname": "T038- Hoang - 01198",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

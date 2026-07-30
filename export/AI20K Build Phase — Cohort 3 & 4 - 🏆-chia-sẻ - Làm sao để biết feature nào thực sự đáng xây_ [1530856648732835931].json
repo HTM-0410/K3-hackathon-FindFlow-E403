@@ -1,0 +1,111 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530856648732835931",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Làm sao để biết feature nào thực sự đáng xây?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:18:06.9691084+07:00",
+  "messages": [
+    {
+      "id": "1530856648732835931",
+      "type": "Default",
+      "timestamp": "2026-07-26T15:37:46.999+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trong quá trình làm Product, team thường có rất nhiều idea nhưng nguồn lực lại có hạn. Nếu ưu tiên theo cảm tính, cả team có thể mất vài tuần cho một feature “nghe hay” nhưng ít tạo ra giá trị thực tế.\n\nMột framework hữu ích để xử lý việc này là RICE:\n1. Reach: Có bao nhiêu người dùng bị ảnh hưởng?\n2. Impact: Tính năng tác động đến mục tiêu quan trọng đến đâu?\n3. Confidence: Các ước tính có đáng tin không?\n4. Effort: Cần bao nhiêu thời gian và nhân lực?\n\nCông thức:\nRICE Score = (Reach × Impact × Confidence) / Effort\n\nVí dụ, một nền tảng học tập AI đang cân nhắc:\nA. AI tóm tắt bài giảng: RICE = 120\nB. Chatbot tư vấn lộ trình: RICE = 25\n\nDù chatbot nghe hấp dẫn hơn, tính năng tóm tắt có tác động rõ ràng, độ tin cậy cao và tốn ít nguồn lực hơn nên đáng được ưu tiên trước.\n\n-> Bài học mình rút ra là: đừng chọn feature vì nó “xịn” nhất. Hãy chọn feature tạo ra nhiều giá trị nhất so với nguồn lực phải bỏ ra.\nRICE không quyết định thay team, nhưng giúp mọi người thảo luận dựa trên dữ liệu thay vì cảm tính.",
+      "author": {
+        "id": "917027356328214569",
+        "name": "minhduc_24117976",
+        "discriminator": "0000",
+        "nickname": "T120 - Tô Minh Đức - 01043",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/917027356328214569/a987d3a5038a777ccc6ad55c872b0ae8.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530856649424638052",
+          "url": "https://cdn.discordapp.com/attachments/1530856648732835931/1530856649424638052/content.png?ex=6a6bb61b&is=6a6a649b&hm=58f7163e90b7a2976959e55fc913fe6d4a8e9b193ce47041a031181fa046e123&",
+          "fileName": "content.png",
+          "fileSizeBytes": 133982
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "917027356328214569",
+              "name": "minhduc_24117976",
+              "discriminator": "0000",
+              "nickname": "T120 - Tô Minh Đức - 01043",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/917027356328214569/a987d3a5038a777ccc6ad55c872b0ae8.png?size=512"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

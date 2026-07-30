@@ -1,0 +1,190 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530811415139582063",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "\uD83D\uDD25 [HACK] Mình ước biết cách \"hack\" này sớm hơn khi mới học AI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:14:06.6912225+07:00",
+  "messages": [
+    {
+      "id": "1530811415139582063",
+      "type": "Default",
+      "timestamp": "2026-07-26T12:38:02.47+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình nhận ra một điều khá hay trong quá trình học AI:\n\nSau mỗi bài Lab, thay vì chỉ làm xong rồi chuyển sang bài tiếp theo, mình thử dành chút thời gian để **viết lại hoặc chia sẻ những gì mình vừa học được**. Có khi chỉ là vài dòng tóm tắt, một mẹo nhỏ, hoặc một kiến thức bên lề mình tìm hiểu thêm.\n\nCàng chia sẻ, mình càng thấy kiến thức \"thấm\" hơn.\n\nCó một nguyên lý rất nổi tiếng là **Kỹ thuật Feynman**: nếu bạn có thể giải thích một khái niệm bằng ngôn ngữ đơn giản để người khác hiểu, thì đó là lúc bạn thực sự hiểu nó. Mỗi lần viết bài hay trả lời câu hỏi của mọi người cũng chính là một lần mình ôn tập, phát hiện những chỗ còn hổng và củng cố lại tư duy.\n\nĐiều tuyệt vời hơn nữa là, những điều mình nghĩ là \"ai cũng biết\" đôi khi lại chính là thứ giúp người khác gỡ được nút thắt. Một mẹo nhỏ, một lỗi mình từng gặp, hay một góc nhìn khác cũng có thể giúp ai đó tiết kiệm hàng giờ tìm kiếm.\n\nVậy nên nếu sau mỗi bài Lab, mỗi người đều chia sẻ một chút:\n\n* Mình học chắc hơn.\n* Mọi người có thêm góc nhìn và kinh nghiệm thực tế.\n* Cả cộng đồng cùng tiến bộ nhanh hơn.\n\nĐừng ngại vì nghĩ mình chưa giỏi. Chia sẻ không phải để chứng tỏ mình biết nhiều, mà là để cùng nhau học tốt hơn. Biết đâu, bài viết tiếp theo của bạn lại là điều mà một thành viên khác đang cần. \uD83D\uDE80 \uD83D\uDE80 \uD83D\uDE80",
+      "author": {
+        "id": "1035030387753242674",
+        "name": "dongd22",
+        "discriminator": "0000",
+        "nickname": "T037 - Lại Duy Đông - 01913",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "560657339594702853",
+              "name": "biabeogo147",
+              "discriminator": "0000",
+              "nickname": "biabeogo147",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1035030387753242674",
+              "name": "dongd22",
+              "discriminator": "0000",
+              "nickname": "T037 - Lại Duy Đông - 01913",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1160622723358281728",
+              "name": "langthiphuonghue",
+              "discriminator": "0000",
+              "nickname": "Lăng Thị Phương Huế",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1160622723358281728/2f0a624097d3330982a726767543444a.png?size=512"
+            },
+            {
+              "id": "1314030288799793234",
+              "name": "vuzdepjai",
+              "discriminator": "0000",
+              "nickname": "Thv",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1314030288799793234/a23d0b0cf28807669eca7480f58f1351.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE80",
+          "code": "rocket",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530818860964646982",
+      "type": "Reply",
+      "timestamp": "2026-07-26T13:07:37.693+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tks b nhá, mình sẽ thêm tính năng này lên codelabs để cho các bạn chia sẻ trải nghiệm mình với bài labs",
+      "author": {
+        "id": "842338228170260490",
+        "name": "blues1006",
+        "discriminator": "0000",
+        "nickname": "Lab Coach - HoangHTB",
+        "color": "#EB2C6C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527919799731228723",
+            "name": "Lab Coach",
+            "color": "#EB2C6C",
+            "position": 10
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/842338228170260490/0521386f8fa99f4e0e94653fa0e28cbc.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "♥️",
+            "code": "hearts",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2665.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1035030387753242674",
+              "name": "dongd22",
+              "discriminator": "0000",
+              "nickname": "T037 - Lại Duy Đông - 01913",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "1035030387753242674",
+          "name": "dongd22",
+          "discriminator": "0000",
+          "nickname": "T037 - Lại Duy Đông - 01913",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530811415139582063",
+        "channelId": "1530811415139582063",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

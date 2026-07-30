@@ -1,0 +1,77 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530549295554498650",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Về việc học machine learning",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:19:56.0430935+07:00",
+  "messages": [
+    {
+      "id": "1530549295554498650",
+      "type": "Default",
+      "timestamp": "2026-07-25T19:16:28.291+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "xin chào cả nhà, dạo này thấy trong nhóm có rất nhiều bài chia sẻ lộ trình học machine learning với tài liệu các kiểu nhưng trong nhóm chung vẫn thấy nhiều bạn hỏi là nên bắt đầu từ đâu hay hay than bị ngợp. các lộ trình ở trong chia sẻ chắc chắn sẽ không giải quyết được tất cả vấn đề. mỗi người có một background riêng, người giỏi toán, người mạnh code python, người thì tay ngang sang.... nên tớ nghĩ cách tốt nhất là các bạn chủ động nhờ AI support luôn trong lúc học.\n​mình cũng từng gặp vấn đề khi mới bơi vào biển ML. mình cũng tham khảo qua bài của các bạn với mấy khoá học trên mạng nhưng toàn bị kẹt ở đống lý thuyết toán, vẫn chưa thể giải quyết triệt để việc hiểu bản chất nên mình nhờ AI support thì một số hint mình nghĩ là sẽ giúp được các bạn mới:\n​Đừng vội sao chép rồi chạy toàn bộ đống code mẫu trên mạng hay Kaggle. Hãy đọc qua xem người ta đang giải quyết bài toán gì trước. Các bạn cũng có thể dùng chính Claude, ChatGPT hoặc công cụ AI đang sử dụng để copy từng block code vào hỏi \"đoạn này dùng để làm gì\", nó giải thích từng dòng một cực dễ hiểu.\n​Lúc gặp mấy cái khái niệm khó nhằn như Gradient Descent hay Overfitting, đừng cố đọc tài liệu học thuật vội. Cứ prompt bảo AI lấy ví dụ thực tế đời sống, hiểu luồng tư duy trước rồi ráp vào code sau sẽ mượt hơn.\n​Lúc tự build model mà kẹt lỗi (bug), thay vì lên google mò mẫm đọc StackOverflow thì copy nguyên cái đoạn log lỗi ném cho AI. Nó sẽ chỉ điểm luôn là do bạn xử lý data sai hay thiếu thư viện, tiết kiệm được rất nhiều thời gian.",
+      "author": {
+        "id": "878902192508137513",
+        "name": "nghiafl1",
+        "discriminator": "0000",
+        "nickname": "T018 - Nguyễn Huy Nghĩa - 01943",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/878902192508137513/2736e70d4f9d13fdc3fbad7ac73f6e8f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "781928455947157574",
+              "name": "phong2004",
+              "discriminator": "0000",
+              "nickname": "Phong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/781928455947157574/4029c9a9b2e0df11945611ccf253f583.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

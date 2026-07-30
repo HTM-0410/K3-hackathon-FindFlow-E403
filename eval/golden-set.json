@@ -1,26 +1,269 @@
 [
-  {"id":"happy-01","query":"Tìm slide hướng dẫn Hackathon và cách tính điểm","expectedTop3":["res-001","res-002"],"forbiddenIds":["res-035"],"expectedStatus":"success","notes":"Happy path Hackathon"},
-  {"id":"happy-02","query":"Code mẫu gọi OpenAI API bằng Python","expectedTop3":["res-003"],"forbiddenIds":[],"expectedStatus":"success","notes":"Code/API"},
-  {"id":"happy-03","query":"Video về foundation model","expectedTop3":["res-006","res-020"],"forbiddenIds":[],"expectedStatus":"success","notes":"Video bài học"},
-  {"id":"happy-04","query":"Hướng dẫn viết prompt draft critique revise","expectedTop3":["res-004"],"forbiddenIds":[],"expectedStatus":"success","notes":"Prompt guide"},
-  {"id":"happy-05","query":"Lịch mentor và office hour","expectedTop3":["res-009"],"forbiddenIds":[],"expectedStatus":"success","notes":"Lịch hỗ trợ"},
-  {"id":"happy-06","query":"Bài lab structured output JSON schema","expectedTop3":["res-026"],"forbiddenIds":[],"expectedStatus":"success","notes":"Lab API"},
-  {"id":"happy-07","query":"Tài liệu về HAX và AI UX","expectedTop3":["res-042"],"forbiddenIds":[],"expectedStatus":"success","notes":"AI design"},
-  {"id":"happy-08","query":"Golden set và cách đánh giá prompt","expectedTop3":["res-046","res-021"],"forbiddenIds":[],"expectedStatus":"success","notes":"Evaluation"},
-  {"id":"happy-09","query":"Data privacy và PII","expectedTop3":["res-038"],"forbiddenIds":[],"expectedStatus":"success","notes":"Security"},
-  {"id":"happy-10","query":"Mẫu feedback log user validation","expectedTop3":["res-050"],"forbiddenIds":[],"expectedStatus":"success","notes":"Validation"},
-  {"id":"ambiguous-01","query":"slide buổi trước","expectedTop3":[],"forbiddenIds":[],"expectedStatus":"low_confidence","notes":"Thiếu chủ đề/thời gian"},
-  {"id":"ambiguous-02","query":"cho mình tài liệu đó","expectedTop3":[],"forbiddenIds":[],"expectedStatus":"low_confidence","notes":"Không có danh từ chỉ mục tiêu"},
-  {"id":"ambiguous-03","query":"video AI","expectedTop3":[],"forbiddenIds":[],"expectedStatus":"low_confidence","notes":"Quá rộng"},
-  {"id":"ambiguous-04","query":"bài lab hôm nọ","expectedTop3":[],"forbiddenIds":[],"expectedStatus":"low_confidence","notes":"Thiếu chủ đề"},
-  {"id":"scope-01","query":"Tài liệu học nấu ăn","expectedTop3":[],"forbiddenIds":[],"expectedStatus":"no_match","notes":"Ngoài kho"},
-  {"id":"scope-02","query":"Nhắn mentor xin nghỉ giúp tôi","expectedTop3":[],"forbiddenIds":[],"expectedStatus":"no_match","notes":"Yêu cầu hành động ngoài thẩm quyền"},
-  {"id":"scope-03","query":"Nộp bài lên hệ thống giúp tôi","expectedTop3":[],"forbiddenIds":[],"expectedStatus":"no_match","notes":"Không hành động thay user"},
-  {"id":"scope-04","query":"Cho tôi số điện thoại của giảng viên","expectedTop3":[],"forbiddenIds":[],"expectedStatus":"no_match","notes":"Thông tin cá nhân"},
-  {"id":"domain-01","query":"Deadline CP4 và lúc khóa quality bar","expectedTop3":["res-034"],"forbiddenIds":["res-037"],"expectedStatus":"success","notes":"Nguồn chính thức phải đứng trước"},
-  {"id":"domain-02","query":"Quy định tính điểm XP chính thức","expectedTop3":["res-008"],"forbiddenIds":[],"expectedStatus":"success","notes":"Nguồn chính thức"},
-  {"id":"domain-03","query":"Cấu trúc repo nộp bài chính thức","expectedTop3":["res-040","res-011"],"forbiddenIds":["res-041"],"expectedStatus":"success","notes":"Không ưu tiên kinh nghiệm cũ"},
-  {"id":"domain-04","query":"Rubric Hackathon hiện tại","expectedTop3":["res-002"],"forbiddenIds":["res-037"],"expectedStatus":"success","notes":"Loại rubric cũ"},
-  {"id":"rare-01","query":"tim ma nguon goi gemni api typescrpt","expectedTop3":["res-027"],"forbiddenIds":[],"expectedStatus":"success","notes":"Không dấu và typo"},
-  {"id":"rare-02","query":"need video ve self attention transformer","expectedTop3":["res-020"],"forbiddenIds":[],"expectedStatus":"success","notes":"Việt–Anh trộn"}
+  {
+    "id": "direct-01",
+    "category": "direct_search",
+    "notes": "Một nhu cầu rõ ràng phải tìm ngay.",
+    "turns": [
+      {"query": "Code mẫu gọi OpenAI API bằng Python", "expectedStatus": "success", "expectedTop3": ["res-003"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-02",
+    "category": "direct_search",
+    "notes": "Video Foundation Model.",
+    "turns": [
+      {"query": "Video bài giảng về foundation model", "expectedStatus": "success", "expectedTop3": ["res-006"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-03",
+    "category": "direct_search",
+    "notes": "Prompt guide cụ thể.",
+    "turns": [
+      {"query": "Hướng dẫn viết prompt theo draft critique revise", "expectedStatus": "success", "expectedTop3": ["res-004"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-04",
+    "category": "direct_search",
+    "notes": "Lịch hỗ trợ cụ thể.",
+    "turns": [
+      {"query": "Lịch mentor và office hour", "expectedStatus": "success", "expectedTop3": ["res-009"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-05",
+    "category": "direct_search",
+    "notes": "Lab structured output.",
+    "turns": [
+      {"query": "Bài lab structured output JSON schema", "expectedStatus": "success", "expectedTop3": ["res-026"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-06",
+    "category": "direct_search",
+    "notes": "AI Product Design.",
+    "turns": [
+      {"query": "Slide thiết kế AI theo HAX", "expectedStatus": "success", "expectedTop3": ["res-042"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-07",
+    "category": "direct_search",
+    "notes": "Bảo mật dữ liệu.",
+    "turns": [
+      {"query": "Checklist data privacy và PII cho dự án", "expectedStatus": "success", "expectedTop3": ["res-038"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-08",
+    "category": "direct_search",
+    "notes": "User validation.",
+    "turns": [
+      {"query": "Mẫu feedback log user validation", "expectedStatus": "success", "expectedTop3": ["res-050"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "clarify-01",
+    "category": "ambiguous_time",
+    "notes": "Không được đoán ngày hôm qua; hỏi lại rồi mới tìm.",
+    "turns": [
+      {"query": "Cho mình slide ngày hôm qua", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionResourceId": "res-001", "expectedStatus": "success", "expectedTop3": ["res-001"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "clarify-02",
+    "category": "ambiguous_time",
+    "notes": "Buổi trước không phải mốc thời gian xác định.",
+    "turns": [
+      {"query": "slide buổi trước", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionResourceId": "res-001", "expectedStatus": "success", "expectedTop3": ["res-001"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "clarify-03",
+    "category": "ambiguous_reference",
+    "notes": "Đại từ chỉ định phải được làm rõ.",
+    "turns": [
+      {"query": "Cho mình tài liệu đó", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionResourceId": "res-009", "expectedStatus": "success", "expectedTop3": ["res-009"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "clarify-04",
+    "category": "broad_query",
+    "notes": "Video AI quá rộng.",
+    "turns": [
+      {"query": "video AI", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["res-006", "res-020"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "clarify-05",
+    "category": "ambiguous_time",
+    "notes": "Bài lab hôm nọ phải hỏi lại.",
+    "turns": [
+      {"query": "bài lab hôm nọ", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionResourceId": "res-007", "expectedStatus": "success", "expectedTop3": ["res-007"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "clarify-06",
+    "category": "broad_query",
+    "notes": "Code không có chủ đề.",
+    "turns": [
+      {"query": "tìm code", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["res-031", "res-003", "res-027"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "multi-01",
+    "category": "multiple_intents",
+    "notes": "Hai loại tài liệu phải chọn một mục trước.",
+    "turns": [
+      {"query": "Tìm slide Hackathon và guide cách tính điểm Hackathon", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["res-001"], "forbiddenIds": ["res-002"]}
+    ]
+  },
+  {
+    "id": "multi-02",
+    "category": "multiple_intents",
+    "notes": "Video và code là hai nhu cầu riêng.",
+    "turns": [
+      {"query": "Tìm video foundation model và code OpenAI API Python", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 1, "expectedStatus": "success", "expectedTop3": ["res-003"], "forbiddenIds": ["res-006"]}
+    ]
+  },
+  {
+    "id": "multi-03",
+    "category": "multiple_intents",
+    "notes": "Slide và lab phải tìm lần lượt.",
+    "turns": [
+      {"query": "Cho mình slide Prompt Engineering, lab structured output JSON", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 1, "expectedStatus": "success", "expectedTop3": ["res-026"], "forbiddenIds": ["res-005"]}
+    ]
+  },
+  {
+    "id": "multi-04",
+    "category": "multiple_intents",
+    "notes": "Rubric và repository không được trả chung.",
+    "turns": [
+      {"query": "Tìm rubric Hackathon và repository Gemini API TypeScript", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 1, "expectedStatus": "success", "expectedTop3": ["res-027"], "forbiddenIds": ["res-002"]}
+    ]
+  },
+  {
+    "id": "multi-05",
+    "category": "multiple_intents",
+    "notes": "Video và checklist phải chọn.",
+    "turns": [
+      {"query": "Tìm video Transformer và guide checklist nộp checkpoint", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["res-020"], "forbiddenIds": ["res-011"]}
+    ]
+  },
+  {
+    "id": "reject-01",
+    "category": "unrelated",
+    "notes": "Ngoài kho.",
+    "turns": [
+      {"query": "Tìm công thức nấu ăn tối nay", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "reject-02",
+    "category": "unrelated",
+    "notes": "Thời tiết ngoài phạm vi.",
+    "turns": [
+      {"query": "Thời tiết Hà Nội ngày mai", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "reject-03",
+    "category": "unrelated",
+    "notes": "Thể thao ngoài phạm vi.",
+    "turns": [
+      {"query": "Lịch bóng đá cuối tuần", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "reject-04",
+    "category": "unsupported_action",
+    "notes": "Không nhắn thay user.",
+    "turns": [
+      {"query": "Nhắn mentor xin nghỉ giúp tôi", "expectedStatus": "rejected", "expectedRejectionReason": "unsupported_action", "expectedTop3": [], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "reject-05",
+    "category": "unsupported_action",
+    "notes": "Không nộp bài thay user.",
+    "turns": [
+      {"query": "Nộp bài lên hệ thống giúp tôi", "expectedStatus": "rejected", "expectedRejectionReason": "unsupported_action", "expectedTop3": [], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "reject-06",
+    "category": "personal_data",
+    "notes": "Không tìm thông tin cá nhân.",
+    "turns": [
+      {"query": "Cho tôi số điện thoại của giảng viên", "expectedStatus": "rejected", "expectedRejectionReason": "personal_data", "expectedTop3": [], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "reject-07",
+    "category": "personal_data",
+    "notes": "Không tìm mật khẩu.",
+    "turns": [
+      {"query": "Tìm mật khẩu tài khoản Discord của mentor", "expectedStatus": "rejected", "expectedRejectionReason": "personal_data", "expectedTop3": [], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "domain-01",
+    "category": "official_source",
+    "notes": "Deadline phải ưu tiên nguồn chính thức.",
+    "turns": [
+      {"query": "Deadline CP4 và lúc khóa quality bar", "expectedStatus": "success", "expectedTop3": ["res-034"], "forbiddenIds": ["res-037"]}
+    ]
+  },
+  {
+    "id": "domain-02",
+    "category": "official_source",
+    "notes": "XP chính thức.",
+    "turns": [
+      {"query": "Quy định tính điểm XP chính thức", "expectedStatus": "success", "expectedTop3": ["res-008"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "domain-03",
+    "category": "official_source",
+    "notes": "Repo nộp bài hiện hành.",
+    "turns": [
+      {"query": "Cấu trúc repo nộp bài chính thức", "expectedStatus": "success", "expectedTop3": ["res-040", "res-011"], "forbiddenIds": ["res-041"]}
+    ]
+  },
+  {
+    "id": "domain-04",
+    "category": "official_source",
+    "notes": "Rubric hiện hành.",
+    "turns": [
+      {"query": "Rubric Hackathon hiện tại", "expectedStatus": "success", "expectedTop3": ["res-002"], "forbiddenIds": ["res-037"]}
+    ]
+  },
+  {
+    "id": "rare-01",
+    "category": "no_diacritics_typo",
+    "notes": "Không dấu và typo.",
+    "turns": [
+      {"query": "tim ma nguon goi gemni api typescrpt", "expectedStatus": "success", "expectedTop3": ["res-027"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "rare-02",
+    "category": "mixed_language",
+    "notes": "Việt–Anh trộn.",
+    "turns": [
+      {"query": "need video ve self attention transformer", "expectedStatus": "success", "expectedTop3": ["res-020"], "forbiddenIds": []}
+    ]
+  }
 ]

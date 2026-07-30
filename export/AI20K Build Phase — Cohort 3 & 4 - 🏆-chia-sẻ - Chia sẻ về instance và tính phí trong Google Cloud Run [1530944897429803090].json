@@ -1,0 +1,359 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530944897429803090",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Chia sẻ về instance và tính phí trong Google Cloud Run",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:12:27.9323458+07:00",
+  "messages": [
+    {
+      "id": "1530944897429803090",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:28:27.128+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mn, hôm nay thì đã bắt đầu các nhóm chọn đề tài đúng không, thì một số đề tài yêu cầu cần deploy trên cloud, thì bạn nghĩ nhóm bạn sẽ deploy trên Google Cloud Run. Bạn deploy kiểu như thế này, nghe theo lời Codex hay Claude (dưới đây ví dụ thôi):\n\n_**Lưu ý**_: Chú thích các tag trong các phần code và command dưới đây:\n\n- **[PROJECTID]** -> ID của project trên Google Cloud của dự án bạn (cụ thể là cái sẽ run các project của team bạn ấy).\n- **[BUILDNAME]** -> Tên của build hiện tại bạn deploy. Ví dụ: test, prod, feature-name,...\n\n```\ngcloud services enable run.googleapis.com containerregistry.googleapis.com cloudbuild.googleapis.com # Cái này chỉ chạy một lần để enable Cloud Build, GCR, và Container Registry thôi\ngcloud config set project [PROJECTID]\ngcloud builds submit --tag gcr.io/[PROJECTID]/[BUILDNAME] .\ngcloud run deploy [BUILDNAME]  --image gcr.io/[PROJECTID]/[BUILDNAME]  --platform managed --region asia-southeast1 --min-instan--ram 4G --cpu 1 --allow-unauthenticated\n```\n\nTuy nhiên, nếu không biết về cách Google Cloud Run tính phí, đến cuối tháng nhóm bạn thấy bill trên Google Cloud đến *mấy chục đến hơn trăm dollar* và team bạn hốt hoảng luôn (Nói thật là mình cũng vài lần có bill AWS mấy chục đô la rồi do config ngu + quên tắt instance sau khi demo hoặc test). Nên mình sẽ chia sẻ cho các bạn về cách Google Cloud Run tính phí và cách giảm chi phí khi deploy tránh tình trạng như trên nhé.\n\n**Cách Google tính chi phí cho Cloud Run:**\n\nThực ra thì trong Google Cloud Run, Google có 2 cách tính bill như sau:",
+      "author": {
+        "id": "1050354288892846112",
+        "name": "keikikinky",
+        "discriminator": "0000",
+        "nickname": "T213 - Khang - 01101",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "nhmanh.AI42E",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530944960868913384",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:28:42.253+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "- **Tính phí theo request** (mặc định): Cái này là cách tính phí mặc định khi tạo bất cứ service Google Cloud Run nào, khi có bất cứ request (HTTP, FTP, Websocket,...) tới container service GCR thì sẽ tính phí thêm khi container chạy (tính theo từng GB RAM và vCPU) với mỗi container theo từng giây, và nếu số container hiện không đủ, thì Google sẽ deploy **thêm container** (autoscaling) tới số instance tối đa bạn định ra và cũng tính phí cho các instance này active (mà autoscaling cũng có trong cách bill thứ hai nữa, do GCR có autoscaling mặc định). \n- Sau một khoảng thời gian không có request (hình như khoảng 15 phút thì phải) thì service quay về idle mode, scale back về số instance tối thiểu (Min instances) bạn định ra (mặc định là 0), nếu min instance là 0 thì lúc idle sẽ **không tính phí**, còn nếu min instances lớn hơn 0 thì idle time sẽ tính phí thấp hơn với mỗi instance nhân với min instances.\n- Điều này có nghĩa là sao? Tính phí theo request sẽ tốt hơn trong trường hợp traffic là không đều, rải rác (sproadic), spikey (kiểu traffic cao trong khoảng thời gian ngắn trong ngày/tuần/tháng), **và** project bạn không cần phải chạy liên tục (Thực ra cái này là chung cho cả GCR nói chung vì GCR container nên phải được deploy **stateless**). \n- Nếu bạn chịu được việc ứng dụng cần cold start sau khi mỗi lần idle, hoặc trong lúc development ứng dụng thì bạn có thể đặt min instance là 0 luôn, lúc này không dùng thì chả tốn phí gì cả. \n\n- **Tính phí theo instance**: Với cách bill này, vì sẽ tính phí từng container instance cho cả lifecycle luôn (cụ thể là không tắt instance thì tính phí cứng cho instance cả tháng luôn ấy), kể cả khi đang xử lý request hay idle. Kể cả min instance bằng 0 thì vẫn tính phí cho các instance luôn (tuy nhiên phí là phí mặc định thay vì scale theo instance). **Tuy nhiên**, phí theo giây cho RAM và vCPU sẽ _thấp hơn_ tính phí theo request.",
+      "author": {
+        "id": "1050354288892846112",
+        "name": "keikikinky",
+        "discriminator": "0000",
+        "nickname": "T213 - Khang - 01101",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530945041982554235",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:29:01.592+07:00",
+      "timestampEdited": "2026-07-26T21:30:50.573+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thế thì câu lệnh ở trên được cập nhật là gì:\n\n```\ngcloud config set project [PROJECTID]\ngcloud builds submit --tag gcr.io/[PROJECTID]/[BUILDNAME] .\ngcloud run deploy [BUILDNAME]  --image gcr.io/[PROJECTID]/[BUILDNAME]  --platform managed --region asia-southeast1 --allow-unauthenticated --ram 4GiB --cpu 1 --min [MIN_INSTANCES] --max [MAX_INSTANCES]\n```\n\nVới:\n- **[MIN_INSTANCES]**: Số instance container tối thiểu service chạy.\n- **[MAX_INSTANCES]**: Số instance tối đa có thể scale khi traffic tăng khi autoscale.\n\n**Một số tip và cân nhắc khi chạy Cloud Run:**\n- Sử dụng commited use discount (CUDs): CUD cung cấp giảm giá, tuy nhiên bạn phải \"cam kết\" phải sử dụng Cloud Run liên tục trong một khoảng thời gian nhất định. Cân nhắc nếu có nhu cầu chạy GCR chẳng hạn như chạy ứng dụng production.\n- Bật budget alerts: Tạo cảnh báo ngân sách trong Cloud Billing để theo dõi chi phí thực tế so với chi phí dự kiến. Lưu ý là cảnh báo ngân sách là một cơ chế cảnh báo kích hoạt thông báo khi vượt quá ngưỡng chi tiêu, chứ **không** phải một ngưỡng chi tiêu nhất định, đồng thời Google cũng nói là có thể có chậm trễ trong cập nhật thông tin thanh toán nên có thể ảnh hưởng tới việc nhận thông báo, nên đừng chỉ dựa vào Budget Alerts để quản lý billing.\n- Cloud Billing: Bộ công cụ trung tâm để theo dõi, phân tích và quản lý chi phí Google Cloud. Cloud billing cung cấp báo cáo về mức sử dụng cho từng dịch vụ Google Cloud, xu hướng chi tiêu theo tuần/tháng và dự báo chi phí cuối tháng. Đồng thời hỗ trợ tìm các cơ hội tối ưu hóa chi phí.\n- Cost Explorer: Công cụ phân tích chi phí và mức sử dụng tài nguyên các dịch vụ Google Cloud theo nhiều tiêu chí. Có thể lọc các tài nguyên tốn kém nhất và xem chi phí theo từng thành phần như vCPU, GPU hoặc mạng\n- Google Cloud Pricing Calculator: Công cụ ước tính chi phí trước khi triển khai dịch vụ. Cho phép cấu hình các sản phẩm Google Cloud để tính toán chi phí dự kiến. Đồng thời cung cấp thông tin về mô hình định giá và bảng giá chi tiết.",
+      "author": {
+        "id": "1050354288892846112",
+        "name": "keikikinky",
+        "discriminator": "0000",
+        "nickname": "T213 - Khang - 01101",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530945059598499900",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:29:05.792+07:00",
+      "timestampEdited": "2026-07-26T21:29:23.34+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "- Recommender: Đưa ra các khuyến nghị tối ưu hóa dựa trên dữ liệu sử dụng thực tế. Đối với Cloud Run, công cụ có thể đề xuất chuyển đổi giữa các mô hình tính phí nếu giúp tiết kiệm chi phí hơn, đồng thời giúp cải thiện hiệu quả sử dụng tài nguyên và giảm chi phí vận hành.\n- Cloud Hub Optimization: Cung cấp cái nhìn tổng quan về chi phí, mức sử dụng và các cơ hội tối ưu cho người dùng trên toàn bộ Google Cloud. \n\n\n**Tham khảo và đọc thêm**:\nhttps://docs.cloud.google.com/run/docs/deploying (Deploy trên Cloud Run bằng Dockerfile)\nhttps://docs.cloud.google.com/run/docs/configuring/min-instances#billing (cách tính phí GCR)\nhttps://docs.cloud.google.com/run/docs/tips/services-cost-optimization (tối ưu chi phí Google Cloud)",
+      "author": {
+        "id": "1050354288892846112",
+        "name": "keikikinky",
+        "discriminator": "0000",
+        "nickname": "T213 - Khang - 01101",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Deploy container images to Cloud Run services \u00A0|\u00A0 Google Cloud Do...",
+          "url": "https://docs.cloud.google.com/run/docs/deploying",
+          "timestamp": null,
+          "description": "",
+          "color": "#1A73E8",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/OE3kmeKd99wmFPVw8GrOPAoH10HXStaA6eDZhZdyuwY/https/docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+            "canonicalUrl": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+            "width": 1200,
+            "height": 630
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "Set minimum instances for services \u00A0|\u00A0 Cloud Run \u00A0|\u00A0 Google Clo...",
+          "url": "https://docs.cloud.google.com/run/docs/configuring/min-instances",
+          "timestamp": null,
+          "description": "",
+          "color": "#1A73E8",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/OE3kmeKd99wmFPVw8GrOPAoH10HXStaA6eDZhZdyuwY/https/docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+            "canonicalUrl": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+            "width": 1200,
+            "height": 630
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "Best practices for cost-optimized Cloud Run services \u00A0|\u00A0 Google C...",
+          "url": "https://docs.cloud.google.com/run/docs/tips/services-cost-optimization",
+          "timestamp": null,
+          "description": "",
+          "color": "#1A73E8",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/OE3kmeKd99wmFPVw8GrOPAoH10HXStaA6eDZhZdyuwY/https/docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+            "canonicalUrl": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+            "width": 1200,
+            "height": 630
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530946142924177530",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:33:24.077+07:00",
+      "timestampEdited": "2026-07-26T21:40:00.787+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đây là kinh nghiệm của mình đúc kết khi đọc document Google Cloud và lúc mình thực tập",
+      "author": {
+        "id": "1050354288892846112",
+        "name": "keikikinky",
+        "discriminator": "0000",
+        "nickname": "T213 - Khang - 01101",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530946356376502372",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-26T21:34:14.968+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: Chia sẻ về instance và tính phí trong Google Cloud Run",
+      "author": {
+        "id": "1050354288892846112",
+        "name": "keikikinky",
+        "discriminator": "0000",
+        "nickname": "T213 - Khang - 01101",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530947744708165703",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:39:45.972+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn mọi người đã xem bài viết của mình ạ",
+      "author": {
+        "id": "1050354288892846112",
+        "name": "keikikinky",
+        "discriminator": "0000",
+        "nickname": "T213 - Khang - 01101",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530948010882891838",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:40:49.433+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn bạn đã chia sẻ",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 8
+}

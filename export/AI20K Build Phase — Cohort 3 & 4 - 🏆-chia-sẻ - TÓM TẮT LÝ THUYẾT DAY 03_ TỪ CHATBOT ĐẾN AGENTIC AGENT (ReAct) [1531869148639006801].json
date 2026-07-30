@@ -1,0 +1,127 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531869148639006801",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "TÓM TẮT LÝ THUYẾT DAY 03: TỪ CHATBOT ĐẾN AGENTIC AGENT (ReAct)",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:04:02.4347695+07:00",
+  "messages": [
+    {
+      "id": "1531869148639006801",
+      "type": "Default",
+      "timestamp": "2026-07-29T10:41:05.788+07:00",
+      "timestampEdited": "2026-07-29T10:45:20.279+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDC4B Chào các bạn, mình tự tóm tắt những kiến thức trọng tâm của Day 03 hi vọng tài liệu này sẽ giúp mọi người ôn tập nhanh chóng và kết nối tốt với các buổi học tiếp theo!\n\n**1. Quá trình phát triển AI**\n* **Rule-based Bot:** If/Else, logic cố định, không suy luận, không memory.\n* **LLM Chatbot:** Hiểu ngôn ngữ, trả lời theo context, có short-term memory, hỗ trợ gọi tool.\n* **Agent:** Tự lập kế hoạch, dùng tool, ghi nhớ, quan sát kết quả và điều chỉnh để hoàn thành mục tiêu.\n\n**2. Agentic Fit (Khi nào dùng Agent?)**\nĐánh giá theo 4 tiêu chí:\n* **Multi-step Reasoning:** Cần suy luận nhiều bước.\n* **Tool Interaction:** Cần API, Search, Database...\n* **Dynamic Decision:** Quyết định thay đổi theo kết quả.\n* **Long Horizon:** Nhiệm vụ kéo dài nhiều bước.\n  **Điểm:** 0–5 Bot/Chatbot, 6–10 Chatbot nâng cao, ≥11 nên dùng Agent.\n\n**3. Kiến trúc Agent**\n* **Perception:** Nhận dữ liệu.\n* **Reasoning:** LLM phân tích.\n* **Action:** Gọi tool/thực hiện.\n* **Memory:** Lưu trạng thái (Short-term, Long-term).\n\n**4. ReAct (Reasoning + Acting)**\nVòng lặp:\n**Thought → Action → Observation → lặp đến khi hoàn thành.**\n* **Thought:** Suy nghĩ.\n* **Action:** Gọi tool.\n* **Observation:** Nhận kết quả.\n  Ưu điểm: minh bạch, dễ debug, tự điều chỉnh. Nhược điểm: tốn token, chậm, dễ loop.\n\n**5. Tiến hóa**\n* **Text-based ReAct:** Action dạng text, dễ lỗi parser.\n* **Function Calling:** Gọi tool bằng JSON Schema.\n* **Structured Outputs:** Đảm bảo đúng schema.\n* **MCP:** Chuẩn hóa kết nối Model–Tool–Data.\n\n**6. Guardrails**\nMax Iterations, Timeout, Retry, Token/Cost Budget, Fallback sang Chatbot hoặc Human để tránh loop và kiểm soát chi phí.\n\n**7. Hybrid Architecture**\n**User → Router → Chatbot (FAQ) / Agent (nhiều bước) → Human (khi lỗi).**",
+      "author": {
+        "id": "808506017456324629",
+        "name": "trongck4612",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDCAA",
+            "code": "muscle",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4aa.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDC4B",
+          "code": "wave",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44b.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

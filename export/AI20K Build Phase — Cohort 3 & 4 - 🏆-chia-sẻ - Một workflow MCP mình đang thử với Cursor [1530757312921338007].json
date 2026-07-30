@@ -1,0 +1,158 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530757312921338007",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Một workflow MCP mình đang thử với Cursor",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:11:03.9551149+07:00",
+  "messages": [
+    {
+      "id": "1530757312921338007",
+      "type": "Default",
+      "timestamp": "2026-07-26T09:03:03.496+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình đang thử một workflow với Cursor mà thấy khá thú vị: cho agent tự thu thập context trước khi bắt đầu sửa bug.\n\nVí dụ có issue:\n\n\"User login thành công nhưng dashboard không load data.\"\n\nThay vì ngay lập tức yêu cầu AI sửa code, mình để agent investigate trước.\n\nFlow có thể như này:\n\n**1. GitHub MCP**\n\nĐọc issue, PR liên quan và những commit gần đây.\n\nMục tiêu là hiểu bug xuất hiện trong hoàn cảnh nào.\n\n↓\n\n**2. Code search / CodeGraph**\n\nTìm flow:\n\nLoginPage\n→ Auth API\n→ AuthService\n→ token\n→ Dashboard\n→ API client\n\nCodeGraph khá tiện ở bước này nếu project có nhiều abstraction vì agent có thể tìm relationship trước rồi mới đọc những file quan trọng.\n\n↓\n\n**3. Database MCP**\n\nNếu nghi ngờ data/user state thì kiểm tra schema hoặc query data cần thiết.\n\n↓\n\n**4. Context7**\n\nNếu lỗi liên quan framework/library, lấy documentation hiện tại.\n\nVí dụ authentication middleware hoặc API đã thay đổi giữa các version.\n\n↓\n\n**5. Agent sửa code**\n\nĐến lúc này mới bắt đầu implementation.\n\n↓\n\n**6. Playwright MCP**\n\nMở application:\n\nlogin\n→ chuyển dashboard\n→ kiểm tra request\n→ kiểm tra UI\n→ verify behavior\n\nĐiểm mình thích ở workflow này là agent không chỉ \"generate code\".\n\nNó có một feedback loop:\n\nObserve\n→ Investigate\n→ Modify\n→ Execute\n→ Verify\n\nVà MCP chủ yếu đóng vai trò bridge giữa LLM với những environment khác nhau.\n\nMình nghĩ hướng thú vị nhất của MCP không phải là có hàng trăm MCP server, mà là kết hợp một vài tool đúng chỗ để agent có đủ context và feedback loop để hoàn thành task.",
+      "author": {
+        "id": "1092693174704672798",
+        "name": "le198",
+        "discriminator": "0000",
+        "nickname": "T073 - Lê Trung Kiên - 01182",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1092693174704672798/dc4ec73c1454bfc859ab19f17a32d49b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1520438987473551476",
+              "name": "hoquangminh_ai20k",
+              "discriminator": "0000",
+              "nickname": "T073-Hồ Quang Minh-01906",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531157866596008037",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:34:42.934+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "❤️",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "❤️",
+          "code": "heart",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531198845600661544",
+      "type": "Default",
+      "timestamp": "2026-07-27T14:17:33.09+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tôi có thể làm gì với thông tin này",
+      "author": {
+        "id": "1520438987473551476",
+        "name": "hoquangminh_ai20k",
+        "discriminator": "0000",
+        "nickname": "T073-Hồ Quang Minh-01906",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

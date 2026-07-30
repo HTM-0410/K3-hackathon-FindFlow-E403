@@ -1,0 +1,87 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531504871579058186",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Xây một LLM \"giống ChatGPT\" từ con số 0 — hành trình qua repo LLMs-from-scratch",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:07:34.6406921+07:00",
+  "messages": [
+    {
+      "id": "1531504871579058186",
+      "type": "Default",
+      "timestamp": "2026-07-28T10:33:35.369+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người, mình muốn chia sẻ repo rasbt/LLMs-from-scratch của Sebastian Raschka (tác giả Build a Large Language Model From Scratch) — một trong những tài liệu dễ tiếp cận nhất mình từng thấy. Không dùng thư viện có sẵn (không HuggingFace, không LangChain), toàn bộ code bằng PyTorch thuần để thấy rõ từng viên gạch một.\n\n3 giai đoạn xây một LLM giống ChatGPT:\n\nChuẩn bị dữ liệu + xây kiến trúc mô hình\nPretraining — cho mô hình \"học đọc\" trên khối văn bản khổng lồ\nFinetuning — dạy làm việc cụ thể: phân loại văn bản, hoặc trò chuyện như trợ lý\n\nDễ hình dung: pretraining giống cho một đứa trẻ đọc hết thư viện để tự học ngôn ngữ; finetuning là dạy nó trả lời phỏng vấn đúng chuẩn.\n\nTokenization: máy tính chỉ hiểu số, nên văn bản được cắt thành các token (từ/mảnh từ), mỗi token gán một ID, rồi ánh xạ sang vector embedding.\n\nAttention: cơ chế giúp mô hình biết từ nào trong câu nên \"chú ý\" đến từ nào khác — ví dụ để hiểu \"nó\" trong câu ám chỉ ai. Multi-head attention chạy song song nhiều \"góc nhìn\" như vậy.\n\nKiến trúc GPT: xếp chồng nhiều Transformer block (attention + feed-forward + layer norm + residual connection) là ra kiến trúc gần giống GPT-2/GPT-3. Repo còn so sánh với Llama, Qwen3, Gemma3.\n\nPretraining: nhiệm vụ chỉ đơn giản là dự đoán từ tiếp theo, lặp lại hàng tỷ lần — nhờ đó mô hình \"tự phát\" học ngữ pháp, kiến thức, logic.\n\nFinetuning: từ mô hình đã pretrain, huấn luyện thêm để phân loại (spam/không spam) hoặc theo instruction để trò chuyện như trợ lý, kèm cả DPO để học ưu tiên câu trả lời tốt hơn.\n\nRepo: https://github.com/rasbt/LLMs-from-scratch",
+      "author": {
+        "id": "887721042976596000",
+        "name": "hoanglinh1056",
+        "discriminator": "0000",
+        "nickname": "Hoàng Linh",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/887721042976596000/20cb4202d17c175ac2f9a3be76294d7e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - rasbt/LLMs-from-scratch: Implement a ChatGPT-like LLM in P...",
+          "url": "https://github.com/rasbt/LLMs-from-scratch",
+          "timestamp": null,
+          "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step - rasbt/LLMs-from-scratch",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/20exBW8xtJckR-G3Xsi7Oe6Wpoz65CnCfc5OLGZNHKM/https/repository-images.githubusercontent.com/669879380/79da1d51-4ef9-4733-a61c-1d7851020d9a",
+            "canonicalUrl": "https://repository-images.githubusercontent.com/669879380/79da1d51-4ef9-4733-a61c-1d7851020d9a",
+            "width": 1772,
+            "height": 900
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "887721042976596000",
+              "name": "hoanglinh1056",
+              "discriminator": "0000",
+              "nickname": "Hoàng Linh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/887721042976596000/20cb4202d17c175ac2f9a3be76294d7e.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,77 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531579223154757632",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Một hướng đi mới để giảm token và tối ưu giao tiếp giữa AI Agent",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:20:04.3468333+07:00",
+  "messages": [
+    {
+      "id": "1531579223154757632",
+      "type": "Default",
+      "timestamp": "2026-07-28T15:29:02.166+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83E\uDD16 AI có thực sự cần \"nói tiếng người\" để giao tiếp với nhau?\n\nMình vừa đọc một nghiên cứu khá thú vị từ Đại học Giao thông Thượng Hải (được Rohan Paul chia sẻ lại). Câu hỏi họ đặt ra là: nếu AI chỉ giao tiếp với AI, tại sao vẫn phải dùng ngôn ngữ tự nhiên như khi nói với con người?\n\nNhóm nghiên cứu đề xuất BabelTele – một cách biểu diễn thông tin cô đọng hơn, có thể kết hợp từ nhiều ngôn ngữ, ký hiệu, emoji hay toán tử logic để giảm số lượng token nhưng vẫn giữ được ý nghĩa. Đây không phải là một chuẩn ngôn ngữ mới hay công cụ nén hoàn chỉnh, mà là một nghiên cứu nhằm khám phá giới hạn giao tiếp của các mô hình ngôn ngữ.\n\nKết quả khá ấn tượng: văn bản được rút xuống còn khoảng 28% độ dài ban đầu, trong khi mô hình đọc lại vẫn giữ được khoảng 99,5% độ chính xác về ngữ nghĩa. Thậm chí, văn bản được tạo bởi một mô hình vẫn có thể được mô hình khác hiểu mà không cần huấn luyện thêm.\n\nTheo mình, điểm đáng chú ý nhất là tiềm năng ứng dụng cho AI Agent. Khi nhiều agent phải liên tục trao đổi thông tin hoặc lưu trữ bộ nhớ dài hạn, việc giao tiếp bằng một dạng \"ngôn ngữ nội bộ\" ngắn gọn có thể giúp tiết kiệm đáng kể token và tận dụng tốt hơn giới hạn context.\n\nTất nhiên, đây vẫn là nghiên cứu mang tính khám phá. Con số 99,5% phản ánh khả năng giữ được ý nghĩa chứ không phải khôi phục nguyên văn, và hiệu quả còn phụ thuộc vào từng mô hình cũng như từng tác vụ.\n\nĐiều mình thấy thú vị là nghiên cứu này gợi mở một góc nhìn mới: AI có thể không cần giao tiếp theo cách con người vẫn làm. Nếu xu hướng AI Agent tiếp tục phát triển, rất có thể trong tương lai chúng sẽ có một \"ngôn ngữ\" riêng, được tối ưu cho máy đọc, còn ngôn ngữ tự nhiên chỉ dùng khi cần tương tác với con người.\n\n\uD83D\uDCAD Mọi người nghĩ sao về hướng đi này?",
+      "author": {
+        "id": "1489160785031729332",
+        "name": "vunt2",
+        "discriminator": "0000",
+        "nickname": "T096 — Nguyễn Tuấn Vũ — 01845",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1489160785031729332/fa4b41adc185201f7b870a98aa1943ee.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531579223364337755",
+          "url": "https://cdn.discordapp.com/attachments/1531579223154757632/1531579223364337755/IMG_4221.jpg?ex=6a6bb40e&is=6a6a628e&hm=e251b05b0ae60b99f3756916b97ede995ff626e0c32ce67566f0cd7645642f1d&",
+          "fileName": "IMG_4221.jpg",
+          "fileSizeBytes": 174954
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83E\uDD16",
+          "code": "robot",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f916.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCAD",
+          "code": "thought_balloon",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ad.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,321 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531484384740249691",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "\uD83C\uDFA8 Đặt tên biến cũng là một nghệ thuật \uD83D\uDE02",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:08:14.8804437+07:00",
+  "messages": [
+    {
+      "id": "1531484384740249691",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:12:10.926+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bạn có bao giờ mở lại code cũ của mình… và thấy một biến tên data, temp, hay thậm chí final_final_v3 chưa? \uD83E\uDD2F\nKhoảnh khắc đó giống như mở tủ lạnh, thấy một hộp thức ăn không nhãn, không nhớ từ bao giờ… và tự hỏi: “Có nên ăn không ta?” \uD83C\uDF71\uD83D\uDE02\n\nTrong lập trình, một cái tên biến mơ hồ có thể biến bug nhỏ thành ác mộng lớn \uD83D\uDC1B\uD83D\uDC79.\nBạn, hoặc đồng đội, sẽ mất thêm hàng giờ chỉ để hiểu: “Cái 'data' này chứa cái gì vậy trời?”\n\n\uD83D\uDCA1 Bí kíp:\n\nĐặt tên biến rõ ràng như thể bạn đang giải thích cho đồng đội lần đầu đọc code \uD83D\uDCD6.\n\nVí dụ:\nuserList thay vì data\norderStatus thay vì temp\nisLoggedIn thay vì flag\n\nKhi code rõ ràng, bạn không chỉ giúp người khác hiểu nhanh hơn mà còn giúp phiên bản tương lai của chính mình khỏi đau đầu \uD83E\uDD2F.\n\n✨ Một dòng code dễ đọc = một team code nhanh hơn, debug ít hơn, và vui vẻ hơn.\nHãy thử đặt tên biến “có tâm” ngay hôm nay, để vài tháng sau mở lại code, bạn chỉ muốn… ôm bản thân một cái \uD83E\uDD17.",
+      "author": {
+        "id": "855807068874342420",
+        "name": "thanhpro08",
+        "discriminator": "0000",
+        "nickname": "G17 - T192 - Nguyễn Tuấn Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [
+        {
+          "id": "1531484385499676673",
+          "url": "https://cdn.discordapp.com/attachments/1531484384740249691/1531484385499676673/Post_2.png?ex=6a6c047b&is=6a6ab2fb&hm=1ceb28192fab8ca510bf59131f7e88a068b44f58d6fbc0d319c91426879466d1&",
+          "fileName": "Post_2.png",
+          "fileSizeBytes": 2270763
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "607559023805595653",
+              "name": "nson9116",
+              "discriminator": "0000",
+              "nickname": "baby dont hurt me",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+            },
+            {
+              "id": "698474313027682344",
+              "name": "nhat2kruoi",
+              "discriminator": "0000",
+              "nickname": "T060 - Lưu Quang Nhật",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+            },
+            {
+              "id": "716665077377531936",
+              "name": "sonrapper",
+              "discriminator": "0000",
+              "nickname": "sonrapper",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "805058036213350410",
+              "name": "baonguyen191",
+              "discriminator": "0000",
+              "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "855807068874342420",
+              "name": "thanhpro08",
+              "discriminator": "0000",
+              "nickname": "G17 - T192 - Nguyễn Tuấn Thành",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "859817112296751116",
+              "name": "davidkeleys6498",
+              "discriminator": "0000",
+              "nickname": "G7 - T065 - Trần Quí Đôn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83E\uDD2F",
+          "code": "exploding_head",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f92f.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83C\uDF71",
+          "code": "bento",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f371.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDE02",
+          "code": "joy",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f602.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC1B",
+          "code": "bug",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f41b.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC79",
+          "code": "japanese_ogre",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f479.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCD6",
+          "code": "book",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d6.svg"
+        },
+        {
+          "id": "",
+          "name": "✨",
+          "code": "sparkles",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83E\uDD17",
+          "code": "hugging",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f917.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531484622267879526",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:13:07.557+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bài viết hay quá ạ",
+      "author": {
+        "id": "805058036213350410",
+        "name": "baonguyen191",
+        "discriminator": "0000",
+        "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531484698285445300",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:13:25.681+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ccảm ơn a ạ",
+      "author": {
+        "id": "859817112296751116",
+        "name": "davidkeleys6498",
+        "discriminator": "0000",
+        "nickname": "G7 - T065 - Trần Quí Đôn",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531486775024029928",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:21:40.814+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ ích quá ạ, cảm ơn b đúng phần mình đang bị thiếu",
+      "author": {
+        "id": "698474313027682344",
+        "name": "nhat2kruoi",
+        "discriminator": "0000",
+        "nickname": "T060 - Lưu Quang Nhật",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531486843856621629",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:21:57.225+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "rất hữu ích ạ",
+      "author": {
+        "id": "607559023805595653",
+        "name": "nson9116",
+        "discriminator": "0000",
+        "nickname": "T060 - Nguyễn Ngọc Sơn - 01948",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}

@@ -1,0 +1,520 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531722556954902699",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Tip & Trick: Auto log prompt trên Gemini Web",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:05:13.850834+07:00",
+  "messages": [
+    {
+      "id": "1531722556954902699",
+      "type": "Default",
+      "timestamp": "2026-07-29T00:58:35.607+07:00",
+      "timestampEdited": "2026-07-29T00:58:54.887+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531722557106032720",
+          "url": "https://cdn.discordapp.com/attachments/1531722556954902699/1531722557106032720/gemini.jfif?ex=6a6c398b&is=6a6ae80b&hm=371cbd36df128b2607735aa5723f873d99b0a0d4c62a0b19214846b26c0c4a27&",
+          "fileName": "gemini.jfif",
+          "fileSizeBytes": 12066
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "478707880019755019",
+              "name": "koone",
+              "discriminator": "0000",
+              "nickname": "Trung Duong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/478707880019755019/6f856259427e63bf01e66cec5012962f.png?size=512"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531723027736170588",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:00:27.85+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình thấy có một số bạn dùng Gemini bản web và phải log thủ công cho mỗi prompt, nên đây là một bài hướng dẫn nhỏ để tự động hóa việc này.",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531723742898684115",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:03:18.358+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Bước 1:** Tạo một file python mới trong folder **/scripts** của repo, mình đặt tên là **log_server.py** (tên tùy mọi người đặt nhé), và paste đoạn code sau:",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531723896653348874",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:03:55.016+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531723896326324449",
+          "url": "https://cdn.discordapp.com/attachments/1531722556954902699/1531723896326324449/log_server.py?ex=6a6c3aca&is=6a6ae94a&hm=aeed404963f9ad1942ea95c58007822277df5524be42d8665dc8361b17f5d4bf&",
+          "fileName": "log_server.py",
+          "fileSizeBytes": 3077
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531724045765185738",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:04:30.567+07:00",
+      "timestampEdited": "2026-07-29T01:07:13.312+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Bước 2:** Lên **Extension Store** của Chrome (hoặc browser khác), tìm extension **Tampermonkey** rồi cài nó.\n> Link truy cập nhanh Tampermonkey: https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?utm_source=ext_app_menu\n- Sau khi cài xong, ấn vào biểu tượng **Tampermonkey** trên thanh Extension và chọn **Tạo tập lệnh mới**",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Tampermonkey - Chrome Web Store",
+          "url": "https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?utm_source=ext_app_menu",
+          "timestamp": null,
+          "description": "Change the web at will with userscripts",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/3Z_lEybapCIR23xW2pptzL7Axb6DtpHTH9VwM0bAs70/https/lh3.googleusercontent.com/zoY8FwoOqPlBgFxcmFdNSK2Q4CcLmv-gw7vTjF2KMR9cEabwBsGNrHBTEMitn0Ba6OmCVJ0NcLnFGu3N97BP8Phu0g%3Ds128-rj-sc0x00ffffff",
+            "canonicalUrl": "https://lh3.googleusercontent.com/zoY8FwoOqPlBgFxcmFdNSK2Q4CcLmv-gw7vTjF2KMR9cEabwBsGNrHBTEMitn0Ba6OmCVJ0NcLnFGu3N97BP8Phu0g=s128-rj-sc0x00ffffff",
+            "width": 128,
+            "height": 128
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531724521084555454",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:06:23.892+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531724520740749435",
+          "url": "https://cdn.discordapp.com/attachments/1531722556954902699/1531724520740749435/image.png?ex=6a6c3b5f&is=6a6ae9df&hm=663f117db9808b9dd43867496834d37535d8f240dbaf0108e49fc9ede0f3f9fe&",
+          "fileName": "image.png",
+          "fileSizeBytes": 22376
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531725024925450292",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:08:24.017+07:00",
+      "timestampEdited": "2026-07-29T01:09:06.038+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "- Một tab mới để edit code sẽ hiện ra, paste đoạn script sau vào và ***Crtl + S** để save script:",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531725024296177844",
+          "url": "https://cdn.discordapp.com/attachments/1531722556954902699/1531725024296177844/tampermonkey_script.javascript?ex=6a6c3bd7&is=6a6aea57&hm=c01d48ce551c84797121e5a1b033f1f1a8f28191149b460c0c2fe1c2924ecec3&",
+          "fileName": "tampermonkey_script.javascript",
+          "fileSizeBytes": 2588
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531725444167241829",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:10:03.972+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Bước 3:** Mở Terminal trong source code của team bạn và chạy file **log_server.py** để bắt đầu ghi log:\n`python .\\scripts\\log_server.py`",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531725473011208383",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:10:10.849+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Bước 4:** Các bạn có thể check quá trình ghi log bằng cách ấn F12, tại tab Console hiện **[Logger] Gemini Auto Logger has started.** là được. Hoặc xem ngay trong Terminal, log sẽ được update ngay khi gửi prompt.",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531727695166308482",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:19:00.652+07:00",
+      "timestampEdited": "2026-07-29T01:20:03.14+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Bonus:** Trong trường hợp extension yêu cầu quyền để thực thi userscript thì các bạn hãy làm theo các bước sau:\n- **Chuột phải **vào biểu tượng Tampermonkey, chọn **Quản lý tiện ích (Manage Extension)**.\n- Trong trang Quản lý tiện ích mới mở ra, hãy **bật Developer Mode** lên.\n- Lúc này, permission cho userscript sẽ hiện ra như hình dưới đây, hãy **bật** nó lên và **tải lại Gemini web **để tiện ích được cập nhật.",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531728394943991877",
+      "type": "Default",
+      "timestamp": "2026-07-29T01:21:47.492+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "673768392842412045",
+        "name": "trickez",
+        "discriminator": "0000",
+        "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531728394641866823",
+          "url": "https://cdn.discordapp.com/attachments/1531722556954902699/1531728394641866823/image.png?ex=6a6c3efb&is=6a6aed7b&hm=b5ec6c97c14d09f7eb4a020c16049e292aa7fbe4eadcb2cf414348fcaf8f6c4b&",
+          "fileName": "image.png",
+          "fileSizeBytes": 66187
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531742553194627113",
+      "type": "Default",
+      "timestamp": "2026-07-29T02:18:03.082+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hay b",
+      "author": {
+        "id": "1108061338044993607",
+        "name": "phongqk226",
+        "discriminator": "0000",
+        "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "673768392842412045",
+              "name": "trickez",
+              "discriminator": "0000",
+              "nickname": "T204 - Trịnh Đắc Vụ - 01074",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/673768392842412045/72bb8039ea2c2a16aa1e116ef28051f3.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 12
+}

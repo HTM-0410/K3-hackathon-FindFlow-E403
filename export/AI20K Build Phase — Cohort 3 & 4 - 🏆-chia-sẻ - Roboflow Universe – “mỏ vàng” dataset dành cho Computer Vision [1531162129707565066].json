@@ -1,0 +1,257 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531162129707565066",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Roboflow Universe – “mỏ vàng” dataset dành cho Computer Vision",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:10:04.4783719+07:00",
+  "messages": [
+    {
+      "id": "1531162129707565066",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:51:39.339+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hôm nay mình muốn chia sẻ với mọi người một nguồn dữ liệu cực kỳ hữu ích mà mình thường xuyên sử dụng khi tìm kiếm hình ảnh để huấn luyện các mô hình Computer Vision: Roboflow Universe.\n\nĐây là một trong những nền tảng tổng hợp dataset thị giác máy tính công khai lớn, với hàng trăm nghìn bộ dữ liệu và hàng triệu hình ảnh đã được gán nhãn sẵn.\n\nĐiểm nổi bật của Roboflow Universe là dữ liệu được phân loại theo nhiều dạng bài toán khác nhau như:\n\n* Object Detection – phát hiện đối tượng\n* Image Segmentation – phân vùng ảnh\n* Image Classification – phân loại hình ảnh\n\nNgoài ra, nền tảng còn có rất nhiều chủ đề chuyên biệt như nhận diện chó mèo, biển số xe, nông sản, bố cục tài liệu, hóa đơn, CV, ảnh y tế và nhiều bài toán thực tế khác.\n\nThay vì mất hàng tuần để thu thập dữ liệu và vẽ bounding box thủ công, bạn có thể tìm kiếm dataset bằng từ khóa, kiểm tra chất lượng hình ảnh và nhãn, xem trước cấu trúc dữ liệu, sau đó export trực tiếp sang hơn 40 định dạng như YOLOv5, YOLOv8, COCO hoặc TFRecord.\n\nSau khi tải về, dataset có thể được đưa vào quá trình training gần như ngay lập tức. Đây là một nguồn tài nguyên rất phù hợp cho sinh viên, người mới học Computer Vision hoặc các nhóm đang cần xây dựng nhanh một bản thử nghiệm.\n\nTuy nhiên, trước khi sử dụng, mọi người vẫn nên kiểm tra kỹ chất lượng nhãn, độ cân bằng dữ liệu, giấy phép sử dụng và mức độ phù hợp với bài toán của mình.\n\nLink: https://universe.roboflow.com/",
+      "author": {
+        "id": "1520438987473551476",
+        "name": "hoquangminh_ai20k",
+        "discriminator": "0000",
+        "nickname": "T073-Hồ Quang Minh-01906",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [
+        {
+          "id": "1531162129967616162",
+          "url": "https://cdn.discordapp.com/attachments/1531162129707565066/1531162129967616162/image.png?ex=6a6c29db&is=6a6ad85b&hm=5a1ccd9cf45f06acae8f729b099df4be1e4edff9bc0d1182952384c78ba483e3&",
+          "fileName": "image.png",
+          "fileSizeBytes": 1629984
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "779001309088186399",
+              "name": "1phamminh0811",
+              "discriminator": "0000",
+              "nickname": "Anh Minh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/779001309088186399/ca4daf14a30fc4376d603d0886994169.png?size=512"
+            },
+            {
+              "id": "875927048462405672",
+              "name": "nguyenhuucong.",
+              "discriminator": "0000",
+              "nickname": "nguyenhuucong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1337056589814698064",
+              "name": "abcxyz4691a",
+              "discriminator": "0000",
+              "nickname": "T118-Nguyễn Mạnh Hiệp — 01319",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1337056589814698064/2f462a794bcbfbe3ce5abc0d5f2a4800.png?size=512"
+            },
+            {
+              "id": "1520438987473551476",
+              "name": "hoquangminh_ai20k",
+              "discriminator": "0000",
+              "nickname": "T073-Hồ Quang Minh-01906",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531166084835840102",
+      "type": "Default",
+      "timestamp": "2026-07-27T12:07:22.315+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tôi có thể làm gì với thông tin này",
+      "author": {
+        "id": "1011839998108110959",
+        "name": "_lenomi_",
+        "discriminator": "0000",
+        "nickname": "T185 - Lê Ngọc Minh - 01228",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1011839998108110959/35e411a04c68646e97231780de681c5e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531168007013928970",
+      "type": "Default",
+      "timestamp": "2026-07-27T12:15:00.598+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn bạn",
+      "author": {
+        "id": "877577707741933579",
+        "name": "fo2.fo3.fo4",
+        "discriminator": "0000",
+        "nickname": "G16-T048-Hồ Ngọc Quỳnh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531198736032731156",
+      "type": "Reply",
+      "timestamp": "2026-07-27T14:17:06.967+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDE42",
+      "author": {
+        "id": "1520438987473551476",
+        "name": "hoquangminh_ai20k",
+        "discriminator": "0000",
+        "nickname": "T073-Hồ Quang Minh-01906",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1011839998108110959",
+          "name": "_lenomi_",
+          "discriminator": "0000",
+          "nickname": "T185 - Lê Ngọc Minh - 01228",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/1011839998108110959/35e411a04c68646e97231780de681c5e.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1531166084835840102",
+        "channelId": "1531162129707565066",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE42",
+          "code": "slight_smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f642.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 4
+}

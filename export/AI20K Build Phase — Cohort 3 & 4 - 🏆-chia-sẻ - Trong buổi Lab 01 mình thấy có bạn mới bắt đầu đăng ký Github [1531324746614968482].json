@@ -1,0 +1,121 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531324746614968482",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Trong buổi Lab 01 mình thấy có bạn mới bắt đầu đăng ký Github",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:21:24.1254269+07:00",
+  "messages": [
+    {
+      "id": "1531324746614968482",
+      "type": "Default",
+      "timestamp": "2026-07-27T22:37:50.231+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình cũng đã từng git push -f origin main và... BÙM!\n\nMột pha ghi đè lịch sử làm sập hệ thống và bài học xương máu: code giỏi chưa đủ, làm việc nhóm phải đúng quy trình! Để không bao giờ gặp thảm họa trên, chỉ cần nhớ chuẩn Git sau:\n\n1. Bốn nhánh cốt lõi\nmain / master (Chạy thật): Code trên Production. Tuyệt đối cấm push trực tiếp hay force push.\n\ndevelop (Tích hợp): Nơi gom code mới nhất của cả team để kiểm thử.\n\nfeature/* (Tính năng): Nhánh làm task riêng của từng dev (tách từ develop, xong gộp lại develop).\n\nhotfix/* (Cứu hỏa): Nhánh sửa lỗi khẩn cấp (tách từ main, sửa xong gộp vào cả main và develop).\n\n2. Quy trình 5 bước cho 1 Task\nĐồng bộ trước khi làm: Kéo code mới nhất về (git pull origin develop) để không code trên nền phiên bản cũ.\n\nTách nhánh độc lập: Tạo nhánh theo task (git checkout -b feature/tên-task). 1 Task = 1 Nhánh.\n\nCommit nhỏ, có ý nghĩa: Viết lời nhắn rõ ràng (feat: thêm API login, fix: lỗi validate), tránh gom code cả tuần.\n\nTự xử lý xung đột: Kéo code từ develop vào nhánh của mình (--rebase) để tự sửa conflict trên máy cá nhân trước khi nộp.\n\nTạo Pull Request (PR): Đẩy code lên GitHub, nhờ đồng nghiệp Code Review. Có Approve mới được merge, sau đó xóa nhánh feature.\n\nMọi người xem thêm tại: https://viblo.asia/p/tong-quan-ve-cac-quy-trinh-lam-viec-voi-git-MG24BA6eVz3",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Tổng quan về các quy trình làm việc với Git",
+          "url": "https://viblo.asia/p/tong-quan-ve-cac-quy-trinh-lam-viec-voi-git-MG24BA6eVz3",
+          "timestamp": null,
+          "description": "1. Centralized Workflow – Quy trình tập trung\nLà quy trình đơn giản nhất, trong đó tất cả các lập trình viên đều push và pull từ một nhánh trung tâm duy nhất, thường là main.\n\nPhù hợp cho:\n* Nhóm nhỏ hoặc dự án cá nhân\n* Dự án đơn giản, không có nhiều tính năng phát triển song ...",
+          "color": "#5488C7",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/dKPqIPArqOikVVa9YuLY73EE9OzRdaDuEI4Fe0YCQHc/https/images.viblo.asia/aaa20839-bebd-456f-8e89-fc88edc24a20.png",
+            "canonicalUrl": "https://images.viblo.asia/aaa20839-bebd-456f-8e89-fc88edc24a20.png",
+            "width": 825,
+            "height": 433
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            },
+            {
+              "id": "678982833628250148",
+              "name": "heromine99",
+              "discriminator": "0000",
+              "nickname": "Karma",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+            },
+            {
+              "id": "696563462742212668",
+              "name": "lucminhduc",
+              "discriminator": "0000",
+              "nickname": "G02 - T091 - Lục Minh Đức",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

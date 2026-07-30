@@ -1,0 +1,169 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530964679432863926",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Design Thinking và mô hình Double Diamond",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:12:10.9642794+07:00",
+  "messages": [
+    {
+      "id": "1530964679432863926",
+      "type": "Default",
+      "timestamp": "2026-07-26T22:47:03.525+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Khi thiết kế một sản phẩm, chúng ta thường có xu hướng tìm giải pháp ngay khi vừa nhìn thấy vấn đề. Tuy nhiên, một giải pháp tốt chỉ xuất hiện khi chúng ta hiểu đúng vấn đề cần giải quyết.\n\nĐó là lý do mô hình Double Diamond được sử dụng trong Design Thinking.\n\nMô hình này gồm 4 giai đoạn:\n\n**1. Discover – Khám phá**\nThu thập thông tin và tìm hiểu người dùng thông qua phỏng vấn, quan sát, khảo sát hoặc nghiên cứu dữ liệu.\n\nỞ giai đoạn này, đừng vội đưa ra giải pháp. Hãy cố gắng hiểu:\n*Người dùng đang gặp khó khăn gì?*\n*Vì sao khó khăn đó xảy ra?*\n*Điều gì thực sự quan trọng với họ?*\n\n**2. Define – Xác định**\n\nTổng hợp những gì đã tìm hiểu để xác định vấn đề cốt lõi.\n\nThay vì nói:\n*“Chúng ta cần làm thêm một tính năng.”*\n\nHãy đặt câu hỏi:\n*“Người dùng đang gặp vấn đề gì mà tính năng này cần giải quyết?”*\n\n**3. Develop – Phát triển ý tưởng**\nĐưa ra nhiều ý tưởng và hướng giải quyết khác nhau. Đừng chỉ chọn ý tưởng đầu tiên hoặc ý tưởng dễ làm nhất.\nCó thể sử dụng brainstorming, sketch, user flow hoặc prototype đơn giản để kiểm tra các hướng tiếp cận.\n\n**4. Deliver – Hoàn thiện**\nChọn giải pháp phù hợp, tạo prototype, thử nghiệm với người dùng và tiếp tục cải thiện dựa trên phản hồi.\nSản phẩm không cần hoàn hảo ngay từ lần đầu. Điều quan trọng là học nhanh, sửa nhanh và giảm rủi ro trước khi đầu tư quá nhiều nguồn lực.\n\nĐiều cần nhớ:\nDouble Diamond không phải một quy trình cứng nhắc. Trong thực tế, chúng ta có thể quay lại bước trước khi phát hiện thêm thông tin mới.\n\nCốt lõi của mô hình là:\nMở rộng để khám phá nhiều khả năng, sau đó thu hẹp để đưa ra quyết định phù hợp.\nThiết kế tốt không bắt đầu bằng việc vẽ giao diện đẹp. Nó bắt đầu bằng việc đặt đúng câu hỏi và giải quyết đúng vấn đề.",
+      "author": {
+        "id": "1529868117956624424",
+        "name": "realdangtan",
+        "discriminator": "0000",
+        "nickname": "T113 - Lê Đăng Tấn - 01916",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [
+        {
+          "id": "1530964679831191562",
+          "url": "https://cdn.discordapp.com/attachments/1530964679432863926/1530964679831191562/image-381-1024x576.png?ex=6a6c1ab7&is=6a6ac937&hm=68a898f8e87a9c13f9481a2c9a5ef294141272131c468be7dbb08fc56b3dc6b5&",
+          "fileName": "image-381-1024x576.png",
+          "fileSizeBytes": 237058
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "750935911063355433",
+              "name": "quangson4773",
+              "discriminator": "0000",
+              "nickname": "T113 - Nguyễn Quang Sơn - 01956",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/750935911063355433/9cf3af221931c294e1d8f0f4f6e3e728.png?size=512"
+            },
+            {
+              "id": "1092634021344858294",
+              "name": "geniushust",
+              "discriminator": "0000",
+              "nickname": "Tài dz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1092634021344858294/330903437616040507530c557f07163b.png?size=512"
+            },
+            {
+              "id": "1324073297507520593",
+              "name": "nghiabeooo235",
+              "discriminator": "0000",
+              "nickname": "nhn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1324073297507520593/a1ddaa58a5ebfaf4e2e1cffcca359c98.png?size=512"
+            },
+            {
+              "id": "1325354539574104145",
+              "name": "tdat_24340",
+              "discriminator": "0000",
+              "nickname": "G11 - T097 - Tiến Đạt - 01678",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1325354539574104145/b55d9d9abf0426e0b5f1aaff19c70be1.png?size=512"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            },
+            {
+              "id": "1529868117956624424",
+              "name": "realdangtan",
+              "discriminator": "0000",
+              "nickname": "T113 - Lê Đăng Tấn - 01916",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531138202059014171",
+      "type": "Default",
+      "timestamp": "2026-07-27T10:16:34.543+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "đỉnh quá \uD83D\uDE01",
+      "author": {
+        "id": "750935911063355433",
+        "name": "quangson4773",
+        "discriminator": "0000",
+        "nickname": "T113 - Nguyễn Quang Sơn - 01956",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/750935911063355433/9cf3af221931c294e1d8f0f4f6e3e728.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE01",
+          "code": "grin",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f601.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 2
+}

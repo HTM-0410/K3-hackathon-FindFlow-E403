@@ -1,0 +1,118 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530812811146428566",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Làm thế nào để AI không tự 'bịa' thông tin khi làm việc?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:14:12.3575132+07:00",
+  "messages": [
+    {
+      "id": "1530812811146428566",
+      "type": "Default",
+      "timestamp": "2026-07-26T12:43:35.304+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Để AI không tự \"bịa\" (hay suy đoán mò) thông tin và cho ra kết quả chính xác, bạn không nên chỉ dựa vào một câu lệnh (prompt) duy nhất mà cần xây dựng một quy trình làm việc đúng. Dưới đây là các phương pháp hiệu quả được đề xuất:\n- Yêu cầu AI phải hỏi lại khi thiếu thông tin: Hãy xem AI như một nhân viên mới, họ không thể tự biết mọi quy trình cụ thể của bạn. Do đó, đừng bắt AI phải đoán ý. Hãy ghi thẳng vào prompt chỉ dẫn: \"Nếu có bất kỳ điểm nào chưa rõ thì phải hỏi lại, đừng tự đánh giá và viết luôn\". Nhờ chỉ dẫn này, AI sẽ chủ động đặt câu hỏi (ví dụ: mục đích của báo cáo là gì, độ dài và định dạng ra sao) để nắm rõ ngữ cảnh thay vì tự bịa ra thông tin.\n- Hội thoại qua lại nhiều lượt: Đừng kỳ vọng AI sẽ làm hoàn hảo ngay từ lần đầu, vì kết quả ban đầu thường chỉ chính xác khoảng 70%. Quá trình làm việc với AI đòi hỏi bạn phải tương tác, hỏi đi hỏi lại, yêu cầu AI chỉnh sửa, thêm bớt chi tiết cho đến khi đạt được kết quả như ý muốn.\n- Bắt AI tự kiểm tra chéo (Self-check): Bước kiểm tra là rất quan trọng để đảm bảo tính chính xác. Thay vì tự kiểm tra thủ công, bạn có thể yêu cầu AI tự rà soát lại chính kết quả của nó. Ví dụ: bạn yêu cầu AI \"tự kiểm tra xem số liệu hay là tên nào không có trong biên bản gốc không\", AI sẽ tự động đối chiếu và xác định được những thông tin nào có thật, thông tin nào bị thiếu hoặc chưa chắc chắn để báo lại cho bạn.\n- Lưu quy tắc vào Project/Skill: Để không tốn thời gian gõ đi gõ lại các chỉ dẫn giúp AI không bịa thông tin (như quy tắc không suy đoán, quy tắc tự kiểm tra trước khi trả lời), bạn có thể lưu các quy tắc này vào Project (cho một dự án cụ thể) hoặc đóng gói thành Skill (một bộ quy trình chuẩn). Khi đó, AI sẽ luôn tự động áp dụng đúng quy tắc mà không cần bạn phải nhắc lại",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530813206136623167",
+      "type": "Default",
+      "timestamp": "2026-07-26T12:45:09.477+07:00",
+      "timestampEdited": "2026-07-26T12:46:12.976+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Project và Skill đều là những công cụ giúp bạn tiết kiệm thời gian, tránh việc phải gõ lặp đi lặp lại các chỉ dẫn cho AI mỗi khi làm việc, nhưng chúng có sự khác biệt rõ rệt về chức năng, phạm vi và cách sử dụng:\n\nProject (Dự án/Không gian làm việc)\n- Bản chất: Hoạt động như một trợ lý chuyên phụ trách từng loại việc cụ thể có ngữ cảnh riêng.\n- Phạm vi áp dụng: Các chỉ dẫn tùy chỉnh (custom instructions) mà bạn thiết lập sẽ chỉ phù hợp và áp dụng giới hạn bên trong project đó.\n\nVí dụ sử dụng: Bạn có thể tạo các Project hoàn toàn tách biệt như \"phân tích phản hồi của học viên\", \"trợ lý viết kịch bản\", hoặc \"báo cáo họp gửi sếp\". Trong project báo cáo họp, bạn sẽ cài đặt sẵn quy tắc về văn phong, cấu trúc thông tin và yêu cầu không suy đoán riêng cho sếp của bạn.\n\nSkill (Kỹ năng/Quy trình đóng gói)\n- Bản chất: Là công cụ giúp đóng gói một quy trình mà bạn đã hoàn thiện. Nó giống như một \"công thức nấu ăn\" được lưu sẵn; khi cần, bạn chỉ việc gõ tên skill (có dấu / ở đằng trước) để gọi công thức đó ra sử dụng mà không cần phải viết lại toàn bộ yêu cầu.\n- Phạm vi áp dụng: Vượt trội hơn Project ở tính linh hoạt, một Skill có thể được gọi ra để sử dụng ở bất kỳ project nào trên máy tính của bạn.\n- Khả năng chia sẻ: Bạn hoàn toàn có thể đóng gói skill và gửi cho người khác tải về. Ví dụ, nếu bạn có một team 5 người, bạn có thể tạo skill và chia sẻ để cả 5 người cùng áp dụng chuẩn xác một quy trình làm việc giống nhau.\n\nVí dụ sử dụng: Sau nhiều tuần dùng thử Project \"báo cáo họp gửi sếp\" và thấy kết quả đã chuẩn, bạn có thể trích xuất quy tắc đó thành một \"skill tóm tắt biên bản họp\". Bạn cũng có thể tạo \"skill soát email trước khi gửi\" để AI luôn tự động kiểm tra lỗi chính tả, ngữ pháp và ẩn đi thông tin nhạy cảm của công ty trước khi gửi cho đối tác.\n\nTóm lại, Project dùng để tạo ra một không gian làm việc khoanh vùng cho một ngữ cảnh cố định, trong khi Skill là những bộ quy trình chuẩn được lưu lại để có thể dùng đi dùng lại ở mọi nơi và dễ dàng chia sẻ cho đội nhóm",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

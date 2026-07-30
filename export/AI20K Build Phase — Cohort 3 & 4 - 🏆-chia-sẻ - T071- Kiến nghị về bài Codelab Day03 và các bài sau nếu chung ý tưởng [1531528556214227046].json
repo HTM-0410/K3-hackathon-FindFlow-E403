@@ -1,0 +1,269 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531528556214227046",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "T071- Kiến nghị về bài Codelab Day03 và các bài sau nếu chung ý tưởng",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:07:21.0908787+07:00",
+  "messages": [
+    {
+      "id": "1531528556214227046",
+      "type": "Default",
+      "timestamp": "2026-07-28T12:07:42.226+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hôm nay em và các bạn khóa 3 có thực hiện codelab day3. Em thấy rằng khi chia các role của từng mốc mỗi bạn đều chỉ làm việc và chỉnh sửa trên file riêng biệt nên em nghĩ chương trình nên để hướng dẫn các bạn dùng chung repo của 1 nhóm trưởng  sau đó mọi người cùng clone về và sửa trên branch của mỗi người. Sau mỗi mốc được kết thúc thì mọi người xem đã oke chưa để nhóm trưởng đưa vào main.\nĐiều này sẽ giúp mọi người quản lý công việc trong nhóm dễ hơn là việc mỗi người clone 1 repo về máy xong sửa sẽ gặp khó khăn.Em cũng mong nếu tương lai có các bài LAB làm việc nhóm tương tự hôm nay thì các anh coachlab có thể tham khảo và hướng dẫn các bạn ạ",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 9,
+          "users": [
+            {
+              "id": "461100458786816032",
+              "name": "thiendz1ngaunhat",
+              "discriminator": "0000",
+              "nickname": "Thiendz1",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "607559023805595653",
+              "name": "nson9116",
+              "discriminator": "0000",
+              "nickname": "baby dont hurt me",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+            },
+            {
+              "id": "835540082819203083",
+              "name": "86157.",
+              "discriminator": "0000",
+              "nickname": "nobody",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "846743153780064316",
+              "name": "htm04",
+              "discriminator": "0000",
+              "nickname": "HTM",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1030659866081120346",
+              "name": "minhyeuem_",
+              "discriminator": "0000",
+              "nickname": "T071 - Đỗ Nhật Minh - 01085",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1325354539574104145",
+              "name": "tdat_24340",
+              "discriminator": "0000",
+              "nickname": "G11 - T097 - Tiến Đạt - 01678",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1325354539574104145/b55d9d9abf0426e0b5f1aaff19c70be1.png?size=512"
+            },
+            {
+              "id": "1356872646528335893",
+              "name": "iahp_86072",
+              "discriminator": "0000",
+              "nickname": "T021 - Hoàng Văn Phái - 01575",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1529777992241254431",
+              "name": "phamhai24",
+              "discriminator": "0000",
+              "nickname": "T185 -Phạm Bá Thượng Hải- 01797",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529777992241254431/c82b3fa769ed6e6ffdea579381ed5f5c.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531528861165027328",
+      "type": "Default",
+      "timestamp": "2026-07-28T12:08:54.932+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ý tưởng hay!",
+      "author": {
+        "id": "461100458786816032",
+        "name": "thiendz1ngaunhat",
+        "discriminator": "0000",
+        "nickname": "T071 - TranDucThien - 02032",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531530202872549407",
+      "type": "Default",
+      "timestamp": "2026-07-28T12:14:14.82+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "phần này là quản lý git repo cơ bản mình phải làm mà bạn, mình thấy mấy anh lab code có yêu cầu làm như vậy và trong phần hướng dẫn bài lab cũng có nói về việc quản lý repo của git.",
+      "author": {
+        "id": "1529724336989016151",
+        "name": "hoangquanhq137",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Hoàng Quân - 01805",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531534330868793394",
+      "type": "Reply",
+      "timestamp": "2026-07-28T12:30:39.011+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tại mình cũng thấy có nhiều bạn xung quanh cũng git clone và gặp khó khăn khi làm việc chung với nhau. Với những bạn đã quen thuộc github thì dễ nhưng như nhóm mình lúc này có bạn xóa nhầm cả code bạn khác.",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1529724336989016151",
+          "name": "hoangquanhq137",
+          "discriminator": "0000",
+          "nickname": "T038 - Trần Hoàng Quân - 01805",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1531530202872549407",
+        "channelId": "1531528556214227046",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

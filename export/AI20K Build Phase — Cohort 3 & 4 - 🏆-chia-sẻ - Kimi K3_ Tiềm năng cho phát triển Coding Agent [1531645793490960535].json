@@ -1,0 +1,65 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531645793490960535",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Kimi K3: Tiềm năng cho phát triển Coding Agent",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:21:59.942855+07:00",
+  "messages": [
+    {
+      "id": "1531645793490960535",
+      "type": "Default",
+      "timestamp": "2026-07-28T19:53:33.771+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người, Kimi đã công bố báo cáo kỹ thuật cho mô hình K3. Thay vì chỉ cung cấp sản phẩm cuối, việc họ minh bạch các giải pháp kỹ thuật và kiến trúc giúp chúng ta có cơ sở thực tế để đánh giá hiệu suất. Mình tổng hợp một số điểm cốt lõi về mặt kỹ thuật và khả năng tối ưu hóa để mọi người cùng xem xét.\n * Cơ chế kích hoạt luân phiên (MoE): Mô hình có tổng 2.8 nghìn tỷ tham số, nhưng thuật toán định tuyến phân bổ 16/896 experts giúp giới hạn mức kích hoạt ở khoảng 104 tỷ tham số cho mỗi token. Giải pháp này giúp kiểm soát tài nguyên phần cứng cần thiết cho quá trình suy luận mà vẫn duy trì được năng lực tính toán.\n * Mở rộng không gian ngữ cảnh: K3 hỗ trợ context window lên tới 1 triệu token kết hợp với xử lý thị giác (native vision). Khả năng này đặc biệt hữu ích khi cần nạp toàn bộ cấu trúc mã nguồn của dự án hoặc phân tích các file log hệ thống dung lượng lớn.\n * Khắc phục điểm nghẽn hiệu suất: Việc áp dụng Kimi Delta Attention và attention residual là phương pháp kỹ thuật chính giúp mô hình duy trì tốc độ phản hồi và độ chính xác khi dung lượng ngữ cảnh đầu vào tăng cao.\n * Năng lực tự động hóa lập trình: Dựa trên các chỉ số benchmark như TerminalBench và SWE-Marathon, hiệu suất giải quyết tác vụ của K3 cho thấy mức độ cạnh tranh sòng phẳng với các mô hình đóng hiện tại.\nĐiểm giá trị nhất trong báo cáo này là cách họ mô tả chi tiết phương pháp huấn luyện agent dài hạn và quản lý trạng thái sandbox. Hệ thống tài liệu này cung cấp nền tảng để các đội ngũ kỹ thuật tự phát triển và lưu trữ coding agent nội bộ, giải quyết bài toán phụ thuộc vào rate limit từ các nhà cung cấp API.\nVới yêu cầu phân bổ bộ nhớ cho một cấu trúc MoE quy mô lớn, mọi người có phương án kiến trúc hạ tầng nào để triển khai hiệu quả mô hình này vào các dự án hiện tại không?\nCre: https://www.kimi.com/blog/kimi-k3",
+      "author": {
+        "id": "1108061338044993607",
+        "name": "phongqk226",
+        "discriminator": "0000",
+        "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Kimi K3 Tech Blog: Open Frontier Intelligence",
+          "url": "https://www.kimi.com/blog/kimi-k3",
+          "timestamp": null,
+          "description": "Kimi K3 is the world's first open 3T-class model — frontier performance across coding, knowledge work, and reasoning, with native multimodality and 1M context.",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,306 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531661356850221197",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "AI Logs for copilot",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:06:27.6021496+07:00",
+  "messages": [
+    {
+      "id": "1531661356850221197",
+      "type": "Default",
+      "timestamp": "2026-07-28T20:55:24.365+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Có ai dùng copilot giống mình không nhỉ? Nếu có mà bạn vẫn chưa cấu hình được AI Logs thì tham khảo bài mình nha: \nCác  bước cấu hình trước như setup_hooks.ps1 với _pyrun.sh thì tương tự như các bài đăng của mọi người chia sẻ.\nỞ đây, mình chia sẻ thêm về Script để lấy log đẩy lên server các bạn có thể tham khảo tạo thêm file code với đường dẫn (P-XXX/scripts/ai_log_setup.py) theo code bên dưới: \n---------------------------------------------------------------------",
+      "author": {
+        "id": "1444610995652661258",
+        "name": "26ai.huypb",
+        "discriminator": "0000",
+        "nickname": "T235-Phạm Bá Huy-01132",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1444610995652661258/79ee349b6511e2000af8a32fb8a6974e.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531661357794197666",
+          "url": "https://cdn.discordapp.com/attachments/1531661356850221197/1531661357794197666/Screenshot_2026-07-28_203526.png?ex=6a6c008c&is=6a6aaf0c&hm=4ab9fed3ca50cbd14673f28035137098804f1a169f1bbe53c2c04b2bcb297771&",
+          "fileName": "Screenshot_2026-07-28_203526.png",
+          "fileSizeBytes": 78092
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "678982833628250148",
+              "name": "heromine99",
+              "discriminator": "0000",
+              "nickname": "Karma",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+            },
+            {
+              "id": "1444610995652661258",
+              "name": "26ai.huypb",
+              "discriminator": "0000",
+              "nickname": "T235-Phạm Bá Huy-01132",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1444610995652661258/79ee349b6511e2000af8a32fb8a6974e.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531661865753509898",
+      "type": "Default",
+      "timestamp": "2026-07-28T20:57:25.697+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "#!/usr/bin/env python3\n\"\"\"Install AI logging support for Copilot and git push submission.\"\"\"\nfrom __future__ import annotations\n\nimport json\nfrom pathlib import Path\nfrom textwrap import dedent\nfrom typing import Dict\n\n\ndef load_env(env_path: Path) -> Dict[str, str]:\n    values: Dict[str, str] = {}\n    if not env_path.exists():\n        return values\n    for line in env_path.read_text(encoding=\"utf-8\").splitlines():\n        line = line.strip()\n        if not line or line.startswith(\"#\"):\n            continue\n        if \"=\" not in line:\n            continue\n        key, value = line.split(\"=\", 1)\n        values[key.strip()] = value.strip()\n    return values\n\n\ndef ensure_dir(path: Path) -> None:\n    path.mkdir(parents=True, exist_ok=True)\n\n\ndef write_pre_push_hook(repo_root: Path) -> None:\n    hook_dir = repo_root / \".git\" / \"hooks\"\n    ensure_dir(hook_dir)\n    hook_file = hook_dir / \"pre-push\"\n    hook_text = dedent(\n        \"\"\"\\\n        #!/usr/bin/env bash\n        # Submit AI logs from .ai-log/session.jsonl before git push.\n        bash scripts/_pyrun.sh scripts/submit_log.py || true\n        exit 0\n        \"\"\"\n    )\n    hook_file.write_text(hook_text, encoding=\"utf-8\")\n    try:\n        hook_file.chmod(0o755)\n    except OSError:\n        pass\n    print(f\"[ai-log] Installed git pre-push hook: {hook_file}\")",
+      "author": {
+        "id": "1444610995652661258",
+        "name": "26ai.huypb",
+        "discriminator": "0000",
+        "nickname": "T235-Phạm Bá Huy-01132",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1444610995652661258/79ee349b6511e2000af8a32fb8a6974e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531661983588552797",
+      "type": "Default",
+      "timestamp": "2026-07-28T20:57:53.791+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "def ensure_copilot_hook_config(repo_root: Path) -> None:\n    hooks_dir = repo_root / \".github\" / \"hooks\"\n    ensure_dir(hooks_dir)\n    hooks_file = hooks_dir / \"hooks.json\"\n    copilot_config = {\n        \"version\": 1,\n        \"hooks\": {\n            \"userPromptSubmitted\": [\n                {\n                    \"type\": \"command\",\n                    \"bash\": \"bash scripts/_pyrun.sh scripts/log_hook.py --tool=copilot\",\n                    \"powershell\": \"scripts\\\\_pyrun.cmd scripts\\\\log_hook.py --tool=copilot\",\n                    \"timeoutSec\": 10,\n                }\n            ],\n            \"sessionEnd\": [\n                {\n                    \"type\": \"command\",\n                    \"bash\": \"bash scripts/_pyrun.sh scripts/log_hook.py --tool=copilot\",\n                    \"powershell\": \"scripts\\\\_pyrun.cmd scripts\\\\log_hook.py --tool=copilot\",\n                    \"timeoutSec\": 10,\n                }\n            ],\n        },\n    }\n\n    if hooks_file.exists():\n        try:\n            existing = json.loads(hooks_file.read_text(encoding=\"utf-8\"))\n            if existing.get(\"hooks\", {}).get(\"userPromptSubmitted\") and existing.get(\"hooks\", {}).get(\"sessionEnd\"):\n                print(f\"[ai-log] Copilot hook config already exists: {hooks_file}\")\n                return\n        except json.JSONDecodeError:\n            pass\n\n    hooks_file.write_text(json.dumps(copilot_config, indent=2, ensure_ascii=False), encoding=\"utf-8\")\n    print(f\"[ai-log] Created Copilot hook config: {hooks_file}\")",
+      "author": {
+        "id": "1444610995652661258",
+        "name": "26ai.huypb",
+        "discriminator": "0000",
+        "nickname": "T235-Phạm Bá Huy-01132",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1444610995652661258/79ee349b6511e2000af8a32fb8a6974e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531662039037251704",
+      "type": "Default",
+      "timestamp": "2026-07-28T20:58:07.011+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "def main() -> int:\n    repo_root = Path(__file__).resolve().parent.parent\n    env_path = repo_root / \".env\"\n    env = load_env(env_path)\n    if not env:\n        print(\"[ai-log] Warning: .env file not found or empty. Create .env from .env.example and set AI_LOG_SERVER.\")\n    if not env.get(\"AI_LOG_SERVER\"):\n        print(\"[ai-log] Warning: AI_LOG_SERVER is not set in .env. The submit step will be skipped until this is configured.\")\n    log_dir = repo_root / env.get(\"AI_LOG_DIR\", \".ai-log\")\n    ensure_dir(log_dir)\n    keep_path = log_dir / \".gitkeep\"\n    if not keep_path.exists():\n        keep_path.write_text(\"\", encoding=\"utf-8\")\n    print(f\"[ai-log] Ensured AI log directory exists: {log_dir}\")\n    ensure_copilot_hook_config(repo_root)\n    write_pre_push_hook(repo_root)\n    print(\"[ai-log] Setup complete. Use 'git push' to submit logs, or run 'python scripts/submit_log.py' manually.\")\n    return 0\n\n\nif __name__ == \"__main__\":\n    raise SystemExit(main())",
+      "author": {
+        "id": "1444610995652661258",
+        "name": "26ai.huypb",
+        "discriminator": "0000",
+        "nickname": "T235-Phạm Bá Huy-01132",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1444610995652661258/79ee349b6511e2000af8a32fb8a6974e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531662445846991089",
+      "type": "Default",
+      "timestamp": "2026-07-28T20:59:44.002+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ngoài ra, nếu bạn gặp phải trường hợp SSL bị fail cer:\nNguyên nhân\nLỗi này là do Python không thể xác thực chứng chỉ SSL của server khi gọi HTTPS:\n\nCERTIFICATE_VERIFY_FAILED\n\"unable to get local issuer certificate\"\nNghĩa là Python đang dùng bộ chứng chỉ cài trong hệ hoặc môi trường nhưng không tìm được chứng chỉ gốc của server.",
+      "author": {
+        "id": "1444610995652661258",
+        "name": "26ai.huypb",
+        "discriminator": "0000",
+        "nickname": "T235-Phạm Bá Huy-01132",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1444610995652661258/79ee349b6511e2000af8a32fb8a6974e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531662729801236641",
+      "type": "Default",
+      "timestamp": "2026-07-28T21:00:51.702+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chúng  ta cần thêm vào requirements.txt dòng sau: certifi>=2024.11.1",
+      "author": {
+        "id": "1444610995652661258",
+        "name": "26ai.huypb",
+        "discriminator": "0000",
+        "nickname": "T235-Phạm Bá Huy-01132",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1444610995652661258/79ee349b6511e2000af8a32fb8a6974e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531663311999995955",
+      "type": "Default",
+      "timestamp": "2026-07-28T21:03:10.509+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đồng  thời bổ sung vào submit_log.py ở các đoạn \uD83D\uDE44",
+      "author": {
+        "id": "1444610995652661258",
+        "name": "26ai.huypb",
+        "discriminator": "0000",
+        "nickname": "T235-Phạm Bá Huy-01132",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1444610995652661258/79ee349b6511e2000af8a32fb8a6974e.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531663311173718116",
+          "url": "https://cdn.discordapp.com/attachments/1531661356850221197/1531663311173718116/image.png?ex=6a6c025e&is=6a6ab0de&hm=8d11b3b18f57d5faf3c9bb02c2f932c4271ddae411fa2b99901899a9f40cb41b&",
+          "fileName": "image.png",
+          "fileSizeBytes": 30792
+        },
+        {
+          "id": "1531663311613989175",
+          "url": "https://cdn.discordapp.com/attachments/1531661356850221197/1531663311613989175/image.png?ex=6a6c025e&is=6a6ab0de&hm=6ef9d23f316b1bb73036221184b3419744166a3d92b09c187d05c5337402b7f1&",
+          "fileName": "image.png",
+          "fileSizeBytes": 71832
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE44",
+          "code": "rolling_eyes",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f644.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 7
+}

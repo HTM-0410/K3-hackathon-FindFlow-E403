@@ -1,0 +1,152 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530786429846945942",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[T-052] Chia sẻ về BMAD",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:15:04.6344075+07:00",
+  "messages": [
+    {
+      "id": "1530786429846945942",
+      "type": "Default",
+      "timestamp": "2026-07-26T10:58:45.512+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người, hôm nay mình muốn chia sẻ một chủ đề khá thú vị mà mình vừa đọc được trong technical book của chương trình: phương pháp BMAD. Càng đọc mình càng thấy tư duy của phương pháp này rất hay khi áp dụng vào thực tế.\n\nChắc nhiều bạn từng gặp tình huống: khi bắt đầu làm một project, chúng ta nảy ra ý tưởng là nhảy ngay vào code. Nhưng code được một lúc thì project rối tung lên vì luồng data chưa rõ ràng, mông lung về kiến trúc, hoặc làm sai lệch hẳn so với yêu cầu ban đầu. Nếu làm team thì dễ giẫm chân lên nhau, còn làm solo thì dễ bị \"ngợp\" vì phải ôm đồm quá nhiều việc.\n\nVấn đề là chúng ta thường coi việc phát triển sản phẩm AI chỉ là viết code và test prompt, trong khi nó cần một quy trình phát triển (software development lifecycle) thực thụ. BMAD giải quyết chuyện này bằng cách mô phỏng một development team với 6 AI Agents chuyên biệt (từ Analyst, Architect, Dev, Designer, QA đến PM).\n\nTừ phương pháp này, có 3 nguyên tắc (tư duy) mình thấy quan trọng nhất khi áp dụng:\n\n1. Đừng bắt một Agent làm tất cả, hãy chia role. Thay vì dùng một prompt dài ngoằng bắt AI vừa nghĩ tính năng vừa code, hãy chia nhỏ ra. Cho Agent đóng vai Analyst để viết PRD phân tích yêu cầu trước, rồi đưa cho Architect thiết kế hệ thống, cuối cùng mới để Dev nhảy vào implement.\n\n2. Tuân thủ quy trình không nhảy cóc (4-Phase Workflow). Luôn đi từ Discovery ➔ Design ➔ Build ➔ Deliver. Việc code chỉ thực sự bắt đầu khi bạn đã có PRD và bản thiết kế kiến trúc rõ ràng.\n\n3. Quản lý chất lượng phải chạy song song. Đừng đợi code xong xuôi mới test. Trong BMAD, vai trò của QA và PM luôn chạy xuyên suốt để viết test, review code và đốc thúc deliverables. Áp dụng tư duy này, chúng ta cần liên tục verify kết quả ở từng chặng nhỏ thay vì đợi đến cuối dự án.\n\nTóm lại: nếu project của bạn bắt đầu mở rộng scope và cần cấu trúc rõ ràng (như để chuẩn bị cho Demo Day chẳng hạn), hãy thử áp dụng tư duy multi-agent của BMAD.",
+      "author": {
+        "id": "708332179561775188",
+        "name": "endermagician.",
+        "discriminator": "0000",
+        "nickname": "T052-Nguyễn Minh Hiếu-01816",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/708332179561775188/5afb4fc4f229c53c713082b58812b6a4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530886065483677817",
+      "type": "Default",
+      "timestamp": "2026-07-26T17:34:40.499+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trong chương trình có 1 anh mentor cũng khá chuyên bề BMAD ấy",
+      "author": {
+        "id": "759055479723917364",
+        "name": "nhat_cuong",
+        "discriminator": "0000",
+        "nickname": "Vonhatcuong",
+        "color": "#A72525",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527509817084739805",
+            "name": "Admin",
+            "color": "#A72525",
+            "position": 18
+          },
+          {
+            "id": "1527919808862228652",
+            "name": "Coach",
+            "color": "#F1C40F",
+            "position": 15
+          },
+          {
+            "id": "1527919786850390116",
+            "name": "Mod",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "708332179561775188",
+              "name": "endermagician.",
+              "discriminator": "0000",
+              "nickname": "T052-Nguyễn Minh Hiếu-01816",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/708332179561775188/5afb4fc4f229c53c713082b58812b6a4.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

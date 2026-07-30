@@ -1,0 +1,193 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531239417220431873",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Chia sẻ cho mọi người 1 repo hay giúp các bạn tiết kiệm token.",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:09:14.3324587+07:00",
+  "messages": [
+    {
+      "id": "1531239417220431873",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:58:46.118+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://github.com/juliusbrussee/caveman",
+      "author": {
+        "id": "690503871402868807",
+        "name": "thanhfdc",
+        "discriminator": "0000",
+        "nickname": "T230 - Diêm Công Thành - 01689",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - JuliusBrussee/caveman: \uD83E\uDEA8 why use many token when few to...",
+          "url": "https://github.com/juliusbrussee/caveman",
+          "timestamp": null,
+          "description": "\uD83E\uDEA8 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman - JuliusBrussee/caveman",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/h6__8cmAigN01-wwBf5PzcoftnLzKd1s67RhmaqyNcc/https/opengraph.githubassets.com/d531e66fc730cfc90bb362110eb6b34dba03a8d691c719511631f7ff537d4a78/JuliusBrussee/caveman",
+            "canonicalUrl": "https://opengraph.githubassets.com/d531e66fc730cfc90bb362110eb6b34dba03a8d691c719511631f7ff537d4a78/JuliusBrussee/caveman",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": [
+            {
+              "id": "",
+              "name": "\uD83E\uDEA8",
+              "code": "rock",
+              "isAnimated": false,
+              "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1faa8.svg"
+            }
+          ]
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "678982833628250148",
+              "name": "heromine99",
+              "discriminator": "0000",
+              "nickname": "Karma",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+            },
+            {
+              "id": "690503871402868807",
+              "name": "thanhfdc",
+              "discriminator": "0000",
+              "nickname": "T230 - Diêm Công Thành - 01689",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+            },
+            {
+              "id": "1317685215266607104",
+              "name": "khongcomatkhau_14",
+              "discriminator": "0000",
+              "nickname": "OwO",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1529717549716082728",
+              "name": "vutung0103",
+              "discriminator": "0000",
+              "nickname": "Vũ Tùng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531254395763822632",
+      "type": "Default",
+      "timestamp": "2026-07-27T17:58:17.281+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hữu ích quá ạaa!!!",
+      "author": {
+        "id": "945886819164229634",
+        "name": "trangnguyen_20_11",
+        "discriminator": "0000",
+        "nickname": "T230_Trang_01634",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/945886819164229634/b0f80b9935976069f3717bc968090cce.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531256483054882926",
+      "type": "Default",
+      "timestamp": "2026-07-27T18:06:34.93+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hữu ích quá a à",
+      "author": {
+        "id": "918161364516745226",
+        "name": "countduck4819",
+        "discriminator": "0000",
+        "nickname": "T238-Vũ Thành Khang - 01866",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

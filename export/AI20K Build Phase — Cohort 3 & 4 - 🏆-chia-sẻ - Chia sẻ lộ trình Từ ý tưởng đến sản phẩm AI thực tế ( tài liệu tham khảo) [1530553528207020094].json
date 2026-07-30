@@ -1,0 +1,1333 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530553528207020094",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Chia sẻ lộ trình Từ ý tưởng đến sản phẩm AI thực tế ( tài liệu tham khảo)",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:06:04.7437457+07:00",
+  "messages": [
+    {
+      "id": "1530553528207020094",
+      "type": "Default",
+      "timestamp": "2026-07-25T19:33:17.434+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": true,
+      "content": "Đây là bộ tài liệu mình xây dựng trong quá trình làm AI Trainer và triển khai các sản phẩm AI cho doanh nghiệp. Nội dung tập trung vào cách ứng dụng Vibe Coding để xây dựng một sản phẩm AI từ đầu đến cuối.\n\nTrong tài liệu, mình chia sẻ toàn bộ quy trình:\nTìm và đánh giá ý tưởng -> Tư duy sản phẩm & thiết kế giải pháp > Nghiên cứu và xác thực nhu cầu người dùng -> Xây dựng MVP và hoàn thiện sản phẩm AI > Kỹ năng làm việc với AI để debug và xử lý lỗi trong quá trình phát triển.\n\nĐây là phiên bản phát hành từ tháng 04/2026. Hiện mình chưa cập nhật lên phiên bản mới nhất nên một số nội dung và công cụ có thể đã thay đổi. Tuy nhiên, tư duy, phương pháp và quy trình trong tài liệu vẫn là những gì mình đang áp dụng khi phát triển sản phẩm AI đến thời điểm hiện tại.\n\nHy vọng tài liệu sẽ hữu ích, đặc biệt với những bạn mới bắt đầu xây dựng sản phẩm AI hoặc đang dùng Vibe Coding để build\n\nTrước đây mình đã chia sẻ tài liệu này trên một số cộng đồng và cũng có hơn 500.000 reached. Và mình chia sẻ miễn phí toàn bộ tài liệu và mã nguồn, các bạn có thể tham khảo, học tập và sử dụng theo nhu cầu của mình.\n\nChúc mọi người xây dựng được những sản phẩm AI thật sự hữu ích! \nLink tài liệu: https://learning.aiecos.ai/\nLink repo: https://github.com/aiecosvietnam/learning-ai",
+      "author": {
+        "id": "1485332134079238215",
+        "name": "david_463771",
+        "discriminator": "0000",
+        "nickname": "T038- Hoang - 01198",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530553529272631406",
+          "url": "https://cdn.discordapp.com/attachments/1530553528207020094/1530553529272631406/Screenshot_2026-07-25_at_19.03.40.png?ex=6a6bed4d&is=6a6a9bcd&hm=7ee81eb9a9075138ef166babcc4e29dc9ca63213c0a373ac530d2f578756432c&",
+          "fileName": "Screenshot_2026-07-25_at_19.03.40.png",
+          "fileSizeBytes": 883771
+        },
+        {
+          "id": "1530553531134906378",
+          "url": "https://cdn.discordapp.com/attachments/1530553528207020094/1530553531134906378/Screenshot_2026-07-25_at_19.02.49.png?ex=6a6bed4e&is=6a6a9bce&hm=727d0ca199915ee8fe59c45e5150065f81968d74fbb2b143fb3600e6522fc64e&",
+          "fileName": "Screenshot_2026-07-25_at_19.02.49.png",
+          "fileSizeBytes": 801537
+        },
+        {
+          "id": "1530553531680030740",
+          "url": "https://cdn.discordapp.com/attachments/1530553528207020094/1530553531680030740/Screenshot_2026-07-25_at_19.03.30.png?ex=6a6bed4e&is=6a6a9bce&hm=246af0affe84baec08e453b251d509b3f4ca359ee53746fbc7a18c86f9bb5179&",
+          "fileName": "Screenshot_2026-07-25_at_19.03.30.png",
+          "fileSizeBytes": 853799
+        },
+        {
+          "id": "1530553532137341018",
+          "url": "https://cdn.discordapp.com/attachments/1530553528207020094/1530553532137341018/Screenshot_2026-07-25_at_19.03.14.png?ex=6a6bed4e&is=6a6a9bce&hm=181bca9efdd71f15d3d700cbc4faace2b4bb24256d5fb15823ef6baf7723cc0b&",
+          "fileName": "Screenshot_2026-07-25_at_19.03.14.png",
+          "fileSizeBytes": 791058
+        },
+        {
+          "id": "1530553532699381760",
+          "url": "https://cdn.discordapp.com/attachments/1530553528207020094/1530553532699381760/Screenshot_2026-07-25_at_19.03.03.png?ex=6a6bed4e&is=6a6a9bce&hm=4cbe5ecf8514113902afbf06dc22f16e8e26257aacb5de844d78c1e509c774cc&",
+          "fileName": "Screenshot_2026-07-25_at_19.03.03.png",
+          "fileSizeBytes": 768317
+        },
+        {
+          "id": "1530553533168881734",
+          "url": "https://cdn.discordapp.com/attachments/1530553528207020094/1530553533168881734/Screenshot_2026-07-25_at_19.03.56.png?ex=6a6bed4e&is=6a6a9bce&hm=0b871df6186f6c5f609d25a7aaa24ac7169d70ebf3482e93f2e4a9ef6a3d996d&",
+          "fileName": "Screenshot_2026-07-25_at_19.03.56.png",
+          "fileSizeBytes": 845735
+        }
+      ],
+      "embeds": [
+        {
+          "title": "VitePress",
+          "url": "https://learning.aiecos.ai/",
+          "timestamp": null,
+          "description": "A VitePress site",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "GitHub - aiecosvietnam/learning-ai: Learning AI — học AI từ s...",
+          "url": "https://github.com/aiecosvietnam/learning-ai",
+          "timestamp": null,
+          "description": "Learning AI — học AI từ số 0 đến ship sản phẩm thật: Generative AI, Agentic AI, full-stack vibe coding - aiecosvietnam/learning-ai",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/FNWymXM6WVBY3d9H8qgwBvCWmHYcjHaiGySMZGLlUvA/https/opengraph.githubassets.com/2b5c3874c78a84ced12c263bf39270d8a97953b04efa8d09502cfe62e7c8975a/aiecosvietnam/learning-ai",
+            "canonicalUrl": "https://opengraph.githubassets.com/2b5c3874c78a84ced12c263bf39270d8a97953b04efa8d09502cfe62e7c8975a/aiecosvietnam/learning-ai",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 37,
+          "users": [
+            {
+              "id": "354120640237797377",
+              "name": "ytesect21",
+              "discriminator": "0000",
+              "nickname": "Mr P",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/354120640237797377/31fdcdc9bfdb4601044ae9f3bbb86d88.png?size=512"
+            },
+            {
+              "id": "422727530156392448",
+              "name": "hoangminh2511",
+              "discriminator": "0000",
+              "nickname": "G21 - T128 - Lương Hoàng Minh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/422727530156392448/34516a9552c1d2c42201419e79e8de35.png?size=512"
+            },
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "471331498314956820",
+              "name": "_nguyenthang",
+              "discriminator": "0000",
+              "nickname": "T048 — Nguyễn Thắng — 01163",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+            },
+            {
+              "id": "505578977692352512",
+              "name": "tuanhungbk",
+              "discriminator": "0000",
+              "nickname": "Ngô Tuấn Hưng — 01409",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/505578977692352512/319eab7dd9f630541a9aba7207726184.png?size=512"
+            },
+            {
+              "id": "576642492540387348",
+              "name": "hophamduclinh",
+              "discriminator": "0000",
+              "nickname": "Linhinthehood",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/576642492540387348/ab44e431e4b70de704179d0b9214e945.png?size=512"
+            },
+            {
+              "id": "624965547150278666",
+              "name": "lonhidol",
+              "discriminator": "0000",
+              "nickname": "Lonhidol",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "686586059408277579",
+              "name": "muwjc",
+              "discriminator": "0000",
+              "nickname": "Muwjc",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/686586059408277579/1a44c380d5684ca5e2cf239db959eac3.png?size=512"
+            },
+            {
+              "id": "691727915175641108",
+              "name": "nabito5800",
+              "discriminator": "0000",
+              "nickname": "Nabito",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/691727915175641108/4f644bc45d1975a6e23ba5e42a40adde.png?size=512"
+            },
+            {
+              "id": "696528651642077257",
+              "name": "tranduyson099",
+              "discriminator": "0000",
+              "nickname": "Sơn đz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "697623153249222778",
+              "name": "sondoong",
+              "discriminator": "0000",
+              "nickname": "Sơn Đoòng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/697623153249222778/894d894d230417bf155569a751531c95.png?size=512"
+            },
+            {
+              "id": "708248137373974570",
+              "name": "trungquan6391",
+              "discriminator": "0000",
+              "nickname": "TrungQuan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "751315350632660992",
+              "name": "quanninja1304",
+              "discriminator": "0000",
+              "nickname": "quanninja1304",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "797114545483153411",
+              "name": "minhducnguyen2932",
+              "discriminator": "0000",
+              "nickname": "Lab Coach - Nguyen Duc Minh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/797114545483153411/a066017a15406e9a9331c9a77d6f5a41.png?size=512"
+            },
+            {
+              "id": "805815688244887622",
+              "name": "chungnguyen1083064",
+              "discriminator": "0000",
+              "nickname": "Chungnguyen108",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "811441932097421322",
+              "name": "trammactu_",
+              "discriminator": "0000",
+              "nickname": "Hoang Viet",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/811441932097421322/f9d5fa2d33fa38634b4f54279d928bcb.png?size=512"
+            },
+            {
+              "id": "820279880054865921",
+              "name": "noxxsanl",
+              "discriminator": "0000",
+              "nickname": "Noxxsanl",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/820279880054865921/93f8acd1d60a3e26b3a7890967e6ae0e.png?size=512"
+            },
+            {
+              "id": "853647680718241792",
+              "name": "noble_chipmunk_94959",
+              "discriminator": "0000",
+              "nickname": "kiyo",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "872788843219271681",
+              "name": "hongphuoc203",
+              "discriminator": "0000",
+              "nickname": "hongphuoc203",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "894939728007266354",
+              "name": "hoangdeeptry_",
+              "discriminator": "0000",
+              "nickname": "G24-T146-Đoàn Vũ Hoàng-01727",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "906549571558182922",
+              "name": "truclinh2110",
+              "discriminator": "0000",
+              "nickname": "Lê Thị Trúc Linh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/906549571558182922/96aab0c1beaed5a904bdb9ca342399ed.png?size=512"
+            },
+            {
+              "id": "952878042856955925",
+              "name": "danhnahh",
+              "discriminator": "0000",
+              "nickname": "danhnahh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/952878042856955925/85cc0e852a1048b841bb395cb2fc7707.png?size=512"
+            },
+            {
+              "id": "1021469290869833848",
+              "name": "huydeptrai0838",
+              "discriminator": "0000",
+              "nickname": "T055-Dương Quang Huy-01346",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1021469290869833848/f72442186f03fc1d710b7f5768f9f3df.png?size=512"
+            },
+            {
+              "id": "1030659866081120346",
+              "name": "minhyeuem_",
+              "discriminator": "0000",
+              "nickname": "Đỗ Nhật Minh 2A202601085",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1108772499451302002",
+              "name": "quyonghappi",
+              "discriminator": "0000",
+              "nickname": "Mai Anh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108772499451302002/7eb9d3a7d9b3469bd3639d6e763d3253.png?size=512"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1315920640490082306",
+              "name": "minhchatvcl",
+              "discriminator": "0000",
+              "nickname": "minhdz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1315920640490082306/9b3f215d03b9af330944d6f62c2d66d9.png?size=512"
+            },
+            {
+              "id": "1317685215266607104",
+              "name": "khongcomatkhau_14",
+              "discriminator": "0000",
+              "nickname": "OwO",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1382753339871072387",
+              "name": "nhatminh171003",
+              "discriminator": "0000",
+              "nickname": "Nhật Minh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1392890973616476160",
+              "name": "heheboi0909",
+              "discriminator": "0000",
+              "nickname": "Đậu Quốc Duy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1517592253537845381",
+              "name": "sundaboi",
+              "discriminator": "0000",
+              "nickname": "SunDaBoi",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1517592253537845381/a2fc9469994c237743bb644b02213607.png?size=512"
+            },
+            {
+              "id": "1529724336989016151",
+              "name": "hoangquanhq137",
+              "discriminator": "0000",
+              "nickname": "Tran Hoang Quan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530564064839860284",
+      "type": "Default",
+      "timestamp": "2026-07-25T20:15:09.563+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDE06  hữu ích ạ",
+      "author": {
+        "id": "1037349661633155142",
+        "name": "hoamai0422",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Thị Hoa Mai - 01317",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1037349661633155142/f74bdb2c00cd4624536bba5bc74f5aaf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE06",
+          "code": "laughing",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f606.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530565860740304987",
+      "type": "Default",
+      "timestamp": "2026-07-25T20:22:17.739+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay quá a ơi \uD83D\uDC4F",
+      "author": {
+        "id": "354120640237797377",
+        "name": "ytesect21",
+        "discriminator": "0000",
+        "nickname": "T038 - Hoang Phong - 01077",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/354120640237797377/31fdcdc9bfdb4601044ae9f3bbb86d88.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDC4F",
+          "code": "clap",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44f.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530571044782477343",
+      "type": "Default",
+      "timestamp": "2026-07-25T20:42:53.711+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Team AAA MÃI ĐĨNH!",
+      "author": {
+        "id": "1485332134079238215",
+        "name": "david_463771",
+        "discriminator": "0000",
+        "nickname": "T038- Hoang - 01198",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDD23",
+            "code": "rofl",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f923.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1529724336989016151",
+              "name": "hoangquanhq137",
+              "discriminator": "0000",
+              "nickname": "Tran Hoang Quan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530597987363848193",
+      "type": "Default",
+      "timestamp": "2026-07-25T22:29:57.323+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn bro",
+      "author": {
+        "id": "781928455947157574",
+        "name": "phong2004",
+        "discriminator": "0000",
+        "nickname": "T062 - Hà Tấn Phong - 01577",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/781928455947157574/4029c9a9b2e0df11945611ccf253f583.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530741916726071498",
+      "type": "ChannelPinnedMessage",
+      "timestamp": "2026-07-26T08:01:52.757+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Pinned a message.",
+      "author": {
+        "id": "759055479723917364",
+        "name": "nhat_cuong",
+        "discriminator": "0000",
+        "nickname": "Vonhatcuong",
+        "color": "#A72525",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527509817084739805",
+            "name": "Admin",
+            "color": "#A72525",
+            "position": 18
+          },
+          {
+            "id": "1527919808862228652",
+            "name": "Coach",
+            "color": "#F1C40F",
+            "position": 15
+          },
+          {
+            "id": "1527919786850390116",
+            "name": "Mod",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530553528207020094",
+        "channelId": "1530553528207020094",
+        "guildId": null
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530886444258693263",
+      "type": "Default",
+      "timestamp": "2026-07-26T17:36:10.806+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Rất thực chiến , cảm ơn bạn đã chia sẻ",
+      "author": {
+        "id": "759055479723917364",
+        "name": "nhat_cuong",
+        "discriminator": "0000",
+        "nickname": "Vonhatcuong",
+        "color": "#A72525",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527509817084739805",
+            "name": "Admin",
+            "color": "#A72525",
+            "position": 18
+          },
+          {
+            "id": "1527919808862228652",
+            "name": "Coach",
+            "color": "#F1C40F",
+            "position": 15
+          },
+          {
+            "id": "1527919786850390116",
+            "name": "Mod",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530918028093554869",
+      "type": "Default",
+      "timestamp": "2026-07-26T19:41:40.979+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay quá, cảm ơn bro",
+      "author": {
+        "id": "750935911063355433",
+        "name": "quangson4773",
+        "discriminator": "0000",
+        "nickname": "T113 - Nguyễn Quang Sơn - 01956",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/750935911063355433/9cf3af221931c294e1d8f0f4f6e3e728.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530918300156952777",
+      "type": "Reply",
+      "timestamp": "2026-07-26T19:42:45.844+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn anh!",
+      "author": {
+        "id": "1485332134079238215",
+        "name": "david_463771",
+        "discriminator": "0000",
+        "nickname": "T038- Hoang - 01198",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "759055479723917364",
+          "name": "nhat_cuong",
+          "discriminator": "0000",
+          "nickname": "Vonhatcuong",
+          "color": "#A72525",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527509817084739805",
+              "name": "Admin",
+              "color": "#A72525",
+              "position": 18
+            },
+            {
+              "id": "1527919808862228652",
+              "name": "Coach",
+              "color": "#F1C40F",
+              "position": 15
+            },
+            {
+              "id": "1527919786850390116",
+              "name": "Mod",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530886444258693263",
+        "channelId": "1530553528207020094",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530950263702159551",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:49:46.547+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn a",
+      "author": {
+        "id": "1145374694795649105",
+        "name": "kunnhox",
+        "discriminator": "0000",
+        "nickname": "T024 - Trần Văn Ngọc - 01512",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1145374694795649105/8804bd14d1d93b4a1562bcba56e4e69c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531154955451498616",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:23:08.863+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hữu hiệu quá a ơi!",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531158734947225620",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:38:09.965+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn ạ!",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531158764684709970",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:38:17.055+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hay quá ạ",
+      "author": {
+        "id": "682163274921279493",
+        "name": "xuanphong7543",
+        "discriminator": "0000",
+        "nickname": "T096 - Phạm Xuân Phong - 02027",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/682163274921279493/d7c330e7fcbd2a35cd9706f9c6df9fdc.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531483148486184970",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:07:16.18+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn ạ!",
+      "author": {
+        "id": "576642492540387348",
+        "name": "hophamduclinh",
+        "discriminator": "0000",
+        "nickname": "G14 - T066 - Ho Pham Duc Linh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/576642492540387348/ab44e431e4b70de704179d0b9214e945.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531666989108564099",
+      "type": "Default",
+      "timestamp": "2026-07-28T21:17:47.2+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn bạn đã chia sẻ",
+      "author": {
+        "id": "918083193209520168",
+        "name": "licht196",
+        "discriminator": "0000",
+        "nickname": "T065 - Nguyễn Hoàng Vũ - 01941",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/918083193209520168/3f0f7483a480e827c1f09317de2de8cb.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531676088961597440",
+      "type": "Default",
+      "timestamp": "2026-07-28T21:53:56.774+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn b đã chia sẻ",
+      "author": {
+        "id": "747120974654210220",
+        "name": "stylish_courgette_71678",
+        "discriminator": "0000",
+        "nickname": "T009-Trương Công Đạt-01449",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "T038- Hoang - 01198",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 16
+}

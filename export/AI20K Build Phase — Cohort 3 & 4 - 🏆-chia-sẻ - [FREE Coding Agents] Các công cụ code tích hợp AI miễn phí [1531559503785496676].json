@@ -1,0 +1,206 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531559503785496676",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[FREE Coding Agents] Các công cụ code tích hợp AI miễn phí",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:06:58.7735868+07:00",
+  "messages": [
+    {
+      "id": "1531559503785496676",
+      "type": "Default",
+      "timestamp": "2026-07-28T14:10:40.702+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Khi là học viên AI, làm các bài thực hành, đồ án, dự án cá nhân thì các bạn không cần sử dụng các công cụ quá cao cấp hoặc mắc tiền. Đối với các dự án nhỏ, chỉ cần thể hiện được concept hoặc tạo ra MVP thì các bạn có thể sử dụng các công cụ AI với mô hình miễn phí để sử dụng, tối ưu chi phí nhất.\nDưới đây mình xin phép chia sẻ những công cụ hỗ trợ coding cung cấp các mô hình miễn phí để các bạn sử dụng không giới hạn. Lưu ý vì là miễn phí nên các bạn không nên sử dụng ở các dự án chuyên nghiệp hay dự án có dữ liệu nhạy cảm. Nó cũng không đảm bảo uptime, hay các vấn đề khác. Và mình cũng xin phép chia bài viết làm 3 phần. Phần 1 sẽ là các công cụ chính thức cung cấp không giới hạn, phần 2 là các công cụ cung cấp phiên bản miễn phí có giới hạn và phần 3 là sử dụng các công cụ không chính thức để khai thác, hay còn gọi là \"bào\" các mô hình cao cấp từ những nguồn không chính thức.",
+      "author": {
+        "id": "1114423320134299668",
+        "name": "nayumi.dev",
+        "discriminator": "0000",
+        "nickname": "!G18-T058-Nguyễn Duy Bách-01844",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1114423320134299668/e042497e729eab4e7e2135f6d2235994.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531559504813228032",
+          "url": "https://cdn.discordapp.com/attachments/1531559503785496676/1531559504813228032/ChatGPT_Image_Jul_28_2026_02_10_23_PM.png?ex=6a6c4a70&is=6a6af8f0&hm=c043eab21ea3371be0f8a2683f8d51ff8c7428d99e7523d8da9ca571f2633568&",
+          "fileName": "ChatGPT_Image_Jul_28_2026_02_10_23_PM.png",
+          "fileSizeBytes": 1610199
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "670145855587876874",
+              "name": "_nguyentruong",
+              "discriminator": "0000",
+              "nickname": "trườngNgủYêu",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/670145855587876874/a7258882363e2bc44c5f2be147cea0e8.png?size=512"
+            },
+            {
+              "id": "1001846191836901486",
+              "name": "minu_2k5",
+              "discriminator": "0000",
+              "nickname": "minu2k5",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+            },
+            {
+              "id": "1114423320134299668",
+              "name": "nayumi.dev",
+              "discriminator": "0000",
+              "nickname": "!G18-T058-Nguyễn Duy Bách-01844",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1114423320134299668/e042497e729eab4e7e2135f6d2235994.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531559594072215612",
+      "type": "Default",
+      "timestamp": "2026-07-28T14:11:02.228+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## 1. OpenCode\n\n**Trang chủ:** https://opencode.ai/\n**GitHub:** https://github.com/anomalyco/opencode\n**Loại:** CLI (terminal), có thêm bản Desktop và IDE extension\n\n### Giới thiệu\n\nOpenCode là AI coding agent mã nguồn mở, chạy trong terminal dưới dạng giao diện TUI (Terminal UI). Điểm mạnh lớn nhất là không khóa bạn vào một nhà cung cấp AI nào — bạn có thể tự kết nối API key của OpenAI, Anthropic Claude, Google Gemini, AWS Bedrock, Groq, Azure OpenAI, OpenRouter, hoặc chạy hoàn toàn miễn phí bằng model local qua Ollama.\n\nNgoài ra, OpenCode có sẵn cổng **Zen** — cung cấp một số model chất lượng cao miễn phí trực tiếp trong công cụ (như DeepSeek V4 Flash Free, Big Pickle, MiMo-V2.5 Free...) mà không cần tự cấu hình API key, chỉ cần gõ lệnh `/models` để chọn.\n\n### Ưu điểm\n- Mã nguồn mở, miễn phí, không giới hạn số lần dùng, không quảng cáo.\n- Không khóa nhà cung cấp — tự do chọn model, kể cả chạy local 100% miễn phí.\n- Có model free sẵn trong Zen, không cần setup API key ngay từ đầu.\n- Tích hợp LSP (Language Server Protocol) — AI hiểu type, lỗi, cấu trúc code như một IDE thật, giảm hallucination.\n- Hỗ trợ nhiều agent chạy song song, chia sẻ phiên làm việc qua link.\n- Không lưu trữ code/context của bạn trên server.\n\n### Nhược điểm\n- Các model free trong Zen chỉ miễn phí \"có thời hạn\" (khuyến mãi/thử nghiệm), danh sách có thể thay đổi theo thời gian.\n- Nếu dùng model trả phí (GPT, Claude cao cấp...) thì vẫn tốn chi phí API — \"free\" chỉ áp dụng cho bản thân công cụ.\n- Trải nghiệm gốc trên Windows chưa mượt bằng macOS/Linux, khuyến nghị chạy qua WSL.\n- Cần cấu hình thủ công nếu muốn dùng nhà cung cấp riêng, không \"plug and play\" hoàn toàn.\n\n### Cài đặt\n\n**Cách nhanh nhất (macOS/Linux):**\n```bash\ncurl -fsSL https://opencode.ai/install | bash\n```\n\n**Windows:**\n> Khuyến nghị dùng WSL (Windows Subsystem for Linux) để có trải nghiệm đầy đủ và ổn định nhất.\n\n- Dùng Chocolatey:\n```powershell\nchoco install opencode\n```\n- Dùng Scoop:\n```powershell\nscoop install opencode\n```\n- Dùng npm:\n```powershell\nnpm install -g opencode-ai\n```\n- Hoặc tải binary trực tiếp tại [GitHub Releases](https://github.com/anomalyco/opencode/releases)\n\n**macOS / Linux (Homebrew):**\n```bash\nbrew install anomalyco/tap/opencode\n```\n\n**Arch Linux:**\n```bash\nsudo pacman -S opencode           # bản ổn định\nparu -S opencode-bin              # bản mới nhất từ AUR\n```\n\n**Dùng Node.js (mọi hệ điều hành):**\n```bash\nnpm install -g opencode-ai\n```\n\n**Sau khi cài, khởi động:**\n```bash\ncd /duong-dan/den/du-an\nopencode\n```\n\n---\n\n## 2. FreeBuff\n\n**Trang chủ:** https://freebuff.com/\n**GitHub:** https://github.com/CodebuffAI/codebuff\n**Loại:** CLI (terminal), có thêm FreeBuff Web (beta) để build full-stack app từ prompt\n\n### Giới thiệu\n\nFreeBuff là bản miễn phí, nuôi bằng quảng cáo văn bản, của Codebuff — một AI coding agent dùng kiến trúc multi-agent (agent chọn file, agent lên kế hoạch, agent sửa code, agent review) thay vì dồn hết việc cho một model. Cài đặt cực nhanh, không cần thẻ tín dụng, không cần API key, không cần tài khoản.\n\n### Ưu điểm\n- Miễn phí thật sự, không cần thẻ tín dụng/API key, cài 1 lệnh là dùng ngay.\n- Kiến trúc multi-agent giúp xử lý task rõ ràng, có phân công vai trò.\n- Ở \"full mode\" (25+ quốc gia) dùng được các model mã nguồn mở mạnh: DeepSeek V4 Pro/Flash, Kimi K2.7 Code, MiniMax M3.\n- Có FreeBuff Web (beta) — build và deploy app full-stack miễn phí từ một prompt.\n- Được phát triển bởi đội ngũ Codebuff, có benchmark công khai so với các tool trả phí khác.",
+      "author": {
+        "id": "1114423320134299668",
+        "name": "nayumi.dev",
+        "discriminator": "0000",
+        "nickname": "!G18-T058-Nguyễn Duy Bách-01844",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1114423320134299668/e042497e729eab4e7e2135f6d2235994.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531559603173724281",
+      "type": "Default",
+      "timestamp": "2026-07-28T14:11:04.398+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "### Nhược điểm\n- Ngoài 25+ quốc gia hỗ trợ (hoặc khi dùng VPN) sẽ rơi vào \"limited mode\": chỉ DeepSeek V4 Flash, giới hạn 6 phiên/giờ mỗi ngày.\n- Có quảng cáo hiển thị trong lúc dùng CLI.\n- Phù hợp với front-end và các tác vụ coding đơn giản hơn là backend phức tạp.\n- Mô hình \"quảng cáo nuôi sản phẩm free\" từng có tiền lệ không bền vững lâu dài (ví dụ AMP Code).\n\n### Cài đặt\n\nYêu cầu: Node.js 18 trở lên. Hoạt động trên **Windows, macOS, và Linux** với cùng một lệnh.\n\n```bash\nnpm install -g freebuff\n```\n\n**Sau khi cài, vào thư mục dự án và chạy:**\n```bash\ncd duong-dan-du-an\nfreebuff\n```\n\n> Windows: mở PowerShell hoặc Command Prompt và chạy lệnh npm như trên (đảm bảo đã cài Node.js từ https://nodejs.org trước).\n\n---\n\n## 3. Kilo Code\n\n**Trang chủ:** https://kilo.ai/\n**Trang cài đặt:** https://kilo.ai/install\n**GitHub:** https://github.com/kilo-org/kilo\n**Loại:** VS Code extension, JetBrains plugin, CLI, và Cloud\n\n### Giới thiệu\n\nKilo Code là AI coding agent mã nguồn mở, ban đầu là fork của Roo Code (bản thân Roo Code lại là fork của Cline). Điểm mạnh là phủ đủ mọi \"bề mặt\" làm việc: VS Code, JetBrains, CLI, thậm chí cả Cloud — dùng chung một lõi agent. Hỗ trợ hơn 500 model, tính phí đúng giá gốc nhà cung cấp (zero markup) nếu bạn tự mang API key.\n\n### Ưu điểm\n- Mã nguồn mở, miễn phí, không cần API key để bắt đầu dùng thử.\n- Đa nền tảng: VS Code, JetBrains, CLI, Cloud — không gói gọn trong 1 editor.\n- Truy cập 500+ model, không cộng thêm phí markup nếu tự trả bằng key riêng (BYOK).\n- Có sandbox riêng (`/sandbox`) giới hạn agent chỉ ghi trong workspace, bảo vệ `.git` và có thể chặn network ngoài ý muốn.\n- Hỗ trợ chạy nhiều agent song song, nhiều chế độ (Plan/Code/Debug) và custom mode.\n- Cộng đồng lớn (3 triệu+ người dùng), có chứng nhận SOC 2 Type I.\n\n### Nhược điểm\n- Nếu không tự mang API key mà dùng credit/gateway của Kilo thì vẫn giới hạn theo số credit được cấp.\n- Vốn là bản kế thừa từ Roo Code/Cline nên một số tính năng không hoàn toàn mới.\n- Nhiều tính năng/chế độ có thể hơi rối cho người mới bắt đầu.\n- Sản phẩm cập nhật/merge tính năng liên tục nên đôi khi chưa ổn định giữa các bản.\n\n### Cài đặt\n\n**A. VS Code Extension**\n\n1. Cài Visual Studio Code (nếu chưa có): https://code.visualstudio.com/download — có bản cho Windows, macOS, Linux.\n2. Mở VS Code → vào tab **Extensions** (hoặc `Ctrl+Shift+X` / `Cmd+Shift+X` trên Mac).\n3. Tìm **\"Kilo Code\"** và nhấn **Install**.\n   Hoặc cài trực tiếp từ VS Code Marketplace: https://marketplace.visualstudio.com/items?itemName=kilocode.Kilo-Code\n4. Đăng nhập tài khoản Kilo hoặc nhập API key riêng để bắt đầu.\n\n**B. CLI (Windows, macOS, Linux — cùng một lệnh)**\n\n```bash\nnpm install -g @kilocode/cli\n```\n\nCác cách khác (tùy hệ điều hành hỗ trợ):\n```bash\n# Homebrew (macOS/Linux)\nbrew install kilo-org/tap/kilo\n\n# curl (macOS/Linux)\ncurl -fsSL https://kilo.ai/install.sh | bash\n```\n\n**Sau khi cài CLI:**\n```bash\ncd duong-dan-du-an\nkilo\n```\nĐăng nhập bằng tài khoản Kilo hoặc thêm API key riêng khi được hỏi.\n\n---",
+      "author": {
+        "id": "1114423320134299668",
+        "name": "nayumi.dev",
+        "discriminator": "0000",
+        "nickname": "!G18-T058-Nguyễn Duy Bách-01844",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1114423320134299668/e042497e729eab4e7e2135f6d2235994.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531563626174091384",
+      "type": "Default",
+      "timestamp": "2026-07-28T14:27:03.556+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "✅",
+      "author": {
+        "id": "738413553417191545",
+        "name": "youngs3108",
+        "discriminator": "0000",
+        "nickname": "T100 - Nguyễn Đức Đạt - 01633",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/738413553417191545/f87378f20d3cb19331ac67dafa7bf681.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "✅",
+          "code": "white_check_mark",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 4
+}

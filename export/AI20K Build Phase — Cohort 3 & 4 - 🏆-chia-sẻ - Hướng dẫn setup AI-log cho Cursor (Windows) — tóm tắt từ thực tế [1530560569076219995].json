@@ -1,0 +1,104 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530560569076219995",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Hướng dẫn setup AI-log cho Cursor (Windows) — tóm tắt từ thực tế",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:18:17.8363993+07:00",
+  "messages": [
+    {
+      "id": "1530560569076219995",
+      "type": "Default",
+      "timestamp": "2026-07-25T20:01:16.108+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "AI-log là gì?\nMỗi lần bạn prompt → ghi vào .ai-log/session.jsonl → submit lên web BTC. Khác Phoenix (localhost:6006) — Phoenix trace app, AI-log ghi prompt editor.\n\nSetup (4 bước)\n.env — điền AI_LOG_API_KEY (key BTC cấp)\nPre-push hook — powershell -ExecutionPolicy Bypass -File scripts\\setup_hooks.ps1\nSửa .cursor/hooks.json — dùng python + _run_hook.py, không dùng bash\nRestart Cursor → prompt thử → check .ai-log/session.jsonl\nSubmit lên web (không cần push): python scripts/submit_log.py → thấy 202 = OK\n\n.cursor/hooks.json (Windows)\nChỉ giữ beforeSubmitPrompt, bỏ stop (tránh dòng log rỗng):\n\n{\n  \"version\": 1,\n  \"hooks\": {\n    \"beforeSubmitPrompt\": [{\n      \"command\": \"& { $OutputEncoding = [System.Text.Encoding]::GetEncoding(1252); $input | python scripts/_run_hook.py --tool=cursor }\"\n    }]\n  }\n}\nThêm file scripts/_run_hook.py — strip UTF-8 BOM trước khi parse JSON.\n\n**4 lỗi hay gặp**\n#    Triệu chứng    Nguyên nhân    Fix\n**1.Không ghi gì**\nWindows không có bash\nĐổi sang python scripts/_run_hook.py\n**2.Hook chạy mà vẫn trống**\nCursor gửi payload có BOM\nDùng _run_hook.py cắt BOM\n**3.Tiếng Việt lỗi font**\nPowerShell 5.1 double-encode\nSet $OutputEncoding = CP1252\n\n**4. 2 dòng/prompt, 1 cái stop rỗng**\nHook bật cả stop\nXóa block stop trong hooks.json\nChecklist\n□ .env có AI_LOG_API_KEY\n□ setup_hooks.ps1 đã chạy\n□ hooks.json dùng python (không bash)\n□ Chỉ beforeSubmitPrompt (không stop)\n□ Có scripts/_run_hook.py\n□ Restart Cursor\n□ Prompt → session.jsonl có dòng mới\n□ submit_log.py → 202\nTool khác\nAntigravity — auto khi git push (quét transcript)\nWarp / ChatGPT — log tay: python scripts/log_manual.py --tool warp --prompt \"...\"\nPrompt debug cho AI\n\"Windows, không có bash, prompt không ghi vào .ai-log/session.jsonl. Kiểm tra .cursor/hooks.json, thử chạy hook tay, xem log tại %APPDATA%\\Cursor\\logs\\.\"",
+      "author": {
+        "id": "1078711817855053914",
+        "name": "ditionge12345",
+        "discriminator": "0000",
+        "nickname": "T151-Nguyễn Tiến Dũng-01707",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1078711817855053914/a930e55923a6c3622e02015f299fd1d0.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "657537583848357898",
+              "name": "nah0413",
+              "discriminator": "0000",
+              "nickname": "Hoàng Quang Minh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/657537583848357898/49b33015625a03e6ce6b02b9e43c08f4.png?size=512"
+            },
+            {
+              "id": "1016686445278269510",
+              "name": "sury2k4",
+              "discriminator": "0000",
+              "nickname": "T151 - Lý Minh Hải - 01503",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1016686445278269510/c02781f163a840f20ddfcfcbf9eb199e.png?size=512"
+            },
+            {
+              "id": "1078711817855053914",
+              "name": "ditionge12345",
+              "discriminator": "0000",
+              "nickname": "T151-Nguyễn Tiến Dũng-01707",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1078711817855053914/a930e55923a6c3622e02015f299fd1d0.png?size=512"
+            },
+            {
+              "id": "1529743605621719126",
+              "name": "tqhung_6503",
+              "discriminator": "0000",
+              "nickname": "Tran Quoc Hung",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

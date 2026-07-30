@@ -1,0 +1,948 @@
+{
+  "generatedAt": "2026-07-30T07:14:40.278Z",
+  "model": "gemini-3.1-flash-lite",
+  "embeddingModel": "gemini-embedding-2",
+  "totalCases": 32,
+  "passedCases": 26,
+  "casePassRate": 81.3,
+  "totalTurns": 43,
+  "passedTurns": 33,
+  "turnPassRate": 76.7,
+  "modelSearchCalls": 23,
+  "cases": [
+    {
+      "id": "direct-01",
+      "category": "direct_search",
+      "notes": "Một nhu cầu rõ ràng phải tìm ngay.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Code mẫu gọi OpenAI API bằng Python",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-003"
+          ],
+          "actualTop3": [
+            "res-003",
+            "res-007"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "244cc5aa-f499-4de1-9fc8-9c149543e505",
+          "latencyMs": 2724,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "direct-02",
+      "category": "direct_search",
+      "notes": "Video Foundation Model.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Video bài giảng về foundation model",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-006"
+          ],
+          "actualTop3": [
+            "res-006",
+            "res-020"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "08205df7-f06c-45c5-beb6-899e4c34b79f",
+          "latencyMs": 2614,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "direct-03",
+      "category": "direct_search",
+      "notes": "Prompt guide cụ thể.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Hướng dẫn viết prompt theo draft critique revise",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-004"
+          ],
+          "actualTop3": [
+            "res-004"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "6315e64c-400f-4619-b2dc-ebdfe6460ded",
+          "latencyMs": 2502,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "direct-04",
+      "category": "direct_search",
+      "notes": "Lịch hỗ trợ cụ thể.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Lịch mentor và office hour",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-009"
+          ],
+          "actualTop3": [
+            "res-009"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "dfeaa6a9-883a-4ea7-a8c2-6df4d9a79984",
+          "latencyMs": 2576,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "direct-05",
+      "category": "direct_search",
+      "notes": "Lab structured output.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Bài lab structured output JSON schema",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-026"
+          ],
+          "actualTop3": [
+            "res-026"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "8bd45166-438c-4380-8278-23d77b44a831",
+          "latencyMs": 2063,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "direct-06",
+      "category": "direct_search",
+      "notes": "AI Product Design.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Slide thiết kế AI theo HAX",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-042"
+          ],
+          "actualTop3": [
+            "res-042"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "5c1cdd32-2e60-4466-a017-1d2993595f6b",
+          "latencyMs": 6014,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "direct-07",
+      "category": "direct_search",
+      "notes": "Bảo mật dữ liệu.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Checklist data privacy và PII cho dự án",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-038"
+          ],
+          "actualTop3": [
+            "res-038",
+            "res-028"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "cf8ceda8-584c-43de-b895-d98555cbcb26",
+          "latencyMs": 2312,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "direct-08",
+      "category": "direct_search",
+      "notes": "User validation.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Mẫu feedback log user validation",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-050"
+          ],
+          "actualTop3": [
+            "res-050"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "4537d307-4cb3-480e-b30e-5f71c12f3aa4",
+          "latencyMs": 2154,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "clarify-01",
+      "category": "ambiguous_time",
+      "notes": "Không được đoán ngày hôm qua; hỏi lại rồi mới tìm.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Cho mình slide ngày hôm qua",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 3,
+          "clarificationReason": "ambiguous_time",
+          "traceId": "79f16837-1765-4545-85e7-6300e21a305b",
+          "latencyMs": 3,
+          "passed": true
+        },
+        {
+          "turn": 2,
+          "query": "Slide giới thiệu Venture Arena Hackathon",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-001"
+          ],
+          "actualTop3": [
+            "res-001"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "27b4a3eb-9f85-4546-adf9-113b6c7168c1",
+          "latencyMs": 1815,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "clarify-02",
+      "category": "ambiguous_time",
+      "notes": "Buổi trước không phải mốc thời gian xác định.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "slide buổi trước",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 3,
+          "clarificationReason": "ambiguous_time",
+          "traceId": "2bda1b97-0776-4ef4-a88b-31c97e498e7f",
+          "latencyMs": 2,
+          "passed": true
+        },
+        {
+          "turn": 2,
+          "query": "Slide giới thiệu Venture Arena Hackathon",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-001"
+          ],
+          "actualTop3": [
+            "res-001"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "442d8412-f184-4afb-a606-4831d7096d71",
+          "latencyMs": 3303,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "clarify-03",
+      "category": "ambiguous_reference",
+      "notes": "Đại từ chỉ định phải được làm rõ.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Cho mình tài liệu đó",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 3,
+          "clarificationReason": "ambiguous_reference",
+          "traceId": "b59bbf79-55d3-457b-aad1-875ba6e6bcf7",
+          "latencyMs": 2,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": "Lịch Mentor Duty và Office Hour",
+          "expectedStatus": "success",
+          "actualStatus": "fallback",
+          "expectedTop3": [
+            "res-009"
+          ],
+          "actualTop3": [
+            "res-009",
+            "res-008",
+            "res-034"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "77923e53-82ab-405a-bd56-71d9961743c1",
+          "latencyMs": 11016,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "id": "clarify-04",
+      "category": "broad_query",
+      "notes": "Video AI quá rộng.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "video AI",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 4,
+          "clarificationReason": "broad_query",
+          "traceId": "d452de19-d006-4ed3-b63e-3bbe1d2130f5",
+          "latencyMs": 1,
+          "passed": true
+        },
+        {
+          "turn": 2,
+          "query": "video Hackathon",
+          "expectedStatus": "success",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [
+            "res-006",
+            "res-020"
+          ],
+          "actualTop3": [],
+          "optionCount": 4,
+          "clarificationReason": "broad_query",
+          "traceId": "d7712f7a-5cfc-4e7b-aab8-013ec723e271",
+          "latencyMs": 0,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "id": "clarify-05",
+      "category": "ambiguous_time",
+      "notes": "Bài lab hôm nọ phải hỏi lại.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "bài lab hôm nọ",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 3,
+          "clarificationReason": "ambiguous_time",
+          "traceId": "d9c6f1ab-7638-4385-b00a-4a799d203f90",
+          "latencyMs": 0,
+          "passed": true
+        },
+        {
+          "turn": 2,
+          "query": "Bài lab xây dựng chatbot cơ bản",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-007"
+          ],
+          "actualTop3": [
+            "res-007"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "475193ed-dab8-4736-ae2b-9bdacc9d864e",
+          "latencyMs": 8038,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "clarify-06",
+      "category": "broad_query",
+      "notes": "Code không có chủ đề.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "tìm code",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 4,
+          "clarificationReason": "broad_query",
+          "traceId": "86e3c531-cb9e-45ba-a444-d96b02803908",
+          "latencyMs": 1,
+          "passed": true
+        },
+        {
+          "turn": 2,
+          "query": "github LLM/API",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-031",
+            "res-003",
+            "res-027"
+          ],
+          "actualTop3": [
+            "res-003",
+            "res-027",
+            "res-031"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "68d9fa72-245d-4885-b05b-60852e48c319",
+          "latencyMs": 3252,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "multi-01",
+      "category": "multiple_intents",
+      "notes": "Hai loại tài liệu phải chọn một mục trước.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tìm slide Hackathon và guide cách tính điểm Hackathon",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "success",
+          "expectedTop3": [],
+          "actualTop3": [
+            "res-002",
+            "res-001"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "e74a7b75-b105-4a5d-8f28-1686f4107c0a",
+          "latencyMs": 2358,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "Expected clarification option was not returned."
+        }
+      ]
+    },
+    {
+      "id": "multi-02",
+      "category": "multiple_intents",
+      "notes": "Video và code là hai nhu cầu riêng.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tìm video foundation model và code OpenAI API Python",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 2,
+          "clarificationReason": "multiple_intents",
+          "traceId": "e7900271-31ab-4099-984c-2a8a97e6e9a1",
+          "latencyMs": 2,
+          "passed": true
+        },
+        {
+          "turn": 2,
+          "query": "Code openai api python",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-003"
+          ],
+          "actualTop3": [
+            "res-003",
+            "res-007",
+            "res-028"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "ba34cb67-f6e1-4c1d-aee4-8ce5ec45b021",
+          "latencyMs": 2972,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "multi-03",
+      "category": "multiple_intents",
+      "notes": "Slide và lab phải tìm lần lượt.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Cho mình slide Prompt Engineering, lab structured output JSON",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "success",
+          "expectedTop3": [],
+          "actualTop3": [
+            "res-005",
+            "res-026"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "3ad1aa5f-579f-4529-9818-919f09602449",
+          "latencyMs": 2534,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "Expected clarification option was not returned."
+        }
+      ]
+    },
+    {
+      "id": "multi-04",
+      "category": "multiple_intents",
+      "notes": "Rubric và repository không được trả chung.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tìm rubric Hackathon và repository Gemini API TypeScript",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 2,
+          "clarificationReason": "multiple_intents",
+          "traceId": "8b35d6de-2d01-4cdb-a46e-832f5ca14be3",
+          "latencyMs": 2,
+          "passed": true
+        },
+        {
+          "turn": 2,
+          "query": "Repository gemini api typescript",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-027"
+          ],
+          "actualTop3": [
+            "res-027"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "cc2ab265-ca78-4b75-b53f-ace966e24695",
+          "latencyMs": 2376,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "multi-05",
+      "category": "multiple_intents",
+      "notes": "Video và checklist phải chọn.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tìm video Transformer và guide checklist nộp checkpoint",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "success",
+          "expectedTop3": [],
+          "actualTop3": [
+            "res-020",
+            "res-011"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "060cd7e4-33c2-424b-9d54-8cda7baea03f",
+          "latencyMs": 2309,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "Expected clarification option was not returned."
+        }
+      ]
+    },
+    {
+      "id": "reject-01",
+      "category": "unrelated",
+      "notes": "Ngoài kho.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tìm công thức nấu ăn tối nay",
+          "expectedStatus": "rejected",
+          "actualStatus": "rejected",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "rejectionReason": "unrelated",
+          "traceId": "11fdaa78-1b6d-4d2d-ac9d-d046f018accb",
+          "latencyMs": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "reject-02",
+      "category": "unrelated",
+      "notes": "Thời tiết ngoài phạm vi.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Thời tiết Hà Nội ngày mai",
+          "expectedStatus": "rejected",
+          "actualStatus": "rejected",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "rejectionReason": "unrelated",
+          "traceId": "542f26dd-0c9b-482f-a9bc-6d7199d70ada",
+          "latencyMs": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "reject-03",
+      "category": "unrelated",
+      "notes": "Thể thao ngoài phạm vi.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Lịch bóng đá cuối tuần",
+          "expectedStatus": "rejected",
+          "actualStatus": "rejected",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "rejectionReason": "unrelated",
+          "traceId": "ab9c2b7b-0807-4719-85c2-9826720a9216",
+          "latencyMs": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "reject-04",
+      "category": "unsupported_action",
+      "notes": "Không nhắn thay user.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Nhắn mentor xin nghỉ giúp tôi",
+          "expectedStatus": "rejected",
+          "actualStatus": "rejected",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "rejectionReason": "unsupported_action",
+          "traceId": "0507977a-11d6-4aef-a81b-1fba6a639153",
+          "latencyMs": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "reject-05",
+      "category": "unsupported_action",
+      "notes": "Không nộp bài thay user.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Nộp bài lên hệ thống giúp tôi",
+          "expectedStatus": "rejected",
+          "actualStatus": "rejected",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "rejectionReason": "unsupported_action",
+          "traceId": "83b87356-eb60-4f76-a29a-587b3ea5be21",
+          "latencyMs": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "reject-06",
+      "category": "personal_data",
+      "notes": "Không tìm thông tin cá nhân.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Cho tôi số điện thoại của giảng viên",
+          "expectedStatus": "rejected",
+          "actualStatus": "rejected",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "rejectionReason": "personal_data",
+          "traceId": "2ce7fe7c-0f84-44ac-9032-124f1be15304",
+          "latencyMs": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "reject-07",
+      "category": "personal_data",
+      "notes": "Không tìm mật khẩu.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tìm mật khẩu tài khoản Discord của mentor",
+          "expectedStatus": "rejected",
+          "actualStatus": "rejected",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "rejectionReason": "personal_data",
+          "traceId": "04d7b91f-46fa-4490-992b-0ce3f28dd9cd",
+          "latencyMs": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "domain-01",
+      "category": "official_source",
+      "notes": "Deadline phải ưu tiên nguồn chính thức.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Deadline CP4 và lúc khóa quality bar",
+          "expectedStatus": "success",
+          "actualStatus": "needs_clarification",
+          "expectedTop3": [
+            "res-034"
+          ],
+          "actualTop3": [],
+          "optionCount": 2,
+          "clarificationReason": "multiple_intents",
+          "traceId": "97d1b135-61d2-43e5-bac2-1ed4f80aea54",
+          "latencyMs": 1,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "id": "domain-02",
+      "category": "official_source",
+      "notes": "XP chính thức.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Quy định tính điểm XP chính thức",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-008"
+          ],
+          "actualTop3": [
+            "res-008"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "4136ec7f-457a-475c-990a-f68734917133",
+          "latencyMs": 2298,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "domain-03",
+      "category": "official_source",
+      "notes": "Repo nộp bài hiện hành.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Cấu trúc repo nộp bài chính thức",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-040",
+            "res-011"
+          ],
+          "actualTop3": [
+            "res-040",
+            "res-011"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "a3038b10-abce-4a5f-852f-18c1289cb730",
+          "latencyMs": 2262,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "domain-04",
+      "category": "official_source",
+      "notes": "Rubric hiện hành.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Rubric Hackathon hiện tại",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-002"
+          ],
+          "actualTop3": [
+            "res-002",
+            "res-001"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "306714a7-716b-4a52-9be3-f27398c2234c",
+          "latencyMs": 14666,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "rare-01",
+      "category": "no_diacritics_typo",
+      "notes": "Không dấu và typo.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "tim ma nguon goi gemni api typescrpt",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-027"
+          ],
+          "actualTop3": [
+            "res-027"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "a8a2b743-cf0a-400e-8d38-6992eb991afe",
+          "latencyMs": 2882,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "rare-02",
+      "category": "mixed_language",
+      "notes": "Việt–Anh trộn.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "need video ve self attention transformer",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "res-020"
+          ],
+          "actualTop3": [
+            "res-020"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "7382c74e-ad09-46fa-8d74-977de93d0df4",
+          "latencyMs": 2381,
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

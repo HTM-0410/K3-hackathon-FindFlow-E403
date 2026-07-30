@@ -1,0 +1,86 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530978607592378458",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Fix lỗi lấy log của Antigravity khi dùng agy CLI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:11:59.0386993+07:00",
+  "messages": [
+    {
+      "id": "1530978607592378458",
+      "type": "Default",
+      "timestamp": "2026-07-26T23:42:24.257+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Khi dùng công cụ dòng lệnh `agy` mới của Antigravity, bạn có thể gặp lỗi khi lấy log qua script `log_antigravity.py`. Dưới đây là 2 lỗi phổ biến và cách xử lý nhanh.\n\n## 1. Lỗi \"No Antigravity brain/ directory found\"\n\n**Hiện tượng:** \nChạy script bị báo lỗi không tìm thấy thư mục `brain/`.\n```text\n[antigravity-log] No Antigravity brain/ directory found...\n```\n\n**Nguyên nhân & Cách sửa:** \nBản `agy` CLI đã đổi tên thư mục dữ liệu thành `.gemini/antigravity-cli/brain` (thay vì `antigravity-ide`). Bạn chỉ cần mở file `scripts/log_antigravity.py`, tìm mảng `BRAIN_CANDIDATES` và bổ sung đường dẫn mới này vào.\n\n```python\n# Sau khi sửa\nBRAIN_CANDIDATES = (\n    GEMINI_HOME / \"antigravity-cli\" / \"brain\",  # <-- Thêm dòng này\n    GEMINI_HOME / \"antigravity-ide\" / \"brain\",\n    GEMINI_HOME / \"antigravity\" / \"brain\",\n)\n```\n\n## 2. Tự động hóa lấy log bằng Hooks của agy CLI\n\nThay vì phải chạy thủ công, bạn có thể thiết lập hook để `agy` tự động lấy log sau mỗi hành động của AI.\n\nTạo hoặc thêm vào file `~/.gemini/config/hooks.json` toàn cục nội dung sau (sử dụng đường dẫn tương đối để hook có thể hoạt động ở nhiều máy/nhiều dự án khác nhau, miễn là dự án đó có thư mục `scripts/`):\n\n```json\n{\n  \"log-antigravity\": {\n    \"PostToolUse\": [\n      {\n        \"matcher\": \".*\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"bash scripts/_pyrun.sh scripts/log_antigravity.py\",\n            \"timeout\": 30,\n            \"background\": true\n          }\n        ]\n      }\n    ]\n  }\n}\n```\n\n**Lưu ý:**\n- Vì dùng đường dẫn tương đối (`scripts/...`), bạn cần mở `agy` ở thư mục gốc của project (có chứa thư mục `scripts`).\n- Bạn có thể gõ lệnh slash `/hooks` ở trong `agy` để xem danh sách các hook đang được bật.\n\nSau đó, ở lần `git push` kế tiếp, log sẽ được đọc đúng biến môi trường và đẩy lên server thành công!*",
+      "author": {
+        "id": "875927048462405672",
+        "name": "nguyenhuucong.",
+        "discriminator": "0000",
+        "nickname": "T195-Nguyễn Hữu Công - 01732",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "1212772726411100181",
+              "name": "hungnv1302",
+              "discriminator": "0000",
+              "nickname": "hungnv1302",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

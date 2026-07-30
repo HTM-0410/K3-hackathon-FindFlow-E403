@@ -49,8 +49,9 @@ npm run eval:golden
 ```
 
 - `npm test` cố ý tắt API ngoài để kiểm tra fallback ổn định.
-- `npm run eval:golden` dùng Gemini thật, chạy 24 case và ghi kết quả đã làm sạch
-  vào `../eval/traces/run-01.json` cùng báo cáo `../eval/run-01-results.md`.
+- `npm run eval:golden` dùng Gemini thật, chạy 32 case hội thoại nhiều lượt và
+  ghi kết quả đã làm sạch vào `../eval/traces/run-02.json` cùng báo cáo
+  `../eval/run-02-results.md`.
 
 ## API
 
@@ -67,8 +68,9 @@ npm run eval:golden
 }
 ```
 
-Response có một trong bốn trạng thái: `success`, `low_confidence`, `no_match`,
-`fallback`; tối đa 5 kết quả, `traceId`, `retrievalMode` và `candidateCount`.
+Response có sáu trạng thái: `success`, `needs_clarification`, `rejected`,
+`low_confidence`, `no_match`, `fallback`. Khi cần làm rõ, API trả câu hỏi và
+các lựa chọn có thể bấm; chưa có tài liệu nào được hiển thị.
 
 ## Quyết định đơn giản hóa cho CP2
 

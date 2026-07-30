@@ -1,0 +1,77 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530463641483350067",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "MÔ HÌNH PHÁT TRIỂN NÀO PHÙ HỢP CHO DỰ ÁN AI BÀI TOÁN DOANH NGHIỆP?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:18:47.5415577+07:00",
+  "messages": [
+    {
+      "id": "1530463641483350067",
+      "type": "Default",
+      "timestamp": "2026-07-25T13:36:06.769+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trong bối cảnh khóa học yêu cầu nhận feedback sớm, làm bài toán thực tế của doanh nghiệp và tuân thủ các quy chuẩn kỹ thuật, việc chọn đúng mô hình phát triển sẽ giúp nhóm vận hành mượt mà và tối ưu nguồn lực.\nMô hình đề xuất cho nhóm 4 người: **Agile / Scrum** kết hợp **Iterative & Incremental Development**.\n### TẠI SAO AGILE/SCRUM LẠI LÀ LỰA CHỌN TỐI ƯU?\n**Thích ứng nhanh với Feedback sớm từ lớp học và Mentor**\n * Sản phẩm sẽ liên tục nhận góp ý hoặc bị test các case thực tế (như Prompt Injection).\n * Agile chia dự án thành các chu kỳ ngắn. Sau mỗi chu kỳ, nhóm có ngay một phiên bản chạy được để thu thập feedback và điều chỉnh ở chu kỳ sau mà không phải đập đi xây lại toàn bộ code.\n**Tập trung giải quyết đúng Pain Point của doanh nghiệp**\n * Tiêu chí quan trọng của bài toán thực tế là ưu tiên giải quyết vấn đề cốt lõi của doanh nghiệp thay vì sa đà vào kỹ thuật phức tạp.\n * Mô hình Agile giúp nhóm định hình và hoàn thiện bản MVP trước, đảm bảo giải quyết đúng \"pain point\" rồi mới mở rộng các tính năng phụ.\n**Phù hợp hoàn hảo với quy mô Team 4 người**\n * Nhóm 4 người có quy mô rất linh hoạt, loại bỏ được các quy trình rườm rà.\n * Dễ phân chia vai trò: 1 bạn phụ trách trao đổi bài toán/yêu cầu doanh nghiệp (Product Owner), 2-3 bạn tập trung AI Core/Prompting/RAG/App, và 1 bạn quán xuyến phần Git Flow, Infrastructure & AI Logging.\n * Giao tiếp nội bộ nhanh chóng thông qua các buổi trao đổi ngắn hằng ngày để tháo gỡ vướng mắc.\n**Tích hợp tốt quy chuẩn AI Logs & Demo Day**\n * Các quy định bắt buộc như setup AI Logger hay quản lý Git có thể đưa trực tiếp vào tiêu chuẩn hoàn thành task.\n * Mỗi tính năng AI khi hoàn thành chỉ được coi là hoàn thành khi đã bắt log đầy đủ và merge code đúng chuẩn Git Flow của nhóm.\n### GỢI Ý QUY TRÌNH TRIỂN KHAI THEO CHU KỲ (SPRINT)\n**1. Lập kế hoạch (Sprint Planning)**\n**2. Phát triển & Ghi log (Development & AI Logging)**\n**3. Kiểm thử & Demo nội bộ (Internal Test)**\n**4. Demo & Nhận Feedback (Review & Retrospective)**",
+      "author": {
+        "id": "1108061338044993607",
+        "name": "phongqk226",
+        "discriminator": "0000",
+        "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

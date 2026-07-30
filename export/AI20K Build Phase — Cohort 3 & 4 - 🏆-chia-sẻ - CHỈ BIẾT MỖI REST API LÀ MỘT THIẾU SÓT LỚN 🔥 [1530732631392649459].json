@@ -1,0 +1,111 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530732631392649459",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "CHỈ BIẾT MỖI REST API LÀ MỘT THIẾU SÓT LỚN \uD83D\uDD25",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:20:59.3330538+07:00",
+  "messages": [
+    {
+      "id": "1530732631392649459",
+      "type": "Default",
+      "timestamp": "2026-07-26T07:24:58.961+07:00",
+      "timestampEdited": "2026-07-26T07:41:06.044+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Như buổi học đầu, chắc mọi người đều từng nghe về API rồi đúng không, nhưng mình tin rằng 1 số bạn vẫn khá mơ hồ về khái niệm này. Vậy nên hôm nay, mình sẽ bóc tách 7 loại API phổ biến nhất hiện nay, kèm theo cách chúng hoạt động và ví dụ thực tế.\n\n- Trước tiên, API thực chất là gì? API (Application Programming Interface - Giao diện lập trình ứng dụng) đơn giản là một \"ngôn ngữ chung\" giúp 2 phần mềm/hệ thống hoàn toàn khác biệt có thể giao tiếp và trao đổi dữ liệu với nhau. Ví dụ khi bạn dùng app Shopee để mua hàng và thanh toán bằng Vietcombank. Shopee không được phép chui trực tiếp vào cơ sở dữ liệu của ngân hàng để trừ tiền bạn. Thay vào đó, Shopee sẽ gửi yêu cầu qua một API của Vietcombank. Ngân hàng kiểm tra, xử lý trừ tiền, rồi dùng chính API đó để trả lời Shopee: \"Đã thanh toán thành công!\". Mọi thứ diễn ra an toàn và bảo mật. Vậy nên việc chọn đúng \"loại cầu\" API sẽ quyết định hệ thống của bạn chạy nhanh như gió hay hay bị kẹt xe, sập nguồn.\n\n* Các loại API\n\n1. REST API \n\n+ Đây là API quốc dân, phổ biến nhất thế giới\n+ Cách hoạt động: Giống như bạn vào nhà hàng, gọi món (Gửi Request: GET, POST, PUT, DELETE) -> Phục vụ mang đúng món đó ra (Nhận Response dạng JSON/XML).\n+ Đặc điểm: Phi trạng thái (Stateless - không lưu thông tin cũ), dễ dùng, đa năng, xử lý được hàng triệu người dùng cùng lúc.\n+ Nhược điểm: Đôi khi mang ra quá nhiều dữ liệu dư thừa, không đủ độ khắt khe cho các hệ thống đòi hỏi tính chính xác tuyệt đối như ngân hàng cốt lõi.\n\n2. SOAP API \n\n+ Nếu REST là cuộc nói chuyện bình thường, thì SOAP là một bản hợp đồng ký kết vô cùng chặt chẽ.\n+ Đặc điểm: Định dạng dữ liệu 100% bằng XML, bảo mật cực cao, cấu trúc như một gói hàng với nhiều lớp vỏ bảo vệ (Envelope, Header, Body). Đặc biệt, nó không bị phụ thuộc vào giao thức HTTP.\n+ Ứng dụng: Là lựa chọn sống còn của các Ngân hàng, Tổ chức y tế, Chính phủ – nơi đòi hỏi độ chính xác và bảo mật tuyệt đối.\n3. gRPC API\n4. GraphQL\n5. WebHook\n6. WebSocket \n7. WebRTC\nDo nhiều chữ quá nên cụ thể ở dưới nhé.",
+      "author": {
+        "id": "657567575558979595",
+        "name": "yeumuon12",
+        "discriminator": "0000",
+        "nickname": "T174-Nguyễn Trường An-01616",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [
+        {
+          "id": "1530732632332042250",
+          "url": "https://cdn.discordapp.com/attachments/1530732631392649459/1530732632332042250/message.txt?ex=6a6beb5b&is=6a6a99db&hm=e46303a79c4a9eea92a807c8bfbbd74692f66733a24013230afbe5da8c498569&",
+          "fileName": "message.txt",
+          "fileSizeBytes": 7399
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "657567575558979595",
+              "name": "yeumuon12",
+              "discriminator": "0000",
+              "nickname": "T174-Nguyễn Trường An-01616",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "nhmanh.AI42E",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

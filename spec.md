@@ -68,6 +68,8 @@ Chọn bài toán tìm lại tài liệu vì:
 2. Tổn thất thời gian đã có khoảng đo ban đầu 2–5 phút/lần.
 3. Có thể dựng lát cắt end-to-end trong thời gian hackathon.
 4. Có thể đánh giá bằng một golden set truy vấn–tài liệu kỳ vọng.
+5. Query mơ hồ hoặc có nhiều ý định phải được hỏi lại trước khi hiển thị tài liệu;
+   query ngoài phạm vi phải bị từ chối và không trả resource ID.
 
 ### 2.3 Việc cần bổ sung để bảng impact đạt chuẩn
 

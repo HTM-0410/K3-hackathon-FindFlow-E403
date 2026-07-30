@@ -1,6 +1,10 @@
 import { getResources } from "../../data/resources";
 import { candidateProvider } from "../../lib/candidate-provider";
 import { rankWithGemini, writeFallbackTrace } from "../../lib/gemini";
+import {
+  analyzeSearchIntent,
+  intentDecisionToResponse,
+} from "../../lib/intent";
 import { fallbackResponse, filterResources } from "../../lib/search";
 import type { SearchFilters } from "../../types/resource";
 
@@ -22,6 +26,12 @@ export async function POST(request: Request) {
 
   const catalog = filterResources(getResources(), payload.filters);
   const traceId = crypto.randomUUID();
+  const intentDecision = analyzeSearchIntent(query, catalog);
+  if (intentDecision.kind !== "proceed") {
+    return Response.json(
+      intentDecisionToResponse(intentDecision, query, traceId),
+    );
+  }
   if (catalog.length === 0) {
     return Response.json({
       status: "no_match",

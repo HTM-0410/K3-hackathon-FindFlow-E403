@@ -1,0 +1,259 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531376487624867890",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[T-121] Trải nghiệm khi dùng API không chính thống",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:07:03.8372105+07:00",
+  "messages": [
+    {
+      "id": "1531376487624867890",
+      "type": "Default",
+      "timestamp": "2026-07-28T02:03:26.249+07:00",
+      "timestampEdited": "2026-07-28T02:09:44.481+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Disclaimer: Bài này không khuyến khích ae dùng các nguồn API không chính thống. Mình xin phép từ chối chịu trách nhiệm nếu ae thử rồi gặp vấn đề pháp lý. Và không, đây không phải bài seeding cho tư bản.\nNày là trải nghiệm cá nhân, mình k nói về những vde quá hiển nhiên khi dùng hàng fake.\nTL;DR: Ae đi làm thì đừng. Ae sinh viên thiếu thốn quá thì… idk.\n\nTừ đồ đá lên đồ đồng\n\nThời gian vừa rồi mình có dịp dùng Kiro IDE. Trước đó mình xài Antigravity, nên cú chuyển này chẳng khác gì loài người bước từ thời đồ đá sang thời đồ đồng.\nMình mua được một tài khoản Kiro giá 25k, stock hẳn 4 acc dùng dần, Opus 4.5 auth giá rẻ bèo.\nHai ngày sau, account chết hàng loạt, account mới mua về cũng dính 429 luôn. Tình trạng chung của cả hệ thống chứ chẳng riêng domain nào.\n\nVòng hai: mua API\n\nNhà cung cấp xoay sang bán Kiro dưới dạng API, tầm 1$/50M token. Nghe thì ổn, nhưng cứ dăm bữa nửa tháng pool account của họ lại chết chùm, liên tục bảo trì hệ thống.\n\nFYI: một ngày mình đốt khoảng 100–150M token, chạy song song 2–4 session liên tục cả ngày làm việc. Nhân lên thì budget AI đội tới 1,7m/tháng — tới đây thì không còn gọi là rẻ được nữa.\n\nMình đổi sang một bên khác: gần 800k/tháng, quota 100M/ngày. Mua thử đúng một tháng và… rất bất ổn. Server trả 429 liên tục, provider thì liên tục báo quá tải.\n\nVòng ba: tự làm\n\nHai tháng sau mình chuyển sang self-host: mua 4 account ChatGPT rồi MITM qua Kiro (khoảng 150k/tháng đã bao gồm hao hụt die acc). Nhược điểm là đi qua MITM nên IDE không hỗ trợ auto compact, mỗi session bị bó gọn trong 250k context window (GPT 5.5) hoặc ~375k (5.6 Sol).\n\nKết\n\nCả ba phương án có một điểm chung mà mình mãi mới chịu nhìn thẳng: chúng đều khiến công việc của mình bị trì trệ.\n\nTiền tiết kiệm được thì đo đếm được. Còn thời gian ngồi chờ thì chậm deadline, bị ăn chửi.\n\nNên thay vì cố tìm cách tiết kiệm, mình chấp nhận chi một số tiền lớn hơn để mua hàng auth. Vừa được trải nghiệm đầy đủ tính năng của nhà cung cấp, vừa hợp pháp, vừa đỡ phải đánh nhau đòi refund.",
+      "author": {
+        "id": "713652099086417981",
+        "name": "qijanna",
+        "discriminator": "0000",
+        "nickname": "T121 - Lê Quang Huy - 01821",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 7,
+          "users": [
+            {
+              "id": "449131901454778370",
+              "name": "daotungbach",
+              "discriminator": "0000",
+              "nickname": "T121 - Đào Ngọc Bích - 01745",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/449131901454778370/4e706eecd9574d32a66087a7c59d8fd2.png?size=512"
+            },
+            {
+              "id": "690116370746179662",
+              "name": "tuankiietqo",
+              "discriminator": "0000",
+              "nickname": "Kiet Corn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/690116370746179662/c3b3d89d741a02fa5c1743b1f473f843.png?size=512"
+            },
+            {
+              "id": "691727915175641108",
+              "name": "nabito5800",
+              "discriminator": "0000",
+              "nickname": "Nabito",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/691727915175641108/4f644bc45d1975a6e23ba5e42a40adde.png?size=512"
+            },
+            {
+              "id": "713652099086417981",
+              "name": "qijanna",
+              "discriminator": "0000",
+              "nickname": "T121 - Lê Quang Huy - 01821",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+            },
+            {
+              "id": "814350992249454622",
+              "name": "johnnyquynguyen",
+              "discriminator": "0000",
+              "nickname": "Duong Nguyen Quy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/814350992249454622/b65635f8f8d101d1ac3e11a302364d94.png?size=512"
+            },
+            {
+              "id": "892776029653991475",
+              "name": "user_1945",
+              "discriminator": "0000",
+              "nickname": "manhneee",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1309878513595060299",
+              "name": "pynet04",
+              "discriminator": "0000",
+              "nickname": "T004-Nguyễn Văn Phong-01241",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1309878513595060299/252c8b599a94fff4f34241419c75d783.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531379055750811781",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-28T02:13:38.538+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: [T121] Trải nghiệm khi dùng API không chính thống",
+      "author": {
+        "id": "713652099086417981",
+        "name": "qijanna",
+        "discriminator": "0000",
+        "nickname": "T121 - Lê Quang Huy - 01821",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531492945570693220",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-28T09:46:11.987+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: [T-121] Trải nghiệm khi dùng API không chính thống",
+      "author": {
+        "id": "713652099086417981",
+        "name": "qijanna",
+        "discriminator": "0000",
+        "nickname": "T121 - Lê Quang Huy - 01821",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531493010871947384",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:46:27.556+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hơi ocd ạ",
+      "author": {
+        "id": "713652099086417981",
+        "name": "qijanna",
+        "discriminator": "0000",
+        "nickname": "T121 - Lê Quang Huy - 01821",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531558052069900339",
+      "type": "Default",
+      "timestamp": "2026-07-28T14:04:54.586+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "juan a ah",
+      "author": {
+        "id": "691727915175641108",
+        "name": "nabito5800",
+        "discriminator": "0000",
+        "nickname": "T158 - Phạm Phúc Minh - 01153",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/691727915175641108/4f644bc45d1975a6e23ba5e42a40adde.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}

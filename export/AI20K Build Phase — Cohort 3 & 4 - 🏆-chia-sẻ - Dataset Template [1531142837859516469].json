@@ -1,0 +1,249 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531142837859516469",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Dataset Template",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:11:23.6583746+07:00",
+  "messages": [
+    {
+      "id": "1531142837859516469",
+      "type": "Default",
+      "timestamp": "2026-07-27T10:34:59.804+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDC4B  Gần đây mình thấy khá nhiều bạn hỏi về việc tìm dataset: tìm ở đâu, nguồn nào uy tín và có thể sử dụng cho học tập, nghiên cứu hay các dự án AI/ML. Vì vậy, mình muốn giới thiệu một kho tổng hợp dataset rất chất lượng mà mình thường sử dụng.\n\n✅ **Awesome Public Datasets** là một trong những kho tổng hợp dữ liệu công khai chất lượng cao phổ biến nhất trên GitHub với hơn **77.000 lượt sao (⭐) và hơn 400 **bộ dữ liệu được phân loại theo nhiều lĩnh vực như:  AI, Machine Learning, y tế, tài chính, giáo dục, giao thông, NLP và Computer Vision,...\n\nDự án cung cấp các nguồn dữ liệu uy tín, được cập nhật thường xuyên, giúp sinh viên, nhà nghiên cứu và lập trình viên dễ dàng tìm kiếm dữ liệu phục vụ học tập, nghiên cứu và phát triển ứng dụng.\n\nLink repo: https://github.com/awesomedata/awesome-public-datasets.git\n\nChúc các bạn tìm được dataset phù hợp và thành công với dự án của mình! \uD83C\uDF40",
+      "author": {
+        "id": "808506017456324629",
+        "name": "trongck4612",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531142838077751467",
+          "url": "https://cdn.discordapp.com/attachments/1531142837859516469/1531142838077751467/image.png?ex=6a6c17e3&is=6a6ac663&hm=56cc0a117c52a4dac49a7d65f864c29003d6f1983403be42c3b18dee8224902e&",
+          "fileName": "image.png",
+          "fileSizeBytes": 6810
+        }
+      ],
+      "embeds": [
+        {
+          "title": "GitHub - awesomedata/awesome-public-datasets: A topic-centric list ...",
+          "url": "https://github.com/awesomedata/awesome-public-datasets.git",
+          "timestamp": null,
+          "description": "A topic-centric list of HQ open datasets. Contribute to awesomedata/awesome-public-datasets development by creating an account on GitHub.",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/Rp38dh9u4ZQyqYKb6gNNpVBRPZ61qpfMf51Mi62Jmp4/https/opengraph.githubassets.com/3a57b5711598ebdd986ef34d1de6e364c22ee8adac944106e9661a569ce3fe1e/awesomedata/awesome-public-datasets",
+            "canonicalUrl": "https://opengraph.githubassets.com/3a57b5711598ebdd986ef34d1de6e364c22ee8adac944106e9661a569ce3fe1e/awesomedata/awesome-public-datasets",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "nhmanh.AI42E",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            },
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1159515762164244531",
+              "name": "tien_05371",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Đặng Tiến Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+            },
+            {
+              "id": "1337056589814698064",
+              "name": "abcxyz4691a",
+              "discriminator": "0000",
+              "nickname": "T118-Nguyễn Mạnh Hiệp — 01319",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1337056589814698064/2f462a794bcbfbe3ce5abc0d5f2a4800.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "691598575154495620",
+              "name": "taquoctuan26ai_25110",
+              "discriminator": "0000",
+              "nickname": "G14-T056-Tạ Quốc Tuấn-01114",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDEF0",
+            "code": "\uD83E\uDEF0",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1faf0.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDC4B",
+          "code": "wave",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44b.svg"
+        },
+        {
+          "id": "",
+          "name": "✅",
+          "code": "white_check_mark",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+        },
+        {
+          "id": "",
+          "name": "⭐",
+          "code": "star",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2b50.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83C\uDF40",
+          "code": "four_leaf_clover",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f340.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531155040058871828",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:23:29.035+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tuyệt vời!",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

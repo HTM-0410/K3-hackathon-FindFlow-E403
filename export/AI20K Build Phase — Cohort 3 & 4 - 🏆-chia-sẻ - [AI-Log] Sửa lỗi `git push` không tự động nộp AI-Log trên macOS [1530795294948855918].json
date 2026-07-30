@@ -1,0 +1,306 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530795294948855918",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[AI-Log] Sửa lỗi `git push` không tự động nộp AI-Log trên macOS",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:08:59.5426796+07:00",
+  "messages": [
+    {
+      "id": "1530795294948855918",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:33:59.117+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "### \uD83D\uDD34 Vấn đề\n`git push` không báo lỗi nhưng log AI không lên server. Kiểm tra thủ công script `submit_log.py` xuất hiện 2 lỗi:\n1. `AI_LOG_SERVER not set`: Script bỏ qua vì không thấy địa chỉ server.\n2. `CERTIFICATE_VERIFY_FAILED`: Bị chặn bởi lỗi chứng chỉ SSL khi gọi HTTPS.\n\n### \uD83D\uDD0D Nguyên nhân\n1. **Lỗi 1**: Git hook gọi `python3` hệ thống (không qua `.venv`) -> thiếu thư viện `python-dotenv` nên không đọc được file `.env`.\n2. **Lỗi 2**: Bản Python cài từ `python.org` trên macOS không tự tích hợp chứng chỉ SSL gốc của hệ thống (do chưa chạy `Install Certificates.command`).\n\n### \uD83D\uDCA1 Hướng giải quyết\n\n\uD83D\uDFE2  Cách 1: Cấu hình lại môi trường máy (Không cần sửa script)\nNếu muốn giữ nguyên script `submit_log.py` gốc, chỉ cần thiết lập môi trường máy theo 2 bước:\n1. **Cài Python qua Homebrew** (`brew install python3`): Tự động tích hợp chứng chỉ SSL hệ thống macOS (khắc phục Lỗi 2).\n2. **Cài thư viện cho Python toàn cục** (`pip3 install python-dotenv`): Giúp Git hook đọc được `.env` mà không cần kích hoạt `.venv` (khắc phục Lỗi 1).\n\n\uD83D\uDD35 Cách 2: Sửa script `submit_log.py` (Zero Config)\nBổ sung **2 cơ chế dự phòng (Fallback)** trực tiếp trong script để chạy được trên mọi máy mà người dùng không cần cài đặt gì thêm:\n- **Fallback `.env`**: Tự viết hàm đọc file `.env` bằng Python thuần nếu phát hiện môi trường thiếu `python-dotenv`.\n- **Fallback SSL**: Tự động bắt lỗi `CERTIFICATE_VERIFY_FAILED` và chuyển sang SSL context dự phòng (`_create_unverified_context`) để gửi dữ liệu.",
+      "author": {
+        "id": "427017404258844673",
+        "name": "vietthang5605",
+        "discriminator": "0000",
+        "nickname": "T032 - Nguyễn Việt Thắng - 01321",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/427017404258844673/b6292a455e804948f8fc1d314f6a2241.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530795295343116308",
+          "url": "https://cdn.discordapp.com/attachments/1530795294948855918/1530795295343116308/submit_log.py?ex=6a6c25b7&is=6a6ad437&hm=b8d5020317ce9c3f633554a241b8463daf2c3c2b8b20bbe61f27ac28fecf5624&",
+          "fileName": "submit_log.py",
+          "fileSizeBytes": 6138
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "427017404258844673",
+              "name": "vietthang5605",
+              "discriminator": "0000",
+              "nickname": "T032 - Nguyễn Việt Thắng - 01321",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/427017404258844673/b6292a455e804948f8fc1d314f6a2241.png?size=512"
+            },
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "670145855587876874",
+              "name": "_nguyentruong",
+              "discriminator": "0000",
+              "nickname": "trườngNgủYêu",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/670145855587876874/a7258882363e2bc44c5f2be147cea0e8.png?size=512"
+            },
+            {
+              "id": "694368143598026774",
+              "name": "hieeus8944",
+              "discriminator": "0000",
+              "nickname": "mói??",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "716563401534603275",
+              "name": ".2said.2said",
+              "discriminator": "0000",
+              "nickname": "keeq",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/716563401534603275/bf2ed87e30dc60f7e2a023076d8feb30.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDD34",
+          "code": "red_circle",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f534.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD0D",
+          "code": "mag",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f50d.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDFE2",
+          "code": "green_circle",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f7e2.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD35",
+          "code": "blue_circle",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f535.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530795466109878294",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:34:39.925+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Được đấy chứ",
+      "author": {
+        "id": "452011766717743105",
+        "name": "nhockiuzzz",
+        "discriminator": "0000",
+        "nickname": "G13-T015-NguyễnQuangHuy-01873",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "427017404258844673",
+              "name": "vietthang5605",
+              "discriminator": "0000",
+              "nickname": "T032 - Nguyễn Việt Thắng - 01321",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/427017404258844673/b6292a455e804948f8fc1d314f6a2241.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531282970789412954",
+      "type": "Default",
+      "timestamp": "2026-07-27T19:51:50.098+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ x",
+      "author": {
+        "id": "694368143598026774",
+        "name": "hieeus8944",
+        "discriminator": "0000",
+        "nickname": "T032 -Nguyễn Chí Hiếu - 01931",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531315179504009376",
+      "type": "Default",
+      "timestamp": "2026-07-27T21:59:49.254+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hay quá shop",
+      "author": {
+        "id": "670145855587876874",
+        "name": "_nguyentruong",
+        "discriminator": "0000",
+        "nickname": "T032 - Nguyễn Văn Trường - 01974",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/670145855587876874/a7258882363e2bc44c5f2be147cea0e8.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531576938827878421",
+      "type": "Default",
+      "timestamp": "2026-07-28T15:19:57.54+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ x",
+      "author": {
+        "id": "1509890551334305904",
+        "name": "samsamsam0905_13163",
+        "discriminator": "0000",
+        "nickname": "G13-T020-Nguyễn Văn Tuấn Anh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1509890551334305904/c442a1bbd1c984ea832bd3bd81922471.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}

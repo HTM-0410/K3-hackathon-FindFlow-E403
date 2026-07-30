@@ -1,0 +1,231 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530484411320238111",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[HARNESS ENGINEERING] Tại sao mô hình mạnh nhưng task vẫn fail.",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:10:46.8258728+07:00",
+  "messages": [
+    {
+      "id": "1530484411320238111",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:58:38.684+07:00",
+      "timestampEdited": "2026-07-25T15:09:04.36+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào các bạn, gần đây mình có tìm hiểu về **Harness Engineering** và muốn chia sẻ tóm tắt để giúp tối ưu quá trình làm việc với AI.\n\nNhiều lúc giao task cho AI mạnh, ban đầu mượt nhưng lát sau code lại hỏng bét. Chúng ta thường đổ lỗi cho model, nhưng vấn đề thực chất nằm ở **Harness** (môi trường bao quanh AI). Thả AI vào project thiếu README, rules hay tool test thì chẳng khác nào đánh đố một dev mới.\n\nHarness chuẩn cần 5 thành phần: Instructions (hướng dẫn .md), Tools, Environment, State (lưu tiến độ), và Feedback (lệnh chạy test, lint). Trong đó, Feedback mang lại hiệu quả cao nhất.\n\nDưới đây là 3 nguyên tắc quan trọng nhất:\n\n### 1. Repo là chân lý (Repo as Spec)\n\nAI không đọc được tin nhắn hay đi hỏi đồng nghiệp. Mọi rule ngầm, conventions hay architecture đều phải được viết rõ trong codebase. Nếu thông tin không có trong Repo, với AI, nó hoàn toàn không tồn tại.\n\n### 2. Tránh dùng một file hướng dẫn khổng lồ\n\nĐừng gom mọi thứ vào một file `AGENTS.md` dài thênh thang. Việc này gây ra:\n\n* **Cạn kiệt Context Window:** Chiếm mất không gian để AI đọc source code thật.\n* **Mất thông tin:** AI cực kỳ hay quên những quy tắc quan trọng nằm ở giữa một đoạn text dài.\n* **Nhiễu loạn:** AI phải đọc quy trình deploy khi chỉ đang fix bug logic nhỏ.\n\n*Giải pháp:* Giữ file chính ngắn gọn (50-200 dòng) với các luật bất di bất dịch. Các phần chi tiết nên chia nhỏ vào thư mục `docs/`, có 1 file như mục lục để AI biết cần đọc file nài khi cần. \n\n### 3. Duy trì trạng thái cho các task dài hơi\n\nVới các feature lớn cần nhiều phiên chat (session), AI sẽ quên bối cảnh cũ và dễ code ẩu khi gần hết giới hạn thông tin. ( Anthropic gọi đây là context anxiety)\n*Giải pháp:* Yêu cầu AI cập nhật trạng thái trước khi kết thúc session vào:\n\n* `PROGRESS.md`: Tiến độ, các bug kẹt lại và bước tiếp theo.\n* `DECISIONS.md`: Lịch sử và lý do ra các quyết định kỹ thuật (ví dụ: tại sao chọn Redis).\n\nĐầu session mới, chỉ cần yêu cầu AI đọc lại các file này để bắt nhịp ngay lập tức.",
+      "author": {
+        "id": "1207192943673344010",
+        "name": "nhatnguyen04.",
+        "discriminator": "0000",
+        "nickname": "T047 - Nguyễn Minh Nhật - 01131",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "781928455947157574",
+              "name": "phong2004",
+              "discriminator": "0000",
+              "nickname": "Phong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/781928455947157574/4029c9a9b2e0df11945611ccf253f583.png?size=512"
+            },
+            {
+              "id": "1207192943673344010",
+              "name": "nhatnguyen04.",
+              "discriminator": "0000",
+              "nickname": "T047 - Nguyễn Minh Nhật - 01131",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1259339913778958461",
+              "name": "nhaico123455",
+              "discriminator": "0000",
+              "nickname": "G20-P167-Trần Đình Đăng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1259339913778958461/996cbe71466da044078e93fc81b8a565.png?size=512"
+            },
+            {
+              "id": "1527561125980405780",
+              "name": "ducnguyennvan",
+              "discriminator": "0000",
+              "nickname": "T015 - Nguyễn Văn Đức - 01422",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1527561125980405780/96a38f45827bace8e5750e545ffd55ed.png?size=512"
+            },
+            {
+              "id": "1529759543540580463",
+              "name": "minhha04",
+              "discriminator": "0000",
+              "nickname": "T135 - Hoàng Anh Minh - 01192",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530512805587976202",
+      "type": "Default",
+      "timestamp": "2026-07-25T16:51:28.405+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn bạn vì thông tin hữu ích nha",
+      "author": {
+        "id": "781928455947157574",
+        "name": "phong2004",
+        "discriminator": "0000",
+        "nickname": "T062 - Hà Tấn Phong - 01577",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/781928455947157574/4029c9a9b2e0df11945611ccf253f583.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1207192943673344010",
+              "name": "nhatnguyen04.",
+              "discriminator": "0000",
+              "nickname": "T047 - Nguyễn Minh Nhật - 01131",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531155727262154825",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:26:12.877+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn ạ",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531159210874769512",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:40:03.435+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thông tin rất hữu ích ạ!",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

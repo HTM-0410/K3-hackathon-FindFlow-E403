@@ -1,0 +1,729 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530813108271059076",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "wshobson/agents: Một \"team kỹ sư ảo\" cho Claude Code, Codex CLI và cả OpenCode",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:13:52.189057+07:00",
+  "messages": [
+    {
+      "id": "1530813108271059076",
+      "type": "Default",
+      "timestamp": "2026-07-26T12:44:46.144+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Repo: https://github.com/wshobson/agents\n\nMấy hôm nay mình lọ mọ tìm cách nâng cấp Claude Code thì vô tình vớ được repo này. Đọc một lúc mới thấy đúng kiểu \"phải chia sẻ cho mọi người\".\n\nNếu bạn đang dùng AI coding agent (Claude Code, Codex CLI, Cursor, OpenCode, Gemini CLI...) mà cảm giác nó giống một ông thợ code rất giỏi nhưng làm việc một mình — biết viết code nhưng ít tự review, ít chia vai, ít có quy trình rõ ràng — thì repo này khá đáng thử.\n\nNói ngắn gọn: nó không phải một tool, mà là cả một kho gần 200 \"chuyên gia AI\" đóng gói sẵn, cài vào là agent của bạn biến từ một cá nhân đa năng thành cả một team có phân vai đàng hoàng — kiểu một studio phần mềm mini vậy.\n\nBên trong có gì mà nhiều thế?\n~185 \"chuyên gia\" riêng từng mảng: backend-architect, frontend-developer, security-auditor, python-pro, database-architect, test-automator... mỗi ông chỉ lo đúng việc của mình.\n~150 skill — kiểu cẩm nang kiến thức chuyên sâu, chỉ load ra khi cần, chứ không nhét hết vào một lần cho tốn token.\n~100 command — scaffold project, sinh test, quét bảo mật, dựng CI/CD, có sẵn hết.\n16 orchestrator — cái này mới hay: quy trình nhiều agent phối hợp theo từng bước, kiểu làm cả một feature full-stack từ A tới Z, hay làm một đợt hardening bảo mật.\n\nTất cả gói vào tầm 80-94 plugin, chia theo 25 nhóm. Điểm cộng lớn là cài cái nào thì chỉ cái đó được load vào context thôi, khỏi lo tốn token cho mấy thứ chả bao giờ đụng tới.\n\nVài điều lưu ý trước khi vọc:\nĐừng cài tràn lan, cài đúng cái mình cần thôi — dù nó thiết kế tiết kiệm token, nhưng cài nhiều vẫn hên xui.\nOrchestrator gọi nhiều agent nghĩa là nhiều lượt gọi model hơn, hợp với việc lớn/vừa, chứ sửa một dòng code nhỏ thì khỏi cần dùng tới.\nĐây là repo cộng đồng, cập nhật liên tục, số liệu mình nói ở trên có thể đã đổi khi bạn đọc — cứ vào docs/plugins.md trong repo coi cho chắc.\nNếu bạn đang chạy song song nhiều hệ multi-agent trên nhiều harness khác nhau rồi, nên dùng repo này trên một harness thôi, kẻo hai hệ đá nhau khó debug lắm.",
+      "author": {
+        "id": "958559462027849848",
+        "name": "_anhquaan",
+        "discriminator": "0000",
+        "nickname": "T069 - Nguyễn Anh Quân - 01251",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/958559462027849848/af5dbcf0d8e9412d99bb9bc447c9ebf5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - wshobson/agents: Multi-harness agentic plugin marketplace ...",
+          "url": "https://github.com/wshobson/agents",
+          "timestamp": null,
+          "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI - wshobson/agents",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/Tcc3mL4QnyICoDaI3mM0ly-t4WGuct9r0FU4YFWK44I/https/opengraph.githubassets.com/db8cd2888de6b269851f01ce3ee1b65934a46a78db69f4ca21544bcaf39943af/wshobson/agents",
+            "canonicalUrl": "https://opengraph.githubassets.com/db8cd2888de6b269851f01ce3ee1b65934a46a78db69f4ca21544bcaf39943af/wshobson/agents",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 9,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "797114545483153411",
+              "name": "minhducnguyen2932",
+              "discriminator": "0000",
+              "nickname": "Lab Coach - Nguyen Duc Minh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/797114545483153411/a066017a15406e9a9331c9a77d6f5a41.png?size=512"
+            },
+            {
+              "id": "845697561239093358",
+              "name": "thangqq.",
+              "discriminator": "0000",
+              "nickname": "thangpahm",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "1001846191836901486",
+              "name": "minu_2k5",
+              "discriminator": "0000",
+              "nickname": "minu2k5",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1325354539574104145",
+              "name": "tdat_24340",
+              "discriminator": "0000",
+              "nickname": "G11 - T097 - Tiến Đạt - 01678",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1325354539574104145/b55d9d9abf0426e0b5f1aaff19c70be1.png?size=512"
+            },
+            {
+              "id": "1525362771770867732",
+              "name": "a1vin14105",
+              "discriminator": "0000",
+              "nickname": "a1vin",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530815773923213323",
+      "type": "Default",
+      "timestamp": "2026-07-26T12:55:21.685+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Dạo này có nhiều repo phát triển theo hướng đội quân Agent, chắc sau này lên tới \"công ty một mình tao\" luôn quá \uD83E\uDD27",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83E\uDD27",
+          "code": "sneezing_face",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f927.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530816349121675294",
+      "type": "Reply",
+      "timestamp": "2026-07-26T12:57:38.823+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cty cũ mình làm cũng đang phát triển 1 cái dạng như vậy luôn =)))))",
+      "author": {
+        "id": "958559462027849848",
+        "name": "_anhquaan",
+        "discriminator": "0000",
+        "nickname": "T069 - Nguyễn Anh Quân - 01251",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/958559462027849848/af5dbcf0d8e9412d99bb9bc447c9ebf5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE06",
+            "code": "laughing",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f606.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1001846191836901486",
+              "name": "minu_2k5",
+              "discriminator": "0000",
+              "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "1001846191836901486",
+          "name": "minu_2k5",
+          "discriminator": "0000",
+          "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530815773923213323",
+        "channelId": "1530813108271059076",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530822575939129455",
+      "type": "Default",
+      "timestamp": "2026-07-26T13:22:23.412+07:00",
+      "timestampEdited": "2026-07-26T13:22:45.003+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình mà là đơn vị bán API sẽ cho 1 team chuyên R&D ngồi mỗi tháng push 1 trend gì đó. Xong anh em fomo vào , việc của mình là bán token thôi \uD83D\uDE31 . Cho nên case by case sẽ có nhưng lựa chọn phù hợp . Dùng dao mổ trâu giiết gà cũng không tốt",
+      "author": {
+        "id": "759055479723917364",
+        "name": "nhat_cuong",
+        "discriminator": "0000",
+        "nickname": "Vonhatcuong",
+        "color": "#A72525",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527509817084739805",
+            "name": "Admin",
+            "color": "#A72525",
+            "position": 18
+          },
+          {
+            "id": "1527919808862228652",
+            "name": "Coach",
+            "color": "#F1C40F",
+            "position": 15
+          },
+          {
+            "id": "1527919786850390116",
+            "name": "Mod",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE06",
+            "code": "laughing",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f606.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "958559462027849848",
+              "name": "_anhquaan",
+              "discriminator": "0000",
+              "nickname": "T069 - Nguyễn Anh Quân - 01251",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/958559462027849848/af5dbcf0d8e9412d99bb9bc447c9ebf5.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDD2A",
+            "code": "knife",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f52a.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "835504208009494610",
+              "name": "sangdaden",
+              "discriminator": "0000",
+              "nickname": "Sang Phan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/835504208009494610/1cd8a4bdca4c435c3e3a2cfddd7cc6c6.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE31",
+          "code": "scream",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f631.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530824341732982926",
+      "type": "Default",
+      "timestamp": "2026-07-26T13:29:24.41+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hi bạn, mình cũng là 1 người đăng bài chia sẻ về chủ đề này, hiện mình cũng đang dùng 1 plugin tương tự cho codex, tuy nhiên vấn đề là phần setting cho các skills hoặc các role bị quá dài, dẫn đến mỗi lần call 1 orchestrator đều bị rút ngắn mô tả skill khiến việc thực hiện không đạt hiểu quả như mong muốn\n\nKhông biết bạn có gặp trường hợp như mình không và nếu có thì bạn có thể share cách giải quyết không \uD83D\uDE04",
+      "author": {
+        "id": "1525362771770867732",
+        "name": "a1vin14105",
+        "discriminator": "0000",
+        "nickname": "GR16 - T112 - Lương Quốc Khánh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE04",
+          "code": "smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f604.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530826548859506698",
+      "type": "Reply",
+      "timestamp": "2026-07-26T13:38:10.63+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "theo mình hiểu thì là do plugin đó mô tả quá dài phần role của mỗi agent dẫn đến nó quên mất phải không b",
+      "author": {
+        "id": "958559462027849848",
+        "name": "_anhquaan",
+        "discriminator": "0000",
+        "nickname": "T069 - Nguyễn Anh Quân - 01251",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/958559462027849848/af5dbcf0d8e9412d99bb9bc447c9ebf5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1525362771770867732",
+          "name": "a1vin14105",
+          "discriminator": "0000",
+          "nickname": "GR16 - T112 - Lương Quốc Khánh",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530824341732982926",
+        "channelId": "1530813108271059076",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530827239653113937",
+      "type": "Reply",
+      "timestamp": "2026-07-26T13:40:55.328+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "quên thì không đúng lắm, nó tự động cắt ngắn mô tả để phù hợp với độ lớn input b ạ",
+      "author": {
+        "id": "1525362771770867732",
+        "name": "a1vin14105",
+        "discriminator": "0000",
+        "nickname": "GR16 - T112 - Lương Quốc Khánh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "958559462027849848",
+          "name": "_anhquaan",
+          "discriminator": "0000",
+          "nickname": "T069 - Nguyễn Anh Quân - 01251",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/958559462027849848/af5dbcf0d8e9412d99bb9bc447c9ebf5.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530826548859506698",
+        "channelId": "1530813108271059076",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530829680121348176",
+      "type": "Reply",
+      "timestamp": "2026-07-26T13:50:37.181+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "mình không gặp trường hợp như này nhưng mà cái mình đang sử dụng orches chỉ có 1 cái system prompt còn những phần khác mình cho vào skill như kiểu là brainstorming , writing-plans , dispatching-parallel-agents để khi cần nó mới dùng á b",
+      "author": {
+        "id": "958559462027849848",
+        "name": "_anhquaan",
+        "discriminator": "0000",
+        "nickname": "T069 - Nguyễn Anh Quân - 01251",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/958559462027849848/af5dbcf0d8e9412d99bb9bc447c9ebf5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1525362771770867732",
+              "name": "a1vin14105",
+              "discriminator": "0000",
+              "nickname": "GR16 - T112 - Lương Quốc Khánh",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "1525362771770867732",
+          "name": "a1vin14105",
+          "discriminator": "0000",
+          "nickname": "GR16 - T112 - Lương Quốc Khánh",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530827239653113937",
+        "channelId": "1530813108271059076",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530830848012583102",
+      "type": "Reply",
+      "timestamp": "2026-07-26T13:55:15.628+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "okay b, vậy mình thử chuyển sang bên này dùng xem sao, tks bạn nhé",
+      "author": {
+        "id": "1525362771770867732",
+        "name": "a1vin14105",
+        "discriminator": "0000",
+        "nickname": "GR16 - T112 - Lương Quốc Khánh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "958559462027849848",
+          "name": "_anhquaan",
+          "discriminator": "0000",
+          "nickname": "T069 - Nguyễn Anh Quân - 01251",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/958559462027849848/af5dbcf0d8e9412d99bb9bc447c9ebf5.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530829680121348176",
+        "channelId": "1530813108271059076",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530830900655554640",
+      "type": "Default",
+      "timestamp": "2026-07-26T13:55:28.179+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "oke b",
+      "author": {
+        "id": "958559462027849848",
+        "name": "_anhquaan",
+        "discriminator": "0000",
+        "nickname": "T069 - Nguyễn Anh Quân - 01251",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/958559462027849848/af5dbcf0d8e9412d99bb9bc447c9ebf5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530882609977229332",
+      "type": "Default",
+      "timestamp": "2026-07-26T17:20:56.642+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tôi nghĩ là nên chia task ra chỗ nào cần để mình review lại ý chứ task lớn thì không tải được thật ra theo quan điểm của mình dùng mô hình nào cũng tốt thôi nhưng quan trọng là xác định vấn đề cần giải quyết ở đâu task nào mình nghĩ vậy còn mọi người thì sao chia sẻ thêm cho mình với nhé",
+      "author": {
+        "id": "452011766717743105",
+        "name": "nhockiuzzz",
+        "discriminator": "0000",
+        "nickname": "G13-T015-NguyễnQuangHuy-01873",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 11
+}

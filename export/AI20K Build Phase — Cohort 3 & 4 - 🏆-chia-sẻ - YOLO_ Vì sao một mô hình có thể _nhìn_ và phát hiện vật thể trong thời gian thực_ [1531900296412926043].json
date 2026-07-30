@@ -1,0 +1,183 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531900296412926043",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "YOLO: Vì sao một mô hình có thể \"nhìn\" và phát hiện vật thể trong thời gian thực?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:03:41.3906971+07:00",
+  "messages": [
+    {
+      "id": "1531900296412926043",
+      "type": "Default",
+      "timestamp": "2026-07-29T12:44:51.996+07:00",
+      "timestampEdited": "2026-07-29T12:45:14.751+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bạn đã bao giờ thắc mắc tại sao camera AI có thể nhận diện người, xe, thú cưng chỉ trong vài mili giây chưa?\n\nMột trong những công nghệ đứng sau đó chính là YOLO (You Only Look Once) – một trong những mô hình Object Detection phổ biến nhất hiện nay.\n\n**1. YOLO khác gì so với cách nhận diện truyền thống?**\n\nTrước đây, các mô hình Object Detection thường xử lý theo nhiều bước:\nImage\n ↓\nTìm vùng có khả năng chứa vật thể\n ↓\nPhân loại vật thể\nĐiều này khiến tốc độ xử lý chậm hơn.\nYOLO thay đổi cách tiếp cận:\n\nImage\n ↓\nNeural Network\n ↓\nBounding Box + Class\n\nChỉ cần một lần nhìn vào ảnh, YOLO có thể dự đoán:\n\nVật thể nằm ở đâu (Bounding Box)\nVật thể là gì (Class)\nĐộ tự tin của dự đoán (Confidence Score)\n\nVí dụ:\n\nPerson: 95%\nCar: 91%\nDog: 87%\n\n**2. Công cụ giúp làm YOLO dễ hơn**\nUltralytics YOLO\n\nĐây là một trong những framework YOLO phổ biến nhất hiện nay.\n\nVí dụ train model:\n\nfrom ultralytics import YOLO\n\nmodel = YOLO(\"yolo11n.pt\")\n\nmodel.train(\n    data=\"dataset.yaml\",\n    epochs=50,\n    imgsz=640\n)\n\nCó thể sử dụng để:\n- Train model\n- Detect ảnh/video\n- Export sang ONNX, TensorRT\n- Deploy trên thiết bị edge\n\n**Roboflow**\n\nMột công cụ hữu ích trong quá trình xây dựng dataset:\n- Label ảnh online\n- Data augmentation\n- Convert format YOLO\n- Quản lý dataset\n\nWorkflow phổ biến:\n\nThu thập ảnh\n        ↓\nLabel bằng Roboflow\n        ↓\nExport YOLO format\n        ↓\nTrain với Ultralytics\n        ↓\nDeploy\nCVAT\n\nPhù hợp với các dataset lớn:\n- Annotation chuyên nghiệp\n- Bounding box\n- Polygon segmentation\n- Object tracking\n\nĐược sử dụng nhiều trong các dự án Computer Vision thực tế.\n\n**4. Một số ứng dụng của YOLO**\nSmart Traffic:\n- Detect phương tiện\n- Đếm xe\n- Phát hiện lỗi giao thông\nHealthcare:\n- Phát hiện vùng bất thường trên ảnh y tế\nFactory:\n- Kiểm tra lỗi sản phẩm trên dây chuyền\nAgriculture:\n- Theo dõi động vật\n- Phát hiện sâu bệnh\nMobile AI:\n- Camera nhận diện vật thể theo thời gian thực",
+      "author": {
+        "id": "821753682172444712",
+        "name": "namhatelife1234996",
+        "discriminator": "0000",
+        "nickname": "T073 - PhanVănHoàngNam - 01160",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/821753682172444712/1a6fa72ca3a6e84d6e018d0221f7e343.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "934298468002955324",
+              "name": "huygoodboy",
+              "discriminator": "0000",
+              "nickname": "HuyGoodBoy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/934298468002955324/2dbc50068255824281724ce931c4e753.png?size=512"
+            },
+            {
+              "id": "1392890973616476160",
+              "name": "heheboi0909",
+              "discriminator": "0000",
+              "nickname": "Đậu Quốc Duy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1489160785031729332",
+              "name": "vunt2",
+              "discriminator": "0000",
+              "nickname": "ntv2714",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1489160785031729332/fa4b41adc185201f7b870a98aa1943ee.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531920560500641943",
+      "type": "Default",
+      "timestamp": "2026-07-29T14:05:23.331+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tôi có thể làm gì với thông tin này",
+      "author": {
+        "id": "1520438987473551476",
+        "name": "hoquangminh_ai20k",
+        "discriminator": "0000",
+        "nickname": "T073-Hồ Quang Minh-01906",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531966938190970910",
+      "type": "Reply",
+      "timestamp": "2026-07-29T17:09:40.634+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bạn có thể tự xây dưng 1 model YOLO cho riêng mình với bộ dataset có sẵn trên roboflow",
+      "author": {
+        "id": "821753682172444712",
+        "name": "namhatelife1234996",
+        "discriminator": "0000",
+        "nickname": "T073 - PhanVănHoàngNam - 01160",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/821753682172444712/1a6fa72ca3a6e84d6e018d0221f7e343.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1520438987473551476",
+          "name": "hoquangminh_ai20k",
+          "discriminator": "0000",
+          "nickname": "T073-Hồ Quang Minh-01906",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1531920560500641943",
+        "channelId": "1531900296412926043",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

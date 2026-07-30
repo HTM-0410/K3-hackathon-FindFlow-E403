@@ -1,0 +1,210 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531492997332471831",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Tóm lược Day 02: Khung tư duy cốt lõi về AI Product Management",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:07:43.1131211+07:00",
+  "messages": [
+    {
+      "id": "1531492997332471831",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:46:24.328+07:00",
+      "timestampEdited": "2026-07-28T09:47:17.32+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDC4B Chào các bạn, mình tự tóm tắt những kiến thức trọng tâm của Day 02 hi vọng tài liệu này sẽ giúp mọi người ôn tập nhanh chóng và kết nối tốt với các buổi học tiếp theo!\n\n✅ Khám Phá Vấn Đề (Problem Discovery)\n      -** Mô hình Double Diamond (Hai viên kim cương)**: Quá trình làm sản phẩm luôn đi qua hai pha Phân kỳ (Mở rộng để tìm hiểu) và Hội tụ (Thu hẹp để chốt vấn đề/giải pháp). Tìm đúng vấn đề (Diamond 1) trước khi tìm đúng giải pháp (Diamond 2).  \n\n\uD83E\uDD1E Cấu Trúc Hóa Bài Toán (Problem Statement)\n      - Actor (Đối tượng): Ai là người chịu ảnh hưởng trực tiếp? \n      - Workflow (Quy trình): Các bước vận hành hiện tại diễn ra như thế nào? \n      - Bottleneck (Nút thắt): Khâu nào chậm trễ, lặp lại và dễ sai sót nhất? \n      - Impact (Tác động): Hao phí cụ thể là bao nhiêu?  \n      - Success Metric (Chỉ số thành công): Kết quả mong đợi bằng những con số định lượng.\n      - Metric (kết quả cuối) và Input Metric (đòn bẩy tác động). \n      - Boundary (Ranh giới): Việc gì AI tuyệt đối KHÔNG được làm?  \n\n\uD83D\uDD25 Ba Cấp Độ Giải Pháp (Rule vs. Workflow vs. Agent)\nKiến trúc của một hệ thống AI thực tế không chỉ có mô hình ngôn ngữ (LLM). Nó là sự kết hợp: **AI = Model + Context + Planning + Tools**. Để giải quyết bài toán, luôn ưu tiên đi từ giải pháp đơn giản nhất.\n\n\uD83E\uDEF0 6 Nguyên Tắc Cốt Lõi \n       1. Brief mơ hồ không thay thế Problem Statement: Phải viết rõ ràng cấu trúc 9 thành phần. \n       2. Mô hình hóa workflow TRƯỚC KHI tích hợp AI: Đừng gắn AI vào một mớ hỗn độn. \n       3. Pain point (Nỗi đau) phải được lượng hóa: Không có con số (Baseline), không làm. \n       4. Phức tạp không đồng nghĩa với hiệu quả: Hãy ưu tiên Rule trước. Chỉ lên Agent khi thực sự không còn cách nào khác. \n       5. Quyết định dựa trên lập luận thực tế: Đừng sợ phải nói \"Not Yet\" (Tạm hoãn). Đó là sự chín chắn của người làm sản phẩm, không phải là thất bại. \n       6. Đo reward function bằng trải nghiệm người dùng, không chỉ bằng độ chính xác (Accuracy)",
+      "author": {
+        "id": "808506017456324629",
+        "name": "trongck4612",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "nhmanh.AI42E",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            },
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDEF0",
+            "code": "\uD83E\uDEF0",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1faf0.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDCAA",
+            "code": "muscle",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4aa.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDC4B",
+          "code": "wave",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44b.svg"
+        },
+        {
+          "id": "",
+          "name": "✅",
+          "code": "white_check_mark",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83E\uDD1E",
+          "code": "fingers_crossed",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f91e.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD25",
+          "code": "fire",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531493675794825247",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:49:06.086+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "mn thấy hữu ích cho mình xin 1 tim nhé",
+      "author": {
+        "id": "808506017456324629",
+        "name": "trongck4612",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

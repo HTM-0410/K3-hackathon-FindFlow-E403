@@ -1,0 +1,125 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530593352381108248",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Vibe Coding một cách hiệu quả",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:16:12.2997183+07:00",
+  "messages": [
+    {
+      "id": "1530593352381108248",
+      "type": "Default",
+      "timestamp": "2026-07-25T22:11:32.257+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Nhiều người \"vibecode\" — mở Claude/Cursor, gõ yêu cầu, để AI code, xong. Vấn đề: AI quên sạch sau mỗi phiên. Bạn lặp lại context 100 lần, AI quyết định khác nhau mỗi lần, code base rối dần vì không ai nhớ \"tại sao\" đã chọn cách này chứ không phải cách kia.\n\nCách mình xử lý: coi AI như một dev mới join team mỗi ngày — cần tài liệu để bắt kịp, không cần bạn brief lại từ đầu.\n\n1. Second brain ngoài repo, không phải trong đầu bạn\n\nMình có 1 vault Markdown riêng (Obsidian) chứa toàn bộ context sống: mình là ai, làm dự án gì, tech stack gì, quyết định lớn nào đã chốt và vì sao. Mọi AI tool (Claude Code, Codex, Gemini CLI...) đọc file này qua 1 biển trỏ (CLAUDE.md/AGENTS.md/GEMINI.md) ngay lúc mở phiên. Không cần bạn copy-paste lại context — AI tự đọc, tự hiểu bối cảnh trước khi code dòng đầu tiên.\n\n2. Phân loại trí nhớ theo tuổi thọ\n\nKhông phải cái gì cũng đáng nhớ mãi. Mình tách:\n\nQuyết định lớn (đổi kiến trúc, chốt công nghệ) → Decision Log, ghi ngày + lý do, mới nhất lên đầu.\nBài học lâu dài về cách làm việc, sai lầm đã sửa → file memory riêng.\nTiến độ dự án → note riêng từng dự án, cập nhật liên tục.\nCái gì suy ra được từ code/git log thì KHÔNG ghi — dữ liệu rác làm loãng dữ liệu quan trọng.\n\n3. Mỗi repo có luật riêng, nhưng 1 nguồn duy nhất\n\nLuật chung (changelog, docs, workflow) viết 1 lần ở nơi trung tâm, mọi repo trỏ về đọc — không copy dán vào từng project. Sửa 1 chỗ, mọi AI cùng cập nhật. Tránh cảnh 3 file cấu hình lệch nhau vì sync tay.\n\n4. AI không tự code — có quy trình\n\nViệc code thật sự đi qua 3 vai: agent chính lên plan → subagent \"coder\" triển khai → subagent \"reviewer\" soát lại → agent chính quyết fix tiếp hay chốt xong. Tách vai giúp review độc lập, không phải \"AI tự chấm bài AI\".\n\nKết quả thực tế\n\nMở phiên mới, không cần brief lại \"tôi là ai, dự án này làm gì, lần trước quyết gì\" — AI tự đọc, tự bắt nhịp trong vài giây. Vibecode hiệu quả không phải gõ prompt hay hơn — là cho AI 1 bộ nhớ đáng tin, giống hệt cách bạn onboard 1 dev mới vào team.",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530593352863715389",
+          "url": "https://cdn.discordapp.com/attachments/1530593352381108248/1530593352863715389/image.png?ex=6a6c1264&is=6a6ac0e4&hm=76e216e18e511a715b44a299fa24e8b7753d36a37444bd79511a94c105d988c7&",
+          "fileName": "image.png",
+          "fileSizeBytes": 204790
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530593559156232303",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-25T22:12:21.556+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: Vibe Coding một cách hiệu quả",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

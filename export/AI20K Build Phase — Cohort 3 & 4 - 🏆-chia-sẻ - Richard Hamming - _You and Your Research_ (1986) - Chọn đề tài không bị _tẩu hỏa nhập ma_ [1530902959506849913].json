@@ -1,0 +1,113 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530902959506849913",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Richard Hamming - \"You and Your Research\" (1986) - Chọn đề tài không bị \"tẩu hỏa nhập ma\"",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:20:46.0939318+07:00",
+  "messages": [
+    {
+      "id": "1530902959506849913",
+      "type": "Default",
+      "timestamp": "2026-07-26T18:41:48.348+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "*Bài nói kinh điển nhất mọi thời đại về chọn problem. Hamming là Turing Award winner, làm việc ở Bell Labs.*\n\n**Cốt lõi mình tóm gọn được:**\n\n- **\"The importance of a problem depends on whether you have an attack\"** — Vấn đề quan trọng không phải vì hậu quả kinh tế to lớn, mà vì **bạn đã có cách tấn công nó**. Đừng chọn đề \"to\" mà bạn chưa biết bắt đầu từ đâu. \n- **\"It's not what you do, it's the way that you do it\"** — Tuyệt đại đa số người chọn sai đề vì họ chọn theo \"hot trend\" thay vì chọn theo **khả năng thực thi của chính mình**. \n- **\"Change the problem\"** — Nếu đề gốc quá khó, hãy **định nghĩa lại bài toán** sao cho vừa sức bạn nhưng vẫn có giá trị. Hamming từng biến bài toán \"tính quỹ đạo\" thành \"chứng minh digital computer thắng analog computer\" — cùng data nhưng đề khác, kết quả xuất sắc. \n- **\"Most great scientists have 10 to 20 problems in their minds\"** — Luôn giữ 10-20 vấn đề trong đầu. Khi gặp bất kì kiến thức nào liên quan hay có ý tưởng loé lên trong đầu, áp dụng để tấn công problem đó ngay. \n\n> Đừng chọn đề tài vì \"nghe hay\". Chọn đề tài mà team bạn **đã hình dung được cách tấn công trong 4-5 tuần** — dù phải thu nhỏ scope lại.\nCre: https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+      "author": {
+        "id": "1108061338044993607",
+        "name": "phongqk226",
+        "discriminator": "0000",
+        "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "362819950420819979",
+              "name": "greatmisery",
+              "discriminator": "0000",
+              "nickname": "douceur",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/362819950420819979/0ead14da041cae4bc182fc56226984bb.png?size=512"
+            },
+            {
+              "id": "461100458786816032",
+              "name": "thiendz1ngaunhat",
+              "discriminator": "0000",
+              "nickname": "Thiendz1",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1030659866081120346",
+              "name": "minhyeuem_",
+              "discriminator": "0000",
+              "nickname": "Đỗ Nhật Minh 2A202601085",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1525362771770867732",
+              "name": "a1vin14105",
+              "discriminator": "0000",
+              "nickname": "a1vin",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

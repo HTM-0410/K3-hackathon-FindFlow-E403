@@ -1,0 +1,133 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530754985397059747",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "\uD83D\uDCCC [Chia sẻ] Tổng hợp các công cụ take notes & làm việc nhóm cho project sắp tới",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:15:23.523074+07:00",
+  "messages": [
+    {
+      "id": "1530754985397059747",
+      "type": "Default",
+      "timestamp": "2026-07-26T08:53:48.571+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người, sắp tới chúng ta sẽ bắt đầu vào việc lên kế hoạch cho project và hoạt động với team nhiều, nên mình ngồi tổng hợp lại mấy công cụ mà mình đã dùng qua để take notes, vẽ mindmap, lên kế hoạch và phối hợp nhóm. Mình sẽ note luôn điểm hay và điểm hạn chế của từng cái để mọi người dễ cân nhắc nhé. Ai có công cụ nào xịn hơn thì comment bên dưới bổ sung giúp mình \uD83D\uDE4C\n\n\uD83D\uDCDD **Nhóm take notes & quản lý tài liệu**\n*1. Notion*\nCái này chắc quen thuộc nhất rồi, mình thường dùng Notion để làm ghi chú meeting, lưu tài liệu, làm database task, viết wiki cho nhóm.\nĐiểm hay:\n- Note, bảng task, calendar, database... có đủ\n- Template có sẵn nhiều, lấy về xài liền không cần setup từ đầu\n- Chia sẻ và phân quyền cho thành viên khá dễ\n- Có Notion AI hỗ trợ tóm tắt\nHạn chế:\n- Load hơi chậm khi workspace phình to, nhất là mạng yếu\n- Offline mode khá tệ, mất mạng là gần như bó tay\n- Người mới dễ bị ngợp vì quá nhiều tính năng, tốn thời gian setup ban đầu\n- Bản free giới hạn dung lượng upload file (5MB/file)\n*2. Obsidian*\nDành cho bạn nào thích ghi chú kiểu cá nhân, học thuật. Mình hay dùng để note kiến thức khi research cho project.\nĐiểm hay:\n- Lưu file markdown ngay trên máy, dùng offline thoải mái, dữ liệu là của mình\n- Tính năng liên kết note và graph view rất hợp để hệ thống hóa kiến thức\nHạn chế:\n- Tính năng làm việc nhóm còn hạn chế, muốn sync real-time phải trả phí hoặc tự cấu hình\n\n\uD83E\uDDE0 **Nhóm vẽ mindmap & brainstorm**\n*3. Miro*\nMình hay dùng khi cả nhóm cần brainstorm ý tưởng hoặc vẽ sơ đồ luồng hệ thống. Cũng có thể dùng cá nhân để hệ thống hoá các ý tưởng, mình thì hay dùng để vẽ sơ đồ luồng và tạo table để cập nhật tiến độ làm việc cho giảng viên hồi mình còn làm nghiên cứu khoa học tại trường.\nĐiểm hay:\n- Whiteboard vô hạn, cả nhóm vào vẽ cùng lúc, thấy con trỏ của nhau real-time\n- Template đa dạng: mindmap, user story map, retrospective, flowchart...\n- Tích hợp được với Notion, Jira, Slack...\nHạn chế:\n- Bản free chỉ được 3 board editable\n- Board nhiều object thì máy yếu sẽ lag thấy rõ\n*4. XMind*\nNếu chỉ cần vẽ sơ đồ tư duy thì cái này gọn hơn Miro.\nĐiểm hay:\n- Tạo mindmap nhanh, phím tắt tiện, cấu trúc cây rõ ràng\n- Nhiều style/theme đẹp, export ra ảnh hoặc PDF để bỏ vào báo cáo ngon lành\nHạn chế:\n- Bản free export bị đóng watermark\n- Không thiên về collab real-time, hợp làm cá nhân hơn làm nhóm\n\n\uD83D\uDCCB **Nhóm lên kế hoạch & quản lý task**\n*5. Trello*\nĐơn giản, trực quan, hợp với project nhỏ hoặc nhóm mới làm quen với quản lý task.\nĐiểm hay:\n- Kanban board kéo thả dễ hiểu, 5 phút là cả nhóm biết dùng\nBản free khá thoải mái cho nhóm sinh viên\n- Checklist, deadline, gắn label, assign người làm đầy đủ\nHạn chế:\n- Project phức tạp thì hơi đuối: không có - Gantt chart hay dependency ở bản free\nNhiều card quá thì board rối, khó nhìn tổng quan\n*6. Jira*\nCó lẽ không còn lạ với các anh/chị đã đi làm trong các doanh nghiệp. Hoặc các bạn đã thực tập và tiếp xúc trực tiếp trong quá trình xây dựng dự án.\nĐiểm hay:\n- Tạo sprint, backlog, story point, burndown chart đầy đủ. Dễ theo dõi tiến độ của project, chia ra từng sprint và list task để làm trong sprint đó khá trực quan.\n- Làm quen sớm thì sau này đi làm/đi thực tập đỡ bỡ ngỡ\n- Free cho team dưới 10 người\nHạn chế:\n- Giao diện nhiều chỗ rườm rà, người mới dễ nản\n\n\uD83D\uDCCD**Gợi ý combo**\nNếu mọi người lười thử hết thì đây là combo mình thường sử dụng trong quá trình làm dự án. Mọi người có thể trải nghiệm theo combo của mình thử để xem độ hiệu quả nhen^^\n- Notion (take notes + tổng hợp tài liệu) + Jira (chia sprint + quản lý task) + Miro (brainstorm, vẽ sơ đồ)\nQuan trọng nhất vẫn là cả nhóm thống nhất dùng chung một bộ công cụ và duy trì đều, chứ công cụ xịn mà mỗi người note một nơi thì cũng như không :doro_4: \nAi từng dùng qua mấy tool này rồi thì chia sẻ trải nghiệm bên dưới nha, hoặc có tool nào hay hơn thì giới thiệu cho mình và mọi người với\uD83D\uDE4F",
+      "author": {
+        "id": "618657002071130113",
+        "name": "threeinchestodeath",
+        "discriminator": "0000",
+        "nickname": "T004 - Lê Thị Yến Nhi - 01031",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/guilds/1526532830627102781/users/618657002071130113/avatars/a_fc146d4a75c37556400e1aa431c2e044.gif?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "582196060441673728",
+              "name": "nabuhunh",
+              "discriminator": "0000",
+              "nickname": "G13-T171 - Vũ Ngọc Hùng - 01722",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/582196060441673728/546e5071af44c77e95462013fb4810b3.png?size=512"
+            },
+            {
+              "id": "618657002071130113",
+              "name": "threeinchestodeath",
+              "discriminator": "0000",
+              "nickname": "T004 - Lê Thị Yến Nhi - 01031",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/guilds/1526532830627102781/users/618657002071130113/avatars/a_fc146d4a75c37556400e1aa431c2e044.gif?size=512"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE4C",
+          "code": "raised_hands",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f64c.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCDD",
+          "code": "pencil",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4dd.svg"
+        },
+        {
+          "id": "1394693158998245386",
+          "name": "doro_4",
+          "code": "doro_4",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.discordapp.com/emojis/1394693158998245386.png"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDE4F",
+          "code": "pray",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f64f.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

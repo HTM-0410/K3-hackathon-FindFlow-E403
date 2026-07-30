@@ -1,0 +1,87 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531505917596667904",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Machine Learning Yearning - quyển sách với hướng tiếp cận độc đáo được chắp bút bởi Prof. Andrew Ng",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:07:30.1575073+07:00",
+  "messages": [
+    {
+      "id": "1531505917596667904",
+      "type": "Default",
+      "timestamp": "2026-07-28T10:37:44.759+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đây là bản dịch tiếng Việt của nhóm anh Vũ Hữu Tiệp cho quyển sách Machine Learning Yearning - 1 trong số các best book về AI của Prof. Andrew Ng.\n\nQuyển sách này không dành cho người mới học AI/ML/DL, mình nói trước để các bạn khỏi mất công đọc rồi thất vọng. Sách không dạy Linear Regression, Logistic Regression, SVM hay Random Forest là gì, cũng không nói Neural Network là gì hay có những layer nào.\n\nCái mà quyển sách này hướng đến, cũng là cái mà hầu hết sách ML/DL khác toàn bỏ qua, là cách phân tích và xử lý vấn đề khi làm ML/DL thực tế. Kiểu như:\n\nVal set và test set nên có kích thước như thế nào?\nPhân tích error trên training set ra sao?\nPhân bố dữ liệu của bộ train và bộ test khác nhau thì xử lý sao?\nData bị đánh nhãn sai thì làm gì?\n... và còn nhiều nữa\n\nKiến thức trong này khá là khó tìm ở chỗ khác.\n\nLink: https://github.com/mlbvn/ml-yearning-vi",
+      "author": {
+        "id": "887721042976596000",
+        "name": "hoanglinh1056",
+        "discriminator": "0000",
+        "nickname": "Hoàng Linh",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/887721042976596000/20cb4202d17c175ac2f9a3be76294d7e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - mlbvn/ml-yearning-vi: Một cuốn sách tập trung vào ...",
+          "url": "https://github.com/mlbvn/ml-yearning-vi",
+          "timestamp": null,
+          "description": "Một cuốn sách tập trung vào hướng dẫn cách cấu trúc các dự án Học Máy và phân tích cách làm cho các thuật toán Học Máy hoạt động. - mlbvn/ml-yearning-vi",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/12RDvhLnmq09gvr10lBz5EyTRicyp-C57FeCKRmnayo/https/opengraph.githubassets.com/9f61a76297fe1c2adf741676fb7077f4c3853d6e3ee0db5fd3ef7dcf46e38860/mlbvn/ml-yearning-vi",
+            "canonicalUrl": "https://opengraph.githubassets.com/9f61a76297fe1c2adf741676fb7077f4c3853d6e3ee0db5fd3ef7dcf46e38860/mlbvn/ml-yearning-vi",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "887721042976596000",
+              "name": "hoanglinh1056",
+              "discriminator": "0000",
+              "nickname": "Hoàng Linh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/887721042976596000/20cb4202d17c175ac2f9a3be76294d7e.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,206 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530588280582574260",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Setup Codex/ Claude với Agenteam và Skills",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:16:16.2805366+07:00",
+  "messages": [
+    {
+      "id": "1530588280582574260",
+      "type": "Default",
+      "timestamp": "2026-07-25T21:51:23.046+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Xin chào mọi người,\nNhư chúng ta đã được phổ biến, sắp tới chúng ta sẽ bước vào phần Build Project cùng team của mình. \n\nTuy nhiên, chắc hẳn sẽ có những bạn mới tiếp xúc với vibe coding, hoặc đã dùng AI để code nhưng vẫn gặp khó khăn trong việc giúp agent hiểu đúng yêu cầu, nhớ context và hỗ trợ ổn định hơn.\n\nVì vậy, mình xin chia sẻ cách mình setup Agent Team trên Codex, kết hợp cùng một số Skills cho Codex/Claude.\n\nHiểu đơn giản, thay vì để một agent làm tất cả, chúng ta có thể chia thành nhiều role như Researcher, PM, Architect, Developer, QA và Reviewer. Agent chính sẽ điều phối công việc giữa các role, khá giống một team IT thu nhỏ.\n\n1. Setup AgenTeam cho Codex\nRepo mình đang sử dụng: https://github.com/yimwoo/codex-agenteam\n\nRepo đã chuẩn bị sẵn các role và pipeline cho Codex. Mọi người chỉ cần làm theo phần Quick Start trong README. Sau đó khởi động lại Codex, vào Plugins → Local Plugins, cài AgenTeam và chạy: **@ATeam build my team**\n\nMọi người cũng có thể gọi riêng từng role như **@Architect**, **@Dev**, **@Qa** hoặc **@Reviewer**.\n\n2. Một số repo nên tham khảo\nhttps://github.com/yimwoo/codex-agenteam\nhttps://github.com/anthropics/skills\nhttps://github.com/openai/plugins\nhttps://github.com/VoltAgent/awesome-agent-skills\nTổng hợp nhiều skill từ nguồn chính thức và cộng đồng.\nhttps://github.com/hesreallyhim/awesome-claude-code\nTổng hợp skill, subagent, plugin và workflow cho Claude Code.\nhttps://github.com/wshobson/agents\nCó nhiều agent, skill và workflow cho Backend, Frontend, AI, DevOps, Security...\n\n3. Nên chọn skill như thế nào?\nMọi người không cần cài toàn bộ skills, đừng quá tham việc sử dụng skill, nó sẽ vô tình nuốt thêm input token cho agent của các bạn. Cuối cùng, với repo cộng đồng, mọi người nên đọc kỹ README, SKILL.md và script đi kèm trước khi cài từ bất cừ repo nào nhé\n\nHy vọng chia sẻ này giúp mọi người dễ bắt đầu hơn và tối ưu trải nghiệm vibe coding trong phần Build Project sắp tới.",
+      "author": {
+        "id": "1525362771770867732",
+        "name": "a1vin14105",
+        "discriminator": "0000",
+        "nickname": "GR16 - T112 - Lương Quốc Khánh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - yimwoo/codex-agenteam: AI team for Codex — researcher, P...",
+          "url": "https://github.com/yimwoo/codex-agenteam",
+          "timestamp": null,
+          "description": "AI team for Codex — researcher, PM, architect, developer, QA, and reviewer orchestrated through a configurable pipeline. - yimwoo/codex-agenteam",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/x_50AovrJxuhfvcaeSOAzE0ZJcxP9cuEIjz6ojZ2sUQ/https/repository-images.githubusercontent.com/1195622626/f0eb667f-ac32-45bf-9daf-bb3ec4048942",
+            "canonicalUrl": "https://repository-images.githubusercontent.com/1195622626/f0eb667f-ac32-45bf-9daf-bb3ec4048942",
+            "width": 1280,
+            "height": 640
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "GitHub - anthropics/skills: Public repository for Agent Skills",
+          "url": "https://github.com/anthropics/skills",
+          "timestamp": null,
+          "description": "Public repository for Agent Skills. Contribute to anthropics/skills development by creating an account on GitHub.",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/AKV543Mme_vboP65vH3lXlv_-WjKJ3X3YDzVjYPwKJI/https/opengraph.githubassets.com/d2e484fb9b60baf9b8087d24f440a828d3cd2405411eafa38e0325e4a35c17b9/anthropics/skills",
+            "canonicalUrl": "https://opengraph.githubassets.com/d2e484fb9b60baf9b8087d24f440a828d3cd2405411eafa38e0325e4a35c17b9/anthropics/skills",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "GitHub - openai/plugins: OpenAI Plugins",
+          "url": "https://github.com/openai/plugins",
+          "timestamp": null,
+          "description": "OpenAI Plugins. Contribute to openai/plugins development by creating an account on GitHub.",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/qESQldJhGxjc5IKWstiWEIHGPQvPbc80FOKNPKNX1tY/https/opengraph.githubassets.com/a0ea67947a87edfbbb420c46dfdbba426ffb5b350cc6aee6fe263d2cd1ef50cc/openai/plugins",
+            "canonicalUrl": "https://opengraph.githubassets.com/a0ea67947a87edfbbb420c46dfdbba426ffb5b350cc6aee6fe263d2cd1ef50cc/openai/plugins",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "GitHub - VoltAgent/awesome-agent-skills: A curated collection of 10...",
+          "url": "https://github.com/VoltAgent/awesome-agent-skills",
+          "timestamp": null,
+          "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. - VoltAgent/awesome-agent-skills",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/yH8SMp7bbsnYGUOaYpueHkzp7SHKU3tnnjrrUuHyYCY/https/opengraph.githubassets.com/fd9d219f3e94f822a3cfee4ece8bafcbef3c2065c41481488ec1b37dfa374073/VoltAgent/awesome-agent-skills",
+            "canonicalUrl": "https://opengraph.githubassets.com/fd9d219f3e94f822a3cfee4ece8bafcbef3c2065c41481488ec1b37dfa374073/VoltAgent/awesome-agent-skills",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "GitHub - hesreallyhim/awesome-claude-code: A hand-picked collection...",
+          "url": "https://github.com/hesreallyhim/awesome-claude-code",
+          "timestamp": null,
+          "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectab...",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/T60qxfGsgdm-QykFj4ioHc1qQ8haHpZeyDso7kPgFaI/https/repository-images.githubusercontent.com/969302809/cf18660c-161b-4091-ab68-6954cd6b71a4",
+            "canonicalUrl": "https://repository-images.githubusercontent.com/969302809/cf18660c-161b-4091-ab68-6954cd6b71a4",
+            "width": 1280,
+            "height": 640
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "853647680718241792",
+              "name": "noble_chipmunk_94959",
+              "discriminator": "0000",
+              "nickname": "kiyo",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "1154462972903702538",
+              "name": "myanh_45879",
+              "discriminator": "0000",
+              "nickname": "T112 - Trần Nguyễn Mỹ Anh - 1019",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1227641202371985521",
+              "name": "namdoan180804hcmus_07592",
+              "discriminator": "0000",
+              "nickname": "T193 - Đoàn Nhật Nam - 01123",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1529759543540580463",
+              "name": "minhha04",
+              "discriminator": "0000",
+              "nickname": "T135 - Hoàng Anh Minh - 01192",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4F\uD83C\uDFFC",
+            "code": "clap_tone2",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44f-1f3fc.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "742668360701181974",
+              "name": "sweethome6275",
+              "discriminator": "0000",
+              "nickname": "Hoàng Mộ Nhan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/742668360701181974/6406933122b28b3777d48de2d7c4b3f5.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

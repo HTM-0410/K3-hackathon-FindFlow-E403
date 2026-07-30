@@ -1,0 +1,167 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530814151331680367",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Prompt như nào là tốt, tiếng Việt hay tiếng Anh",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:13:46.856558+07:00",
+  "messages": [
+    {
+      "id": "1530814151331680367",
+      "type": "Default",
+      "timestamp": "2026-07-26T12:48:54.829+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Nhiều người nghĩ muốn AI trả lời tốt và tiết kiệm thì phải viết prompt bằng tiếng Anh. Thực ra, điều đó không còn đúng hoàn toàn với các mô hình AI hiện nay.\nCác model mới đều hỗ trợ đa ngôn ngữ rất tốt. Nếu mục tiêu của bạn là độ chính xác, hãy ưu tiên ngôn ngữ mà bạn diễn đạt rõ ràng nhất.\nMột vài cách mình thường áp dụng:\n- Viết trực tiếp bằng tiếng Việt nếu đó là ngôn ngữ bạn diễn đạt tốt nhất. Một prompt rõ ràng luôn hiệu quả hơn một prompt tiếng Anh gượng ép.\n- Mô tả yêu cầu bằng tiếng Việt, rồi nhờ AI chuyển thành prompt tiếng Anh. Ví dụ: \"Hãy chuyển yêu cầu dưới đây thành một prompt tiếng Anh rõ ràng, đầy đủ và tối ưu cho GPT/Claude/Gemini.\" Đây là cách rất hữu ích nếu bạn không tự tin về vốn tiếng Anh.\n- Nếu dùng AI Agent (Claude Code, Codex, Gemini CLI...), có thể thêm vào AGENTS.md hoặc CLAUDE.md:\nThink in English để tối ưu quá trình suy luận.\nRespond in Vietnamese để kết quả dễ đọc và tự nhiên hơn.\nHiện nay, sự chênh lệch về token hay chi phí giữa tiếng Việt và tiếng Anh không còn quá lớn. Điều quan trọng nhất vẫn là mô tả đúng bài toán, cung cấp đủ ngữ cảnh và yêu cầu rõ ràng.\n- Ngoài ra có các cơ chế định định tuyến model ( 9router...). \nTóm lại: Việc bạn sử dụng NGÔN NGỮ prompt nào không thực sự quan trọng, đừng cố làm phức tạp hóa câu lệch nên prompt chính xác và chi tiết để không phải thay đổi nhiều về sau",
+      "author": {
+        "id": "954646600532230214",
+        "name": "nguyenthanhhoan01201",
+        "discriminator": "0000",
+        "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "954646600532230214",
+              "name": "nguyenthanhhoan01201",
+              "discriminator": "0000",
+              "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+            },
+            {
+              "id": "1001846191836901486",
+              "name": "minu_2k5",
+              "discriminator": "0000",
+              "nickname": "minu2k5",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530831119858270249",
+      "type": "Default",
+      "timestamp": "2026-07-26T13:56:20.441+07:00",
+      "timestampEdited": "2026-07-26T13:57:11.23+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "quả rule think in english kia có thể tiết kiệm trong quá trình suy nghĩ nhưng mất thêm token 2 lần để trans qua lại\nmột số con ai sáng tạo nó có thể nghĩ rằng viết 1 tool script để trans tái sử dụng khi nào cần trans thì chạy sẽ tiết kiệm token nhưng nó viết tool ngn nên trans ngn dẫn tới càng làm rối context\n---\ntóm lại là cứ tiếng Việt mà chat, thay vì tối ưu lựa chọn ngôn ngữ thì mình hãy tối ưu promt - cung cấp đầy đủ ngữ cảnh để AI làm đúng công việc là tốt nhất",
+      "author": {
+        "id": "1052229395596714014",
+        "name": "huii2806",
+        "discriminator": "0000",
+        "nickname": "T129 — Nguyễn Viết Huy — 01081",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1052229395596714014/eec2762d451ab7377f660c81b49f0ff1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "954646600532230214",
+              "name": "nguyenthanhhoan01201",
+              "discriminator": "0000",
+              "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+            },
+            {
+              "id": "1503181245692252252",
+              "name": "hvnhan_relieq",
+              "discriminator": "0000",
+              "nickname": "T192 - Hoàng Văn Nhân - 01055",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1503181245692252252/3e3936bc58df5ed34fcabec65d7021d4.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

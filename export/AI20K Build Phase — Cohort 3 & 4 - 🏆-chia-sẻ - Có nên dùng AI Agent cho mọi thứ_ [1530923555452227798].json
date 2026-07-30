@@ -1,0 +1,237 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530923555452227798",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Có nên dùng AI Agent cho mọi thứ?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:12:45.610948+07:00",
+  "messages": [
+    {
+      "id": "1530923555452227798",
+      "type": "Default",
+      "timestamp": "2026-07-26T20:03:38.804+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trong thời gian gần đây, AI Agent trở thành một trong những chủ đề được quan tâm nhất trong lĩnh vực trí tuệ nhân tạo. Thay vì chỉ nhận câu hỏi và đưa ra câu trả lời, AI Agent có thể tự lập kế hoạch, gọi công cụ, tìm kiếm thông tin, thực hiện nhiều bước liên tiếp và điều chỉnh hành động dựa trên kết quả trung gian.\n\nVới khả năng đó, AI Agent thường được giới thiệu như một giải pháp có thể tự động hóa gần như mọi quy trình. Tuy nhiên, câu hỏi quan trọng cần đặt ra là: Có phải bài toán nào cũng nên sử dụng AI Agent hay không?\n\nCâu trả lời là không. AI Agent là một công cụ mạnh, nhưng không phải lúc nào cũng là công cụ phù hợp nhất.",
+      "author": {
+        "id": "1529724336989016151",
+        "name": "hoangquanhq137",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Hoàng Quân - 01805",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530923876387917894",
+      "type": "Default",
+      "timestamp": "2026-07-26T20:04:55.321+07:00",
+      "timestampEdited": "2026-07-26T20:06:33.787+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## I. Điểm mạnh của AI Agent\n\n**1. Thực hiện quy trình nhiều bước**\nAI Agent có thể chia một mục tiêu lớn thành nhiều nhiệm vụ nhỏ, lần lượt thực hiện và tổng hợp kết quả. Vì vậy, Agent phù hợp với các công việc phức tạp như nghiên cứu thị trường, phân tích đối thủ hoặc lập báo cáo.\n\n**2. Sử dụng nhiều công cụ**\nAgent có thể kết nối với công cụ tìm kiếm, cơ sở dữ liệu, API, email, lịch làm việc hoặc phần mềm nội bộ. Nhờ đó, Agent không chỉ đưa ra hướng dẫn mà còn có thể trực tiếp thực hiện công việc.\n\n**3. Xử lý yêu cầu linh hoạt**\nThay vì chỉ làm theo các luật `if-else` cố định, Agent có thể phân tích ngữ cảnh và lựa chọn cách xử lý phù hợp với từng trường hợp.\n\n**4. Tự động hóa công việc nhận thức**\nAgent có thể hỗ trợ những công việc cần đọc hiểu, phân tích và tổng hợp như tóm tắt tài liệu, phân loại email, nghiên cứu thông tin hoặc lập kế hoạch.\n\n**5. Thích nghi với kết quả trung gian**\nKhi một bước không đạt kết quả, Agent có thể điều chỉnh truy vấn, đổi công cụ, thử phương án khác hoặc yêu cầu người dùng bổ sung thông tin.",
+      "author": {
+        "id": "1529724336989016151",
+        "name": "hoangquanhq137",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Hoàng Quân - 01805",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530924070559027240",
+      "type": "Default",
+      "timestamp": "2026-07-26T20:05:41.615+07:00",
+      "timestampEdited": "2026-07-26T20:06:20.978+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## II. Điểm yếu của AI Agent\n\n**1. Kết quả thiếu ổn định**\nCùng một yêu cầu, Agent có thể đưa ra kế hoạch hoặc hành động khác nhau. Điều này khiến hệ thống khó dự đoán, kiểm thử và không phù hợp với các quy trình yêu cầu độ chính xác tuyệt đối.\n\n**2. Có thể đưa ra quyết định sai**\nAgent có thể hiểu sai yêu cầu, chọn sai công cụ, dùng dữ liệu không đáng tin cậy hoặc tạo thông tin thiếu căn cứ. Rủi ro sẽ lớn hơn khi Agent được phép gửi email, chỉnh sửa dữ liệu hoặc thực hiện giao dịch.\n\n**3. Chi phí và độ trễ cao**\nAgent thường phải gọi mô hình và công cụ nhiều lần để lập kế hoạch, thực hiện, kiểm tra và điều chỉnh kết quả. Vì vậy, sử dụng Agent cho nhiệm vụ đơn giản có thể gây lãng phí tài nguyên.\n\n**4. Khó đánh giá và gỡ lỗi**\nLỗi có thể đến từ prompt, mô hình, dữ liệu, công cụ hoặc quá trình lập kế hoạch. Do đó, hệ thống cần cơ chế logging, tracing và giám sát đầy đủ.\n\n**5. Có rủi ro bảo mật**\nAgent có thể làm lộ dữ liệu, bị prompt injection, thực hiện hành động vượt quyền hoặc thay đổi dữ liệu quan trọng. Vì vậy, cần giới hạn quyền truy cập và yêu cầu con người xác nhận các thao tác nhạy cảm.\n\n**6. Dễ làm hệ thống phức tạp quá mức**\nNhiều bài toán có thể được giải quyết hiệu quả hơn bằng workflow cố định, rule-based system hoặc chương trình đơn giản. Lạm dụng Agent sẽ làm tăng chi phí, rủi ro và công sức bảo trì.",
+      "author": {
+        "id": "1529724336989016151",
+        "name": "hoangquanhq137",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Hoàng Quân - 01805",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530924365397364757",
+      "type": "Default",
+      "timestamp": "2026-07-26T20:06:51.91+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## III. Những bài toán không nhất thiết phải sử dụng AI Agent\n\n**1. Tính toán có công thức rõ ràng**\nCác bài toán như tính thuế, lãi suất, chi phí hoặc chuyển đổi đơn vị nên dùng code truyền thống vì nhanh, rẻ và chính xác hơn.\n\n**2. Phân loại dữ liệu với nhãn cố định**\nCác tác vụ như phát hiện gian lận hoặc phân loại giao dịch phù hợp hơn với Logistic Regression, XGBoost hoặc mô hình học sâu chuyên biệt.\n\n**3. Nhận diện hình ảnh**\nCác bài toán object detection, phân loại hoặc phân vùng ảnh nên dùng mô hình computer vision như YOLO, ResNet hoặc U-Net. Agent chỉ nên hỗ trợ điều phối và tổng hợp kết quả.\n\n**4. Quy trình nghiệp vụ cố định**\nNếu các bước và điều kiện đã rõ ràng, workflow engine hoặc chương trình thông thường sẽ dễ kiểm soát và ổn định hơn Agent.\n\n**5. Các thao tác CRUD đơn giản**\nTạo, đọc, cập nhật và xóa dữ liệu nên được xử lý bằng API và backend truyền thống. AI có thể hỗ trợ giao tiếp bằng ngôn ngữ tự nhiên nhưng không nên tự do thực hiện hành động.\n\n**6. Tìm kiếm tài liệu đơn giản**\nNếu câu hỏi chỉ cần một lần truy xuất thông tin, hệ thống RAG thông thường thường đã đủ, không cần Agent lập kế hoạch và gọi nhiều công cụ.\n\n**7. Kiểm tra điều kiện rõ ràng**\nCác điều kiện như độ dài mật khẩu, giới hạn dung lượng hoặc độ tuổi nên được xử lý bằng rule-based system để bảo đảm tính chính xác.\n\n**8. Quyết định có rủi ro cao**\nTrong tài chính, y tế, pháp lý hoặc nhân sự, Agent chỉ nên hỗ trợ thu thập, tóm tắt và đề xuất. Quyết định cuối cùng cần có con người hoặc hệ thống kiểm soát rõ ràng.",
+      "author": {
+        "id": "1529724336989016151",
+        "name": "hoangquanhq137",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Hoàng Quân - 01805",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530924711884886028",
+      "type": "Default",
+      "timestamp": "2026-07-26T20:08:14.519+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## IV. Khi nào nên sử dụng AI Agent?\n\nAI Agent phù hợp khi bài toán:\n\n* Có mục tiêu rõ ràng nhưng cách thực hiện có thể thay đổi.\n* Cần phối hợp nhiều công cụ hoặc nguồn dữ liệu.\n* Gồm nhiều bước phụ thuộc lẫn nhau.\n* Có nhiều ngoại lệ, khó mô tả bằng luật cố định.\n* Cho phép phát hiện và sửa sai trong quá trình thực hiện.\n* Có cơ chế giám sát, giới hạn quyền và xác nhận của con người.\n\nVí dụ, Agent nghiên cứu thị trường có thể tự tìm kiếm nhiều nguồn, so sánh dữ liệu, phát hiện thông tin còn thiếu và tổng hợp báo cáo.\n\n## V. Khi nào không nên sử dụng AI Agent?\n\nNên chọn giải pháp khác khi:\n\n* Quy trình đã cố định và dễ mô tả bằng code.\n* Kết quả phải chính xác và nhất quán tuyệt đối.\n* Hệ thống cần xử lý khối lượng lớn với độ trễ thấp.\n* Bài toán có thể giải quyết bằng một hàm, API, RAG hoặc mô hình chuyên biệt.\n* Chi phí vận hành là yếu tố quan trọng.\n* Sai sót có thể gây hậu quả nghiêm trọng.\n* Không thể kiểm soát hoặc đánh giá hành động của Agent.\n\n## VI. Không nhất thiết phải chọn một trong hai\n\nGiải pháp tốt thường là sự kết hợp giữa nhiều công nghệ:\n\n* Code truyền thống xử lý luật nghiệp vụ.\n* Machine learning thực hiện dự đoán và phân loại.\n* RAG truy xuất kiến thức.\n* Workflow quản lý quy trình cố định.\n* AI Agent xử lý tình huống linh hoạt và điều phối công cụ.\n* Con người xác nhận các quyết định quan trọng.\n\nVí dụ, trong hệ thống chăm sóc khách hàng, mô hình phân loại xác định yêu cầu, RAG tìm chính sách, code kiểm tra đơn hàng, Agent soạn phản hồi và nhân viên xác nhận trước các thao tác quan trọng.",
+      "author": {
+        "id": "1529724336989016151",
+        "name": "hoangquanhq137",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Hoàng Quân - 01805",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530924745175077005",
+      "type": "Default",
+      "timestamp": "2026-07-26T20:08:22.456+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## VII. Kết luận\n\nAI Agent giúp hệ thống có khả năng lập kế hoạch, sử dụng công cụ và xử lý nhiệm vụ phức tạp. Tuy nhiên, không phải bài toán nào cũng cần Agent.\n\nTrước khi sử dụng, cần xem xét liệu bài toán có thực sự cần khả năng tự lập kế hoạch, có thể giải quyết bằng giải pháp đơn giản hơn hay không, hậu quả khi Agent sai và khả năng kiểm soát hệ thống.\n\nĐiều quan trọng không phải là đưa AI Agent vào mọi thứ, mà là hiểu bài toán và lựa chọn đúng công cụ. Đôi khi giải pháp phù hợp là một Agent, nhưng đôi khi chỉ cần một câu lệnh `if`, một hàm Python hoặc một mô hình machine learning truyền thống.",
+      "author": {
+        "id": "1529724336989016151",
+        "name": "hoangquanhq137",
+        "discriminator": "0000",
+        "nickname": "T038 - Trần Hoàng Quân - 01805",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 6
+}

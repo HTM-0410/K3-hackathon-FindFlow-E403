@@ -1,0 +1,186 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531236345542873099",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "AI Coding 2026: Không có AI nào mạnh nhất, chỉ có AI phù hợp nhất.",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:09:34.8342802+07:00",
+  "messages": [
+    {
+      "id": "1531236345542873099",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:46:33.773+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trong khoảng 1 năm qua, mình đã dùng khá nhiều AI để code: ChatGPT, Cursor, Claude Code, GitHub Copilot và Windsurf.\n\nBan đầu mình luôn đi tìm câu trả lời:\n\n\"AI nào code giỏi nhất?\"\n\nSau nhiều dự án, mình nhận ra:\n\nKhông có AI nào tốt nhất. Chỉ có AI phù hợp với từng công việc.\n\n\uD83D\uDE80 Build MVP nhanh → Cursor\n\nNếu cần dựng nhanh một sản phẩm có thể chạy được, Cursor là lựa chọn mình ưu tiên.\n\nĐiểm mạnh:\n\nĐọc codebase tốt.\nAgent có thể sửa nhiều file cùng lúc.\nPhù hợp với vibe coding.\n\uD83D\uDC1B Debug bug khó → Claude Code\n\nClaude không viết code nhanh nhất, nhưng rất mạnh khi:\n\nPhân tích nguyên nhân lỗi.\nĐọc stack trace.\nReasoning từng bước.\nHạn chế sửa lan sang phần không liên quan.\n\uD83C\uDFE2 Làm việc trong doanh nghiệp → GitHub Copilot\n\nNếu team đã dùng VS Code và GitHub thì Copilot gần như tích hợp sẵn vào workflow.\n\nƯu điểm là gợi ý code ổn định, hỗ trợ review và không cần thay đổi cách làm việc.\n\n⚙️ Làm nhiều tính năng liên tục → Windsurf\n\nĐiểm mình thích nhất là khả năng Agent:\n\nChủ động chia task.\nSửa nhiều file.\nHoàn thành feature khá nhanh.\n\nTuy nhiên, nếu prompt chưa rõ thì đôi lúc AI cũng \"quá nhiệt tình\".\n\n\uD83D\uDCA1 ChatGPT dùng để làm gì?\n\nMình ít dùng ChatGPT để viết code trực tiếp, mà chủ yếu để:\n\nBrainstorm kiến trúc.\nGiải thích framework.\nRefactor.\nSQL, Regex.\nReview thiết kế hệ thống.\nĐiều quan trọng nhất\n\nTheo mình, AI chỉ mạnh khi người dùng biết cách làm việc với nó.\n\nThay vì yêu cầu:\n\n\"Làm web bán hàng.\"\n\nHãy mô tả rõ:\n\n\"Tạo REST API Spring Boot cho Product gồm CRUD, Validation và Pagination.\"\n\nPrompt càng cụ thể, kết quả càng tốt.\n\nKết luận\n\uD83D\uDE80 Cursor → Build MVP nhanh.\n\uD83D\uDC1B Claude Code → Debug và reasoning.\n\uD83C\uDFE2 GitHub Copilot → Làm việc trong doanh nghiệp.\n⚙️ Windsurf → Agent workflow.\n\uD83D\uDCA1 ChatGPT → Brainstorm và học công nghệ.\n\nCuối cùng, kỹ năng sử dụng AI quan trọng hơn việc chọn AI nào. Người biết chia nhỏ bài toán, viết prompt rõ ràng và review code sẽ khai thác AI hiệu quả hơn.\n\n\uD83D\uDCAC Mọi người đang dùng AI nào là \"vũ khí chính\" để code?",
+      "author": {
+        "id": "894923988961206342",
+        "name": "lydat1704",
+        "discriminator": "0000",
+        "nickname": "G13-T020-Lý Thành Đạt-01469",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [
+        {
+          "id": "1531236346008571914",
+          "url": "https://cdn.discordapp.com/attachments/1531236345542873099/1531236346008571914/content.png?ex=6a6bc639&is=6a6a74b9&hm=c881c6e94ced2887f8b5dd64a846818eb3d413e3ee2c5d3f7cb8d4db0ca1403a&",
+          "fileName": "content.png",
+          "fileSizeBytes": 2193811
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "894923988961206342",
+              "name": "lydat1704",
+              "discriminator": "0000",
+              "nickname": "G13-T020-Lý Thành Đạt-01469",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "959100944212168755",
+              "name": "huangzi231",
+              "discriminator": "0000",
+              "nickname": "Huanzi",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/959100944212168755/13ea66e875279566209aa445aa93cf6f.png?size=512"
+            },
+            {
+              "id": "1324073297507520593",
+              "name": "nghiabeooo235",
+              "discriminator": "0000",
+              "nickname": "nhn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1324073297507520593/a1ddaa58a5ebfaf4e2e1cffcca359c98.png?size=512"
+            },
+            {
+              "id": "1529731657614098638",
+              "name": "huanzi231",
+              "discriminator": "0000",
+              "nickname": "Huanzi",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE80",
+          "code": "rocket",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC1B",
+          "code": "bug",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f41b.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83C\uDFE2",
+          "code": "office",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3e2.svg"
+        },
+        {
+          "id": "",
+          "name": "⚙️",
+          "code": "gear",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2699.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCAC",
+          "code": "speech_balloon",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ac.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531236498966446082",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:47:10.352+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay quá a ơi",
+      "author": {
+        "id": "1324073297507520593",
+        "name": "nghiabeooo235",
+        "discriminator": "0000",
+        "nickname": "T113 - Ngô Hữu Nghĩa - 01924",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1324073297507520593/a1ddaa58a5ebfaf4e2e1cffcca359c98.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

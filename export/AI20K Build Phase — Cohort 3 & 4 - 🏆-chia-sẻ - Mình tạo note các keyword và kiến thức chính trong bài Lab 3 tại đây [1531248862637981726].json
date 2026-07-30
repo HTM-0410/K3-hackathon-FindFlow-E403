@@ -1,0 +1,86 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531248862637981726",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Mình tạo note các keyword và kiến thức chính trong bài Lab 3 tại đây",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:17:55.6033311+07:00",
+  "messages": [
+    {
+      "id": "1531248862637981726",
+      "type": "Default",
+      "timestamp": "2026-07-27T17:36:18.081+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đây là note cá nhân về bài học của mình. Mình ghi chú và hệ thống lại những kiến thức học được bằng Notion. Nhân tiện chia sẻ với mọi người, biết đâu sẽ hữu ích cho ai đó. Nếu có chỗ nào chưa rõ, AI của Notion cũng có thể giải thích và tóm tắt khá nhanh.\nhttps://app.notion.com/p/3aa161d11b8b805b9bdcfa1a6218b6c3",
+      "author": {
+        "id": "1035030387753242674",
+        "name": "dongd22",
+        "discriminator": "0000",
+        "nickname": "T037 - Lại Duy Đông - 01913",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "690503871402868807",
+              "name": "thanhfdc",
+              "discriminator": "0000",
+              "nickname": "Công Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+            },
+            {
+              "id": "1035030387753242674",
+              "name": "dongd22",
+              "discriminator": "0000",
+              "nickname": "T037 - Lại Duy Đông - 01913",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

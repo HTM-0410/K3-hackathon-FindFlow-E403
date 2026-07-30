@@ -1,0 +1,158 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531894361632276581",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Kho API LLM miễn phí dành cho người học AI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:20:07.5672301+07:00",
+  "messages": [
+    {
+      "id": "1531894361632276581",
+      "type": "Default",
+      "timestamp": "2026-07-29T12:21:17.034+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hôm nay mình muốn chia sẻ với mọi người một repository khá hữu ích dành cho những bạn đang học hoặc phát triển ứng dụng AI nhưng chưa có API key, không muốn nhập thông tin thanh toán hoặc thường xuyên gặp giới hạn quota của các nền tảng miễn phí: awesome-freellm-apis.\n\nĐây là một repository trên GitHub tổng hợp các dịch vụ cung cấp API cho mô hình ngôn ngữ lớn miễn phí hoặc có Free Tier. Thay vì phải tự tìm kiếm từng nhà cung cấp, bạn có thể tham khảo danh sách này để biết nền tảng nào đang hỗ trợ API miễn phí, model nào có thể sử dụng và cách đăng ký tương ứng.\n\nRepository tổng hợp nhiều nhà cung cấp và nền tảng AI khác nhau như Google Gemini, Groq, OpenRouter, NVIDIA NIM, Hugging Face, Cohere và Cloudflare Workers AI.\n\nCác API trong danh sách chủ yếu phục vụ việc sinh và xử lý văn bản. Một số nhà cung cấp còn hỗ trợ các loại mô hình chuyên biệt như embedding, reranking, xử lý hình ảnh hoặc hỗ trợ lập trình.\n\nĐiểm hữu ích của repository này là giúp người dùng nhanh chóng tìm được phương án thay thế khi một API hết quota, yêu cầu billing hoặc không khả dụng. Đây là nguồn tham khảo phù hợp cho sinh viên, người mới học Generative AI hoặc các nhóm đang cần xây dựng chatbot, AI Agent, hệ thống RAG và các bản prototype mà chưa muốn đầu tư chi phí ngay từ đầu.\n\nTuy nhiên, miễn phí không có nghĩa là được sử dụng không giới hạn. Mỗi nền tảng sẽ có chính sách riêng về số request mỗi phút, số token, quota hằng ngày, quyền truy cập model và thời gian duy trì Free Tier. Các giới hạn và model được hỗ trợ cũng có thể thay đổi theo thời gian.\n\nVì vậy, trước khi sử dụng, mọi người nên kiểm tra kỹ tài liệu chính thức, giới hạn quota, chính sách bảo mật dữ liệu và điều khoản sử dụng của từng nhà cung cấp. Đồng thời, không nên đưa API key lên GitHub hoặc chia sẻ công khai.\n\nLink: https://github.com/open-free-llm-api/awesome-freellm-apis",
+      "author": {
+        "id": "1520438987473551476",
+        "name": "hoquangminh_ai20k",
+        "discriminator": "0000",
+        "nickname": "T073-Hồ Quang Minh-01906",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [
+        {
+          "id": "1531894361980272730",
+          "url": "https://cdn.discordapp.com/attachments/1531894361632276581/1531894361980272730/image.png?ex=6a6c30cd&is=6a6adf4d&hm=bd419fa151d74dc8eecead654f2476483f1a655199fd65abf0bc0131ef9a05e2&",
+          "fileName": "image.png",
+          "fileSizeBytes": 74876
+        }
+      ],
+      "embeds": [
+        {
+          "title": "GitHub - open-free-llm-api/awesome-freellm-apis: 134+ free LLM APIs...",
+          "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
+          "timestamp": null,
+          "description": "134+ free LLM APIs &amp; AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter &amp; more. One-click setup for Claude Code, Cursor and Codex. - open-free-llm-api/aweso...",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/66ZRieCPSZpriN9LhzSZSm3qUz500QRWjTRrze9GjKg/https/opengraph.githubassets.com/69953f4d25b2d2e1faa4d7aea7bf79df241b275d449762bcb8fca7a959ae8a6c/open-free-llm-api/awesome-freellm-apis",
+            "canonicalUrl": "https://opengraph.githubassets.com/69953f4d25b2d2e1faa4d7aea7bf79df241b275d449762bcb8fca7a959ae8a6c/open-free-llm-api/awesome-freellm-apis",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "747120974654210220",
+              "name": "stylish_courgette_71678",
+              "discriminator": "0000",
+              "nickname": "Đạt",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1392890973616476160",
+              "name": "heheboi0909",
+              "discriminator": "0000",
+              "nickname": "Đậu Quốc Duy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1520438987473551476",
+              "name": "hoquangminh_ai20k",
+              "discriminator": "0000",
+              "nickname": "T073-Hồ Quang Minh-01906",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1011839998108110959",
+              "name": "_lenomi_",
+              "discriminator": "0000",
+              "nickname": "T185 - Lê Ngọc Minh - 01228",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1011839998108110959/35e411a04c68646e97231780de681c5e.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,221 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531844593224650812",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "AI sẽ thay thế con người hay chỉ thay thế những người không biết sử dụng AI?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:04:31.1702036+07:00",
+  "messages": [
+    {
+      "id": "1531844593224650812",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:03:31.321+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Sự phát triển mạnh mẽ của Trí tuệ nhân tạo (AI) đã làm dấy lên nhiều lo ngại rằng máy móc sẽ thay thế con người trong tương lai. Thực tế, AI đang dần đảm nhận nhiều công việc như xử lý dữ liệu, viết nội dung, lập trình, phân tích hình ảnh hay hỗ trợ chăm sóc khách hàng. Tuy nhiên, điều này không đồng nghĩa với việc AI sẽ thay thế hoàn toàn con người. Điều AI thực sự thay đổi là **cách con người làm việc**, chứ không phải xóa bỏ hoàn toàn vai trò của con người.\n\nAI có lợi thế vượt trội trong những công việc mang tính lặp lại, xử lý khối lượng dữ liệu lớn và thực hiện các tác vụ theo quy trình. Trong khi đó, con người vẫn sở hữu những năng lực mà AI khó có thể thay thế như tư duy phản biện, sáng tạo, khả năng đồng cảm, giao tiếp, ra quyết định trong những tình huống phức tạp và giải quyết các vấn đề chưa từng có tiền lệ. Vì vậy, AI nên được xem là một công cụ hỗ trợ giúp con người nâng cao hiệu quả làm việc, thay vì là một đối thủ cạnh tranh trực tiếp.\n\nTrong môi trường làm việc hiện nay, những người biết khai thác AI sẽ có lợi thế rõ rệt. Họ có thể hoàn thành công việc nhanh hơn, tự động hóa các tác vụ lặp lại, phân tích dữ liệu hiệu quả hơn và dành nhiều thời gian cho các hoạt động mang tính chiến lược hoặc sáng tạo. Ngược lại, những người không cập nhật công nghệ hoặc không biết cách sử dụng AI sẽ gặp nhiều bất lợi khi năng suất và khả năng thích nghi ngày càng trở thành yếu tố cạnh tranh quan trọng.\n\nCó thể nói, AI sẽ không thay thế tất cả con người, nhưng sẽ thay đổi yêu cầu đối với lực lượng lao động. Trong tương lai, lợi thế không còn nằm ở việc ai làm việc chăm chỉ hơn, mà ở việc ai biết tận dụng công nghệ để làm việc thông minh hơn. Vì vậy, thay vì lo sợ AI thay thế mình, mỗi cá nhân cần chủ động học hỏi, phát triển kỹ năng sử dụng AI và kết hợp công nghệ với tư duy, sáng tạo của con người để tạo ra giá trị mà máy móc khó có thể thay thế.",
+      "author": {
+        "id": "839873884625829928",
+        "name": "aii4099",
+        "discriminator": "0000",
+        "nickname": "G14 - T031 - Phùng Linh - 01992",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/839873884625829928/2fbbd173e29b6585c7e0a27e51e46e49.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "607559023805595653",
+              "name": "nson9116",
+              "discriminator": "0000",
+              "nickname": "baby dont hurt me",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+            },
+            {
+              "id": "698474313027682344",
+              "name": "nhat2kruoi",
+              "discriminator": "0000",
+              "nickname": "T060 - Lưu Quang Nhật",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+            },
+            {
+              "id": "839873884625829928",
+              "name": "aii4099",
+              "discriminator": "0000",
+              "nickname": "G14 - T031 - Phùng Linh - 01992",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/839873884625829928/2fbbd173e29b6585c7e0a27e51e46e49.png?size=512"
+            },
+            {
+              "id": "1100682537782751312",
+              "name": "hung1162",
+              "discriminator": "0000",
+              "nickname": "G14-T31 - Kim Mạnh Hưng - 01679",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1100682537782751312/d8b87a780122a1fbb48ba6a65cbf2efc.png?size=512"
+            },
+            {
+              "id": "1252976688728637492",
+              "name": "_todayis_meimei_50662",
+              "discriminator": "0000",
+              "nickname": "Nguyen Thi Xuan Mai",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531844961165643806",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:04:59.045+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bài đăng xuất sắc, khi đọc tôi đã phải suy nghĩ liệu có ngày mà AI có thể thay thế hoàn toàn được con người hay không",
+      "author": {
+        "id": "698474313027682344",
+        "name": "nhat2kruoi",
+        "discriminator": "0000",
+        "nickname": "T060 - Lưu Quang Nhật",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDD23",
+            "code": "rofl",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f923.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1100682537782751312",
+              "name": "hung1162",
+              "discriminator": "0000",
+              "nickname": "G14-T31 - Kim Mạnh Hưng - 01679",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1100682537782751312/d8b87a780122a1fbb48ba6a65cbf2efc.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531846738552553546",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:12:02.807+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đáng suy ngẫm!",
+      "author": {
+        "id": "607559023805595653",
+        "name": "nson9116",
+        "discriminator": "0000",
+        "nickname": "T060 - Nguyễn Ngọc Sơn - 01948",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDD23",
+            "code": "rofl",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f923.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1100682537782751312",
+              "name": "hung1162",
+              "discriminator": "0000",
+              "nickname": "G14-T31 - Kim Mạnh Hưng - 01679",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1100682537782751312/d8b87a780122a1fbb48ba6a65cbf2efc.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

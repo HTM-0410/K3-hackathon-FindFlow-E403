@@ -1,0 +1,295 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530795482958266418",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Bẫy 99% Và Lằn Ranh Của Một Sản Phẩm Thực Thụ",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:14:42.3099513+07:00",
+  "messages": [
+    {
+      "id": "1530795482958266418",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:34:43.942+07:00",
+      "timestampEdited": "2026-07-26T11:37:14.343+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đưa sản phẩm AI từ lab ra thị trường là phép thử khắc nghiệt. Thấy hệ thống chạy trơn tru ở các test case, ta dễ rơi vào ảo tưởng \"chiến thắng\" ban đầu — biểu hiện của **hiệu ứng Dunning-Kruger.**\n\nNhưng khi MVP va chạm người dùng thực, bạn sẽ bước vào chặng đường vắt kiệt sức mang tên **March of 9s**. Demo đạt 90% hay 99% giờ chỉ mất vài ngày. Nhưng để nhích lên 99.9% hay 99.99% — mức ổn định để khách hàng rút ví — sự thật là: **Để đắp thêm một \"số 9\" đằng sau, bạn cần bỏ ra nỗ lực bằng toàn bộ các số 9 trước đó cộng lại**. Một thứ \"chạy được\" hoàn toàn khác với hệ thống \"đủ lì lợm\".\n\nKhi đứng trước 0.1% lỗi rủi ro, hãy tự hỏi:\n\n**Hệ thống có trụ vững trước dữ liệu nhiễu loạn từ đời thực không?**\n\n**Người dùng có bao dung cho 0.1% sai sót, hay nó sẽ phá nát quy trình của họ?**\n\n**Nếu AI \"nói sảng\", đã có luồng dự phòng tự động sửa lỗi thay người dùng chưa?**\n\nTốc độ đào thải tàn khốc đến mức: **sản phẩm bạn làm năm trước đáng ra không nên tồn tại vào năm nay**. Nếu chỉ là vỏ bọc (wrapper) gọi API, nó sẽ chết khi model mới ra mắt. Chìa khóa sống sót là Tư duy Hệ thống. Đừng bắt người dùng dọn rác hộ AI, hãy dựng kiến trúc vững chãi: bộ lọc, luồng xử lý lỗi, giao diện trực quan.\n\nMột tính năng chạy ổn định luôn ăn đứt hàng chục tính năng chắp vá:\n\n**Không \"siêu ứng dụng\": Bỏ tư duy chatbot đa năng nhưng động vào là hỏng. Gò vào đúng MỘT tác vụ gãi trúng nỗi đau.**\n\n**Lớp phòng ngự cực đoan: Mặc định AI sẽ \"ngáo\". Tập trung dựng van an toàn (Guardrails), đánh giá (Evals) và kịch bản sập nguồn (Fallbacks).**\n\n**Ngừng nhồi nhét công nghệ: Khoan vẽ vời Multi-Agents, Voice AI,... khi cốt lõi vẫn lỗi. Khách hàng trả tiền mua sự rảnh rang, không mua bảng keyword công nghệ.**\n\nVượt qua \"March of 9s\" là công việc xử lý và kiểm tra nhàm chán nhất. Khách hàng không cần biết model xịn ra sao. Họ cần công cụ cắm-là-chạy, không bắt họ hầu hạ máy móc. Chấp nhận sự thật trần trụi đó, bạn mới tạo ra một sản phẩm sống sót, chứ không phải **đồ chơi công nghệ**.",
+      "author": {
+        "id": "657537583848357898",
+        "name": "nah0413",
+        "discriminator": "0000",
+        "nickname": "T151 - Hoàng Quang Minh - 01301",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/657537583848357898/49b33015625a03e6ce6b02b9e43c08f4.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530795484061503688",
+          "url": "https://cdn.discordapp.com/attachments/1530795482958266418/1530795484061503688/Mount_Stupid_copy.jpg?ex=6a6c25e4&is=6a6ad464&hm=dd7032d24c3515333ccc50eab7ff00a433df1c22e5165281b241ac240fbf03e7&",
+          "fileName": "Mount_Stupid_copy.jpg",
+          "fileSizeBytes": 158382
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 8,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "549104035257516061",
+              "name": "nguyentungduong5510",
+              "discriminator": "0000",
+              "nickname": "Conca979",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/549104035257516061/73a20b35badbcd055615dc325d6bcda8.png?size=512"
+            },
+            {
+              "id": "657537583848357898",
+              "name": "nah0413",
+              "discriminator": "0000",
+              "nickname": "T151 - Hoàng Quang Minh - 01301",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/657537583848357898/49b33015625a03e6ce6b02b9e43c08f4.png?size=512"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "1016686445278269510",
+              "name": "sury2k4",
+              "discriminator": "0000",
+              "nickname": "T151 - Lý Minh Hải - 01503",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1016686445278269510/c02781f163a840f20ddfcfcbf9eb199e.png?size=512"
+            },
+            {
+              "id": "1078711817855053914",
+              "name": "ditionge12345",
+              "discriminator": "0000",
+              "nickname": "T151-Nguyễn Tiến Dũng-01707",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1078711817855053914/a930e55923a6c3622e02015f299fd1d0.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1529743605621719126",
+              "name": "tqhung_6503",
+              "discriminator": "0000",
+              "nickname": "Tran Quoc Hung",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530795738622333089",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:35:44.897+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Quá hay đề nghị ban tổ chức vào gỡ rồi với ạ",
+      "author": {
+        "id": "452011766717743105",
+        "name": "nhockiuzzz",
+        "discriminator": "0000",
+        "nickname": "G13-T015-NguyễnQuangHuy-01873",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530797255966064690",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:41:46.66+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay bạn",
+      "author": {
+        "id": "1078711817855053914",
+        "name": "ditionge12345",
+        "discriminator": "0000",
+        "nickname": "T151-Nguyễn Tiến Dũng-01707",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1078711817855053914/a930e55923a6c3622e02015f299fd1d0.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530887336534212619",
+      "type": "Default",
+      "timestamp": "2026-07-26T17:39:43.541+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://huyenchip.com/machine-learning-systems-design/design-a-machine-learning-system.html \ncác bạn có thể đọc thêm bài viết này và tìm cuốn sách Design a machine learning system",
+      "author": {
+        "id": "759055479723917364",
+        "name": "nhat_cuong",
+        "discriminator": "0000",
+        "nickname": "Vonhatcuong",
+        "color": "#A72525",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527509817084739805",
+            "name": "Admin",
+            "color": "#A72525",
+            "position": 18
+          },
+          {
+            "id": "1527919808862228652",
+            "name": "Coach",
+            "color": "#F1C40F",
+            "position": 15
+          },
+          {
+            "id": "1527919786850390116",
+            "name": "Mod",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "G13-T015-NguyễnQuangHuy-01873",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "657537583848357898",
+              "name": "nah0413",
+              "discriminator": "0000",
+              "nickname": "T151 - Hoàng Quang Minh - 01301",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/657537583848357898/49b33015625a03e6ce6b02b9e43c08f4.png?size=512"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

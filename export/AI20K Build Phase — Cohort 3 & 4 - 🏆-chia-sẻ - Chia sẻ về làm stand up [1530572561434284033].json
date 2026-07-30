@@ -1,0 +1,165 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530572561434284033",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Chia sẻ về làm stand up",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:16:37.4447387+07:00",
+  "messages": [
+    {
+      "id": "1530572561434284033",
+      "type": "Default",
+      "timestamp": "2026-07-25T20:48:55.309+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "- ae gõ /daily rồi enter, nó sẽ hiện ra các khung như trên ảnh. Ae copy paste vào từng ô nhé. Trong phần thông báo của nhóm, chat kute thông báo thành công là oke",
+      "author": {
+        "id": "657567575558979595",
+        "name": "yeumuon12",
+        "discriminator": "0000",
+        "nickname": "T174-Nguyễn Trường An-01616",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [
+        {
+          "id": "1530572561660772394",
+          "url": "https://cdn.discordapp.com/attachments/1530572561434284033/1530572561660772394/image.png?ex=6a6bff07&is=6a6aad87&hm=dafecad583371490ab3aa835df163f4f8db6da95cb8770e1733286828f6f1380&",
+          "fileName": "image.png",
+          "fileSizeBytes": 15197
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "657567575558979595",
+              "name": "yeumuon12",
+              "discriminator": "0000",
+              "nickname": "T174-Nguyễn Trường An-01616",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1026181654248693880",
+              "name": "baotienmotmobinhyen.",
+              "discriminator": "0000",
+              "nickname": "Nguyễn Khương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1026181654248693880/4a6be5d5d6c9858f1bf4106a98f55655.png?size=512"
+            },
+            {
+              "id": "1153376619315073054",
+              "name": "chinhvu0404",
+              "discriminator": "0000",
+              "nickname": "Ching",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530579333587144787",
+      "type": "Default",
+      "timestamp": "2026-07-25T21:15:49.916+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hữu ích quá",
+      "author": {
+        "id": "1153376619315073054",
+        "name": "chinhvu0404",
+        "discriminator": "0000",
+        "nickname": "T174-Chinh-01448",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE02",
+            "code": "joy",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f602.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

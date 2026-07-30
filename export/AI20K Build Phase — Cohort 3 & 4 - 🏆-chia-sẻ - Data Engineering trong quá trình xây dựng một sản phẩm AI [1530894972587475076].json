@@ -1,0 +1,95 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530894972587475076",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Data Engineering trong quá trình xây dựng một sản phẩm AI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:13:22.7708865+07:00",
+  "messages": [
+    {
+      "id": "1530894972587475076",
+      "type": "Default",
+      "timestamp": "2026-07-26T18:10:04.118+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Theo góc nhìn của mình, một sản phẩm AI không chỉ phụ thuộc vào mô hình mà còn phụ thuộc rất nhiều vào hệ thống dữ liệu phía sau.\n\nQuy trình Data Engineering thường bao gồm:\n\nData Source → Ingestion → Storage → Processing → Embedding → Retrieval → AI Model\n\nData Engineer cần bảo đảm dữ liệu được thu thập đầy đủ, làm sạch, quản lý phiên bản và cung cấp đúng dữ liệu cho mô hình.\n\nVới hệ thống RAG, công việc còn bao gồm chia tài liệu thành các chunk, tạo embedding, lưu vào vector database và đồng bộ lại khi dữ liệu thay đổi.\n\nKhi hệ thống đi vào hoạt động, Data Engineer cũng cần theo dõi pipeline, chất lượng dữ liệu, độ trễ, chi phí và nguồn tài liệu được sử dụng để tạo câu trả lời.\n\nTheo mình, AI tạo ra kết quả, nhưng Data Engineering quyết định kết quả đó được xây dựng từ dữ liệu nào và dữ liệu đó có đáng tin cậy hay không.\nMọi người nghĩ sao về vấn đề này, để lại cmt để mình rút ra kinh nghiệm và hiểu biết thêm",
+      "author": {
+        "id": "1267359134697918532",
+        "name": "letritung2005",
+        "discriminator": "0000",
+        "nickname": "G21 - T023 - Lê Trí Tùng - 01458",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "631187995827109898",
+              "name": "zeztz9824",
+              "discriminator": "0000",
+              "nickname": "Zeztz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/631187995827109898/ec2b8bd9f19bf30d0906a2f30d1963ff.png?size=512"
+            },
+            {
+              "id": "1040959308990533772",
+              "name": "123412344276",
+              "discriminator": "0000",
+              "nickname": "T200 - Trần Duy Trường - 01247",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1040959308990533772/b828d63679794f41bd2290ca4f37430a.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "G21 - T023 - Lê Trí Tùng - 01458",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

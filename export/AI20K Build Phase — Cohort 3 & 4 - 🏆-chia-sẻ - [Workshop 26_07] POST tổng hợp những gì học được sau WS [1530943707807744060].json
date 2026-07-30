@@ -1,0 +1,186 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530943707807744060",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[Workshop 26/07] POST tổng hợp những gì học được sau WS",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:12:32.5013995+07:00",
+  "messages": [
+    {
+      "id": "1530943707807744060",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:23:43.5+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình học được là:\n\nKhi xây dựng sản phẩm\n+ Đúng trước nhanh sau\n+ Thị trường cần đúng, không cần nhanh\n\nCần có 5 đầu ra:\n+ Đủ rõ\n+ Nổi đau rõ ràng\n+ AI tạo nên sự khác biệt ở đâu?\n+ Phạm vi sản phẩm vừa đủ\n+ Metric đánh giá là gì?\n\nCần hỏi\n+ Ai đang đau?\n+ Bối cảnh?\n+ Đang xử lí như thế nào?\n+ Metric nào chứng minh thực sự mang lại giá trị cho người dùng?\n\nMột nhóm trưởng thành cần:\n+ Tập trung vào vấn đề thay vì hỏi sử dụng model nào, công cụ gì quá sớm.\n+ AI thông minh không có nghĩa là đúng vấn đề\n+ Xem kỹ liệu giải pháp có đang giải quyết đúng nổi đau thị trường\n+ Nhòi nhét AI -> Liệu có mang lại giá trị?\n\nSản phẩm chết vì\n+ Problem không rõ\n+ Value không có\n\nPersona\n+ Đúng: phải thật cụ thể (Sinh viên trong độ tuổi 18-24, Giáo viên cấp 2, ...)\n+ Không Đúng: bao gồm số đông (Các SV, GV, ...)\n\nKhách hàng mua outcome chứ không mua AI\n+ AI giúp người dùng nhanh gì hơn?\n+ AI giúp quyết định nào chính xác hơn?\n+ AI giúp trải nghiệm nào cá nhân hóa hơn?\n+ AI có thật sự cần hay chỉ để trang trí?\n\nQUAN TRỌNG: PHẢI TRẢ LỜI ĐƯỢC OUTCOME\n\nThế nào là MVP tốt?\n+ Là những thí nghiệm sắc nhất cho giá trị cốt lõi của sản phẩm\n\n Để tránh mơ hồ về sản phẩm\n+ AI MVP Canvas\n+ The Validation Plan để kiểm chứng\n\nHãy tự chấm IDEA trước khi bắt tay xây sản phẩm\n+ AI MVP Scoreboard\n\nKhi cảm thấy mơ hồ, hãy quay lại nhịn VẤN ĐỀ ban đầu là gì.\n\n\nTrên đây là những gì mình tổng hợp được. Mong mọi người xem qua và đóng góp thêm ạ.",
+      "author": {
+        "id": "1529718157680574520",
+        "name": "tranchitam011104",
+        "discriminator": "0000",
+        "nickname": "T188 - Trần Chí Tâm - 01535",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "757977434472579083",
+              "name": "chuongdev_",
+              "discriminator": "0000",
+              "nickname": "chuongdev",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/757977434472579083/534101dfded7970fb4d54ee115185ae2.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1503181245692252252",
+              "name": "hvnhan_relieq",
+              "discriminator": "0000",
+              "nickname": "T192 - Hoàng Văn Nhân - 01055",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1503181245692252252/3e3936bc58df5ed34fcabec65d7021d4.png?size=512"
+            },
+            {
+              "id": "1525362771770867732",
+              "name": "a1vin14105",
+              "discriminator": "0000",
+              "nickname": "a1vin",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+            },
+            {
+              "id": "1529718157680574520",
+              "name": "tranchitam011104",
+              "discriminator": "0000",
+              "nickname": "T188 - Trần Chí Tâm - 01535",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1529743947247915018",
+              "name": "ngoclan08190",
+              "discriminator": "0000",
+              "nickname": "Ngọc Lan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529743947247915018/1628fc11e7961d85181295493426b775.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530944136235057382",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-26T21:25:25.645+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: [Workshop 26/07] POST tổng hợp những gì học được sau WS",
+      "author": {
+        "id": "1529718157680574520",
+        "name": "tranchitam011104",
+        "discriminator": "0000",
+        "nickname": "T188 - Trần Chí Tâm - 01535",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530945214041034813",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:29:42.614+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn mọi người đã xem bài viết của mình. Mong nhân được sự đóng góp từ các bạn ạ.",
+      "author": {
+        "id": "1529718157680574520",
+        "name": "tranchitam011104",
+        "discriminator": "0000",
+        "nickname": "T188 - Trần Chí Tâm - 01535",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

@@ -1,0 +1,134 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530756957642952915",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Biến bộ nhớ AI Agent thành bản đồ logic cho tìm kiếm và suy luận",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:15:19.0843041+07:00",
+  "messages": [
+    {
+      "id": "1530756957642952915",
+      "type": "Default",
+      "timestamp": "2026-07-26T09:01:38.791+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tên bài báo: Memory Matters More: Event-Centric Memory as a Logic Map for Agent Searching and Reasoning\n1. Vấn đề\nCác AI Agent hiện nay thường lưu memory dưới dạng các đoạn văn bản rời rạc và tìm lại bằng semantic similarity.\nCách này có hạn chế:\n- Không thể hiện rõ quan hệ nguyên nhân, thời gian hoặc phụ thuộc giữa các sự kiện.\n- Khi câu hỏi cần suy luận nhiều bước, Agent dễ lấy thiếu bằng chứng.\n- Graph memory trước đây đôi khi chỉ dùng để lưu trữ, chưa thực sự hướng dẫn quá trình reasoning.\n2. Ý tưởng chính\nBài báo đề xuất CompassMem, coi mỗi sự kiện có ý nghĩa là một đơn vị memory.\nCác sự kiện được kết nối thành Event Graph bằng những quan hệ như:\n- temporal\n- causal\n- motivation\n- part-of\nEvent Graph không chỉ là nơi lưu dữ liệu mà đóng vai trò như một bản đồ logic, giúp Agent biết nên tìm sự kiện nào tiếp theo.\n3. Cách hoạt động\nCompassMem có hai giai đoạn:\nXây dựng memory\n        ↓\nEvent segmentation\n        ↓\nRelation extraction\n        ↓\nEvent Graph + Topic layer\n\nKhi có câu hỏi:\nQuery\n  ↓\nPlanner chia thành các subgoal\n  ↓\nNhiều Explorer tìm kiếm trên graph\n  ↓\nThu thập bằng chứng\n  ↓\nResponder tạo câu trả lời\nĐiểm khác biệt là vector search chỉ dùng để tìm node bắt đầu. Sau đó Agent tiếp tục đi theo các quan hệ logic trên graph.\n4. Đánh giá\nBài báo thử nghiệm trên:\n- LoCoMo: hội thoại dài hạn.\n- NarrativeQA: tài liệu và câu chuyện dài.\nCompassMem được so sánh với RAG, Mem0, MemoryOS, HippoRAG, A-Mem và CAM.\nKết quả cho thấy CompassMem cải thiện rõ ở các câu hỏi cần:\n- Suy luận nhiều bước.\n- Tổng hợp bằng chứng xa nhau.\n- Hiểu thứ tự thời gian.\nVí dụ, trên LoCoMo với GPT-4o-mini, CompassMem đạt F1 trung bình 52,18%, cao hơn HippoRAG là 47,92%. Tuy nhiên, phương pháp sử dụng nhiều token và có latency cao hơn một số baseline.\n5. Kết luận\nBộ nhớ tốt không chỉ cần lưu đúng thông tin mà còn phải lưu được mối quan hệ logic giữa các trải nghiệm.\nCompassMem giúp memory chuyển từ một kho lưu trữ thụ động thành một thành phần chủ động hỗ trợ tìm kiếm và reasoning.",
+      "author": {
+        "id": "954646600532230214",
+        "name": "nguyenthanhhoan01201",
+        "discriminator": "0000",
+        "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530756957911253153",
+          "url": "https://cdn.discordapp.com/attachments/1530756957642952915/1530756957911253153/2026.findings-acl.1123.pdf?ex=6a6c0202&is=6a6ab082&hm=6e2bf40a32888048e0463c87c5c382bbeab7ef2e36f5b327ad28d120b2512e79&",
+          "fileName": "2026.findings-acl.1123.pdf",
+          "fileSizeBytes": 1177770
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "954646600532230214",
+              "name": "nguyenthanhhoan01201",
+              "discriminator": "0000",
+              "nickname": "T029 - Nguyễn Thanh Hoàn - 01201",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/954646600532230214/8569adcbd36c70a7578c017bf5604ea5.png?size=512"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531157784601821405",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:34:23.385+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thật hữu each",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

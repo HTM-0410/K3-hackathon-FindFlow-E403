@@ -1,0 +1,250 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531484751028813984",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Chia sẻ cách mình viết prompt khi làm project AI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:08:20.2742222+07:00",
+  "messages": [
+    {
+      "id": "1531484751028813984",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:13:38.256+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Khi sử dụng AI để hỗ trợ làm project, prompt đầu tiên của mình thường không phải là: “Hãy code tính năng này”.\n\nThay vào đó, mình sẽ yêu cầu AI đọc toàn bộ context của project trước, bao gồm đề bài, yêu cầu đầu ra, cấu trúc thư mục, công nghệ đang sử dụng và những phần đã hoàn thành. Sau đó, AI phải tóm tắt lại cách hiểu về project để mình kiểm tra xem hai bên đã hiểu đúng vấn đề hay chưa.\n\nBước tiếp theo, mình yêu cầu AI lập một bản planning trước khi thực hiện, trong đó cần nêu rõ:\n\nMục tiêu cần giải quyết.\nCác bước sẽ triển khai.\nNhững file cần tạo hoặc chỉnh sửa.\nCông nghệ và công cụ sẽ sử dụng.\nLuồng hoạt động của hệ thống.\nCác rủi ro hoặc điểm chưa rõ.\n\nMình sẽ đọc và duyệt bản planning này. Nếu có phần chưa hợp lý, mình yêu cầu AI sửa kế hoạch trước, thay vì để AI code ngay rồi sau đó phải sửa lại rất nhiều.\n\nKhi kế hoạch đã ổn, mình mới cho AI thực hiện từng phần nhỏ. Sau mỗi phần, mình thường yêu cầu giải thích đã làm gì, vì sao làm như vậy và cách kiểm tra kết quả.\n\nQua quá trình sử dụng, mình nhận ra “vibe prompting” không đơn giản là mô tả cảm giác rồi để AI tự làm tất cả. Với mình, đó là cách cộng tác theo từng vòng:\n\nĐọc context → xác nhận cách hiểu → lập kế hoạch → duyệt kế hoạch → triển khai từng bước → kiểm tra và điều chỉnh.\n\nCách làm này giúp mình kiểm soát project tốt hơn, hạn chế AI hiểu sai yêu cầu và quan trọng nhất là mình vẫn hiểu được sản phẩm đang được xây dựng như thế nào.\n\nTheo trải nghiệm của mình, một prompt tốt không nhất thiết phải thật dài. Điều quan trọng là phải cung cấp đủ context, đặt ra quy trình làm việc rõ ràng và không để AI bắt đầu triển khai khi chưa thống nhất kế hoạch.",
+      "author": {
+        "id": "607559023805595653",
+        "name": "nson9116",
+        "discriminator": "0000",
+        "nickname": "T060 - Nguyễn Ngọc Sơn - 01948",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "607559023805595653",
+              "name": "nson9116",
+              "discriminator": "0000",
+              "nickname": "T060 - Nguyễn Ngọc Sơn - 01948",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+            },
+            {
+              "id": "698474313027682344",
+              "name": "nhat2kruoi",
+              "discriminator": "0000",
+              "nickname": "T060 - Lưu Quang Nhật",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+            },
+            {
+              "id": "805058036213350410",
+              "name": "baonguyen191",
+              "discriminator": "0000",
+              "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "855807068874342420",
+              "name": "thanhpro08",
+              "discriminator": "0000",
+              "nickname": "thanh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "859817112296751116",
+              "name": "davidkeleys6498",
+              "discriminator": "0000",
+              "nickname": "G7 - T065 - Trần Quí Đôn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1317685215266607104",
+              "name": "khongcomatkhau_14",
+              "discriminator": "0000",
+              "nickname": "OwO",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531485677030604960",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:17:19.032+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tuyệt",
+      "author": {
+        "id": "698474313027682344",
+        "name": "nhat2kruoi",
+        "discriminator": "0000",
+        "nickname": "T060 - Lưu Quang Nhật",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531486506689237116",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:20:36.838+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay quá ạ",
+      "author": {
+        "id": "805058036213350410",
+        "name": "baonguyen191",
+        "discriminator": "0000",
+        "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531486675023298670",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:21:16.972+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay  quá a",
+      "author": {
+        "id": "855807068874342420",
+        "name": "thanhpro08",
+        "discriminator": "0000",
+        "nickname": "G17 - T192 - Nguyễn Tuấn Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531486927210020894",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:22:17.098+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ x ạ",
+      "author": {
+        "id": "859817112296751116",
+        "name": "davidkeleys6498",
+        "discriminator": "0000",
+        "nickname": "G7 - T065 - Trần Quí Đôn",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}
