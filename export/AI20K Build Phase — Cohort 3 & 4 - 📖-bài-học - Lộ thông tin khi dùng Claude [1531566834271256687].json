@@ -1,0 +1,119 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531566834271256687",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Lộ thông tin khi dùng Claude",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:05.7606289+07:00",
+  "messages": [
+    {
+      "id": "1531566834271256687",
+      "type": "Default",
+      "timestamp": "2026-07-28T14:39:48.426+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Claude đang đối mặt với một vấn đề nghiêm trọng về quyền riêng tư khi hàng loạt cuộc trò chuyện được chia sẻ bị Google lập chỉ mục công khai, cho phép bất kỳ ai cũng có thể tìm thấy.\n\nKhi người dung sử dụng tính năng chia sẻ của Claude, nền tảng sẽ tạo ra một đường dẫn công khai. Tuy nhiên, các đường dẫn này đã bị công cụ tìm kiếm thu thập và đánh index. Điều đó đồng nghĩa với việc tùy chọn “chia sẻ với bất kỳ ai có liên kết” trên thực tế đã biến thành “bất kỳ ai cũng có thể tìm thấy bằng cách tìm kiếm trên mạng”.\n\nNhiều nội dung đáng báo động đã được phát hiện trong các cuộc trò chuyện này, bao gồm:\n\n•    Khóa API, thông tin đăng nhập và ví tiền mã hóa;\n\n•    Hồ sơ xin việc chứa tên thật, địa chỉ và số điện thoại;\n\n•    Nội dung một luật sư trao đổi về nguy cơ vi phạm quy tắc đạo đức nghề nghiệp;\n\n•    Thông tin nội bộ về dự án của một công ty;\n\n•    Những dữ liệu có dấu hiệu là số an sinh xã hội;\n\n•    Cùng một lượng lớn các cuộc trò chuyện mang tính cá nhân sâu sắc mà user có lẽ chưa từng nghĩ sẽ bị người khác đọc được.\n\n\n\nNguyên nhân được cho là Anthropic đã không thêm thẻ “noindex” vào các trang trò chuyện được chia sẻ, khiến các công cụ tìm kiếm có thể tự do thu thập và hiển thị chúng trong kết quả tìm kiếm.\n\nTheo tác giả bài đăng, chỉ một dòng mã cũng có thể ngăn chặn toàn bộ sự việc.\n\nChatGPT từng gặp một vấn đề tương tự khoảng một năm trước, nhưng OpenAI đã nhanh chóng khắc phục.\n\nNếu từng nhấn nút chia sẻ trong một cuộc trò chuyện trên Claude, mọi người nên coi nội dung đó là có khả năng đã bị công khai.\n\nĐể kiểm tra và xóa các cuộc trò chuyện đã chia sẻ, ta có thể truy cập:\n\nSettings > Privacy > Your Data > Shared Chats > Manage\n\nHãy xóa ngay những nội dung mà mọi người không muốn xuất hiện công khai trên Internet, đặc biệt là các thông tin cá nhân, tài khoản hoặc tài chính.\nNguồn: Lê Quốc Đạt : https://www.facebook.com/share/p/1E1jido9Vn/?mibextid=wwXIfr\n\n#j2team_share",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Log in or sign up to view",
+          "url": "https://www.facebook.com/share/p/1E1jido9Vn/?mibextid=wwXIfr",
+          "timestamp": null,
+          "description": "See posts, photos and more on Facebook.",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "846743153780064316",
+              "name": "htm04",
+              "discriminator": "0000",
+              "nickname": "HTM",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531672734323703849",
+      "type": "Default",
+      "timestamp": "2026-07-28T21:40:36.966+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "fix r bro",
+      "author": {
+        "id": "901814189369204807",
+        "name": "stephhoang",
+        "discriminator": "0000",
+        "nickname": "T087 - Hoàng Thành - 01662",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/901814189369204807/a8d62541d447f8bc90b771c61187e16c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

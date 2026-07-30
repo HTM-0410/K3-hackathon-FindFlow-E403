@@ -1,0 +1,145 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530854002709758082",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Đừng bắt đầu bằng câu hỏi “Dùng AI gì?”",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:25.6883068+07:00",
+  "messages": [
+    {
+      "id": "1530854002709758082",
+      "type": "Default",
+      "timestamp": "2026-07-26T15:27:16.138+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Sau một vài dự án AI, mình nhận ra một lỗi khá phổ biến: team thường bắt đầu bằng model hoặc tool, thay vì bắt đầu từ workflow thực tế.\n\nCâu hỏi thường là:\n“Có thể dùng chatbot, agent hay recommendation system ở đây không?”\nTrong khi câu hỏi quan trọng hơn nên là:\n“Bước nào trong workflow đang tốn thời gian, dễ sai hoặc khó scale nhất?”\nMột feature AI có thể chạy tốt về mặt kỹ thuật nhưng vẫn không tạo ra giá trị nếu:\n1. Output không được dùng để ra quyết định.\n2. Người dùng không tin hoặc không kiểm chứng được kết quả.\n3. AI tự động hóa một bước vốn không phải bottleneck.\n4. Chi phí và độ phức tạp lớn hơn giá trị mang lại.\n\nVì vậy, trước khi chọn LLM, framework hay kiến trúc, mình thường làm rõ bốn điểm:\n1. Workflow hiện tại gồm những bước nào?\n2.Bottleneck thực sự nằm ở đâu?\n3. AI nên hỗ trợ, đề xuất hay tự động quyết định?\n4. Khi model sai, hệ thống fallback và human review thế nào?\nĐôi khi giải pháp tốt nhất là một AI agent. Nhưng đôi khi chỉ cần rule-based automation, search tốt hơn hoặc sửa lại UI.\n\n-> Bài học mình rút ra là: đừng cố nhét AI vào sản phẩm. Hãy tìm đúng điểm trong workflow mà AI tạo ra leverage rõ ràng nhất.",
+      "author": {
+        "id": "917027356328214569",
+        "name": "minhduc_24117976",
+        "discriminator": "0000",
+        "nickname": "T120 - Tô Minh Đức - 01043",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/917027356328214569/a987d3a5038a777ccc6ad55c872b0ae8.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "917027356328214569",
+              "name": "minhduc_24117976",
+              "discriminator": "0000",
+              "nickname": "T120 - Tô Minh Đức - 01043",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/917027356328214569/a987d3a5038a777ccc6ad55c872b0ae8.png?size=512"
+            },
+            {
+              "id": "1159515762164244531",
+              "name": "tien_05371",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Đặng Tiến Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1408241222358798406",
+              "name": "tthuong2307_95830",
+              "discriminator": "0000",
+              "nickname": "Hường",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1529868117956624424",
+              "name": "realdangtan",
+              "discriminator": "0000",
+              "nickname": "T113 - Lê Đăng Tấn - 01916",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531155327985254480",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:24:37.682+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đúng đúng",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

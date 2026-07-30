@@ -1,5 +1,13 @@
 // Mapping từ topic chi tiết -> nhóm chủ đề rộng
 export const TOPIC_GROUPS: Record<string, string> = {
+  // Bài học
+  "AI Coding, Prompt Engineering, Productivity Tools": "Bài học",
+  "Bảo mật AI, Prompt Injection, Large Language Models": "Bài học",
+  "AI Agent Workflow, Agent Architecture, Software Design": "Bài học",
+  "AI Design, UI/UX, Frontend Development, Design Tools": "Bài học",
+  "Requirements Engineering, Problem Solving, Product Management": "Bài học",
+  "Autonomous Driving, Computer Vision, Sensor Fusion, Robotics": "Bài học",
+
   // LLM & ML
   "Large Language Models (LLM)": "LLM & ML",
   "Machine Learning": "LLM & ML",
@@ -75,6 +83,7 @@ export const MAIN_TOPICS = [
   "Data Science",
   "AI Ứng dụng",
   "Học tập",
+  "Bài học",
   "Khác",
 ];
 

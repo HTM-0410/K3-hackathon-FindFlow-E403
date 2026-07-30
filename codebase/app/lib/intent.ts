@@ -18,21 +18,28 @@ export type IntentDecision =
     }
   | { kind: "reject"; reason: RejectionReason; message: string };
 
+// Từ khóa loại tài liệu
 const typeWords = new Map([
   ["slide", "slide"],
   ["video", "video"],
   ["lab", "lab"],
   ["bai lab", "lab"],
   ["github", "github"],
+  ["repo", "github"],
   ["repository", "github"],
   ["code", "github"],
   ["thong bao", "announcement"],
+  ["thông báo", "announcement"],
   ["huong dan", "guide"],
+  ["hướng dẫn", "guide"],
+  ["tài liệu", "guide"],
 ] as const);
 
+// Stopwords để lọc query
 const stopwords = new Set([
-  "tim", "cho", "minh", "toi", "ve", "mot", "tai", "lieu", "cua",
-  "xin", "can", "muon", "xem", "lai", "co", "khong",
+  "tim", "tìm", "cho", "minh", "mình", "toi", "tôi", "ve", "về", "mot", "một", 
+  "tai", "lieu", "cua", "của", "xin", "can", "cần", "muon", "muốn", "xem", "lai", "lại", 
+  "co", "có", "khong", "không", "voi", "với", "theo", "ve", "về"
 ]);
 
 export function analyzeSearchIntent(
@@ -41,9 +48,11 @@ export function analyzeSearchIntent(
 ): IntentDecision {
   const normalized = normalizeText(query);
 
+  // 1. Kiểm tra rejection trước
   const rejection = detectRejection(normalized);
   if (rejection) return rejection;
 
+  // 2. Kiểm tra multiple intents
   const multiple = detectMultipleIntents(query);
   if (multiple.length > 1) {
     return {
@@ -58,32 +67,46 @@ export function analyzeSearchIntent(
     };
   }
 
-  if (hasAny(normalized, ["hom qua", "ngay hom qua", "buoi truoc", "hom no", "vua roi", "moi gui"])) {
+  // 3. Kiểm tra ambiguous time
+  if (hasAny(normalized, [
+    "hom qua", "ngay hom qua", "buoi truoc", "hom no", "vua roi", 
+    "moi gui", "hom nay", "ngay nay", "tuan truoc"
+  ])) {
     return {
       kind: "clarify",
       reason: "ambiguous_time",
       question:
-        "“Hôm qua/buổi trước” chưa xác định được mốc thời gian trong dữ liệu. Bạn đang nói tới tài liệu nào?",
+        "Mình chưa xác định được thời gian bạn đề cập. Bạn có thể nói rõ chủ đề tài liệu cần tìm không?",
       options: resourceOptions(query, catalog),
     };
   }
 
-  if (hasAny(normalized, ["tai lieu do", "cai do", "link do", "file do", "bai do"])) {
+  // 4. Kiểm tra ambiguous reference (đại từ chỉ định)
+  if (hasAny(normalized, [
+    "tai lieu do", "cai do", "link do", "file do", "bai do", 
+    "tài liệu đó", "cái đó", "link đó", "file đó", "bài đó",
+    "no", "nó", "đó", "này", "này"
+  ])) {
     return {
       kind: "clarify",
       reason: "ambiguous_reference",
       question:
-        "Mình chưa biết “tài liệu đó” là tài liệu nào. Bạn hãy chọn hoặc nói rõ chủ đề cần tìm.",
+        "Mình chưa biết bạn đang nói đến tài liệu nào. Bạn hãy mô tả chủ đề hoặc tên tài liệu cụ thể hơn nhé.",
       options: resourceOptions(query, catalog),
     };
   }
 
+  // 5. Kiểm tra broad query (query quá rộng)
   const meaningful = normalized
     .split(" ")
     .filter((token) => token.length > 1 && !stopwords.has(token));
+  
   if (
     meaningful.length <= 2 &&
-    hasAny(normalized, ["ai", "slide", "video", "lab", "code", "tai lieu"])
+    hasAny(normalized, [
+      "ai", "slide", "video", "lab", "code", "tai lieu", "github", 
+      "dataset", "repo", "tool", "cong cu", "hướng dẫn"
+    ])
   ) {
     return {
       kind: "clarify",
@@ -94,6 +117,7 @@ export function analyzeSearchIntent(
     };
   }
 
+  // Query đủ rõ ràng, tiến hành tìm kiếm
   return { kind: "proceed" };
 }
 
@@ -124,10 +148,13 @@ export function intentDecisionToResponse(
 }
 
 function detectRejection(normalized: string): Extract<IntentDecision, { kind: "reject" }> | null {
+  // Kiểm tra thông tin cá nhân
   if (
     hasAny(normalized, [
-      "so dien thoai", "dia chi nha", "mat khau", "password",
-      "email ca nhan", "thong tin ca nhan",
+      "so dien thoai", "số điện thoại", "dia chi", "địa chỉ", 
+      "mat khau", "mật khẩu", "password", "email ca nhan", 
+      "email cá nhân", "thong tin ca nhan", "thông tin cá nhân",
+      "facebook", "zalo", "số tài khoản"
     ])
   ) {
     return {
@@ -138,8 +165,9 @@ function detectRejection(normalized: string): Extract<IntentDecision, { kind: "r
     };
   }
 
-  const asksDelegation = hasAny(normalized, ["giup toi", "giup minh", "ho toi"]);
-  const actionVerb = ["nhan ", "nop ", "gui ", "dang ", "xoa ", "sua ", "goi "]
+  // Kiểm tra hành động không được hỗ trợ
+  const asksDelegation = hasAny(normalized, ["giup toi", "giúp tôi", "giup minh", "giúp mình", "ho toi", "hộ tôi"]);
+  const actionVerb = ["nhan ", "nhắn ", "nop ", "nộp ", "gui ", "gửi ", "dang ", "đăng ", "xoa ", "xóa ", "sua ", "sửa ", "goi ", "gọi "]
     .some((term) => normalized.startsWith(term) || normalized.includes(` ${term}`));
   if (asksDelegation && actionVerb) {
     return {
@@ -150,17 +178,20 @@ function detectRejection(normalized: string): Extract<IntentDecision, { kind: "r
     };
   }
 
+  // Kiểm tra chủ đề ngoài phạm vi
   if (
     hasAny(normalized, [
-      "nau an", "am thuc", "bong da", "du lich", "chung khoan",
-      "thoi tiet", "tu vi", "phim chieu rap", "mua sam",
+      "nau an", "nấu ăn", "am thuc", "ẩm thực", "bong da", "bóng đá",
+      "du lich", "du lịch", "chung khoan", "chứng khoán", "thoi tiet", "thời tiết",
+      "tu vi", "tử vi", "phim chieu rap", "phim chiếu rạp", "mua sam", "mua sắm",
+      "choi game", "chơi game", "am nhac", "âm nhạc", "phim", "sach", "sách"
     ])
   ) {
     return {
       kind: "reject",
       reason: "unrelated",
       message:
-        "Yêu cầu này không liên quan đến kho tài liệu khóa AI Thực Chiến. Mình chỉ hỗ trợ tìm tài liệu học tập, Hackathon, lab và quy định khóa học.",
+        "Yêu cầu này không liên quan đến kho tài liệu khóa AI Thực Chiến. Mình chỉ hỗ trợ tìm tài liệu về AI, lập trình, công cụ coding và các chủ đề liên quan.",
     };
   }
   return null;
@@ -168,14 +199,20 @@ function detectRejection(normalized: string): Extract<IntentDecision, { kind: "r
 
 function detectMultipleIntents(query: string): string[] {
   const normalized = normalizeText(query);
+  
+  // Tách query theo các delimiter
   const segments = normalized
     .split(/\s+(?:va|kem|dong thoi)\s+|[,;]/)
     .map((segment) => segment.trim())
     .filter((segment) => contentTokens(segment).length >= 2);
+  
   if (segments.length < 2 || segments.length > 3) return [];
 
+  // Kiểm tra có nhiều loại tài liệu khác nhau
   const segmentTypes = segments.map(findType);
   const distinctTypes = new Set(segmentTypes.filter(Boolean));
+  
+  // Kiểm tra có nhiều domain khác nhau
   const segmentDomains = segments.map(domainGroups);
   const hasDistinctDomains = segmentDomains.some((groups, index) =>
     segmentDomains.some(
@@ -187,7 +224,9 @@ function detectMultipleIntents(query: string): string[] {
     )
   );
 
+  // Chỉ coi là multiple intents nếu có nhiều loại type hoặc nhiều domain khác nhau
   if (distinctTypes.size < 2 && !hasDistinctDomains) return [];
+  
   return segments.map((segment) => humanizeIntent(segment));
 }
 
@@ -197,10 +236,11 @@ function resourceOptions(query: string, catalog: Resource[]): ClarificationOptio
   const filtered = requestedType
     ? catalog.filter((resource) => resource.type === requestedType)
     : catalog;
+  
   return [...filtered]
     .filter((resource) => resource.status === "published")
     .sort((a, b) => b.sharedAt.localeCompare(a.sharedAt))
-    .slice(0, 3)
+    .slice(0, 5)
     .map((resource) => ({
       label: resource.title,
       query: resource.title,
@@ -209,15 +249,19 @@ function resourceOptions(query: string, catalog: Resource[]): ClarificationOptio
 }
 
 function topicOptions(query: string, catalog: Resource[]): ClarificationOption[] {
-  const requestedType = findType(normalizeText(query));
+  const normalized = normalizeText(query);
+  const requestedType = findType(normalized);
   const pool = requestedType
     ? catalog.filter((resource) => resource.type === requestedType)
     : catalog;
+  
+  // Lấy các topic độc nhất, sắp xếp theo thời gian
   const topics = [...new Set(
     [...pool]
       .sort((a, b) => b.sharedAt.localeCompare(a.sharedAt))
-      .map((resource) => resource.topic),
+      .map((resource) => resource.topic)
   )].slice(0, 4);
+  
   return topics.map((topic) => ({
     label: topic,
     query: `${requestedType ? `${requestedType} ` : "tài liệu "}${topic}`,
@@ -234,16 +278,30 @@ function findType(normalized: string): Resource["type"] | undefined {
 function domainGroups(segment: string): Set<string> {
   const groups = new Set<string>();
   const patterns: Record<string, string[]> = {
-    hackathon: ["hackathon", "venture", "cp1", "cp2", "cp3"],
-    scoring: ["diem", "xp", "rubric", "cham"],
-    code: ["code", "github", "repository", "api", "python", "typescript"],
-    prompt: ["prompt", "few shot", "draft", "critique"],
-    evaluation: ["golden set", "danh gia", "eval", "quality"],
-    schedule: ["deadline", "han nop", "lich", "office hour"],
-    foundation: ["foundation", "transformer", "attention", "llm"],
-    privacy: ["privacy", "pii", "bao mat"],
-    design: ["hax", "ux", "product design"],
+    // AI/LLM
+    llm: ["llm", "large language model", "transformer", "attention", "gpt", "gemini", "claude"],
+    ai_agent: ["ai agent", "agent", "coding agent", "autonomous"],
+    
+    // Công cụ & Repo
+    github: ["github", "repo", "repository", "source code", "mã nguồn"],
+    tools: ["tool", "công cụ", "software", "app", "ứng dụng"],
+    
+    // Học tập
+    dataset: ["dataset", "data", "dữ liệu", "corpus"],
+    training: ["training", "huấn luyện", "finetuning", "pretraining", "learning"],
+    
+    // Cuộc thi
+    hackathon: ["hackathon", "ai20k", "cp1", "cp2", "cp3", "venture"],
+    scoring: ["diem", "điểm", "xp", "rubric", "chấm", "đánh giá"],
+    
+    // Chủ đề cụ thể
+    prompt: ["prompt", "prompting", "few shot", "draft critique"],
+    security: ["security", "bảo mật", "privacy", "pii", "safety"],
+    optimization: ["optimize", "tối ưu", "performance", "hiệu năng"],
+    ocr: ["ocr", "nhận dạng ký tự", "text recognition"],
+    asr: ["asr", "speech", "giọng nói", "voice", "audio"],
   };
+  
   for (const [group, words] of Object.entries(patterns)) {
     if (words.some((word) => segment.includes(word))) groups.add(group);
   }
@@ -257,6 +315,7 @@ function contentTokens(segment: string): string[] {
 }
 
 function humanizeIntent(segment: string): string {
+  // Viết hoa chữ cái đầu và format lại
   const value = segment.charAt(0).toUpperCase() + segment.slice(1);
   return value.replace(/\bcp(\d)\b/g, "CP$1");
 }

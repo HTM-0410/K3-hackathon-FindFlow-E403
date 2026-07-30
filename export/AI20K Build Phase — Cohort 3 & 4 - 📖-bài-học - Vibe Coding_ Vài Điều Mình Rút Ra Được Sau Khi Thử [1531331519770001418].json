@@ -1,0 +1,101 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531331519770001418",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Vibe Coding: Vài Điều Mình Rút Ra Được Sau Khi Thử",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:53:03.0048001+07:00",
+  "messages": [
+    {
+      "id": "1531331519770001418",
+      "type": "Default",
+      "timestamp": "2026-07-27T23:04:45.077+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người,\n\nMấy hôm nay mình tìm hiểu và thử \"vibe coding\", muốn chia sẻ vài điều rút ra — không phải với tư cách người biết hết, mà là một người cũng đang học như các bạn.\n\nVibe coding là gì?\nLà cách lập trình mà mình tập trung mô tả ý tưởng và kết quả mong muốn, còn việc viết code cụ thể thì để AI lo. Giống như trò chuyện với một đồng nghiệp giỏi code hơn, chứ không phải \"lập trình\" theo cách truyền thống.\n\nVì sao hấp dẫn\n\nTốc độ: từ ý tưởng ra sản phẩm/demo nhanh hơn nhiều.\nDễ tiếp cận: người chưa vững code vẫn tạo được tool nhỏ.\nSáng tạo hơn: đỡ \"vật lộn\" cú pháp, có nhiều năng lượng hơn để nghĩ về trải nghiệm và logic sản phẩm.\n\nNhưng cần tỉnh táo\nCode AI viết vẫn có thể sai, thiếu tối ưu, có lỗ hổng. Không hiểu code đang chạy để làm gì thì rất khó sửa lỗi hay mở rộng sau này. Vibe coding hợp nhất khi làm prototype, thử ý tưởng, demo nhanh — và mình vẫn đọc hiểu code, không chỉ copy-paste. Với dự án cần chỉn chu, vẫn nên tự tay đọc kỹ, hiểu rõ, chỉnh sửa để kỹ năng thực sự lớn lên.\n\nTự nhắc mình\nKỹ năng quan trọng giờ không phải thuộc lòng syntax, mà là: diễn đạt rõ điều mình muốn, biết đánh giá kết quả AI đưa ra có đúng không, và vẫn giữ thói quen tự code để không phụ thuộc hoàn toàn.\n\nMong nhận góp ý và kinh nghiệm từ mọi người — chắc ai cũng đang mò mẫm như mình. \uD83D\uDE4C",
+      "author": {
+        "id": "919234006950744104",
+        "name": "vinz0704",
+        "discriminator": "0000",
+        "nickname": "T001 - Nguyễn Thành Vinh - 01556",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [
+        {
+          "id": "1531331520554602496",
+          "url": "https://cdn.discordapp.com/attachments/1531331519770001418/1531331520554602496/Vibe-Coding-viet-code-khong-can-hieu-lap-trinh.png?ex=6a6c1edd&is=6a6acd5d&hm=fce01ee945e729a2f541c3b772d526036b6b67f6c326f14f614cbc658056387c&",
+          "fileName": "Vibe-Coding-viet-code-khong-can-hieu-lap-trinh.png",
+          "fileSizeBytes": 2321152
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "915243053529305118",
+              "name": "hoan_041203",
+              "discriminator": "0000",
+              "nickname": "Hoan_04",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "919234006950744104",
+              "name": "vinz0704",
+              "discriminator": "0000",
+              "nickname": "T001 - Nguyễn Thành Vinh - 01556",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE4C",
+          "code": "raised_hands",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f64c.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

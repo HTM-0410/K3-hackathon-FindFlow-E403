@@ -1,0 +1,122 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531190081518436494",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "[Deep Dive] Hiểu đúng vấn đề trước khi nghĩ đến giải pháp",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:53:20.689801+07:00",
+  "messages": [
+    {
+      "id": "1531190081518436494",
+      "type": "Default",
+      "timestamp": "2026-07-27T13:42:43.57+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**\uD83C\uDFAF Tóm tắt:**\nKhi được yêu cầu làm tính năng như *cần xây dựng chatbot*, *cần dashboard* hay cần *export Excel* chưa chắc là nhu cầu thật. Đó có thể chỉ là giải pháp mà người dùng đang nghĩ tới. Chúng ta phải hỏi thêm người dùng để có thể hiểu rõ hơn pain points của người dùng\n\n**\uD83D\uDCDA Bối cảnh:**\nKhi đọc Requirements Engineering, điều mình thấy hữu ích nhất là cách tách rõ:\n\n- **Problem Domain:** Người dùng muốn đạt được điều gì.\n- **Solution Domain:** Hệ thống sẽ giải quyết bằng cách nào.\n\nVí dụ, khi ai đó nói: *Tôi cần export Excel*, thay vì nhận ngay thành một tính năng, mình nên hỏi thêm: *File đó được dùng để làm gì?*. Có thể nhu cầu thật chỉ là gửi báo cáo hàng tuần cho quản lý.\n\nKhi hiểu đúng mục tiêu, team sẽ có nhiều lựa chọn hơn: export file, gửi email tự động, làm dashboard hoặc một cách khác phù hợp hơn.\n\n**\uD83D\uDCA1 Bài học mình rút ra:**\nĐừng vội chốt tính năng từ yêu cầu đầu tiên. Hãy hỏi thêm về mục tiêu, người sử dụng và cách kiểm chứng kết quả. Phân tích yêu cầu không phải là ghi lại người dùng muốn xây gì, mà là hiểu vì sao họ cần nó.\n\n**\uD83D\uDD17 Tài liệu tham khảo:**  \n[Requirements Engineering — Jeremy Dick, Elizabeth Hull, Ken Jackson] https://drive.google.com/file/d/1dW29IS3AWPxgHXCuXufrWPl0AvIwj1Ay/view?usp=drive_link",
+      "author": {
+        "id": "877577707741933579",
+        "name": "fo2.fo3.fo4",
+        "discriminator": "0000",
+        "nickname": "G16-T048-Hồ Ngọc Quỳnh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [
+        {
+          "id": "1531190081820561470",
+          "url": "https://cdn.discordapp.com/attachments/1531190081518436494/1531190081820561470/background.png?ex=6a6c43e3&is=6a6af263&hm=d7296de0e45a0e8ee31a45a21d315f2b14c2f5a8af2d05b143e991ec44b9ecec&",
+          "fileName": "background.png",
+          "fileSizeBytes": 242594
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "471331498314956820",
+              "name": "_nguyenthang",
+              "discriminator": "0000",
+              "nickname": "T048 — Nguyễn Thắng — 01163",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "G16-T048-Hồ Ngọc Quỳnh",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83C\uDFAF",
+          "code": "dart",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3af.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCDA",
+          "code": "books",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4da.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD17",
+          "code": "link",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f517.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

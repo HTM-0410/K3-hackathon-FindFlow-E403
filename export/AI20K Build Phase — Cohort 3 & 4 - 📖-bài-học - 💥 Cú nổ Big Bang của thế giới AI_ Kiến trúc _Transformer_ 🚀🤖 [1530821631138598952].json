@@ -1,0 +1,326 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530821631138598952",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "\uD83D\uDCA5 Cú nổ Big Bang của thế giới AI: Kiến trúc \"Transformer\" \uD83D\uDE80\uD83E\uDD16",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:18.4309941+07:00",
+  "messages": [
+    {
+      "id": "1530821631138598952",
+      "type": "Default",
+      "timestamp": "2026-07-26T13:18:38.154+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Nhắc đến AI hiện nay, chắc hẳn chúng ta nghĩ ngay đến sức mạnh của các Mô hình Ngôn ngữ Lớn (LLM). Nhưng bạn có biết, toàn bộ kỷ nguyên rực rỡ này đều bắt nguồn từ một \"bước ngoặt\" lịch sử vào năm 2017? ⏳\n\nĐó là khi đội ngũ nghiên cứu tại Google công bố bài báo khoa học chấn động: \"Attention Is All You Need\", chính thức giới thiệu kiến trúc Transformer.\n\nVậy điều gì đã khiến Transformer thay đổi hoàn toàn cuộc chơi? \uD83C\uDFAF\n\n\uD83D\uDC22 Vấn đề trước năm 2017: Các mô hình AI thời đó xử lý ngôn ngữ theo kiểu tuần tự \"đọc từng chữ một\". Cách này rất chậm và AI thường mắc bệnh \"não cá vàng\" — khi xử lý những đoạn văn bản dài, chúng rất dễ quên mất ngữ cảnh ở đoạn đầu.\n\n⚡ Phép thuật của Transformer: Kiến trúc này mang đến một cơ chế cốt lõi mang tên Self-Attention (Tự chú ý). Thay vì cặm cụi đọc từng từ, Transformer cho phép AI \"nhìn\" và xử lý toàn bộ văn bản cùng một lúc. Nó tự động đánh giá xem những từ nào có mối liên hệ mật thiết với nhau để tạo ra ý nghĩa, bất kể chúng cách xa nhau đến đâu trong một câu.\n\n\uD83D\uDCA1 Ví dụ: Trong câu \"I arrived at the bank after crossing the river.\" — Transformer sẽ ngay lập tức kết nối từ \"bank\" với \"river\" để hiểu đây là bờ sông, chứ không phải ngân hàng.\n\nSự thay đổi mang tính thời đại \uD83C\uDF0D\n\nChính nhờ khả năng xử lý song song và không còn bị phụ thuộc vào thứ tự trước - sau, Transformer cho phép các nhà khoa học \"nhồi\" một lượng dữ liệu khổng lồ vào mô hình với tốc độ huấn luyện chưa từng có.\n\nKhông có Transformer, sẽ không có GPT-4, không có Gemini, và không có kỷ nguyên bùng nổ của các siêu AI ngôn ngữ như hiện tại. Hàng tỷ tỷ tham số mà chúng ta thường nghe báo đài nhắc tới — tất cả đều đang chạy trên bộ khung vững chắc của kiến trúc này. \uD83C\uDFD7️\n\nMột ý tưởng ra đời cách đây gần một thập kỷ đã và đang định hình lại cách nhân loại làm việc và sáng tạo mỗi ngày. Theo bạn, điều gì sẽ là \"bước nhảy vọt\" tiếp theo của thế giới AI? \uD83D\uDC47",
+      "author": {
+        "id": "1529718157680574520",
+        "name": "tranchitam011104",
+        "discriminator": "0000",
+        "nickname": "T188 - Trần Chí Tâm - 01535",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [
+        {
+          "id": "1530821632023855254",
+          "url": "https://cdn.discordapp.com/attachments/1530821631138598952/1530821632023855254/8c3008f3-c9de-4fd0-8513-d209db6d6897.webp?ex=6a6c3e3e&is=6a6aecbe&hm=7ba48f233672dbeb6e5ba73ef7c5c6e1363178a402e0545fdca4e6ef30c81e37&",
+          "fileName": "8c3008f3-c9de-4fd0-8513-d209db6d6897.webp",
+          "fileSizeBytes": 19320
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "1159515762164244531",
+              "name": "tien_05371",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Đặng Tiến Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1250132764687073362",
+              "name": "hahoangtuanhung",
+              "discriminator": "0000",
+              "nickname": "TUANHUNG",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1408241222358798406",
+              "name": "tthuong2307_95830",
+              "discriminator": "0000",
+              "nickname": "Hường",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1529718157680574520",
+              "name": "tranchitam011104",
+              "discriminator": "0000",
+              "nickname": "T188 - Trần Chí Tâm - 01535",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "⏳",
+          "code": "hourglass_flowing_sand",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/23f3.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83C\uDFAF",
+          "code": "dart",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3af.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC22",
+          "code": "turtle",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f422.svg"
+        },
+        {
+          "id": "",
+          "name": "⚡",
+          "code": "zap",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83C\uDF0D",
+          "code": "earth_africa",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83C\uDFD7️",
+          "code": "construction_site",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3d7.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC47",
+          "code": "point_down",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f447.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530823136419909764",
+      "type": "Default",
+      "timestamp": "2026-07-26T13:24:37.041+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn ae đã xem bài viết của mình",
+      "author": {
+        "id": "1529718157680574520",
+        "name": "tranchitam011104",
+        "discriminator": "0000",
+        "nickname": "T188 - Trần Chí Tâm - 01535",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530891117695078431",
+      "type": "Default",
+      "timestamp": "2026-07-26T17:54:45.04+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hữu each",
+      "author": {
+        "id": "1250132764687073362",
+        "name": "hahoangtuanhung",
+        "discriminator": "0000",
+        "nickname": "T188 - Hà Hoàng Tuấn Hùng -01629",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE06",
+            "code": "laughing",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f606.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1529718157680574520",
+              "name": "tranchitam011104",
+              "discriminator": "0000",
+              "nickname": "T188 - Trần Chí Tâm - 01535",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531155365134073987",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:24:46.539+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hữu each",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1529718157680574520",
+              "name": "tranchitam011104",
+              "discriminator": "0000",
+              "nickname": "T188 - Trần Chí Tâm - 01535",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

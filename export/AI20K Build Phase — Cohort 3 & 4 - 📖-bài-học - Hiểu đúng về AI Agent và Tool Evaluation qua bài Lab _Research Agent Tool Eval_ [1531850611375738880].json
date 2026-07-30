@@ -1,0 +1,103 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531850611375738880",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Hiểu đúng về AI Agent và Tool Evaluation qua bài Lab \"Research Agent Tool Eval\"",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:51.1664623+07:00",
+  "messages": [
+    {
+      "id": "1531850611375738880",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:27:26.16+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "TL;DR: Hiểu đúng về các khái niệm trong bài Lab DAY 04\n\uD83D\uDCDA Bối cảnh: Đọc hiểu các khái niệm được đề cập trong bài Lab để có thể thực hành và hiểu mình cần làm gì:\nCác khái niệm quan trọng\nAI Agent: Hệ thống sử dụng mô hình ngôn ngữ để quyết định khi nào cần gọi các công cụ bên ngoài nhằm hoàn thành yêu cầu của người dùng.\nTool: Công cụ hoặc hàm mà agent có thể sử dụng, ví dụ: tìm kiếm web, đọc URL, hỏi lại người dùng hoặc gửi tin nhắn.\nTool Declaration: Phần khai báo tên, mô tả và tham số của tool. Đây là thông tin mà mô hình dựa vào để quyết định sử dụng tool nào.\nSystem Prompt: Bộ hướng dẫn quy định cách agent suy luận và sử dụng các tool.\nTool Routing: Quá trình lựa chọn đúng tool cho từng yêu cầu.\nTool Arguments: Các tham số được truyền vào tool; chọn đúng tool nhưng truyền sai tham số vẫn được xem là lỗi.\nBaseline (v0): Phiên bản ban đầu của agent trước khi tối ưu.\nEvaluation (Eval): Bộ kiểm thử tự động dùng để đánh giá hành vi của agent.\nEval Case: Một tình huống kiểm thử với đầu vào và hành vi mong đợi.\nSingle-turn / Multi-turn: Hội thoại một lượt hoặc nhiều lượt giữa người dùng và agent.\nClarify: Tool dùng để hỏi lại khi thiếu thông tin hoặc cần xác nhận trước khi thực hiện hành động.\nRun JSON / Trace / Transcript: Các tệp ghi lại toàn bộ quá trình chạy, lời gọi tool và hội thoại để phục vụ phân tích.\nHypothesis: Giả thuyết về nguyên nhân gây lỗi, được kiểm chứng bằng các lần chạy tiếp theo.\nEvidence-driven: Phương pháp cải tiến agent dựa trên log và số liệu thực tế thay vì cảm tính.\nMetrics: Các chỉ số đánh giá như độ chính xác chọn tool, truyền tham số và xử lý hội thoại.\nUI (User Interface): Giao diện để người dùng tương tác với agent và quan sát quá trình gọi tool.\n\nHiểu được các khái niệm trên sẽ giúp bạn nắm được mục tiêu của bài lab cũng như quy trình phát triển một AI Agent trong thực tế: xây dựng → đánh giá → phân tích → tối ưu → kiểm chứng.",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "814350992249454622",
+              "name": "johnnyquynguyen",
+              "discriminator": "0000",
+              "nickname": "Duong Nguyen Quy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/814350992249454622/b65635f8f8d101d1ac3e11a302364d94.png?size=512"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1160208635163594752",
+              "name": "chanbeduk68_80038",
+              "discriminator": "0000",
+              "nickname": "T064 - Nguyễn Quốc Anh - 01079",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCDA",
+          "code": "books",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4da.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

@@ -2,172 +2,299 @@
   {
     "id": "direct-01",
     "category": "direct_search",
-    "notes": "Một nhu cầu rõ ràng phải tìm ngay.",
+    "notes": "Tìm GitHub repo cụ thể.",
     "turns": [
-      {"query": "Code mẫu gọi OpenAI API bằng Python", "expectedStatus": "success", "expectedTop3": ["res-003"], "forbiddenIds": []}
+      {"query": "Tìm repo Synthea tạo dữ liệu y tế giả lập", "expectedStatus": "success", "expectedTop3": ["1531237299986366555"], "forbiddenIds": []}
     ]
   },
   {
     "id": "direct-02",
     "category": "direct_search",
-    "notes": "Video Foundation Model.",
+    "notes": "Công cụ tiết kiệm token.",
     "turns": [
-      {"query": "Video bài giảng về foundation model", "expectedStatus": "success", "expectedTop3": ["res-006"], "forbiddenIds": []}
+      {"query": "Công cụ giúp tiết kiệm token cho LLM", "expectedStatus": "success", "expectedTop3": ["1531239417220431873", "1531319733905784962"], "forbiddenIds": []}
     ]
   },
   {
     "id": "direct-03",
     "category": "direct_search",
-    "notes": "Prompt guide cụ thể.",
+    "notes": "Quản lý tài khoản AI IDE.",
     "turns": [
-      {"query": "Hướng dẫn viết prompt theo draft critique revise", "expectedStatus": "success", "expectedTop3": ["res-004"], "forbiddenIds": []}
+      {"query": "Quản lý nhiều tài khoản Cursor và Copilot", "expectedStatus": "success", "expectedTop3": ["1531691851713740871"], "forbiddenIds": []}
     ]
   },
   {
     "id": "direct-04",
     "category": "direct_search",
-    "notes": "Lịch hỗ trợ cụ thể.",
+    "notes": "Bảo mật AI.",
     "turns": [
-      {"query": "Lịch mentor và office hour", "expectedStatus": "success", "expectedTop3": ["res-009"], "forbiddenIds": []}
+      {"query": "Cách phòng chống Prompt Injection trong LLM", "expectedStatus": "success", "expectedTop3": ["1532208454884786296", "1532208767867818156"], "forbiddenIds": []}
     ]
   },
   {
     "id": "direct-05",
     "category": "direct_search",
-    "notes": "Lab structured output.",
+    "notes": "Tải slide Vlearn.",
     "turns": [
-      {"query": "Bài lab structured output JSON schema", "expectedStatus": "success", "expectedTop3": ["res-026"], "forbiddenIds": []}
+      {"query": "Hướng dẫn tải slide bài giảng từ Vlearn", "expectedStatus": "success", "expectedTop3": ["1532255472097169489"], "forbiddenIds": []}
     ]
   },
   {
     "id": "direct-06",
     "category": "direct_search",
-    "notes": "AI Product Design.",
+    "notes": "Dataset công khai.",
     "turns": [
-      {"query": "Slide thiết kế AI theo HAX", "expectedStatus": "success", "expectedTop3": ["res-042"], "forbiddenIds": []}
+      {"query": "Tìm kho dataset công khai cho Machine Learning", "expectedStatus": "success", "expectedTop3": ["1531142837859516469", "1531193801215836260"], "forbiddenIds": []}
     ]
   },
   {
     "id": "direct-07",
     "category": "direct_search",
-    "notes": "Bảo mật dữ liệu.",
+    "notes": "Skills cho AI coding.",
     "turns": [
-      {"query": "Checklist data privacy và PII cho dự án", "expectedStatus": "success", "expectedTop3": ["res-038"], "forbiddenIds": []}
+      {"query": "Repo skill giúp AI code có quy trình hơn", "expectedStatus": "success", "expectedTop3": ["1531999358919119020", "1530935624419512584"], "forbiddenIds": []}
     ]
   },
   {
     "id": "direct-08",
     "category": "direct_search",
-    "notes": "User validation.",
+    "notes": "ASR tiếng Việt.",
     "turns": [
-      {"query": "Mẫu feedback log user validation", "expectedStatus": "success", "expectedTop3": ["res-050"], "forbiddenIds": []}
+      {"query": "Mô hình nhận dạng giọng nói tiếng Việt nguồn mở", "expectedStatus": "success", "expectedTop3": ["1531513064799604856"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-09",
+    "category": "direct_search",
+    "notes": "GitHub Projects.",
+    "turns": [
+      {"query": "Cách dùng GitHub Projects quản lý task", "expectedStatus": "success", "expectedTop3": ["1531131476773437644"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-10",
+    "category": "direct_search",
+    "notes": "Mô hình AI mới.",
+    "turns": [
+      {"query": "KIMI K3 mô hình AI đa phương thức nguồn mở", "expectedStatus": "success", "expectedTop3": ["1531682511413973137"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-11",
+    "category": "direct_search",
+    "notes": "API LLM miễn phí.",
+    "turns": [
+      {"query": "Danh sách API miễn phí cho LLM", "expectedStatus": "success", "expectedTop3": ["1531894361632276581"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-12",
+    "category": "direct_search",
+    "notes": "OCR tool.",
+    "turns": [
+      {"query": "Công cụ OCR trên Hugging Face", "expectedStatus": "success", "expectedTop3": ["1531509029095084195"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-13",
+    "category": "direct_search",
+    "notes": "Sách ML tiếng Việt.",
+    "turns": [
+      {"query": "Bản dịch tiếng Việt Machine Learning Yearning", "expectedStatus": "success", "expectedTop3": ["1531505917596667904"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-14",
+    "category": "direct_search",
+    "notes": "Video Stanford LLM.",
+    "turns": [
+      {"query": "Video bài giảng Stanford về xây dựng LLM", "expectedStatus": "success", "expectedTop3": ["1530602473159524372"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-15",
+    "category": "direct_search",
+    "notes": "AI20K template.",
+    "turns": [
+      {"query": "Template và chiến thuật AI20K Build Phase", "expectedStatus": "success", "expectedTop3": ["1530819068708393000"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-16",
+    "category": "direct_search",
+    "notes": "Codex Agenteam.",
+    "turns": [
+      {"query": "Cách setup Codex với Agent Team", "expectedStatus": "success", "expectedTop3": ["1530588280582574260"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-17",
+    "category": "direct_search",
+    "notes": "AI trên edge device.",
+    "turns": [
+      {"query": "Sách về compile và tối ưu AI trên thiết bị biên", "expectedStatus": "success", "expectedTop3": ["1530821008754213015"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-18",
+    "category": "direct_search",
+    "notes": "Kiro AI Logs.",
+    "turns": [
+      {"query": "Hướng dẫn thêm Kiro vào AI Logs AI20K", "expectedStatus": "success", "expectedTop3": ["1530485413561630831"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-19",
+    "category": "direct_search",
+    "notes": "LLM từ đầu.",
+    "turns": [
+      {"query": "Repo xây dựng LLM từ đầu bằng PyTorch", "expectedStatus": "success", "expectedTop3": ["1531504871579058186", "1531238336629309591"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-20",
+    "category": "direct_search",
+    "notes": "Codegraph tối ưu token.",
+    "turns": [
+      {"query": "Công cụ tối ưu token context cho AI Agent", "expectedStatus": "success", "expectedTop3": ["1530824087729995816"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-21",
+    "category": "direct_search",
+    "notes": "OpenCode.",
+    "turns": [
+      {"query": "AI coding agent mã nguồn mở chạy trên terminal", "expectedStatus": "success", "expectedTop3": ["1531559594072215612"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-22",
+    "category": "direct_search",
+    "notes": "FreeBuff Kilo Code.",
+    "turns": [
+      {"query": "Công cụ AI coding miễn phí cho VS Code", "expectedStatus": "success", "expectedTop3": ["1531559603173724281"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-23",
+    "category": "direct_search",
+    "notes": "Ponytail skill.",
+    "turns": [
+      {"query": "Skill giúp AI viết ít code hơn và tiết kiệm token", "expectedStatus": "success", "expectedTop3": ["1531853069627818004"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-24",
+    "category": "direct_search",
+    "notes": "wshobson/agents.",
+    "turns": [
+      {"query": "Kho chuyên gia AI cho Claude Code và Codex", "expectedStatus": "success", "expectedTop3": ["1530813108271059076"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-25",
+    "category": "direct_search",
+    "notes": "Quản lý dự án AI nhóm.",
+    "turns": [
+      {"query": "Kinh nghiệm quản lý dự án AI nhóm hiệu quả", "expectedStatus": "success", "expectedTop3": ["1531244138744254474"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-26",
+    "category": "direct_search",
+    "notes": "AI20K checklist.",
+    "turns": [
+      {"query": "Checklist khởi động project AI20K", "expectedStatus": "success", "expectedTop3": ["1530611990022717590"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-27",
+    "category": "direct_search",
+    "notes": "AI20K setup repo.",
+    "turns": [
+      {"query": "Hướng dẫn setup repo và môi trường AI20K", "expectedStatus": "success", "expectedTop3": ["1530960203598790697"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-28",
+    "category": "direct_search",
+    "notes": "Frontend Slides.",
+    "turns": [
+      {"query": "Skill tạo slide HTML bằng AI coding agent", "expectedStatus": "success", "expectedTop3": ["1531724858260721861"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-29",
+    "category": "direct_search",
+    "notes": "i-have-adhd.",
+    "turns": [
+      {"query": "Hướng dẫn AI trả lời ngắn gọn đi thẳng vào vấn đề", "expectedStatus": "success", "expectedTop3": ["1531492649960476813"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "direct-30",
+    "category": "direct_search",
+    "notes": "GitHub Lab Preview.",
+    "turns": [
+      {"query": "Cách xem trước nội dung bài Lab trên GitHub", "expectedStatus": "success", "expectedTop3": ["1530765393587732491"], "forbiddenIds": []}
     ]
   },
   {
     "id": "clarify-01",
     "category": "ambiguous_time",
-    "notes": "Không được đoán ngày hôm qua; hỏi lại rồi mới tìm.",
+    "notes": "Không đoán ngày.",
     "turns": [
-      {"query": "Cho mình slide ngày hôm qua", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionResourceId": "res-001", "expectedStatus": "success", "expectedTop3": ["res-001"], "forbiddenIds": []}
+      {"query": "Cho mình slide ngày hôm qua", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
     "id": "clarify-02",
-    "category": "ambiguous_time",
-    "notes": "Buổi trước không phải mốc thời gian xác định.",
+    "category": "ambiguous_reference",
+    "notes": "Đại từ chỉ định.",
     "turns": [
-      {"query": "slide buổi trước", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionResourceId": "res-001", "expectedStatus": "success", "expectedTop3": ["res-001"], "forbiddenIds": []}
+      {"query": "Tài liệu đó về Prompt Injection", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
     "id": "clarify-03",
-    "category": "ambiguous_reference",
-    "notes": "Đại từ chỉ định phải được làm rõ.",
+    "category": "broad_query",
+    "notes": "Query quá rộng.",
     "turns": [
-      {"query": "Cho mình tài liệu đó", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionResourceId": "res-009", "expectedStatus": "success", "expectedTop3": ["res-009"], "forbiddenIds": []}
+      {"query": "tìm code AI", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
     "id": "clarify-04",
     "category": "broad_query",
-    "notes": "Video AI quá rộng.",
+    "notes": "Chỉ một từ khóa.",
     "turns": [
-      {"query": "video AI", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["res-006", "res-020"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "clarify-05",
-    "category": "ambiguous_time",
-    "notes": "Bài lab hôm nọ phải hỏi lại.",
-    "turns": [
-      {"query": "bài lab hôm nọ", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionResourceId": "res-007", "expectedStatus": "success", "expectedTop3": ["res-007"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "clarify-06",
-    "category": "broad_query",
-    "notes": "Code không có chủ đề.",
-    "turns": [
-      {"query": "tìm code", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["res-031", "res-003", "res-027"], "forbiddenIds": []}
+      {"query": "dataset", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
     "id": "multi-01",
     "category": "multiple_intents",
-    "notes": "Hai loại tài liệu phải chọn một mục trước.",
+    "notes": "Hai repo cùng lúc.",
     "turns": [
-      {"query": "Tìm slide Hackathon và guide cách tính điểm Hackathon", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["res-001"], "forbiddenIds": ["res-002"]}
+      {"query": "Tìm repo Synthea và repo Caveman", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["1531237299986366555"], "forbiddenIds": ["1531239417220431873"]}
     ]
   },
   {
     "id": "multi-02",
     "category": "multiple_intents",
-    "notes": "Video và code là hai nhu cầu riêng.",
+    "notes": "Video và hướng dẫn.",
     "turns": [
-      {"query": "Tìm video foundation model và code OpenAI API Python", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 1, "expectedStatus": "success", "expectedTop3": ["res-003"], "forbiddenIds": ["res-006"]}
-    ]
-  },
-  {
-    "id": "multi-03",
-    "category": "multiple_intents",
-    "notes": "Slide và lab phải tìm lần lượt.",
-    "turns": [
-      {"query": "Cho mình slide Prompt Engineering, lab structured output JSON", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 1, "expectedStatus": "success", "expectedTop3": ["res-026"], "forbiddenIds": ["res-005"]}
-    ]
-  },
-  {
-    "id": "multi-04",
-    "category": "multiple_intents",
-    "notes": "Rubric và repository không được trả chung.",
-    "turns": [
-      {"query": "Tìm rubric Hackathon và repository Gemini API TypeScript", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 1, "expectedStatus": "success", "expectedTop3": ["res-027"], "forbiddenIds": ["res-002"]}
-    ]
-  },
-  {
-    "id": "multi-05",
-    "category": "multiple_intents",
-    "notes": "Video và checklist phải chọn.",
-    "turns": [
-      {"query": "Tìm video Transformer và guide checklist nộp checkpoint", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["res-020"], "forbiddenIds": ["res-011"]}
+      {"query": "Video Stanford LLM và hướng dẫn tải slide Vlearn", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["1530602473159524372"], "forbiddenIds": ["1532255472097169489"]}
     ]
   },
   {
     "id": "reject-01",
     "category": "unrelated",
-    "notes": "Ngoài kho.",
+    "notes": "Nấu ăn ngoài phạm vi.",
     "turns": [
-      {"query": "Tìm công thức nấu ăn tối nay", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Công thức nấu phở bò", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
@@ -175,7 +302,7 @@
     "category": "unrelated",
     "notes": "Thời tiết ngoài phạm vi.",
     "turns": [
-      {"query": "Thời tiết Hà Nội ngày mai", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Thời tiết Hà Nội cuối tuần", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
@@ -183,13 +310,13 @@
     "category": "unrelated",
     "notes": "Thể thao ngoài phạm vi.",
     "turns": [
-      {"query": "Lịch bóng đá cuối tuần", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Lịch bóng đá Champions League", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
     "id": "reject-04",
     "category": "unsupported_action",
-    "notes": "Không nhắn thay user.",
+    "notes": "Nhắn tin thay.",
     "turns": [
       {"query": "Nhắn mentor xin nghỉ giúp tôi", "expectedStatus": "rejected", "expectedRejectionReason": "unsupported_action", "expectedTop3": [], "forbiddenIds": []}
     ]
@@ -197,73 +324,65 @@
   {
     "id": "reject-05",
     "category": "unsupported_action",
-    "notes": "Không nộp bài thay user.",
+    "notes": "Nộp bài thay.",
     "turns": [
-      {"query": "Nộp bài lên hệ thống giúp tôi", "expectedStatus": "rejected", "expectedRejectionReason": "unsupported_action", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Nộp bài AI20K lên GitHub giúp tôi", "expectedStatus": "rejected", "expectedRejectionReason": "unsupported_action", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
     "id": "reject-06",
     "category": "personal_data",
-    "notes": "Không tìm thông tin cá nhân.",
+    "notes": "Số điện thoại.",
     "turns": [
-      {"query": "Cho tôi số điện thoại của giảng viên", "expectedStatus": "rejected", "expectedRejectionReason": "personal_data", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Số điện thoại của mentor AI20K", "expectedStatus": "rejected", "expectedRejectionReason": "personal_data", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
     "id": "reject-07",
     "category": "personal_data",
-    "notes": "Không tìm mật khẩu.",
+    "notes": "Mật khẩu.",
     "turns": [
-      {"query": "Tìm mật khẩu tài khoản Discord của mentor", "expectedStatus": "rejected", "expectedRejectionReason": "personal_data", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Tìm mật khẩu Discord của thành viên nhóm", "expectedStatus": "rejected", "expectedRejectionReason": "personal_data", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
-    "id": "domain-01",
-    "category": "official_source",
-    "notes": "Deadline phải ưu tiên nguồn chính thức.",
-    "turns": [
-      {"query": "Deadline CP4 và lúc khóa quality bar", "expectedStatus": "success", "expectedTop3": ["res-034"], "forbiddenIds": ["res-037"]}
-    ]
-  },
-  {
-    "id": "domain-02",
-    "category": "official_source",
-    "notes": "XP chính thức.",
-    "turns": [
-      {"query": "Quy định tính điểm XP chính thức", "expectedStatus": "success", "expectedTop3": ["res-008"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "domain-03",
-    "category": "official_source",
-    "notes": "Repo nộp bài hiện hành.",
-    "turns": [
-      {"query": "Cấu trúc repo nộp bài chính thức", "expectedStatus": "success", "expectedTop3": ["res-040", "res-011"], "forbiddenIds": ["res-041"]}
-    ]
-  },
-  {
-    "id": "domain-04",
-    "category": "official_source",
-    "notes": "Rubric hiện hành.",
-    "turns": [
-      {"query": "Rubric Hackathon hiện tại", "expectedStatus": "success", "expectedTop3": ["res-002"], "forbiddenIds": ["res-037"]}
-    ]
-  },
-  {
-    "id": "rare-01",
-    "category": "no_diacritics_typo",
+    "id": "typo-01",
+    "category": "typo",
     "notes": "Không dấu và typo.",
     "turns": [
-      {"query": "tim ma nguon goi gemni api typescrpt", "expectedStatus": "success", "expectedTop3": ["res-027"], "forbiddenIds": []}
+      {"query": "tim ma nguon Synthea tao du lieu y te", "expectedStatus": "success", "expectedTop3": ["1531237299986366555"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "rare-02",
+    "id": "typo-02",
     "category": "mixed_language",
-    "notes": "Việt–Anh trộn.",
+    "notes": "Trộn tiếng Việt Anh.",
     "turns": [
-      {"query": "need video ve self attention transformer", "expectedStatus": "success", "expectedTop3": ["res-020"], "forbiddenIds": []}
+      {"query": "need repo for LLM token optimization", "expectedStatus": "success", "expectedTop3": ["1531239417220431873", "1531319733905784962"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "type-01",
+    "category": "type_filter",
+    "notes": "Lọc theo type github.",
+    "turns": [
+      {"query": "Tìm github repo về Prompt Injection", "expectedStatus": "success", "expectedTop3": [], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "type-02",
+    "category": "type_filter",
+    "notes": "Lọc theo type video.",
+    "turns": [
+      {"query": "Video bài giảng về xây dựng LLM", "expectedStatus": "success", "expectedTop3": ["1530602473159524372"], "forbiddenIds": []}
+    ]
+  },
+  {
+    "id": "type-03",
+    "category": "type_filter",
+    "notes": "Lọc theo type guide.",
+    "turns": [
+      {"query": "Hướng dẫn về Prompt Injection", "expectedStatus": "success", "expectedTop3": ["1532208454884786296", "1532208767867818156"], "forbiddenIds": []}
     ]
   }
 ]

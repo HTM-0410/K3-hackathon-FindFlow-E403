@@ -1,0 +1,100 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531957892285202544",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Folder Structure as Agent Architecture: Có cần Multi-Agent Framework?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:53:53.0839228+07:00",
+  "messages": [
+    {
+      "id": "1531957892285202544",
+      "type": "Default",
+      "timestamp": "2026-07-29T16:33:43.922+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Có một paper mình đã đọc và thấy khá thú vị về cách xây dựng AI Agent Workflow: **“Interpretable Context Methodology: Folder Structure as Agent Architecture”**.\n\nÝ tưởng chính khá đơn giản nhưng mình thấy rất đáng suy nghĩ:\n\n**Không phải workflow AI nào cũng cần multi-agent framework.**\n\nVí dụ một workflow:\n\n**Research → Review → Write → Review → Produce**\n\nThay vì build một hệ thống multi-agent phức tạp để điều phối từng agent, có thể đơn giản hóa bằng:\n\n**Folder structure + Markdown files + Local scripts**\n\nVí dụ:\n\n```text\n01_research/\n    CONTEXT.md\n    output/\n\n02_script/\n    CONTEXT.md\n    output/\n\n03_production/\n    CONTEXT.md\n    output/\n```\n\nMỗi folder tương ứng với một stage. `CONTEXT.md` sẽ nói cho agent biết cần đọc gì, phải làm gì và output ở đâu. Output của stage trước trở thành input cho stage sau. Con người có thể review, chỉnh sửa output giữa các bước rồi mới cho agent chạy tiếp.\n\nĐiểm mình thấy hay nhất là:\n\n> **Folder structure không chỉ để lưu file, mà có thể trở thành một phần của Agent Architecture.**\n\nThay vì nhồi tất cả context của project vào một prompt khổng lồ, mỗi stage chỉ đưa cho agent đúng context mà nó cần. Thậm chí có thể dùng **một agent duy nhất**, nhưng ở mỗi stage agent sẽ \"đóng vai\" khác nhau nhờ context cung cấp khác nhau.\n\nCách này khá hợp với workflow **sequential + repeatable + human-in-the-loop**: dễ đọc, dễ debug, dễ chỉnh sửa và không cần quá nhiều infrastructure.\n\nTất nhiên, multi-agent framework không phải là không cần thiết. Nếu hệ thống cần real-time collaboration, parallel execution, dynamic routing hay concurrency cao thì framework vẫn rất hữu ích.\n\n**Takeaway của mình:**\n\nTrước khi nghĩ *\"Mình nên dùng framework multi-agent nào?\"*, có lẽ nên hỏi trước:\n\n> *\"Workflow của mình có thực sự cần orchestration phức tạp đến vậy không?\"*\n\nĐôi khi, thứ mình cần chỉ là một **folder structure được thiết kế đủ tốt**.\n\nPaper: https://arxiv.org/abs/2603.16021v2\n\n**Jake Van Clief** trên Youtube https://www.youtube.com/@JEVanClief",
+      "author": {
+        "id": "1529720565739290728",
+        "name": "anhminh2301",
+        "discriminator": "0000",
+        "nickname": "T057-Anh Minh-01475",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529720565739290728/ea5ec20f1049d5379fcf71428feaed33.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531957892536864808",
+          "url": "https://cdn.discordapp.com/attachments/1531957892285202544/1531957892536864808/Screenshot_2026-07-29_162856.png?ex=6a6c6bf7&is=6a6b1a77&hm=ceec95884bf14bd89b0ffa7bdb68ce58a1e17edea3eea88f633298cdc5576966&",
+          "fileName": "Screenshot_2026-07-29_162856.png",
+          "fileSizeBytes": 32082
+        },
+        {
+          "id": "1531957893019074560",
+          "url": "https://cdn.discordapp.com/attachments/1531957892285202544/1531957893019074560/Screenshot_2026-07-29_162952.png?ex=6a6c6bf8&is=6a6b1a78&hm=dd5e9d22571072b5822c0312a510d596b66dd77599c00bbc9e1483e590f4eb4a&",
+          "fileName": "Screenshot_2026-07-29_162952.png",
+          "fileSizeBytes": 25314
+        }
+      ],
+      "embeds": [
+        {
+          "title": "Interpretable Context Methodology: Folder Structure as Agentic Arch...",
+          "url": "https://arxiv.org/abs/2603.16021v2",
+          "timestamp": null,
+          "description": "Current approaches to AI agent orchestration typically involve building multi-agent frameworks that manage context passing, memory, error handling, and step coordination through code. These frameworks work well for complex, concurrent systems. But for sequential workflows where a human reviews output at each step, they introduce engineering over...",
+          "color": "#FFFFFF",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/HUrD-HZewQUxSbAMnSSFsIbyHy5XOTAomBRxj_HAOMc/https/static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
+            "canonicalUrl": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
+            "width": 1000,
+            "height": 1000
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "Jake Van Clief",
+          "url": "https://www.youtube.com/@JEVanClief",
+          "timestamp": null,
+          "description": "In a world where everyone is teaching you left and right, I teach up and down.",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/5YRt5HohKP3vEFG2qhAgC_59yq0bWX6lB5f4t0vRCWw/https/yt3.googleusercontent.com/-B2FUfDN__XCtiR6APjLhSv7qQLuRW7uWqLu4G-AUBhsojnIef55SaEqxiVNgyV557x9A3EF_YM%3Ds900-c-k-c0x00ffffff-no-rj",
+            "canonicalUrl": "https://yt3.googleusercontent.com/-B2FUfDN__XCtiR6APjLhSv7qQLuRW7uWqLu4G-AUBhsojnIef55SaEqxiVNgyV557x9A3EF_YM=s900-c-k-c0x00ffffff-no-rj",
+            "width": 900,
+            "height": 900
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

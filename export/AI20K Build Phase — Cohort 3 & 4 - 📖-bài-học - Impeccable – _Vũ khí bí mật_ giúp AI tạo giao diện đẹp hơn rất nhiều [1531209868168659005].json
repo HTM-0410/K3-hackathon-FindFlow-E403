@@ -1,0 +1,111 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531209868168659005",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Impeccable – \"Vũ khí bí mật\" giúp AI tạo giao diện đẹp hơn rất nhiều",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:09.7229801+07:00",
+  "messages": [
+    {
+      "id": "1531209868168659005",
+      "type": "Default",
+      "timestamp": "2026-07-27T15:01:21.075+07:00",
+      "timestampEdited": "2026-07-27T15:02:05.909+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Nếu bạn đang dùng Claude Code, Codex, Cursor hay GitHub Copilot để tạo frontend thì chắc hẳn đã gặp tình trạng:\n\nFont Inter xuất hiện khắp nơi.\nGradient tím-xanh quen thuộc.\nCard lồng card.\nUI nhìn rất \"AI generated\", thiếu cá tính.\n\nĐó chính là vấn đề mà Impeccable được tạo ra để giải quyết. Thay vì là một framework UI hay component library, Impeccable là một bộ \"design skill\" giúp AI hiểu cách thiết kế giao diện như một designer chuyên nghiệp.\n\nImpeccable có gì?\n\n✨ 23 design commands\n\nChỉ cần các lệnh như:\n\n/polish → làm đẹp giao diện\n/critique → đánh giá UX/UI\n/audit → kiểm tra accessibility, responsive\n/distill → tối giản thiết kế\n/animate → thêm animation hợp lý\n/colorize, /layout, /typeset...\n\nAI sẽ biết chính xác bạn muốn cải thiện phần nào thay vì phải viết prompt dài dòng.\n\n✨ 7 bộ kiến thức thiết kế\n\nBao gồm:\n\nTypography\nColor\nMotion\nLayout & Spatial\nResponsive\nInteraction\nUX Writing\n\nNhờ đó AI đưa ra quyết định thiết kế có cơ sở hơn thay vì đoán.\n\n✨ Loại bỏ các \"AI UI anti-pattern\"\n\nImpeccable còn chỉ rõ những lỗi rất phổ biến của AI như:\n\ndùng font mặc định quá nhiều;\ngradient lạm dụng;\nkhoảng trắng thiếu cân đối;\ncard chồng card;\nicon đặt trên mọi tiêu đề...\n\nĐiều này giúp sản phẩm nhìn tự nhiên và chuyên nghiệp hơn đáng kể.\n\nKhi nào nên dùng?\n\nRất phù hợp nếu bạn đang xây:\n\nLanding Page\nDashboard\nSaaS\nPortfolio\nAdmin Panel\nWeb App bằng AI\n\nĐặc biệt hữu ích khi bạn không phải designer nhưng vẫn muốn AI sinh ra giao diện có chất lượng cao.\n\nLink dự án\n\nGitHub: [pbakaus/impeccable](https://github.com/pbakaus/impeccable?utm_source=chatgpt.com)",
+      "author": {
+        "id": "940054719789948958",
+        "name": "brainluoibieng",
+        "discriminator": "0000",
+        "nickname": "G25-T195-Phan Trọng Đạt - 01138",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - pbakaus/impeccable: The design language that makes your AI...",
+          "url": "https://github.com/pbakaus/impeccable?utm_source=chatgpt.com",
+          "timestamp": null,
+          "description": "The design language that makes your AI harness better at design. - pbakaus/impeccable",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/Vv0E2CwQVszg7gSCHGWrJNdF2maTQMfNDdt8ADq9b6Q/https/opengraph.githubassets.com/2817f236a08562b0ab37021d348435300db248e373cfb5145573b5f5f7a90132/pbakaus/impeccable",
+            "canonicalUrl": "https://opengraph.githubassets.com/2817f236a08562b0ab37021d348435300db248e373cfb5145573b5f5f7a90132/pbakaus/impeccable",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "940054719789948958",
+              "name": "brainluoibieng",
+              "discriminator": "0000",
+              "nickname": "G25-T195-Phan Trọng Đạt - 01138",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1079747273052921947",
+              "name": "kiuhip",
+              "discriminator": "0000",
+              "nickname": "kiuhip",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "✨",
+          "code": "sparkles",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

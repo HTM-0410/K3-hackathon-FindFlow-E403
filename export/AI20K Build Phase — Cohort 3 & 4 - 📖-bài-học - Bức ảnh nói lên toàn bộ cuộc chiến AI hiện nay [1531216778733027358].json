@@ -1,0 +1,62 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531216778733027358",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Bức ảnh nói lên toàn bộ cuộc chiến AI hiện nay",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:53:17.5455768+07:00",
+  "messages": [
+    {
+      "id": "1531216778733027358",
+      "type": "Default",
+      "timestamp": "2026-07-27T15:28:48.682+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1383512641464434750",
+        "name": "baonguyen0706",
+        "discriminator": "0000",
+        "nickname": "T022 - Nguyễn Gia Bảo - 01938",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [
+        {
+          "id": "1531216779232415867",
+          "url": "https://cdn.discordapp.com/attachments/1531216778733027358/1531216779232415867/message.txt?ex=6a6c5cc0&is=6a6b0b40&hm=6dd14ed2d053a201fd7e64c086db67d2dd7a84a4fc3da684fc4bd38ae6353e97&",
+          "fileName": "message.txt",
+          "fileSizeBytes": 5237
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

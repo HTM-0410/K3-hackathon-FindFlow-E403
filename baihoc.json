@@ -1,0 +1,226 @@
+[
+  {
+    "resource_type": "github",
+    "title": "Caveman: Giảm nhiễu khi vibe coding với AI",
+    "summary": "Caveman là một plugin giúp các coding agent như Claude Code, Codex, Cursor hay Gemini CLI trả lời ngắn gọn, trực tiếp hơn nhưng vẫn giữ nguyên code, command, tên API và thông báo lỗi. Nó giúp giảm output token, đọc kết quả nhanh hơn, dễ tìm nguyên nhân và sửa lỗi, giảm nội dung dư thừa trong context và làm việc hiệu quả hơn với nhiều tool và subagent. Repo còn tích hợp các module như caveman-review, caveman-commit, caveman-stats, caveman-compress và cavecrew.",
+    "topic": "AI Coding, Prompt Engineering, Productivity Tools",
+    "tags": [
+      "AI",
+      "coding",
+      "plugin",
+      "prompt engineering",
+      "productivity",
+      "Claude Code",
+      "Codex",
+      "Cursor",
+      "Gemini CLI"
+    ],
+    "keywords": [
+      "Caveman",
+      "AI coding agent",
+      "prompt optimization",
+      "code review",
+      "commit message",
+      "token statistics",
+      "context compression"
+    ],
+    "confidence": 0.95,
+    "id": "1531294904481742981",
+    "discord_url": "https://discord.com/channels/1526532830627102781/1531294904481742981/1531294904481742981",
+    "source_url": "https://github.com/JuliusBrussee/caveman",
+    "category_name": "📖-bài-học",
+    "channel_name": "Caveman: Giảm nhiễu khi vibe coding với AI",
+    "shared_by": "T090 - Nguyễn Văn Minh - 01972",
+    "is_comment": false
+  },
+  {
+    "resource_type": "guide",
+    "title": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+    "summary": "Bài viết thảo luận về các phương pháp phòng chống Prompt Injection trong các mô hình AI lớn. Thay vì chỉ dựa vào System Prompt, các công ty như OpenAI, Google hay Anthropic sử dụng cấu trúc phòng thủ đa lớp (defense in depth). System Prompt chỉ là một lớp mỏng, tập trung vào 'Behavior Direct' nhưng không tạo ra security boundary. Các lớp bảo vệ khác bao gồm Authentication, Input Classifier, Prompt Builder, LLM, Policy Checker, Tool Permission, Sandbox, Output Classifier và Audit Log. Bài viết cũng đề cập đến nguy hiểm từ 'untrusted context' như website, PDF, email, GitHub README, Slack, Notion, Google Docs và RAG documents.",
+    "topic": "AI Security, Prompt Injection, Large Language Models",
+    "tags": [
+      "AI security",
+      "prompt injection",
+      "LLM",
+      "system prompt",
+      "defense in depth",
+      "authentication",
+      "input classifier",
+      "policy checker",
+      "untrusted context"
+    ],
+    "keywords": [
+      "Prompt Injection",
+      "AI security",
+      "LLM defense",
+      "System Prompt limitations",
+      "multi-layered security",
+      "untrusted context"
+    ],
+    "confidence": 0.95,
+    "id": "1531687104806125773",
+    "discord_url": "https://discord.com/channels/1526532830627102781/1531687104806125773/1531687104806125773",
+    "source_url": "https://arxiv.org/abs/2604.23887",
+    "category_name": "📖-bài-học",
+    "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+    "shared_by": "T015 - Nguyễn Hoàng Anh - 01186",
+    "is_comment": false
+  },
+  {
+    "resource_type": "guide",
+    "title": "Prompt injection không phải lúc nào cũng đến từ người dùng",
+    "summary": "Tin nhắn bổ sung cho thấy prompt injection không chỉ đến từ người dùng mà còn từ các nguồn 'untrusted context' như website, PDF, email, GitHub README, Slack, Notion, Google Docs và RAG documents. Điều này nhấn mạnh sự phức tạp của việc bảo mật AI.",
+    "topic": "AI Security, Prompt Injection, Untrusted Context",
+    "tags": [
+      "AI security",
+      "prompt injection",
+      "untrusted context",
+      "LLM"
+    ],
+    "keywords": [
+      "Prompt Injection",
+      "AI security",
+      "untrusted context",
+      "data sources"
+    ],
+    "confidence": 0.9,
+    "id": "1531693146415562912",
+    "discord_url": "https://discord.com/channels/1526532830627102781/1531687104806125773/1531693146415562912",
+    "source_url": "https://huggingface.co/papers/2302.12173",
+    "category_name": "📖-bài-học",
+    "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+    "shared_by": "T015 - Nguyễn Hoàng Anh - 01186",
+    "is_comment": true
+  },
+  {
+    "resource_type": "guide",
+    "title": "Folder Structure as Agent Architecture: Có cần Multi-Agent Framework?",
+    "summary": "Bài viết giới thiệu ý tưởng 'Interpretable Context Methodology: Folder Structure as Agent Architecture' từ một paper, cho rằng không phải workflow AI nào cũng cần multi-agent framework phức tạp. Thay vào đó, có thể đơn giản hóa bằng cách sử dụng cấu trúc thư mục, file Markdown và script cục bộ. Mỗi folder đại diện cho một stage, với CONTEXT.md hướng dẫn agent. Output của stage trước trở thành input cho stage sau, cho phép con người review và chỉnh sửa. Cách này phù hợp với workflow tuần tự, lặp lại và có sự can thiệp của con người, giúp dễ đọc, debug và chỉnh sửa. Nó cũng cho phép một agent duy nhất 'đóng vai' khác nhau ở mỗi stage nhờ context được cung cấp.",
+    "topic": "AI Agent Workflow, Agent Architecture, Software Design",
+    "tags": [
+      "AI agent",
+      "workflow",
+      "architecture",
+      "folder structure",
+      "multi-agent framework",
+      "human-in-the-loop",
+      "software design"
+    ],
+    "keywords": [
+      "AI Agent Workflow",
+      "Folder Structure",
+      "Agent Architecture",
+      "Multi-Agent Framework",
+      "Interpretable Context Methodology",
+      "sequential workflow",
+      "human-in-the-loop"
+    ],
+    "confidence": 0.95,
+    "id": "1531957892285202544",
+    "discord_url": "https://discord.com/channels/1526532830627102781/1531957892285202544/1531957892285202544",
+    "source_url": "https://arxiv.org/abs/2603.16021v2",
+    "category_name": "📖-bài-học",
+    "channel_name": "Folder Structure as Agent Architecture: Có cần Multi-Agent Framework?",
+    "shared_by": "T057-Anh Minh-01475",
+    "is_comment": false
+  },
+  {
+    "resource_type": "github",
+    "title": "Impeccable – \"Vũ khí bí mật\" giúp AI tạo giao diện đẹp hơn rất nhiều",
+    "summary": "Impeccable là một bộ 'design skill' giúp AI tạo ra giao diện người dùng chuyên nghiệp, tránh các lỗi thiết kế phổ biến của AI như font Inter, gradient tím-xanh, card lồng card và UI thiếu cá tính. Nó cung cấp 23 design commands (như /polish, /critique, /audit, /animate) và 7 bộ kiến thức thiết kế (Typography, Color, Motion, Layout & Spatial, Responsive, Interaction, UX Writing) để AI đưa ra quyết định thiết kế có cơ sở. Impeccable cũng chỉ rõ các 'AI UI anti-pattern' để loại bỏ. Công cụ này hữu ích cho việc xây dựng Landing Page, Dashboard, SaaS, Portfolio, Admin Panel và Web App bằng AI, đặc biệt cho những người không phải designer.",
+    "topic": "AI Design, UI/UX, Frontend Development, Design Tools",
+    "tags": [
+      "AI",
+      "design",
+      "UI/UX",
+      "frontend",
+      "design commands",
+      "design principles",
+      "AI UI anti-pattern",
+      "Impeccable"
+    ],
+    "keywords": [
+      "Impeccable",
+      "AI design",
+      "UI generation",
+      "design skills for AI",
+      "frontend development",
+      "design commands",
+      "AI UI anti-pattern"
+    ],
+    "confidence": 0.95,
+    "id": "1531209868168659005",
+    "discord_url": "https://discord.com/channels/1526532830627102781/1531209868168659005/1531209868168659005",
+    "source_url": "https://github.com/pbakaus/impeccable?utm_source=chatgpt.com",
+    "category_name": "📖-bài-học",
+    "channel_name": "Impeccable – \"Vũ khí bí mật\" giúp AI tạo giao diện đẹp hơn rất nhiều",
+    "shared_by": "G25-T195-Phan Trọng Đạt - 01138",
+    "is_comment": false
+  },
+  {
+    "resource_type": "guide",
+    "title": "[Deep Dive] Hiểu đúng vấn đề trước khi nghĩ đến giải pháp",
+    "summary": "Bài viết nhấn mạnh tầm quan trọng của việc hiểu rõ 'Problem Domain' (người dùng muốn đạt được gì) trước khi đề xuất 'Solution Domain' (hệ thống sẽ giải quyết bằng cách nào). Người dùng thường đưa ra giải pháp (ví dụ: 'cần export Excel') thay vì nhu cầu thực sự. Cần đặt câu hỏi sâu hơn để khám phá pain points và mục tiêu thật sự của người dùng. Việc này giúp team có nhiều lựa chọn giải pháp phù hợp hơn và tránh việc xây dựng tính năng không cần thiết. Phân tích yêu cầu không phải là ghi lại những gì người dùng muốn xây, mà là hiểu lý do tại sao họ cần nó.",
+    "topic": "Requirements Engineering, Problem Solving, Product Management",
+    "tags": [
+      "requirements engineering",
+      "problem domain",
+      "solution domain",
+      "pain points",
+      "product management",
+      "user needs",
+      "critical thinking"
+    ],
+    "keywords": [
+      "Requirements Engineering",
+      "Problem Domain",
+      "Solution Domain",
+      "user needs",
+      "pain points",
+      "product development",
+      "feature prioritization"
+    ],
+    "confidence": 0.95,
+    "id": "1531190081518436494",
+    "discord_url": "https://discord.com/channels/1526532830627102781/1531190081518436494/1531190081518436494",
+    "source_url": "https://drive.google.com/file/d/1dW29IS3AWPxgHXCuXufrWPl0AvIwj1Ay/view?usp=drive_link",
+    "category_name": "📖-bài-học",
+    "channel_name": "[Deep Dive] Hiểu đúng vấn đề trước khi nghĩ đến giải pháp",
+    "shared_by": "G16-T048-Hồ Ngọc Quỳnh",
+    "is_comment": false
+  },
+  {
+    "resource_type": "guide",
+    "title": "[Deep-dive] BEV – Góc nhìn “thượng đế” của xe tự hành",
+    "summary": "Bài viết giải thích về Bird’s-Eye View (BEV) trong xe tự hành, một phương pháp đưa thông tin từ camera/LiDAR về một bản đồ nhìn từ trên xuống. BEV giúp xe dễ dàng hiểu vị trí và khoảng cách giữa các vật thể, khắc phục hạn chế của camera truyền thống về khoảng cách và che khuất. Flow của BEV bao gồm chụp ảnh từ nhiều hướng, model tìm thông tin quan trọng, ước lượng vị trí trong không gian và gộp lại thành bản đồ BEV. Bài viết cũng so sánh camera (mạnh về 'vật gì?') và LiDAR (mạnh về 'ở đâu và cách bao xa?'), và cách kết hợp cả hai trong không gian BEV để hiểu ngữ nghĩa và giữ thông tin hình học. Ứng dụng của BEV bao gồm 3D Detection, nhận diện làn đường, tracking và occupancy.",
+    "topic": "Autonomous Driving, Computer Vision, Sensor Fusion, Robotics",
+    "tags": [
+      "autonomous driving",
+      "BEV",
+      "Bird’s-Eye View",
+      "computer vision",
+      "LiDAR",
+      "sensor fusion",
+      "3D detection",
+      "robotics"
+    ],
+    "keywords": [
+      "BEV",
+      "Bird’s-Eye View",
+      "autonomous vehicles",
+      "LiDAR",
+      "camera",
+      "sensor fusion",
+      "3D detection",
+      "RAV-DEV"
+    ],
+    "confidence": 0.95,
+    "id": "1531702674280415302",
+    "discord_url": "https://discord.com/channels/1526532830627102781/1531702674280415302/1531702674280415302",
+    "source_url": "https://arxiv.org/pdf/2205.13542",
+    "category_name": "📖-bài-học",
+    "channel_name": "[Deep-dive] BEV – Góc nhìn “thượng đế” của xe tự hành",
+    "shared_by": "GR16 - T112 - Lương Quốc Khánh",
+    "is_comment": false
+  }
+]

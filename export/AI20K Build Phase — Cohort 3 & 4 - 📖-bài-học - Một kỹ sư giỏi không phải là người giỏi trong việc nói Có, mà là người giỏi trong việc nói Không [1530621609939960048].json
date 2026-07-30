@@ -1,0 +1,170 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530621609939960048",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Một kỹ sư giỏi không phải là người giỏi trong việc nói Có, mà là người giỏi trong việc nói Không",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:41.3318096+07:00",
+  "messages": [
+    {
+      "id": "1530621609939960048",
+      "type": "Default",
+      "timestamp": "2026-07-26T00:03:49.384+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đây là một quan điểm mà mình phải mất rất nhiều thời gian mới nhận ra giá trị của nó. Tất nhiên, câu này không có ý nghĩa đùn đẩy, cứng đầu hay chống đối. Nó có nghĩa là một kỹ sư giỏi biết từ chối những việc làm lệch mục tiêu, quá tải nguồn lực, hoặc tạo thêm phức tạp mà không mang lại giá trị tương xứng.\n\nMình nhận ra rằng kỹ sư giỏi không phải là người nhồi thật nhiều công cụ vào sản phẩm, mà là người biết chọn đúng những thứ cần thiết nhất để biến một nhu cầu phức tạp thành một trải nghiệm đơn giản, nhanh và hiệu quả. \n\n“Nếu có thể tránh làm điều gì đó, chúng tôi sẽ tránh”, Jensen Huang từng phát biểu thẳng thắn như vậy. Với ông, năng lượng con người được xem như một loại tài nguyên khan hiếm – không thể dùng đại trà, không thể phân tán, càng không thể lãng phí cho những trận chiến vô nghĩa.\n\nVới cuộc thi lần này, ở giai đoạn đầu mình nghĩ đây cũng là yếu tố quan trọng nhất chỉ sau việc xác định đúng pain point của khách hàng. Điều này không phải dễ, thực ra mình thấy khó hơn rất nhiều so với việc “tống” thật nhiều công nghệ vào. Tuy nhiên nó sẽ giúp bạn và mình nâng cao giá trị của bản thân tụi mình hơn trong mắt các doanh nghiệp và tất nhiên cơ hội được xem xét giữ lại cũng sẽ được tăng lên khi doanh nghiệp thấy bạn có tư duy như vậy.\n\nĐây là một bài học nhớ đời của mình, quan điểm của các bạn như thế nào? Đừng ngần ngại mà chia sẻ thêm nhá!",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [
+        {
+          "id": "1530621610518909110",
+          "url": "https://cdn.discordapp.com/attachments/1530621609939960048/1530621610518909110/o_Vang_Hinh_Anh_Truyen_Thong_Tet_Nguyen_an_Viet_Nam_Anh_Ghep_Ngang.png?ex=6a6c2cb5&is=6a6adb35&hm=ef5e6e56cf80e5aa0a39b59969da1f9b3359771c8e3c0172009e562c505f0ee5&",
+          "fileName": "o_Vang_Hinh_Anh_Truyen_Thong_Tet_Nguyen_an_Viet_Nam_Anh_Ghep_Ngang.png",
+          "fileSizeBytes": 5743629
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 7,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "686586059408277579",
+              "name": "muwjc",
+              "discriminator": "0000",
+              "nickname": "Muwjc",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/686586059408277579/1a44c380d5684ca5e2cf239db959eac3.png?size=512"
+            },
+            {
+              "id": "757977434472579083",
+              "name": "chuongdev_",
+              "discriminator": "0000",
+              "nickname": "chuongdev",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/757977434472579083/534101dfded7970fb4d54ee115185ae2.png?size=512"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1408241222358798406",
+              "name": "tthuong2307_95830",
+              "discriminator": "0000",
+              "nickname": "Hường",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1529759543540580463",
+              "name": "minhha04",
+              "discriminator": "0000",
+              "nickname": "T135 - Hoàng Anh Minh - 01192",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531155186469310515",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:24:03.942+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đúng đúng đúng",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

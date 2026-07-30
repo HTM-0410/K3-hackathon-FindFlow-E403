@@ -33,6 +33,48 @@ const responseSchema = {
   required: ["status", "interpretedNeed", "results"],
 };
 
+// System prompt được tinh chỉnh cho bộ dữ liệu mới
+const SYSTEM_INSTRUCTION = `Bạn là bộ xếp hạng tài liệu cho Discord Knowledge Hub của khóa AI Thực Chiến.
+
+NHIỆM VỤ:
+- Chỉ xếp hạng và trả về resourceId có trong CATALOG.
+- Không được tạo, thay đổi hoặc đoán resourceId, title, URL.
+
+CÁCH XẾP HẠNG:
+1. Đọc kỹ query và từng resource trong catalog.
+2. Tính matchScore 0-100 dựa trên mức độ liên quan:
+   - 90-100: Title khớp chính xác với query
+   - 75-89: Summary hoặc topic khớp tốt
+   - 60-74: Tags hoặc keywords khớp
+   - 40-59: Có liên quan nhưng không chắc chắn
+   - <40: Không liên quan, không trả về
+
+3. Các trường để so sánh (theo thứ tự ưu tiên):
+   - title: Tiêu đề tài liệu (quan trọng nhất)
+   - summary: Mô tả tóm tắt nội dung
+   - topic: Chủ đề chính của tài liệu
+   - tags: Các tag phân loại
+   - keywords: Từ khóa liên quan
+   - type: Loại tài liệu (github, guide, video, announcement, slide, lab)
+
+4. Xử lý ngôn ngữ:
+   - Query tiếng Việt không dấu vẫn khớp với tiếng Việt có dấu
+   - Từ tiếng Anh khớp chính xác
+   - Từ viết tắt (LLM, AI, ML) được chấp nhận
+
+5. Trả về kết quả:
+   - Chỉ trả về các resource có matchScore >= 40
+   - Sắp xếp theo matchScore giảm dần
+   - Tối đa 5 kết quả
+   - Giải thích ngắn gọn lý do khớp trong matchReason
+   - Liệt kê các trường đã khớp trong matchedFields
+
+QUY TẮC:
+- Nếu không tìm thấy resource phù hợp: status = "no_match"
+- Nếu chỉ có kết quả không chắc chắn: status = "low_confidence"
+- Nếu tìm thấy kết quả tốt: status = "success"
+- Không được tạo resourceId giả hoặc thêm resource không có trong catalog`;
+
 export async function rankWithGemini(
   query: string,
   catalog: Resource[],
@@ -46,6 +88,20 @@ export async function rankWithGemini(
   const timeout = setTimeout(() => controller.abort(), 10_000);
 
   try {
+    // Chuẩn bị catalog với đầy đủ thông tin
+    const catalogData = catalog.map((resource) => ({
+      id: resource.id,
+      title: resource.title,
+      summary: resource.summary,
+      type: resource.type,
+      topic: resource.topic,
+      tags: resource.tags,
+      keywords: resource.keywords,
+      sourceChannel: resource.sourceChannel,
+      sharedBy: resource.sharedBy,
+      sharedAt: resource.sharedAt,
+    }));
+
     const response = await fetch(
       `${GEMINI_ENDPOINT}/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`,
       {
@@ -55,15 +111,7 @@ export async function rankWithGemini(
         body: JSON.stringify({
           systemInstruction: {
             parts: [{
-              text: [
-                "Bạn là bộ xếp hạng tài liệu cho khóa AI Thực Chiến, không phải chatbot.",
-                "Chỉ dùng resourceId có trong CATALOG; tuyệt đối không tạo title, URL hoặc ID mới.",
-                "Xét query theo title, summary, tags, topic, sourceChannel, sharedAt và isOfficial.",
-                "Với deadline, điểm, XP, quy định hoặc rubric, ưu tiên nguồn isOfficial=true.",
-                "Nếu không đủ căn cứ, dùng low_confidence hoặc no_match; không đoán.",
-                "Query mơ hồ, nhiều ý định và ngoài phạm vi đã được kiểm tra trước khi gọi bạn; chỉ xếp hạng một nhu cầu rõ ràng.",
-                "matchScore là độ khớp ước tính 0-100, không phải xác suất.",
-              ].join("\n"),
+              text: SYSTEM_INSTRUCTION,
             }],
           },
           contents: [{
@@ -71,19 +119,7 @@ export async function rankWithGemini(
             parts: [{
               text: JSON.stringify({
                 query,
-                catalog: catalog.map((resource) => ({
-                  id: resource.id,
-                  title: resource.title,
-                  summary: resource.summary,
-                  type: resource.type,
-                  topic: resource.topic,
-                  tags: resource.tags,
-                  sourceChannel: resource.sourceChannel,
-                  sharedAt: resource.sharedAt,
-                  keywords: resource.keywords,
-                  isOfficial: resource.isOfficial,
-                  version: resource.version,
-                })),
+                catalog: catalogData,
               }),
             }],
           }],
