@@ -22,7 +22,7 @@ embedding được tạo lúc runtime; document embeddings được tạo trư�
 lớn hơn, thay `CandidateProvider` bằng FTS + vector database mà không đổi API
 hoặc UI.
 
-## Realtime demo (CP3 — bằng chứng Discord thật)
+## Realtime demo (bằng chứng Discord thật)
 
 Trang `/realtime` chứng minh prototype kết nối được với Discord server thật:
 Discord bot (Node script) cắm vào Gateway, đẩy sự kiện lên Cloudflare D1 qua
@@ -104,7 +104,7 @@ Response có sáu trạng thái: `success`, `needs_clarification`, `rejected`,
 `low_confidence`, `no_match`, `fallback`. Khi cần làm rõ, API trả câu hỏi và
 các lựa chọn có thể bấm; chưa có tài liệu nào được hiển thị.
 
-### Realtime (CP3)
+### Realtime
 
 | Method | Path | Mô tả |
 | --- | --- | --- |
@@ -135,11 +135,11 @@ Mỗi ingest event có shape:
 - Link nguồn là URL mock và chỉ dùng để chứng minh flow mở nguồn.
 - Trace production hiện ghi structured log; eval lưu snapshot đã làm sạch.
 
-## Đơn giản hoá cho realtime demo (CP3)
+## Đơn giản hoá cho realtime demo
 
 - Bot là Node script chạy local (không dùng Worker), capture → POST REST.
 - Sanitize nội dung trước khi lưu (che URL, code block, truncate 600 ký tự).
 - Không lưu DM; chỉ đọc guild channels.
 - Auth ingest: nếu có `REALTIME_INGEST_TOKEN` thì header bắt buộc khớp.
-- Dùng SSE (đơn giản, 1 chiều) thay vì WebSocket cho phù hợp CP3.
+- Dùng SSE (đơn giản, 1 chiều) thay vì WebSocket cho phù hợp demo realtime.
 

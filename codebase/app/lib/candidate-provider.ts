@@ -23,7 +23,7 @@ const embeddingIndex = resourceEmbeddings as EmbeddingIndex;
 const RRF_K = 60;
 
 /**
- * CP3 provider:
+ * Hybrid provider (metadata scoring + semantic rerank):
  * - BM25-like metadata scoring always works.
  * - Gemini query embedding + precomputed document vectors activate when both
  *   GEMINI_API_KEY and resource-embeddings.json are available.

@@ -77,7 +77,7 @@ function AppHeader({
       </nav>
       <span className="cp-badge">
         <span className="status-dot"></span>
-        AI Rerank • CP3
+        AI Rerank
       </span>
     </header>
   );
@@ -485,8 +485,8 @@ function Home({ search }: { search: (query: string) => void }) {
       <section className="hero">
         <div className="eyebrow">✨ TRỢ LÝ AI TRUY VẤN TÀI LIỆU DISCORD</div>
         <h1>
-          Tìm lại tài liệu Discord<br />
-          <span className="gradient-text">mà không cần nhớ nó nằm ở đâu</span>
+          Tra cứu tài liệu Discord<br />
+          <span className="gradient-text">tức thì, chính xác</span>
         </h1>
         <p>
           Nhập điều bạn đang cần bằng ngôn ngữ tự nhiên. Hệ thống xếp hạng các tài liệu trong kho Discord và luôn hiển thị rõ nguồn gốc trước khi mở.
@@ -508,10 +508,6 @@ function Home({ search }: { search: (query: string) => void }) {
           <div>
             <b>{new Set(resources.map((r) => r.sourceChannel)).size}</b>
             <span>Kênh Discord</span>
-          </div>
-          <div>
-            <b>{new Set(resources.map((r) => r.type)).size}</b>
-            <span>Loại nội dung</span>
           </div>
           <div>
             <b>Top 5</b>
@@ -738,7 +734,7 @@ export default function Page() {
       )}
       <footer>
         <span>Discord Knowledge Hub • Batch 03</span>
-        <small>AI Semantic Ranking • Trích dẫn nguồn Discord chính xác 100%</small>
+        <small>AI Semantic Ranking • Luôn trích dẫn nguồn Discord kèm kết quả</small>
       </footer>
     </>
   );

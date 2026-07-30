@@ -301,7 +301,7 @@ export default function RealtimePage() {
           ← Về trang chủ
         </a>
         <div>
-          <span className="eyebrow">⚡ REALTIME DEMO • CP3</span>
+          <span className="eyebrow">⚡ REALTIME DEMO</span>
           <h1>
             Discord server <span className="gradient-text">đang chạy thật</span>
             <br />
