@@ -3,6 +3,7 @@
 import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
 import { resourceById, resources } from "./data/resources";
 import { fallbackRank, normalizeText } from "./lib/search";
+import { MAIN_TOPICS, getMainTopic } from "./lib/topics";
 import type {
   ClarificationOption,
   Resource,
@@ -125,7 +126,7 @@ function FilterPanel({
       <label>Chủ đề
         <select value={filters.topic} onChange={(event) => update("topic", event.target.value)}>
           <option value="all">Tất cả chủ đề</option>
-          {[...new Set(resources.map((resource) => resource.topic))].map((value) => <option key={value}>{value}</option>)}
+          {MAIN_TOPICS.map((topic) => <option key={topic} value={topic}>{topic}</option>)}
         </select>
       </label>
       <label>Kênh nguồn
@@ -476,7 +477,7 @@ export default function Page() {
     const list = base.filter(
       (resource) =>
         (filters.type === "all" || resource.type === filters.type) &&
-        (filters.topic === "all" || resource.topic === filters.topic) &&
+        (filters.topic === "all" || getMainTopic(resource.topic) === filters.topic) &&
         (filters.channel === "all" || resource.sourceChannel === filters.channel),
     );
     return [...list].sort((a, b) =>
