@@ -4,11 +4,29 @@ import { fileURLToPath } from "node:url";
 process.loadEnvFile(".env.local");
 
 const goldenPath = fileURLToPath(new URL("../../eval/golden-set.json", import.meta.url));
-const tracePath = fileURLToPath(new URL("../../eval/traces/run-02.json", import.meta.url));
-const reportPath = fileURLToPath(new URL("../../eval/run-02-results.md", import.meta.url));
+const tracePath = fileURLToPath(new URL("../../eval/traces/run-03.json", import.meta.url));
+const reportPath = fileURLToPath(new URL("../../eval/run-03-results.md", import.meta.url));
 const cases = JSON.parse(await readFile(goldenPath, "utf8"));
 
-const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+// Tạo bản copy toàn bộ dist/server/ ra thư mục tạm và patch "cloudflare:workers" → shim.
+// Vite/Vinext build ra file cho Cloudflare runtime, nhưng chạy eval trên Node
+// cần shim "env" object. Thay vì patch dist gốc (ảnh hưởng deployment), copy
+// sang file tạm trước khi patch.
+const tmpDir = fileURLToPath(new URL("../../eval/.tmp-server/", import.meta.url));
+await import("node:fs/promises").then((fs) => fs.rm(tmpDir, { recursive: true, force: true }).then(() => fs.mkdir(tmpDir, { recursive: true })));
+const distDir = fileURLToPath(new URL("../dist/server/", import.meta.url));
+const { cp } = await import("node:fs/promises");
+await cp(distDir, tmpDir, { recursive: true });
+const shimSrc = "export const env = {};\n";
+await writeFile(`${tmpDir}cf-shim.mjs`, shimSrc, "utf8");
+const patchedDist = `${tmpDir}index.js`;
+let src = await readFile(patchedDist, "utf8");
+if (src.includes('from "cloudflare:workers"')) {
+  src = src.replace('from "cloudflare:workers"', 'from "./cf-shim.mjs"');
+  await writeFile(patchedDist, src, "utf8");
+}
+
+const workerUrl = new URL("../../eval/.tmp-server/index.js", import.meta.url);
 workerUrl.searchParams.set("eval", `${Date.now()}`);
 const { default: worker } = await import(workerUrl.href);
 const env = {
@@ -155,7 +173,7 @@ await writeFile(tracePath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 const rows = flatTurns.map((run) =>
   `| ${run.caseId}.${run.turn} | ${run.passed ? "PASS" : "FAIL"} | ${run.expectedStatus} | ${run.actualStatus} | ${run.actualTop3.join(", ") || "—"} | ${run.optionCount ?? 0} |`,
 );
-const report = `# Golden-set run 02 — clarification-first
+const report = `# Golden-set run 03 — rebalanced 30-case eval (4 layers + baseline + edge)
 
 - Generated: ${output.generatedAt}
 - Model: \`${output.model}\`

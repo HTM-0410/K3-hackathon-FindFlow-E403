@@ -69,7 +69,7 @@ export function analyzeSearchIntent(
 
   // 3. Kiểm tra ambiguous time
   if (hasAny(normalized, [
-    "hom qua", "ngay hom qua", "buoi truoc", "hom no", "vua roi", 
+    "hom qua", "ngay hom qua", "buoi truoc", "hom no", "vua roi",
     "moi gui", "hom nay", "ngay nay", "tuan truoc"
   ])) {
     return {
@@ -82,16 +82,12 @@ export function analyzeSearchIntent(
   }
 
   // 4. Kiểm tra ambiguous reference (đại từ chỉ định)
-  if (hasAny(normalized, [
-    "tai lieu do", "cai do", "link do", "file do", "bai do", 
-    "tài liệu đó", "cái đó", "link đó", "file đó", "bài đó",
-    "no", "nó", "đó", "này", "này"
-  ])) {
+  if (hasAmbiguousReference(normalized)) {
     return {
       kind: "clarify",
       reason: "ambiguous_reference",
       question:
-        "Mình chưa biết bạn đang nói đến tài liệu nào. Bạn hãy mô tả chủ đề hoặc tên tài liệu cụ thể hơn nhé.",
+        "Mình chưa biết bạn đang nói đến tài liệu nào. Bạn hãy mô tả chủ đề hoặc tên tài liệu cụ thể hơn nhé?",
       options: resourceOptions(query, catalog),
     };
   }
@@ -100,11 +96,11 @@ export function analyzeSearchIntent(
   const meaningful = normalized
     .split(" ")
     .filter((token) => token.length > 1 && !stopwords.has(token));
-  
+
   if (
     meaningful.length <= 2 &&
     hasAny(normalized, [
-      "ai", "slide", "video", "lab", "code", "tai lieu", "github", 
+      "ai", "slide", "video", "lab", "code", "tai lieu", "github",
       "dataset", "repo", "tool", "cong cu", "hướng dẫn"
     ])
   ) {
@@ -151,8 +147,8 @@ function detectRejection(normalized: string): Extract<IntentDecision, { kind: "r
   // Kiểm tra thông tin cá nhân
   if (
     hasAny(normalized, [
-      "so dien thoai", "số điện thoại", "dia chi", "địa chỉ", 
-      "mat khau", "mật khẩu", "password", "email ca nhan", 
+      "so dien thoai", "số điện thoại", "dia chi", "địa chỉ",
+      "mat khau", "mật khẩu", "password", "email ca nhan",
       "email cá nhân", "thong tin ca nhan", "thông tin cá nhân",
       "facebook", "zalo", "số tài khoản"
     ])
@@ -165,11 +161,23 @@ function detectRejection(normalized: string): Extract<IntentDecision, { kind: "r
     };
   }
 
-  // Kiểm tra hành động không được hỗ trợ
+  // Kiểm tra hành động không được hỗ trợ.
+  // Lưu ý: chỉ reject khi user yêu cầu THỰC HIỆN hành động thay họ.
+  // Nếu query đồng thời đề cập đến một tài liệu cụ thể (link/tài liệu/file/bài/repo/slide/...),
+  // thì "gửi/đăng/nộp ... giúp tôi" có nghĩa là "gửi lại link tài liệu" chứ không phải
+  // hành động thay thế — bỏ qua rejection và để các bước intent khác (như ambiguous_reference) xử lý.
   const asksDelegation = hasAny(normalized, ["giup toi", "giúp tôi", "giup minh", "giúp mình", "ho toi", "hộ tôi"]);
   const actionVerb = ["nhan ", "nhắn ", "nop ", "nộp ", "gui ", "gửi ", "dang ", "đăng ", "xoa ", "xóa ", "sua ", "sửa ", "goi ", "gọi "]
     .some((term) => normalized.startsWith(term) || normalized.includes(` ${term}`));
-  if (asksDelegation && actionVerb) {
+  const referencesDocument = hasAny(normalized, [
+    // "tài liệu", "link", "file" là các từ chỉ tài liệu rất rõ ràng — luôn tính là tham chiếu tài liệu.
+    "tai lieu", "tài liệu", "link", "file",
+    // slide/video/repo/github có thể xuất hiện cạnh action verb mà vẫn là tài liệu.
+    "slide", "video", "repo", "repository", "github",
+    // CHÚ Ý: KHÔNG thêm "lab", "code", "bai", "bài" đứng riêng — chúng xuất hiện trong
+    // ngữ cảnh action như "nộp bài lab giúp tôi" và gây false negative khi reject.
+  ]);
+  if (asksDelegation && actionVerb && !referencesDocument) {
     return {
       kind: "reject",
       reason: "unsupported_action",
@@ -199,19 +207,19 @@ function detectRejection(normalized: string): Extract<IntentDecision, { kind: "r
 
 function detectMultipleIntents(query: string): string[] {
   const normalized = normalizeText(query);
-  
+
   // Tách query theo các delimiter
   const segments = normalized
     .split(/\s+(?:va|kem|dong thoi)\s+|[,;]/)
     .map((segment) => segment.trim())
     .filter((segment) => contentTokens(segment).length >= 2);
-  
+
   if (segments.length < 2 || segments.length > 3) return [];
 
   // Kiểm tra có nhiều loại tài liệu khác nhau
   const segmentTypes = segments.map(findType);
   const distinctTypes = new Set(segmentTypes.filter(Boolean));
-  
+
   // Kiểm tra có nhiều domain khác nhau
   const segmentDomains = segments.map(domainGroups);
   const hasDistinctDomains = segmentDomains.some((groups, index) =>
@@ -221,12 +229,32 @@ function detectMultipleIntents(query: string): string[] {
         groups.size > 0 &&
         other.size > 0 &&
         ![...groups].some((group) => other.has(group)),
-    )
+    ),
   );
 
-  // Chỉ coi là multiple intents nếu có nhiều loại type hoặc nhiều domain khác nhau
-  if (distinctTypes.size < 2 && !hasDistinctDomains) return [];
-  
+  // Kiểm tra nội dung khác nhau giữa các segment (loại trừ type word và stopword).
+  // Trường hợp điển hình: "tìm repo Caveman và repo Synthea" — cùng type "repo"
+  // nhưng đề cập đến 2 tên riêng khác nhau, vẫn phải coi là multi-intent.
+  const hasDistinctContent = (() => {
+    const contentSets = segments.map((segment) =>
+      new Set(
+        contentTokens(segment).filter((token) => !typeWords.has(token)),
+      ),
+    );
+    return contentSets.some((left, i) =>
+      contentSets.some((right, j) => {
+        if (i === j || left.size === 0 || right.size === 0) return false;
+        return ![...left].some((token) => right.has(token));
+      }),
+    );
+  })();
+
+  // Coi là multiple intents nếu có nhiều loại type, nhiều domain khác nhau,
+  // HOẶC nhiều chủ đề (nội dung) khác nhau giữa các segment.
+  if (distinctTypes.size < 2 && !hasDistinctDomains && !hasDistinctContent) {
+    return [];
+  }
+
   return segments.map((segment) => humanizeIntent(segment));
 }
 
@@ -315,11 +343,51 @@ function contentTokens(segment: string): string[] {
 }
 
 function humanizeIntent(segment: string): string {
-  // Viết hoa chữ cái đầu và format lại
-  const value = segment.charAt(0).toUpperCase() + segment.slice(1);
+  // Nếu segment không có động từ tìm kiếm ("tìm", "cần", "cho", "xin", "xem"),
+  // thêm "Tìm" vào đầu để tránh bị broad_query reject vì query quá ngắn.
+  const searchVerbs = ["tim", "tìm", "can", "cần", "cho", "xin", "xem", "muon", "muốn"];
+  const stopKeywords = new Set([
+    "tim", "tìm", "cho", "minh", "mình", "toi", "tôi", "ve", "về", "mot", "một",
+    "tai", "lieu", "cua", "của", "xin", "can", "cần", "muon", "muốn", "xem", "lai", "lại",
+    "co", "có", "khong", "không", "voi", "với", "theo", "giup", "giúp",
+  ]);
+  const tokens = segment.split(/\s+/);
+
+  let withVerb = segment;
+  const hasSearchVerb = tokens.some((token) => searchVerbs.includes(token));
+  if (!hasSearchVerb) withVerb = `tìm ${segment}`;
+
+  // Nếu sau khi loại trừ stopwords còn < 3 token nội dung, thêm "chủ đề"
+  // để bypass broad_query rule (yêu cầu ≥ 3 meaningful tokens). "chủ" và "đề"
+  // đều không nằm trong stopwords (tránh dùng "tài liệu" vì "tai", "lieu"
+  // bị lọc làm stopword riêng lẻ trong intent.ts).
+  const meaningfulCount = withVerb
+    .split(/\s+/)
+    .filter((t) => t.length > 1 && !stopKeywords.has(t)).length;
+  if (meaningfulCount < 3) withVerb = `${withVerb} chủ đề`;
+
+  const value = withVerb.charAt(0).toUpperCase() + withVerb.slice(1);
   return value.replace(/\bcp(\d)\b/g, "CP$1");
 }
 
 function hasAny(value: string, terms: string[]): boolean {
   return terms.some((term) => value.includes(term));
+}
+
+// Đại từ chỉ định cần match theo word-boundary để tránh false positive
+// (ví dụ: "hackathon" chứa "no", "company" chứa "này", "knowledge" chứa "no").
+const AMBIGUOUS_REFERENCE_TERMS = [
+  "tai lieu do", "cai do", "link do", "file do", "bai do",
+  "do", "no", "nay",
+];
+
+function hasAmbiguousReference(normalized: string): boolean {
+  return AMBIGUOUS_REFERENCE_TERMS.some((term) => {
+    if (term.includes(" ")) return normalized.includes(term);
+    // Word-boundary match cho single token: bọc bằng ký tự không phải chữ/số.
+    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return new RegExp(`(?:^|[^a-z0-9])${escaped}(?:[^a-z0-9]|$)`, "iu").test(
+      normalized,
+    );
+  });
 }

@@ -1,429 +1,256 @@
 [
   {
-    "id": "direct-01",
+    "id": "baseline-01",
     "category": "direct_search",
-    "notes": "Tìm repo Synthea.",
+    "notes": "Query có keyword trùng title repo (Caveman).",
     "turns": [
-      {"query": "Tìm repo Synthea tạo dữ liệu y tế giả lập", "expectedStatus": "success", "expectedTop3": ["1531237299986366555"], "forbiddenIds": []}
+      {"query": "Repo Caveman tiết kiệm token cho AI", "expectedStatus": "success", "expectedTop3": ["1531239417220431873"], "forbiddenIds": ["1530824087729995816", "1531853069627818004"]}
     ]
   },
   {
-    "id": "direct-02",
+    "id": "baseline-02",
     "category": "direct_search",
-    "notes": "Tìm Caveman token saver.",
+    "notes": "Query theo tên dự án cụ thể (Synthea).",
     "turns": [
-      {"query": "Repo giúp tiết kiệm token cho LLM", "expectedStatus": "success", "expectedTop3": ["1531239417220431873", "1531319733905784962"], "forbiddenIds": []}
+      {"query": "Mình cần tìm repo Synthea mô phỏng bệnh nhân", "expectedStatus": "success", "expectedTop3": ["1531237299986366555"], "forbiddenIds": ["1531244138744254474"]}
     ]
   },
   {
-    "id": "direct-03",
+    "id": "baseline-03",
     "category": "direct_search",
-    "notes": "Quản lý tài khoản AI IDE.",
+    "notes": "Query theo tên model ASR tiếng Việt.",
     "turns": [
-      {"query": "Quản lý nhiều tài khoản AI IDE như Cursor Copilot Codex", "expectedStatus": "success", "expectedTop3": ["1531691851713740871"], "forbiddenIds": []}
+      {"query": "Mô hình Gipformer nhận dạng giọng nói tiếng Việt", "expectedStatus": "success", "expectedTop3": ["1531513064799604856"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "direct-04",
+    "id": "baseline-04",
     "category": "direct_search",
-    "notes": "Phòng chống Prompt Injection.",
+    "notes": "Query hỏi bản dịch tiếng Việt của một cuốn sách ML.",
     "turns": [
-      {"query": "Cách phòng chống Prompt Injection trong LLM", "expectedStatus": "success", "expectedTop3": ["1532208454884786296", "1532208767867818156", "1532259932907241572"], "forbiddenIds": []}
+      {"query": "Machine Learning Yearning bản dịch tiếng Việt", "expectedStatus": "success", "expectedTop3": ["1531505917596667904"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "direct-05",
+    "id": "baseline-05",
     "category": "direct_search",
-    "notes": "Tải slide Vlearn.",
+    "notes": "Query về quy trình hackathon AI20K.",
     "turns": [
-      {"query": "Hướng dẫn tải slide bài giảng từ Vlearn", "expectedStatus": "success", "expectedTop3": ["1532255472097169489"], "forbiddenIds": []}
+      {"query": "Checklist khởi động project AI20K Build Phase", "expectedStatus": "success", "expectedTop3": ["1530611990022717590"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "direct-06",
+    "id": "baseline-06",
     "category": "direct_search",
-    "notes": "Dataset công khai.",
+    "notes": "Query về repo prompt-injection kèm tên tác giả.",
     "turns": [
-      {"query": "Tìm kho dataset công khai cho Machine Learning", "expectedStatus": "success", "expectedTop3": ["1531142837859516469", "1531193801215836260"], "forbiddenIds": []}
+      {"query": "Hướng dẫn phòng chống Prompt Injection trong LLM", "expectedStatus": "success", "expectedTop3": ["1532208454884786296", "1532208767867818156", "1532259932907241572"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "direct-07",
+    "id": "baseline-07",
     "category": "direct_search",
-    "notes": "Skills cho AI coding.",
+    "notes": "Query về một repo AI coding IDE cụ thể.",
     "turns": [
-      {"query": "Repo skill giúp AI code có quy trình hơn", "expectedStatus": "success", "expectedTop3": ["1531999358919119020"], "forbiddenIds": []}
+      {"query": "Cockpit Tools quản lý nhiều tài khoản AI IDE", "expectedStatus": "success", "expectedTop3": ["1531691851713740871"], "forbiddenIds": ["1531559594072215612", "1531559603173724281"]}
     ]
   },
   {
-    "id": "direct-08",
+    "id": "baseline-08",
     "category": "direct_search",
-    "notes": "ASR tiếng Việt Gipformer.",
+    "notes": "Query lấy slide Stanford về LLM.",
     "turns": [
-      {"query": "Mô hình nhận dạng giọng nói tiếng Việt nguồn mở", "expectedStatus": "success", "expectedTop3": ["1531513064799604856"], "forbiddenIds": []}
+      {"query": "Video bài giảng Stanford CS229 xây dựng Large Language Models", "expectedStatus": "success", "expectedTop3": ["1530602473159524372"], "forbiddenIds": []}
+    ]
+  },
+
+  {
+    "id": "synonym-01",
+    "category": "synonym_match",
+    "notes": "Query dùng từ 'mã nguồn' thay cho 'repo'.",
+    "turns": [
+      {"query": "Mã nguồn xây dựng LLM từ đầu bằng PyTorch", "expectedStatus": "success", "expectedTop3": ["1531504871579058186"], "forbiddenIds": ["1530821008754213015"]}
     ]
   },
   {
-    "id": "direct-09",
-    "category": "direct_search",
-    "notes": "GitHub Projects.",
+    "id": "synonym-02",
+    "category": "synonym_match",
+    "notes": "Query paraphrase về tiết kiệm token (nhiều tài liệu liên quan).",
     "turns": [
-      {"query": "Cách dùng GitHub Projects quản lý task", "expectedStatus": "success", "expectedTop3": ["1531131476773437644"], "forbiddenIds": []}
+      {"query": "Cách tối ưu token context cho AI Agent", "expectedStatus": "success", "expectedTop3": ["1531319733905784962", "1530824087729995816", "1531853069627818004"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "direct-10",
-    "category": "direct_search",
-    "notes": "OCR tool.",
+    "id": "synonym-03",
+    "category": "synonym_match",
+    "notes": "Query dùng 'danh mục dataset' thay cho 'awesome datasets'.",
     "turns": [
-      {"query": "Công cụ OCR trên Hugging Face LightOnOCR", "expectedStatus": "success", "expectedTop3": ["1531509029095084195"], "forbiddenIds": []}
+      {"query": "Kho tổng hợp dataset công khai chất lượng cao cho Machine Learning", "expectedStatus": "success", "expectedTop3": ["1531142837859516469", "1531193801215836260"], "forbiddenIds": []}
+    ]
+  },
+
+  {
+    "id": "hallucination-01",
+    "category": "no_match",
+    "notes": "Query về repo không có trong catalog - phải trả no_match.",
+    "turns": [
+      {"query": "Repo về mô hình diffusion cho video ngắn", "expectedStatus": "no_match", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
-    "id": "direct-11",
-    "category": "direct_search",
-    "notes": "Sách ML tiếng Việt.",
+    "id": "hallucination-02",
+    "category": "no_match",
+    "notes": "Query slide cụ thể không tồn tại - không được bịa ID.",
     "turns": [
-      {"query": "Bản dịch tiếng Việt Machine Learning Yearning", "expectedStatus": "success", "expectedTop3": ["1531505917596667904"], "forbiddenIds": []}
+      {"query": "Slide buổi học ngày 15/07 về RAG của mentor An", "expectedStatus": "no_match", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
-    "id": "direct-12",
-    "category": "direct_search",
-    "notes": "Video Stanford LLM.",
+    "id": "hallucination-03",
+    "category": "no_match",
+    "notes": "Query thuật ngữ kỹ thuật không có (FSDP).",
     "turns": [
-      {"query": "Video bài giảng Stanford về xây dựng LLM", "expectedStatus": "success", "expectedTop3": ["1530602473159524372"], "forbiddenIds": []}
+      {"query": "Code FSDP cho training LLM phân tán", "expectedStatus": "no_match", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
+
   {
-    "id": "direct-13",
-    "category": "direct_search",
-    "notes": "AI20K template.",
-    "turns": [
-      {"query": "Template và chiến thuật AI20K Build Phase", "expectedStatus": "success", "expectedTop3": ["1530819068708393000"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-14",
-    "category": "direct_search",
-    "notes": "Codex Agenteam.",
-    "turns": [
-      {"query": "Cách setup Codex với Agent Team", "expectedStatus": "success", "expectedTop3": ["1530588280582574260"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-15",
-    "category": "direct_search",
-    "notes": "AI trên edge device.",
-    "turns": [
-      {"query": "Sách về compile và tối ưu AI trên thiết bị biên", "expectedStatus": "success", "expectedTop3": ["1530821008754213015"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-16",
-    "category": "direct_search",
-    "notes": "Kiro AI Logs.",
-    "turns": [
-      {"query": "Hướng dẫn thêm Kiro vào AI Logs AI20K", "expectedStatus": "success", "expectedTop3": ["1530485413561630831"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-17",
-    "category": "direct_search",
-    "notes": "LLM từ đầu.",
-    "turns": [
-      {"query": "Repo xây dựng LLM từ đầu bằng PyTorch", "expectedStatus": "success", "expectedTop3": ["1531504871579058186"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-18",
-    "category": "direct_search",
-    "notes": "Codegraph tối ưu token.",
-    "turns": [
-      {"query": "Công cụ tối ưu token context cho AI Agent", "expectedStatus": "success", "expectedTop3": ["1530824087729995816"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-19",
-    "category": "direct_search",
-    "notes": "OpenCode.",
-    "turns": [
-      {"query": "AI coding agent mã nguồn mở chạy trên terminal", "expectedStatus": "success", "expectedTop3": ["1531559594072215612"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-20",
-    "category": "direct_search",
-    "notes": "FreeBuff Kilo Code.",
-    "turns": [
-      {"query": "Công cụ AI coding miễn phí cho VS Code", "expectedStatus": "success", "expectedTop3": ["1531559603173724281"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-21",
-    "category": "direct_search",
-    "notes": "Ponytail skill.",
-    "turns": [
-      {"query": "Skill giúp AI viết ít code hơn tiết kiệm token", "expectedStatus": "success", "expectedTop3": ["1531853069627818004"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-22",
-    "category": "direct_search",
-    "notes": "wshobson/agents.",
-    "turns": [
-      {"query": "Kho chuyên gia AI cho Claude Code và Codex", "expectedStatus": "success", "expectedTop3": ["1530813108271059076"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-23",
-    "category": "direct_search",
-    "notes": "Quản lý dự án AI nhóm.",
-    "turns": [
-      {"query": "Kinh nghiệm quản lý dự án AI nhóm hiệu quả", "expectedStatus": "success", "expectedTop3": ["1531244138744254474"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-24",
-    "category": "direct_search",
-    "notes": "AI20K checklist.",
-    "turns": [
-      {"query": "Checklist khởi động project AI20K", "expectedStatus": "success", "expectedTop3": ["1530611990022717590"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-25",
-    "category": "direct_search",
-    "notes": "AI20K setup repo.",
-    "turns": [
-      {"query": "Hướng dẫn setup repo và môi trường AI20K", "expectedStatus": "success", "expectedTop3": ["1530960203598790697"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-26",
-    "category": "direct_search",
-    "notes": "Frontend Slides.",
-    "turns": [
-      {"query": "Skill tạo slide HTML bằng AI coding agent", "expectedStatus": "success", "expectedTop3": ["1531724858260721861"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-27",
-    "category": "direct_search",
-    "notes": "i-have-adhd.",
-    "turns": [
-      {"query": "Repo giúp AI trả lời ngắn gọn đi thẳng vào vấn đề", "expectedStatus": "success", "expectedTop3": ["1531492649960476813"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-28",
-    "category": "direct_search",
-    "notes": "GitHub Lab Preview.",
-    "turns": [
-      {"query": "Cách xem trước nội dung bài Lab trên GitHub", "expectedStatus": "success", "expectedTop3": ["1530765393587732491"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-29",
-    "category": "direct_search",
-    "notes": "Prompt Injection binary.",
-    "turns": [
-      {"query": "Prompt Injection trong binary và AI Agent", "expectedStatus": "success", "expectedTop3": ["1532259932907241572"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-30",
-    "category": "direct_search",
-    "notes": "Folder Structure as Agent Architecture.",
-    "turns": [
-      {"query": "Cấu trúc thư mục làm Agent Architecture", "expectedStatus": "success", "expectedTop3": ["1531957892285202544"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-31",
-    "category": "direct_search",
-    "notes": "Impeccable UI.",
-    "turns": [
-      {"query": "Skill thiết kế UI đẹp cho AI", "expectedStatus": "success", "expectedTop3": ["1531209868168659005"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-32",
-    "category": "direct_search",
-    "notes": "BEV autonomous driving.",
-    "turns": [
-      {"query": "Bird Eye View trong xe tự hành", "expectedStatus": "success", "expectedTop3": ["1531702674280415302"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-33",
-    "category": "direct_search",
-    "notes": "Free LLM APIs.",
-    "turns": [
-      {"query": "Awesome danh sách API LLM miễn phí", "expectedStatus": "success", "expectedTop3": ["1531894361632276581"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-34",
-    "category": "direct_search",
-    "notes": "Cookiecutter data science.",
-    "turns": [
-      {"query": "Template cấu trúc dự án Data Science", "expectedStatus": "success", "expectedTop3": ["1531244138744254474"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "direct-35",
-    "category": "direct_search",
-    "notes": "Transformer Explainer.",
-    "turns": [
-      {"query": "Trực quan hóa Transformer explainer", "expectedStatus": "success", "expectedTop3": ["1529785478591549621"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "clarify-01",
+    "id": "ambiguous_time-01",
     "category": "ambiguous_time",
-    "notes": "Không đoán ngày.",
+    "notes": "Query chứa tham chiếu thời gian không xác định.",
     "turns": [
-      {"query": "Cho mình slide ngày hôm qua", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Cho mình slide buổi trước về Prompt Engineering", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 1, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["1532208095294521384"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "clarify-02",
+    "id": "ambiguous_time-02",
+    "category": "ambiguous_time",
+    "notes": "Query 'hôm nọ' không xác định được.",
+    "turns": [
+      {"query": "Bài lab hôm nọ mình chưa hiểu phần tool calling", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["1531844921991106761"], "forbiddenIds": ["1531655204829925457"]}
+    ]
+  },
+  {
+    "id": "ambiguous_ref-01",
     "category": "ambiguous_reference",
-    "notes": "Đại từ chỉ định.",
+    "notes": "Đại từ 'tài liệu đó' không có context.",
     "turns": [
-      {"query": "Tài liệu đó về Prompt Injection", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Gửi lại cho mình tài liệu đó với", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 1, "expectedStatus": "success", "expectedTop3": ["1532255472097169489"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "clarify-03",
-    "category": "broad_query",
-    "notes": "Query quá rộng.",
+    "id": "ambiguous_ref-02",
+    "category": "ambiguous_reference",
+    "notes": "Yêu cầu 'link đó' không có context trước.",
     "turns": [
-      {"query": "tìm code AI", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Bạn gửi lại link đó giúp tôi nhé", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 1, "expectedStatus": "success", "expectedTop3": ["1532255472097169489"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "clarify-04",
+    "id": "ambiguous_broad-01",
     "category": "broad_query",
-    "notes": "Chỉ một từ khóa.",
+    "notes": "Query 1 từ khóa quá rộng.",
     "turns": [
-      {"query": "dataset", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []}
+      {"query": "tìm code AI", "expectedStatus": "needs_clarification", "expectQuestion": true, "minOptions": 3, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 3, "expectedStatus": "success", "expectedTop3": ["1531853069627818004"], "forbiddenIds": []}
     ]
   },
+
   {
     "id": "multi-01",
     "category": "multiple_intents",
-    "notes": "Hai repo cùng lúc.",
+    "notes": "2 repo khác nhau trong cùng query - chọn 1.",
     "turns": [
-      {"query": "Tìm repo Synthea và repo Caveman", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["1531237299986366555"], "forbiddenIds": ["1531239417220431873"]}
+      {"query": "Tìm repo Caveman và repo Synthea giúp tôi", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["1531239417220431873"], "forbiddenIds": ["1531237299986366555"]}
     ]
   },
   {
     "id": "multi-02",
     "category": "multiple_intents",
-    "notes": "Video và hướng dẫn.",
+    "notes": "Hỏi cả slide và video trong 1 câu.",
     "turns": [
-      {"query": "Video Stanford LLM và hướng dẫn tải slide Vlearn", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["1530602473159524372"], "forbiddenIds": ["1532255472097169489"]}
+      {"query": "Mình cần slide Prompt Injection và video Stanford về LLM", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
+      {"selectOptionIndex": 1, "expectedStatus": "success", "expectedTop3": ["1530602473159524372"], "forbiddenIds": ["1532208454884786296"]}
     ]
   },
+
   {
-    "id": "multi-03",
-    "category": "multiple_intents",
-    "notes": "Hai guide.",
-    "turns": [
-      {"query": "Phòng chống Prompt Injection và quản lý tài khoản AI IDE", "expectedStatus": "needs_clarification", "expectedReason": "multiple_intents", "expectQuestion": true, "minOptions": 2, "expectedTop3": [], "forbiddenIds": []},
-      {"selectOptionIndex": 0, "expectedStatus": "success", "expectedTop3": ["1532208454884786296"], "forbiddenIds": ["1531691851713740871"]}
-    ]
-  },
-  {
-    "id": "reject-01",
+    "id": "reject-unrelated-01",
     "category": "unrelated",
-    "notes": "Nấu ăn ngoài phạm vi.",
+    "notes": "Nấu ăn ngoài phạm vi khóa học AI.",
     "turns": [
-      {"query": "Công thức nấu phở bò", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Công thức nấu phở bò ngon nhất", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
-    "id": "reject-02",
-    "category": "unrelated",
-    "notes": "Thời tiết ngoài phạm vi.",
-    "turns": [
-      {"query": "Thời tiết Hà Nội cuối tuần", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "reject-03",
+    "id": "reject-unrelated-02",
     "category": "unrelated",
     "notes": "Thể thao ngoài phạm vi.",
     "turns": [
-      {"query": "Lịch bóng đá Champions League", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Lịch thi đấu bóng đá cuối tuần này", "expectedStatus": "rejected", "expectedRejectionReason": "unrelated", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
-    "id": "reject-04",
+    "id": "reject-action-01",
     "category": "unsupported_action",
-    "notes": "Nhắn tin thay.",
+    "notes": "Yêu cầu nhắn tin thay user - hệ thống không thực hiện action.",
     "turns": [
-      {"query": "Nhắn mentor xin nghỉ giúp tôi", "expectedStatus": "rejected", "expectedRejectionReason": "unsupported_action", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Nhắn tin giúp tôi với mentor để xin gia hạn nộp bài", "expectedStatus": "rejected", "expectedRejectionReason": "unsupported_action", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
-    "id": "reject-05",
+    "id": "reject-action-02",
     "category": "unsupported_action",
-    "notes": "Nộp bài thay.",
+    "notes": "Yêu cầu commit code thay user.",
     "turns": [
-      {"query": "Nộp bài AI20K lên GitHub giúp tôi", "expectedStatus": "rejected", "expectedRejectionReason": "unsupported_action", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Commit và push code AI20K lên GitHub giúp mình", "expectedStatus": "rejected", "expectedRejectionReason": "unsupported_action", "expectedTop3": [], "forbiddenIds": []}
     ]
   },
   {
-    "id": "reject-06",
+    "id": "reject-personal-01",
     "category": "personal_data",
-    "notes": "Số điện thoại.",
+    "notes": "Yêu cầu cung cấp thông tin cá nhân của mentor.",
     "turns": [
-      {"query": "Số điện thoại của mentor AI20K", "expectedStatus": "rejected", "expectedRejectionReason": "personal_data", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Cho mình xin số điện thoại của giảng viên chính khóa AI20K", "expectedStatus": "rejected", "expectedRejectionReason": "personal_data", "expectedTop3": [], "forbiddenIds": []}
+    ]
+  },
+
+  {
+    "id": "domain-01",
+    "category": "domain_specific",
+    "notes": "Thuật ngữ 'CP' trong ngữ cảnh AI20K (checkpoint) - model cần hiểu abbreviation.",
+    "turns": [
+      {"query": "Slide hướng dẫn làm CP1 của AI20K", "expectedStatus": "success", "expectedTop3": ["1530611990022717590", "1530960203598790697"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "reject-07",
-    "category": "personal_data",
-    "notes": "Mật khẩu.",
+    "id": "domain-02",
+    "category": "domain_specific",
+    "notes": "Query về repo github nộp bài cụ thể (cần hiểu VinUni-AI20k context).",
     "turns": [
-      {"query": "Tìm mật khẩu Discord của thành viên nhóm", "expectedStatus": "rejected", "expectedRejectionReason": "personal_data", "expectedTop3": [], "forbiddenIds": []}
+      {"query": "Repo github nộp bài Batch03 K3 AI Product Hackathon", "expectedStatus": "success", "expectedTop3": ["1532214352415952966"], "forbiddenIds": ["1531844921991106761", "1531847474774282270"]}
     ]
   },
+
   {
-    "id": "typo-01",
-    "category": "typo",
-    "notes": "Không dấu và typo.",
-    "turns": [
-      {"query": "tim ma nguon Synthea tao du lieu y te", "expectedStatus": "success", "expectedTop3": ["1531237299986366555"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "typo-02",
+    "id": "edge-mixed-01",
     "category": "mixed_language",
-    "notes": "Trộn tiếng Việt Anh.",
+    "notes": "Query trộn tiếng Việt - Anh tự nhiên.",
     "turns": [
-      {"query": "need repo for LLM token optimization", "expectedStatus": "success", "expectedTop3": ["1531239417220431873", "1531319733905784962"], "forbiddenIds": []}
+      {"query": "Need video ve self-attention transformer explainer", "expectedStatus": "success", "expectedTop3": ["1529785478591549621"], "forbiddenIds": []}
     ]
   },
   {
-    "id": "type-01",
-    "category": "type_filter",
-    "notes": "Lọc theo type video.",
+    "id": "edge-nodiacritics-01",
+    "category": "no_diacritics",
+    "notes": "Query không dấu + typo nhẹ - model cần fuzzy match keywords.",
     "turns": [
-      {"query": "Video bài giảng về xây dựng LLM", "expectedStatus": "success", "expectedTop3": ["1530602473159524372"], "forbiddenIds": []}
-    ]
-  },
-  {
-    "id": "type-02",
-    "category": "type_filter",
-    "notes": "Lọc theo type guide.",
-    "turns": [
-      {"query": "Hướng dẫn về quản lý context token", "expectedStatus": "success", "expectedTop3": ["1531319733905784962"], "forbiddenIds": []}
+      {"query": "huong dan tai slide bai giang vlearn", "expectedStatus": "success", "expectedTop3": ["1532255472097169489"], "forbiddenIds": []}
     ]
   }
 ]

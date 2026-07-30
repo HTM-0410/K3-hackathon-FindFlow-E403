@@ -159,8 +159,8 @@ export function guardRankedResponse(
     if (!resource || seen.has(item.resourceId)) continue;
     const score = clampScore(item.matchScore);
     
-    // Chỉ chấp nhận kết quả có score >= 40
-    if (score < 40) continue;
+    // Chỉ chấp nhận kết quả có score >= 50
+    if (score < 50) continue;
     
     seen.add(item.resourceId);
     guarded.push({
