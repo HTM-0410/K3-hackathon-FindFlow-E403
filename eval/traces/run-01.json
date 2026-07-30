@@ -1,0 +1,439 @@
+{
+  "generatedAt": "2026-07-30T06:33:11.971Z",
+  "model": "gemini-3.1-flash-lite",
+  "embeddingModel": "gemini-embedding-2",
+  "total": 24,
+  "passed": 24,
+  "passRate": 100,
+  "runs": [
+    {
+      "id": "happy-01",
+      "query": "Tìm slide hướng dẫn Hackathon và cách tính điểm",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-001",
+        "res-002"
+      ],
+      "actualTop3": [
+        "res-001",
+        "res-002"
+      ],
+      "forbiddenIds": [
+        "res-035"
+      ],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "b6310f05-7834-42bc-ac6b-45ffc06b16be",
+      "latencyMs": 2077,
+      "passed": true
+    },
+    {
+      "id": "happy-02",
+      "query": "Code mẫu gọi OpenAI API bằng Python",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-003"
+      ],
+      "actualTop3": [
+        "res-003",
+        "res-007"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "cef3bdb0-f31d-41cb-8ea9-3570dc1d1427",
+      "latencyMs": 2687,
+      "passed": true
+    },
+    {
+      "id": "happy-03",
+      "query": "Video về foundation model",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-006",
+        "res-020"
+      ],
+      "actualTop3": [
+        "res-006",
+        "res-020"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "92d95f95-ad16-4a70-9815-5578742de443",
+      "latencyMs": 2163,
+      "passed": true
+    },
+    {
+      "id": "happy-04",
+      "query": "Hướng dẫn viết prompt draft critique revise",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-004"
+      ],
+      "actualTop3": [
+        "res-004"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "35108a41-f4c1-47e1-a9f9-3fdda763679f",
+      "latencyMs": 1794,
+      "passed": true
+    },
+    {
+      "id": "happy-05",
+      "query": "Lịch mentor và office hour",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-009"
+      ],
+      "actualTop3": [
+        "res-009"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "56a3327a-2937-4c6b-b575-24e25e0e9168",
+      "latencyMs": 2247,
+      "passed": true
+    },
+    {
+      "id": "happy-06",
+      "query": "Bài lab structured output JSON schema",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-026"
+      ],
+      "actualTop3": [
+        "res-026"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "30ae1351-a114-4df3-8341-7b57bd32cd3a",
+      "latencyMs": 1839,
+      "passed": true
+    },
+    {
+      "id": "happy-07",
+      "query": "Tài liệu về HAX và AI UX",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-042"
+      ],
+      "actualTop3": [
+        "res-042",
+        "res-044",
+        "res-043"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "c25c25a3-bedf-4721-b8a2-b9b5658319bb",
+      "latencyMs": 2794,
+      "passed": true
+    },
+    {
+      "id": "happy-08",
+      "query": "Golden set và cách đánh giá prompt",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-046",
+        "res-021"
+      ],
+      "actualTop3": [
+        "res-046",
+        "res-048",
+        "res-023"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "c073055e-e467-4992-8a0f-5f052b3063fc",
+      "latencyMs": 2836,
+      "passed": true
+    },
+    {
+      "id": "happy-09",
+      "query": "Data privacy và PII",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-038"
+      ],
+      "actualTop3": [
+        "res-038"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "42ac8eab-bb6e-43ac-b593-3e7bb9e98047",
+      "latencyMs": 1948,
+      "passed": true
+    },
+    {
+      "id": "happy-10",
+      "query": "Mẫu feedback log user validation",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-050"
+      ],
+      "actualTop3": [
+        "res-050"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "634f7e6b-26a8-492f-80a7-39421c37fb1b",
+      "latencyMs": 2339,
+      "passed": true
+    },
+    {
+      "id": "ambiguous-01",
+      "query": "slide buổi trước",
+      "expectedStatus": "low_confidence",
+      "actualStatus": "low_confidence",
+      "expectedTop3": [],
+      "actualTop3": [],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "5c67ea6d-01ac-4c71-9b63-36f3fd5628e0",
+      "latencyMs": 2444,
+      "passed": true
+    },
+    {
+      "id": "ambiguous-02",
+      "query": "cho mình tài liệu đó",
+      "expectedStatus": "low_confidence",
+      "actualStatus": "low_confidence",
+      "expectedTop3": [],
+      "actualTop3": [],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "56b46ab7-64f1-4f5b-a36b-9dedb3811645",
+      "latencyMs": 2168,
+      "passed": true
+    },
+    {
+      "id": "ambiguous-03",
+      "query": "video AI",
+      "expectedStatus": "low_confidence",
+      "actualStatus": "low_confidence",
+      "expectedTop3": [],
+      "actualTop3": [
+        "res-006",
+        "res-020",
+        "res-024"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "57725fa6-8520-473b-b34d-c8f535c78a9b",
+      "latencyMs": 2753,
+      "passed": true
+    },
+    {
+      "id": "ambiguous-04",
+      "query": "bài lab hôm nọ",
+      "expectedStatus": "low_confidence",
+      "actualStatus": "low_confidence",
+      "expectedTop3": [],
+      "actualTop3": [
+        "res-007",
+        "res-030"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "799c2405-2d84-40f2-9aac-79e5ddbb6189",
+      "latencyMs": 2249,
+      "passed": true
+    },
+    {
+      "id": "scope-01",
+      "query": "Tài liệu học nấu ăn",
+      "expectedStatus": "no_match",
+      "actualStatus": "no_match",
+      "expectedTop3": [],
+      "actualTop3": [],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "b3acb74c-33bd-4549-816c-5f3b2353843d",
+      "latencyMs": 1604,
+      "passed": true
+    },
+    {
+      "id": "scope-02",
+      "query": "Nhắn mentor xin nghỉ giúp tôi",
+      "expectedStatus": "no_match",
+      "actualStatus": "no_match",
+      "expectedTop3": [],
+      "actualTop3": [],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "a817e809-ee78-40da-adf7-72393867ef80",
+      "latencyMs": 1738,
+      "passed": true
+    },
+    {
+      "id": "scope-03",
+      "query": "Nộp bài lên hệ thống giúp tôi",
+      "expectedStatus": "no_match",
+      "actualStatus": "no_match",
+      "expectedTop3": [],
+      "actualTop3": [],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "07213382-e747-4a6d-a108-31b69d862579",
+      "latencyMs": 2577,
+      "passed": true
+    },
+    {
+      "id": "scope-04",
+      "query": "Cho tôi số điện thoại của giảng viên",
+      "expectedStatus": "no_match",
+      "actualStatus": "no_match",
+      "expectedTop3": [],
+      "actualTop3": [],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "e849cd44-1eaa-44db-bfd8-87998aac23c9",
+      "latencyMs": 2429,
+      "passed": true
+    },
+    {
+      "id": "domain-01",
+      "query": "Deadline CP4 và lúc khóa quality bar",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-034"
+      ],
+      "actualTop3": [
+        "res-034",
+        "res-011"
+      ],
+      "forbiddenIds": [
+        "res-037"
+      ],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "ba3f482d-9e53-4580-9478-afb106f5106f",
+      "latencyMs": 2461,
+      "passed": true
+    },
+    {
+      "id": "domain-02",
+      "query": "Quy định tính điểm XP chính thức",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-008"
+      ],
+      "actualTop3": [
+        "res-008"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "44cf0887-cf0e-4c25-a997-a64bc194da2f",
+      "latencyMs": 1901,
+      "passed": true
+    },
+    {
+      "id": "domain-03",
+      "query": "Cấu trúc repo nộp bài chính thức",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-040",
+        "res-011"
+      ],
+      "actualTop3": [
+        "res-040",
+        "res-011"
+      ],
+      "forbiddenIds": [
+        "res-041"
+      ],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "8b8025cc-f1f3-41eb-b5ee-e0b1fb4d27b6",
+      "latencyMs": 2575,
+      "passed": true
+    },
+    {
+      "id": "domain-04",
+      "query": "Rubric Hackathon hiện tại",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-002"
+      ],
+      "actualTop3": [
+        "res-002",
+        "res-001"
+      ],
+      "forbiddenIds": [
+        "res-037"
+      ],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "168d02dc-ff85-482f-bcfa-253e460232a8",
+      "latencyMs": 2144,
+      "passed": true
+    },
+    {
+      "id": "rare-01",
+      "query": "tim ma nguon goi gemni api typescrpt",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-027"
+      ],
+      "actualTop3": [
+        "res-027"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "39567a8a-63ef-41b1-95b4-55c37add34b0",
+      "latencyMs": 1805,
+      "passed": true
+    },
+    {
+      "id": "rare-02",
+      "query": "need video ve self attention transformer",
+      "expectedStatus": "success",
+      "actualStatus": "success",
+      "expectedTop3": [
+        "res-020"
+      ],
+      "actualTop3": [
+        "res-020"
+      ],
+      "forbiddenIds": [],
+      "retrievalMode": "hybrid",
+      "candidateCount": 20,
+      "traceId": "40726426-0624-4a4c-aca9-f1dd79154a78",
+      "latencyMs": 1757,
+      "passed": true
+    }
+  ]
+}

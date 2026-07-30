@@ -111,13 +111,16 @@ Chọn bài toán tìm lại tài liệu vì:
 
 - Mức hiện tại: [x] Mock.
 - Mức nhắm tới trước CP6: [x] Mock có AI thật ở lõi xếp hạng.
-- Phần thật dự kiến: một lời gọi AI cho quyết định phân tích/ranking trên danh mục mock; ghi log/trace.
-- Phần mock: 12 tài liệu nội bộ, metadata, URL nguồn và nội dung kênh.
+- Phần thật dự kiến: Gemini rerank tập ứng viên do CandidateProvider truy xuất; ghi log/trace.
+- Phần mock: 50 tài liệu nội bộ, metadata, URL nguồn và nội dung kênh.
 
 ### 4.4 Automation
 
 **Chọn: Conditional.**
 
+- Hệ thống không gửi toàn bộ kho cho Gemini. `CandidateProvider` tìm tối đa 20 ứng viên bằng chỉ mục metadata; Gemini chỉ rerank tập ứng viên này và trả tối đa 5 tài liệu.
+- Với dataset mock, provider dùng metadata/keyword index trong bộ nhớ. Khi có dataset lớn, thay provider bằng full-text hoặc hybrid vector + keyword retrieval; API và UI giữ nguyên.
+- Embedding của dataset lớn phải được tính trước lúc ingest, không tính lại toàn bộ mỗi lần user tìm kiếm.
 - Khi hệ thống có đủ căn cứ và điểm tin cậy vượt ngưỡng, tự xếp hạng và hiển thị tối đa 5 tài liệu.
 - Khi điểm thấp hoặc không có tài liệu có căn cứ, không đoán; hiển thị empty/low-confidence state và cho user sửa truy vấn hoặc duyệt kho.
 
@@ -277,4 +280,3 @@ Chọn dựa trên kết quả user test, không dựa trên sở thích nhóm.
 6. Viết golden set ≥20 case và chốt quality bar trước hạn.
 7. Chạy eval lượt đầu; giữ toàn bộ kết quả.
 8. Validation với ≥5 user và cập nhật changelog.
-
