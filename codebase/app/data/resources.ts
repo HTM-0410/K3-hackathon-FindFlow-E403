@@ -1,4 +1,5 @@
 import type { Resource, ResourceType } from "../types/resource";
+import { discordResources } from "./discord-resources";
 
 type ResourceSeed = Omit<
   Resource,
@@ -83,7 +84,7 @@ const extraResources: ResourceSeed[] = extraSeeds.map((seed, index) => {
   };
 });
 
-export const resources: Resource[] = [...coreResources, ...extraResources].map(
+const mockResources: Resource[] = [...coreResources, ...extraResources].map(
   (resource, index) => ({
     ...resource,
     source: {
@@ -105,6 +106,9 @@ export const resources: Resource[] = [...coreResources, ...extraResources].map(
     canonicalKey: `mock:${resource.id}:${resource.version ?? "current"}`,
   }),
 );
+
+// Combine mock + Discord real data
+export const resources: Resource[] = [...mockResources, ...discordResources];
 
 export const resourceById = new Map(resources.map((resource) => [resource.id, resource]));
 

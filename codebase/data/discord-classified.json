@@ -1,0 +1,3805 @@
+{
+  "total_classified": 139,
+  "classified_resources": [
+    {
+      "resource_type": "guide",
+      "title": "8 Kiến trúc RAG dành cho AI Engineers",
+      "summary": "Tổng hợp và giải thích 8 kiến trúc RAG (Retrieval-Augmented Generation) phổ biến, bao gồm Naive RAG, Multimodal RAG, HyDE, Corrective RAG, Graph RAG, Hybrid RAG, Adaptive RAG và Agentic RAG, cùng với các trường hợp sử dụng phù hợp cho từng kiến trúc.",
+      "topic": "Retrieval-Augmented Generation (RAG)",
+      "tags": [
+        "RAG",
+        "kiến trúc AI",
+        "Naive RAG",
+        "Multimodal RAG",
+        "HyDE",
+        "Corrective RAG",
+        "Graph RAG",
+        "Hybrid RAG",
+        "Adaptive RAG",
+        "Agentic RAG"
+      ],
+      "keywords": [
+        "kiến trúc RAG",
+        "AI Engineers",
+        "truy xuất thông tin",
+        "sinh văn bản",
+        "mô hình ngôn ngữ lớn"
+      ],
+      "confidence": "high",
+      "id": "1532037128517714092",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532037128517714092/1532037128517714092",
+      "source_url": "",
+      "channel_name": "8 Kiến trúc RAG dành cho AI Engineers",
+      "shared_by": "T133 - Phạm Thế Trung - 01299"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Cấu hình AI Logs cho Copilot",
+      "summary": "Hướng dẫn cấu hình AI Logs cho Copilot, bao gồm các bước thiết lập ban đầu, script để lấy log và đẩy lên server, cũng như cách xử lý lỗi SSL certificate verification failed.",
+      "topic": "AI Logging",
+      "tags": [
+        "Copilot",
+        "AI Logs",
+        "cấu hình",
+        "Python",
+        "git hooks",
+        "SSL"
+      ],
+      "keywords": [
+        "Copilot",
+        "AI Logs",
+        "cấu hình",
+        "Python",
+        "git pre-push hook",
+        "SSL certificate",
+        "submit log"
+      ],
+      "confidence": "high",
+      "id": "1531661356850221197",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531661356850221197/1531661356850221197",
+      "source_url": "",
+      "channel_name": "AI Logs for copilot",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "resource_type": "github",
+      "title": "Script Python: Install AI logging support for Copilot and git push submission",
+      "summary": "Đoạn mã Python để cài đặt hỗ trợ ghi nhật ký AI cho Copilot và gửi nhật ký khi git push. Bao gồm các hàm load_env, ensure_dir, và write_pre_push_hook để tạo hook pre-push của git.",
+      "topic": "AI Logging",
+      "tags": [
+        "Python",
+        "git hooks",
+        "Copilot",
+        "AI Logs",
+        "script"
+      ],
+      "keywords": [
+        "Python script",
+        "git pre-push hook",
+        "AI logging",
+        "Copilot",
+        "submit log"
+      ],
+      "confidence": "high",
+      "id": "1531661865753509898",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531661356850221197/1531661865753509898",
+      "source_url": "",
+      "channel_name": "AI Logs for copilot",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "resource_type": "github",
+      "title": "Script Python: Cấu hình Copilot hook",
+      "summary": "Đoạn mã Python để đảm bảo cấu hình hook của Copilot tồn tại, tạo file hooks.json với các hook userPromptSubmitted và sessionEnd để ghi lại các sự kiện của Copilot.",
+      "topic": "AI Logging",
+      "tags": [
+        "Python",
+        "Copilot",
+        "AI Logs",
+        "cấu hình",
+        "JSON"
+      ],
+      "keywords": [
+        "Python script",
+        "Copilot hook",
+        "AI logging",
+        "hooks.json",
+        "userPromptSubmitted",
+        "sessionEnd"
+      ],
+      "confidence": "high",
+      "id": "1531661983588552797",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531661356850221197/1531661983588552797",
+      "source_url": "",
+      "channel_name": "AI Logs for copilot",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "resource_type": "github",
+      "title": "Script Python: Main function cho AI Log Setup",
+      "summary": "Hàm main trong script Python để thiết lập AI logging, bao gồm tải biến môi trường, đảm bảo thư mục log tồn tại, cấu hình Copilot hook và ghi hook pre-push của git. Hướng dẫn sử dụng 'git push' để gửi log hoặc chạy script thủ công.",
+      "topic": "AI Logging",
+      "tags": [
+        "Python",
+        "AI Logs",
+        "cấu hình",
+        "git hooks",
+        "main function"
+      ],
+      "keywords": [
+        "Python script",
+        "AI log setup",
+        "environment variables",
+        "Copilot hook",
+        "git pre-push hook",
+        "submit log"
+      ],
+      "confidence": "high",
+      "id": "1531662039037251704",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531661356850221197/1531662039037251704",
+      "source_url": "",
+      "channel_name": "AI Logs for copilot",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Xử lý lỗi SSL Certificate Verification Failed",
+      "summary": "Giải thích nguyên nhân lỗi SSL CERTIFICATE_VERIFY_FAILED khi Python không thể xác thực chứng chỉ SSL và cách khắc phục bằng cách thêm 'certifi' vào requirements.txt và bổ sung vào submit_log.py.",
+      "topic": "Troubleshooting",
+      "tags": [
+        "SSL",
+        "lỗi",
+        "Python",
+        "certifi",
+        "submit_log.py"
+      ],
+      "keywords": [
+        "SSL error",
+        "CERTIFICATE_VERIFY_FAILED",
+        "Python SSL",
+        "certifi",
+        "troubleshooting"
+      ],
+      "confidence": "high",
+      "id": "1531662445846991089",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531661356850221197/1531662445846991089",
+      "source_url": "",
+      "channel_name": "AI Logs for copilot",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Khắc phục lỗi SSL: Thêm certifi vào requirements.txt",
+      "summary": "Hướng dẫn thêm 'certifi>=2024.11.1' vào file requirements.txt để giải quyết lỗi SSL certificate verification failed trong Python.",
+      "topic": "Troubleshooting",
+      "tags": [
+        "SSL",
+        "lỗi",
+        "Python",
+        "certifi",
+        "requirements.txt"
+      ],
+      "keywords": [
+        "SSL fix",
+        "certifi",
+        "requirements.txt",
+        "Python dependency"
+      ],
+      "confidence": "high",
+      "id": "1531662729801236641",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531661356850221197/1531662729801236641",
+      "source_url": "",
+      "channel_name": "AI Logs for copilot",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Khắc phục lỗi SSL: Bổ sung vào submit_log.py",
+      "summary": "Hướng dẫn bổ sung các đoạn mã cần thiết vào file submit_log.py để khắc phục lỗi SSL certificate verification failed.",
+      "topic": "Troubleshooting",
+      "tags": [
+        "SSL",
+        "lỗi",
+        "Python",
+        "submit_log.py"
+      ],
+      "keywords": [
+        "SSL fix",
+        "submit_log.py",
+        "Python code modification"
+      ],
+      "confidence": "high",
+      "id": "1531663311999995955",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531661356850221197/1531663311999995955",
+      "source_url": "",
+      "channel_name": "AI Logs for copilot",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "resource_type": "guide",
+      "title": "AI sẽ thay thế con người hay chỉ thay thế những người không biết sử dụng AI?",
+      "summary": "Bài viết phân tích tác động của AI đến thị trường lao động, khẳng định AI sẽ thay đổi cách con người làm việc chứ không thay thế hoàn toàn. Nhấn mạnh tầm quan trọng của việc học hỏi và tận dụng AI để nâng cao hiệu quả công việc.",
+      "topic": "Tác động của AI đến xã hội",
+      "tags": [
+        "AI",
+        "tương lai công việc",
+        "thay thế con người",
+        "kỹ năng AI",
+        "tư duy phản biện",
+        "sáng tạo"
+      ],
+      "keywords": [
+        "AI và việc làm",
+        "tác động của AI",
+        "kỹ năng tương lai",
+        "công nghệ và con người",
+        "tận dụng AI"
+      ],
+      "confidence": "high",
+      "id": "1531844593224650812",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531844593224650812/1531844593224650812",
+      "source_url": "",
+      "channel_name": "AI sẽ thay thế con người hay chỉ thay thế những người không biết sử dụng AI?",
+      "shared_by": "G14 - T031 - Phùng Linh - 01992"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Bình luận về bài viết 'AI sẽ thay thế con người hay chỉ thay thế những người không biết sử dụng AI?'",
+      "summary": "Bình luận bày tỏ suy nghĩ về khả năng AI thay thế con người sau khi đọc bài viết về tác động của AI đến thị trường lao động.",
+      "topic": "Tác động của AI đến xã hội",
+      "tags": [
+        "AI",
+        "thay thế con người",
+        "bình luận"
+      ],
+      "keywords": [
+        "AI",
+        "tương lai",
+        "con người",
+        "bình luận"
+      ],
+      "confidence": "medium",
+      "id": "1531844961165643806",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531844593224650812/1531844961165643806",
+      "source_url": "",
+      "channel_name": "AI sẽ thay thế con người hay chỉ thay thế những người không biết sử dụng AI?",
+      "shared_by": "T060 - Lưu Quang Nhật"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Tóm tắt nhanh về Agent AI chạy thật ở production",
+      "summary": "Tài liệu tóm tắt các vấn đề thường gặp khi triển khai Agent AI trong môi trường production (lỗi cộng dồn, hallucination, loop runaway, mất trạng thái) và đưa ra các nguyên tắc thiết kế cùng checklist 8 bước để xây dựng Agent AI đáng tin cậy.",
+      "topic": "AI Agent Production, Lỗi Agent AI, Thiết kế Agent AI",
+      "tags": [
+        "AI Agent",
+        "Production",
+        "Lỗi",
+        "Thiết kế",
+        "Checklist"
+      ],
+      "keywords": [
+        "Agent AI",
+        "production",
+        "lỗi nhân lũy tiến",
+        "hallucination",
+        "vòng lặp vô tận",
+        "mất trạng thái",
+        "context engineering",
+        "control flow",
+        "state ngoài model",
+        "scope nhỏ",
+        "least-privilege",
+        "orchestration layer",
+        "giới hạn loop",
+        "version prompts",
+        "schema",
+        "context pruning",
+        "state/checkpoint",
+        "validate & verify",
+        "least-privilege",
+        "sandbox",
+        "observability"
+      ],
+      "confidence": 0.95,
+      "id": "1531687765199159376",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531687765199159376/1531687765199159376",
+      "source_url": "",
+      "channel_name": "Agent AI chạy thật ở production — những điều cần biết + giải pháp thực tế",
+      "shared_by": "T151-Nguyễn Tiến Dũng-01707"
+    },
+    {
+      "resource_type": "guide",
+      "title": "GIF: Hmmmm",
+      "summary": "Một GIF thể hiện sự suy nghĩ, có thể liên quan đến việc cân nhắc các vấn đề trong phát triển AI Agent.",
+      "topic": "Suy nghĩ, Cân nhắc",
+      "tags": [
+        "GIF",
+        "Suy nghĩ"
+      ],
+      "keywords": [
+        "hmmmm",
+        "suy nghĩ",
+        "cân nhắc"
+      ],
+      "confidence": 0.7,
+      "id": "1531688207068954825",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531687765199159376/1531688207068954825",
+      "source_url": "https://klipy.com/gifs/hmmmm-20",
+      "channel_name": "Agent AI chạy thật ở production — những điều cần biết + giải pháp thực tế",
+      "shared_by": "T194 - Đào Trung Hiếu - 01238"
+    },
+    {
+      "resource_type": "guide",
+      "title": "GIF: Batman Thinking",
+      "summary": "Một GIF của Batman đang suy nghĩ, có thể được sử dụng để diễn tả sự tập trung giải quyết vấn đề trong phát triển AI.",
+      "topic": "Suy nghĩ, Giải quyết vấn đề",
+      "tags": [
+        "GIF",
+        "Batman",
+        "Suy nghĩ"
+      ],
+      "keywords": [
+        "batman thinking",
+        "suy nghĩ",
+        "giải quyết vấn đề"
+      ],
+      "confidence": 0.7,
+      "id": "1531691914557132951",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531687765199159376/1531691914557132951",
+      "source_url": "https://klipy.com/gifs/batman-thinking-16",
+      "channel_name": "Agent AI chạy thật ở production — những điều cần biết + giải pháp thực tế",
+      "shared_by": "T214-Nguyễn Tùng Dương-01534"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Bộ MCP hữu ích khi code với AI",
+      "summary": "Chia sẻ kinh nghiệm về việc sử dụng các Multi-Context Prompting (MCP) khác nhau để tối ưu hóa quá trình phát triển phần mềm với AI, bao gồm các MCP cho documentation, GitHub, CodeGraph, Database và Playwright/browser.",
+      "topic": "Multi-Context Prompting (MCP), Phát triển phần mềm với AI, Debugging với AI",
+      "tags": [
+        "MCP",
+        "AI Coding",
+        "Prompt Engineering",
+        "Phát triển phần mềm",
+        "Debug"
+      ],
+      "keywords": [
+        "MCP",
+        "Cursor",
+        "VS Code",
+        "documentation MCP",
+        "GitHub MCP",
+        "CodeGraph",
+        "Database MCP",
+        "Playwright/browser MCP",
+        "AI Agent",
+        "fix bug",
+        "coding agent"
+      ],
+      "confidence": 0.95,
+      "id": "1530791334166790175",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530791334166790175/1530791334166790175",
+      "source_url": "",
+      "channel_name": "Bộ MCP mình thấy hữu ích khi code với AI",
+      "shared_by": "T073 - Bùi Gia Huy - 01879"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Câu hỏi về ứng dụng thông tin MCP",
+      "summary": "Một câu hỏi đơn giản về cách áp dụng thông tin được chia sẻ về các Multi-Context Prompting (MCP).",
+      "topic": "Ứng dụng MCP",
+      "tags": [
+        "MCP",
+        "Câu hỏi",
+        "Ứng dụng"
+      ],
+      "keywords": [
+        "thông tin",
+        "ứng dụng",
+        "MCP"
+      ],
+      "confidence": 0.8,
+      "id": "1531887999942529156",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530791334166790175/1531887999942529156",
+      "source_url": "",
+      "channel_name": "Bộ MCP mình thấy hữu ích khi code với AI",
+      "shared_by": "T073-Hồ Quang Minh-01906"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Cảnh báo quyền riêng tư nghiêm trọng của Claude",
+      "summary": "Thông báo về lỗ hổng quyền riêng tư của Claude khi các cuộc trò chuyện được chia sẻ công khai bị Google index, dẫn đến rò rỉ thông tin nhạy cảm như API key, thông tin cá nhân, và dữ liệu công ty. Khuyến nghị người dùng kiểm tra và xóa các cuộc trò chuyện đã chia sẻ.",
+      "topic": "Quyền riêng tư AI, Lỗ hổng bảo mật, Claude",
+      "tags": [
+        "Claude",
+        "Quyền riêng tư",
+        "Bảo mật",
+        "Lỗ hổng",
+        "Thông báo"
+      ],
+      "keywords": [
+        "Claude",
+        "quyền riêng tư",
+        "Google index",
+        "API key",
+        "thông tin cá nhân",
+        "dữ liệu nhạy cảm",
+        "noindex",
+        "ChatGPT",
+        "Anthropic",
+        "Shared Chats"
+      ],
+      "confidence": 0.95,
+      "id": "1531580768441077912",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531580768441077912/1531580768441077912",
+      "source_url": "",
+      "channel_name": "CLAUDE ĐANG GẶP MỘT VẤN ĐỀ NGHIÊM TRỌNG VỀ QUYỀN RIÊNG TƯ",
+      "shared_by": "T055 - Cao Hữu Phúc - 01283"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Bộ UI Design Keywords giúp AI sinh giao diện đẹp hơn",
+      "summary": "Chia sẻ một file .txt chứa hơn 20 UI Design Style Keywords (SaaS, AI, Education, Gaming, Fintech, Restaurant, Healthcare, Luxury, Travel,...) để giúp AI tạo ra giao diện đẹp và nhất quán hơn khi thiết kế sản phẩm AI.",
+      "topic": "Thiết kế UI/UX với AI, Prompt Engineering cho UI, AI Generated UI",
+      "tags": [
+        "UI Design",
+        "AI",
+        "Prompt Engineering",
+        "Keywords",
+        "Thiết kế giao diện"
+      ],
+      "keywords": [
+        "UI Design Keywords",
+        "AI generated UI",
+        "prompt",
+        "phong cách thiết kế",
+        "SaaS",
+        "AI",
+        "Education",
+        "Gaming",
+        "Fintech",
+        "Restaurant",
+        "Healthcare",
+        "Luxury",
+        "Travel",
+        "design direction",
+        "AI Agent"
+      ],
+      "confidence": 0.95,
+      "id": "1532210215821508681",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532210215821508681/1532210215821508681",
+      "source_url": "",
+      "channel_name": "Chia sẻ bộ UI Design Keywords giúp AI sinh giao diện đẹp hơn",
+      "shared_by": "T078 - Nguyễn Xuân Huy - 01437"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Thảo luận về thời điểm áp dụng UI Design Keywords",
+      "summary": "Câu hỏi về việc nên thêm UI Design Keywords vào prompt khi bắt đầu build hay sau khi có khung giao diện, nhằm tối ưu hóa kết quả thiết kế UI từ AI.",
+      "topic": "Thiết kế UI/UX với AI, Prompt Engineering cho UI",
+      "tags": [
+        "UI Design",
+        "AI",
+        "Prompt Engineering",
+        "Câu hỏi",
+        "Thảo luận"
+      ],
+      "keywords": [
+        "UI Design Keywords",
+        "prompt",
+        "build UI",
+        "khung giao diện",
+        "áp dụng prompt"
+      ],
+      "confidence": 0.9,
+      "id": "1532212143598993438",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532210215821508681/1532212143598993438",
+      "source_url": "",
+      "channel_name": "Chia sẻ bộ UI Design Keywords giúp AI sinh giao diện đẹp hơn",
+      "shared_by": "T158 - Phạm Phúc Minh - 01153"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Giải đáp về thời điểm áp dụng UI Design Keywords",
+      "summary": "Giải thích rằng nên thêm UI Design Keywords ngay từ prompt đầu tiên để AI định hình layout, màu sắc, typography và component style từ đầu, thay vì chỉ thay đổi bề ngoài sau khi giao diện đã được tạo.",
+      "topic": "Thiết kế UI/UX với AI, Prompt Engineering cho UI",
+      "tags": [
+        "UI Design",
+        "AI",
+        "Prompt Engineering",
+        "Hướng dẫn",
+        "Lời khuyên"
+      ],
+      "keywords": [
+        "UI Design Keywords",
+        "prompt đầu tiên",
+        "layout",
+        "màu sắc",
+        "spacing",
+        "typography",
+        "component style",
+        "refine UI"
+      ],
+      "confidence": 0.95,
+      "id": "1532213762197815458",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532210215821508681/1532213762197815458",
+      "source_url": "",
+      "channel_name": "Chia sẻ bộ UI Design Keywords giúp AI sinh giao diện đẹp hơn",
+      "shared_by": "T078 - Nguyễn Xuân Huy - 01437"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Lộ trình Từ ý tưởng đến sản phẩm AI thực tế",
+      "summary": "Bộ tài liệu và mã nguồn miễn phí chia sẻ quy trình xây dựng sản phẩm AI từ ý tưởng đến triển khai thực tế, tập trung vào Vibe Coding, bao gồm tìm ý tưởng, tư duy sản phẩm, nghiên cứu người dùng, xây dựng MVP và kỹ năng debug với AI.",
+      "topic": "Phát triển sản phẩm AI, Vibe Coding, Lộ trình AI, AI Trainer",
+      "tags": [
+        "Sản phẩm AI",
+        "Vibe Coding",
+        "Lộ trình",
+        "AI Trainer",
+        "MVP",
+        "Debug AI",
+        "Tài liệu",
+        "Mã nguồn"
+      ],
+      "keywords": [
+        "AI Trainer",
+        "sản phẩm AI",
+        "Vibe Coding",
+        "ý tưởng",
+        "tư duy sản phẩm",
+        "thiết kế giải pháp",
+        "nghiên cứu người dùng",
+        "MVP",
+        "hoàn thiện sản phẩm AI",
+        "kỹ năng làm việc với AI",
+        "debug",
+        "lỗi",
+        "learning.aiecos.ai",
+        "github.com/aiecosvietnam/learning-ai"
+      ],
+      "confidence": 0.95,
+      "id": "1530553528207020094",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530553528207020094/1530553528207020094",
+      "source_url": "https://learning.aiecos.ai/",
+      "channel_name": "Chia sẻ lộ trình Từ ý tưởng đến sản phẩm AI thực tế ( tài liệu tham khảo)",
+      "shared_by": "T038- Hoang - 01198"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Chia sẻ lộ trình Từ ý tưởng đến sản phẩm AI thực tế",
+      "summary": "Một thành viên cảm ơn về chia sẻ lộ trình từ ý tưởng đến sản phẩm AI thực tế, cho thấy nội dung này hữu ích và mang tính thực chiến.",
+      "topic": "Lộ trình phát triển sản phẩm AI",
+      "tags": [
+        "AI",
+        "sản phẩm AI",
+        "lộ trình",
+        "thực chiến"
+      ],
+      "keywords": [
+        "AI",
+        "sản phẩm",
+        "lộ trình",
+        "thực chiến"
+      ],
+      "confidence": 0.9,
+      "id": "1530886444258693263",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530553528207020094/1530886444258693263",
+      "source_url": "",
+      "channel_name": "Chia sẻ lộ trình Từ ý tưởng đến sản phẩm AI thực tế ( tài liệu tham khảo)",
+      "shared_by": "Vonhatcuong"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Phân tích và giải pháp chia đóng góp thành viên trong Phoenix Demo Day",
+      "summary": "Bài viết phân tích cơ chế chia đóng góp thành viên trên trang Demo Day của Phoenix, chỉ ra vấn đề khi kéo thanh slider và đề xuất giải pháp đơn giản để phân chia theo mong muốn.",
+      "topic": "Phân chia đóng góp thành viên",
+      "tags": [
+        "Phoenix",
+        "Demo Day",
+        "chia đóng góp",
+        "UI/UX",
+        "giải pháp"
+      ],
+      "keywords": [
+        "Phoenix",
+        "Demo Day",
+        "chia đóng góp",
+        "slider",
+        "giải pháp"
+      ],
+      "confidence": 0.95,
+      "id": "1531993990801653960",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531993990801653960/1531993990801653960",
+      "source_url": "https://phoenix.note.transformerlabs.ai/demo-day",
+      "channel_name": "Cách chia đóng góp thành viên dễ dàng nhất trong Phoenix",
+      "shared_by": "T162 - Đỗ Trung Kiên - 1287"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Tính năng 'Chia đều' trong Phoenix",
+      "summary": "Admin Odin nhắc nhở về tính năng 'Chia đều' có sẵn trong Phoenix để giải quyết vấn đề phân chia đóng góp thành viên.",
+      "topic": "Tính năng Phoenix",
+      "tags": [
+        "Phoenix",
+        "chia đều",
+        "tính năng",
+        "phân chia đóng góp"
+      ],
+      "keywords": [
+        "Phoenix",
+        "chia đều",
+        "tính năng"
+      ],
+      "confidence": 0.8,
+      "id": "1531997244251701461",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531993990801653960/1531997244251701461",
+      "source_url": "",
+      "channel_name": "Cách chia đóng góp thành viên dễ dàng nhất trong Phoenix",
+      "shared_by": "Admin — ODIN"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Bình luận về cách chia đóng góp trong Phoenix",
+      "summary": "Một thành viên bình luận hài hước về việc kéo 100% đóng góp cho bản thân trong Phoenix, liên quan đến cuộc thảo luận về cách chia đóng góp.",
+      "topic": "Phân chia đóng góp thành viên",
+      "tags": [
+        "Phoenix",
+        "chia đóng góp",
+        "bình luận",
+        "hài hước"
+      ],
+      "keywords": [
+        "Phoenix",
+        "chia đóng góp",
+        "bình luận"
+      ],
+      "confidence": 0.7,
+      "id": "1532068885723877447",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531993990801653960/1532068885723877447",
+      "source_url": "",
+      "channel_name": "Cách chia đóng góp thành viên dễ dàng nhất trong Phoenix",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Cách các mô hình AI lớn phòng chống Prompt Injection: Tổng quan và các lớp phòng thủ",
+      "summary": "Bài viết giải thích rằng các mô hình AI lớn không chỉ dựa vào System Prompt để chống Prompt Injection mà sử dụng cấu trúc phòng thủ đa lớp, bao gồm Authentication, Input Classifier, Prompt Builder, LLM, Policy Checker, Tool Permission, Sandbox và Output Classifier. Bài viết cũng đề cập đến các nghiên cứu gần đây về vấn đề này.",
+      "topic": "Bảo mật AI",
+      "tags": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "LLM",
+        "System Prompt",
+        "phòng thủ đa lớp",
+        "nghiên cứu"
+      ],
+      "keywords": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "LLM",
+        "System Prompt",
+        "phòng thủ đa lớp"
+      ],
+      "confidence": 0.98,
+      "id": "1532208454884786296",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532208454884786296/1532208454884786296",
+      "source_url": "https://arxiv.org/abs/2604.23887",
+      "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+      "shared_by": "T015 - Nguyễn Hoàng Anh - 01186"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Cách các mô hình AI lớn phòng chống Prompt Injection: Huấn luyện mô hình nội tại",
+      "summary": "Bài viết giải thích rằng các mô hình AI lớn được huấn luyện thêm sau pretraining (SFT, RLHF, RLAIF) để tăng cường khả năng chống jailbreak và xử lý các tình huống đối kháng, bao gồm Prompt Injection, thông qua việc học cách ưu tiên instruction hợp lệ và từ chối yêu cầu nguy hiểm.",
+      "topic": "Bảo mật AI",
+      "tags": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "LLM",
+        "huấn luyện mô hình",
+        "SFT",
+        "RLHF",
+        "RLAIF",
+        "jailbreak"
+      ],
+      "keywords": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "LLM",
+        "huấn luyện mô hình",
+        "SFT",
+        "RLHF",
+        "RLAIF"
+      ],
+      "confidence": 0.95,
+      "id": "1532208500069896333",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532208454884786296/1532208500069896333",
+      "source_url": "",
+      "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+      "shared_by": "T015 - Nguyễn Hoàng Anh - 01186"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Cách các mô hình AI lớn phòng chống Prompt Injection: Lớp Input Classifier",
+      "summary": "Bài viết mô tả vai trò của lớp Input Classifier trong việc phát hiện và phân loại các yêu cầu bất thường như Prompt Injection, Jailbreak hoặc nội dung độc hại trước khi prompt được đưa vào LLM. Các phương pháp xây dựng classifier như Regex/Keyword matching, Heuristic, Model nhỏ và Transformer classifier cũng được đề cập.",
+      "topic": "Bảo mật AI",
+      "tags": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "LLM",
+        "Input Classifier",
+        "phát hiện tấn công",
+        "Regex",
+        "Transformer"
+      ],
+      "keywords": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "LLM",
+        "Input Classifier",
+        "phát hiện tấn công"
+      ],
+      "confidence": 0.95,
+      "id": "1532208545066651678",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532208454884786296/1532208545066651678",
+      "source_url": "",
+      "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+      "shared_by": "T015 - Nguyễn Hoàng Anh - 01186"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Cách các mô hình AI lớn phòng chống Prompt Injection: Lọc đầu ra (Output filtering)",
+      "summary": "Bài viết nhấn mạnh tầm quan trọng của lớp lọc đầu ra (Output filtering) như một lớp bảo vệ cuối cùng chống lại các câu trả lời nguy hiểm do LLM sinh ra. Kết luận từ một nghiên cứu năm 2026 cho thấy defense hiệu quả nhất là output filtering bằng code độc lập, không nằm trong LLM.",
+      "topic": "Bảo mật AI",
+      "tags": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "LLM",
+        "Output filtering",
+        "security boundary",
+        "application code"
+      ],
+      "keywords": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "LLM",
+        "Output filtering",
+        "security boundary"
+      ],
+      "confidence": 0.95,
+      "id": "1532208635332001992",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532208454884786296/1532208635332001992",
+      "source_url": "",
+      "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+      "shared_by": "T015 - Nguyễn Hoàng Anh - 01186"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Cách các mô hình AI lớn phòng chống Prompt Injection: Sandbox và Permission",
+      "summary": "Bài viết giải thích cách Sandbox và Permission giúp bảo vệ AI Agent khỏi các hành động ngoài ý muốn do Prompt Injection, bằng cách giới hạn quyền của Agent, thực thi code trong môi trường cách ly và yêu cầu xác nhận từ người dùng. OpenAI cũng mô tả Prompt Injection trong Agent giống social engineering.",
+      "topic": "Bảo mật AI",
+      "tags": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "AI Agent",
+        "Sandbox",
+        "Permission",
+        "Principle of Least Privilege",
+        "Human Confirmation",
+        "Allowlist",
+        "social engineering"
+      ],
+      "keywords": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "AI Agent",
+        "Sandbox",
+        "Permission",
+        "Least Privilege"
+      ],
+      "confidence": 0.98,
+      "id": "1532208717423185920",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532208454884786296/1532208717423185920",
+      "source_url": "https://openai.com/index/designing-agents-to-resist-prompt-injection/",
+      "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+      "shared_by": "T015 - Nguyễn Hoàng Anh - 01186"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Nguồn Prompt Injection không đáng tin cậy: Untrusted Context",
+      "summary": "Bài viết chỉ ra rằng Prompt Injection không chỉ đến từ người dùng mà còn từ các nguồn 'untrusted context' như website, PDF, email, GitHub README, Slack, Notion, Google Docs và RAG documents, đây là những nguồn nguy hiểm hơn nhiều.",
+      "topic": "Bảo mật AI",
+      "tags": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "untrusted context",
+        "RAG",
+        "nguồn tấn công"
+      ],
+      "keywords": [
+        "Prompt Injection",
+        "bảo mật AI",
+        "untrusted context",
+        "RAG"
+      ],
+      "confidence": 0.95,
+      "id": "1532208767867818156",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532208454884786296/1532208767867818156",
+      "source_url": "https://huggingface.co/papers/2302.12173",
+      "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+      "shared_by": "T015 - Nguyễn Hoàng Anh - 01186"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Thông báo về điểm rèn luyện và XP",
+      "summary": "Tin nhắn thảo luận về việc kiếm điểm rèn luyện (XP) và khả năng không nhận được XP khi chia sẻ tài liệu.",
+      "topic": "Điểm rèn luyện, XP, Quy định khóa học",
+      "tags": [
+        "điểm rèn luyện",
+        "XP",
+        "quy định",
+        "thông báo"
+      ],
+      "keywords": [
+        "điểm rèn luyện",
+        "XP",
+        "quy định",
+        "thông báo"
+      ],
+      "confidence": "high",
+      "id": "1532208939775688784",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532208454884786296/1532208939775688784",
+      "source_url": "",
+      "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+      "shared_by": "T203-Nguyễn Hoàng Bảo Minh-01626"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Cách tạo Google Form khảo sát người dùng trong 5 phút bằng LLM",
+      "summary": "Hướng dẫn chi tiết cách sử dụng LLM (cụ thể là Claude) để tạo Google Form khảo sát người dùng chỉ trong 5 phút bằng cách tạo AppScript. Bao gồm các bước từ việc đưa ra pain point, định dạng output là AppScript, đến việc cấp quyền và thực thi code.",
+      "topic": "Tạo Google Form, Khảo sát người dùng, LLM, AppScript, Claude",
+      "tags": [
+        "Google Form",
+        "khảo sát",
+        "LLM",
+        "Claude",
+        "AppScript",
+        "hướng dẫn"
+      ],
+      "keywords": [
+        "Google Form",
+        "khảo sát",
+        "LLM",
+        "Claude",
+        "AppScript",
+        "hướng dẫn"
+      ],
+      "confidence": "high",
+      "id": "1532209046940028990",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532208454884786296/1532209046940028990",
+      "source_url": "",
+      "channel_name": "Cách các mô hình AI lớn phòng chống Prompt Injection",
+      "shared_by": "T015 - Nguyễn Hoàng Anh - 01186"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Đổi tên kênh: Cách tạo google form cho khảo sát người dùng trong 5 phút bằng LLM",
+      "summary": "Thông báo về việc đổi tên kênh Discord thành 'Cách tạo google form cho khảo sát người dùng trong 5 phút bằng LLM'.",
+      "topic": "Thông báo kênh Discord",
+      "tags": [
+        "thông báo",
+        "Discord",
+        "đổi tên kênh"
+      ],
+      "keywords": [
+        "thông báo",
+        "Discord",
+        "đổi tên kênh"
+      ],
+      "confidence": "high",
+      "id": "1532237447356747878",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532237447356747878/1532237447356747878",
+      "source_url": "https://discord.com/channels/1526532830627102781/1532021751561719818.",
+      "channel_name": "Cách tạo google form cho khảo sát người dùng trong 5 phút bằng LLM",
+      "shared_by": "T209 - Trần Lê Quý Đăng - 01408"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Hướng dẫn tải slide bài giảng trên VLearn",
+      "summary": "Hướng dẫn chi tiết các bước để tải slide bài giảng từ VLearn bằng cách sử dụng DevTools để lấy `lectureId` và `materialId`, sau đó ghép vào link `cdn.vlearn.dev` để tải file PDF.",
+      "topic": "Tải slide, VLearn, DevTools, Hướng dẫn kỹ thuật",
+      "tags": [
+        "slide",
+        "VLearn",
+        "tải tài liệu",
+        "DevTools",
+        "hướng dẫn"
+      ],
+      "keywords": [
+        "slide",
+        "VLearn",
+        "tải tài liệu",
+        "DevTools",
+        "hướng dẫn"
+      ],
+      "confidence": "high",
+      "id": "1532237709706264676",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532237447356747878/1532237709706264676",
+      "source_url": "",
+      "channel_name": "Cách tạo google form cho khảo sát người dùng trong 5 phút bằng LLM",
+      "shared_by": "T209 - Trần Lê Quý Đăng - 01408"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Cảnh báo về việc tải slide VLearn và quy định nhà trường",
+      "summary": "Cảnh báo người dùng cẩn thận khi tải slide từ VLearn để tránh vi phạm quy định của nhà trường và gợi ý tham khảo các tài liệu tóm tắt kiến thức an toàn hơn.",
+      "topic": "Quy định nhà trường, VLearn, Cảnh báo",
+      "tags": [
+        "quy định",
+        "VLearn",
+        "cảnh báo",
+        "thông báo"
+      ],
+      "keywords": [
+        "quy định",
+        "VLearn",
+        "cảnh báo",
+        "thông báo"
+      ],
+      "confidence": "high",
+      "id": "1532255472097169489",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532255472097169489/1532255472097169489",
+      "source_url": "https://drive.google.com/file/d/17YgNHHoUZGqQhNDTu7H3V0wZ8UF88ykE/view",
+      "channel_name": "Cách tải slide bài giảng trên Vlearn",
+      "shared_by": "T033-Đặng Quang Trung - 01510"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Graph Engineering: Vì sao bạn nên quan tâm đến Graph Engineering",
+      "summary": "Bài viết giải thích lý do nên áp dụng Graph Engineering trong các dự án AI, đặc biệt là khi các Agent đơn lẻ gặp khó khăn với các tác vụ phức tạp. Nêu bật hai ý tưởng cốt lõi: chia vai trò cho các Agent chuyên trách và sử dụng Shared State để chia sẻ trạng thái công việc, cùng với lợi ích của việc song song hóa. Cung cấp gợi ý áp dụng vào đồ án.",
+      "topic": "Graph Engineering, AI Agent, Loop Engineering, Shared State, Thiết kế hệ thống AI",
+      "tags": [
+        "Graph Engineering",
+        "AI Agent",
+        "Loop Engineering",
+        "Shared State",
+        "thiết kế AI",
+        "hướng dẫn",
+        "kỹ thuật"
+      ],
+      "keywords": [
+        "Graph Engineering",
+        "AI Agent",
+        "Loop Engineering",
+        "Shared State",
+        "thiết kế AI",
+        "hướng dẫn",
+        "kỹ thuật"
+      ],
+      "confidence": "high",
+      "id": "1532266829492261035",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532255472097169489/1532266829492261035",
+      "source_url": "https://discord.com/channels/1526532830627102781/1530529853927854141",
+      "channel_name": "Cách tải slide bài giảng trên Vlearn",
+      "shared_by": "T121 - Lê Quang Huy - 01821"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Phản hồi về bài viết Graph Engineering",
+      "summary": "Tin nhắn bày tỏ sự cảm kích và nhận định bài viết về Graph Engineering rất bổ ích.",
+      "topic": "Phản hồi, Graph Engineering",
+      "tags": [
+        "phản hồi",
+        "Graph Engineering",
+        "thảo luận"
+      ],
+      "keywords": [
+        "phản hồi",
+        "Graph Engineering",
+        "thảo luận"
+      ],
+      "confidence": "medium",
+      "id": "1531943640467898448",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531943640467898448/1531943640467898448",
+      "source_url": "",
+      "channel_name": "Graph Engineering: Vì sao bạn nên quan tâm đến Graph Engineering",
+      "shared_by": "T021 - Nguyễn Trọng Dũng - 01965"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Mẹo tối ưu Prompt và xử lý lỗi khi xây dựng ReAct Agent",
+      "summary": "Bài viết chia sẻ 4 mẹo thực chiến để xây dựng hệ thống Agent ổn định và mượt mà hơn, tập trung vào việc xử lý các lỗi phổ biến như vòng lặp vô hạn (Infinite Loop), LLM bịa ra kết quả (Observation Hallucination) và lỗi parse JSON. Các mẹo bao gồm bổ sung quy tắc Self-Correction, thêm Stop Sequence, củng cố Prompt và sử dụng Regex Extraction để parse JSON an toàn.",
+      "topic": "ReAct Agent, Prompt Engineering, Xử lý lỗi, Infinite Loop, Observation Hallucination, JSON Parsing",
+      "tags": [
+        "ReAct Agent",
+        "Prompt Engineering",
+        "xử lý lỗi",
+        "Infinite Loop",
+        "Observation Hallucination",
+        "JSON Parsing",
+        "kỹ thuật",
+        "hướng dẫn"
+      ],
+      "keywords": [
+        "ReAct Agent",
+        "Prompt Engineering",
+        "xử lý lỗi",
+        "Infinite Loop",
+        "Observation Hallucination",
+        "JSON Parsing",
+        "kỹ thuật",
+        "hướng dẫn"
+      ],
+      "confidence": "high",
+      "id": "1531944617703112835",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531943640467898448/1531944617703112835",
+      "source_url": "",
+      "channel_name": "Graph Engineering: Vì sao bạn nên quan tâm đến Graph Engineering",
+      "shared_by": "T137-Trần Tuấn Trung-01769"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Hoàn thành lab nhóm hiệu quả: Sử dụng Agent lập kế hoạch và chia sẻ trách nhiệm",
+      "summary": "Bài viết đưa ra giải pháp cho vấn đề làm lab nhóm chậm và kém hiệu quả bằng cách đề xuất sử dụng Agent để lập kế hoạch sớm, chia nhỏ bài toán thành các phần độc lập, chốt rõ input/output/interface, và mỗi thành viên chịu trách nhiệm một phần. Nhấn mạnh việc merge và chạy thử thường xuyên, cũng như việc sử dụng coding agent để phân tích repo và bàn bạc.",
+      "topic": "Làm việc nhóm, Lab, Agent, Quản lý dự án, Phân chia công việc, Hiệu suất",
+      "tags": [
+        "làm việc nhóm",
+        "lab",
+        "Agent",
+        "quản lý dự án",
+        "phân chia công việc",
+        "hiệu suất",
+        "hướng dẫn"
+      ],
+      "keywords": [
+        "làm việc nhóm",
+        "lab",
+        "Agent",
+        "quản lý dự án",
+        "phân chia công việc",
+        "hiệu suất",
+        "hướng dẫn"
+      ],
+      "confidence": "high",
+      "id": "1531682452207046662",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531682452207046662/1531682452207046662",
+      "source_url": "",
+      "channel_name": "GÓC KỸ THUẬT: MẸO TỐI ƯU PROMPT & XỬ LÝ LỖI KHI XÂY DỰNG REACT AGENT",
+      "shared_by": "G3-T009-Vũ Xuân Anh-02010"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Yêu cầu cố vấn cho team",
+      "summary": "Một thành viên trong khóa học ngỏ ý mời người khác làm cố vấn cho team của mình.",
+      "topic": "Hỗ trợ dự án",
+      "tags": [
+        "cố vấn",
+        "team",
+        "dự án"
+      ],
+      "keywords": [
+        "cố vấn",
+        "team",
+        "dự án",
+        "hỗ trợ"
+      ],
+      "confidence": "high",
+      "id": "1531688492533551125",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531688492533551125/1531688492533551125",
+      "source_url": "",
+      "channel_name": "Hoàn thành lab quá muộn không kịp demo?",
+      "shared_by": "T082 - Nguyễn Đăng Long - 01934"
+    },
+    {
+      "resource_type": "guide",
+      "title": "KIMI K3: SIÊU MÔ HÌNH AI ĐANG KHUẤY ĐẢO CỘNG ĐỒNG CÔNG NGHỆ",
+      "summary": "Bài viết giới thiệu chi tiết về Kimi K3, một mô hình AI đa phương thức dạng tự chủ (agentic AI) với quy mô 2.8 nghìn tỷ tham số và cửa sổ bối cảnh 1 triệu token. Bài viết cũng giải thích lý do Kimi K3 \"hot\" như việc phát hành trọng số mở miễn phí, hiệu năng tiệm cận đỉnh cao toàn cầu và giải pháp bảo mật cho doanh nghiệp. Kèm theo là các liên kết để truy cập và tải mô hình trên Hugging Face.",
+      "topic": "Mô hình AI",
+      "tags": [
+        "Kimi K3",
+        "AI",
+        "mô hình ngôn ngữ lớn",
+        "multimodal AI",
+        "open-weight",
+        "Hugging Face",
+        "Moonshot AI"
+      ],
+      "keywords": [
+        "Kimi K3",
+        "AI",
+        "mô hình ngôn ngữ lớn",
+        "multimodal AI",
+        "open-weight",
+        "Hugging Face",
+        "Moonshot AI",
+        "agentic AI",
+        "2.8 nghìn tỷ tham số",
+        "1 triệu token"
+      ],
+      "confidence": "high",
+      "id": "1531703237084709117",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531688492533551125/1531703237084709117",
+      "source_url": "",
+      "channel_name": "Hoàn thành lab quá muộn không kịp demo?",
+      "shared_by": "G13-T015-NguyễnQuangHuy-01873"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Kỹ năng làm việc nhóm – Chìa khóa quyết định thành công của mọi dự án",
+      "summary": "Bài viết nhấn mạnh tầm quan trọng của kỹ năng làm việc nhóm trong các dự án, đặc biệt là dự án AI. Tác giả lập luận rằng kỹ năng chuyên môn là cần nhưng kỹ năng làm việc nhóm mới là đủ để thành công, vì nó giúp phối hợp, giao tiếp và hỗ trợ lẫn nhau, tránh các vấn đề như chậm tiến độ hay hiểu sai yêu cầu.",
+      "topic": "Kỹ năng mềm",
+      "tags": [
+        "làm việc nhóm",
+        "kỹ năng mềm",
+        "quản lý dự án",
+        "dự án AI",
+        "thành công dự án"
+      ],
+      "keywords": [
+        "làm việc nhóm",
+        "kỹ năng mềm",
+        "quản lý dự án",
+        "dự án AI",
+        "phối hợp",
+        "giao tiếp",
+        "hỗ trợ"
+      ],
+      "confidence": "high",
+      "id": "1531682511413973137",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531682511413973137/1531682511413973137",
+      "source_url": "https://huggingface.co",
+      "channel_name": "KIMI K3 chính thức lên Huggingface",
+      "shared_by": "T048 - Võ Hà Minh Huy - 01373"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Làm Sao Để Có Hiệu Quả Với Mentor Ngay Từ Buổi Họp Đầu Tiên?",
+      "summary": "Bài viết chia sẻ kinh nghiệm cá nhân về cách chuẩn bị hiệu quả cho buổi gặp mentor đầu tiên để đảm bảo thành công của dự án. Các nội dung chính bao gồm: làm rõ bài toán (pain point, target audience, core value), sử dụng nguyên tắc MoSCoW để ưu tiên tính năng, phác thảo kiến trúc công nghệ sơ bộ, lên timeline theo tuần có dự phòng, và cách đặt câu hỏi để xin lời khuyên cụ thể.",
+      "topic": "Quản lý dự án",
+      "tags": [
+        "mentor",
+        "quản lý dự án",
+        "làm việc nhóm",
+        "MoSCoW",
+        "timeline",
+        "chuẩn bị họp"
+      ],
+      "keywords": [
+        "mentor",
+        "quản lý dự án",
+        "MoSCoW",
+        "timeline",
+        "chuẩn bị họp",
+        "pain point",
+        "target audience",
+        "core value",
+        "tech stack",
+        "đặt câu hỏi"
+      ],
+      "confidence": "high",
+      "id": "1531841767064731688",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531841767064731688/1531841767064731688",
+      "source_url": "",
+      "channel_name": "Kỹ năng làm việc nhóm – Chìa khóa quyết định thành công của mọi dự án",
+      "shared_by": "T060 - Lưu Quang Nhật"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Chuẩn bị slide đơn giản cho buổi họp mentor",
+      "summary": "Bài viết hướng dẫn cách chuẩn bị một bộ slide (5-7 trang) hoặc tài liệu Notion/PDF gọn gàng để trình bày trong buổi họp với mentor, giúp mentor dễ nắm bắt thông tin và tạo ấn tượng tốt. Các slide bao gồm: Tên đề tài & Thành viên, Bài toán & Giải pháp, Chân dung Người dùng & Luồng chính, Scope tính năng (MoSCoW), Lựa chọn Tech Stack & Sơ đồ kiến trúc, Kế hoạch Milestone theo tuần, và Những thắc mắc/Cần hỗ trợ từ Mentor.",
+      "topic": "Kỹ năng thuyết trình",
+      "tags": [
+        "slide",
+        "mentor",
+        "thuyết trình",
+        "quản lý dự án",
+        "MoSCoW",
+        "tech stack",
+        "milestone"
+      ],
+      "keywords": [
+        "slide",
+        "mentor",
+        "thuyết trình",
+        "quản lý dự án",
+        "MoSCoW",
+        "tech stack",
+        "milestone",
+        "prototype",
+        "wireframe",
+        "meeting notes"
+      ],
+      "confidence": "high",
+      "id": "1531679508006961354",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531679508006961354/1531679508006961354",
+      "source_url": "",
+      "channel_name": "Làm Sao Để Có Hiệu Quả Với Mentor Ngay Từ Buổi Họp Đầu Tiên?",
+      "shared_by": "T137 - Lương Đăng Doanh - 01209"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Lời chúc cho buổi họp mentor",
+      "summary": "Một thành viên gửi lời chúc mọi người sẽ có buổi họp mentor tốt nhất.",
+      "topic": "Giao tiếp cộng đồng",
+      "tags": [
+        "mentor",
+        "lời chúc",
+        "cộng đồng"
+      ],
+      "keywords": [
+        "mentor",
+        "lời chúc",
+        "cộng đồng"
+      ],
+      "confidence": "high",
+      "id": "1531679890737467573",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531679508006961354/1531679890737467573",
+      "source_url": "",
+      "channel_name": "Làm Sao Để Có Hiệu Quả Với Mentor Ngay Từ Buổi Họp Đầu Tiên?",
+      "shared_by": "T137 - Lương Đăng Doanh - 01209"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Phản hồi về bài viết 'Làm Sao Để Có Hiệu Quả Với Mentor Ngay Từ Buổi Họp Đầu Tiên?'",
+      "summary": "Một thành viên bày tỏ sự thích thú và đánh giá cao nội dung của bài viết về cách làm việc hiệu quả với mentor.",
+      "topic": "Phản hồi tài liệu",
+      "tags": [
+        "phản hồi",
+        "mentor",
+        "tài liệu"
+      ],
+      "keywords": [
+        "phản hồi",
+        "mentor",
+        "tài liệu",
+        "đánh giá"
+      ],
+      "confidence": "high",
+      "id": "1531679985176150016",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531679508006961354/1531679985176150016",
+      "source_url": "",
+      "channel_name": "Làm Sao Để Có Hiệu Quả Với Mentor Ngay Từ Buổi Họp Đầu Tiên?",
+      "shared_by": "T137 - Lương Đăng Doanh - 01209"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Note cá nhân về bài học AI Product Thinking & Requirements (Lab 05)",
+      "summary": "Một thành viên chia sẻ note cá nhân của mình trên Notion về các keyword và kiến thức chính từ bài Lab 05 về AI Product Thinking và Requirements, với hy vọng hữu ích cho người khác.",
+      "topic": "AI Product Thinking",
+      "tags": [
+        "Notion",
+        "AI Product Thinking",
+        "Requirements",
+        "Lab 05",
+        "ghi chú",
+        "kiến thức"
+      ],
+      "keywords": [
+        "Notion",
+        "AI Product Thinking",
+        "Requirements",
+        "Lab 05",
+        "ghi chú",
+        "kiến thức",
+        "tóm tắt"
+      ],
+      "confidence": "high",
+      "id": "1531689111042261032",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531679508006961354/1531689111042261032",
+      "source_url": "",
+      "channel_name": "Làm Sao Để Có Hiệu Quả Với Mentor Ngay Từ Buổi Họp Đầu Tiên?",
+      "shared_by": "T230 - Diêm Công Thành - 01689"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Cách setup Jira để quản lý dự án AI sáu tuần",
+      "summary": "Bài viết chia sẻ kinh nghiệm của một sinh viên năm 3 định hướng AI Engineer về cách setup và sử dụng Jira để quản lý dự án AI kéo dài sáu tuần cho một team nhỏ. Tác giả tập trung vào việc đơn giản hóa Jira để phù hợp với quy mô dự án và team, tránh các tính năng phức tạp không cần thiết.",
+      "topic": "Quản lý dự án",
+      "tags": [
+        "Jira",
+        "quản lý dự án",
+        "AI Engineer",
+        "project management",
+        "setup Jira",
+        "team nhỏ"
+      ],
+      "keywords": [
+        "Jira",
+        "quản lý dự án",
+        "AI Engineer",
+        "project management",
+        "setup Jira",
+        "team nhỏ",
+        "workflow",
+        "deadline",
+        "Demo Day"
+      ],
+      "confidence": "high",
+      "id": "1531950018280558762",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531950018280558762/1531950018280558762",
+      "source_url": "https://app.notion.com/p/VinAI-Th-c-Chi-n-K3-b-i-5-AI-Product-Thinking-Requirements-3ac161d11b8b808da475e31653146c0b",
+      "channel_name": "Mình tạo note các keyword và kiến thức chính trong bài Lab 05 tại đây",
+      "shared_by": "T037 - Lại Duy Đông - 01913"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Phản hồi về bài viết 'Cách setup Jira để quản lý dự án AI sáu tuần'",
+      "summary": "Một thành viên bày tỏ sự đồng tình và quan tâm đến bài viết về cách setup Jira, cho thấy nhiều người cũng đang gặp khó khăn tương tự.",
+      "topic": "Phản hồi tài liệu",
+      "tags": [
+        "phản hồi",
+        "Jira",
+        "quản lý dự án",
+        "cộng đồng"
+      ],
+      "keywords": [
+        "phản hồi",
+        "Jira",
+        "quản lý dự án",
+        "cộng đồng",
+        "hướng dẫn"
+      ],
+      "confidence": "high",
+      "id": "1530947726748155975",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530947726748155975/1530947726748155975",
+      "source_url": "",
+      "channel_name": "Mình đã setup Jira để quản lý dự án AI sáu tuần như thế nào?",
+      "shared_by": "T004-Thái Hoài An-01862"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Hướng dẫn sử dụng Jira để quản lý dự án AI",
+      "summary": "Thảo luận về cách thiết lập Jira cho việc quản lý dự án AI, đặc biệt là lựa chọn role phù hợp khi đăng ký lần đầu để có template tối ưu.",
+      "topic": "Quản lý dự án",
+      "tags": [
+        "Jira",
+        "Quản lý dự án",
+        "AI Project",
+        "Project Management"
+      ],
+      "keywords": [
+        "Jira",
+        "đăng ký",
+        "role",
+        "template",
+        "quản lý dự án AI"
+      ],
+      "confidence": "high",
+      "id": "1530948519836385427",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530947726748155975/1530948519836385427",
+      "source_url": "",
+      "channel_name": "Mình đã setup Jira để quản lý dự án AI sáu tuần như thế nào?",
+      "shared_by": "GR16 - T112 - Lương Quốc Khánh"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Kinh nghiệm sử dụng Trello hiệu quả cho dự án nhóm",
+      "summary": "Chia sẻ kinh nghiệm sử dụng Trello để quản lý công việc nhóm, cách tổ chức bảng, thẻ công việc và những lợi ích Trello mang lại trong việc theo dõi tiến độ và phân công nhiệm vụ.",
+      "topic": "Quản lý dự án",
+      "tags": [
+        "Trello",
+        "Quản lý dự án",
+        "Công cụ",
+        "Làm việc nhóm",
+        "Project Management"
+      ],
+      "keywords": [
+        "Trello",
+        "quản lý công việc",
+        "dự án nhóm",
+        "task",
+        "tiến độ",
+        "checklist"
+      ],
+      "confidence": "high",
+      "id": "1531580982640115763",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530947726748155975/1531580982640115763",
+      "source_url": "",
+      "channel_name": "Mình đã setup Jira để quản lý dự án AI sáu tuần như thế nào?",
+      "shared_by": "T158 - Phạm Phúc Minh - 01153"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Hướng dẫn sử dụng Claude Code với Claude Opus 5 miễn phí qua Agent Router",
+      "summary": "Hướng dẫn chi tiết cách đăng ký và cấu hình Claude Code với mô hình Claude Opus 5 miễn phí thông qua nền tảng Agent Router, bao gồm cách tạo API Key và cài đặt trong VSCode.",
+      "topic": "Công cụ lập trình",
+      "tags": [
+        "Claude Code",
+        "Claude Opus 5",
+        "Agent Router",
+        "Vibe Coding",
+        "AI Assistant",
+        "Hướng dẫn",
+        "Miễn phí"
+      ],
+      "keywords": [
+        "Claude Code",
+        "Claude Opus 5",
+        "Agent Router",
+        "miễn phí",
+        "VSCode",
+        "API Key",
+        "cài đặt"
+      ],
+      "confidence": "high",
+      "id": "1531586805445693531",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530947726748155975/1531586805445693531",
+      "source_url": "",
+      "channel_name": "Mình đã setup Jira để quản lý dự án AI sáu tuần như thế nào?",
+      "shared_by": "GR16 - T112 - Lương Quốc Khánh"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Thảo luận về việc sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "summary": "Các tin nhắn thảo luận về việc sử dụng Claude Code với Claude Opus 5 miễn phí, bao gồm nguồn gốc, rủi ro bảo mật dữ liệu, mục đích sử dụng (cá nhân/học tập), và cách cấu hình API key trong VSCode.",
+      "topic": "Sử dụng Claude Code miễn phí",
+      "tags": [
+        "Claude Code",
+        "Claude Opus 5",
+        "miễn phí",
+        "API key",
+        "bảo mật dữ liệu",
+        "VSCode",
+        "hướng dẫn"
+      ],
+      "keywords": [
+        "Claude Code",
+        "Claude Opus 5",
+        "miễn phí",
+        "API key",
+        "bảo mật",
+        "VSCode",
+        "cấu hình",
+        "agentrouter.org"
+      ],
+      "confidence": 0.9,
+      "id": "1531846637419364443",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531846637419364443/1531846637419364443",
+      "source_url": "",
+      "channel_name": "Một công cụ mình thấy hữu ích khi làm project nhóm: Trello",
+      "shared_by": "T060 - Nguyễn Ngọc Sơn - 01948"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Thảo luận về việc sử dụng Claude Code và Claude Opus 5 miễn phí",
+      "summary": "Các tin nhắn này là một cuộc trò chuyện giữa các thành viên về cách sử dụng Claude Code và Claude Opus 5 miễn phí, bao gồm các câu hỏi về việc thêm code, thời gian reset, cách nhận thêm tín dụng và so sánh với các nền tảng khác.",
+      "topic": "Sử dụng Claude Code và Claude Opus 5 miễn phí",
+      "tags": [
+        "Claude Code",
+        "Claude Opus 5",
+        "miễn phí",
+        "tín dụng",
+        "reset",
+        "login",
+        "gorouter.app"
+      ],
+      "keywords": [
+        "Claude Code",
+        "Claude Opus 5",
+        "miễn phí",
+        "tín dụng",
+        "reset",
+        "login",
+        "gorouter.app"
+      ],
+      "confidence": 0.9,
+      "id": "1531846797343985884",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531846637419364443/1531846797343985884",
+      "source_url": "https://klipy.com/gifs/ronaldo-150",
+      "channel_name": "Một công cụ mình thấy hữu ích khi làm project nhóm: Trello",
+      "shared_by": "T060 - Lưu Quang Nhật"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Hướng dẫn tự động hóa việc log prompt trên Gemini Web",
+      "summary": "Bài hướng dẫn chi tiết cách tự động hóa việc log prompt khi sử dụng Gemini bản web, bao gồm các bước tạo file Python, cài đặt Tampermonkey extension, thêm script và chạy server ghi log.",
+      "topic": "Tự động hóa, Gemini Web, Log prompt",
+      "tags": [
+        "Gemini",
+        "Automation",
+        "Prompt Logging",
+        "Tampermonkey",
+        "Python Script"
+      ],
+      "keywords": [
+        "Gemini",
+        "log prompt",
+        "tự động hóa",
+        "Tampermonkey",
+        "Python",
+        "script",
+        "extension"
+      ],
+      "confidence": 0.95,
+      "id": "1531887976760479784",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531887976760479784",
+      "source_url": "https://agentrouter.org/register?aff=0qYW)**",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Bước 1: Tạo file Python để log prompt trên Gemini Web",
+      "summary": "Hướng dẫn bước đầu tiên trong việc tự động hóa log prompt trên Gemini Web: tạo một file Python mới (log_server.py) trong thư mục /scripts và dán đoạn code cung cấp.",
+      "topic": "Tự động hóa, Gemini Web, Log prompt, Python",
+      "tags": [
+        "Gemini",
+        "Automation",
+        "Prompt Logging",
+        "Python Script"
+      ],
+      "keywords": [
+        "Python",
+        "log_server.py",
+        "script",
+        "Gemini",
+        "tự động hóa"
+      ],
+      "confidence": 0.9,
+      "id": "1531889268832731156",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531889268832731156",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Bước 2: Cài đặt Tampermonkey và tạo tập lệnh mới",
+      "summary": "Hướng dẫn bước thứ hai trong việc tự động hóa log prompt trên Gemini Web: cài đặt Tampermonkey extension từ Chrome Web Store và tạo một tập lệnh mới để dán script.",
+      "topic": "Tự động hóa, Gemini Web, Log prompt, Tampermonkey",
+      "tags": [
+        "Gemini",
+        "Automation",
+        "Prompt Logging",
+        "Tampermonkey",
+        "Chrome Extension"
+      ],
+      "keywords": [
+        "Tampermonkey",
+        "Chrome Extension",
+        "tạo tập lệnh",
+        "Gemini",
+        "tự động hóa"
+      ],
+      "confidence": 0.95,
+      "id": "1531893616526491658",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531893616526491658",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "T231 - Trương Minh Tâm - 02005"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Bước 2 (tiếp theo): Dán và lưu script vào Tampermonkey",
+      "summary": "Hướng dẫn tiếp theo của Bước 2 trong việc tự động hóa log prompt trên Gemini Web: dán đoạn script cung cấp vào tab chỉnh sửa của Tampermonkey và lưu lại.",
+      "topic": "Tự động hóa, Gemini Web, Log prompt, Tampermonkey Script",
+      "tags": [
+        "Gemini",
+        "Automation",
+        "Prompt Logging",
+        "Tampermonkey",
+        "Script"
+      ],
+      "keywords": [
+        "Tampermonkey",
+        "script",
+        "lưu script",
+        "Gemini",
+        "tự động hóa"
+      ],
+      "confidence": 0.9,
+      "id": "1531900902888312862",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531900902888312862",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Bước 3: Chạy file Python log_server.py",
+      "summary": "Hướng dẫn bước thứ ba trong việc tự động hóa log prompt trên Gemini Web: mở Terminal trong source code của team và chạy file log_server.py để bắt đầu ghi log.",
+      "topic": "Tự động hóa, Gemini Web, Log prompt, Python Script Execution",
+      "tags": [
+        "Gemini",
+        "Automation",
+        "Prompt Logging",
+        "Python Script",
+        "Terminal"
+      ],
+      "keywords": [
+        "Terminal",
+        "chạy script",
+        "Python",
+        "log_server.py",
+        "Gemini",
+        "ghi log"
+      ],
+      "confidence": 0.9,
+      "id": "1531900970890694707",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531900970890694707",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Bước 4: Kiểm tra quá trình ghi log trên Gemini Web",
+      "summary": "Hướng dẫn bước cuối cùng trong việc tự động hóa log prompt trên Gemini Web: kiểm tra quá trình ghi log bằng cách mở Console (F12) hoặc xem trực tiếp trong Terminal.",
+      "topic": "Tự động hóa, Gemini Web, Log prompt, Kiểm tra",
+      "tags": [
+        "Gemini",
+        "Automation",
+        "Prompt Logging",
+        "Debug",
+        "Console"
+      ],
+      "keywords": [
+        "kiểm tra log",
+        "F12",
+        "Console",
+        "Terminal",
+        "Gemini",
+        "ghi log"
+      ],
+      "confidence": 0.9,
+      "id": "1531902810323681341",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531902810323681341",
+      "source_url": "https://discord.com/channels/1526532830627102781/1531376487624867890",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "T121 - Lê Quang Huy - 01821"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Bonus: Xử lý quyền cho Tampermonkey userscript",
+      "summary": "Hướng dẫn xử lý trường hợp Tampermonkey extension yêu cầu quyền để thực thi userscript, bao gồm các bước bật Developer Mode và cấp quyền cho script.",
+      "topic": "Tampermonkey, Userscript, Quyền truy cập, Xử lý lỗi",
+      "tags": [
+        "Tampermonkey",
+        "Userscript",
+        "Permissions",
+        "Troubleshooting",
+        "Developer Mode"
+      ],
+      "keywords": [
+        "Tampermonkey",
+        "quyền",
+        "userscript",
+        "Developer Mode",
+        "lỗi",
+        "extension"
+      ],
+      "confidence": 0.95,
+      "id": "1531911301654118410",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531911301654118410",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "T137 - Lương Đăng Doanh - 01209"
+    },
+    {
+      "resource_type": "guide",
+      "title": "TÓM TẮT LÝ THUYẾT DAY 03: TỪ CHATBOT ĐẾN AGENTIC AGENT (ReAct)",
+      "summary": "Tóm tắt các kiến thức trọng tâm của Day 03 về sự phát triển của AI từ Rule-based Bot đến LLM Chatbot và Agentic Agent, bao gồm các tiêu chí đánh giá Agentic Fit, kiến trúc Agent, cơ chế ReAct và các phương pháp tiến hóa, Guardrails, Hybrid Architecture.",
+      "topic": "AI Agent, Chatbot, ReAct, Kiến trúc AI",
+      "tags": [
+        "AI",
+        "Agent",
+        "Chatbot",
+        "ReAct",
+        "LLM",
+        "Kiến trúc AI",
+        "Guardrails",
+        "Hybrid Architecture"
+      ],
+      "keywords": [
+        "AI Agent",
+        "Chatbot",
+        "ReAct",
+        "Agentic Fit",
+        "Kiến trúc Agent",
+        "Guardrails",
+        "Hybrid Architecture",
+        "LLM"
+      ],
+      "confidence": 0.98,
+      "id": "1531917311059951616",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531917311059951616",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "video",
+      "title": "Video hướng dẫn tự tay code RAG từ con số 0",
+      "summary": "Video giải thích và hướng dẫn code một hệ thống RAG (Retrieval-Augmented Generation) hoàn chỉnh bằng Python từ đầu, không sử dụng các thư viện RAG có sẵn như LangChain hay vector DB ngoài, giúp người xem hiểu rõ cơ chế hoạt động bên trong của RAG.",
+      "topic": "RAG, Python, Code từ đầu, AI",
+      "tags": [
+        "RAG",
+        "Python",
+        "Code from Scratch",
+        "AI",
+        "Retrieval-Augmented Generation",
+        "Machine Learning"
+      ],
+      "keywords": [
+        "RAG",
+        "Python",
+        "code RAG",
+        "Retrieval-Augmented Generation",
+        "chunking",
+        "cosine similarity",
+        "Gemini",
+        "AI"
+      ],
+      "confidence": 0.98,
+      "id": "1531917362461282465",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531917362461282465",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Đổi tên kênh: Video giúp bạn tự tay code RAG từ con số 0 🤯",
+      "summary": "Thông báo về việc đổi tên kênh Discord thành 'Video giúp bạn tự tay code RAG từ con số 0 🤯'.",
+      "topic": "Thông báo, Đổi tên kênh",
+      "tags": [
+        "Announcement",
+        "Channel Update",
+        "Discord"
+      ],
+      "keywords": [
+        "thông báo",
+        "đổi tên kênh",
+        "Discord"
+      ],
+      "confidence": 0.8,
+      "id": "1531917594938970183",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531917594938970183",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Hướng dẫn viết Prompt hiệu quả để tạo Product Requirement Document (PRD) bằng AI",
+      "summary": "Bài viết hướng dẫn chi tiết cách viết prompt hiệu quả cho các công cụ AI (ChatGPT, Claude, Gemini) để tạo ra Product Requirement Document (PRD) chất lượng, tránh kết quả sơ sài. Nội dung bao gồm 7 bước cụ thể: xác định vai trò của AI, mô tả bài toán nghiệp vụ, nêu rõ mục tiêu, liệt kê chức năng, cung cấp stack công nghệ, yêu cầu đầu ra và quy định nguyên tắc.",
+      "topic": "Prompt Engineering, Product Requirement Document (PRD), AI Tools, Product Management",
+      "tags": [
+        "prompt engineering",
+        "AI",
+        "PRD",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "product management",
+        "hướng dẫn"
+      ],
+      "keywords": [
+        "prompt",
+        "PRD",
+        "AI",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Product Requirement Document",
+        "hướng dẫn",
+        "kỹ thuật viết prompt",
+        "quản lý sản phẩm"
+      ],
+      "confidence": "0.95",
+      "id": "1531917683308892280",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531917683308892280",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Web giả lập bổ củi 🪵 cực cuốn để giải tỏa stress | ASMR",
+      "summary": "Giới thiệu một trang web giả lập bổ củi (screen.toys/firewood/) được tạo bởi Gavin Shapiro sử dụng Blender, Three.js và AI-assisted coding. Trang web cung cấp trải nghiệm ASMR thư giãn với hiệu ứng hình ảnh và âm thanh chân thực, giúp người dùng giải tỏa căng thẳng sau những giờ làm việc mệt mỏi.",
+      "topic": "Giải trí, Thư giãn, Công nghệ Web, AI-assisted coding",
+      "tags": [
+        "giải trí",
+        "thư giãn",
+        "ASMR",
+        "web game",
+        "Blender",
+        "Three.js",
+        "AI-assisted coding"
+      ],
+      "keywords": [
+        "bổ củi",
+        "giải trí",
+        "thư giãn",
+        "ASMR",
+        "web",
+        "game",
+        "stress",
+        "Gavin Shapiro",
+        "Blender",
+        "Three.js",
+        "AI"
+      ],
+      "confidence": "0.9",
+      "id": "1531936666053247177",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531936666053247177",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "T227 - Nguyễn Đức Mạnh - 01176"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Phản hồi về Web giả lập bổ củi",
+      "summary": "Phản hồi của người dùng về trải nghiệm với web giả lập bổ củi, thể hiện sự thích thú và tính giải trí của trò chơi.",
+      "topic": "Phản hồi người dùng, Giải trí",
+      "tags": [
+        "phản hồi",
+        "giải trí",
+        "web game"
+      ],
+      "keywords": [
+        "phản hồi",
+        "bổ củi",
+        "game",
+        "giải trí"
+      ],
+      "confidence": "0.8",
+      "id": "1531936776594128936",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531936776594128936",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Phản hồi về Web giả lập bổ củi",
+      "summary": "Phản hồi của người dùng về trải nghiệm với web giả lập bổ củi, thể hiện sự thích thú và tính giải trí của trò chơi.",
+      "topic": "Phản hồi người dùng, Giải trí",
+      "tags": [
+        "phản hồi",
+        "giải trí",
+        "web game"
+      ],
+      "keywords": [
+        "phản hồi",
+        "bổ củi",
+        "game",
+        "giải trí"
+      ],
+      "confidence": "0.8",
+      "id": "1531937539428978778",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531937539428978778",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "Lab Coach Trung Đức"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Phản hồi về Web giả lập bổ củi",
+      "summary": "Phản hồi của người dùng về trải nghiệm với web giả lập bổ củi, thể hiện sự thích thú và tính giải trí của trò chơi.",
+      "topic": "Phản hồi người dùng, Giải trí",
+      "tags": [
+        "phản hồi",
+        "giải trí",
+        "web game"
+      ],
+      "keywords": [
+        "phản hồi",
+        "bổ củi",
+        "game",
+        "giải trí"
+      ],
+      "confidence": "0.8",
+      "id": "1531937592541708429",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531937592541708429",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "T227 - Nguyễn Đức Mạnh - 01176"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Phản hồi về Web giả lập bổ củi",
+      "summary": "Phản hồi của người dùng về trải nghiệm với web giả lập bổ củi, bao gồm một mẹo nhỏ về việc làm mất gỗ khi F5.",
+      "topic": "Phản hồi người dùng, Giải trí",
+      "tags": [
+        "phản hồi",
+        "giải trí",
+        "web game",
+        "mẹo"
+      ],
+      "keywords": [
+        "phản hồi",
+        "bổ củi",
+        "game",
+        "giải trí",
+        "mẹo"
+      ],
+      "confidence": "0.8",
+      "id": "1531938179366785188",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531938179366785188",
+      "source_url": "https://agentrouter.org",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "YOLO: Vì sao một mô hình có thể \"nhìn\" và phát hiện vật thể trong thời gian thực?",
+      "summary": "Bài viết giải thích về YOLO (You Only Look Once), một mô hình Object Detection phổ biến, so sánh với các phương pháp truyền thống và giới thiệu các công cụ hỗ trợ như Ultralytics YOLO, Roboflow, CVAT. Đồng thời, nêu bật các ứng dụng thực tế của YOLO trong nhiều lĩnh vực như giao thông thông minh, y tế, nhà máy và nông nghiệp.",
+      "topic": "Computer Vision, Object Detection, YOLO, Machine Learning, AI Applications",
+      "tags": [
+        "YOLO",
+        "Object Detection",
+        "Computer Vision",
+        "Machine Learning",
+        "AI",
+        "Ultralytics",
+        "Roboflow",
+        "CVAT",
+        "ứng dụng AI"
+      ],
+      "keywords": [
+        "YOLO",
+        "Object Detection",
+        "Computer Vision",
+        "Machine Learning",
+        "AI",
+        "Ultralytics YOLO",
+        "Roboflow",
+        "CVAT",
+        "phát hiện vật thể",
+        "thời gian thực"
+      ],
+      "confidence": "0.95",
+      "id": "1531938654040101008",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531938654040101008",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "T227 - Nguyễn Đức Mạnh - 01176"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Câu hỏi về ứng dụng của YOLO",
+      "summary": "Câu hỏi của người dùng về cách áp dụng thông tin về YOLO.",
+      "topic": "Hỏi đáp, YOLO",
+      "tags": [
+        "hỏi đáp",
+        "YOLO",
+        "ứng dụng"
+      ],
+      "keywords": [
+        "YOLO",
+        "ứng dụng",
+        "câu hỏi"
+      ],
+      "confidence": "0.7",
+      "id": "1531938854544605236",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531938854544605236",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Hướng dẫn xây dựng model YOLO với Roboflow",
+      "summary": "Phản hồi hướng dẫn người dùng có thể tự xây dựng model YOLO riêng bằng cách sử dụng dataset có sẵn trên Roboflow.",
+      "topic": "YOLO, Roboflow, Xây dựng mô hình AI",
+      "tags": [
+        "YOLO",
+        "Roboflow",
+        "model training",
+        "dataset",
+        "hướng dẫn"
+      ],
+      "keywords": [
+        "YOLO",
+        "Roboflow",
+        "xây dựng model",
+        "dataset",
+        "hướng dẫn"
+      ],
+      "confidence": "0.9",
+      "id": "1531943031891296306",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531943031891296306",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "T032 - Nguyễn Văn Trường - 01974"
+    },
+    {
+      "ResourceType": "guide",
+      "title": "Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "summary": "Hướng dẫn chi tiết cách ghi nhận AI Log thủ công một cách nhanh chóng và chuẩn xác khi sử dụng các công cụ AI trên trình duyệt web (ChatGPT, Claude, Gemini) để BTC có thể tính điểm. Bài viết cung cấp cú pháp lệnh bash cụ thể để nộp log và quy trình push code để hệ thống ghi nhận.",
+      "topic": "AI Log, Hướng dẫn sử dụng, ChatGPT, Claude, Gemini, Quản lý dự án",
+      "tags": [
+        "AI Log",
+        "hướng dẫn",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "log manual",
+        "git",
+        "quản lý điểm"
+      ],
+      "keywords": [
+        "AI Log",
+        "ghi nhận log",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "hướng dẫn",
+        "git push",
+        "điểm XP"
+      ],
+      "confidence": "0.95",
+      "id": "1531943163546046594",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531943163546046594",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Hướng dẫn ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "summary": "Thảo luận về cách ghi nhận AI Log khi sử dụng các công cụ AI trên web như ChatGPT, Claude, Gemini, bao gồm cả việc sử dụng script log_manual.py và các vấn đề liên quan đến cài đặt Codex.",
+      "topic": "AI Log",
+      "tags": [
+        "AI Log",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "log_manual.py",
+        "Codex Settings",
+        "Hooks"
+      ],
+      "keywords": [
+        "AI Log",
+        "ghi nhận log",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Web AI",
+        "log_manual.py",
+        "bash scripts",
+        "Codex Settings",
+        "Hooks",
+        "IDE",
+        "AI Agent"
+      ],
+      "confidence": "0.9",
+      "id": "1531943179799105542",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531943179799105542",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Hướng dẫn ghi nhận AI Log chuẩn xác",
+      "summary": "Thảo luận về cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini), bao gồm việc tìm file PDF hướng dẫn và cách log thủ công.",
+      "topic": "AI Log",
+      "tags": [
+        "AI Log",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "hướng dẫn",
+        "ghi nhận",
+        "thủ công"
+      ],
+      "keywords": [
+        "AI Log",
+        "ghi nhận",
+        "hướng dẫn",
+        "file PDF",
+        "outlook task 7",
+        "log thủ công"
+      ],
+      "confidence": 0.9,
+      "id": "1531943240918634537",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531943240918634537",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Mẹo mô phỏng Thẻ Học Viên thành Thẻ NFC kỹ thuật số trên điện thoại Samsung và Android",
+      "summary": "Hướng dẫn chi tiết cách thêm thẻ học viên vào điện thoại Samsung (Samsung Wallet) và các máy Android khác (Xiaomi, OPPO, Vivo, Realme) sử dụng NFC để mở cửa/quẹt xe, kèm theo cảnh báo bảo mật.",
+      "topic": "Thẻ Học Viên Kỹ Thuật Số",
+      "tags": [
+        "NFC",
+        "Thẻ Học Viên",
+        "Samsung Wallet",
+        "Android",
+        "hướng dẫn",
+        "bảo mật",
+        "thẻ từ"
+      ],
+      "keywords": [
+        "NFC",
+        "Thẻ Học Viên",
+        "Samsung Wallet",
+        "Android",
+        "Xiaomi",
+        "OPPO",
+        "Vivo",
+        "Realme",
+        "mô phỏng thẻ",
+        "thẻ kỹ thuật số",
+        "bảo mật"
+      ],
+      "confidence": 0.95,
+      "id": "1531943335617495111",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1531943335617495111",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Kiểm tra máy có chạy được Local AI không trước khi tải",
+      "summary": "Công cụ canirun.ai giúp kiểm tra khả năng tương thích của máy tính với các mô hình AI cục bộ dựa trên cấu hình phần cứng như CARD đồ họa, VRAM, Memory Bandwidth và RAM, phân loại thành các mức độ như Runs great, Runs well, Tight fit hoặc Too heavy.",
+      "topic": "Kiểm tra khả năng tương thích phần cứng cho AI cục bộ",
+      "tags": [
+        "canirun.ai",
+        "kiểm tra phần cứng",
+        "local AI",
+        "VRAM",
+        "RAM",
+        "AI tips"
+      ],
+      "keywords": [
+        "canirun.ai",
+        "kiểm tra máy",
+        "local AI",
+        "VRAM",
+        "RAM",
+        "card đồ họa",
+        "memory bandwidth",
+        "dung lượng model",
+        "tương thích AI"
+      ],
+      "confidence": "high",
+      "id": "1532035609546457178",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1532035609546457178",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "T203 - Nguyễn Xuân Quang - 01776"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Prompt Injection trong Binary và cách phòng tránh cho AI Agent",
+      "summary": "Nghiên cứu mới cho thấy prompt injection có thể nhúng vào binary để đánh lừa AI reverse engineering agent, khiến AI phân tích sai chương trình mà không làm thay đổi hoạt động của binary. Bài viết cũng đưa ra các nguyên tắc thiết kế AI Agent để phòng tránh nguy cơ này.",
+      "topic": "Bảo mật AI, Prompt Injection, AI Agent",
+      "tags": [
+        "prompt injection",
+        "AI security",
+        "AI agent",
+        "binary analysis",
+        "cybersecurity",
+        "Ghidra",
+        "LLM"
+      ],
+      "keywords": [
+        "prompt injection",
+        "AI agent",
+        "binary",
+        "reverse engineering",
+        "Ghidra",
+        "LLM",
+        "bảo mật AI",
+        "phân tích chương trình",
+        "instruction",
+        "sandbox"
+      ],
+      "confidence": "high",
+      "id": "1532046677496827925",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1532046677496827925",
+      "source_url": "",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "T203 - Nguyễn Xuân Quang - 01776"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Hướng dẫn nhanh: Scrum, Agile, Scrumban, Kanban và cài đặt Atlassian MCP",
+      "summary": "Bài viết giải thích các khái niệm Agile, Scrum, Kanban, Scrumban trong quản lý dự án và hướng dẫn cách cài đặt Atlassian MCP để kết nối ChatGPT với Jira và Confluence, giúp AI tìm kiếm, tóm tắt, tạo/cập nhật Issue và theo dõi tiến độ dự án.",
+      "topic": "Quản lý dự án Agile, Công cụ AI cho quản lý dự án",
+      "tags": [
+        "Agile",
+        "Scrum",
+        "Kanban",
+        "Scrumban",
+        "Atlassian MCP",
+        "ChatGPT",
+        "Jira",
+        "Confluence",
+        "quản lý dự án",
+        "AI tools"
+      ],
+      "keywords": [
+        "Agile",
+        "Scrum",
+        "Kanban",
+        "Scrumban",
+        "Atlassian MCP",
+        "ChatGPT",
+        "Jira",
+        "Confluence",
+        "quản lý dự án",
+        "phát triển sản phẩm",
+        "workflow",
+        "AI agent"
+      ],
+      "confidence": "high",
+      "id": "1532230228003393537",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531887976760479784/1532230228003393537",
+      "source_url": "https://gorouter.app/sign-up?aff=Cbeo",
+      "channel_name": "Sử dụng Claude Code với Claude Opus 5 miễn phí",
+      "shared_by": "!G18-T058-Nguyễn Duy Bách-01844"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Phản hồi về bài viết Scrum, Agile, Scrumban, Kanban và Atlassian MCP",
+      "summary": "Tin nhắn bày tỏ sự cảm kích về bài viết hướng dẫn về Scrum, Agile, Scrumban, Kanban và Atlassian MCP.",
+      "topic": "Phản hồi bài viết",
+      "tags": [
+        "phản hồi",
+        "cảm ơn"
+      ],
+      "keywords": [
+        "bài viết hữu ích",
+        "cảm ơn"
+      ],
+      "confidence": "high",
+      "id": "1531723027736170588",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531722556954902699/1531723027736170588",
+      "source_url": "",
+      "channel_name": "Tip & Trick: Auto log prompt trên Gemini Web",
+      "shared_by": "T204 - Trịnh Đắc Vụ - 01074"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Hỗ trợ về bài viết Scrum, Agile, Scrumban, Kanban và Atlassian MCP",
+      "summary": "Người đăng bài viết về Scrum, Agile, Scrumban, Kanban và Atlassian MCP ngỏ ý hỗ trợ nếu có bất kỳ thắc mắc nào.",
+      "topic": "Hỗ trợ người dùng",
+      "tags": [
+        "hỗ trợ",
+        "giúp đỡ"
+      ],
+      "keywords": [
+        "hỗ trợ",
+        "giúp đỡ"
+      ],
+      "confidence": "high",
+      "id": "1531723742898684115",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531722556954902699/1531723742898684115",
+      "source_url": "",
+      "channel_name": "Tip & Trick: Auto log prompt trên Gemini Web",
+      "shared_by": "T204 - Trịnh Đắc Vụ - 01074"
+    },
+    {
+      "resource_type": "github",
+      "title": "Ponytail: Giúp AI Coding viết ít code hơn và tiết kiệm token",
+      "summary": "Ponytail là một skill/plugin cho các AI coding agent (Claude Code, Codex, Cursor) giúp tối ưu hóa việc tạo code bằng cách ưu tiên các giải pháp đơn giản, tái sử dụng code và thư viện hiện có, từ đó giảm số dòng code, token, chi phí và thời gian.",
+      "topic": "Tối ưu hóa AI Coding, Tiết kiệm token",
+      "tags": [
+        "Ponytail",
+        "AI coding",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "tiết kiệm token",
+        "tối ưu code",
+        "GitHub",
+        "plugin"
+      ],
+      "keywords": [
+        "Ponytail",
+        "AI coding",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "tiết kiệm token",
+        "giảm code",
+        "tối ưu hóa",
+        "plugin",
+        "skill",
+        "agent"
+      ],
+      "confidence": "high",
+      "id": "1531724045765185738",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531722556954902699/1531724045765185738",
+      "source_url": "https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?utm_source=ext_app_menu",
+      "channel_name": "Tip & Trick: Auto log prompt trên Gemini Web",
+      "shared_by": "T204 - Trịnh Đắc Vụ - 01074"
+    },
+    {
+      "resource_type": "guide",
+      "title": "So sánh Claude Opus 4.8 và Opus 5 trong Coding và Context Window",
+      "summary": "Bài viết so sánh trải nghiệm sử dụng Claude Opus 4.8 và Opus 5, đặc biệt trong lĩnh vực coding. Người dùng nhận thấy Opus 4.8 phù hợp hơn cho coding do có context window lớn hơn (1M so với 200K của Opus 5), giúp duy trì workflow liền mạch cho các dự án lớn và UI. Opus 5 vẫn tốt cho các task nhỏ, scope rõ ràng.",
+      "topic": "So sánh mô hình AI, Claude, Coding với AI",
+      "tags": [
+        "Claude",
+        "Opus 4.8",
+        "Opus 5",
+        "AI coding",
+        "context window",
+        "LLM",
+        "trải nghiệm người dùng"
+      ],
+      "keywords": [
+        "Claude",
+        "Opus 4.8",
+        "Opus 5",
+        "coding",
+        "context window",
+        "LLM",
+        "AI agent",
+        "workflow",
+        "UI",
+        "GPT-5.6 Sol"
+      ],
+      "confidence": "high",
+      "id": "1531725024925450292",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531722556954902699/1531725024925450292",
+      "source_url": "",
+      "channel_name": "Tip & Trick: Auto log prompt trên Gemini Web",
+      "shared_by": "T204 - Trịnh Đắc Vụ - 01074"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Thắc mắc về Context Window của Claude Opus",
+      "summary": "Tin nhắn đặt câu hỏi về thông số context window của Claude Opus, cho rằng nó là 1M.",
+      "topic": "Thảo luận về Claude Opus",
+      "tags": [
+        "Claude",
+        "Opus",
+        "context window",
+        "thắc mắc"
+      ],
+      "keywords": [
+        "Claude Opus",
+        "context window",
+        "thắc mắc"
+      ],
+      "confidence": "high",
+      "id": "1531725444167241829",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531722556954902699/1531725444167241829",
+      "source_url": "",
+      "channel_name": "Tip & Trick: Auto log prompt trên Gemini Web",
+      "shared_by": "T204 - Trịnh Đắc Vụ - 01074"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Cập nhật về Claude Opus 5",
+      "summary": "Người dùng chia sẻ rằng Claude Opus 5 vừa được cập nhật và có vẻ hoạt động ổn định hơn, sẽ thử nghiệm thêm.",
+      "topic": "Cập nhật mô hình AI",
+      "tags": [
+        "Claude",
+        "Opus 5",
+        "cập nhật",
+        "trải nghiệm"
+      ],
+      "keywords": [
+        "Claude Opus 5",
+        "cập nhật",
+        "trải nghiệm"
+      ],
+      "confidence": "high",
+      "id": "1531725473011208383",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531722556954902699/1531725473011208383",
+      "source_url": "",
+      "channel_name": "Tip & Trick: Auto log prompt trên Gemini Web",
+      "shared_by": "T204 - Trịnh Đắc Vụ - 01074"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Tóm tắt bài giảng bằng NotebookLM",
+      "summary": "Người dùng chia sẻ cách tóm tắt và chuẩn hóa nội dung slide bài giảng, bổ sung ví dụ và kinh nghiệm thực tế vào NotebookLM để tạo một tài liệu ôn tập toàn diện, giúp học viên dễ dàng xem lại và hiểu sâu hơn các kiến thức đã học.",
+      "topic": "Tóm tắt bài giảng, Công cụ học tập AI",
+      "tags": [
+        "NotebookLM",
+        "tóm tắt bài giảng",
+        "ôn tập",
+        "AI học tập",
+        "slide",
+        "VLearn",
+        "Gemini"
+      ],
+      "keywords": [
+        "NotebookLM",
+        "tóm tắt bài giảng",
+        "ôn tập",
+        "slide",
+        "VLearn",
+        "Gemini",
+        "tài liệu học tập",
+        "AI"
+      ],
+      "confidence": "high",
+      "id": "1531727695166308482",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531722556954902699/1531727695166308482",
+      "source_url": "",
+      "channel_name": "Tip & Trick: Auto log prompt trên Gemini Web",
+      "shared_by": "T204 - Trịnh Đắc Vụ - 01074"
+    },
+    {
+      "ResourceType": "announcement",
+      "confidence": 0.8,
+      "title": "Thảo luận về tóm tắt bài giảng NotebookLM",
+      "summary": "Các tin nhắn này là các phản hồi, góp ý và thông báo liên quan đến việc chia sẻ và tổ chức tài liệu tóm tắt bài giảng NotebookLM. Các thành viên thảo luận về việc bổ sung thông tin, tài liệu liên quan và sự khác biệt giữa các phiên bản slide.",
+      "topic": "Quản lý tài liệu học tập, NotebookLM",
+      "tags": [
+        "NotebookLM",
+        "tài liệu học tập",
+        "slide",
+        "góp ý",
+        "thông báo"
+      ],
+      "keywords": [
+        "NotebookLM",
+        "tóm tắt bài giảng",
+        "tài liệu",
+        "slide",
+        "vlearn"
+      ],
+      "id": "1531869148639006801",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531869148639006801/1531869148639006801",
+      "source_url": "",
+      "channel_name": "TÓM TẮT LÝ THUYẾT DAY 03: TỪ CHATBOT ĐẾN AGENTIC AGENT (ReAct)",
+      "shared_by": "T213 - Nguyễn Văn Trọng - 01102"
+    },
+    {
+      "ResourceType": "guide",
+      "confidence": 0.9,
+      "title": "Workflow Trello cho phát triển phần mềm",
+      "summary": "Tài liệu hướng dẫn chi tiết về quy trình làm việc (workflow) sử dụng Trello trong một nhóm phát triển phần mềm, bao gồm các giai đoạn từ Requirement đến Done, các quy ước đặt tên task và cách theo dõi tiến độ.",
+      "topic": "Quản lý dự án, Workflow, Trello",
+      "tags": [
+        "Trello",
+        "workflow",
+        "quản lý dự án",
+        "phát triển phần mềm",
+        "BA",
+        "Developer"
+      ],
+      "keywords": [
+        "Trello",
+        "workflow",
+        "Requirement",
+        "Backlog",
+        "Developing",
+        "Testing",
+        "Bugs",
+        "Staging",
+        "Prod",
+        "Done"
+      ],
+      "id": "1531855509609648258",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531855509609648258/1531855509609648258",
+      "source_url": "https://www.facebook.com/share/v/1FA8kpUWbo/",
+      "channel_name": "Video giúp bạn tự tay code RAG từ con số 0 🤯",
+      "shared_by": "T059 - Nguyễn Quang Hà - 01424"
+    },
+    {
+      "ResourceType": "announcement",
+      "confidence": 0.8,
+      "title": "Khảo sát và tặng tool AI",
+      "summary": "Thông báo về một khảo sát cần thu thập thông tin thực tế, kèm theo lời hứa tặng các công cụ AI hữu ích cho những người tham gia khảo sát. Có một góp ý về việc cải thiện các lựa chọn trong form khảo sát.",
+      "topic": "Khảo sát, Công cụ AI, Thông báo",
+      "tags": [
+        "khảo sát",
+        "tool AI",
+        "quà tặng",
+        "thông báo",
+        "góp ý"
+      ],
+      "keywords": [
+        "khảo sát",
+        "tool AI",
+        "quà tặng",
+        "form"
+      ],
+      "id": "1531857597244903527",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531855509609648258/1531857597244903527",
+      "source_url": "",
+      "channel_name": "Video giúp bạn tự tay code RAG từ con số 0 🤯",
+      "shared_by": "T059 - Nguyễn Quang Hà - 01424"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Kêu gọi khảo sát",
+      "summary": "Tin nhắn kêu gọi mọi người tham gia khảo sát người dùng cho dự án của nhóm.",
+      "topic": "Khảo sát người dùng",
+      "tags": [
+        "khảo sát",
+        "người dùng",
+        "dự án"
+      ],
+      "keywords": [
+        "khảo sát",
+        "người dùng",
+        "dự án",
+        "nhóm"
+      ],
+      "confidence": "high",
+      "id": "1531692162742484992",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531692162742484992/1531692162742484992",
+      "source_url": "",
+      "channel_name": "Viết Prompt tạo PRD cho Project như nào?",
+      "shared_by": "G08-T147-Nguyễn Hoàng Đạt-01460"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Khảo sát về lỗi gán nhãn trong ảnh/video",
+      "summary": "Nhóm đang thực hiện khảo sát về vấn đề lỗi gán nhãn trong ảnh/video và cần sự giúp đỡ điền vào biểu mẫu khảo sát.",
+      "topic": "Khảo sát người dùng",
+      "tags": [
+        "khảo sát",
+        "gán nhãn",
+        "object detection",
+        "annotator"
+      ],
+      "keywords": [
+        "khảo sát",
+        "gán nhãn",
+        "object",
+        "ảnh",
+        "video",
+        "annotator"
+      ],
+      "confidence": "high",
+      "id": "1531677524558610513",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531677524558610513/1531677524558610513",
+      "source_url": "https://screen.toys/firewood/",
+      "channel_name": "Web giả lập bổ củi 🪵 cực cuốn để giải tỏa stress | ASMR",
+      "shared_by": "G16-T048-Hồ Ngọc Quỳnh"
+    },
+    {
+      "resource_type": "github",
+      "title": "Frontend Slides - Tạo slide nhanh và đẹp với AI",
+      "summary": "Chia sẻ một kho GitHub (Frontend Slides) giúp tạo bài thuyết trình HTML từ outline, ý tưởng hoặc source code bằng AI coding agent, hỗ trợ làm slide nhanh chóng và trực quan.",
+      "topic": "Công cụ AI",
+      "tags": [
+        "AI tool",
+        "slide generation",
+        "frontend",
+        "GitHub",
+        "productivity"
+      ],
+      "keywords": [
+        "AI",
+        "slide",
+        "thuyết trình",
+        "GitHub",
+        "Frontend Slides",
+        "coding agent"
+      ],
+      "confidence": "high",
+      "id": "1531685946272251945",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531677524558610513/1531685946272251945",
+      "source_url": "",
+      "channel_name": "Web giả lập bổ củi 🪵 cực cuốn để giải tỏa stress | ASMR",
+      "shared_by": "Lab Coach - Bui Tuan Minh"
+    },
+    {
+      "resource_type": "github",
+      "title": "I Have ADHD - Hướng dẫn AI trả lời ngắn gọn",
+      "summary": "Chia sẻ một kho GitHub (i-have-adhd) cung cấp hướng dẫn để AI trả lời ngắn gọn, rõ ràng và đi thẳng vào vấn đề, đặc biệt hữu ích cho việc code, debug hoặc học kiến thức mới.",
+      "topic": "Tối ưu hóa tương tác AI",
+      "tags": [
+        "AI prompt",
+        "AI interaction",
+        "GitHub",
+        "productivity",
+        "coding"
+      ],
+      "keywords": [
+        "AI",
+        "trả lời ngắn gọn",
+        "GitHub",
+        "hướng dẫn",
+        "code",
+        "debug"
+      ],
+      "confidence": "high",
+      "id": "1531699063597170828",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531677524558610513/1531699063597170828",
+      "source_url": "",
+      "channel_name": "Web giả lập bổ củi 🪵 cực cuốn để giải tỏa stress | ASMR",
+      "shared_by": "T112 - Trần Nguyễn Mỹ Anh - 1019"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Yêu cầu trải nghiệm thực tế về 'I Have ADHD'",
+      "summary": "Người dùng hỏi về trải nghiệm thực tế trước và sau khi sử dụng repo 'i-have-adhd' để AI trả lời ngắn gọn hơn.",
+      "topic": "Thảo luận công cụ AI",
+      "tags": [
+        "AI tool",
+        "trải nghiệm người dùng",
+        "thảo luận"
+      ],
+      "keywords": [
+        "AI",
+        "trải nghiệm",
+        "i-have-adhd",
+        "thực tế"
+      ],
+      "confidence": "medium",
+      "id": "1531718204085370911",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531677524558610513/1531718204085370911",
+      "source_url": "",
+      "channel_name": "Web giả lập bổ củi 🪵 cực cuốn để giải tỏa stress | ASMR",
+      "shared_by": "T204 - Trịnh Đắc Vụ - 01074"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Phản hồi về trải nghiệm 'I Have ADHD'",
+      "summary": "Người dùng phản hồi rằng công cụ 'i-have-adhd' giúp AI trả lời ngắn gọn và sát hơn, đỡ lan man.",
+      "topic": "Thảo luận công cụ AI",
+      "tags": [
+        "AI tool",
+        "phản hồi",
+        "trải nghiệm người dùng"
+      ],
+      "keywords": [
+        "AI",
+        "trả lời ngắn gọn",
+        "i-have-adhd",
+        "phản hồi"
+      ],
+      "confidence": "medium",
+      "id": "1531844882828886076",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531677524558610513/1531844882828886076",
+      "source_url": "",
+      "channel_name": "Web giả lập bổ củi 🪵 cực cuốn để giải tỏa stress | ASMR",
+      "shared_by": "T202 - Nguyễn Duy Hải Bằng 01225"
+    },
+    {
+      "resource_type": "guide",
+      "title": "Hướng dẫn quy trình Onboard vào hệ thống AI20K",
+      "summary": "BTC gửi lại link tài liệu hướng dẫn quy trình Onboard vào hệ thống, kèm theo link GitHub Org của chương trình.",
+      "topic": "Quy trình Onboard",
+      "tags": [
+        "onboard",
+        "hướng dẫn",
+        "quy trình",
+        "GitHub"
+      ],
+      "keywords": [
+        "onboard",
+        "hướng dẫn",
+        "quy trình",
+        "hệ thống",
+        "GitHub Org"
+      ],
+      "confidence": "high",
+      "id": "1531900296412926043",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531900296412926043/1531900296412926043",
+      "source_url": "",
+      "channel_name": "YOLO: Vì sao một mô hình có thể \"nhìn\" và phát hiện vật thể trong thời gian thực?",
+      "shared_by": "T073 - PhanVănHoàngNam - 01160"
+    },
+    {
+      "resource_type": "slide",
+      "title": "Tài liệu Workshop Kick-off",
+      "summary": "Tài liệu slide của buổi Workshop Kick-off.",
+      "topic": "Workshop Kick-off",
+      "tags": [
+        "slide",
+        "workshop",
+        "kick-off"
+      ],
+      "keywords": [
+        "slide",
+        "workshop",
+        "kick-off",
+        "tài liệu"
+      ],
+      "confidence": "high",
+      "id": "1531920560500641943",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531900296412926043/1531920560500641943",
+      "source_url": "",
+      "channel_name": "YOLO: Vì sao một mô hình có thể \"nhìn\" và phát hiện vật thể trong thời gian thực?",
+      "shared_by": "T073-Hồ Quang Minh-01906"
+    },
+    {
+      "resource_type": "announcement",
+      "title": "Ngân hàng đề tài chính thức AI20K Build Phase Cohort 3",
+      "summary": "Thông báo về ngân hàng đề tài chính thức cho chương trình AI20K Build Phase Cohort 3, kèm theo link truy cập.",
+      "topic": "Đề tài dự án",
+      "tags": [
+        "đề tài",
+        "dự án",
+        "AI20K",
+        "thông báo"
+      ],
+      "keywords": [
+        "ngân hàng đề tài",
+        "AI20K",
+        "Build Phase",
+        "Cohort 3",
+        "thông báo"
+      ],
+      "confidence": "high",
+      "id": "1531966938190970910",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531900296412926043/1531966938190970910",
+      "source_url": "",
+      "channel_name": "YOLO: Vì sao một mô hình có thể \"nhìn\" và phát hiện vật thể trong thời gian thực?",
+      "shared_by": "T073 - PhanVănHoàngNam - 01160"
+    },
+    {
+      "resource_type": "slide",
+      "title": "Slide Workshop WS2: Problem → MVP Canvas",
+      "summary": "Slide bài giảng của Workshop WS2 về chuyển đổi Problem thành MVP Canvas, do Anh Lê Anh Tiến trình bày. Lưu ý tài liệu chỉ phục vụ nội bộ.",
+      "topic": "Workshop Problem to MVP Canvas",
+      "tags": [
+        "slide",
+        "workshop",
+        "MVP Canvas",
+        "problem solving"
+      ],
+      "keywords": [
+        "slide",
+        "workshop",
+        "Problem",
+        "MVP Canvas",
+        "Lê Anh Tiến"
+      ],
+      "confidence": "high",
+      "id": "1530519252308590782",
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1530519252308590782",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T189 - VŨ ĐĂNG HUY - 01761"
+    },
+    {
+      "id": "1530585885853089913",
+      "resource_type": "video",
+      "title": "Video Recording WS1: Kick off",
+      "summary": "Video ghi lại buổi Workshop 1: Kick off của chương trình AI20K Build Phase. Tài liệu lưu hành nội bộ.",
+      "topic": "AI20K Build Phase",
+      "tags": [
+        "workshop",
+        "kick-off",
+        "recording",
+        "AI20K"
+      ],
+      "keywords": [
+        "video",
+        "workshop 1",
+        "kick off",
+        "AI20K Build Phase"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1530585885853089913",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T189-Phan Văn Hiếu-01227"
+    },
+    {
+      "id": "1530598612118147285",
+      "resource_type": "video",
+      "title": "Video Recording WS2: Problem to MVP Canvas",
+      "summary": "Video ghi lại buổi Workshop 2: Problem to MVP Canvas của chương trình AI20K Build Phase. Tài liệu lưu hành nội bộ.",
+      "topic": "AI20K Build Phase",
+      "tags": [
+        "workshop",
+        "problem to MVP",
+        "recording",
+        "AI20K"
+      ],
+      "keywords": [
+        "video",
+        "workshop 2",
+        "problem to MVP canvas",
+        "AI20K Build Phase"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1530598612118147285",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T062 - Hà Tấn Phong - 01577"
+    },
+    {
+      "id": "1530615688396275803",
+      "resource_type": null,
+      "title": null,
+      "summary": "Tin nhắn cảm ơn về tài liệu gợi ý dataset.",
+      "topic": null,
+      "tags": [],
+      "keywords": [],
+      "confidence": 0.7,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1530615688396275803",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T189 - VŨ ĐĂNG HUY - 01761"
+    },
+    {
+      "id": "1531291471578136646",
+      "resource_type": "guide",
+      "title": "Gợi ý dataset cho một số nhóm đề tài CV thuộc track RAV – DEV",
+      "summary": "Tài liệu tổng hợp và gợi ý các dataset phù hợp cho các đề tài Computer Vision (CV) trong track RAV – DEV, bao gồm các nhóm như Camera, LiDAR, Sim-to-real, Scenario và Driver monitoring. Nhấn mạnh việc chọn dataset phù hợp với sensor, loại nhãn và đầu ra sản phẩm.",
+      "topic": "Computer Vision",
+      "tags": [
+        "dataset",
+        "Computer Vision",
+        "CV",
+        "RAV-DEV",
+        "xe tự hành",
+        "BDD100K",
+        "Cityscapes",
+        "KITTI",
+        "nuScenes"
+      ],
+      "keywords": [
+        "dataset",
+        "Computer Vision",
+        "CV",
+        "RAV-DEV",
+        "xe tự hành",
+        "BDD100K",
+        "Cityscapes",
+        "KITTI",
+        "nuScenes",
+        "PandaSet",
+        "SHIFT",
+        "Oxford RobotCar",
+        "nuPlan",
+        "Argoverse 2",
+        "NTHU DDD",
+        "DMD"
+      ],
+      "confidence": 0.98,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531291471578136646",
+      "source_url": "https://discord.com/channels/1526532830627102781/1530434079642878113",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T189 - VŨ ĐĂNG HUY - 01761"
+    },
+    {
+      "id": "1531304372368310422",
+      "resource_type": "slide",
+      "title": "Slide Tổng Quan Hackathon & Tiêu Chí Nghiệm Thu CP1-CP6",
+      "summary": "Slide giới thiệu thử thách Hackathon, quy định 1.5 ngày, lộ trình 6 checkpoint, rubric 100 điểm và cách chọn đề tài.",
+      "topic": "Hackathon",
+      "tags": [
+        "hackathon",
+        "checkpoint",
+        "tiêu chí nghiệm thu",
+        "quy định"
+      ],
+      "keywords": [
+        "slide",
+        "hackathon",
+        "checkpoint",
+        "tiêu chí nghiệm thu",
+        "quy định",
+        "lộ trình"
+      ],
+      "confidence": 0.98,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531304372368310422",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T048 - Võ Hà Minh Huy - 01373"
+    },
+    {
+      "id": "1531316780700794940",
+      "resource_type": "slide",
+      "title": "Slide Workshop: Prompt Engineering nâng cao với Chain-of-Thought & DCR",
+      "summary": "Slide trình bày kỹ thuật Few-shot, Chain-of-Thought (CoT), Tree-of-Thoughts và quy trình Draft-Critique-Revise trong Prompt Engineering.",
+      "topic": "Prompt Engineering",
+      "tags": [
+        "workshop",
+        "prompt engineering",
+        "Chain-of-Thought",
+        "DCR",
+        "Few-shot",
+        "Tree-of-Thoughts"
+      ],
+      "keywords": [
+        "slide",
+        "workshop",
+        "prompt engineering",
+        "Chain-of-Thought",
+        "DCR",
+        "Few-shot",
+        "Tree-of-Thoughts"
+      ],
+      "confidence": 0.98,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531316780700794940",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T189 - VŨ ĐĂNG HUY - 01761"
+    },
+    {
+      "id": "1531317197195055194",
+      "resource_type": "slide",
+      "title": "Slide Bài Giảng: Khái Niệm Foundation Models & Transformer Architecture",
+      "summary": "Slide nhập môn về tự chú ý (Self-Attention), Positional Encoding và sự phát triển của các dòng LLM hiện đại.",
+      "topic": "LLM/API",
+      "tags": [
+        "bài giảng",
+        "Foundation Models",
+        "Transformer Architecture",
+        "Self-Attention",
+        "Positional Encoding",
+        "LLM"
+      ],
+      "keywords": [
+        "slide",
+        "bài giảng",
+        "Foundation Models",
+        "Transformer Architecture",
+        "Self-Attention",
+        "Positional Encoding",
+        "LLM"
+      ],
+      "confidence": 0.98,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531317197195055194",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T018 - Nguyễn Huy Nghĩa - 01943"
+    },
+    {
+      "id": "1531318792267890851",
+      "resource_type": "slide",
+      "title": "Slide Kiến Trúc Agent: ReAct, Plan-and-Solve & Tool Calling",
+      "summary": "Slide phân tích chi tiết cơ chế suy luận ReAct (Reason + Act), chia nhỏ nhiệm vụ và cách tích hợp Function Calling trong kiến trúc AI Agent.",
+      "topic": "AI Agent",
+      "tags": [
+        "kiến trúc agent",
+        "ReAct",
+        "Plan-and-Solve",
+        "Tool Calling",
+        "Function Calling",
+        "AI Agent"
+      ],
+      "keywords": [
+        "slide",
+        "kiến trúc agent",
+        "ReAct",
+        "Plan-and-Solve",
+        "Tool Calling",
+        "Function Calling",
+        "AI Agent"
+      ],
+      "confidence": 0.98,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531318792267890851",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T189 - VŨ ĐĂNG HUY - 01761"
+    },
+    {
+      "id": "1531326435086569665",
+      "resource_type": "slide",
+      "title": "Slide Thuyết Minh Demo 6 Trang & Vibe-Coding Rules tại CP5",
+      "summary": "Slide hướng dẫn cấu trúc 6 trang thuyết trình demo chuẩn và quy tắc kiểm tra vibe-coding dành cho từng thành viên tại Checkpoint 5 của Hackathon.",
+      "topic": "Hackathon",
+      "tags": [
+        "hackathon",
+        "demo",
+        "thuyết trình",
+        "vibe-coding",
+        "CP5",
+        "quy tắc"
+      ],
+      "keywords": [
+        "slide",
+        "hackathon",
+        "demo",
+        "thuyết trình",
+        "vibe-coding",
+        "CP5",
+        "quy tắc"
+      ],
+      "confidence": 0.98,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531326435086569665",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T048 - Võ Hà Minh Huy - 01373"
+    },
+    {
+      "id": "1531327490524713040",
+      "resource_type": "slide",
+      "title": "Slide Workshop Multimodal LLM: Xử Lý Ảnh, Giọng Nói & PDF",
+      "summary": "Slide trình bày cách truyền dữ liệu đa phương tiện (ảnh, giọng nói, PDF) vào Gemini Flash và GPT-4o để trích xuất dữ liệu bảng biểu trong Workshop Multimodal LLM.",
+      "topic": "Computer Vision",
+      "tags": [
+        "workshop",
+        "Multimodal LLM",
+        "xử lý ảnh",
+        "giọng nói",
+        "PDF",
+        "Gemini Flash",
+        "GPT-4o",
+        "trích xuất dữ liệu"
+      ],
+      "keywords": [
+        "slide",
+        "workshop",
+        "Multimodal LLM",
+        "xử lý ảnh",
+        "giọng nói",
+        "PDF",
+        "Gemini Flash",
+        "GPT-4o",
+        "trích xuất dữ liệu",
+        "Computer Vision"
+      ],
+      "confidence": 0.98,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531327490524713040",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "id": "1531327526897586348",
+      "resource_type": "video",
+      "title": "Video Recording Buổi 2: RAG & Vector Database Deep Dive",
+      "summary": "Video ghi hình bài giảng về kiến trúc RAG, cách chunking tài liệu, embedding models và tích hợp ChromaDB/Qdrant.",
+      "topic": "LLM/API",
+      "tags": [
+        "RAG",
+        "Vector Database",
+        "ChromaDB",
+        "Qdrant",
+        "embedding models",
+        "chunking"
+      ],
+      "keywords": "RAG, Vector Database, ChromaDB, Qdrant, embedding models, chunking",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531327526897586348",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T129 — Nguyễn Viết Huy — 01081"
+    },
+    {
+      "id": "1531328378848940193",
+      "resource_type": "video",
+      "title": "Video Recording Workshop: Xây dựng AI Agent với LangGraph & Tavily Search",
+      "summary": "Video 2 tiếng thực hành xây dựng Multi-Agent System có khả năng tìm kiếm web và thực thi tool gọi API tự động.",
+      "topic": "AI Agent",
+      "tags": [
+        "AI Agent",
+        "LangGraph",
+        "Tavily Search",
+        "Multi-Agent System",
+        "API"
+      ],
+      "keywords": "AI Agent, LangGraph, Tavily Search, Multi-Agent System, API",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531328378848940193",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T189 - VŨ ĐĂNG HUY - 01761"
+    },
+    {
+      "id": "1531330119912919142",
+      "resource_type": "video",
+      "title": "Video Recording: Q&A Giải Đáp Thắc Mắc Đề Bài Hackathon & Chọn Hướng A/B/C",
+      "summary": "Video ghi lại buổi giải đáp trực tiếp của Mentors về định hướng đề tài, chọn pain point và thu thập bằng chứng.",
+      "topic": "Hackathon",
+      "tags": [
+        "Hackathon",
+        "Q&A",
+        "Mentors",
+        "đề tài",
+        "pain point"
+      ],
+      "keywords": "Hackathon, Q&A, Mentors, đề tài, pain point",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531330119912919142",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T048 - Võ Hà Minh Huy - 01373"
+    },
+    {
+      "id": "1531330978319040717",
+      "resource_type": "video",
+      "title": "Video Demo Loom: Hướng Dẫn Sử Dụng Lovable & v0 Dựng Frontend Siêu Tốc",
+      "summary": "Video hướng dẫn 15 phút từ Mentor tạo UI prototype bấm được cho CP2 bằng các công cụ AI Builder.",
+      "topic": "Product Design",
+      "tags": [
+        "Lovable",
+        "v0",
+        "Frontend",
+        "UI prototype",
+        "AI Builder",
+        "CP2"
+      ],
+      "keywords": "Lovable, v0, Frontend, UI prototype, AI Builder, CP2",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531330978319040717",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T129 — Nguyễn Viết Huy — 01081"
+    },
+    {
+      "id": "1531331636090638638",
+      "resource_type": "video",
+      "title": "Video Recording Buổi 4: Evaluator Optimizer & Red Teaming AI Products",
+      "summary": "Video bài giảng phương pháp đo lường tự động, kiểm thử tính an toàn và hạn chế Hallucination của LLM.",
+      "topic": "Testing & Evals",
+      "tags": [
+        "Evaluator Optimizer",
+        "Red Teaming",
+        "AI Products",
+        "LLM",
+        "Hallucination",
+        "kiểm thử"
+      ],
+      "keywords": "Evaluator Optimizer, Red Teaming, AI Products, LLM, Hallucination, kiểm thử",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530519252308590782/1531331636090638638",
+      "source_url": "",
+      "channel_name": "[AI LOG] Cách ghi nhận AI Log chuẩn xác khi hỏi đáp AI trên Web (ChatGPT, Claude, Gemini)",
+      "shared_by": "T189 - VŨ ĐĂNG HUY - 01761"
+    },
+    {
+      "id": "1532059561434026156",
+      "resource_type": "video",
+      "title": "Video Webinar: Chia Sẻ Kinh Nghiệm Ship AI Product Từ Cựu Học Viên",
+      "summary": "Buổi tọa đàm về kinh nghiệm vượt mốc Hackathon, tối ưu chi phí API và gọi vốn sau khóa học.",
+      "topic": "Chuyện Nghề AI",
+      "tags": [
+        "Webinar",
+        "AI Product",
+        "Hackathon",
+        "API",
+        "gọi vốn",
+        "kinh nghiệm"
+      ],
+      "keywords": "Webinar, AI Product, Hackathon, API, gọi vốn, kinh nghiệm",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532059561434026156/1532059561434026156",
+      "source_url": "",
+      "channel_name": "[AI Tips] Add Thẻ Học Viên vào Smartphone (Samsung & Android) – Hết lo quên thẻ kẹt ngoài cửa! 🚀",
+      "shared_by": "G08 - T083 - Nguyễn Tiến - 01655"
+    },
+    {
+      "id": "1532067399543820319",
+      "resource_type": "github",
+      "title": "Repository Code Mẫu: Next.js + OpenAI / Gemini Structured Outputs",
+      "summary": "Source code mẫu bằng TypeScript hỗ trợ gọi LLM trả về Pydantic/Zod Schema, kèm UI Tailwind CSS và API Route.",
+      "topic": "LLM/API",
+      "tags": [
+        "Next.js",
+        "OpenAI",
+        "Gemini",
+        "Structured Outputs",
+        "TypeScript",
+        "Pydantic",
+        "Zod Schema",
+        "Tailwind CSS",
+        "API Route"
+      ],
+      "keywords": "Next.js, OpenAI, Gemini, Structured Outputs, TypeScript, Pydantic, Zod Schema, Tailwind CSS, API Route",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532059561434026156/1532067399543820319",
+      "source_url": "",
+      "channel_name": "[AI Tips] Add Thẻ Học Viên vào Smartphone (Samsung & Android) – Hết lo quên thẻ kẹt ngoài cửa! 🚀",
+      "shared_by": "T235-Phạm Bá Huy-01132"
+    },
+    {
+      "id": "1532070715795181755",
+      "resource_type": "github",
+      "title": "Repository Code: Evaluator Optimizer Pattern cho Golden Set Testing",
+      "summary": "Script Python chấm điểm tự động bộ Golden Set 20+ testcases sử dụng Promptfoo và OpenAI Evals API.",
+      "topic": "Testing & Evals",
+      "tags": [
+        "Evaluator Optimizer",
+        "Golden Set Testing",
+        "Python",
+        "Promptfoo",
+        "OpenAI Evals API",
+        "testcases"
+      ],
+      "keywords": "Evaluator Optimizer, Golden Set Testing, Python, Promptfoo, OpenAI Evals API, testcases",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532059561434026156/1532070715795181755",
+      "source_url": "",
+      "channel_name": "[AI Tips] Add Thẻ Học Viên vào Smartphone (Samsung & Android) – Hết lo quên thẻ kẹt ngoài cửa! 🚀",
+      "shared_by": "G08 - T083 - Nguyễn Tiến - 01655"
+    },
+    {
+      "id": "1532070928865824868",
+      "resource_type": "github",
+      "title": "Repository: FastAPI + Async ChromaDB Search Server cho RAG",
+      "summary": "Backend API bằng Python FastAPI cung cấp endpoint tìm kiếm vector semantic search tốc độ cao.",
+      "topic": "LLM/API",
+      "tags": [
+        "FastAPI",
+        "Async ChromaDB",
+        "RAG",
+        "Python",
+        "semantic search",
+        "vector search"
+      ],
+      "keywords": "FastAPI, Async ChromaDB, RAG, Python, semantic search, vector search",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532059561434026156/1532070928865824868",
+      "source_url": "",
+      "channel_name": "[AI Tips] Add Thẻ Học Viên vào Smartphone (Samsung & Android) – Hết lo quên thẻ kẹt ngoài cửa! 🚀",
+      "shared_by": "G08 - T083 - Nguyễn Tiến - 01655"
+    },
+    {
+      "id": "1532071305799536792",
+      "resource_type": "github",
+      "title": "Repository: Discord Bot Crawler - Crawl Tin Nhắn & Tự Động Gắn Tag",
+      "summary": "Bot Python sử dụng discord.py tự động quét link tài liệu từ kênh Discord và phân loại vào DB SQLite.",
+      "topic": "AI Agent",
+      "tags": [
+        "Discord Bot",
+        "Crawler",
+        "Python",
+        "discord.py",
+        "SQLite",
+        "tự động gắn tag"
+      ],
+      "keywords": "Discord Bot, Crawler, Python, discord.py, SQLite, tự động gắn tag",
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532059561434026156/1532071305799536792",
+      "source_url": "",
+      "channel_name": "[AI Tips] Add Thẻ Học Viên vào Smartphone (Samsung & Android) – Hết lo quên thẻ kẹt ngoài cửa! 🚀",
+      "shared_by": "G08 - T083 - Nguyễn Tiến - 01655"
+    },
+    {
+      "id": "1532046584743985162",
+      "resource_type": "github",
+      "title": "Repository Template: Vite + React + Tailwind CSS CP2 Clean Starter",
+      "summary": "Mẫu dự án Frontend tối giản đã cấu hình sẵn Lucide Icons, Router và Mock DB cho đội làm Hackathon.",
+      "topic": "Product Design",
+      "tags": [
+        "Vite",
+        "React",
+        "Tailwind CSS",
+        "Hackathon",
+        "Frontend",
+        "Template"
+      ],
+      "keywords": [
+        "Vite",
+        "React",
+        "Tailwind CSS",
+        "Hackathon",
+        "Frontend",
+        "Template",
+        "Lucide Icons",
+        "Router",
+        "Mock DB"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532046584743985162/1532046584743985162",
+      "source_url": "https://www.canirun.ai/",
+      "channel_name": "[AI Tips] Kiểm tra máy có chạy được Local AI không trước khi tải",
+      "shared_by": "G16-T048-Hồ Ngọc Quỳnh"
+    },
+    {
+      "id": "1532259932907241572",
+      "resource_type": "github",
+      "title": "Gist Python: Script Tự Động Đếm Tokens & Ước Tính Chi Phí OpenAI/Gemini",
+      "summary": "Đoạn code Python ngắn sử dụng tiktoken và google-genai để tính số lượng tokens và dự toán chi phí API.",
+      "topic": "LLM/API",
+      "tags": [
+        "Python",
+        "Token Counter",
+        "OpenAI API",
+        "Gemini API",
+        "Cost Estimation"
+      ],
+      "keywords": [
+        "Python",
+        "tiktoken",
+        "google-genai",
+        "tokens",
+        "API cost",
+        "OpenAI",
+        "Gemini"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532259932907241572/1532259932907241572",
+      "source_url": "https://arxiv.org/abs/2605.30667",
+      "channel_name": "[Góc chia sẻ] 🚨 Prompt Injection giờ không chỉ có trên chatbot, mà đã xuất hiện trong cả binary.",
+      "shared_by": "G17 - T192 - Nguyễn Tuấn Thành"
+    },
+    {
+      "id": "1532189015447572490",
+      "resource_type": "lab",
+      "title": "Colab Notebook: Fine-tuning Qwen 2.5 7B với Unsloth & LoRA",
+      "summary": "Hướng dẫn từng bước fine-tune mô hình Qwen 2.5 trên Google Colab T4 miễn phí, kèm script chuyển đổi GGUF.",
+      "topic": "Model Tuning",
+      "tags": [
+        "Colab",
+        "Fine-tuning",
+        "Qwen 2.5",
+        "Unsloth",
+        "LoRA",
+        "LLM"
+      ],
+      "keywords": [
+        "Colab",
+        "Fine-tuning",
+        "Qwen 2.5",
+        "Unsloth",
+        "LoRA",
+        "Google Colab T4",
+        "GGUF",
+        "LLM"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532189015447572490/1532189015447572490",
+      "source_url": "",
+      "channel_name": "[PM] Hướng dẫn nhanh: Scrum, Agile, Scrumban, Kanban và cài đặt Atlassian MCP",
+      "shared_by": "T086 - Phạm Quốc Thanh - 01407"
+    },
+    {
+      "id": "1532190377539408012",
+      "resource_type": "lab",
+      "title": "Bài Lab: Tích hợp Vision Model (Qwen-2-VL / LLaVA) phân tích ảnh",
+      "summary": "Jupyter Notebook hướng dẫn gửi image payload đến Multimodal LLM để trích xuất OCR và mô tả bảng biểu.",
+      "topic": "Computer Vision",
+      "tags": [
+        "Jupyter Notebook",
+        "Vision Model",
+        "Qwen-2-VL",
+        "LLaVA",
+        "Multimodal LLM",
+        "OCR"
+      ],
+      "keywords": [
+        "Jupyter Notebook",
+        "Vision Model",
+        "Qwen-2-VL",
+        "LLaVA",
+        "Multimodal LLM",
+        "OCR",
+        "image analysis",
+        "table description"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532189015447572490/1532190377539408012",
+      "source_url": "",
+      "channel_name": "[PM] Hướng dẫn nhanh: Scrum, Agile, Scrumban, Kanban và cài đặt Atlassian MCP",
+      "shared_by": "T089 - Trần Xuân Lộc - 01671"
+    },
+    {
+      "id": "1532191158766272734",
+      "resource_type": "lab",
+      "title": "Colab Notebook: Thực Hành Semantic Search với Sentence-Transformers & FAISS",
+      "summary": "Bài lab hướng dẫn tạo vector index bằng FAISS, tìm kiếm tương đồng văn bản và đo tốc độ truy vấn.",
+      "topic": "LLM/API",
+      "tags": [
+        "Colab",
+        "Semantic Search",
+        "Sentence-Transformers",
+        "FAISS",
+        "Vector Index"
+      ],
+      "keywords": [
+        "Colab",
+        "Semantic Search",
+        "Sentence-Transformers",
+        "FAISS",
+        "Vector Index",
+        "text similarity",
+        "query speed"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1532189015447572490/1532191158766272734",
+      "source_url": "",
+      "channel_name": "[PM] Hướng dẫn nhanh: Scrum, Agile, Scrumban, Kanban và cài đặt Atlassian MCP",
+      "shared_by": "T086 - Phạm Quốc Thanh - 01407"
+    },
+    {
+      "id": "1531853069627818004",
+      "resource_type": "lab",
+      "title": "Notebook Kaggle: Exploratory Data Analysis (EDA) trên Chatlog VLearn Dataset",
+      "summary": "Phân tích 2.500+ dòng hội thoại VLearn để tìm mẫu intent tin nhắn lặp lại và thống kê thời gian phản hồi.",
+      "topic": "Data Mining",
+      "tags": [
+        "Kaggle",
+        "Notebook",
+        "EDA",
+        "Chatlog",
+        "VLearn Dataset",
+        "Data Analysis"
+      ],
+      "keywords": [
+        "Kaggle",
+        "Notebook",
+        "EDA",
+        "Chatlog",
+        "VLearn Dataset",
+        "Data Analysis",
+        "intent mining",
+        "response time"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531853069627818004/1531853069627818004",
+      "source_url": "https://github.com/DietrichGebert/ponytail",
+      "channel_name": "[T-059] Ponytail: Giúp AI Coding viết ít code hơn và tiết kiệm token lên đến 22%",
+      "shared_by": "T059 - Phạm Gia Bảo - 01506"
+    },
+    {
+      "id": "1530832702968696972",
+      "resource_type": "lab",
+      "title": "Colab Notebook: Xây Dựng Function Calling Agent Gọi Weather & Web API",
+      "summary": "Thực hành cấu hình Tool Definition theo OpenAI Spec và xử lý phản hồi Tool Call từ LLM.",
+      "topic": "AI Agent",
+      "tags": [
+        "Colab",
+        "Function Calling",
+        "AI Agent",
+        "OpenAI Spec",
+        "Tool Definition",
+        "LLM"
+      ],
+      "keywords": [
+        "Colab",
+        "Function Calling",
+        "AI Agent",
+        "OpenAI Spec",
+        "Tool Definition",
+        "LLM",
+        "Weather API",
+        "Web API"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530832702968696972/1530832702968696972",
+      "source_url": "",
+      "channel_name": "[T-121] Opus 4.8 hay Opus 5?",
+      "shared_by": "T121 - Lê Quang Huy - 01821"
+    },
+    {
+      "id": "1531606271323541584",
+      "resource_type": "announcement",
+      "title": "Thông Báo Lịch Trực Office Hour & Hỗ Trợ Kỹ Thuật CP2-CP4",
+      "summary": "Khung giờ trực trực tiếp của các Mentors và TAs hỗ trợ sửa lỗi code, duyệt Spec và tư vấn kiến trúc AI.",
+      "topic": "Quy định khóa học",
+      "tags": [
+        "Thông báo",
+        "Lịch trực",
+        "Office Hour",
+        "Hỗ trợ kỹ thuật",
+        "Mentor",
+        "TA"
+      ],
+      "keywords": [
+        "Thông báo",
+        "Lịch trực",
+        "Office Hour",
+        "Hỗ trợ kỹ thuật",
+        "Mentor",
+        "TA",
+        "sửa lỗi code",
+        "duyệt Spec",
+        "tư vấn kiến trúc AI"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530832702968696972/1531606271323541584",
+      "source_url": "",
+      "channel_name": "[T-121] Opus 4.8 hay Opus 5?",
+      "shared_by": "T158 - Phạm Phúc Minh - 01153"
+    },
+    {
+      "id": "1531607844477075496",
+      "resource_type": "announcement",
+      "title": "Thông Báo: Quy Định Đổi Điểm XP & Bảng Xếp Hạng Hàng Tuần",
+      "summary": "Công thức cộng điểm XP từ bài làm lab, hỗ trợ bạn học trên Discord và tham gia làm bài Hackathon.",
+      "topic": "Quy định khóa học",
+      "tags": [
+        "Thông báo",
+        "Quy định",
+        "Điểm XP",
+        "Bảng xếp hạng",
+        "Hackathon"
+      ],
+      "keywords": [
+        "Thông báo",
+        "Quy định",
+        "Điểm XP",
+        "Bảng xếp hạng",
+        "Hackathon",
+        "bài làm lab",
+        "Discord"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530832702968696972/1531607844477075496",
+      "source_url": "",
+      "channel_name": "[T-121] Opus 4.8 hay Opus 5?",
+      "shared_by": "T121 - Lê Quang Huy - 01821"
+    },
+    {
+      "id": "1530529853927854141",
+      "resource_type": "announcement",
+      "title": "Thông Báo Khai Mạc Hackathon Batch 03 & Cấp API Key Thử Nghiệm",
+      "summary": "Thông báo chính thức phát đề tài Hackathon, cấp key Gemini/OpenAI free tier và thông tin phòng họp trực tuyến.",
+      "topic": "Hackathon",
+      "tags": [
+        "Thông báo",
+        "Khai mạc",
+        "Hackathon",
+        "API Key",
+        "Gemini",
+        "OpenAI"
+      ],
+      "keywords": [
+        "Thông báo",
+        "Khai mạc",
+        "Hackathon",
+        "API Key",
+        "Gemini",
+        "OpenAI",
+        "free tier",
+        "phòng họp trực tuyến"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530529853927854141/1530529853927854141",
+      "source_url": "https://notebooklm.google.com/notebook/5bb7f63c-716c-4f1a-906d-e81952f4d6d9",
+      "channel_name": "[T-121]Mình share tóm tắt bài giảng NotebookLM ở đây",
+      "shared_by": "T121 - Lê Quang Huy - 01821"
+    },
+    {
+      "id": "1530532546255913101",
+      "resource_type": "announcement",
+      "title": "Thông Báo Cập Nhật Hạn Nộp Cứng spec.md 23:59 N1 & Quality Bar",
+      "summary": "Nhắc nhở quan trọng về hạn commit spec.md và chốt cố định chỉ số Quality Bar trước thời điểm 23:59 ngày 1.",
+      "topic": "Hackathon",
+      "tags": [
+        "deadline",
+        "spec.md",
+        "quality bar",
+        "hackathon"
+      ],
+      "keywords": [
+        "hạn nộp",
+        "spec.md",
+        "quality bar",
+        "hackathon"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530529853927854141/1530532546255913101",
+      "source_url": "",
+      "channel_name": "[T-121]Mình share tóm tắt bài giảng NotebookLM ở đây",
+      "shared_by": "G21 - T100 - Bùi Hoàng Vương"
+    },
+    {
+      "id": "1531167068009795765",
+      "resource_type": "announcement",
+      "title": "Thông Báo Thể Lệ Chấm Bài Demo CP6 & Bảng Phân Phối Giám Khảo",
+      "summary": "Danh sách các phòng thi demo, thứ tự trình bày của các nhóm và quy định thẻ bài câu hỏi từ Giám khảo.",
+      "topic": "Hackathon",
+      "tags": [
+        "thể lệ",
+        "chấm bài",
+        "demo",
+        "giám khảo",
+        "hackathon"
+      ],
+      "keywords": [
+        "thể lệ chấm bài",
+        "demo CP6",
+        "phân phối giám khảo",
+        "hackathon"
+      ],
+      "confidence": 0.95,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530529853927854141/1531167068009795765",
+      "source_url": "",
+      "channel_name": "[T-121]Mình share tóm tắt bài giảng NotebookLM ở đây",
+      "shared_by": "235-HoàngVănThành-01428"
+    },
+    {
+      "id": "1531586992469442621",
+      "resource_type": "guide",
+      "title": "Cheat-sheet HAX & PAIR Principles thiết kế UI/UX cho sản phẩm AI",
+      "summary": "Bảng tổng hợp 18 nguyên tắc HAX (Microsoft) và PAIR (Google) kèm ví dụ áp dụng cụ thể vào Chatbot, Search và Assistant.",
+      "topic": "Product Design",
+      "tags": [
+        "cheat-sheet",
+        "HAX",
+        "PAIR",
+        "UI/UX",
+        "AI product design",
+        "chatbot",
+        "search",
+        "assistant"
+      ],
+      "keywords": [
+        "cheat-sheet",
+        "HAX",
+        "PAIR principles",
+        "UI/UX",
+        "AI",
+        "product design"
+      ],
+      "confidence": 0.9,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530529853927854141/1531586992469442621",
+      "source_url": "",
+      "channel_name": "[T-121]Mình share tóm tắt bài giảng NotebookLM ở đây",
+      "shared_by": "T158 - Phạm Phúc Minh - 01153"
+    },
+    {
+      "id": "1531587547552022600",
+      "resource_type": "guide",
+      "title": "Tài Liệu Hướng Dẫn: Checklist Nộp Bài CP1-CP6 & 6 Trang Slide Demo",
+      "summary": "Checklist từng bước chuẩn bị file spec.md, codebase, golden set, validation log và dàn ý 6 trang slide demo.",
+      "topic": "Hackathon",
+      "tags": [
+        "checklist",
+        "nộp bài",
+        "CP1-CP6",
+        "slide demo",
+        "spec.md",
+        "codebase",
+        "golden set",
+        "validation log",
+        "hackathon"
+      ],
+      "keywords": [
+        "checklist",
+        "nộp bài",
+        "slide demo",
+        "hackathon"
+      ],
+      "confidence": 0.9,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530529853927854141/1531587547552022600",
+      "source_url": "",
+      "channel_name": "[T-121]Mình share tóm tắt bài giảng NotebookLM ở đây",
+      "shared_by": "T121 - Lê Quang Huy - 01821"
+    },
+    {
+      "id": "1531966289260843008",
+      "resource_type": "guide",
+      "title": "Hướng Dẫn Cài Đặt CUDA, PyTorch & Environment cho GPU NVIDIA",
+      "summary": "Tài liệu khắc phục lỗi phiên bản CUDA, cài đặt torchvision và cấu hình venv/conda chuẩn cho máy Windows/Linux.",
+      "topic": "Kỹ Thuật Hệ Thống",
+      "tags": [
+        "hướng dẫn",
+        "cài đặt",
+        "CUDA",
+        "PyTorch",
+        "environment",
+        "GPU",
+        "NVIDIA",
+        "torchvision",
+        "venv",
+        "conda",
+        "Windows",
+        "Linux"
+      ],
+      "keywords": [
+        "cài đặt CUDA",
+        "PyTorch",
+        "environment",
+        "GPU NVIDIA",
+        "troubleshooting"
+      ],
+      "confidence": 0.9,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530529853927854141/1531966289260843008",
+      "source_url": "",
+      "channel_name": "[T-121]Mình share tóm tắt bài giảng NotebookLM ở đây",
+      "shared_by": "T121 - Lê Quang Huy - 01821"
+    },
+    {
+      "id": "1530962250007969792",
+      "resource_type": "guide",
+      "title": "Tổng Hợp 20+ Công Cụ AI Free Tier Hỗ Trợ Ghi Chú, Code & Demo",
+      "summary": "Danh sách các dịch vụ miễn phí như v0, Lovable, Google AI Studio, Groq Cloud, Supabase và Hugging Face Spaces.",
+      "topic": "Công cụ",
+      "tags": [
+        "công cụ AI",
+        "free tier",
+        "ghi chú",
+        "code",
+        "demo",
+        "v0",
+        "Lovable",
+        "Google AI Studio",
+        "Groq Cloud",
+        "Supabase",
+        "Hugging Face Spaces"
+      ],
+      "keywords": [
+        "công cụ AI",
+        "free tier",
+        "ghi chú",
+        "code",
+        "demo"
+      ],
+      "confidence": 0.9,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530962250007969792/1530962250007969792",
+      "source_url": "",
+      "channel_name": "[Team P-147] Từ Requirement đến Done – Workflow Trello mà Team mình đang sử dụng",
+      "shared_by": "T147 - Bùi Gia Uy - 01867"
+    },
+    {
+      "id": "1530963253461778432",
+      "resource_type": "guide",
+      "title": "Hướng Dẫn Quy Trình Khảo Sát Nhanh (Survey) Thu Thập Evidence CP1",
+      "summary": "Cách soạn form khảo sát n ≥ 20 người dùng, đặt câu hỏi khai thác pain point không chứa từ 'AI' và lưu trữ log nguyên văn.",
+      "topic": "Product Design",
+      "tags": [
+        "hướng dẫn",
+        "khảo sát",
+        "survey",
+        "evidence",
+        "CP1",
+        "pain point",
+        "product design"
+      ],
+      "keywords": [
+        "hướng dẫn khảo sát",
+        "survey",
+        "evidence CP1",
+        "pain point",
+        "product design"
+      ],
+      "confidence": 0.9,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1530962250007969792/1530963253461778432",
+      "source_url": "",
+      "channel_name": "[Team P-147] Từ Requirement đến Done – Workflow Trello mà Team mình đang sử dụng",
+      "shared_by": "T004-Thái Hoài An-01862"
+    },
+    {
+      "id": "1531984316752597073",
+      "resource_type": "guide",
+      "title": "Guide Viết Spec Chuẩn 9 Phần & Cách Tránh LỗiHALLUCINATED_EVAL",
+      "summary": "Hướng dẫn chi tiết từng mục trong template AI Spec và cách định nghĩa tiêu chí kiểm thử khách quan hai người chấm như nhau.",
+      "topic": "Testing & Evals",
+      "tags": [
+        "guide",
+        "viết spec",
+        "AI spec",
+        "HALLUCINATED_EVAL",
+        "kiểm thử",
+        "đánh giá",
+        "testing",
+        "evals"
+      ],
+      "keywords": [
+        "guide",
+        "viết spec",
+        "AI spec",
+        "HALLUCINATED_EVAL",
+        "testing",
+        "evals"
+      ],
+      "confidence": 0.9,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531984316752597073/1531984316752597073",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSeQy23sxAWRQ_PABwAlZy_iREDeQhiDIbEC_KYyWliXsioRag/viewform?usp=dialog",
+      "channel_name": "[Tặng tool AI trị giá 699k giới hạn]",
+      "shared_by": "T038 - Trần Thị Hoa Mai - 01317"
+    },
+    {
+      "id": "1531985175616028734",
+      "resource_type": "guide",
+      "title": "Gợi Ý Dataset CV thuộc Track RAV - DEV (Cityscapes, nuScenes, BDD100K)",
+      "summary": "Danh sách gợi ý dataset Computer Vision cho xe tự hành, phân tích cảm biến, nhãn annotation và ứng dụng thực tế.",
+      "topic": "Computer Vision",
+      "tags": [
+        "dataset",
+        "CV",
+        "Computer Vision",
+        "RAV-DEV",
+        "Cityscapes",
+        "nuScenes",
+        "BDD100K",
+        "xe tự hành",
+        "cảm biến",
+        "annotation"
+      ],
+      "keywords": [
+        "dataset",
+        "Computer Vision",
+        "RAV-DEV",
+        "Cityscapes",
+        "nuScenes",
+        "BDD100K"
+      ],
+      "confidence": 0.9,
+      "discord_url": "https://discord.com/channels/1526532830627102781/1531984316752597073/1531985175616028734",
+      "source_url": "",
+      "channel_name": "[Tặng tool AI trị giá 699k giới hạn]",
+      "shared_by": "T038 - Trần Thị Hoa Mai - 01317"
+    }
+  ]
+}
