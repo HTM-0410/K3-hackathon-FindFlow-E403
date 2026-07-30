@@ -1,8 +1,8 @@
 import type { Resource } from "../types/resource";
-import { discordResources } from "./discord-resources";
+import { classifiedResources } from "./classified-resources.generated";
 
-// All resources from Discord (139 real documents)
-export const resources: Resource[] = discordResources;
+// Toàn bộ tài liệu đã được phân loại từ Discord (77 mục)
+export const resources: Resource[] = classifiedResources;
 
 export const resourceById = new Map(resources.map((resource) => [resource.id, resource]));
 

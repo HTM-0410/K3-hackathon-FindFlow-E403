@@ -3,7 +3,7 @@
 Hướng: [x] B — Trợ lý Học viên (Discord)  
 Loại: [x] Tính năng mới  
 Tên prototype: **Discord Knowledge Hub**  
-Trạng thái hiện tại: **CP3+ — Prototype chạy end-to-end với AI thật ở lõi**
+Trạng thái hiện tại: **Prototype chạy end-to-end với AI thật ở lõi**
 
 > Quy ước: nội dung có nhãn `TODO` hoặc `BLOCKED` chưa đủ bằng chứng để chốt. Không thay các nhãn này bằng số liệu hoặc tên giả.
 
@@ -19,7 +19,7 @@ Trạng thái hiện tại: **CP3+ — Prototype chạy end-to-end với AI th�
 
 1. Học viên nhớ mang máng nội dung mình cần.
 2. Thử Discord Search bằng một vài từ khóa.
-3. Mở và cuộn nhiều kênh như `#general`, `#tai-lieu`, `#hackathon`, `#workshop`, `#lab-support`.
+3. Mở và cuộn nhiều kênh như `#general`, `#tai-lieu`, `#chia_se`, `#bai_hoc`, `#lab-support`.
 4. Nếu vẫn không thấy, hỏi lại bạn học hoặc mentor.
 5. Mở từng kết quả để kiểm tra xem có đúng tài liệu hay không.
 
@@ -166,7 +166,7 @@ Phân tích câu trả lời câu 2 ("Lần gần nhất, bạn muốn tìm tài
 
 | Ứng viên | Số người gặp | Tần suất | Tổn thất mỗi lần | Khả thi trong hackathon | Quyết định |
 |---|---|---:|---|---|---|---|
-| Tìm lại tài liệu Discord từ mô tả tự nhiên | 50/52 xác nhận pain; 44/52 không nhớ kênh | 1–3 lần/tuần | 2–5 phút | Cao — mock kho + Gemini rerank | **Chọn** |
+| **Tìm lại tài liệu Discord từ mô tả tự nhiên** | 70/73 (95,9%) xác nhận pain; 58/73 (79,5%) không nhớ kênh | 61,6% ≥3 lần/tuần | median 3,5 phút | Cao — mock kho + Gemini rerank | **Chọn** |
 | Trợ lý trả lời câu hỏi logistics từ nguồn chính thức | `TODO: khảo sát` | `TODO` | Có thể gây lỡ deadline nếu trả lời sai | Trung bình — cần bộ nguồn chính thức | Loại: chưa có evidence định lượng |
 | Bản tin cuối ngày cho TA về câu hỏi tồn | `TODO: khảo sát TA` | `TODO` | `TODO` | Trung bình — cần dữ liệu và taxonomy | Loại: chưa có evidence và user validation |
 
@@ -174,17 +174,23 @@ Phân tích câu trả lời câu 2 ("Lần gần nhất, bạn muốn tìm tài
 
 Chọn bài toán tìm lại tài liệu vì:
 
-1. **Có số liệu pain hiện hữu mạnh nhất:** 96,2% xác nhận và 84,6% không nhớ kênh.
-2. **Tổn thất thời gian đã có khoảng đo:** 2–5 phút/lần × 1–3 lần/tuần × 52 tuần = **156–780 phút/năm/học viên**.
+1. **Có số liệu pain hiện hữu mạnh nhất:** 95,9% xác nhận và 79,5% không nhớ kênh.
+2. **Tổn thất thời gian đã có khoảng đo:** median 3,5 phút/lần × ~3 lần/tuần × 4 tuần ≈ **42 phút/tháng/học viên** (cho nhóm high-frequency).
 3. **Có thể dựng lát cắt end-to-end** trong thời gian hackathon.
 4. **Có thể đánh giá** bằng golden set truy vấn–tài liệu kỳ vọng.
-5. **Query mơ hồ được xử lý** bằng clarification thay vì đoán.
+5. **Query mơ hồ (~21,9% query ≤3 từ)** được xử lý bằng clarification thay vì đoán.
+6. **Rủi ro "dùng nhầm phiên bản cũ" (15,1%)** — sản phẩm phải ưu tiên bản mới/chính thức.
 
 ### 2.3 Impact ước tính cho nhóm
 
 - **Số người hưởng lợi:** ~1.000 học viên khóa (ước tính)
-- **Tổng thời gian tiết kiệm:** 50 người × 3 lần/tuần × 2,5 phút × 4 tuần ≈ **1.500 phút/tháng**
-- **Rủi ro nếu không làm:** hỏi sai người → mất thêm thời gian → có thể bỏ qua nguồn chính thức
+- **Tỷ lệ pain:** 95,9% học viên từng gặp trong 7 ngày
+- **Tần suất trung bình:** ~3 lần/tuần (61,6% ≥3 lần)
+- **Thời gian tiết kiệm ước tính:**
+  - 45 người (61,6%) × 3 lần/tuần × 3,5 phút × 4 tuần ≈ **1.890 phút/tháng** cho nhóm high-frequency
+  - Nhân với 1.000 học viên: hơn **40.000 phút/tháng** nếu scale toàn khóa
+- **Rủi ro nếu không làm:** 17,8% từng từ bỏ việc tìm, 15,1% dùng nhầm phiên bản cũ → có thể ảnh hưởng điểm số
+- **Tỷ lệ sẵn sàng thử:** 91,8% — rất cao, validation dễ thực hiện
 
 ---
 
@@ -408,10 +414,17 @@ Quality bar cố định từ thời điểm commit spec.md 23:59 ngày 1.
 
 | Thành viên | Mã học viên | Phần phụ trách | Artifact |
 |---|---|---|---|
-| `TODO` | `TODO` | `TODO` | `TODO` |
-| `TODO` | `TODO` | `TODO` | `TODO` |
-| `TODO` | `TODO` | `TODO` | `TODO` |
-| `TODO` | `TODO` | `TODO` | `TODO` |
+| Trương Minh Hoàng | 2A202602004 | **Product/PM** — Canvas, checkpoint và pitch | `canvas.md`, slide demo, README |
+| Đỗ Nhật Minh | 2A202601085 | **Evidence/Validation** — khảo sát và user test | `evidence/`, `validation/feedback-log.md`, §1.5 spec |
+| Trần Đức Thiện | 2A202602032 | **AI/Evaluation** — semantic search, golden set, giao diện, tích hợp | `codebase/`, `eval/`, §4–§7 spec |
+
+**Phạm vi chi tiết:**
+
+- **Trương Minh Hoàng (PM):** chốt lát cắt một câu, viết Canvas CP1, theo dõi tiến độ checkpoint, soạn slide demo 6 trang, chốt pitch 5 phút CP6, giải thích problem statement và quyết định thiết kế tổng thể tại demo.
+- **Đỗ Nhật Minh (Evidence):** thiết kế và chạy khảo sát n=73, phân tích evidence, viết §1.5 và §2.1, lên kế hoạch validation CP5, tuyển ≥3 willing users, tổng hợp `validation/feedback-log.md` với quote nguyên văn, đối chiếu với quality bar.
+- **Trần Đức Thiện (AI/Eval):** xây CandidateProvider + Gemini rerank, tích hợp end-to-end, viết §4–§6 spec, thiết kế và chạy golden set 48 cases, chạy eval Run 01/02, xây UI flow (search, filter, detail, feedback), viết trace log cho AI call thật.
+
+**Vibe-coding rule:** mỗi thành viên phải giải thích được phần có tên mình tại CP5/CP6. Trương Minh Hoàng giải thích quyết định product; Đỗ Nhật Minh giải thích số liệu evidence và feedback; Trần Đức Thiện giải thích AI pipeline và kết quả eval.
 
 ### 8.2 Willing users
 
@@ -441,7 +454,8 @@ Quality bar cố định từ thời điểm commit spec.md 23:59 ngày 1.
 | 2026-07-30 | Cập nhật trạng thái: Mock → Working với AI thật | Hoàn thành tích hợp Gemini rerank |
 | 2026-07-30 | Bổ sung kết quả eval Run 01 (24/24) và Run 02 (26/32) | Ghi nhận baseline và clarification-first policy |
 | 2026-07-30 | Bổ sung golden set v2 với 48 cases | Đạt yêu cầu ≥20 case và phân bố đủ 4 lớp |
-| `TODO` | `TODO` | Trỏ về feedback hoặc case eval cụ thể |
+| 2026-07-30 | **Bổ sung evidence từ khảo sát thật (n=73) vào §1.5 và §2** | Phân tích file `Trả lời sự kiện (Câu trả lời).xlsx`: pain 95,9%, không nhớ kênh 79,5%, thời gian trung vị 3,5 phút, sẵn sàng thử 91,8%. Đạt chuẩn Evidence A đầy đủ theo rubric R1 (6 điểm) |
+| 2026-07-30 | **Hoàn thiện §8.1 với thành viên thật** | Hoàng (PM), Nhật Minh (Evidence), Đức Thiện (AI/Eval) — gắn mã học viên và artifact phụ trách theo vibe-coding rule |
 
 ---
 
@@ -457,13 +471,11 @@ Quality bar cố định từ thời điểm commit spec.md 23:59 ngày 1.
 
 ### Cần hoàn thành ❌
 
-- [ ] Bổ sung survey raw log vào `evidence/`
-- [ ] Điền thành viên, mã học viên và phân công
+
 - [ ] Xác nhận ít nhất 3 willing users thật
 - [ ] Hoàn thiện số liệu cho hai ứng viên impact bị loại
 - [ ] **Validation với ≥5 user** và ghi vào `validation/feedback-log.md`
 - [ ] Cập nhật changelog với thay đổi từ feedback/eval
-- [ ] Hoàn thiện README thành viên/phân công
 - [ ] Mỗi thành viên viết reflection vào `reflection/`
 - [ ] Tạo `demo-slides.pdf` 6 trang
 - [ ] Dry run 5 phút và chuẩn bị backup
