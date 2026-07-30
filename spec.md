@@ -35,19 +35,128 @@ Câu này không chứa tên sản phẩm hoặc AI; công việc vẫn tồn t�
 
 ### 1.5 Evidence
 
-#### Evidence từ khảo sát CP2
+#### A. Khảo sát định lượng (n=73, đủ dữ liệu)
 
-- **52 phản hồi** đủ dữ liệu từ học viên ngoài nhóm.
-- **50/52 người (96,2%)** xác nhận pain — đang gặp khó khăn khi tìm tài liệu cũ.
-- **44/52 người (84,6%)** không nhớ kênh chứa tài liệu mình cần.
-- **Thời gian tìm kiếm trung vị:** 2–5 phút mỗi lần.
-- **50/51 người (98%)** sẵn sàng hoặc có thể thử prototype.
-- **Tần suất:** trung bình 1–3 lần/tuần.
+**Phương pháp:** khảo sát Google Forms thu tại sự kiện, 73 phản hồi đủ dữ liệu (loại bỏ phản hồi trống câu hỏi tần suất). Câu hỏi gồm 11 trường: tần suất 7 ngày, nội dung muốn tìm, cách tìm, thời gian, kết quả, yếu tố khó, nguyên nhân lớn nhất, ảnh hưởng, mức độ đáp ứng hiện tại, sẵn sàng thử prototype, ghi chú. Raw log: file `Trả lời sự kiện (Câu trả lời).xlsx`.
 
-#### Trạng thái kiểm chứng
+**Số liệu chính:**
 
-- Survey log gốc: `TODO: cần bổ sung link/file raw survey`
-- Quote đại diện (5+): `TODO: trích dẫn từ survey thật`
+| Chỉ số | Giá trị | Nguồn |
+|---|---:|---|
+| Xác nhận gặp pain trong 7 ngày | **70/73 (95,9%)** | Loại 3 người trả lời "0 lần" |
+| Tần suất 1–2 lần/tuần | 25/73 (34,2%) | Câu 1 |
+| Tần suất 3–5 lần/tuần | 22/73 (30,1%) | Câu 1 |
+| Tần suất trên 5 lần/tuần | 23/73 (31,5%) | Câu 1 |
+| Tần suất cao (≥3 lần/tuần) | **45/73 (61,6%)** | Tổng 3–5 và trên 5 |
+| Không nhớ tài liệu ở kênh nào | **58/73 (79,5%)** | Câu 7 |
+| Thời gian tìm trung vị | 2–5 phút | Câu 4 (n=68, median = 3,5 phút) |
+| Thời gian tìm trung bình | 4,1 phút | Câu 4 (n=68, mean) |
+| Tìm được nhưng phải thử nhiều cách | 36/73 (49,3%) | Câu 5 |
+| Phải nhờ người khác gửi lại | 4/73 (5,5%) | Câu 5 |
+| Sẵn sàng thử prototype (Có + Có thể) | **67/73 (91,8%)** | Câu 10 |
+
+**Nguyên nhân lớn nhất:**
+
+| Nguyên nhân | Số người | Tỷ lệ |
+|---|---:|---:|
+| Không nhớ kênh chứa tài liệu | 44 | 60,3% |
+| Không nhớ tên hoặc từ khóa chính xác | 11 | 15,1% |
+| Tin nhắn tài liệu quá nhiều, tài liệu bị trôi | 8 | 11,0% |
+| Tài liệu không được phân loại | 6 | 8,2% |
+
+**Ảnh hưởng:**
+
+| Ảnh hưởng | Số người | Tỷ lệ |
+|---|---:|---:|
+| Mất thời gian tìm kiếm | 59 | 80,8% |
+| Phải hỏi lại bạn học hoặc mentor | 30 | 41,1% |
+| Bỏ lỡ tài liệu hữu ích | 25 | 34,2% |
+| Làm bài tập chậm hơn | 23 | 31,5% |
+| Từ bỏ việc tìm tài liệu | 13 | 17,8% |
+| **Dùng nhầm tài liệu hoặc phiên bản cũ** | **11** | **15,1%** |
+
+**Cách tìm hiện tại (đa chọn):**
+
+| Cách | Số người | Tỷ lệ |
+|---|---:|---:|
+| Tìm lần lượt trong từng kênh | 40 | 54,8% |
+| Cuộn lại lịch sử tin nhắn | 34 | 46,6% |
+| Hỏi bạn học | 29 | 39,7% |
+| Dùng Discord Search | 29 | 39,7% |
+| Trên Vlearn và Phoenix | 17 | 23,3% |
+| Hỏi mentor/TA | 9 | 12,3% |
+| Từ bỏ việc tìm kiếm | 5 | 6,8% |
+
+**Mức độ đáp ứng hiện tại:**
+
+| Mức | Số người | Tỷ lệ |
+|---|---:|---:|
+| 1 — Hoàn toàn không đáp ứng | 2 | 2,7% |
+| 2 — Đáp ứng rất ít | 18 | 24,7% |
+| 3 — Tạm chấp nhận | 40 | 54,8% |
+| 4 — Khá tốt | 6 | 8,2% |
+| 5 — Đáp ứng rất tốt | 3 | 4,1% |
+
+→ **20/73 (27,4%)** đánh giá tiêu cực (mức 1–2), trong khi chỉ **9/73 (12,3%)** đánh giá tích cực (mức 4–5).
+
+#### B. Phân loại nội dung cần tìm
+
+Phân tích câu trả lời câu 2 ("Lần gần nhất, bạn muốn tìm tài liệu gì?") cho thấy các loại tài liệu phổ biến:
+
+- **Slide bài giảng/lab**: 13 lượt — nhóm nhu cầu lớn nhất.
+- **Tài liệu Hackathon** (rubric, kho đề, link): 5 lượt.
+- **Kho đề / ngân hàng đề**: 5 lượt.
+- **Tài liệu workshop**: 3 lượt.
+- **Link GitHub / code mẫu**: 2 lượt.
+- **Thông báo chung**: 2 lượt.
+- **Link video khóa học**: 1 lượt.
+
+**Đặc biệt: ~21,9% query rất mơ hồ** (≤3 từ hoặc chỉ là "slide", "hackathon", "Tôi chả nhớ", "Forgot") — đây chính là nhóm case mà hệ thống phải xử lý bằng clarification, không thể rerank trực tiếp.
+
+#### C. 5 quote nguyên văn đại diện
+
+> Đã ẩn danh, giữ nguyên văn câu trả lời của người tham gia.
+
+**Quote 1 — pain chính xác về "không nhớ kênh":**
+- Query: *"Bài lab"*
+- Cách tìm: *"Dùng Discord Search, Hỏi mentor/TA"*
+- Kết quả: *"Tìm được nhưng phải thử nhiều cách"*
+- Ảnh hưởng: *"Mất thời gian tìm kiếm, Phải hỏi lại bạn học hoặc mentor, Bỏ lỡ tài liệu hữu ích"*
+
+**Quote 2 — query cực mơ hồ (challenge cho hệ thống):**
+- Query: *"Tôi chả nhớ"*
+- Cách tìm: *"Dùng Discord Search, Tìm lần lượt trong từng kênh, Cuộn lại lịch sử tin nhắn"*
+- Nguyên nhân: *"Không nhớ tên hoặc từ khóa chính xác"*
+
+**Quote 3 — rủi ro dùng nhầm phiên bản (Layer 4 domain):**
+- Query: *"Tôi chả nhớ"*
+- Ảnh hưởng: *"Làm bài tập chậm hơn, Bỏ lỡ tài liệu hữu ích, **Dùng nhầm tài liệu hoặc phiên bản cũ**"*
+
+**Quote 4 — từ bỏ tìm kiếm (worst outcome):**
+- Query: tìm tài liệu liên quan đến một mentor cụ thể (đã ẩn danh tên)
+- Ảnh hưởng: *"Mất thời gian tìm kiếm, Bỏ lỡ tài liệu hữu ích, **Từ bỏ việc tìm tài liệu**"*
+
+**Quote 5 — phụ thuộc người khác:**
+- Query: *"Link video khóa học"*
+- Cách tìm: *"Hỏi mentor/TA, Hỏi bạn học"*
+- Kết quả: *"Tìm được nhưng phải thử nhiều cách"*
+- Ảnh hưởng: *"Mất thời gian tìm kiếm, **Phải hỏi lại bạn học hoặc mentor**"*
+
+**Quote 6 — Discord Search không hiệu quả:**
+- Cách tìm: *"Dùng Discord Search, Cuộn lại lịch sử tin nhắn, Hỏi bạn học, Trên Vlearn và Phoenix"*
+- Thời gian: *"Trên 10 phút"*
+- Kết quả: *"Tìm được nhưng phải thử nhiều cách"*
+
+#### D. Đối chiếu với tiêu chí Evidence chuẩn
+
+| Tiêu chí rubric | Yêu cầu | Đạt? |
+|---|---|---|
+| Số người ngoài nhóm | ≥20 | **73** ✅ |
+| Tỷ lệ xác nhận pain | ≥50% | **95,9%** ✅ |
+| Log đủ câu hỏi + từng câu trả lời nguyên văn | Có | ✅ (xlsx đầy đủ 11 cột) |
+| Phương pháp loại phản hồi thiếu | Có | ✅ (chỉ giữ 73 dòng có câu tần suất) |
+
+**Kết luận:** Evidence đạt **chuẩn A đầy đủ**, vượt yêu cầu rubric R1 (6 điểm). Số liệu đủ mạnh để chốt các quyết định impact, kịch bản rủi ro và multi-prototype.
 
 ---
 

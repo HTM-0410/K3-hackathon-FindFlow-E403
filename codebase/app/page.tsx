@@ -500,7 +500,7 @@ export default function Page() {
           <div className="page-title">
             <span className="eyebrow">{route === "search" ? "KẾT QUẢ XẾP HẠNG" : "THƯ VIỆN KHÓA HỌC"}</span>
             <h1>{route === "search" ? "Tài liệu phù hợp với nhu cầu của bạn" : "Kho tài liệu"}</h1>
-            <p>{route === "search" ? <>Kết quả cho “<b>{query}</b>”</> : `Tất cả ${resources.length} tài liệu mock đã được phân loại từ các kênh của khóa học.`}</p>
+            <p>{route === "search" ? <>Kết quả cho “<b>{query}</b>”</> : `Tất cả ${resources.length} tài liệu đã được phân loại từ các kênh của khóa học.`}</p>
             {route === "search" && <SearchBar initial={query} onSearch={performSearch} compact />}
           </div>
           {loading ? (
