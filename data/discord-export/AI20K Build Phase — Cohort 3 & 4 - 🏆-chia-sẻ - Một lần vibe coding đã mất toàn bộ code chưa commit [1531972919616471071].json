@@ -1,0 +1,101 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531972919616471071",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Một lần vibe coding đã mất toàn bộ code chưa commit",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:19:05.1414743+07:00",
+  "messages": [
+    {
+      "id": "1531972919616471071",
+      "type": "Default",
+      "timestamp": "2026-07-29T17:33:26.717+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình từng để Agent chạy ở chế độ **bypass all permissions** để refactor một project.\nTrước đó mình đã code liên tục khá lâu nhưng chưa commit. Sau khi viết một prompt dài mô tả toàn bộ phần cần refactor, mình để Agent tự chạy rồi đi chơi.\n\nLúc quay lại thì… ôi thôi.\n\nMột ngày code mình làm trước đó cứ thế bay màu. Kiểm tra lịch sử terminal mới phát hiện Agent đã tự chạy:\n\n```bash\ngit stash\n```\nCó lẽ nó thấy repository đang có thay đổi và muốn đưa codebase về trạng thái sạch trước khi refactor. Vấn đề là sau đó mình không thể `git stash pop` để khôi phục bình thường. Không rõ Agent đã tiếp tục thay đổi, xử lý conflict hay tác động gì thêm vào stash, code đã mất và mình đã \uD83D\uDC7A  \n\nSau vụ đó, mình bắt đầu tìm các trường hợp tương tự và nhận ra Agent thường không cố tình phá code, nó chỉ đang quá nhiệt tình hoàn thành task.\n\nKhi gặp working tree không sạch, conflict hoặc command bị chặn, Agent có thể tự chọn những giải pháp mà nó cho là hợp lý:\n\n```bash\ngit stash\ngit reset --hard\ngit clean -fd\ngit restore .\ngit push --force\n```\n\nVới Agent, đây chỉ là cách “dọn repository cho sạch”. Nhưng nó không biết đoạn code nào là thử nghiệm có thể bỏ và đoạn nào là công việc mình chưa kịp commit.\n\nSau đó, mình thêm guardrail vào AGENT.md ngay lập tức, không bao giờ `git stash` hay `git reset` gì hết  \n\nNgoài ra, trước khi giao một task dài cho Agent, mình thường:\n\n* Chạy `git status`.\n* Commit hoặc tạo branch checkpoint.\n* Để Agent làm việc trong worktree riêng.\n* Không bật bypass permission trên repository có code quan trọng chưa commit.\n\n`AGENTS.md` không phải lớp bảo mật tuyệt đối. Nó vẫn chỉ là hướng dẫn cho model. Với command thật sự nguy hiểm, nên chặn thêm bằng permission deny, hook hoặc sandbox.\n\nĐừng như mình \uD83D\uDE2D",
+      "author": {
+        "id": "725334723379068980",
+        "name": "hina845",
+        "discriminator": "0000",
+        "nickname": "T113 - Lương Minh Quân - 01308",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/725334723379068980/f978bc958d5c87bd32fc951f09966b0b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "725334723379068980",
+              "name": "hina845",
+              "discriminator": "0000",
+              "nickname": "T113 - Lương Minh Quân - 01308",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/725334723379068980/f978bc958d5c87bd32fc951f09966b0b.png?size=512"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDC7A",
+          "code": "japanese_goblin",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f47a.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDE2D",
+          "code": "sob",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f62d.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

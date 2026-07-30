@@ -1,0 +1,208 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530819068708393000",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Mổ xẻ template Github AI20K Build Phase & Chiến thuật",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:14:01.8873365+07:00",
+  "messages": [
+    {
+      "id": "1530819068708393000",
+      "type": "Default",
+      "timestamp": "2026-07-26T13:08:27.223+07:00",
+      "timestampEdited": "2026-07-26T16:11:21.527+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Nếu bạn vừa clone template về và thấy hơi choáng với đống thư mục, file config, hook, Docker... thì bài này dành cho bạn. \nVì giới hạn chữ của Discord, nên mình sẽ chỉ tóm tắt trong trong bài viết này. Mọi người có thể xem chi tiết nội dung các mục hơn ở file Docs mình đính kèm.\n\n**1. Template này thực chất là gì?**\nĐây là khung sườn để build một **AI Agent hoàn chỉnh** theo kiến trúc **3 tầng (3-tier)**. Bài thi được chấm trên thang **50 điểm**, mục tiêu thực tế nên nhắm là **35+**.\nĐiểm hay của template: nó lo sẵn phần \"boilerplate khó nhằn\" — Docker, CI/CD, cấu trúc thư mục chuẩn, hệ thống logging AI — để bạn dồn sức vào phần thực sự tạo khác biệt là **sản phẩm**.\n\n**2. Bản đồ kiến trúc 3 tầng**\nTầng 1: API (FastAPI) \nTầng 2: Agent (LangGraph) \nTầng 3: Data (DB + Vector)\n\n**3. Ban tổ chức chấm điểm những gì? **\nBao gồm các tiêu chí sau: Product/Business, System Design, UX/UI, Devops, Code Quality\n\n** 4. 10 Deliverables**\nSource Code - README - Architecture diagram - AI Logs - Live URL - Video Demo - Pitch deck - Weekly Journal - Worklog - Evaluation\n\n**5. Chiến thuật cho team 4 người**\n**Nguyên tắc cốt lõi: chia việc theo tầng kiến trúc để tránh đụng file (merge conflict).** Vì cấu trúc thư mục đã tách sẵn theo separation-of-concerns, nếu phân vai đúng thì 4 người hiếm khi sửa cùng một file.\n**Git workflow**\n```\nmain (production, luôn xanh)\n └── develop (tích hợp hàng ngày)\n      ├── feature/agent-flow   (A)\n      ├── feature/api-routes   (B)\n      ├── feature/frontend     (C)\n      └── feature/devops       (D)\n```\n**Lời kết**\nTemplate này BTC đã trải sẵn đường khá xa cho bạn: hạ tầng, CI, logging, cấu trúc đều chuẩn. Phần thắng thua nằm ở **ý tưởng sản phẩm**, **kỷ luật teamwork**, và việc **không bỏ sót các deliverable \"dễ mà hay quên\"** như worklog, journal, AI logs, evaluation.\nChúc mọi người build vui vẻ và về đích ***35+ ***\nhttps://docs.google.com/document/d/1L5opA3tvbOFwWUM4XRV0uxBZsyxMdI4RToT8f5_zsgE/edit?tab=t",
+      "author": {
+        "id": "1168944170107424788",
+        "name": "title213",
+        "discriminator": "0000",
+        "nickname": "T202 - Nguyễn Phú Quang - 02017",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1168944170107424788/14d93bd04f7d033ca711feb6034d9637.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Mổ xẻ template AI20K Build Phase",
+          "url": "https://docs.google.com/document/d/1L5opA3tvbOFwWUM4XRV0uxBZsyxMdI4RToT8f5_zsgE/edit?tab=t",
+          "timestamp": null,
+          "description": "Mổ xẻ template AI20K Build Phase: hiểu đúng, làm chuẩn, và chiến thuật cho team 4 người Bài viết chia sẻ kinh nghiệm đọc hiểu và triển khai template chính thức của cuộc thi VinUni AI20K Build Phase — Nhằm cung cấp cho mọi người bức tranh tổng thể trước khi lao vào code. Nếu bạn v...",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/M8hmPkdVtfU4mbN8JvxdQL2jJmsgk_Rgoc65YSSGNKs/https/lh7-us.googleusercontent.com/docs/AHkbwyJt-Pmw3llFGxuljyQZKl8-BCikxn1RbLq2FDTaRQJYSbip40BnZ8u61BOIfQtQFcIMFFGukPXjmzCkKshJkgRzyei11w9vfRh29nYpGJ3pSgsD44UC%3Dw1200-h630-p",
+            "canonicalUrl": "https://lh7-us.googleusercontent.com/docs/AHkbwyJt-Pmw3llFGxuljyQZKl8-BCikxn1RbLq2FDTaRQJYSbip40BnZ8u61BOIfQtQFcIMFFGukPXjmzCkKshJkgRzyei11w9vfRh29nYpGJ3pSgsD44UC=w1200-h630-p",
+            "width": 1200,
+            "height": 630
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 8,
+          "users": [
+            {
+              "id": "456803742797398018",
+              "name": "its6ueq",
+              "discriminator": "0000",
+              "nickname": "Hải Bằng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/456803742797398018/a9f88e19863c18b7e0ba265475419f87.png?size=512"
+            },
+            {
+              "id": "597726047080808478",
+              "name": "huutuyen5361",
+              "discriminator": "0000",
+              "nickname": "T062-Nguyễn Hữu Tuyến",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "976833634860421170",
+              "name": "duongxd27",
+              "discriminator": "0000",
+              "nickname": "Nguyễn Tuấn Dương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1166540123270283344",
+              "name": "qnsang_70421",
+              "discriminator": "0000",
+              "nickname": "QnSang",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1168944170107424788",
+              "name": "title213",
+              "discriminator": "0000",
+              "nickname": "T202 - Nguyễn Phú Quang - 02017",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1168944170107424788/14d93bd04f7d033ca711feb6034d9637.png?size=512"
+            },
+            {
+              "id": "1525362771770867732",
+              "name": "a1vin14105",
+              "discriminator": "0000",
+              "nickname": "a1vin",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530820101518131341",
+      "type": "Default",
+      "timestamp": "2026-07-26T13:12:33.464+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDE31",
+      "author": {
+        "id": "759055479723917364",
+        "name": "nhat_cuong",
+        "discriminator": "0000",
+        "nickname": "Vonhatcuong",
+        "color": "#A72525",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527509817084739805",
+            "name": "Admin",
+            "color": "#A72525",
+            "position": 18
+          },
+          {
+            "id": "1527919808862228652",
+            "name": "Coach",
+            "color": "#F1C40F",
+            "position": 15
+          },
+          {
+            "id": "1527919786850390116",
+            "name": "Mod",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE31",
+          "code": "scream",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f631.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 2
+}

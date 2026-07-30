@@ -1,0 +1,125 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530783207077970030",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[Chia sẻ] 6 Trụ cột Cốt lõi của AI Có Trách Nhiệm (Responsible AI) khi triển khai thực tế",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:20:54.7751148+07:00",
+  "messages": [
+    {
+      "id": "1530783207077970030",
+      "type": "Default",
+      "timestamp": "2026-07-26T10:45:57.144+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người,\n\nNhư mn đã biết thì hiện nay AI đang được ứng dụng mạnh mẽ vào các mảng nhạy cảm như ngân hàng, y tế, tuyển dụng...\n\n=> làm sao để xây dựng hệ thống AI \"có đạo đức\" và an toàn? Dưới đây là framework 6 trụ cột cốt lõi để anh em tham khảo:\n\n1. Privacy (Quyền riêng tư)\nChỉ thu thập dữ liệu tối thiểu (Data minimization) khi có sự đồng ý. Bắt buộc ẩn danh (Masking/Redaction) thông tin cá nhân và có thời hạn lưu trữ rõ ràng.\n\n2. Fairness & Bias (Công bằng & Tránh thiên kiến)\nĐảm bảo AI không phân biệt đối xử. Cần kiểm tra kỹ các dữ liệu lịch sử hoặc đặc trưng có thể gây thiên lệch (Proxy/Label bias) trên từng nhóm đối tượng cụ thể.\n\n3. Transparency (Tính minh bạch)\nNgười dùng cần biết họ đang tương tác với AI. Hệ thống phải nêu rõ giới hạn của mô hình và có khả năng giải thích được lý do đưa ra quyết định (Output).\n\n4. Security (Bảo mật)\nNgoài mã hóa và kiểm soát truy cập truyền thống, các hệ thống GenAI (LLM/RAG) cần đặc biệt chú trọng cơ chế chống Prompt Injection và rò rỉ dữ liệu.\n\n5. Human Oversight (Sự giám sát của con người)\nKhông tự động hóa 100% các quyết định quan trọng. Bắt buộc có con người can thiệp vào các ca rủi ro cao, model có độ tin cậy thấp hoặc khi có khiếu nại.\n\n6. Accountability (Trách nhiệm giải trình)\nMỗi dự án phải có người chịu trách nhiệm (Owner) rõ ràng. Cần chuẩn bị sẵn quy trình xử lý khiếu nại, sửa sai và khôi phục hệ thống (Rollback) khi có sự cố.\n\nTóm lại, hướng tiếp cận đúng đắn là:\nĐánh giá rủi ro ➝ Giảm thiểu rủi ro ➝ Con người kiểm duyệt (nếu impact lớn) ➝ Ghi log ➝ Minh bạch giới hạn ➝ Chỉ Rollout khi đạt tiêu chuẩn an toàn tối thiểu.\n\nTài liệu Thực hành AI có trách nhiệm chính thức từ Google: https://ai.google/responsibility/responsible-ai-practices/ \nDashboard để đánh giá độ công bằng (Fairness):\nhttps://github.com/microsoft/responsible-ai-toolbox",
+      "author": {
+        "id": "715642611628507327",
+        "name": "phonggoldz6803",
+        "discriminator": "0000",
+        "nickname": "G10 — T018 — Vũ Văn Phong",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [
+        {
+          "id": "1530783207535018014",
+          "url": "https://cdn.discordapp.com/attachments/1530783207077970030/1530783207535018014/b6b760e3-722e-4490-be4b-affe6a9e5362.png?ex=6a6c1a75&is=6a6ac8f5&hm=33c93863421f500db7cc295454f163e1094b08ad86b61c7d0de473115c2dbf96&",
+          "fileName": "b6b760e3-722e-4490-be4b-affe6a9e5362.png",
+          "fileSizeBytes": 1265338
+        }
+      ],
+      "embeds": [
+        {
+          "title": "AI Principles",
+          "url": "https://ai.google/responsibility/responsible-ai-practices/",
+          "timestamp": null,
+          "description": "A guiding framework for our responsible development and use of AI, alongside transparency and accountability in our AI development process.",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/eCbRa4w3sk42bhBJtOvLz8s-xAd5o1RcRKtBiUHjhzM/https/lh3.googleusercontent.com/vVG2xd_gH96PjASCyK7qxuqJ4lz6FCg-_zdxPI0scnRsX3nflqcXsyOIkElfDw4oYybDnXVIGP7p5Rg6ElWBIXhKlFeXPfrcs6vSWoKUAkI_93717w%3Dw1200-h630-n-nu-rw",
+            "canonicalUrl": "https://lh3.googleusercontent.com/vVG2xd_gH96PjASCyK7qxuqJ4lz6FCg-_zdxPI0scnRsX3nflqcXsyOIkElfDw4oYybDnXVIGP7p5Rg6ElWBIXhKlFeXPfrcs6vSWoKUAkI_93717w=w1200-h630-n-nu-rw",
+            "width": 1200,
+            "height": 630
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "GitHub - microsoft/responsible-ai-toolbox: Responsible AI Toolbox i...",
+          "url": "https://github.com/microsoft/responsible-ai-toolbox",
+          "timestamp": null,
+          "description": "Responsible AI Toolbox is a suite of tools providing model and data exploration and assessment user interfaces and libraries that enable a better understanding of AI systems. These interfaces and l...",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/BbSXexB8TPdeMkBn-x9kmqO4CvkQL4koGWnLR4fZCcM/https/opengraph.githubassets.com/138a4e73caa947e4cdab11d2688e54dafaca418eed9400cea598f88f260b81e7/microsoft/responsible-ai-toolbox",
+            "canonicalUrl": "https://opengraph.githubassets.com/138a4e73caa947e4cdab11d2688e54dafaca418eed9400cea598f88f260b81e7/microsoft/responsible-ai-toolbox",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "715642611628507327",
+              "name": "phonggoldz6803",
+              "discriminator": "0000",
+              "nickname": "G10 — T018 — Vũ Văn Phong",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,450 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531237299986366555",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "(T-026)Synthea: Tạo lập dữ liệu giả lập y tế tổng hợp (VMEC)",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:07:13.6974481+07:00",
+  "messages": [
+    {
+      "id": "1531237299986366555",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:50:21.33+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://github.com/synthetichealth/synthea\nSynthea là một trình mô phỏng quần thể bệnh nhân mã nguồn mở, được thiết kế để tạo ra các hồ sơ y tế \"giả lập\" với độ chính xác cao. Thay vì sử dụng dữ liệu thực tế từ bệnh viện, công cụ này cho phép tạo ra lịch sử y tế của bệnh nhân từ khi sinh ra cho đến khi qua đời.\n\nỨng dụng cho Project VMEC (AI Agent Sức khỏe):\n1. Dữ liệu nền tảng cho Project\n2. Hỗ trợ RAG (Retrieval-Augmented Generation) và LLM Training(VMEC-3,5,12)\n3. Mô phỏng diễn biến sức khỏe theo thời gian(VMEC-7,8,13)\n4. Kiểm thử luồng làm việc lâm sàng (Workflow Simulation)(VMEC-1,6,11,18)\n....",
+      "author": {
+        "id": "744215823287058503",
+        "name": "rpt_dcmm_0710",
+        "discriminator": "0000",
+        "nickname": "G14 - T026 - Mai Việt Anh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/744215823287058503/e15700140db1340badf9876f2b077ecf.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531237300242223145",
+          "url": "https://cdn.discordapp.com/attachments/1531237299986366555/1531237300242223145/synthea.png?ex=6a6bc71d&is=6a6a759d&hm=f507d3661ad13cbd8b452241cd75bd6656ae36c73181d3cfa0f3558acedb5ab6&",
+          "fileName": "synthea.png",
+          "fileSizeBytes": 67878
+        }
+      ],
+      "embeds": [
+        {
+          "title": "GitHub - synthetichealth/synthea: Synthetic Patient Population Simu...",
+          "url": "https://github.com/synthetichealth/synthea",
+          "timestamp": null,
+          "description": "Synthetic Patient Population Simulator. Contribute to synthetichealth/synthea development by creating an account on GitHub.",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/ZTObeGeOUOzc8l9d-H5pkvidyALwkT23V5fEyng8pB0/https/opengraph.githubassets.com/851991b1a58b19e47f31d0b88652ae1cfd748028ac29e6c85f62228c327e01ee/synthetichealth/synthea",
+            "canonicalUrl": "https://opengraph.githubassets.com/851991b1a58b19e47f31d0b88652ae1cfd748028ac29e6c85f62228c327e01ee/synthetichealth/synthea",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "⬆️",
+            "code": "arrow_up",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2b06.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "678982833628250148",
+              "name": "heromine99",
+              "discriminator": "0000",
+              "nickname": "Karma",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+            },
+            {
+              "id": "690503871402868807",
+              "name": "thanhfdc",
+              "discriminator": "0000",
+              "nickname": "Công Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "825398486437462077",
+              "name": "quangprojjj4743",
+              "discriminator": "0000",
+              "nickname": "T183— Vũ Minh Quang — 01515",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "997107892253642782",
+              "name": "torung7036",
+              "discriminator": "0000",
+              "nickname": "T137-Trần Tuấn Trung-01769",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/997107892253642782/641e7aad0d7807b4328287ca5ea5f549.png?size=512"
+            },
+            {
+              "id": "1529717549716082728",
+              "name": "vutung0103",
+              "discriminator": "0000",
+              "nickname": "Vũ Tùng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "576642492540387348",
+              "name": "hophamduclinh",
+              "discriminator": "0000",
+              "nickname": "Linhinthehood",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/576642492540387348/ab44e431e4b70de704179d0b9214e945.png?size=512"
+            },
+            {
+              "id": "678982833628250148",
+              "name": "heromine99",
+              "discriminator": "0000",
+              "nickname": "Karma",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+            },
+            {
+              "id": "770920459268653086",
+              "name": "anhvd",
+              "discriminator": "0000",
+              "nickname": "nature coder",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/770920459268653086/5c82441107da67a93255680c3b20501c.png?size=512"
+            },
+            {
+              "id": "1029266627839135784",
+              "name": "dinhkhoa242",
+              "discriminator": "0000",
+              "nickname": "T137 - Trương Đình Khoa - 01297",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1029266627839135784/5455f294709497554ff699ecab674527.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531237475249426545",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:51:03.116+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tui đang tính làm về y tế, cảm ơn ông nhiều nha",
+      "author": {
+        "id": "678982833628250148",
+        "name": "heromine99",
+        "discriminator": "0000",
+        "nickname": "T137 - Lương Đăng Doanh - 01209",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531237496787304539",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:51:08.251+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hữu ích, cảm ơn bác",
+      "author": {
+        "id": "1029266627839135784",
+        "name": "dinhkhoa242",
+        "discriminator": "0000",
+        "nickname": "T137 - Trương Đình Khoa - 01297",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1029266627839135784/5455f294709497554ff699ecab674527.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531237593419878472",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:51:31.29+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đang muốn làm đề tài y tế, đúng là những tư tưởng lớn gặp nhau",
+      "author": {
+        "id": "690503871402868807",
+        "name": "thanhfdc",
+        "discriminator": "0000",
+        "nickname": "T230 - Diêm Công Thành - 01689",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531237603251322891",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:51:33.634+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hay quá bạn, tui ấp ủ dự án về y tế từ lâu r, bài viết này giúp tui củng cố thêm cho dự án sắp tới",
+      "author": {
+        "id": "997107892253642782",
+        "name": "torung7036",
+        "discriminator": "0000",
+        "nickname": "T137-Trần Tuấn Trung-01769",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/997107892253642782/641e7aad0d7807b4328287ca5ea5f549.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531509209194303629",
+      "type": "Default",
+      "timestamp": "2026-07-28T10:50:49.537+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay qua ban",
+      "author": {
+        "id": "1517592253537845381",
+        "name": "sundaboi",
+        "discriminator": "0000",
+        "nickname": "T051 - Bùi Thái Sơn - 01126",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1517592253537845381/a2fc9469994c237743bb644b02213607.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531509642788868196",
+      "type": "Default",
+      "timestamp": "2026-07-28T10:52:32.914+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "nhóm tôi cũng đang làm một dự án về y tế, cảm ơn ông đã chia sẻ nhé",
+      "author": {
+        "id": "691598575154495620",
+        "name": "taquoctuan26ai_25110",
+        "discriminator": "0000",
+        "nickname": "G14-T056-Tạ Quốc Tuấn-01114",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531537116033585153",
+      "type": "Default",
+      "timestamp": "2026-07-28T12:41:43.046+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hay qua",
+      "author": {
+        "id": "825398486437462077",
+        "name": "quangprojjj4743",
+        "discriminator": "0000",
+        "nickname": "T183— Vũ Minh Quang — 01515",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531559615899238460",
+      "type": "Default",
+      "timestamp": "2026-07-28T14:11:07.432+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "thank b nhé",
+      "author": {
+        "id": "576642492540387348",
+        "name": "hophamduclinh",
+        "discriminator": "0000",
+        "nickname": "G14 - T066 - Ho Pham Duc Linh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/576642492540387348/ab44e431e4b70de704179d0b9214e945.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 9
+}

@@ -1,0 +1,118 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531297523745030214",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "⚠️ CẢNH BÁO BẢO MẬT: Claude AI bị lập chỉ mục công khai trên Google",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:09:11.375398+07:00",
+  "messages": [
+    {
+      "id": "1531297523745030214",
+      "type": "Default",
+      "timestamp": "2026-07-27T20:49:39.793+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Gửi các thành viên, nếu bạn hoặc doanh nghiệp đang sử dụng **Claude AI (Anthropic)** cho công việc, vui lòng lưu ý và kiểm tra ngay lập tức thông tin dưới đây liên quan đến rủi ro rò rỉ dữ liệu qua tính năng chia sẻ liên kết.\n\n### \uD83C\uDFAF Bản chất sự cố\nNền tảng Claude AI vừa ghi nhận một lỗ hổng cấu hình trong cơ chế quản lý quyền riêng tư. Cụ thể, khi người dùng sử dụng tính năng **Share Chat** (tạo liên kết chia sẻ công khai), hệ thống của Anthropic đã thiếu cấu hình thẻ chặn bot tìm kiếm (`noindex`). \n\n* **Phạm vi ảnh hưởng:** Sự cố không tác động đến các đoạn hội thoại riêng tư chưa từng chia sẻ. Tuy nhiên, bất kỳ liên kết chia sẻ nào từng được khởi tạo đều bị công cụ tìm kiếm của Google quét và đưa vào danh sách kết quả hiển thị công khai.\n* **Mối nguy hại:** Nhiều thông tin nhạy cảm như mã nguồn dự án, khóa API, dữ liệu tài chính doanh nghiệp và thông tin cá nhân hiện có thể bị tìm thấy dễ dàng bởi bất kỳ ai thông qua các từ khóa tìm kiếm thông thường.\n\n### \uD83D\uDEE0️ Quy trình xử lý và giảm thiểu rủi ro\nĐể đảm bảo an toàn cho dữ liệu cá nhân và tổ chức, đề nghị các thành viên thực hiện ngay các bước sau:\n\n1️⃣ **Rà soát danh sách chia sẻ:** Truy cập vào tài khoản Claude cá nhân -> Chọn **Settings** -> Đi đến mục **Shared Chats**.\n2️⃣ **Thu hồi liên kết:** Tiến hành xóa hoặc hủy chia sẻ (`Delete/Unshare`) đối với tất cả các đoạn hội thoại chứa dữ liệu quan trọng, thông tin nội bộ hoặc mã nguồn.\n3️⃣ **Xử lý sự cố rò rỉ (nếu có):** Trong trường hợp các đoạn chat bị lộ có chứa mật khẩu, token hệ thống hoặc API key, hãy thực hiện thu hồi và cấp mới các mã khóa này ngay lập tức để tránh bị khai thác.\n\n### \uD83D\uDD0D Cách tự kiểm tra xem dữ liệu của mình có trên Google không:\nBạn có thể copy lệnh dưới đây, dán vào thanh tìm kiếm của Google và gõ thêm tên dự án, email hoặc username của bạn ở phía sau để xem có đoạn chat nào của mình bị lộ hay không:\n`site:claude.ai/share \"tên_hoặc_từ_khóa_của_bạn\"`\n\n> \uD83D\uDCA1 **Khuyến nghị chung:** \n> Lỗi cấu hình này từng xảy ra với cả ChatGPT và Gemini trong quá khứ. Do đó, hãy thiết lập thói quen hạn chế tối đa việc sử dụng tính năng tạo link chia sẻ trực tiếp từ các nền tảng AI. Nếu cần trao đổi dữ liệu, hãy ưu tiên các phương thức sao chép thủ công hoặc sử dụng các kênh truyền tải thông tin nội bộ được mã hóa.\n\nHãy chủ động bảo vệ tài sản số của bạn!",
+      "author": {
+        "id": "540808926099275787",
+        "name": "tianz1",
+        "discriminator": "0000",
+        "nickname": "T048 - Võ Hà Minh Huy - 01373",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          },
+          {
+            "id": "1530929318652416141",
+            "name": "Server Booster",
+            "color": "#F47FFF",
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/540808926099275787/8ffdd7271dc834cafbc48fb68fc2463c.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531297524084772974",
+          "url": "https://cdn.discordapp.com/attachments/1531297523745030214/1531297524084772974/image.png?ex=6a6bff33&is=6a6aadb3&hm=74b9f563ce1b9b5594b5b0656ab9b26dc38a0dfc88f3d3546469b3ff39d3153d&",
+          "fileName": "image.png",
+          "fileSizeBytes": 85896
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83C\uDFAF",
+          "code": "dart",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3af.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDEE0️",
+          "code": "tools",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6e0.svg"
+        },
+        {
+          "id": "",
+          "name": "1️⃣",
+          "code": "one",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/31-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "2️⃣",
+          "code": "two",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/32-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "3️⃣",
+          "code": "three",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/33-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD0D",
+          "code": "mag",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f50d.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

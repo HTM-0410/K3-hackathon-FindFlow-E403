@@ -1,0 +1,334 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530787007264194660",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Đừng để công nghệ quyết định bài toán mà bạn cần giải",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:30.507414+07:00",
+  "messages": [
+    {
+      "id": "1530787007264194660",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:01:03.179+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Có một điều mình nhận ra sau khi tham gia một vài dự án và cuộc thi về Product.\n*Thay vì điều chỉnh giải pháp để phù hợp với bài toán, rất nhiều lúc chúng ta lại bắt đầu điều chỉnh bài toán để phù hợp với giải pháp.*\nỞ giai đoạn đầu, mọi người thường dành nhiều thời gian để nói về khách hàng, pain point và mục tiêu của doanh nghiệp. Nhưng càng đi sâu vào triển khai, các cuộc thảo luận lại dần chuyển sang một hướng khác: làm sao để tận dụng kiến trúc hiện tại, giữ nguyên database, không phải sửa lại model hay thay đổi quá nhiều logic của hệ thống.\nĐiều đó hoàn toàn dễ hiểu. Không ai muốn đập đi làm lại những gì cả team đã mất rất nhiều thời gian xây dựng. Nhưng cũng chính từ đó, trọng tâm của dự án đôi khi thay đổi lúc nào không hay.\nThay vì hỏi \"đâu là cách tốt nhất để giải quyết bài toán này?\", mọi người bắt đầu hỏi \"làm thế nào để bài toán phù hợp với hệ thống hiện tại?\"\nKhoảnh khắc nhận ra sự thay đổi rất nhỏ trong cách đặt câu hỏi đó cũng là lúc mình nhìn các dự án theo một góc khác.\nSau này đọc thêm, mình mới biết cách tiếp cận luôn lấy bài toán kinh doanh làm điểm xuất phát có một cái tên khá quen là **Business-First.**\nĐiều mình thích ở tư duy này là nó không hề xem nhẹ công nghệ. Ngược lại, nó nhắc mình rằng công nghệ chỉ là phương tiện. Nếu chưa hiểu mình đang giải quyết vấn đề gì cho doanh nghiệp thì rất khó biết giải pháp nào mới thực sự phù hợp.\nTừ đó, trước khi bàn đến giải pháp, mình luôn cố gắng trả lời bốn câu hỏi:\n1. Bài toán kinh doanh thực sự là gì?\n2. Thành công sẽ được đo bằng chỉ số nào?\n3. Mình đã hiểu đúng nguyên nhân gốc rễ chưa?\n4. Đâu là cách đơn giản nhất để kiểm chứng giả định này?\nMình không nghĩ Tech-First luôn là sai. Có những bài toán như technical debt hay nâng cấp hạ tầng thì chính công nghệ lại là bài toán kinh doanh. Chỉ là sau vài dự án, mình nhận ra nếu hiểu đúng bài toán trước thì việc chọn công nghệ cũng trở nên dễ dàng và đúng hướng hơn rất nhiều.",
+      "author": {
+        "id": "1487383527925481582",
+        "name": "trang.luong",
+        "discriminator": "0000",
+        "nickname": "G12 - T029 - Lương Thanh Trang",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1487383527925481582/af14ff258f3902e4d3ca120208b81b42.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 9,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "686586059408277579",
+              "name": "muwjc",
+              "discriminator": "0000",
+              "nickname": "Muwjc",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/686586059408277579/1a44c380d5684ca5e2cf239db959eac3.png?size=512"
+            },
+            {
+              "id": "738413553417191545",
+              "name": "youngs3108",
+              "discriminator": "0000",
+              "nickname": "T100 - Nguyễn Đức Đạt - 01633",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/738413553417191545/f87378f20d3cb19331ac67dafa7bf681.png?size=512"
+            },
+            {
+              "id": "1159515762164244531",
+              "name": "tien_05371",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Đặng Tiến Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+            },
+            {
+              "id": "1231054644323815424",
+              "name": "daovandat09",
+              "discriminator": "0000",
+              "nickname": "G24-T196-Đào Văn Đạt-01302",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1231054644323815424/75bbeb7064ef470ae53fa010e2bfd5c6.png?size=512"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1408241222358798406",
+              "name": "tthuong2307_95830",
+              "discriminator": "0000",
+              "nickname": "Hường",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1528989895857668106",
+              "name": "cgdd_67287",
+              "discriminator": "0000",
+              "nickname": "cgdd",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "691598575154495620",
+              "name": "taquoctuan26ai_25110",
+              "discriminator": "0000",
+              "nickname": "G14-T056-Tạ Quốc Tuấn-01114",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530787197236674561",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:01:48.472+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đó là góc nhìn cá nhân của mình sau những gì đã trải nghiệm. Mình rất mong được nghe thêm quan điểm của mọi người ạ.",
+      "author": {
+        "id": "1487383527925481582",
+        "name": "trang.luong",
+        "discriminator": "0000",
+        "nickname": "G12 - T029 - Lương Thanh Trang",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1487383527925481582/af14ff258f3902e4d3ca120208b81b42.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530791010546749441",
+      "type": "Reply",
+      "timestamp": "2026-07-26T11:16:57.636+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Rất hữu ích luôn á!",
+      "author": {
+        "id": "1238124018834341968",
+        "name": "vuong0232_30712",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Bùi Hoàng Vương",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1487383527925481582",
+              "name": "trang.luong",
+              "discriminator": "0000",
+              "nickname": "G12 - T029 - Lương Thanh Trang",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1487383527925481582/af14ff258f3902e4d3ca120208b81b42.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "1487383527925481582",
+          "name": "trang.luong",
+          "discriminator": "0000",
+          "nickname": "G12 - T029 - Lương Thanh Trang",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/1487383527925481582/af14ff258f3902e4d3ca120208b81b42.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530787197236674561",
+        "channelId": "1530787007264194660",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531155262319231058",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:24:22.026+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Rất tuyệt vời!",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

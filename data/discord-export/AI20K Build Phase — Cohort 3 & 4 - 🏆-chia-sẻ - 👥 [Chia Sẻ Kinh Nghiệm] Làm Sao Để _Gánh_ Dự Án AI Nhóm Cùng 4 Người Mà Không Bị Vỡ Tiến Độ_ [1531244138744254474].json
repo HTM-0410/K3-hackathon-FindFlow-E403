@@ -1,0 +1,234 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531244138744254474",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "\uD83D\uDC65 [Chia Sẻ Kinh Nghiệm] Làm Sao Để \"Gánh\" Dự Án AI Nhóm Cùng 4 Người Mà Không Bị Vỡ Tiến Độ?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:09:19.1012895+07:00",
+  "messages": [
+    {
+      "id": "1531244138744254474",
+      "type": "Default",
+      "timestamp": "2026-07-27T17:17:31.817+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người trong cộng đồng AI Thực Chiến!\n\nLàm dự án AI theo nhóm 4–5 người thường gặp nhiều vấn đề: Data không khớp Model, Backend phải chờ AI, mỗi người code một kiểu và đến sát ngày demo mới phát hiện hệ thống không thể tích hợp.\n\nTừ trải nghiệm làm việc nhóm, mình rút ra 4 nguyên tắc quan trọng:\n\n1. Phân chia module rõ ràng\n\nKhông nên để “cả nhóm cùng làm model”. Có thể chia thành:\n\nData & Pipeline: thu thập, làm sạch và chuẩn hóa dữ liệu.\nModel & Experiment: huấn luyện, benchmark và chọn model.\nBackend/API: đóng gói model bằng FastAPI hoặc Flask.\nDocumentation & Demo: viết báo cáo, làm slide và chuẩn bị demo.\n2. Thống nhất codebase từ đầu\n\nCả nhóm cần thống nhất:\n\nCấu trúc data/, models/, notebooks/, src/.\nPhiên bản Python và thư viện.\nQuy tắc branch, commit và pull request.\nDocker hoặc file môi trường để tránh lỗi “máy mình chạy được”.\n\nRepo tham khảo:\n\nCookiecutter Data Science:\nhttps://github.com/drivendataorg/cookiecutter-data-science\n3. Duy trì buổi sync định kỳ\n\nMỗi tuần họp 15–30 phút và chỉ cần trả lời ba câu hỏi:\n\nTuần qua đã làm gì?\nĐang bị vướng ở đâu?\nTuần tới sẽ làm gì?\n4. Dùng chung một benchmarking pipeline\n\nMọi model phải được đánh giá trên cùng tập test và cùng tiêu chí như:\n\nAccuracy, Precision, Recall, F1.\nLatency.\nBộ nhớ sử dụng.\nKích thước model.\n\n\uD83D\uDCA1 Takeaway: Thành công của dự án AI không chỉ phụ thuộc vào model, mà còn phụ thuộc vào cách cả nhóm phân chia công việc, chuẩn hóa code và phối hợp với nhau.",
+      "author": {
+        "id": "805058036213350410",
+        "name": "baonguyen191",
+        "discriminator": "0000",
+        "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - drivendataorg/cookiecutter-data-science: A logical, reason...",
+          "url": "https://github.com/drivendataorg/cookiecutter-data-science",
+          "timestamp": null,
+          "description": "A logical, reasonably standardized, but flexible project structure for doing and sharing data science work. - drivendataorg/cookiecutter-data-science",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/Q7oVMeWWz8FSItQ2hh4tXwumgt9augW1oVuvb0MwtXc/https/opengraph.githubassets.com/dabe0c9d4368f7c41d592c8ee07f9bfbdbf6624bb0d9d63cf5c217ca63f81e14/drivendataorg/cookiecutter-data-science",
+            "canonicalUrl": "https://opengraph.githubassets.com/dabe0c9d4368f7c41d592c8ee07f9bfbdbf6624bb0d9d63cf5c217ca63f81e14/drivendataorg/cookiecutter-data-science",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "690503871402868807",
+              "name": "thanhfdc",
+              "discriminator": "0000",
+              "nickname": "Công Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+            },
+            {
+              "id": "698474313027682344",
+              "name": "nhat2kruoi",
+              "discriminator": "0000",
+              "nickname": "T060 - Lưu Quang Nhật",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+            },
+            {
+              "id": "805058036213350410",
+              "name": "baonguyen191",
+              "discriminator": "0000",
+              "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "855807068874342420",
+              "name": "thanhpro08",
+              "discriminator": "0000",
+              "nickname": "thanh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "859817112296751116",
+              "name": "davidkeleys6498",
+              "discriminator": "0000",
+              "nickname": "G7 - T065 - Trần Quí Đôn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531251045995380846",
+      "type": "Default",
+      "timestamp": "2026-07-27T17:44:58.634+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "qúa hay a ơi",
+      "author": {
+        "id": "859817112296751116",
+        "name": "davidkeleys6498",
+        "discriminator": "0000",
+        "nickname": "G7 - T065 - Trần Quí Đôn",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531251068720251012",
+      "type": "Default",
+      "timestamp": "2026-07-27T17:45:04.052+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tuyệt  quá a ơi",
+      "author": {
+        "id": "855807068874342420",
+        "name": "thanhpro08",
+        "discriminator": "0000",
+        "nickname": "G17 - T192 - Nguyễn Tuấn Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531485577457959082",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:16:55.292+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "1 bài đăng có tính xây dựng cao, rất hữu ích cho mọi người để bắt đầu làm bài nhóm",
+      "author": {
+        "id": "698474313027682344",
+        "name": "nhat2kruoi",
+        "discriminator": "0000",
+        "nickname": "T060 - Lưu Quang Nhật",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

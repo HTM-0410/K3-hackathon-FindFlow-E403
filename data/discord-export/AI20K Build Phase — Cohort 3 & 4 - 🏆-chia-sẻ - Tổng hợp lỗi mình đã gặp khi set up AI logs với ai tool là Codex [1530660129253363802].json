@@ -1,0 +1,136 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530660129253363802",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Tổng hợp lỗi mình đã gặp khi set up AI logs với ai tool là Codex",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:15:35.3884788+07:00",
+  "messages": [
+    {
+      "id": "1530660129253363802",
+      "type": "Default",
+      "timestamp": "2026-07-26T02:36:53.104+07:00",
+      "timestampEdited": "2026-07-26T02:37:50.551+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình gặp 2 lỗi chính khi setup AI logs + Codex:\n\n## 1. `[ai-log] AI_LOG_SERVER not set`\n\n**Nguyên nhân:**  \n`.env` có `AI_LOG_SERVER`, nhưng hook dùng nhầm Python không có `python-dotenv`, nên `submit_log.py` không đọc được `.env`.\n\n**Fix:** trong `scripts/_pyrun.sh`, ưu tiên `.venv`:\n\n```bash\nif [ -x \".venv/Scripts/python.exe\" ]; then\n  PY=\".venv/Scripts/python.exe\"\nelif [ -x \".venv/bin/python\" ]; then\n  PY=\".venv/bin/python\"\nelif command -v python3 >/dev/null 2>&1; then\n  PY=python3\nelif command -v python >/dev/null 2>&1; then\n  PY=python\nelif command -v py >/dev/null 2>&1; then\n  PY=\"py -3\"\nelse\n  exit 0\nfi\n```\n\nTest:\n\n```bash\n.venv/Scripts/python.exe scripts/submit_log.py\n```\n\nRa `[ai-log] No logs to submit.` là OK.\n\n## 2. Codex không auto-log\n\n**Nguyên nhân chính:**\n\n- `.codex/hooks.json` sai schema\n- chưa trust hook trong `/hooks`\n- Windows hook gọi `bash` bị fail\n- `log_hook.py` trả JSON sai schema Codex\n\n**Fix `.codex/hooks.json`:**\n\n```json\n{\n  \"hooks\": {\n    \"UserPromptSubmit\": [\n      {\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"commandWindows\": \"cmd.exe /d /c \\\".venv\\\\Scripts\\\\python.exe scripts\\\\log_hook.py --tool=codex\\\"\"\n          }\n        ]\n      }\n    ],\n    \"Stop\": [\n      {\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"commandWindows\": \"cmd.exe /d /c \\\".venv\\\\Scripts\\\\python.exe scripts\\\\log_hook.py --tool=codex\\\"\"\n          }\n        ]\n      }\n    ]\n  }\n}\n```\n\nSau đó mở Codex CLI:\n\n```bash\ncodex -C /d/AIIA/P-115\n```\n\nGõ `/hooks` rồi trust `UserPromptSubmit` và `Stop`.\n\nNếu báo invalid JSON output, sửa cuối `scripts/log_hook.py`:\n\n```python\nif tool == \"codex\":\n    print(json.dumps({\"continue\": True}))\nelse:\n    print(json.dumps({\"status\": \"logged\"}))\n```\n\n## Note\n\n`[ai-log] No logs to submit` không phải lỗi, chỉ là chưa có log mới.\n\nDùng ChatGPT web/Codex UI không bắt `/hooks` thì log thủ công:\n\n```bash\n.venv/Scripts/python.exe scripts/log_manual.py --tool chatgpt --prompt \"...\"\n```",
+      "author": {
+        "id": "849236756804665364",
+        "name": "bolshoy_zhivot",
+        "discriminator": "0000",
+        "nickname": "T115 - Nguyễn Quang Huy - 01120",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/849236756804665364/50e98803266f97e5b9b08fbc5e3c0623.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "849236756804665364",
+              "name": "bolshoy_zhivot",
+              "discriminator": "0000",
+              "nickname": "T115 - Nguyễn Quang Huy - 01120",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/849236756804665364/50e98803266f97e5b9b08fbc5e3c0623.png?size=512"
+            },
+            {
+              "id": "868896519200329758",
+              "name": "nguyenhuy6940",
+              "discriminator": "0000",
+              "nickname": "Nguyễn Mai Huy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/868896519200329758/5da5a683ca47fe1794a7c5781082ca6b.png?size=512"
+            },
+            {
+              "id": "1525362771770867732",
+              "name": "a1vin14105",
+              "discriminator": "0000",
+              "nickname": "a1vin",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530664469246509056",
+      "type": "Default",
+      "timestamp": "2026-07-26T02:54:07.839+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ké với, tôi cũng thế",
+      "author": {
+        "id": "868896519200329758",
+        "name": "nguyenhuy6940",
+        "discriminator": "0000",
+        "nickname": "G13-T115-Nguyễn Mai Huy-01712",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/868896519200329758/5da5a683ca47fe1794a7c5781082ca6b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

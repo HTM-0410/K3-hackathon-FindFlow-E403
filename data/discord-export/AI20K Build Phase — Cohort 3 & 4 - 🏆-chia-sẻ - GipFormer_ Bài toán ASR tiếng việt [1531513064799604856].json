@@ -1,0 +1,88 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531513064799604856",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "GipFormer: Bài toán ASR tiếng việt",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:21:12.1097809+07:00",
+  "messages": [
+    {
+      "id": "1531513064799604856",
+      "type": "Default",
+      "timestamp": "2026-07-28T11:06:08.785+07:00",
+      "timestampEdited": "2026-07-28T11:11:25.595+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Gipformer là mô hình ASR (nhận dạng giọng nói) nguồn mở cho tiếng Việt do GGroup AI Lab phát triển. Mô hình có kích thước gọn (~65M tham số) dựa trên kiến trúc Zipformer Transducer, cho tốc độ xử lý nhanh và độ chính xác cao ngay cả trên môi trường cuộc gọi nhiều tạp âm hay đa dạng giọng vùng miền.\n\n[Github Gipformer](https://github.com/ggroup-ai-lab/gipformer)\nMột số ứng dụng:\n1, Tự động hóa Tổng đài & Call Center (Voicebot / Quality Assurance)\n2, Trợ lý ảo trên Thiết bị thông minh (Edge AI / Smart Devices)\n3, Hệ thống Y tế & Hồ sơ Bệnh án bằng Giọng nói (Medical Voice Dictation)\n4, Tạo Phụ đề Tự động cho Video & Livestream (Auto-captioning)",
+      "author": {
+        "id": "869749036838711307",
+        "name": "khie.em",
+        "discriminator": "0000",
+        "nickname": "T220 - Nguyễn Thế Khiêm - 01036",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - ggroup-ai-lab/gipformer: Efficient Vietnamese Speech Recog...",
+          "url": "https://github.com/ggroup-ai-lab/gipformer",
+          "timestamp": null,
+          "description": "Efficient Vietnamese Speech Recognition. Contribute to ggroup-ai-lab/gipformer development by creating an account on GitHub.",
+          "color": "#1E2327",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "817017326830223391",
+              "name": "ann56211",
+              "discriminator": "0000",
+              "nickname": "bachnh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/817017326830223391/d021141d0b90a2c78eaa4dc99c3c7f47.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

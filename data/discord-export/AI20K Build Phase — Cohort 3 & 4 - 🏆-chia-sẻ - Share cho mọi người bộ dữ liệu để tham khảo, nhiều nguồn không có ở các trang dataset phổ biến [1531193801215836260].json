@@ -1,0 +1,94 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531193801215836260",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Share cho mọi người bộ dữ liệu để tham khảo, nhiều nguồn không có ở các trang dataset phổ biến",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:17:59.4352621+07:00",
+  "messages": [
+    {
+      "id": "1531193801215836260",
+      "type": "Default",
+      "timestamp": "2026-07-27T13:57:30.415+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://github.com/awesomedata/awesome-public-datasets",
+      "author": {
+        "id": "1309878513595060299",
+        "name": "pynet04",
+        "discriminator": "0000",
+        "nickname": "T004-Nguyễn Văn Phong-01241",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1309878513595060299/252c8b599a94fff4f34241419c75d783.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - awesomedata/awesome-public-datasets: A topic-centric list ...",
+          "url": "https://github.com/awesomedata/awesome-public-datasets",
+          "timestamp": null,
+          "description": "A topic-centric list of HQ open datasets. Contribute to awesomedata/awesome-public-datasets development by creating an account on GitHub.",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/K1k7BTNltD__edjeHrW7ceLjyIwLXcWm_XqQIkOuNEI/https/opengraph.githubassets.com/87cb01ffe190d31cd08c9d8abbabdec4d3993f7e57e427229bc253f156dac095/awesomedata/awesome-public-datasets",
+            "canonicalUrl": "https://opengraph.githubassets.com/87cb01ffe190d31cd08c9d8abbabdec4d3993f7e57e427229bc253f156dac095/awesomedata/awesome-public-datasets",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1309878513595060299",
+              "name": "pynet04",
+              "discriminator": "0000",
+              "nickname": "T004-Nguyễn Văn Phong-01241",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1309878513595060299/252c8b599a94fff4f34241419c75d783.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

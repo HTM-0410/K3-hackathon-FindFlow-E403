@@ -1,0 +1,88 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531969210366820452",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "\uD83D\uDCE2 [Chia sẻ công cụ] Prezi AI – Làm slide đẹp và nhanh , chuẩn chỉnh,phụ nữ rất iu :))",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:20:21.1981426+07:00",
+  "messages": [
+    {
+      "id": "1531969210366820452",
+      "type": "Default",
+      "timestamp": "2026-07-29T17:18:42.363+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người ,mình xin 2-3p trong bài viết này nhé\n\nTrong quá trình làm assignment và chuẩn bị pitch, mình có thử dùng Prezi AI và thấy khá hữu ích nên muốn chia sẻ với mọi người.\n\nMột vài điểm mình thấy đáng thử:\n\n -Tạo slide từ prompt hoặc từ tài liệu (PDF, Word, PPT...).\n -Tự thiết kế bố cục, màu sắc và hình ảnh, giúp tiết kiệm thời gian chỉnh slide.\n -Có thể nhập file PowerPoint rồi chuyển thành bài thuyết trình trực quan hơn.\n-Xuất sang PPT, PDF hoặc chia sẻ bằng link để trình bày.\n\nMình thấy khá phù hợp khi:\n\nLàm pitch deck cho dự án AI.\nThuyết trình Lab/Assignment.\nDemo sản phẩm hoặc báo cáo tiến đội gấp?Dùng ngay để thể hiện ý tưởng của đội nhóm,cook trong 3p\n\nNếu ai đã quen PowerPoint thì không cần chuyển hẳn, nhưng có thể dùng Prezi AI để tạo bản nháp nhanh rồi chỉnh sửa theo ý mình.Vẫn còn rất nhiều chức năng ở trang,nên có thể dành thời gian để tìm hiểu thêm cả nhà nhé!\nĐây là trang chủ FB Prezi cho mọi người xem được thông tin và nhà phát triển đứng phía sau\n\uD83D\uDD17 Trang chủ: [Prezi AI](https://www.facebook.com/prezicom)\nWebsite làm việc với prezi: https://prezi.com/",
+      "author": {
+        "id": "1509890551334305904",
+        "name": "samsamsam0905_13163",
+        "discriminator": "0000",
+        "nickname": "G13-T020-Nguyễn Văn Tuấn Anh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1509890551334305904/c442a1bbd1c984ea832bd3bd81922471.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Log in or sign up to view",
+          "url": "https://www.facebook.com/prezicom",
+          "timestamp": null,
+          "description": "See posts, photos and more on Facebook.",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "Prezi | The AI presentation maker for engaging presentations",
+          "url": "https://prezi.com/",
+          "timestamp": null,
+          "description": "Welcome to Prezi, the presentation software that helps you stand out, bring your ideas to life, and create interactive presentations easier than ever.",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/qQMTdWcDQaNL549cnQVOY9lpSKpJ8xNuhtu-6EiDaW8/https/cdn.prod.website-files.com/64be3ac6d7e811ba37809e1c/6814ca3b9dff0f91118dffcb_Versions%253Dv1.webp",
+            "canonicalUrl": "https://cdn.prod.website-files.com/64be3ac6d7e811ba37809e1c/6814ca3b9dff0f91118dffcb_Versions%3Dv1.webp",
+            "width": 1200,
+            "height": 630
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDD17",
+          "code": "link",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f517.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

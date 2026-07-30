@@ -1,0 +1,241 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530796489268265011",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "MCP nào đáng dùng và MCP nào hơi thừa?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:14:33.7332983+07:00",
+  "messages": [
+    {
+      "id": "1530796489268265011",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:38:43.865+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Sau khi thử khá nhiều MCP mình nghĩ một sai lầm dễ gặp là cài quá nhiều tool vào Cursor/VS Code.\nBan đầu mình cũng nghĩ càng nhiều MCP thì agent càng mạnh.\nNhưng thực tế không hẳn.\nVí dụ nếu chỉ đang làm một Python project nhỏ thì filesystem + terminal + search có khi đã đủ. Thêm 10 MCP khác nhau chưa chắc giúp agent code tốt hơn.\nMình thường chỉ thêm MCP khi nó giải quyết được một loại context mà IDE/model đang thiếu.\nMột vài ví dụ:\nContext7\n→ khi cần documentation mới của framework/library.\nGitHub\n→ khi context nằm trong issue, PR, commit hoặc repository khác.\nPostgreSQL / database MCP\n→ khi cần hiểu schema hoặc kiểm tra data trong quá trình debug.\nPlaywright\n→ khi cần agent kiểm tra browser/UI sau khi implement.\nCodeGraph\n→ khi repository lớn và cần hiểu dependency/call graph thay vì chỉ semantic search.\nVí dụ bug frontend gọi sai API:\nGitHub MCP\n→ đọc issue\nCode search\n→ tìm component liên quan\nCodeGraph\n→ trace component → API client → service\nDatabase MCP\n→ kiểm tra schema/data nếu cần\nPlaywright\n→ reproduce và verify fix\nNhưng nếu task chỉ là:\n\"Viết function convert timestamp sang datetime\"\nthì gọi cả đống MCP gần như không đem lại lợi ích gì.\nSau một thời gian dùng mình thấy câu hỏi tốt hơn không phải:\n\"MCP nào tốt nhất?\"\nmà là:\n\"Agent của mình đang thiếu context/capability gì?\"\nNếu IDE đã làm được việc đó tốt rồi thì có thể chẳng cần MCP.",
+      "author": {
+        "id": "821753682172444712",
+        "name": "namhatelife1234996",
+        "discriminator": "0000",
+        "nickname": "T073 - PhanVănHoàngNam - 01160",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/821753682172444712/1a6fa72ca3a6e84d6e018d0221f7e343.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530796802641629305",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:39:58.579+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ví dụ thực tế đi bạn mình chưa hiểu lắm",
+      "author": {
+        "id": "452011766717743105",
+        "name": "nhockiuzzz",
+        "discriminator": "0000",
+        "nickname": "G13-T015-NguyễnQuangHuy-01873",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530802741708980334",
+      "type": "Reply",
+      "timestamp": "2026-07-26T12:03:34.563+07:00",
+      "timestampEdited": "2026-07-26T12:03:50.781+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình ví dụ như xe bị hết hơi lốp, xe chỉ bị xịt lốp thì bạn chỉ cần bơm hơi hoặc vá lốp, không ai mang cả bộ đồ nghề tháo máy. MCP cũng vậy, chỉ dùng đúng công cụ cho đúng vấn đề. Nếu task chỉ là viết một hàm Python thì filesystem + terminal là đủ. Chỉ khi cần đọc GitHub, kiểm tra database hay test giao diện thì mới cần thêm các MCP tương ứng",
+      "author": {
+        "id": "821753682172444712",
+        "name": "namhatelife1234996",
+        "discriminator": "0000",
+        "nickname": "T073 - PhanVănHoàngNam - 01160",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/821753682172444712/1a6fa72ca3a6e84d6e018d0221f7e343.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "G13-T015-NguyễnQuangHuy-01873",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "452011766717743105",
+          "name": "nhockiuzzz",
+          "discriminator": "0000",
+          "nickname": "G13-T015-NguyễnQuangHuy-01873",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530796802641629305",
+        "channelId": "1530796489268265011",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530811064751620237",
+      "type": "Default",
+      "timestamp": "2026-07-26T12:36:38.931+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hay đó bạn phần này thuộc về đốt tiền nhỉ giống token ý",
+      "author": {
+        "id": "452011766717743105",
+        "name": "nhockiuzzz",
+        "discriminator": "0000",
+        "nickname": "G13-T015-NguyễnQuangHuy-01873",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "821753682172444712",
+              "name": "namhatelife1234996",
+              "discriminator": "0000",
+              "nickname": "T073 - PhanVănHoàngNam - 01160",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/821753682172444712/1a6fa72ca3a6e84d6e018d0221f7e343.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

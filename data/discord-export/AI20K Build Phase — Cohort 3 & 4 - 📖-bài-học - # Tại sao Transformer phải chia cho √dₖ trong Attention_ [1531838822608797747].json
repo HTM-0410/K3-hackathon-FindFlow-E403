@@ -1,0 +1,164 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531838822608797747",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "# Tại sao Transformer phải chia cho √dₖ trong Attention?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:53:24.9603958+07:00",
+  "messages": [
+    {
+      "id": "1531838822608797747",
+      "type": "Default",
+      "timestamp": "2026-07-29T08:40:35.499+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trong Scaled Dot-Product Attention, điểm attention được tính như sau:\n\nAttention(Q, K, V) = softmax(QKᵀ / √dₖ)V\n\nMột câu hỏi thường gặp là:\n\n❓ Tại sao phải chia cho √dₖ?\n\n## Ý tưởng\n\nGiả sử sau khi khởi tạo trọng số (ví dụ Xavier Initialization):\n\n• E[qᵢ] = E[kᵢ] = 0\n• Var(qᵢ) ≈ Var(kᵢ) ≈ 1\n\nĐiều này có nghĩa là mỗi thành phần của Query và Key đều có trung bình bằng 0 và phương sai xấp xỉ 1.\n\n---\n\n## Khi tính tích vô hướng\n\nAttention sử dụng:\n\nqᵀk = Σ(qᵢkᵢ)\n\nNếu các thành phần độc lập thì:\n\nVar(qᵀk) = dₖ\n\n⇒ Std(qᵀk) = √dₖ\n\nĐiều này có nghĩa là khi số chiều dₖ tăng, giá trị của qᵀk cũng có xu hướng lớn hơn.\n\n---\n\n## Vậy tại sao phải chia cho √dₖ?\n\nTa có:\n\nVar(aX) = a²Var(X)\n\nDo đó:\n\nVar(qᵀk / √dₖ)\n= Var(qᵀk) / dₖ\n≈ 1\n\nSau khi chia cho √dₖ, các logits đưa vào softmax luôn có cùng thang đo, bất kể vector có bao nhiêu chiều.\n\n---\n\n## Nếu không chia thì sao?\n\nKhi dₖ lớn:\n\n• qᵀk có giá trị rất lớn.\n• Softmax trở nên quá \"sắc nét\" (gần one-hot).\n• Gradient rất nhỏ (gradient saturation).\n• Mô hình học chậm và kém ổn định.\n\n---\n\n## Kết luận\n\nViệc chia cho √dₖ không phải là một hằng số được chọn ngẫu nhiên.\n\nNó giúp:\n\n✅ Giữ phương sai của logits xấp xỉ 1.\n✅ Tránh softmax bị bão hòa khi số chiều tăng.\n✅ Duy trì gradient ổn định.\n✅ Giúp Transformer huấn luyện hiệu quả hơn.\n\nĐó là lý do công thức Attention luôn được viết là:\n\nAttention(Q, K, V) = softmax(QKᵀ / √dₖ)V",
+      "author": {
+        "id": "1160208635163594752",
+        "name": "chanbeduk68_80038",
+        "discriminator": "0000",
+        "nickname": "T064 - Nguyễn Quốc Anh - 01079",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 9,
+          "users": [
+            {
+              "id": "387588408668585986",
+              "name": "negidayo_",
+              "discriminator": "0000",
+              "nickname": "Hnàh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/387588408668585986/2b221ec17d51b09422a7957ca6d53401.png?size=512"
+            },
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "677173844590592004",
+              "name": "nhan02366",
+              "discriminator": "0000",
+              "nickname": "Nhân",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "710400576344686602",
+              "name": "phongnhvp",
+              "discriminator": "0000",
+              "nickname": "nhvp",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/710400576344686602/474457c3edf6a771475f25bf289fb10f.png?size=512"
+            },
+            {
+              "id": "814350992249454622",
+              "name": "johnnyquynguyen",
+              "discriminator": "0000",
+              "nickname": "Duong Nguyen Quy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/814350992249454622/b65635f8f8d101d1ac3e11a302364d94.png?size=512"
+            },
+            {
+              "id": "1160208635163594752",
+              "name": "chanbeduk68_80038",
+              "discriminator": "0000",
+              "nickname": "T064 - Nguyễn Quốc Anh - 01079",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1217129340605825087",
+              "name": "phuc_76661",
+              "discriminator": "0000",
+              "nickname": "Phúc",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "1477126568957579387",
+              "name": "moonknight2501",
+              "discriminator": "0000",
+              "nickname": "T064 - Đoàn Quốc Việt - 01623",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1525362771770867732",
+              "name": "a1vin14105",
+              "discriminator": "0000",
+              "nickname": "a1vin",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "❓",
+          "code": "question",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2753.svg"
+        },
+        {
+          "id": "",
+          "name": "✅",
+          "code": "white_check_mark",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

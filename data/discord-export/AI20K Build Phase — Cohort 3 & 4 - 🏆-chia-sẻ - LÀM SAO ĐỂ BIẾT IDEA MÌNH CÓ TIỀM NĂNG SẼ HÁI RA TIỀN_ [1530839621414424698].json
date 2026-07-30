@@ -1,0 +1,129 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530839621414424698",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "LÀM SAO ĐỂ BIẾT IDEA MÌNH CÓ TIỀM NĂNG SẼ HÁI RA TIỀN?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:19:43.9152008+07:00",
+  "messages": [
+    {
+      "id": "1530839621414424698",
+      "type": "Default",
+      "timestamp": "2026-07-26T14:30:07.37+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Có một sự thật phũ phàng: 90% startup thất bại không phải vì không làm ra được sản phẩm, mà vì làm ra thứ... không ai cần.\nNhiều người nghĩ ý tưởng của mình siêu đỉnh, cho đến khi tung ra thị trường và nhận lại sự im lặng đáng sợ. Vậy trước khi bắt tay vào code hay tốn tiền chạy quảng cáo, làm sao để đánh giá xem ý tưởng của bạn thực sự \"to\" đến đâu?\n\nDân trong ngành luôn dùng một bộ khung kinh điển nhưng cực kỳ hiệu quả: Mô hình TAM - SAM - SOM.\n\nHiểu đơn giản về TAM - SAM - SOM\nHãy tưởng tượng bạn đang kinh doanh một chiếc bánh:\n\nTAM (Total Addressable Market) - Tổng thị trường tiềm năng: Toàn bộ \"chiếc bánh\" nếu bạn chiếm 100% thị trường không có đối thủ.\n\nSAM (Serviceable Addressable Market) - Thị trường có thể phục vụ: \"Miếng bánh\" nằm trong tầm với của mô hình kinh doanh, công nghệ hoặc khu vực địa lý của bạn.\n\nSOM (Serviceable Obtainable Market) - Thị trường thực tế chiếm lĩnh: \"Miếng bánh\" bạn chắc chắn có thể ăn được trong 1-3 năm đầu tiên với nguồn lực hiện tại.\n\nVí : Ứng dụng quản lý bãi đỗ xe thông minh (B2B Parking App)\nGiả sử bạn đang làm một ứng dụng kết nối và quản lý bãi đỗ xe cho các tòa nhà, trung tâm thương mại và bãi xe tư nhân tại Việt Nam.\n\n\nBài học rút ra là gì?\nSOM quá nhỏ: Bạn sẽ không đủ doanh thu để duy trì bộ máy.\n\nTAM quá nhỏ: Nhà đầu tư sẽ không thèm ngó tới vì dư địa phát triển quá thấp.\n\nKhông xác định được SAM: Bạn sẽ tiêu sạch tiền vì cố gắng phục vụ tất cả mọi người cùng một lúc.\n\nÝ tưởng hay là tốt, nhưng ý tưởng có thị trường đủ lớn và khả thi mới là thứ tạo ra dòng tiền.\n\nLần tới khi có một idea mới lóe lên, đừng vội lao vào làm ngay. Hãy ngồi xuống và tính thử TAM - SAM - SOM trước mọi người nhé!",
+      "author": {
+        "id": "1138449718255550484",
+        "name": "ducdnghanam",
+        "discriminator": "0000",
+        "nickname": "T004 - Nguyễn Đức Dũng - 01823",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1138449718255550484/83ac5cd2a61598f7fbce78557a68789a.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530839621846569173",
+          "url": "https://cdn.discordapp.com/attachments/1530839621414424698/1530839621846569173/A.jpg?ex=6a6c4eff&is=6a6afd7f&hm=fd3bb257cbf7fe8147e2d22e696daac9862e0e1b1c6bea41a29b3c76f57a2307&",
+          "fileName": "A.jpg",
+          "fileSizeBytes": 121123
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "797114545483153411",
+              "name": "minhducnguyen2932",
+              "discriminator": "0000",
+              "nickname": "Lab Coach - Nguyen Duc Minh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/797114545483153411/a066017a15406e9a9331c9a77d6f5a41.png?size=512"
+            },
+            {
+              "id": "857890667476942889",
+              "name": "blashblap",
+              "discriminator": "0000",
+              "nickname": "Huy Copper",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/857890667476942889/201e8abaf19a81d2d1bae37a587182c1.png?size=512"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1138449718255550484",
+              "name": "ducdnghanam",
+              "discriminator": "0000",
+              "nickname": "T004 - Nguyễn Đức Dũng - 01823",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1138449718255550484/83ac5cd2a61598f7fbce78557a68789a.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1529964064229429279",
+              "name": "tlam.work",
+              "discriminator": "0000",
+              "nickname": "T095 - Bùi Tùng Lâm - 01676",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,169 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530952859296989315",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Vòng đời phát triển phần mềm",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:12:21.8025534+07:00",
+  "messages": [
+    {
+      "id": "1530952859296989315",
+      "type": "Default",
+      "timestamp": "2026-07-26T22:00:05.385+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bài đăng này hướng dẫn các bạn phát triển dự án theo đúng quy trình tránh mắc sai sót phải làm lại từ đầu.\n\n1. Khảo sát & phân tích yêu cầu (Requirement Analysis)\nXác định bài toán, người dùng, ràng buộc, mục tiêu đo được (KPI).\nĐầu ra: bản đặc tả yêu cầu (SRS) \n\n2. Thiết kế (Design)\nThiết kế kiến trúc hệ thống (architecture) — chọn công nghệ, luồng dữ liệu, các module.\nThiết kế database/schema.\nThiết kế API/giao diện giữa các thành phần.\nThiết kế UI/UX.\n\n3. Phát triển (Implementation/Development)\nViết code theo thiết kế, thường chia theo module/tính năng, làm từ core trước rồi đến phần phụ trợ.\n\n4. Kiểm thử (Testing)\nUnit test (từng hàm/module).\nIntegration test (các module ghép lại có chạy đúng không).\nSystem test / UAT (test toàn hệ thống, test theo kịch bản người dùng thật).\nEvaluation (đo accuracy, answer rate...) — đây là phần đặc thù của bài toán AI\n\n5. Triển khai (Deployment)\nĐưa hệ thống lên môi trường thật (staging → production), cấu hình hạ tầng, CI/CD .\n\n6. Vận hành & bảo trì (Operation & Maintenance)\nTheo dõi log/lỗi, thu thập phản hồi người dùng, sửa lỗi, cập nhật tính năng, cập nhật dữ liệu.",
+      "author": {
+        "id": "808506017456324629",
+        "name": "trongck4612",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "nhmanh.AI42E",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            },
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDD72",
+            "code": "smiling_face_with_tear",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f972.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "808506017456324629",
+              "name": "trongck4612",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Văn Trọng - 01102",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/808506017456324629/9cd3de6110db8052d322720e82ec171b.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530955213127811142",
+      "type": "Default",
+      "timestamp": "2026-07-26T22:09:26.582+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn bạn đã chia sẻ",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

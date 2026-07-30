@@ -1,0 +1,300 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530710859041603625",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "TeamT071. Tóm tắt các ý chính trong OFH tối 25/7",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:15:28.4402444+07:00",
+  "messages": [
+    {
+      "id": "1530710859041603625",
+      "type": "Default",
+      "timestamp": "2026-07-26T05:58:28.028+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tối hôm qua có Office house được chủ trì bởi thầy Thạnh, anh @Vonhatcuong và anh @Admin — ODIN  \nMình sẽ tóm tắt một số ý chính mà mình có than khảo và note lại được cho một số bạn không tham gia được\n\nVề các chia sẻ và giải đáp thắc mắc của thầy Thạnh :\n- Chương trình build nhằm mục tiêu chính để các bạn phát triển sản phẩm giúp nâng cao các kĩ năng của các bạn để sau này doanh nghiệp nhìn vào các kĩ năng bạn đã có để xem xét tuyển dụng các bạn cho phase 3 và sau đó là offer. Ở đây cả thầy và btc là những người đứng về phía học viên chúng ta để giúp chúng ta đánh giá đúng khả năng của mỗi bạn, giúp đỡ các bạn khi các bạn cần( nhấn mạnh là các thầy và các anh đứng ở phía học viên chứ không hề làm khó các học viên khi chấm bài và đánh giá các bạn nhé)\n- Doanh nghiệp sẽ nhìn vào gì để đánh giá các bạn trong việc có chọn hay cho phép các bạn đi phase 3:  Sẽ nhìn vào chính sản phẩm build của các bạn có hoàn thiện chau chuốt hay không, nhìn vào các kĩ năng mà các bạn showcase được ra là có phù hợp với doanh nghiệp hay không. Và bạn có được thành quả gì sau khi học 6 tuần đầu. Thầy Thạnh cũng khẳng định xuất phát điểm không đóng vai trò quá quang trọng trong việc đánh giá, quan trọng là các bạn nỗ lực thế nào\n-  Vậy làm thế nào để có 1 sản phẩm hoàn thiện trong 5 tuần build :  Bạn cần tìm và làm việc với team 1 cách hiệu quả và có khả năng vibe coding.  Nhưng vibe coding cũng cần chúng ta phải hiểu việc mình đang làm gì. Tại sao cần vibe code như vậy và các kiến thức nền về phần đó( điều này quan trọng vì doanh nghiệp không cần những người chỉ biết vibe code). Cần có các buổi làm việc hiệu quả với các mentor và thống báo tiến độ một các đầy đủ chính xác để Mentor hiểu mình đang ở đâu. Mọi người cũng lưu ý là cần phải tự chủ sản phẩm của mình tránh việc dựa vào các Mentor quá nhiều(gì cũng hỏi các mentor). Đây cũng là 1 tiêu chí đánh giá sản phẩm của các bạn. Trong team cần chia vai trò của mỗi người 1 cách hợp lý nhé.",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 7,
+          "users": [
+            {
+              "id": "387588408668585986",
+              "name": "negidayo_",
+              "discriminator": "0000",
+              "nickname": "Hnàh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/387588408668585986/2b221ec17d51b09422a7957ca6d53401.png?size=512"
+            },
+            {
+              "id": "696563462742212668",
+              "name": "lucminhduc",
+              "discriminator": "0000",
+              "nickname": "G02 - T091 - Lục Minh Đức",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "846743153780064316",
+              "name": "htm04",
+              "discriminator": "0000",
+              "nickname": "HTM",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1030659866081120346",
+              "name": "minhyeuem_",
+              "discriminator": "0000",
+              "nickname": "T071 - Đỗ Nhật Minh - 01085",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1527561125980405780",
+              "name": "ducnguyennvan",
+              "discriminator": "0000",
+              "nickname": "T015 - Nguyễn Văn Đức - 01422",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1527561125980405780/96a38f45827bace8e5750e545ffd55ed.png?size=512"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "759055479723917364",
+          "name": "nhat_cuong",
+          "discriminator": "0000",
+          "nickname": "Vonhatcuong",
+          "color": "#A72525",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527509817084739805",
+              "name": "Admin",
+              "color": "#A72525",
+              "position": 18
+            },
+            {
+              "id": "1527919808862228652",
+              "name": "Coach",
+              "color": "#F1C40F",
+              "position": 15
+            },
+            {
+              "id": "1527919786850390116",
+              "name": "Mod",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+        },
+        {
+          "id": "695948705278197781",
+          "name": "odinuray",
+          "discriminator": "0000",
+          "nickname": "Admin — ODIN",
+          "color": "#A72525",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527509817084739805",
+              "name": "Admin",
+              "color": "#A72525",
+              "position": 18
+            },
+            {
+              "id": "1527919786850390116",
+              "name": "Mod",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/695948705278197781/9b42056215012ffaf6d32979702b6128.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530710922757275821",
+      "type": "Default",
+      "timestamp": "2026-07-26T05:58:43.219+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "- Về các thắc mắc đến việc BTC có hỗ trợ các phần cứng, data: Do đây là chương trình từ học lên đến build sản phẩm nên hiện tại BTC sẽ không hỗ trợ về mảng này. Hôm qua mình thấy khá nhiều bạn hỏi thầy. Các bạn cần cố gắng khác phục các khó khăn trong quá trình build sản phẩm như phần cứng và data. Chính việc các bạn có thể khắc phục được khó khăn này sẽ là điểm cộng trong việc đánh giá của các thầy và doanh nghiệp nhé\n- Thầy Thạnh và các anh trong các buổi office house buổi tối sẽ chủ yếu chia sẻ và trả lời các câu hỏi liên quan đến quá trìn build sản phẩm và các thắc mắc thực tập sau này nhé. Còn các vấn đề khác về đạo tạo và labcode trên trường sẽ có Thầy Dũng và các bạn labcoach trên trường hỗ trợ\n- Về việc chia team và thời gian có danh sách đề tài sẽ nằm trong hôm nay và được BTC sắp xếp. Mọi người cứ chờ nhé\n\nNgoài ra còn có chia sẻ cuối buổi của anh @Vonhatcuong  :  \n- Các bạn có bất kì thắc mắc gì về việc chia team hay gặp các lỗi gì trên phoenix, github,…. Thì nên tạo ticket trước nhé. Ticket của mọi ngừoi chắc chắn sẽ được xử lý chỉ là số lượng ticket hơi nhiều và sẽ phải xử lý lần lượt nên mọi người thông cảm và chờ đợi cho các anh nhé. ( do số lượng cũng đông quá nhé anh e)\n\nTrên đây là những chia sẻ quan trọng mà mình xem được và có thể note lại được trong buổi hôm qua. Có thể vẫn sẽ có thiếu sót. Những bạn hoặc anh chị nào xem được trong buổi hôm qua thấy mình còn ghi thiếu ý quan trọng nào thì bổ sung comment giúp mình bên dưới để mọi người được biết thêm nhé. Cảm ơn và chúc mọi người ngày mới thật nhiều năng lượng ❤️❤️❤️❤️",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": "#A72525",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "759055479723917364",
+          "name": "nhat_cuong",
+          "discriminator": "0000",
+          "nickname": "Vonhatcuong",
+          "color": "#A72525",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527509817084739805",
+              "name": "Admin",
+              "color": "#A72525",
+              "position": 18
+            },
+            {
+              "id": "1527919808862228652",
+              "name": "Coach",
+              "color": "#F1C40F",
+              "position": 15
+            },
+            {
+              "id": "1527919786850390116",
+              "name": "Mod",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530711608597151896",
+      "type": "Default",
+      "timestamp": "2026-07-26T06:01:26.736+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình mong bài viết được các bạn biết đến và ủng hộ cũng như chia sẻ thêm về buổi hôm qua ạ.",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

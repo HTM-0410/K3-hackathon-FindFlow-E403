@@ -1,0 +1,232 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531702674280415302",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "[Deep-dive] BEV – Góc nhìn “thượng đế” của xe tự hành",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:51:56.2035758+07:00",
+  "messages": [
+    {
+      "id": "1531702674280415302",
+      "type": "Default",
+      "timestamp": "2026-07-28T23:39:35.208+07:00",
+      "timestampEdited": "2026-07-28T23:39:52.975+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83C\uDFAF TL;DR:\nBEV (Bird’s-Eye View) là cách đưa thông tin từ camera/LiDAR về một bản đồ nhìn từ trên xuống, giúp xe dễ hiểu vị trí và khoảng cách giữa các vật thể hơn.\n\n\uD83D\uDCDA Bối cảnh:\nTrong lúc tìm hiểu đề BEV Vision của track RAV–DEV, mình thấy BEV xuất hiện khá nhiều nhưng lúc đầu cũng hơi khó hình dung. Nói đơn giản thì camera trên xe nhìn đường giống mắt người: thấy được xe, người, biển báo, nhưng vật ở xa sẽ nhỏ hơn, dễ bị che và khó biết chính xác đang cách mình bao nhiêu mét.\n\nBEV sinh ra để giải quyết phần này. Thay vì giữ từng ảnh ở từng góc camera riêng biệt, hệ thống sẽ đưa thông tin từ camera trước, sau, trái, phải về cùng một “tấm bản đồ” nhìn từ trên xuống, với xe của mình nằm ở giữa.\n\n\uD83D\uDD11 Hiểu đơn giản flow sẽ là:\n• Camera chụp cảnh vật từ nhiều hướng.\n• Model tìm các thông tin quan trọng trong ảnh như xe, người, mặt đường.\n• Sau đó hệ thống ước lượng các thông tin đó nằm ở đâu trong không gian.\n• Cuối cùng, các góc nhìn được gộp lại thành một bản đồ BEV chung.\n\nMọi người có thể hình dung BEV giống như góc nhìn thứ ba hoặc minimap trong game =))) Thay vì chỉ nhìn thấy những gì ngay trước mặt nhân vật, mình có thể nhìn từ trên xuống để biết bản thân đang ở đâu, xung quanh có những gì và các vật thể đang cách nhau như thế nào.\n\nNgoài ra, còn có sự xuất hiện của LiDAR, nó là 1 cảm biến dùng tia laser để đo khoảng cách và tạo ra một tập điểm 3D, gọi là Point Cloud, mô tả vị trí các vật thể quanh xe. Nói đơn giản thì, Camera mạnh về trả lời “đó là vật gì?”, còn LiDAR thì nghiêng về trả lời “nó đang nằm ở đâu và cách xe bao xa?”. Những model sẽ kết hợp cả hai loại thông tin và góc nhìn này trong cùng không gian BEV để vừa hiểu được ngữ nghĩa, vừa giữ được thông tin hình học và khoảng cách.\n\n\uD83D\uDCA1 Ứng dung: Từ BEV, hệ thống có thể làm 3D Detection, nhận diện làn đường, tracking, occupancy, ...\n\n\uD83D\uDD17 Reference:\nBEVFusion (ICRA'23): https://arxiv.org/pdf/2205.13542\nLift, Splat, Shoot - by NVIDIA (ECCV'20): https://research.nvidia.com/labs/toronto-ai/lift-splat-shoot/",
+      "author": {
+        "id": "1525362771770867732",
+        "name": "a1vin14105",
+        "discriminator": "0000",
+        "nickname": "GR16 - T112 - Lương Quốc Khánh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531702675043909732",
+          "url": "https://cdn.discordapp.com/attachments/1531702674280415302/1531702675043909732/demo.gif?ex=6a6c2707&is=6a6ad587&hm=ab8de9f1ebf39e1fe504521871771550e4f20fedfb1d530a6f359fd6e5589150&",
+          "fileName": "demo.gif",
+          "fileSizeBytes": 9148272
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "1030659866081120346",
+              "name": "minhyeuem_",
+              "discriminator": "0000",
+              "nickname": "Đỗ Nhật Minh 2A202601085",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1160208635163594752",
+              "name": "chanbeduk68_80038",
+              "discriminator": "0000",
+              "nickname": "T064 - Nguyễn Quốc Anh - 01079",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83C\uDFAF",
+          "code": "dart",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3af.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCDA",
+          "code": "books",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4da.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD11",
+          "code": "key",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f511.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD17",
+          "code": "link",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f517.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531915079891681311",
+      "type": "Default",
+      "timestamp": "2026-07-29T13:43:36.652+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn bạn về bài viết",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1525362771770867732",
+              "name": "a1vin14105",
+              "discriminator": "0000",
+              "nickname": "GR16 - T112 - Lương Quốc Khánh",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1525362771770867732/b1c8b63625e6d9377f335564500a6d8a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532070658870218844",
+      "type": "Default",
+      "timestamp": "2026-07-30T00:01:49.571+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDCAF \uD83D\uDCAF \uD83D\uDCAF",
+      "author": {
+        "id": "1108061338044993607",
+        "name": "phongqk226",
+        "discriminator": "0000",
+        "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCAF",
+          "code": "100",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4af.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 3
+}

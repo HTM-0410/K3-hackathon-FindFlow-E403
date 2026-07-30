@@ -1,0 +1,106 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531220636238614618",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "đánh giá các AI coding phổ biến để lựa chọn xây dựng dự án",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:21:16.2129022+07:00",
+  "messages": [
+    {
+      "id": "1531220636238614618",
+      "type": "Default",
+      "timestamp": "2026-07-27T15:44:08.383+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đánh giá các AI Coding phổ biến\nAI    Chất lượng code    Hiểu codebase    Agent    Tốc độ    Phù hợp\n\uD83E\uDD47 Claude Code    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐    Dự án lớn, AI Agent\n\uD83E\uDD48 OpenAI Codex    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐☆    ⭐⭐⭐⭐☆    ⭐⭐⭐⭐⭐    Backend, API, Automation\n\uD83E\uDD49 Google Antigravity    ⭐⭐⭐⭐☆    ⭐⭐⭐⭐    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐    Fullstack, Multi-Agent\n1. Claude Code\n\nƯu điểm\n\nHiểu codebase rất tốt.\nRefactor an toàn, giữ đúng kiến trúc.\nDebug, viết test mạnh.\nHỗ trợ MCP, Sub-agent và Project Memory (CLAUDE.md).\n\nNhược điểm\n\nTốn quota, chi phí cao.\nChủ yếu hoạt động qua terminal.\n\nPhù hợp: Enterprise, Backend, AI Agent, Refactor.\n\n2. OpenAI Codex\n\nƯu điểm\n\nSinh code nhanh, sạch.\nGit và Sandbox tốt.\nReview code hiệu quả.\nMạnh về Backend và Automation.\n\nNhược điểm\n\nHiểu kiến trúc dự án lớn chưa bằng Claude.\nMCP và Hook chưa phong phú bằng Claude.\n\nPhù hợp: Backend, API, Python, Automation.\n\n3. Google Antigravity\n\nƯu điểm\n\nIDE tích hợp.\nMulti-agent.\nBrowser và Visual Testing.\nHỗ trợ Gemini.\n\nNhược điểm\n\nĐộ ổn định chưa bằng Claude.\nCó thể bị giới hạn tài nguyên khi dùng nhiều.\n\nPhù hợp: Fullstack, UI, Multi-Agent.\n\nSo sánh nhanh\nTiêu chí    Claude    Codex    Antigravity\nViết code    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐☆\nDebug    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐☆    ⭐⭐⭐⭐\nRefactor    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐☆    ⭐⭐⭐⭐\nContext dài    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐    ⭐⭐⭐⭐\nAI Agent    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐    ⭐⭐⭐⭐⭐\nMCP    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐    ⭐⭐⭐⭐\nFrontend    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐    ⭐⭐⭐⭐⭐\nBackend    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐\nTốc độ    ⭐⭐⭐⭐    ⭐⭐⭐⭐⭐    ⭐⭐⭐⭐\nKhuyến nghị\nAI Agent (n8n, MCP): \uD83E\uDD47 Claude → \uD83E\uDD48 Codex → \uD83E\uDD49 Antigravity\nWeb App: Frontend → Claude/Antigravity • Backend → Codex/Claude • Fullstack → Claude\nAI/ML: Claude = Codex > Antigravity\nNếu chỉ mua 1 gói\nNgười mới: ChatGPT Plus (Codex) – đa năng, dễ dùng.\nLập trình viên chuyên nghiệp: Claude Code – mạnh về codebase và refactor.\nCần nhiều agent song song: Antigravity – phù hợp workflow Multi-Agent.",
+      "author": {
+        "id": "1224642118421712967",
+        "name": "tuan512005._87924",
+        "discriminator": "0000",
+        "nickname": "T016 - Nguyễn Tuấn Anh - 01669",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1224642118421712967/4159934c85086614042ebc1d13234d7b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1224642118421712967",
+              "name": "tuan512005._87924",
+              "discriminator": "0000",
+              "nickname": "T016 - Nguyễn Tuấn Anh - 01669",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1224642118421712967/4159934c85086614042ebc1d13234d7b.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83E\uDD47",
+          "code": "first_place",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f947.svg"
+        },
+        {
+          "id": "",
+          "name": "⭐",
+          "code": "star",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2b50.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83E\uDD48",
+          "code": "second_place",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f948.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83E\uDD49",
+          "code": "third_place",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f949.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

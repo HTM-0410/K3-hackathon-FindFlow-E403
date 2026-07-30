@@ -1,0 +1,86 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530768683390210099",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Đừng prompt một cách ngây thơ nữa",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:19:47.7640758+07:00",
+  "messages": [
+    {
+      "id": "1530768683390210099",
+      "type": "Default",
+      "timestamp": "2026-07-26T09:48:14.427+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình đã từng prompt như thế này:\n\n> “Hãy xây cho tôi một trang web bán hàng đẹp, hiện đại và đầy đủ chức năng.”\n\nKết quả là giao diện nhìn ổn, nhưng code lộn xộn, chức năng thiếu trước hụt sau, dữ liệu giả xuất hiện, sửa một chỗ thì ba chỗ khác lại hỏng.\nMình nhận ra: mình chỉ đưa cho AI một yêu cầu mơ hồ, trong khi lại mong nó tự hiểu kiến trúc, công nghệ, luồng người dùng và tiêu chuẩn hoàn thành.\nVibe coding không có nghĩa là mô tả đại một ý tưởng rồi để AI tự làm tất cả. Muốn AI code tốt, prompt phải giống một **bản giao việc kỹ thuật**.\nMột prompt tốt nên làm rõ:\n**1. Role — Vai trò**\n> “Bạn là senior full-stack developer, ưu tiên code dễ bảo trì.”\n> \n**2. Context — Bối cảnh**\nCho AI biết framework, cấu trúc thư mục, database, phần đã hoàn thành cùng convention dự án.\n\n**3. Task — Nhiệm vụ**\nĐừng chỉ nói “xây tính năng đăng nhập”. Hãy mô tả đăng nhập bằng gì, dữ liệu nào cần lưu, thành công chuyển đến đâu và lỗi được xử lý thế nào.\n\n**4. Constraints — Giới hạn**\n> “Không đổi database schema, không cài thêm thư viện, không sửa file không liên quan.”\n\n**5. Output — Kết quả mong muốn**\nYêu cầu AI liệt kê file cần sửa, giải thích thay đổi, viết code và cách kiểm tra.\n\nVới tính năng lớn, đừng bắt AI làm tất cả trong một lần. Hãy chia thành từng bước: phân tích yêu cầu, đề xuất kiến trúc, lập kế hoạch, code từng phần, chạy test và tích hợp.\nBạn cũng nên đưa code mẫu để AI học theo convention của dự án. Đây chính là **few-shot prompting** trong lập trình.\nTrước khi code, hãy yêu cầu AI liệt kê thông tin còn thiếu để tránh xây dựng trên những giả định sai.\nĐừng chấp nhận ngay đoạn code đầu tiên. Hãy yêu cầu AI kiểm tra edge case, bảo mật và xác nhận thay đổi không phá vỡ chức năng cũ.\nVibe coding giúp xây sản phẩm nhanh hơn, nhưng tốc độ không thể thay thế sự rõ ràng.\n**Đừng vibe code một cách ngây thơ nữa. AI có thể viết code rất nhanh, nhưng bạn vẫn phải hiểu mình đang xây gì và giao việc cho nó ra sao.**",
+      "author": {
+        "id": "582196060441673728",
+        "name": "nabuhunh",
+        "discriminator": "0000",
+        "nickname": "G13-T171 - Vũ Ngọc Hùng - 01722",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/582196060441673728/546e5071af44c77e95462013fb4810b3.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "582196060441673728",
+              "name": "nabuhunh",
+              "discriminator": "0000",
+              "nickname": "G13-T171 - Vũ Ngọc Hùng - 01722",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/582196060441673728/546e5071af44c77e95462013fb4810b3.png?size=512"
+            },
+            {
+              "id": "677041413430444033",
+              "name": "dangkhoi3107",
+              "discriminator": "0000",
+              "nickname": "dangkhoi3107",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,127 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530788512750637076",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[T-121]Sau nhiều dự án AI, mình nhận ra: Không phải doanh nghiệp nào cũng cần Chatbot",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:14:59.0355745+07:00",
+  "messages": [
+    {
+      "id": "1530788512750637076",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:07:02.115+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "TL;DR: Chatbot không phải là đáp án cho mọi doanh nghiệp; trong nhiều trường hợp, kết nối AI với hệ thống qua MCP mới là cách giải quyết hiệu quả hơn.\n\nGần như khách hàng nào cũng bắt đầu bằng một câu:\n\n\"Bên em muốn làm chatbot AI.\"\n\nNhưng sau khi tìm hiểu quy trình, mình lại thường hỏi ngược:\n\n\"Doanh nghiệp đang muốn AI trả lời người dùng, hay đang muốn AI làm việc thay người?\"\n\nĐó là hai bài toán hoàn toàn khác nhau.\n\nNếu cần tư vấn khách hàng, hỗ trợ nội bộ hay tra cứu thông tin, chatbot là một lựa chọn rất hợp lý.\n\nNhưng từ kinh nghiệm triển khai của mình, phần lớn doanh nghiệp mình từng làm lại không gặp vấn đề ở khâu giao tiếp với AI. Họ gặp vấn đề ở việc AI chưa thể truy cập và thao tác trên dữ liệu, hệ thống đang có.\n\nChỉ cần kết nối AI với CRM, ERP, Google Drive, Notion, Database hoặc API nội bộ thông qua MCP (Model Context Protocol), AI đã có thể đọc dữ liệu, gọi API và thực hiện các tác vụ thay vì chỉ trả lời câu hỏi.\n\nKhi đó, thay vì xây dựng một chatbot phức tạp, doanh nghiệp chỉ cần một workflow hoặc một giao diện rất đơn giản. Người dùng bấm một nút, còn AI xử lý toàn bộ phía sau.\n\nTất nhiên, chatbot vẫn có chỗ đứng của nó. Nhưng sau nhiều dự án, mình nhận ra rằng điều doanh nghiệp cần mua không phải là chatbot, mà là một giải pháp giúp công việc chạy nhanh hơn, ít thao tác hơn và tạo ra giá trị rõ ràng hơn.\n\nĐôi khi, chatbot là câu trả lời.\n\nNhưng cũng rất nhiều lần, chỉ cần kết nối AI đúng với hệ thống hiện có thông qua MCP là bài toán đã được giải quyết theo cách đơn giản và hiệu quả hơn rất nhiều.",
+      "author": {
+        "id": "713652099086417981",
+        "name": "qijanna",
+        "discriminator": "0000",
+        "nickname": "T121 - Lê Quang Huy - 01821",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "534949833723740171",
+              "name": "sonbe04",
+              "discriminator": "0000",
+              "nickname": "Son Dang",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "713652099086417981",
+              "name": "qijanna",
+              "discriminator": "0000",
+              "nickname": "T121 - Lê Quang Huy - 01821",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+            },
+            {
+              "id": "1392890973616476160",
+              "name": "heheboi0909",
+              "discriminator": "0000",
+              "nickname": "Đậu Quốc Duy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530788700026437733",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-26T11:07:46.765+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: [T-121]Sau nhiều dự án AI, mình nhận ra: Không phải doanh nghiệp nào cũng cần Chatbot",
+      "author": {
+        "id": "713652099086417981",
+        "name": "qijanna",
+        "discriminator": "0000",
+        "nickname": "T121 - Lê Quang Huy - 01821",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

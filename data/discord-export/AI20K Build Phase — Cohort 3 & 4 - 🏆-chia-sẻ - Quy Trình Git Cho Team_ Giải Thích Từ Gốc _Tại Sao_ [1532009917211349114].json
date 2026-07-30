@@ -1,0 +1,77 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1532009917211349114",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Quy Trình Git Cho Team: Giải Thích Từ Gốc \"Tại Sao\"",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:19:01.1727382+07:00",
+  "messages": [
+    {
+      "id": "1532009917211349114",
+      "type": "Default",
+      "timestamp": "2026-07-29T20:00:27.631+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bạn có bao giờ gặp cảnh hai người cùng sửa một file, đến lúc push lên thì Git báo conflict đỏ lòm? Hay tệ hơn khi code còn lỗi đã lỡ tay lên thẳng production?\n\nBài viết này không dạy bạn học thuộc lệnh Git một cách máy móc, mà giải mã tại sao quy trình Git chuẩn của một team được thiết kế thế nào và tại sao từng lớp một:\n- Tại sao branch tồn tại, và nó giải quyết vấn đề gì mà code chung 1 nhánh không thể?\n- Tại sao một tính năng phải đi qua nhiều tầng nhánh (develop → test → release → main) thay vì merge thẳng đến main?\n- Pull Request thực chất bảo vệ team khỏi điều gì mà lệnh git merge đơn thuần không làm được?\n- Và câu hỏi gây tranh cãi nhất: rebase và merge dùng cái nào, khi nào, và vì sao dùng sai sẽ khiến git log của cả team biến thành một \"mạng nhện\" không ai tra cứu nổi sau vài tháng phát triển?\n\nCòn nhiều câu hỏi khác mà rất nhiều lập trình viên chỉ trả lời được bằng phản xạ, chứ chưa chắc giải thích được gốc rễ:\n- \"--force\" và \"--force-with-lease\" khác nhau đúng một chữ, nhưng chữ đó có thể là ranh giới giữa \"an toàn\" và \"xóa sạch công sức đồng đội\". Bạn có chắc mình đang dùng đúng cái nào?\n- Vì sao một merge commit \"vô hại\" lặp đi lặp lại trong vòng đời một feature lại là quả bom hẹn giờ cho reviewer và cho chính bạn 6 tháng sau?\nNếu rebase làm lịch sử thẳng và sạch đến vậy, tại sao không dùng nó ở mọi nhánh, kể cả develop hay main?\n\nTừ lý thuyết nền tảng đến quy trình thực chiến từng bước (tạo nhánh → code → đồng bộ → PR → merge → dọn dẹp), bài viết đi kèm ví dụ minh hoạ cụ thể và các câu lệnh Git thực tế, giúp bạn không chỉ biết làm mà còn hiểu vì sao phải làm vậy.\n\nBạn đọc quan tâm, muốn tìm hiểu chi tiết, đọc thêm tại blog của mình: https://cgdd-blogs.readthedocs.io/vi/latest/posts/git-workflow.html",
+      "author": {
+        "id": "1528989895857668106",
+        "name": "cgdd_67287",
+        "discriminator": "0000",
+        "nickname": "T029 - Đỗ Đức Cường - 01455",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1528989895857668106",
+              "name": "cgdd_67287",
+              "discriminator": "0000",
+              "nickname": "T029 - Đỗ Đức Cường - 01455",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,86 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530579448536105060",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Evals (đánh giá AI)",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:16:21.2301937+07:00",
+  "messages": [
+    {
+      "id": "1530579448536105060",
+      "type": "Default",
+      "timestamp": "2026-07-25T21:16:17.322+07:00",
+      "timestampEdited": "2026-07-25T21:16:30.83+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người, hôm nay mình muốn chia sẻ một chủ đề khá quan trọng khi build AI product: Evals (đánh giá AI).\n\nChắc nhiều bạn từng gặp tình huống: test vài case thấy AI chạy ổn, deploy. Sau đó user báo lỗi, sửa prompt, test lại đúng case đó thấy hết lỗi rồi deploy tiếp. Nhưng không ai biết lần sửa đó có làm hỏng những case khác hay không.\n\nVấn đề là chúng ta thường đánh giá AI bằng cảm giác \"vibe check\", trong khi cảm giác thì không thể scale. Evals là một bộ test giúp trả lời khách quan: AI đang tốt lên hay tệ đi sau mỗi lần thay đổi?\n\n3 nguyên tắc mình thấy quan trọng nhất:\n\n1. Bắt đầu đơn giản. Chỉ cần một file Excel với input thực tế, output mong muốn và cột pass/fail. 20 case từ log user giá trị hơn 200 case tự nghĩ.\n\n2. Xây bộ eval cho chính sản phẩm của bạn. Benchmark công khai không phản ánh đúng use case. Hãy lấy case từ lỗi từng gặp, edge case và các tình huống phổ biến nhất.\n\n3. Vẫn cần con người đánh giá. LLM-as-judge giúp tiết kiệm thời gian, nhưng nên định kỳ kiểm tra thủ công để đảm bảo AI đang được chấm theo tiêu chuẩn của người dùng, không phải của một model khác.\n\nTóm lại: nếu không đo được AI đang tốt lên hay tệ đi, thì mỗi lần sửa prompt vẫn chỉ là phỏng đoán.",
+      "author": {
+        "id": "1170350750157787259",
+        "name": "tuan_anh1401_94713",
+        "discriminator": "0000",
+        "nickname": "T185 - Phạm Tuấn Anh - 01840",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1170350750157787259/1ed48f961d214d0f605b3358b7876b34.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "454129205589049347",
+              "name": "jackouhai",
+              "discriminator": "0000",
+              "nickname": "Anh Rai",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,174 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531131417713446912",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "GitHub Projects — để AI vừa code vừa tự quản lý task giúp bạn",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:11:54.0346984+07:00",
+  "messages": [
+    {
+      "id": "1531131417713446912",
+      "type": "Default",
+      "timestamp": "2026-07-27T09:49:37.029+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Vào tối qua, buổi workshop đã chia sẻ cho chúng ta về cách quản lý project với nhiều người (và cả AI). Dưới đây là một cách có sẵn với tất cả các bạn mà mình đã sử dụng để quản lý tiến độ project với nhóm nhỏ và nhóm Coding Agent.\n\n**Vấn đề quen thuộc**\nBạn để AI code trên GitHub, xong task nó xử lý hết rồi (Issue được giải quyết, Pull Request được tạo, ...) nhưng bảng theo dõi tiến độ thì vẫn nằm ở Trello hay Jira riêng. Kết quả là bạn phải tự tay cập nhật: task này AI làm xong chưa, chuyển cột nào, ai review... Tức là AI làm việc nhanh, nhưng phần quản lý vẫn phải làm thủ công.\n\n**Vậy Projects khác gì?**\nĐây là một bảng quản lý công việc giống Trello/Jira (kéo-thả, kanban, deadline...) nhưng nó nằm ngay trong GitHub — cùng chỗ với Issue và code của bạn. Vì cùng một chỗ, nên khi AI tạo hoặc xử lý xong một Issue/PR, bảng Project tự cập nhật theo, không cần bạn tay đổi status.\n\n**Điểm mạnh nhất với vibe coder: AI có thể tự \"chạm\" vào cả 2 phần**\nVì Issue, PR và Project đều nằm chung trong GitHub, các AI coding agent như Claude Code hay Codex có thể:\n\uD83D\uDD39 Tự đọc task đang cần làm trong Project\n\uD83D\uDD39 Code xong tự cập nhật trạng thái task (ví dụ chuyển từ \"In Progress\" sang \"Done\")\n\uD83D\uDD39 Tự tạo Issue mới nếu phát hiện việc phát sinh trong lúc code\n\nNói cách khác, bạn không cần ngồi giữa AI và bảng quản lý để làm \"người phiên dịch\" nữa — AI tự lo luôn cả 2 đầu.\n\n**Vài tính năng khác cũng hay**\n\uD83D\uDD39 Xem công việc theo 3 kiểu: bảng chi tiết, kanban kéo-thả, hoặc dòng thời gian\n\uD83D\uDD39 Tự thêm cột riêng: độ ưu tiên, ngày dự kiến xong, sprint theo tuần...\n\uD83D\uDD39 Tự động hoá sẵn: task mới tự vào bảng, PR merge xong tự chuyển \"Done\"\n\uD83D\uDD39 Tự vẽ biểu đồ tiến độ, không cần export đi đâu\n\n**Vì sao chọn cái này thay vì mở thêm Trello/Jira?**\nVì bạn đang để AI làm việc chính trong GitHub rồi — thêm một app quản lý riêng chỉ tạo thêm một chỗ nữa mà AI *không* nhìn thấy được. Dùng Projects nghĩa là AI và bạn cùng nhìn vào một nơi duy nhất.",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "696528651642077257",
+              "name": "tranduyson099",
+              "discriminator": "0000",
+              "nickname": "Sơn đz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "849678819279110174",
+              "name": "_tombtc",
+              "discriminator": "0000",
+              "nickname": "_Tom",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/849678819279110174/871cd3c1cb39281d7540c61abbf1f171.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDD39",
+          "code": "small_blue_diamond",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f539.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531131476773437644",
+      "type": "Default",
+      "timestamp": "2026-07-27T09:49:51.11+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đọc thêm: https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "About Projects - GitHub Docs",
+          "url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects",
+          "timestamp": null,
+          "description": "Projects is an adaptable, flexible tool for planning and tracking work on GitHub.",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/pmiiacuuWxr3BkSb9kQBr3dqIiFDA4i48kxFNoFyBSo/https/docs.github.com/assets/cb-345/images/social-cards/issues.png",
+            "canonicalUrl": "https://docs.github.com/assets/cb-345/images/social-cards/issues.png",
+            "width": 1200,
+            "height": 628
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531131824301015198",
+      "type": "Default",
+      "timestamp": "2026-07-27T09:51:13.967+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hiện tại mình chưa trải nghiệm Trello/Jira nên có thể góc nhìn cá nhân đã chưa thấy được hết công dụng của nó.\nMình thấy cách này đáng để chia sẻ vì đây là feature được tích hợp sẵn từ Github.",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

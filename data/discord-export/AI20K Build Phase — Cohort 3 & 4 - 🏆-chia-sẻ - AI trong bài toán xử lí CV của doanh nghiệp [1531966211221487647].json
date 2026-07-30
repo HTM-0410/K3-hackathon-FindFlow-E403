@@ -1,0 +1,108 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531966211221487647",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "AI trong bài toán xử lí CV của doanh nghiệp",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:22:03.075875+07:00",
+  "messages": [
+    {
+      "id": "1531966211221487647",
+      "type": "Default",
+      "timestamp": "2026-07-29T17:06:47.311+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "AI đang thay đổi cách chúng ta tuyển dụng. Nhờ **NLP** và **Machine Learning**, AI có thể tự động đọc, phân tích và sàng lọc CV, nhận diện kỹ năng, kinh nghiệm, học vấn và đối chiếu với yêu cầu công việc chỉ trong vài giây. Không chỉ giúp doanh nghiệp tuyển đúng người nhanh hơn, AI còn tạo cơ hội để ứng viên được đánh giá dựa trên năng lực một cách hiệu quả và khách quan hơn.\n\n\uD83D\uDD11 Từ khóa nổi bật\nAI Recruitment\nCV Parsing\nResume Screening\nATS (Applicant Tracking System)\nNLP & Machine Learning\nKeyword Matching\nCandidate Ranking\nSkills Extraction\nJob Matching\nTalent Acquisition\nHR Tech\nRecruitment Automation\nResume Analysis\n\n\uD83D\uDE80 AI mang lại điều gì?\nTự động hóa quy trình sàng lọc CV, giảm tải công việc thủ công.\nRút ngắn thời gian tuyển dụng, tăng tốc tìm kiếm nhân tài.\nPhân tích và kết nối ứng viên với vị trí phù hợp dựa trên dữ liệu.\nHỗ trợ nhà tuyển dụng đưa ra quyết định nhanh chóng và khách quan hơn.\n\n⚖️ Điều cần lưu ý\nAI chỉ mạnh khi dữ liệu đầu vào đủ chất lượng.\nKhông phải mọi tiềm năng đều có thể được thể hiện qua từ khóa trong CV.\nCông nghệ cần đi cùng sự công bằng, minh bạch và bảo mật thông tin.\n\nAI không chỉ xử lý CV nhanh hơn, mà còn giúp doanh nghiệp nhìn thấy đúng giá trị của mỗi ứng viên.",
+      "author": {
+        "id": "1035030387753242674",
+        "name": "dongd22",
+        "discriminator": "0000",
+        "nickname": "T037 - Lại Duy Đông - 01913",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "1035030387753242674",
+              "name": "dongd22",
+              "discriminator": "0000",
+              "nickname": "T037 - Lại Duy Đông - 01913",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1509890551334305904",
+              "name": "samsamsam0905_13163",
+              "discriminator": "0000",
+              "nickname": "T020-NguyenVanTuanAnh-01813",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1509890551334305904/c442a1bbd1c984ea832bd3bd81922471.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDD11",
+          "code": "key",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f511.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDE80",
+          "code": "rocket",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg"
+        },
+        {
+          "id": "",
+          "name": "⚖️",
+          "code": "scales",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

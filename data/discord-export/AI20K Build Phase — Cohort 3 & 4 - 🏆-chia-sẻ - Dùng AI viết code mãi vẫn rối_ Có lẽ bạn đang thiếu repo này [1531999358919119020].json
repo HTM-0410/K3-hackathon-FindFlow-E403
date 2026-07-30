@@ -1,0 +1,112 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531999358919119020",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Dùng AI viết code mãi vẫn rối? Có lẽ bạn đang thiếu repo này",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:19:08.8501332+07:00",
+  "messages": [
+    {
+      "id": "1531999358919119020",
+      "type": "Default",
+      "timestamp": "2026-07-29T19:18:30.338+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mấy hôm nay mình có đọc qua repo mattpocock/skills và thấy khá hay nên muốn chia sẻ với mọi người.\n\nĐiểm mình thích nhất là repo này không dạy cách viết prompt, mà cung cấp rất nhiều skill (có thể hiểu là các quy trình hoặc bộ hướng dẫn để AI thực hiện một công việc cụ thể).\n\nThay vì chỉ bảo AI:\n\n\"Viết chức năng đăng nhập\"\n\nRepo khuyến khích để AI đi từng bước:\n\nLàm rõ yêu cầu với người dùng (skill grill-me)\nChuyển yêu cầu thành bản đặc tả (skill to-spec)\nChia thành các task nhỏ (skill to-tickets)\nTriển khai tính năng (skill implement)\nDebug có phương pháp (skill diagnosing-bugs)\nReview lại code (skill code-review)\nCải thiện kiến trúc dự án (skill improve-codebase-architecture)\n\nĐiều mình thấy đáng học nhất là AI không nên đoán.\n\nVí dụ trước khi code chức năng đặt phòng, AI sẽ hỏi:\n\nCó cần chủ trọ xác nhận không?\nCó đặt cọc không?\nCó được hủy yêu cầu không?\n\nNghe đơn giản nhưng giúp giảm rất nhiều lần phải sửa code.\n\nNgoài ra repo cũng khuyến khích:\n\nlưu CONTEXT.md để AI hiểu project và các thuật ngữ trong dự án,\nviết test trước khi code (TDD),\ndebug bằng cách tái hiện bug thay vì sửa thử,\nreview code sau khi hoàn thành.\n\nTheo mình, repo này phù hợp với những ai đang dùng Claude Code, Codex hoặc ChatGPT để lập trình. Nó không giúp AI code nhiều hơn, mà giúp AI code đúng hơn, có quy trình hơn và ít làm project bị rối hơn.\n\nLink Repo: https://github.com/mattpocock/skills",
+      "author": {
+        "id": "845697561239093358",
+        "name": "thangqq.",
+        "discriminator": "0000",
+        "nickname": "T069 - Phạm Văn Thắng - 01359",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - mattpocock/skills: Skills for Real Engineers. Straight fro...",
+          "url": "https://github.com/mattpocock/skills",
+          "timestamp": null,
+          "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/XIM_TQmpqRZ-3SjsP8E5ea8B6KLIlpyPnR1IeGrK6wY/https/opengraph.githubassets.com/a1c5d7e84c40708a45d24e2563cdf71b251ecee78288e80ef5ac17626f396cbe/mattpocock/skills",
+            "canonicalUrl": "https://opengraph.githubassets.com/a1c5d7e84c40708a45d24e2563cdf71b251ecee78288e80ef5ac17626f396cbe/mattpocock/skills",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "845697561239093358",
+              "name": "thangqq.",
+              "discriminator": "0000",
+              "nickname": "T069 - Phạm Văn Thắng - 01359",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "885060168516272199",
+              "name": "tiendung04",
+              "discriminator": "0000",
+              "nickname": "TZungwaladz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/885060168516272199/3d0a7d9ab3a661dfae248bd7769d21ea.png?size=512"
+            },
+            {
+              "id": "958559462027849848",
+              "name": "_anhquaan",
+              "discriminator": "0000",
+              "nickname": "Quân",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/958559462027849848/af5dbcf0d8e9412d99bb9bc447c9ebf5.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

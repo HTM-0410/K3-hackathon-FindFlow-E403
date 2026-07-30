@@ -1,0 +1,109 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531135701775683594",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "AI Engineer không chỉ code, vì sao tư duy sản phẩm (Product Thinking) lại quan trọng",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:11:33.746866+07:00",
+  "messages": [
+    {
+      "id": "1531135701775683594",
+      "type": "Default",
+      "timestamp": "2026-07-27T10:06:38.429+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Nhiều người hình dung AI Engineer là người ngồi tối ưu loss function, deploy model có accuracy cao nhất. Nhưng thực tế, chỉ giỏi kỹ thuật là chưa đủ.\n\nModel tốt chưa chắc là sản phẩm tốt. Model đạt 95% accuracy nghe ấn tượng, nhưng nếu 5% sai sót rơi đúng vào nhóm người dùng dễ tổn thương nhất, con số đó gần như vô nghĩa. Người có tư duy sản phẩm sẽ hỏi: ai đang dùng hệ thống này, sai ở đâu thì thiệt hại lớn nhất?\n\nBa câu hỏi toán học không trả lời được:\n\nBài toán này có thực sự cần AI, hay rule-based đơn giản đã đủ tốt và dễ giải thích hơn?\nSai ở đâu thì chấp nhận được? Gợi ý phim sai một lần không sao, nhưng bỏ sót gian lận giao dịch có thể gây thiệt hại nghiêm trọng.\nNgười dùng có tin và hiểu kết quả không? Model đúng nhưng khó hiểu thường bị bỏ qua.\n\nTư duy sản phẩm thay đổi cách làm kỹ thuật:\n\nChọn metric phù hợp ngữ cảnh, không chỉ accuracy, mà cả fairness, latency, precision/recall.\nThiết kế fallback: chuyển người xử lý, hiển thị độ tin cậy, hoặc từ chối trả lời thay vì đoán bừa.\nĐo tác động thực tế, không chỉ đo trên tập test, dữ liệu thật luôn khác dữ liệu huấn luyện.\n\nTư duy sản phẩm không thay thế kỹ năng kỹ thuật, mà bổ sung cho nó. Người làm AI giỏi thường hỏi \"tại sao\" trước khi hỏi \"làm thế nào\", hiểu vấn đề trước khi chọn giải pháp. Đó là lý do nó luôn đứng cạnh toán học và lập trình trong đào tạo AI Engineer nghiêm túc.",
+      "author": {
+        "id": "1393173434661343243",
+        "name": "lybii0674",
+        "discriminator": "0000",
+        "nickname": "T154 - Lê Thị Hải Yến - 01570",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1393173434661343243/6c5996770c985bcd6e5b68131ff2ba04.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1331185139723669558",
+              "name": "antsman306_91109",
+              "discriminator": "0000",
+              "nickname": "T154 - Dương Văn Vũ - 01663",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1331185139723669558/d01f059322af29085e6c80e578513268.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531155114570682569",
+      "type": "Default",
+      "timestamp": "2026-07-27T11:23:46.8+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đúng đúng",
+      "author": {
+        "id": "1159515762164244531",
+        "name": "tien_05371",
+        "discriminator": "0000",
+        "nickname": "G21 - T100 - Đặng Tiến Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1159515762164244531/473770a630b677f0e2b28fd0d4f97dbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

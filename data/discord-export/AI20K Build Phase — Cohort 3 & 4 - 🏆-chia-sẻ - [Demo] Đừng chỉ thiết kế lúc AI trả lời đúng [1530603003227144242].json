@@ -1,0 +1,95 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530603003227144242",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[Demo] Đừng chỉ thiết kế lúc AI trả lời đúng",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:19:51.7866166+07:00",
+  "messages": [
+    {
+      "id": "1530603003227144242",
+      "type": "Default",
+      "timestamp": "2026-07-25T22:49:53.198+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Khi demo một project AI, chúng ta thường chuẩn bị “happy path”: người dùng nhập đủ thông tin, AI hiểu đúng và trả về kết quả đẹp. Nhưng sản phẩm thực tế sẽ gặp những câu hỏi mơ hồ, dữ liệu thiếu, tài liệu lỗi thời và cả những câu trả lời nghe hợp lý nhưng sai.\n\nVì vậy, ngoài việc tối ưu để AI trả lời đúng, cần thiết kế cả cách hệ thống xử lý khi AI không chắc chắn hoặc mắc lỗi.\n\nMột luồng xử lý hợp lý có thể gồm:\n\n- **Phát hiện:** nhận ra input thiếu dữ kiện, nguồn không đáng tin hoặc yêu cầu nằm ngoài phạm vi.\n- **Điều hướng:** hỏi lại, đưa ra lựa chọn, yêu cầu phê duyệt hoặc chuyển cho con người.\n- **Phục hồi:** cho phép sửa, thử lại, hoàn tác hoặc quay về quy trình thủ công.\n- **Học hỏi:** ghi nhận việc người dùng chấp nhận, từ chối hay chỉnh sửa kết quả.\n\nTrước khi hoàn thành một project AI, hãy kiểm tra:\n\n- Người dùng có biết khi nào AI không chắc chắn không?\n- Họ có thể sửa kết quả mà không phải làm lại từ đầu không?\n- Hành động rủi ro có cần xem trước hoặc phê duyệt không?\n- Khi AI không xử lý được, có đường chuyển sang con người không?\n\nMột nút **Edit**, **Undo** hoặc **Report** đôi khi có giá trị hơn việc thêm một mô hình mới.\n\nSản phẩm AI đáng tin không cần hứa rằng AI sẽ không bao giờ sai. Điều quan trọng là khi AI sai, người dùng vẫn hiểu điều gì đang xảy ra, giữ được quyền kiểm soát và biết phải làm gì tiếp theo.",
+      "author": {
+        "id": "1503181245692252252",
+        "name": "hvnhan_relieq",
+        "discriminator": "0000",
+        "nickname": "T192 - Hoàng Văn Nhân - 01055",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1503181245692252252/3e3936bc58df5ed34fcabec65d7021d4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "560657339594702853",
+              "name": "biabeogo147",
+              "discriminator": "0000",
+              "nickname": "biabeogo147",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1503181245692252252",
+              "name": "hvnhan_relieq",
+              "discriminator": "0000",
+              "nickname": "T192 - Hoàng Văn Nhân - 01055",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1503181245692252252/3e3936bc58df5ed34fcabec65d7021d4.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

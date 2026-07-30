@@ -1,0 +1,277 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531484426255470823",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "\uD83D\uDCCC Tối ưu API call “luân phiên” nhưng chạy song song \uD83D\uDE80",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:08:26.74971+07:00",
+  "messages": [
+    {
+      "id": "1531484426255470823",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:12:20.824+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Có bao giờ bạn ngồi chờ web load dữ liệu... và thấy mình như đang “lão hóa” từng giây không?\nĐó là vì API call của bạn đang “đi bộ” từng cái một.\n\nHãy tưởng tượng:\nBạn gọi 5 món ở quán ăn.\nMột bếp trưởng giỏi sẽ biết phân chia công việc hợp lý cho các phụ bếp:\n\n• Món nướng cho đầu bếp A\n• Món xào cho đầu bếp B\n• Món tráng miệng cho đầu bếp C\n\nCác món được luân phiên phân công để nhiều người có thể làm song song cùng lúc.\nKết quả: mọi món ra bàn gần như cùng thời điểm, nóng hổi và nhanh chóng.\n\nLập trình cũng vậy.\nNếu bạn có nhiều API cần gọi, đừng xử lý tuần tự.\nHãy để chúng chạy đồng thời như một bếp trưởng chia task cho cả đội.\n\n\uD83D\uDCA1 Cách làm:\n\n• JavaScript → Promise.all()\n• Python → asyncio.gather()\n\nKết quả?\n\n⚡ Tốc độ xử lý nhanh hơn đáng kể\n\uD83D\uDCBB Giao diện phản hồi gần như tức thì\n\uD83D\uDE0E Và bạn trông như developer vừa “bẻ gãy” định luật thời gian\n\nChỉ một thay đổi nhỏ, nhưng đủ khiến người dùng “wow” với dự án của bạn.\n\nThử ngay hôm nay nhé!",
+      "author": {
+        "id": "805058036213350410",
+        "name": "baonguyen191",
+        "discriminator": "0000",
+        "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [
+        {
+          "id": "1531484426633216130",
+          "url": "https://cdn.discordapp.com/attachments/1531484426255470823/1531484426633216130/tSi10Ol05RdT7b7mOTHuGz2EVErfJfukK0izXxmdMlTOwMmOBWPkSelXH-zslKNwEIWrQy1C3NvCjj-rIfjZ_MmXppdY0eIpeTzJrbZk8g3kJkXZdMYf8-J9Z1hoqqu9q0Jv73jfixI1gSyTBfVnSCmk25UH3OYVzI-Km7mGWfEjq2GGF6MloMnvYTDqNeaL.jpg?ex=6a6c0484&is=6a6ab304&hm=8625cb205740496c65abafa981cc2aa1896968fa52a277c42e5ab1314f6df8b3&",
+          "fileName": "tSi10Ol05RdT7b7mOTHuGz2EVErfJfukK0izXxmdMlTOwMmOBWPkSelXH-zslKNwEIWrQy1C3NvCjj-rIfjZ_MmXppdY0eIpeTzJrbZk8g3kJkXZdMYf8-J9Z1hoqqu9q0Jv73jfixI1gSyTBfVnSCmk25UH3OYVzI-Km7mGWfEjq2GGF6MloMnvYTDqNeaL.jpg",
+          "fileSizeBytes": 54803
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "607559023805595653",
+              "name": "nson9116",
+              "discriminator": "0000",
+              "nickname": "baby dont hurt me",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+            },
+            {
+              "id": "698474313027682344",
+              "name": "nhat2kruoi",
+              "discriminator": "0000",
+              "nickname": "T060 - Lưu Quang Nhật",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+            },
+            {
+              "id": "805058036213350410",
+              "name": "baonguyen191",
+              "discriminator": "0000",
+              "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "855807068874342420",
+              "name": "thanhpro08",
+              "discriminator": "0000",
+              "nickname": "thanh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "859817112296751116",
+              "name": "davidkeleys6498",
+              "discriminator": "0000",
+              "nickname": "G7 - T065 - Trần Quí Đôn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        },
+        {
+          "id": "",
+          "name": "⚡",
+          "code": "zap",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDCBB",
+          "code": "computer",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4bb.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDE0E",
+          "code": "sunglasses",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f60e.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531484516210708652",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:12:42.271+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ x",
+      "author": {
+        "id": "855807068874342420",
+        "name": "thanhpro08",
+        "discriminator": "0000",
+        "nickname": "G17 - T192 - Nguyễn Tuấn Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531484609827569775",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:13:04.591+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hhay a ơi",
+      "author": {
+        "id": "859817112296751116",
+        "name": "davidkeleys6498",
+        "discriminator": "0000",
+        "nickname": "G7 - T065 - Trần Quí Đôn",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531485642381459486",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:17:10.771+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay quá ạ",
+      "author": {
+        "id": "698474313027682344",
+        "name": "nhat2kruoi",
+        "discriminator": "0000",
+        "nickname": "T060 - Lưu Quang Nhật",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531486082724663356",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:18:55.757+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tuyệt quá a",
+      "author": {
+        "id": "607559023805595653",
+        "name": "nson9116",
+        "discriminator": "0000",
+        "nickname": "T060 - Nguyễn Ngọc Sơn - 01948",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}

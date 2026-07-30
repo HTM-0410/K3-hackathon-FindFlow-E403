@@ -1,0 +1,120 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531294904481742981",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Caveman: Giảm nhiễu khi vibe coding với AI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:53:56.3083958+07:00",
+  "messages": [
+    {
+      "id": "1531294904481742981",
+      "type": "Default",
+      "timestamp": "2026-07-27T20:39:15.312+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hôm nay là Day 03. Mình được thầy giới thiệu repo Caveman, nên muốn chia sẻ nhanh về một vấn đề khá phổ biến khi vibe coding: AI làm được việc nhưng thường trả lời quá dài.\n\nCaveman là plugin dành cho các coding agent như Claude Code, Codex, Cursor hay Gemini CLI. Nó buộc AI trả lời ngắn, trực tiếp hơn nhưng vẫn giữ nguyên code, command, tên API và thông báo lỗi.\n\nGiá trị chính của Caveman không chỉ là giảm output token, mà còn giúp mình:\n\n- Đọc kết quả nhanh hơn.\n- Dễ tìm nguyên nhân và cách sửa lỗi.\n- Giảm nội dung dư thừa trong context.\n- Làm việc hiệu quả hơn với nhiều tool và subagent.\n\nRepo còn tích hợp các module như caveman-review cho code review, caveman-commit cho commit message, caveman-stats để thống kê token, caveman-compress để rút gọn file context và cavecrew cho các subagent có output ngắn.\n\nTóm lại, Caveman không làm AI thông minh hơn. Nó giúp AI nói ít hơn và tập trung hơn — một cải tiến nhỏ nhưng khá hữu ích trong các phiên vibe coding dài.\nhttps://github.com/JuliusBrussee/caveman",
+      "author": {
+        "id": "906049859713376308",
+        "name": "cavani4756",
+        "discriminator": "0000",
+        "nickname": "T090 - Nguyễn Văn Minh - 01972",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/906049859713376308/041d2f6eef44aba38f3017b053f56c03.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - JuliusBrussee/caveman: \uD83E\uDEA8 why use many token when few to...",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "timestamp": null,
+          "description": "\uD83E\uDEA8 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman - JuliusBrussee/caveman",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/7RIruyoFdVhCxmE2ZUjWtBgu23ASNlVegmqZGQmEZ8c/https/opengraph.githubassets.com/5ecf99e4a9b8a535bd27812323f5b4a1435ac576a1491fff6a3fe6584dfccb32/JuliusBrussee/caveman",
+            "canonicalUrl": "https://opengraph.githubassets.com/5ecf99e4a9b8a535bd27812323f5b4a1435ac576a1491fff6a3fe6584dfccb32/JuliusBrussee/caveman",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": [
+            {
+              "id": "",
+              "name": "\uD83E\uDEA8",
+              "code": "rock",
+              "isAnimated": false,
+              "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1faa8.svg"
+            }
+          ]
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "677173844590592004",
+              "name": "nhan02366",
+              "discriminator": "0000",
+              "nickname": "Nhân",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1337056589814698064",
+              "name": "abcxyz4691a",
+              "discriminator": "0000",
+              "nickname": "T118-Nguyễn Mạnh Hiệp — 01319",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1337056589814698064/2f462a794bcbfbe3ce5abc0d5f2a4800.png?size=512"
+            },
+            {
+              "id": "1529870723328381070",
+              "name": "quan_dev",
+              "discriminator": "0000",
+              "nickname": "T041 - Nguyễn Minh Quân - 01478",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

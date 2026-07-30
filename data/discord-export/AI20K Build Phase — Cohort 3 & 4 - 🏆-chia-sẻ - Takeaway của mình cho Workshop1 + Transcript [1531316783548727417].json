@@ -1,0 +1,133 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531316783548727417",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Takeaway của mình cho Workshop1 + Transcript",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:08:56.4223474+07:00",
+  "messages": [
+    {
+      "id": "1531316783548727417",
+      "type": "Default",
+      "timestamp": "2026-07-27T22:06:11.688+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**AI20K Workshop 01: Product Thinking - From Problem to MVP**\n\n**Thông điệp chính:**  \nAI giúp build nhanh hơn, nhưng không giúp chọn đúng vấn đề. Nếu problem sai, team chỉ đi sai nhanh hơn.\n\n**Framework:**  \n`Problem -> Persona -> AI Leverage -> MVP Scope -> Metric`\n\n- **Problem:** Đào sâu nguyên nhân gốc, không chỉ chữa triệu chứng.\n- **Persona:** Chọn một nhóm user đủ hẹp, không phải “tất cả mọi người”.\n- **AI Leverage:** AI phải giúp nhanh hơn, chính xác hơn hoặc cá nhân hóa hơn. AI không phải value proposition, user mua outcome.\n- **MVP:** Giữ lại tính năng nhỏ nhất để kiểm chứng core value. Cắt feature chỉ “nghe hay”.\n- **Metric:** Đo hành vi nhận value, không đo vanity metrics như download hay đăng ký.\n\n**Ví dụ HOCA:**  \nVấn đề không phải người học “lười”, mà là thiếu môi trường, động lực và accountability. MVP có thể chỉ gồm study room, camera-on/body doubling, Pomodoro và tracking phiên học.\n\n**Cách kiểm chứng:**  \n`Interview -> Concierge -> Wizard-of-Oz -> Prototype -> Pilot nhỏ`\n\n**5 nguyên tắc sống còn:**  \n1. Đừng bắt đầu bằng AI.  \n2. Đừng chọn đám đông làm persona.  \n3. Đừng build cả hệ sinh thái.  \n4. Đừng đo sự chú ý thay vì giá trị.  \n5. Đừng yêu solution hơn nỗi đau user.\n\n**Kết luận:**  \nÝ tưởng tốt không phải ý tưởng hoành tráng nhất. Đó là ý tưởng có thể kiểm chứng nhanh với user thật và data thật.",
+      "author": {
+        "id": "1529844266573238354",
+        "name": "lolavine777",
+        "discriminator": "0000",
+        "nickname": "T082 - Nguyễn Đăng Long - 01934",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531317155210072276",
+      "type": "Default",
+      "timestamp": "2026-07-27T22:07:40.299+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tài liệu ghi chép đầy đủ từ transcript + slide:",
+      "author": {
+        "id": "1529844266573238354",
+        "name": "lolavine777",
+        "discriminator": "0000",
+        "nickname": "T082 - Nguyễn Đăng Long - 01934",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531317155050684416",
+          "url": "https://cdn.discordapp.com/attachments/1531316783548727417/1531317155050684416/AI20K-Workshop-01-study-extraction.md?ex=6a6c117c&is=6a6abffc&hm=e2dd2f213f78b5df0a4b005a4e563a29d2127e66e638225ea3e9e93408f00214&",
+          "fileName": "AI20K-Workshop-01-study-extraction.md",
+          "fileSizeBytes": 13043
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531317349406216264",
+      "type": "Default",
+      "timestamp": "2026-07-27T22:08:26.599+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Transcript:",
+      "author": {
+        "id": "1529844266573238354",
+        "name": "lolavine777",
+        "discriminator": "0000",
+        "nickname": "T082 - Nguyễn Đăng Long - 01934",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531317348999500046",
+          "url": "https://cdn.discordapp.com/attachments/1531316783548727417/1531317348999500046/transcript_ws1.md?ex=6a6c11aa&is=6a6ac02a&hm=1381ff0540673b0bc306a5d948f07d4544b26b6c4122ddbb4b18de7ccabdf3aa&",
+          "fileName": "transcript_ws1.md",
+          "fileSizeBytes": 169724
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

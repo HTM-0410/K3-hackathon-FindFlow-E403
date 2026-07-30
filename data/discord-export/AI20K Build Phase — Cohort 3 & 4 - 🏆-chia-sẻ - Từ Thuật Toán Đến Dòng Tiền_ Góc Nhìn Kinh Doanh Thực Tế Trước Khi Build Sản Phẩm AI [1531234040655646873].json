@@ -1,0 +1,216 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531234040655646873",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Từ Thuật Toán Đến Dòng Tiền: Góc Nhìn Kinh Doanh Thực Tế Trước Khi Build Sản Phẩm AI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:09:52.2244609+07:00",
+  "messages": [
+    {
+      "id": "1531234040655646873",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:37:24.245+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bài viết này dựa trên thực tế và nhìn nhận từ chính doanh nghiệp mình đang làm, thông qua bài giảng của thầy Đức, mình không còn tự ti về việc mình là một người trái ngành chuyển sang công nghệ, đó có thể được coi là domain cho con đường sau này của mình. Cảm ơn mọi người",
+      "author": {
+        "id": "997107892253642782",
+        "name": "torung7036",
+        "discriminator": "0000",
+        "nickname": "T137-Trần Tuấn Trung-01769",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/997107892253642782/641e7aad0d7807b4328287ca5ea5f549.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531234041037066260",
+          "url": "https://cdn.discordapp.com/attachments/1531234040655646873/1531234041037066260/Tu_Thuat_Toan_en_Dong_Tien_Goc_Nhin_Kinh_Doanh_Thuc_Te_Truoc_Khi_Build_San_Pham_AI.docx?ex=6a6bc414&is=6a6a7294&hm=2f6d215047783db9c37f66c1c6b85cbd3cdbeb470b60ab11d63546212fd1a923&",
+          "fileName": "Tu_Thuat_Toan_en_Dong_Tien_Goc_Nhin_Kinh_Doanh_Thuc_Te_Truoc_Khi_Build_San_Pham_AI.docx",
+          "fileSizeBytes": 10899
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "678982833628250148",
+              "name": "heromine99",
+              "discriminator": "0000",
+              "nickname": "Karma",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+            },
+            {
+              "id": "690503871402868807",
+              "name": "thanhfdc",
+              "discriminator": "0000",
+              "nickname": "Công Thành",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+            },
+            {
+              "id": "708863923876528240",
+              "name": "khongphaiviet_",
+              "discriminator": "0000",
+              "nickname": "KhongPhaiViet",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/708863923876528240/132afe2a52023911d367835849a1cff9.png?size=512"
+            },
+            {
+              "id": "1029266627839135784",
+              "name": "dinhkhoa242",
+              "discriminator": "0000",
+              "nickname": "T137 - Trương Đình Khoa - 01297",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1029266627839135784/5455f294709497554ff699ecab674527.png?size=512"
+            },
+            {
+              "id": "1529717549716082728",
+              "name": "vutung0103",
+              "discriminator": "0000",
+              "nickname": "Vũ Tùng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531234432558563428",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:38:57.682+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hay quá anh ơi",
+      "author": {
+        "id": "678982833628250148",
+        "name": "heromine99",
+        "discriminator": "0000",
+        "nickname": "T137 - Lương Đăng Doanh - 01209",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531234499478687815",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:39:13.637+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "+1 in4 bổ X",
+      "author": {
+        "id": "690503871402868807",
+        "name": "thanhfdc",
+        "discriminator": "0000",
+        "nickname": "T230 - Diêm Công Thành - 01689",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/690503871402868807/381e0d0b08569de276282cb7dd5e9add.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531234982851379303",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:41:08.882+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn anh đã chia sẻ",
+      "author": {
+        "id": "1029266627839135784",
+        "name": "dinhkhoa242",
+        "discriminator": "0000",
+        "nickname": "T137 - Trương Đình Khoa - 01297",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1029266627839135784/5455f294709497554ff699ecab674527.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

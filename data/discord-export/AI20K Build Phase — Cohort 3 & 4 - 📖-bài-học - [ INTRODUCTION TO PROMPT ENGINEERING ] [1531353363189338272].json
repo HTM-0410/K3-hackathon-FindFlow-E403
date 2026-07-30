@@ -1,0 +1,86 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531353363189338272",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "[ INTRODUCTION TO PROMPT ENGINEERING ]",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:58.9750456+07:00",
+  "messages": [
+    {
+      "id": "1531353363189338272",
+      "type": "Default",
+      "timestamp": "2026-07-28T00:31:32.954+07:00",
+      "timestampEdited": "2026-07-28T00:32:03.798+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "#  PROMPT ENGINEERING\n\n**Prompt Engineering** là cách thiết kế câu lệnh để LLM hiểu đúng yêu cầu và tạo ra kết quả mong muốn. LLM dự đoán token tiếp theo dựa trên ngữ cảnh:\n\n**P(token tiếp theo | context)**\n\nVì vậy, prompt chính là context người dùng cung cấp. Prompt càng rõ ràng, mô hình càng ít phải đoán và càng giảm nguy cơ hallucination.\n\n## Công thức prompt cơ bản\n\n**[Role] + [Task] + [Context] + [Output Format]**\n\n## Các kỹ thuật quan trọng\n\n### 1. Zero-Shot\n\nChỉ đưa yêu cầu, không cung cấp ví dụ. Cách này nhanh nhưng khó kiểm soát định dạng, kết quả có thể không ổn định và mô hình dễ hiểu sai yêu cầu.\n\n### 2. Few-Shot\n\nCung cấp một vài ví dụ để AI nhận ra mẫu và định dạng mong muốn. Ví dụ, khi đã có:\n\n“Tôi rất buồn” → “Tiêu cực”\n\nmô hình sẽ dễ gán đúng nhãn cho câu mới. Trong nhiều trường hợp, ví dụ hiệu quả hơn một phần hướng dẫn dài.\n\n### 3. Chain-of-Thought\n\nYêu cầu mô hình suy luận từng bước thay vì đoán ngay đáp án. Các bước trung gian giúp giảm lỗi trong toán học, logic và nhiệm vụ nhiều bước.\n\nVí dụ:\n\n2 + 3 × 4\n→ 3 × 4 = 12\n→ 2 + 12 = 14\n\n### 4. Role Prompting\n\nGán vai trò phù hợp trước khi giao nhiệm vụ, chẳng hạn:\n\n“Bạn là senior software engineer, hãy review đoạn code sau.”\n\nRole giúp điều chỉnh giọng điệu, độ sâu và định dạng câu trả lời. Cần tránh role quá chung chung, không liên quan đến task hoặc chứa nhiều vai trò mâu thuẫn.\n\n## Các pattern thường dùng\n\n **Tóm tắt:** quy định độ dài, số ý và dạng bullet.\n **Phân tích:** yêu cầu nguyên nhân, hệ quả và giải pháp.\n **Sinh code:** chỉ định ngôn ngữ, comment, clean code và test.\n **Structured Output:** yêu cầu JSON với các trường cố định.\n\n## Nguyên lý vàng\n\n1. Specificity > Generality: càng cụ thể càng tốt.\n2. Constraint = Power: cần đặt ràng buộc để kết quả tốt hơn.\n3. Examples beat Instructions: ví dụ thường hiệu quả hơn giải thích.\n4. Decompose Problem: chia nhiệm vụ lớn thành các bước nhỏ.\n5. Iterate Prompt: thử, đánh giá và chỉnh sửa vì hiếm khi có prompt hoàn hảo ngay lần đầu.",
+      "author": {
+        "id": "815924497931567115",
+        "name": "chiencute9066",
+        "discriminator": "0000",
+        "nickname": "T028 - Trung Chiến - 01391",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/815924497931567115/631dc24f1b66734e4e3040578df78603.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "814350992249454622",
+              "name": "johnnyquynguyen",
+              "discriminator": "0000",
+              "nickname": "Duong Nguyen Quy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/814350992249454622/b65635f8f8d101d1ac3e11a302364d94.png?size=512"
+            },
+            {
+              "id": "815924497931567115",
+              "name": "chiencute9066",
+              "discriminator": "0000",
+              "nickname": "T028 - Trung Chiến - 01391",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/815924497931567115/631dc24f1b66734e4e3040578df78603.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

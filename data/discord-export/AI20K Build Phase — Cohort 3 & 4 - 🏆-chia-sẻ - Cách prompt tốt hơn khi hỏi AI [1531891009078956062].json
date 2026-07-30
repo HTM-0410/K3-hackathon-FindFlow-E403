@@ -1,0 +1,95 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531891009078956062",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Cách prompt tốt hơn khi hỏi AI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:20:12.4844999+07:00",
+  "messages": [
+    {
+      "id": "1531891009078956062",
+      "type": "Default",
+      "timestamp": "2026-07-29T12:07:57.723+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chia sẻ một chút về cách mình prompt AI khi code\nTrước đây mình hay hỏi AI khá ngắn kiểu:\n“Code cho tôi API login bằng FastAPI”\nAI vẫn code được, nhưng nhiều lúc kết quả không đúng structure project, dùng thư viện khác với mình hoặc viết xong lại phải sửa khá nhiều.\nSau một thời gian dùng ChatGPT, Claude, Cursor,... mình thấy prompt hiệu quả hơn khi có 4 phần:\nContext → Task → Constraints → Output\nVí dụ thay vì:\nFix code này giúp mình\nMình thường viết:\nMình đang làm FastAPI + PostgreSQL. Đây là service xử lý login. Hiện tại API trả về 500 khi user không tồn tại. Hãy tìm nguyên nhân và sửa, nhưng không thay đổi structure hiện tại. Giải thích nguyên nhân trước rồi mới đưa code cần sửa.\nMột tip nữa mình thấy khá hữu ích là đừng đưa cho AI quá nhiều việc trong một prompt.\nThay vì:\nĐọc project → tìm bug → refactor → viết test → tối ưu\nMình thường chia thành:\nHiểu code → tìm vấn đề → đề xuất cách sửa → sửa → test\nAI trả lời ổn định hơn khá nhiều.\nMọi người thường có template prompt nào khi code với AI không? Mình đang muốn tham khảo thêm.",
+      "author": {
+        "id": "1092693174704672798",
+        "name": "le198",
+        "discriminator": "0000",
+        "nickname": "T073 - Lê Trung Kiên - 01182",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1092693174704672798/dc4ec73c1454bfc859ab19f17a32d49b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "1092693174704672798",
+              "name": "le198",
+              "discriminator": "0000",
+              "nickname": "T073 - Lê Trung Kiên - 01182",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1092693174704672798/dc4ec73c1454bfc859ab19f17a32d49b.png?size=512"
+            },
+            {
+              "id": "1392890973616476160",
+              "name": "heheboi0909",
+              "discriminator": "0000",
+              "nickname": "Đậu Quốc Duy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1520438987473551476",
+              "name": "hoquangminh_ai20k",
+              "discriminator": "0000",
+              "nickname": "T073-Hồ Quang Minh-01906",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

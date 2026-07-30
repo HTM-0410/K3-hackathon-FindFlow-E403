@@ -1,0 +1,232 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531484388368318635",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Product Thinking trong AI: Sai không phải vì AI yếu, mà vì chọn sai Problem",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:08:09.7318638+07:00",
+  "messages": [
+    {
+      "id": "1531484388368318635",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:12:11.791+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trong quá trình phát triển các sản phẩm AI, nhiều người thường tập trung vào việc lựa chọn mô hình, tối ưu thuật toán hay thử nghiệm công nghệ mới. Tuy nhiên, theo tư duy **Product Thinking**, yếu tố quyết định thành công không nằm ở việc AI mạnh đến đâu mà ở việc sản phẩm có giải quyết đúng vấn đề của người dùng hay không. Một mô hình có độ chính xác cao nhưng giải quyết nhu cầu không quan trọng vẫn khó tạo ra giá trị, trong khi một giải pháp AI đơn giản nhưng xử lý đúng \"nỗi đau\" của người dùng lại có thể mang đến tác động lớn.\n\nProduct Thinking đề cao nguyên tắc **Problem First, Solution Later**. Trước khi ứng dụng AI, nhóm phát triển cần hiểu người dùng là ai, họ đang gặp khó khăn gì và vấn đề đó ảnh hưởng ra sao đến công việc hoặc cuộc sống. AI chỉ nên được xem là công cụ để giải quyết bài toán, không phải điểm khởi đầu của sản phẩm.\n\nMột sai lầm phổ biến là bắt đầu từ công nghệ rồi mới tìm bài toán phù hợp. Cách tiếp cận này dễ tạo ra những sản phẩm ấn tượng về kỹ thuật nhưng thiếu giá trị thực tế. Ngược lại, Product Thinking khuyến khích nghiên cứu người dùng, xác định vấn đề, đánh giá mức độ ảnh hưởng rồi mới lựa chọn giải pháp và công nghệ phù hợp.\n\nVí dụ, thay vì xây dựng chatbot AI chỉ vì xu hướng, nhóm phát triển có thể nhận thấy sinh viên mất nhiều thời gian tìm kiếm và lựa chọn tài liệu học tập. Khi xác định đúng vấn đề, AI có thể đề xuất lộ trình học và tổng hợp tài liệu phù hợp, giúp tiết kiệm thời gian và nâng cao hiệu quả. Giá trị người dùng nhận được không phải chatbot AI mà là giải pháp cho khó khăn thực tế.\n\nCó thể thấy, thành công của một sản phẩm AI không được quyết định bởi LLM, RAG hay AI Agent, mà bởi khả năng thấu hiểu người dùng và giải quyết đúng vấn đề. Trong Product Thinking, câu hỏi quan trọng nhất không phải là **\"Chúng ta có thể làm gì với AI?\"**, mà là **\"Người dùng đang gặp vấn đề gì và AI có phải là cách tốt nhất để giải quyết?\"**",
+      "author": {
+        "id": "698474313027682344",
+        "name": "nhat2kruoi",
+        "discriminator": "0000",
+        "nickname": "T060 - Lưu Quang Nhật",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "607559023805595653",
+              "name": "nson9116",
+              "discriminator": "0000",
+              "nickname": "baby dont hurt me",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+            },
+            {
+              "id": "698474313027682344",
+              "name": "nhat2kruoi",
+              "discriminator": "0000",
+              "nickname": "T060 - Lưu Quang Nhật",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+            },
+            {
+              "id": "805058036213350410",
+              "name": "baonguyen191",
+              "discriminator": "0000",
+              "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "855807068874342420",
+              "name": "thanhpro08",
+              "discriminator": "0000",
+              "nickname": "thanh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531484677624434759",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:13:20.755+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ x",
+      "author": {
+        "id": "805058036213350410",
+        "name": "baonguyen191",
+        "discriminator": "0000",
+        "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531484912308191344",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:14:16.708+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay b oi",
+      "author": {
+        "id": "607559023805595653",
+        "name": "nson9116",
+        "discriminator": "0000",
+        "nickname": "T060 - Nguyễn Ngọc Sơn - 01948",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531486840027353118",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:21:56.312+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ x qá ạ",
+      "author": {
+        "id": "859817112296751116",
+        "name": "davidkeleys6498",
+        "discriminator": "0000",
+        "nickname": "G7 - T065 - Trần Quí Đôn",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531486851746107563",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:21:59.106+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tuyệt  quá",
+      "author": {
+        "id": "855807068874342420",
+        "name": "thanhpro08",
+        "discriminator": "0000",
+        "nickname": "G17 - T192 - Nguyễn Tuấn Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}

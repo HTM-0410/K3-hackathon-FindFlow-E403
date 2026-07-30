@@ -1,0 +1,199 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531238336629309591",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "\uD83D\uDCCCTừ Bài Báo Nghiên Cứu Đến Thực Chiến: Lộ Trình Triển Khai & Tối Ưu Mô Hình AI Dành Cho Developer",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:09:29.5386812+07:00",
+  "messages": [
+    {
+      "id": "1531238336629309591",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:54:28.485+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người trong cộng đồng AI Thực Chiến!\n\nTrong quá trình nghiên cứu và phát triển các sản phẩm AI thực tế, mình nhận ra khoảng cách giữa kịch bản nghiên cứu (paper/benchmark) và sản phẩm chạy thực tế (production) là rất lớn. Bài báo có thể cho độ chính xác rất cao, nhưng khi đưa vào bài toán thực tế thì lại gặp các vấn đề kinh điển: latency cao, tốn tài nguyên, hoặc không scale được.\n\nHôm nay mình muốn chia sẻ một vài góc nhìn và kinh nghiệm thực chiến khi đóng gói một mô hình AI từ ý tưởng ban đầu thành sản phẩm chạy mượt mà:\n\n1. Chọn Tooling & AI Coding Workflow Phù Hợp\nKhông có AI mạnh nhất, chỉ có AI phù hợp nhất: Việc phối hợp giữa các trợ lý AI (như Claude Code, Antigravity, GitHub Copilot,...) giúp tăng tốc độ viết boilerplate code, refactor thuật toán và setup môi trường lên gấp nhiều lần.\n\nTự động hóa workflow: Tận dụng MCP (Model Context Protocol) và các script tự động để kết nối môi trường dev với terminal/API, giảm tối đa thao tác thủ công.\n\n2. Tối Ưu Thuật Toán & Benchmark Thực Tế\nĐừng chỉ tin vào kết quả trên dataset chuẩn. Việc thiết lập một benchmarking pipeline riêng cho bài toán của team là bắt buộc để đánh giá đúng thời gian chạy (execution time), bộ nhớ tiêu tốn và edge cases.\n\nVới các bài toán tối ưu hóa hoặc dự đoán phức tạp, phối hợp giữa Constraint Programming (như CP-SAT) và Machine/Deep Learning thường mang lại hiệu quả vượt trội hơn là phụ thuộc 100% vào một mô hình duy nhất.\n\n3. Đưa Lên Production & Hạ Tầng\nChuẩn hóa Codebase: Giữ cấu trúc thư mục rõ ràng, mô-đun hóa giữa phần xử lý dữ liệu (data pipeline), huấn luyện/suy luận (inference) và API layer.\n\nTận dụng Cloud & Data Pipeline: Xử lý dữ liệu lớn hiệu quả với các công dịch vụ lưu trữ & truy vấn cloud (S3, Athena,...) giúp hệ thống phản hồi nhanh và dễ mở rộng.\n\nRepo nổi tiếng hướng dẫn tự xây dựng, huấn luyện và tối ưu LLM từ con số 0 đến chạy thực tế: https://github.com/rasbt/LLMs-from-scratch",
+      "author": {
+        "id": "859817112296751116",
+        "name": "davidkeleys6498",
+        "discriminator": "0000",
+        "nickname": "G7 - T065 - Trần Quí Đôn",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - rasbt/LLMs-from-scratch: Implement a ChatGPT-like LLM in P...",
+          "url": "https://github.com/rasbt/LLMs-from-scratch",
+          "timestamp": null,
+          "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step - rasbt/LLMs-from-scratch",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/20exBW8xtJckR-G3Xsi7Oe6Wpoz65CnCfc5OLGZNHKM/https/repository-images.githubusercontent.com/669879380/79da1d51-4ef9-4733-a61c-1d7851020d9a",
+            "canonicalUrl": "https://repository-images.githubusercontent.com/669879380/79da1d51-4ef9-4733-a61c-1d7851020d9a",
+            "width": 1772,
+            "height": 900
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "678982833628250148",
+              "name": "heromine99",
+              "discriminator": "0000",
+              "nickname": "Karma",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+            },
+            {
+              "id": "805058036213350410",
+              "name": "baonguyen191",
+              "discriminator": "0000",
+              "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531238494251257956",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:55:06.065+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay quá anh ơii",
+      "author": {
+        "id": "805058036213350410",
+        "name": "baonguyen191",
+        "discriminator": "0000",
+        "nickname": "G9-T060-NguyễnNgọc Gia Bảo-01234",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531238536009748611",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:55:16.021+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ  x",
+      "author": {
+        "id": "855807068874342420",
+        "name": "thanhpro08",
+        "discriminator": "0000",
+        "nickname": "G17 - T192 - Nguyễn Tuấn Thành",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531238720898994328",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:56:00.102+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "đỉnh đỉnh",
+      "author": {
+        "id": "678982833628250148",
+        "name": "heromine99",
+        "discriminator": "0000",
+        "nickname": "T137 - Lương Đăng Doanh - 01209",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

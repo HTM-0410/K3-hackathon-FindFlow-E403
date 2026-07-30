@@ -1,0 +1,209 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531490593543553247",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "# Mẹo thực hiện Lab 3: Xây dựng ReAct Agent đúng cách và tránh những lỗi dễ mất điểm",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:07:08.214224+07:00",
+  "messages": [
+    {
+      "id": "1531490593543553247",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:36:51.22+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Lab 3 giúp chúng ta hiểu sự khác nhau giữa Chatbot và ReAct Agent. Chatbot chỉ tạo câu trả lời từ kiến thức có sẵn của LLM, còn ReAct Agent có thể suy luận, gọi công cụ và sử dụng kết quả thực tế để trả lời.\n\nLuồng chính cần nắm là:\n\nThought → Action → Observation → Final Answer\n\nĐầu tiên, hãy chạy thử repo bằng Mock Provider. Sau khi tạo môi trường ảo và cài thư viện, sửa file .env:\n\nLLM_PROVIDER=mock\n\nSau đó chạy:\n\npython src/app.py\n\nMock Provider giúp kiểm tra luồng chương trình trước khi sử dụng API key thật.\n\nKhi làm bài, cần hiểu nhiệm vụ của các file chính:\n\ntest_cases.json: chứa năm câu hỏi kiểm thử.\ntools.py: định nghĩa các công cụ như tra cứu thời tiết và chuyến bay.\nprompts.py: chứa prompt và giới hạn số vòng lặp.\napp.py: điều phối toàn bộ ReAct Agent.\ntrace_eval.md: lưu trace và đánh giá kết quả.\n\nMột mẹo quan trọng là hãy kiểm tra từng tool độc lập trước khi nối vào Agent. Tool phải có input, output rõ ràng và trả về thông báo lỗi thay vì làm chương trình bị crash. Các tool cũng cần được đăng ký trong AVAILABLE_TOOLS.\n\nĐiểm dễ bỏ sót nhất là run_react_agent() trong repo hiện mới là luồng minh họa, với Thought, Action và câu trả lời được viết cố định. Để hoàn thành đúng bài, cần nâng cấp thành vòng lặp thật:\n\nGửi câu hỏi cho LLM.\nNhận và phân tích Action.\nChạy đúng tool với đúng tham số.\nĐưa kết quả thành Observation.\nGửi Observation lại cho LLM.\nDừng khi nhận được Final Answer.\n\nLLM chỉ nên đề xuất Action; Observation phải do chương trình Python thực sự chạy tool tạo ra. Nếu để LLM tự viết Observation, dữ liệu vẫn có thể bị bịa.\n\nKhi kiểm thử, đừng chỉ nhìn câu trả lời cuối. Hãy kiểm tra Agent có chọn đúng tool, gọi đúng thứ tự, xử lý được tham số sai và dừng khi đạt MAX_ITERATIONS hay không. Cuối cùng, nhớ lưu một trace đầy đủ vào trace_eval.md và không đẩy file .env chứa API key lên GitHub.\n\nĐiều quan trọng nhất của Lab 3 là chứng minh Agent đã sử dụng đúng công cụ, có dữ liệu làm bằng chứng và xử lý lỗi an toàn.",
+      "author": {
+        "id": "846743153780064316",
+        "name": "htm04",
+        "discriminator": "0000",
+        "nickname": "T071 - Truong Minh Hoang - 02004",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "461100458786816032",
+              "name": "thiendz1ngaunhat",
+              "discriminator": "0000",
+              "nickname": "Thiendz1",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "576642492540387348",
+              "name": "hophamduclinh",
+              "discriminator": "0000",
+              "nickname": "Linhinthehood",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/576642492540387348/ab44e431e4b70de704179d0b9214e945.png?size=512"
+            },
+            {
+              "id": "846743153780064316",
+              "name": "htm04",
+              "discriminator": "0000",
+              "nickname": "T071 - Truong Minh Hoang - 02004",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1030659866081120346",
+              "name": "minhyeuem_",
+              "discriminator": "0000",
+              "nickname": "Đỗ Nhật Minh 2A202601085",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531494302037966940",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:51:35.394+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn ạ!",
+      "author": {
+        "id": "461100458786816032",
+        "name": "thiendz1ngaunhat",
+        "discriminator": "0000",
+        "nickname": "T071 - TranDucThien - 02032",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531534465216807105",
+      "type": "Default",
+      "timestamp": "2026-07-28T12:31:11.042+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bổ x",
+      "author": {
+        "id": "1030659866081120346",
+        "name": "minhyeuem_",
+        "discriminator": "0000",
+        "nickname": "T071 - Đỗ Nhật Minh - 01085",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531557988568142006",
+      "type": "Default",
+      "timestamp": "2026-07-28T14:04:39.446+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn b",
+      "author": {
+        "id": "576642492540387348",
+        "name": "hophamduclinh",
+        "discriminator": "0000",
+        "nickname": "G14 - T066 - Ho Pham Duc Linh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/576642492540387348/ab44e431e4b70de704179d0b9214e945.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

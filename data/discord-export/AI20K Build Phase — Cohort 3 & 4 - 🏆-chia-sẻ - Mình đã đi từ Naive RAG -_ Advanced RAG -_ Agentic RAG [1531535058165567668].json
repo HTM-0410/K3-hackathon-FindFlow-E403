@@ -1,0 +1,102 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531535058165567668",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Mình đã đi từ Naive RAG -> Advanced RAG -> Agentic RAG",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:21:07.6446593+07:00",
+  "messages": [
+    {
+      "id": "1531535058165567668",
+      "type": "Default",
+      "timestamp": "2026-07-28T12:33:32.412+07:00",
+      "timestampEdited": "2026-07-28T12:38:43.661+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình đã từng làm các dự án cá nhân Chatbot Tư vấn tuyển sinh, Chatbot Tư vấn pháp luật và Chatbot CSKH tại doanh nghiệp thực tế. Yêu cầu từng dự án cũng nâng cấp dần từ Chatbot có thể trả lời được -> Chatbot thông minh hơn rồi Chatbot giống người hơn.\n\nCác vấn đề mình  gặp phải và cách mình giải quyết: \n1. Data rác → Response cực kỳ kém\n+ Chuyển data phi cấu trúc về dạng có cấu trúc\n+ Dành thời gian hiểu data thật, không tin tưởng mù quáng vào pipeline\n+ Gắn metadata (ngày ban hành, hiệu lực...) để lọc tài liệu đưa vào làm context cho LLM\n\n2. Semantic search 100% vẫn retrieve sai\nSemantic search giỏi hiểu ý nghĩa nhưng kém khớp chính xác số liệu, mã, tên riêng. Hỏi \"Điều 38\" có khi trả về Điều 35, 36, 37 vì \"nghe gần nghĩa\".\n→ Chuyển sang hybrid search: semantic + keyword (BM25), hợp nhất kết quả theo thứ hạng.\n\n3. Chatbot trả lời... cực kỳ Bot\nCâu hỏi ngắn mà trả lời dài dòng, đầy đủ nhưng vô hồn, thiếu thông tin thì vẫn cố đoán để trả lời cho trọn vẹn. Mình dùng 4 kỹ thuật:\n+ Chunking theo lượt hội thoại: nếu có nhiều hơn 3 ý cần nói, chỉ trả phần khớp ngữ cảnh nhất trước, phần còn lại gợi ý hỏi thêm thay vì dồn hết vào 1 tin\n+ Hỏi lại nếu cần: chỉ hỏi khi thiếu thông tin bắt buộc (địa chỉ, mã đơn...), tối đa 1 câu/lượt\n+ Few-shot examples: đưa 2-3 mẫu giọng văn vào system prompt để model bắt chước đúng tông, không cần diễn giải dài dòng\n+ Conversation memory: short-term nhớ trong phiên hiện tại để không hỏi lại thứ khách vừa nói, long-term lưu ra DB để nhớ khách quen qua nhiều phiên khác nhau\n\n# Chatbot tốt lên không nhờ đổi kiến trúc cho xịn, mà nhờ nhìn đúng chỗ đang sai rồi vá đúng chỗ đó.\n\nRất mong được mọi người chia sẻ thêm các kiến thức để Chatbot thông minh hơn và giống người hơn. Xin cảm ơn mọi người!",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531535058463227904",
+          "url": "https://cdn.discordapp.com/attachments/1531535058165567668/1531535058463227904/image.png?ex=6a6c33ac&is=6a6ae22c&hm=d4ee4a2ab1cb66316a20efad82120b67ff60a98de73625bd41bd2d1f410bbb65&",
+          "fileName": "image.png",
+          "fileSizeBytes": 61984
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "571316617586278406",
+              "name": "danggojung",
+              "discriminator": "0000",
+              "nickname": "dagoustic",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/571316617586278406/a1a11735f895736d40ec9a8beafa1d64.png?size=512"
+            },
+            {
+              "id": "1001846191836901486",
+              "name": "minu_2k5",
+              "discriminator": "0000",
+              "nickname": "minu2k5",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+            },
+            {
+              "id": "1238124018834341968",
+              "name": "vuong0232_30712",
+              "discriminator": "0000",
+              "nickname": "G21 - T100 - Bùi Hoàng Vương",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

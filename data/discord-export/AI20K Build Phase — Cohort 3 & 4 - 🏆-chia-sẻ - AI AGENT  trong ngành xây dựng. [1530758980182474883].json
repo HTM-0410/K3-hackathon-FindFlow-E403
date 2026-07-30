@@ -1,0 +1,122 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530758980182474883",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "AI AGENT  trong ngành xây dựng.",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:15:10.0820686+07:00",
+  "messages": [
+    {
+      "id": "1530758980182474883",
+      "type": "Default",
+      "timestamp": "2026-07-26T09:09:41.002+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bên cạnh giáo dục, y tế hay tài chính, lĩnh vực xây dựng cũng có nhiều ứng dụng AI rất thú vị. Mình cập nhật từ một bài chia sẻ ở FB và muốn chia sẻ lại. AI Agent có thể đọc hồ sơ, bóc tách khối lượng, phân tích chi phí, kiểm tra BIM, theo dõi tiến độ, phát hiện rủi ro và tạo báo cáo hỗ trợ ra quyết định.\n1. Nhóm skill phục vụ trực tiếp cho các hoạt động hằng ngày của dự án xây dựng:\n– Lập báo cáo tiến độ hằng ngày\n– Phân tích năng suất và KPI dự án\n– Phát hiện xung đột mô hình BIM\n– Bóc khối lượng từ IFC\n– Phân tích ảnh tiến độ công trường\n– Chuyển đổi DWG, DGN, IFC, Revit và Excel\n– Dự toán chi phí từ BIM\n– Dự báo dòng tiền\n– Quản lý lệnh thay đổi\n– Theo dõi vật tư, bảo hành và bản vẽ hoàn công\nĐặc biệt, AI Agent phục vụ dự toán, bóc tách, lập định mức, mua sắm, phân tích hồ sơ thầu, tính rủi ro, trượt giá, WBS và tối ưu tổ đội thi công.\n\n2. Nhóm này cung cấp nền tảng để AI Agent không chỉ sử dụng công cụ mà còn hiểu cách tổ chức dữ liệu và quy trình chuyển đổi số trong xây dựng.\n– Xử lý silo dữ liệu\n– Chuẩn dữ liệu mở\n– Chuyển đổi PDF, CAD thành dữ liệu\n– Kiểm định chất lượng dữ liệu\n– QTO và dự toán tự động\n– BIM 4D và mô phỏng phát thải CO₂\n– Tích hợp ERP\n– Tự động hóa ETL\n– Tìm kiếm vector\n– Machine Learning dự báo chi phí\n– Xây dựng chiến lược trưởng thành số",
+      "author": {
+        "id": "596011773644111885",
+        "name": "callmebigbox",
+        "discriminator": "0000",
+        "nickname": "G13 - T171 -Nguyễn Tuấn Vũ-01666",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/596011773644111885/0babedd412f9b72025c1fb7f74ea9d69.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530758980459302994",
+          "url": "https://cdn.discordapp.com/attachments/1530758980182474883/1530758980459302994/IMG_3343.jpg?ex=6a6c03e5&is=6a6ab265&hm=e6305f39a1cee986fce68c357c71f9f4de787a0ad1f4ffe6923b3f8be6462493&",
+          "fileName": "IMG_3343.jpg",
+          "fileSizeBytes": 151252
+        },
+        {
+          "id": "1530758980769415239",
+          "url": "https://cdn.discordapp.com/attachments/1530758980182474883/1530758980769415239/IMG_3344.jpg?ex=6a6c03e5&is=6a6ab265&hm=e75d9fddea827907d9f035882a6fe82246a9b1a6bd9a2b4dd0e1f9690f12d50e&",
+          "fileName": "IMG_3344.jpg",
+          "fileSizeBytes": 125591
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "596011773644111885",
+              "name": "callmebigbox",
+              "discriminator": "0000",
+              "nickname": "G13 - T171 -Nguyễn Tuấn Vũ-01666",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/596011773644111885/0babedd412f9b72025c1fb7f74ea9d69.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530759030383837305",
+      "type": "Default",
+      "timestamp": "2026-07-26T09:09:52.971+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "3. Nhóm skill này tập trung vào cách đưa AI Agent vào môi trường vận hành thực tế:\n– Thiết kế AI Agent chuyên ngành\n– Xây dựng luồng tự động hóa bằng n8n\n– Tự động hóa công việc hiện trường\n– Quản lý an toàn và chất lượng\n– Minh bạch dữ liệu\n– Tối ưu tiến độ thi công\n\n4. AI Agent có thể hỗ trợ tạo và kiểm tra:\n– Hợp đồng và hồ sơ pháp lý\n– Báo cáo tài chính dự án\n– File PDF, Excel, Word và PowerPoint\n– Hồ sơ kiểm định dữ liệu\n– Prompt chuyên ngành\n– Quy trình QA trước khi phát hành tài liệu\n\nThay vì xây dựng một chatbot biết nhiều thứ nhưng làm việc không ổn định, doanh nghiệp có thể tạo một hệ thống AI Agent gồm: AI Agent + Skill + Dữ liệu + Công cụ + Quy trình kiểm soát\nMỗi skill giải quyết một nhiệm vụ cụ thể, có đầu vào, phương pháp xử lý, tiêu chuẩn đầu ra và bước kiểm tra chất lượng rõ ràng.\nĐây cũng là hướng đi phù hợp cho các doanh nghiệp xây dựng, tư vấn thiết kế, quản lý dự án, nhà thầu, đơn vị BIM và chủ đầu tư khi muốn triển khai AI một cách thực tế.\nBắt đầu từ việc doanh nghiệp biết đóng gói kinh nghiệm của mình thành các skill có thể tái sử dụng, kiểm soát và mở rộng.",
+      "author": {
+        "id": "596011773644111885",
+        "name": "callmebigbox",
+        "discriminator": "0000",
+        "nickname": "G13 - T171 -Nguyễn Tuấn Vũ-01666",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/596011773644111885/0babedd412f9b72025c1fb7f74ea9d69.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

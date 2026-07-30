@@ -1,0 +1,151 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530935624419512584",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[Chia sẻ] Các bộ skill mà mình dùng cho vibe coding hằng ngày",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:12:37.3366903+07:00",
+  "messages": [
+    {
+      "id": "1530935624419512584",
+      "type": "Default",
+      "timestamp": "2026-07-26T20:51:36.27+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trong workflow vibe coding hằng ngày, mình không chỉ prompt kiểu:\n\n> “Đọc codebase và làm feature này.”\n\nCách đó ổn với task nhỏ. Nhưng khi project lớn hơn, agent dễ hiểu sai requirement, quên quyết định cũ, sửa module này nhưng phá module khác hoặc báo xong khi chưa verify đầy đủ.\n\nĐây là lúc mình dùng **Agent Skill**. Agent Skill đóng gói một quy trình để agent làm việc nhất quán: hỏi requirement, nghiên cứu codebase, lập plan, viết test và review kết quả.\n\nHai bộ mình dùng nhiều:\n\n**1. Matt Pocock Skills**\nhttps://github.com/mattpocock/skills\n\nBộ này giống toolbox, có thể chọn từng skill theo task:\n\n* `grill-with-docs`: hỏi sâu requirement và lưu quyết định vào tài liệu. (Tuy nhiên bạn sẽ bị hỏi rất rất rất rất nhiều nha)\n* `to-spec`: biến trao đổi mơ hồ thành spec.\n* `to-tickets`: chia spec thành ticket và dependency.\n* `tdd`, `diagnosing-bugs`, `code-review`: giúp agent test, debug và review có phương pháp hơn.\n\nLợi ích lớn nhất không hẳn là code nhanh hơn, mà là giảm số lần agent “làm gần đúng”.\n\n**2. GSD**\nhttps://github.com/open-gsd/gsd-core\n\nGSD giống một framework quản lý toàn bộ workflow:\n\n**Discuss → Plan → Execute → Verify → Ship**\n\nNó phù hợp với project dài, codebase lớn, feature nhiều module hoặc nhiều phase. Thông tin quan trọng được lưu vào `STATE.md`, `CONTEXT.md`, spec và plan, giúp hạn chế context rot và không phụ thuộc hoàn toàn vào lịch sử chat. Tuy nhiên có một nhược điểm ở skill này là một phase sẽ tốn cực kì nhiều quota nhé\n\nTuy nhiên, Skill luôn có chi phí. Dùng GSD chỉ để sửa padding của một button hơi giống mở Jira và viết PRD cho một dòng CSS.\n\nWorkflow của mình thường là:\n\n**Prompt trực tiếp cho task nhỏ.\nDùng từng skill khi cần thêm kỷ luật.\nDùng GSD khi scope, dependency và context bắt đầu thành vấn đề.**\n\nAgent Skill không phải “prompt thần thánh” hay plugin tăng IQ. Nó chỉ là một quy trình tốt đã được đóng gói. Dùng đúng task, agent làm việc có phương pháp hơn. Dùng sai task, việc năm phút có thể thành nghi lễ engineering cả buổi.",
+      "author": {
+        "id": "725334723379068980",
+        "name": "hina845",
+        "discriminator": "0000",
+        "nickname": "T113 - Lương Minh Quân - 01308",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/725334723379068980/f978bc958d5c87bd32fc951f09966b0b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - mattpocock/skills: Skills for Real Engineers. Straight fro...",
+          "url": "https://github.com/mattpocock/skills",
+          "timestamp": null,
+          "description": "Skills for Real Engineers. Straight from my .agents directory. - mattpocock/skills",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/d-q6KWrdlqpeQF-BZNKPN580DHFZelu08wIxa4up_Rs/https/opengraph.githubassets.com/2eeecc15acecf877af1482f0fb9b2c3c681ce6f8784710450d6723955cb880b5/mattpocock/skills",
+            "canonicalUrl": "https://opengraph.githubassets.com/2eeecc15acecf877af1482f0fb9b2c3c681ce6f8784710450d6723955cb880b5/mattpocock/skills",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "GitHub - open-gsd/gsd-core: Git. Ship. Done - Core",
+          "url": "https://github.com/open-gsd/gsd-core",
+          "timestamp": null,
+          "description": "Git. Ship. Done - Core. Contribute to open-gsd/gsd-core development by creating an account on GitHub.",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/qG0MU-7QPLa2ptXQUfzv_bIvRQALAOkS7x3BTdUmUek/https/opengraph.githubassets.com/2fe4da3c44d4d687bcb92411361b87438a8504773db63f2edfc08b2439c885dd/open-gsd/gsd-core",
+            "canonicalUrl": "https://opengraph.githubassets.com/2fe4da3c44d4d687bcb92411361b87438a8504773db63f2edfc08b2439c885dd/open-gsd/gsd-core",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1324073297507520593",
+              "name": "nghiabeooo235",
+              "discriminator": "0000",
+              "nickname": "nhn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1324073297507520593/a1ddaa58a5ebfaf4e2e1cffcca359c98.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530936825265524776",
+      "type": "Default",
+      "timestamp": "2026-07-26T20:56:22.574+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ ích quá",
+      "author": {
+        "id": "1324073297507520593",
+        "name": "nghiabeooo235",
+        "discriminator": "0000",
+        "nickname": "T113 - Ngô Hữu Nghĩa - 01924",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1324073297507520593/a1ddaa58a5ebfaf4e2e1cffcca359c98.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

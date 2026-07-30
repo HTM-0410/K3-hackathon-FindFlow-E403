@@ -1,0 +1,77 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531355593548501103",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Tool Usage",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:53:28.5805893+07:00",
+  "messages": [
+    {
+      "id": "1531355593548501103",
+      "type": "Default",
+      "timestamp": "2026-07-28T00:40:24.713+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "LLM về bản chất là mô hình dự đoán token tiếp theo dựa trên đầu vào. Vì vậy, LLM không phù hợp để tự thực hiện các nhiệm vụ như tính toán phức tạp, lấy dữ liệu thời gian thực, đọc tệp, chạy code hoặc gọi API bên ngoài.\nMột AI Agent thường gồm:\n**Agent = LLM + Tool + Memory + Planner + Executor**\n\n## Tool Execution Loop\nQuy trình hoạt động:\n**User đặt câu hỏi → LLM phân tích → quyết định có cần tool không → gọi tool → tool trả kết quả → LLM đọc kết quả → trả lời user.**\nLLM không trực tiếp chạy function. Nó chỉ tạo yêu cầu gọi hàm, còn hệ thống Agent hoặc chương trình bên ngoài sẽ thực thi.\n\n## Tool Description và Tool Schema\nTool Description giúp LLM hiểu và chọn đúng công cụ. Một tool thường có:\n1. **Name:** tên ngắn gọn như `calculator`, `get_weather`.\n2. **Description:** giải thích tool làm gì, khi nào nên hoặc không nên dùng.\n3. **Parameters:** dữ liệu đầu vào và kiểu dữ liệu theo JSON Schema.\n4. **Output:** kết quả tool trả về.\nVí dụ:\n```json\n{\n  \"name\": \"calculator\",\n  \"description\": \"Solve mathematical expressions\",\n  \"parameters\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"expression\": {\"type\": \"string\"}\n    },\n    \"required\": [\"expression\"]\n  }\n}\n```\nKhi user yêu cầu tính `10 + 20`, LLM tạo tool call:\n```json\n{\n  \"name\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"10 + 20\"\n  }\n}\n```\nAgent thực hiện phép tính, nhận kết quả `30`, sau đó LLM trả lời user.\n\n## Naive và Parallel Tool Calling\n**Naive Thinking** gọi tool tuần tự, ví dụ lấy thời tiết Hà Nội rồi mới lấy thời tiết Tokyo. Cách này chậm.\n**Parallel Thinking** nhận ra các yêu cầu độc lập và gọi đồng thời:\n```json\n[\n  {\"name\": \"get_weather\", \"arguments\": {\"city\": \"Hanoi\"}},\n  {\"name\": \"get_weather\", \"arguments\": {\"city\": \"Tokyo\"}}\n]\n```\nCó thể dùng Multi-call hoặc Batch Tool để xử lý nhiều đầu vào cùng lúc.\nNguyên tắc: kiến thức và logic đơn giản dùng LLM; tính toán, dữ liệu thời gian thực, file và API nên dùng tool. Agent thông minh là Agent biết **khi nào cần và không cần gọi tool**.",
+      "author": {
+        "id": "815924497931567115",
+        "name": "chiencute9066",
+        "discriminator": "0000",
+        "nickname": "T028 - Trung Chiến - 01391",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/815924497931567115/631dc24f1b66734e4e3040578df78603.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "815924497931567115",
+              "name": "chiencute9066",
+              "discriminator": "0000",
+              "nickname": "T028 - Trung Chiến - 01391",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/815924497931567115/631dc24f1b66734e4e3040578df78603.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

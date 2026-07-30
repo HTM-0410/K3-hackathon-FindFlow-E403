@@ -1,0 +1,102 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531513561266782238",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Trí tuệ nhân tạo biên (Edge AI) là gì? (Các dạng bài có đầu DEV-xx)",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:17:40.6852658+07:00",
+  "messages": [
+    {
+      "id": "1531513561266782238",
+      "type": "Default",
+      "timestamp": "2026-07-28T11:08:07.152+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Dạo gần đây mình đọc được bài viết của Cisco về Edge AI (AI biên), thấy đáng chia sẻ vì nó đang âm thầm thay đổi cách nhiều thiết bị quanh ta ra quyết định, đồng thời cũng là chủ để chính của các bài toán có mã DEV-xx trong ngân hàng để của khóa mình. Tóm tắt nhanh:\n\nEDGE AI LÀ GÌ?\nLà việc xử lý dữ liệu ngay tại nơi dữ liệu sinh ra - trên chính thiết bị (camera, cảm biến, router, xe tự lái...) - thay vì gửi về cloud rồi mới xử lý. Nhờ vậy, quyết định được đưa ra nhanh hơn, đặc biệt hữu ích khi truyền dữ liệu đi xa tốn kém hoặc chậm.\n\nHOẠT ĐỘNG THẾ NÀO?\nEdge AI dùng học máy, mạng nơ-ron, học sâu để huấn luyện và chạy suy luận (inference) ngay trên thiết bị biên. Khi phát sinh vấn đề, dữ liệu được gửi lên cloud để huấn luyện lại, rồi mô hình mới thay thế mô hình cũ ở biên - giúp hệ thống cải thiện dần theo thời gian.\n\nTHÀNH PHẦN CHÍNH\n- Thiết bị biên: IoT, camera, cảm biến, xe tự lái...\n- Hạ tầng edge computing: xử lý dữ liệu tại chỗ, giảm phụ thuộc cloud.\n- Mô hình học máy đã huấn luyện sẵn, triển khai trên thiết bị.\n- Lọc/tiền xử lý dữ liệu: giữ dữ liệu tại chỗ, chỉ gửi lên cloud phần cần thiết.\n\nVÌ SAO ĐÁNG CHÚ Ý?\n- Độ trễ thấp, thời gian thực - quan trọng với xe tự lái, tự động hóa công nghiệp, thành phố thông minh.\n- Bảo mật, riêng tư tốt hơn - dữ liệu nhạy cảm không cần rời khỏi mạng nội bộ.\n- Giảm phụ thuộc cloud - tiết kiệm băng thông và chi phí vận hành.\n\nKHÁC GÌ AI TRÊN CLOUD?\nCloud AI xử lý tập trung, dễ gặp vấn đề độ trễ và chi phí khi dữ liệu lớn. Edge AI xử lý phi tập trung ngay trên thiết bị, nhanh và rẻ hơn, nhưng hiệu năng bị giới hạn bởi năng lực phần cứng của thiết bị đó.\n\nỨNG DỤNG THỰC TẾ\nThiết bị đeo, xe tự lái, camera an ninh, nhà thông minh - đều dùng Edge AI để phản hồi tức thời. Trong công nghiệp: bán lẻ (xe đẩy cảm biến, thanh toán thông minh), sản xuất (bảo trì dự đoán, kiểm soát chất lượng), năng lượng (dự đoán nhu cầu, lưới điện thông minh phát hiện bất thường theo thời gian thực).",
+      "author": {
+        "id": "1325354539574104145",
+        "name": "tdat_24340",
+        "discriminator": "0000",
+        "nickname": "G11 - T097 - Tiến Đạt - 01678",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1325354539574104145/b55d9d9abf0426e0b5f1aaff19c70be1.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531513561560518836",
+          "url": "https://cdn.discordapp.com/attachments/1531513561266782238/1531513561560518836/general-overview-of-the-edge-computing-architecture.png?ex=6a6c1fa7&is=6a6ace27&hm=de7600fcdaae38db9a642d9a17da492063806afe77c1485e40dff975b8afdfbe&",
+          "fileName": "general-overview-of-the-edge-computing-architecture.png",
+          "fileSizeBytes": 116930
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "607559023805595653",
+              "name": "nson9116",
+              "discriminator": "0000",
+              "nickname": "baby dont hurt me",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+            },
+            {
+              "id": "1052145593402793994",
+              "name": "huyle9346",
+              "discriminator": "0000",
+              "nickname": "huyle",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1052145593402793994/747e7a46cd1e933ab9e92d688513815a.png?size=512"
+            },
+            {
+              "id": "1325354539574104145",
+              "name": "tdat_24340",
+              "discriminator": "0000",
+              "nickname": "G11 - T097 - Tiến Đạt - 01678",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1325354539574104145/b55d9d9abf0426e0b5f1aaff19c70be1.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

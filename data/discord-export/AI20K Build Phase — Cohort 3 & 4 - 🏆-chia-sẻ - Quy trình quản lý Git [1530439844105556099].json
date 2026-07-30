@@ -1,0 +1,232 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530439844105556099",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Quy trình quản lý Git",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:16:57.7674788+07:00",
+  "messages": [
+    {
+      "id": "1530439844105556099",
+      "type": "Default",
+      "timestamp": "2026-07-25T12:01:33.032+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chào mọi người, sau buổi lab hôm qua, mình thấy nhiều bạn chưa quen quy trình quản lý Git nhóm. Do chúng ta không có quyền Admin/Owner để thiết lập Branch Protection hay đổi Default Branch, thao tác sai rất dễ đẩy code lỗi thẳng lên môi trường thực tế.\n\nĐể khắc phục, nhóm mình thống nhất áp dụng quy trình sau, chia sẻ để các bạn tham khảo:\n\n1. Phân tầng nhánh (Branching)\n\nrelease (Production): Chứa code hoàn chỉnh để deploy. TUYỆT ĐỐI KHÔNG commit, push hay tạo PR trực tiếp vào đây.\n\ndevelop (Staging): Môi trường chung. Code làm xong sẽ gộp vào đây để test.\n\nNhánh cá nhân: Bắt buộc tách từ develop.\n\nTính năng: <tên-người-làm>/feature/<tên-chức-năng> (VD: trongnd/feature/react-dashboard).\n\nSửa lỗi: bugfix/<tên-lỗi>.\n\n2. Quy trình code 5 bước hàng ngày\n\nĐồng bộ: Pull mã nguồn mới nhất từ develop về.\n\nTách nhánh: Tạo nhánh cá nhân từ develop.\n\nCode & Commit: Chia nhỏ task, commit thường xuyên với mô tả rõ ràng.\n\nXử lý Conflict: Pull nhánh develop về máy tính lần nữa để kiểm tra và tự sửa xung đột cục bộ.\n\nPush: Đẩy nhánh đã sạch conflict lên Git.\n\n3. Quy tắc Pull Request (PR)\n\nĐổi đích thủ công: Hệ thống thường tự đề xuất gộp PR vào nhánh gốc (release hoặc main). Bắt buộc phải tự chỉnh \"base branch\" (nhánh đích) thành develop.\n\nQuy tắc \"4 mắt\": Không ai được phép tự bấm gộp (Merge) code của chính mình. Phải tag một thành viên khác vào để review và merge giúp.",
+      "author": {
+        "id": "541201160565162024",
+        "name": "huaduyca",
+        "discriminator": "0000",
+        "nickname": "G15-T088-Nguyễn Duy Trọng",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/541201160565162024/3a14598303475130622b9fcabf4b5e01.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 7,
+          "users": [
+            {
+              "id": "541201160565162024",
+              "name": "huaduyca",
+              "discriminator": "0000",
+              "nickname": "G15-T088-Nguyễn Duy Trọng",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/541201160565162024/3a14598303475130622b9fcabf4b5e01.png?size=512"
+            },
+            {
+              "id": "700136910030635068",
+              "name": "dog.renkyu",
+              "discriminator": "0000",
+              "nickname": "Renkyu",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "805815688244887622",
+              "name": "chungnguyen1083064",
+              "discriminator": "0000",
+              "nickname": "Chungnguyen108",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1015897618003542037",
+              "name": "kyanlulww",
+              "discriminator": "0000",
+              "nickname": "Kyanlulww",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1015897618003542037/030f8bfb3bf35147c66ea4cf78142516.png?size=512"
+            },
+            {
+              "id": "1163468384256659547",
+              "name": "30_ngovannam_13838",
+              "discriminator": "0000",
+              "nickname": "T088 - Ngô Văn Nam - 01340",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1489160785031729332",
+              "name": "vunt2",
+              "discriminator": "0000",
+              "nickname": "ntv2714",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1489160785031729332/fa4b41adc185201f7b870a98aa1943ee.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530471175103320164",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:06:02.924+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDCAF",
+      "author": {
+        "id": "738413553417191545",
+        "name": "youngs3108",
+        "discriminator": "0000",
+        "nickname": "T100 - Nguyễn Đức Đạt - 01633",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/738413553417191545/f87378f20d3cb19331ac67dafa7bf681.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "541201160565162024",
+              "name": "huaduyca",
+              "discriminator": "0000",
+              "nickname": "G15-T088-Nguyễn Duy Trọng",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/541201160565162024/3a14598303475130622b9fcabf4b5e01.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCAF",
+          "code": "100",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4af.svg"
+        }
+      ]
+    },
+    {
+      "id": "1530480514715353178",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:43:09.661+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "mọi người nếu như cần có thể viết ticket nhờ admin chuyển default branch sang nhánh muốn dùng để deploy sản phẩm phát triển ( như của mình là develop ) thì khi tạo PR sẽ tự trỏ về nhánh đó luôn không cần setting lại trên web nữa nhé.",
+      "author": {
+        "id": "541201160565162024",
+        "name": "huaduyca",
+        "discriminator": "0000",
+        "nickname": "G15-T088-Nguyễn Duy Trọng",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/541201160565162024/3a14598303475130622b9fcabf4b5e01.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530480514308374568",
+          "url": "https://cdn.discordapp.com/attachments/1530439844105556099/1530480514308374568/image.png?ex=6a6c520d&is=6a6b008d&hm=8bbf36e139e1baaa71ab489b050897e4f6a1aa01a4e002034e12d60ec650c997&",
+          "fileName": "image.png",
+          "fileSizeBytes": 989387
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

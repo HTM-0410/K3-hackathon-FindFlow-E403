@@ -1,0 +1,95 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1532208172993871989",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Bài Học Về Làm Team Và Xây Dựng Ý Tưởng",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:19:13.0989411+07:00",
+  "messages": [
+    {
+      "id": "1532208172993871989",
+      "type": "Default",
+      "timestamp": "2026-07-30T09:08:15.493+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bài viết chia sẻ góc nhìn thực tế từ kinh nghiệm chinh chiến qua 7 cuộc thi Hackathon của tác giả. Mặc dù xuất thân từ ngành Marketing và Phân tích thị trường, tác giả đã rút ra 6 bài học quan trọng về cách xây dựng ý tưởng và quản trị con người:\n\n1. Bắt đầu từ “cơn đau” (pain point) của người dùng:\n\n- Thay vì nghĩ ra một ý tưởng rồi cố gắng tìm cách áp nó vào thực tế, hãy xuất phát từ vấn đề/khó khăn thực sự mà người dùng gặp phải. Từ đó mới xây dựng giải pháp phù hợp để giải quyết dứt điểm điểm đau đó.\n\n2. Đừng đặt nặng tính nguyên bản (originality):\n\n- Hầu hết các ý tưởng bạn nghĩ ra đều có thể đã từng tồn tại. Thay vì tốn quá nhiều thời gian đi tìm một ý tưởng hoàn toàn mới, hãy tập trung cải tiến dựa trên nền tảng sẵn có hoặc tìm ra cách ứng dụng độc đáo hơn.\n\n3. Học cách gạn lọc và buông bỏ ý tưởng:\n\n- Khi mỗi thành viên đều có nhiều ý tưởng sáng giá, nhóm cần phải thu hẹp phạm vi. Lựa chọn ý tưởng dựa trên 2 tiêu chí: giải quyết được nhiều bài toán/yêu cầu của ban tổ chức nhất, và phù hợp nhất với năng lực/thời gian thực thi của đội ngũ trong 48 giờ.\n\n4. Muốn chiêu mộ nhân tài, hãy “khoe khoang” một chút:\n\n- Trong các buổi networking tìm đồng đội, hãy chủ động giới thiệu về bản thân, trưng bày portfolio hoặc dự án đã làm. Sự chủ động thể hiện năng lực giúp bạn dễ dàng thu hút những đồng đội phù hợp về tính cách và chuyên môn.\n\n5. Hackathon không phải sàn đấu của riêng Developer:\n\n- Một đội hình lý tưởng để chinh chiến Hackathon không nên chỉ toàn lập trình viên mà cần sự kết hợp hài hòa từ 4 nhóm vai trò: Business Guy (Kinh doanh), Developer (Lập trình), Designer (Thiết kế), và Expert (Chuyên gia/Cố vấn).\n\n6. Bài thuyết trình có thể định đoạt nhiều thứ:\n\n- Một ý tưởng hay nhưng không được trình bày tốt sẽ khó thuyết phục ban giám khảo. Bài thuyết trình cần chuẩn bị kỹ lưỡng về tính thực tế, chiến lược phát triển, mô hình tài chính/doanh thu và kế hoạch vận hành.",
+      "author": {
+        "id": "461100458786816032",
+        "name": "thiendz1ngaunhat",
+        "discriminator": "0000",
+        "nickname": "T071 - TranDucThien - 02032",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "461100458786816032",
+              "name": "thiendz1ngaunhat",
+              "discriminator": "0000",
+              "nickname": "T071 - TranDucThien - 02032",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "820279880054865921",
+              "name": "noxxsanl",
+              "discriminator": "0000",
+              "nickname": "Noxxsanl",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/820279880054865921/93f8acd1d60a3e26b3a7890967e6ae0e.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

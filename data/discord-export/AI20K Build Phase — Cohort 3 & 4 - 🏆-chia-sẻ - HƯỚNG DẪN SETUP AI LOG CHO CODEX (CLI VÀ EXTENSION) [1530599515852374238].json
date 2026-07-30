@@ -1,0 +1,111 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530599515852374238",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "HƯỚNG DẪN SETUP AI LOG CHO CODEX (CLI VÀ EXTENSION)",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:15:57.0950447+07:00",
+  "messages": [
+    {
+      "id": "1530599515852374238",
+      "type": "Default",
+      "timestamp": "2026-07-25T22:36:01.743+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình sử dụng Codex mà không thấy lưu lại AI Log. Sau một hồi mày mò thì mình cũng đã fix được. Mình muốn chia sẻ cho mọi người gặp trường hợp giống mình.\n\n## BƯỚC 1: HOÀN THÀNH SETUP MÔI TRƯỜNG VÀ CÀI AI LOGGING HOOKS\n\nCác bước này đã có hướng dẫn rất đầy đủ rồi, mình sẽ không nói thêm. Sau khi chạy xong lệnh:\n\n```bash\nbash scripts/setup_hooks.sh\n```\n\nthì chuyển sang bước tiếp theo.\n\n---\n\n## BƯỚC 2: CẬP NHẬT FILE `.codex/hooks.json`\n\nThay toàn bộ nội dung file `.codex/hooks.json` bằng:\n\n```json\n{\n  \"description\": \"AI20K AI usage logging\",\n  \"hooks\": {\n    \"UserPromptSubmit\": [\n      {\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"bash scripts/_pyrun.sh scripts/log_hook.py --tool=codex\",\n            \"timeout\": 10\n          }\n        ]\n      }\n    ],\n    \"Stop\": [\n      {\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"bash scripts/_pyrun.sh scripts/log_hook.py --tool=codex\",\n            \"timeout\": 10\n          }\n        ]\n      }\n    ]\n  }\n}\n```\n\n---\n\n## BƯỚC 3: TRUST HOOKS TRONG CODEX\n\n### Với Codex CLI\n\n* Chạy lệnh:\n\n  ```\n  /hooks\n ```\n* Review và **Trust** cả **2 hook** được đọc từ `.codex/hooks.json`.\n\n### Với Codex Extension (VS Code)\n\n* Vào **Codex Settings → Hooks**.\n* **Trust** cả **2 hook** tương ứng.\n\n---\n\n## Bước 4: Kiểm tra\n\n* Reload lại cửa sổ VS Code (hoặc khởi động lại Codex CLI nếu cần).\n* Chat thử với Codex.\n* Kiểm tra xem file:\n\n```\n.ai-log/session.jsonl\n```\n\nđã bắt đầu ghi log hay chưa.\n\nHy vọng sẽ giúp được anh em nào đang gặp đúng lỗi này.",
+      "author": {
+        "id": "972049240245284904",
+        "name": "photanh",
+        "discriminator": "0000",
+        "nickname": "T036 - Phó Viết Tiến Anh - 01341",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/972049240245284904/9f6a9a2058b1dbffc5cc0a6d74ef76cc.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1530599516787445841",
+          "url": "https://cdn.discordapp.com/attachments/1530599515852374238/1530599516787445841/Screenshot_20260725_091558.png?ex=6a6c1821&is=6a6ac6a1&hm=0da587727297af7e3b1cf7a93ba102029685dfa6dd3e53c3b6f5dd05ef85f4ed&",
+          "fileName": "Screenshot_20260725_091558.png",
+          "fileSizeBytes": 53793
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "571316617586278406",
+              "name": "danggojung",
+              "discriminator": "0000",
+              "nickname": "dagoustic",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/571316617586278406/a1a11735f895736d40ec9a8beafa1d64.png?size=512"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "926442990816346113",
+              "name": "nhuyhoan2004",
+              "discriminator": "0000",
+              "nickname": "Ngô Huy Hoàn",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/926442990816346113/a53c1ff2720e700907e0725fd3d5f2bd.png?size=512"
+            },
+            {
+              "id": "1317685215266607104",
+              "name": "khongcomatkhau_14",
+              "discriminator": "0000",
+              "nickname": "OwO",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

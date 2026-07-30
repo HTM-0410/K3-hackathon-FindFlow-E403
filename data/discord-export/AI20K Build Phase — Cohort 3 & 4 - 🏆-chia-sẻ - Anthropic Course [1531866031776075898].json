@@ -1,0 +1,158 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531866031776075898",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Anthropic Course",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:20:16.2835323+07:00",
+  "messages": [
+    {
+      "id": "1531866031776075898",
+      "type": "Default",
+      "timestamp": "2026-07-29T10:28:42.67+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Anthropic đã xây dựng và chia sẻ một bộ khóa học miễn phí rất đồ sộ, bao quát gần như toàn bộ hệ sinh thái AI. Một vài khóa học nổi bật bao gồm\n\n\uD83D\uDCCC Claude Code: tự động hóa quy trình làm việc bằng CLI\n\uD83D\uDCCC MCP Mastery: xây dựng tool và resource tùy chỉnh bằng Python\n\uD83D\uDCCC API: hướng dẫn đầy đủ về backend của Anthropic\n\uD83D\uDCCC AI Fluency: các framework để cộng tác với AI an toàn và hiệu quả\n\uD83D\uDCCC Claude 101: các tính năng cốt lõi cho công việc hằng ngày\nMn có thể truy cập trong liên kết sau: \nLink: https://anthropic.skilljar.com/",
+      "author": {
+        "id": "1169894248796131401",
+        "name": "dinhhoang171",
+        "discriminator": "0000",
+        "nickname": "T114 - Nguyễn Đình Hoàng - 01436",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1169894248796131401/0463dd652b602446a5868b8c328fe843.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531866032166277351",
+          "url": "https://cdn.discordapp.com/attachments/1531866031776075898/1531866032166277351/download.jpg?ex=6a6c166a&is=6a6ac4ea&hm=c0e1d5104a1ca2c75bd2864f227e3d41b3b3e2fff92ba4da2adc231e7294d42e&",
+          "fileName": "download.jpg",
+          "fileSizeBytes": 7156
+        }
+      ],
+      "embeds": [
+        {
+          "title": "Anthropic Courses",
+          "url": "https://anthropic.skilljar.com/",
+          "timestamp": null,
+          "description": "Browse all Anthropic courses",
+          "image": {
+            "url": "https://images-ext-1.discordapp.net/external/fd6ZVs309TFA4nhDKAyN1x4nU0sQUD--Y3upuIhgxGI/https/cc.sj-cdn.net/instructor/4hdejjwplbrm-anthropic/catalog_page/33z62i4zzunao/tile-image.1750175621.png",
+            "canonicalUrl": "https://cc.sj-cdn.net/instructor/4hdejjwplbrm-anthropic/catalog_page/33z62i4zzunao/tile-image.1750175621.png",
+            "width": 2400,
+            "height": 1260
+          },
+          "images": [
+            {
+              "url": "https://images-ext-1.discordapp.net/external/fd6ZVs309TFA4nhDKAyN1x4nU0sQUD--Y3upuIhgxGI/https/cc.sj-cdn.net/instructor/4hdejjwplbrm-anthropic/catalog_page/33z62i4zzunao/tile-image.1750175621.png",
+              "canonicalUrl": "https://cc.sj-cdn.net/instructor/4hdejjwplbrm-anthropic/catalog_page/33z62i4zzunao/tile-image.1750175621.png",
+              "width": 2400,
+              "height": 1260
+            }
+          ],
+          "fields": [],
+          "inlineEmojis": []
+        },
+        {
+          "title": "",
+          "url": "https://anthropic.skilljar.com/",
+          "timestamp": null,
+          "description": "",
+          "image": {
+            "url": "https://images-ext-1.discordapp.net/external/a9nvMEbYZPbUmJCREU7w9v6Ry83HqmPxBUK1yp7IXo8/https/cdn.sanity.io/images/4zrzovbb/website/c4bd33e7c8e809a2f9a9a5896ee13961e2a738ec-2400x1260.png",
+            "canonicalUrl": "https://cdn.sanity.io/images/4zrzovbb/website/c4bd33e7c8e809a2f9a9a5896ee13961e2a738ec-2400x1260.png",
+            "width": 2400,
+            "height": 1260
+          },
+          "images": [
+            {
+              "url": "https://images-ext-1.discordapp.net/external/a9nvMEbYZPbUmJCREU7w9v6Ry83HqmPxBUK1yp7IXo8/https/cdn.sanity.io/images/4zrzovbb/website/c4bd33e7c8e809a2f9a9a5896ee13961e2a738ec-2400x1260.png",
+              "canonicalUrl": "https://cdn.sanity.io/images/4zrzovbb/website/c4bd33e7c8e809a2f9a9a5896ee13961e2a738ec-2400x1260.png",
+              "width": 2400,
+              "height": 1260
+            }
+          ],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1169894248796131401",
+              "name": "dinhhoang171",
+              "discriminator": "0000",
+              "nickname": "T114 - Nguyễn Đình Hoàng - 01436",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1169894248796131401/0463dd652b602446a5868b8c328fe843.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1169894248796131401",
+              "name": "dinhhoang171",
+              "discriminator": "0000",
+              "nickname": "T114 - Nguyễn Đình Hoàng - 01436",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1169894248796131401/0463dd652b602446a5868b8c328fe843.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCCC",
+          "code": "pushpin",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4cc.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

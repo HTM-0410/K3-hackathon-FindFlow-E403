@@ -1,0 +1,77 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1532246096527622164",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "BẠN ĐANG “LÀM CHỦ AI” HAY “LẠM DỤNG AI”?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:53:13.7866168+07:00",
+  "messages": [
+    {
+      "id": "1532246096527622164",
+      "type": "Default",
+      "timestamp": "2026-07-30T11:38:57.168+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình có một người bạn sử dụng AI gần như trong mọi việc: từ lập trình, giải quyết công việc cho đến những câu hỏi rất đơn giản như hôm nay ăn gì, đi đâu hay nên lựa chọn thế nào.\nBan đầu, mình thấy đó là cách tận dụng công nghệ rất thông minh. Nhưng dần dần, mình nhận ra một điều đáng lo: khi việc gì cũng hỏi AI, chúng ta có thể vô tình đánh mất khả năng tự suy nghĩ và chính kiến của mình.\nAI có thể phân tích dữ liệu, đưa ra gợi ý và giúp chúng ta nhìn thấy nhiều góc độ hơn. Nhưng AI không sống cuộc đời của chúng ta. Nó không hiểu hoàn toàn cảm xúc, hoàn cảnh, giá trị hay những điều chúng ta thực sự mong muốn.\nDùng AI để hỗ trợ suy nghĩ là làm chủ AI.\nĐể AI suy nghĩ và quyết định thay mình là lạm dụng AI.\nĐiều đáng sợ không phải là AI ngày càng thông minh, mà là con người dần trở nên lười suy nghĩ. Nếu mọi câu trả lời đều đến từ máy móc, đến một lúc nào đó, liệu chúng ta còn biết mình thực sự thích gì, tin vào điều gì và muốn sống như thế nào?",
+      "author": {
+        "id": "756385200413474898",
+        "name": "quyenla4838",
+        "discriminator": "0000",
+        "nickname": "T017 - La Thế Quyền - 01699",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1027430024447541268",
+              "name": "truong.an.coder",
+              "discriminator": "0000",
+              "nickname": "Fizz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1027430024447541268/79bfe570e9fdca6eb25c35fe80a4d78e.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

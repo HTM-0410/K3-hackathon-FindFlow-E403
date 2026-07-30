@@ -1,0 +1,55 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530564946570510418",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Find new members?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:18:14.6861874+07:00",
+  "messages": [
+    {
+      "id": "1530564946570510418",
+      "type": "Default",
+      "timestamp": "2026-07-25T20:18:39.784+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tìm đồng đội không phải là tìm người giỏi nhất, mà là tìm người có thể cùng nhau đi đến cuối hành trình.\n\nLà một thành viên từng tham gia quản lý các dự án, mình luôn khuyên các đội dành thời gian cho việc xây team ngay từ đầu. Một sản phẩm tốt không được tạo nên bởi những cá nhân xuất sắc đứng riêng lẻ, mà bởi một tập thể có chung mục tiêu, biết lắng nghe, tôn trọng và sẵn sàng hỗ trợ nhau.\n\nĐừng chỉ hỏi: \"Bạn code được gì?\" hay \"Bạn đã làm dự án nào?\". Hãy hỏi thêm:\n\nBạn có thể dành bao nhiêu thời gian cho dự án?\nĐiều gì khiến bạn muốn tham gia?\nKhi gặp bất đồng, bạn thường giải quyết như thế nào?\nBạn muốn học được gì sau hành trình này?\n\nKỹ năng có thể cải thiện trong vài tuần hoặc vài tháng, nhưng thái độ, tinh thần trách nhiệm và sự cam kết mới là yếu tố quyết định một đội có thể đi xa hay không.\n\nChúc các bạn sớm tìm được những người đồng đội phù hợp. Một team gắn kết sẽ luôn mạnh hơn một tập hợp những cá nhân giỏi nhưng thiếu sự đồng hành. Chúc mọi người có một hành trình thật đáng nhớ và tạo ra những sản phẩm mang lại giá trị thực sự!\nCảm ơn mọi người đã đọc :))",
+      "author": {
+        "id": "1509890551334305904",
+        "name": "samsamsam0905_13163",
+        "discriminator": "0000",
+        "nickname": "G13-T020-Nguyễn Văn Tuấn Anh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1509890551334305904/c442a1bbd1c984ea832bd3bd81922471.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

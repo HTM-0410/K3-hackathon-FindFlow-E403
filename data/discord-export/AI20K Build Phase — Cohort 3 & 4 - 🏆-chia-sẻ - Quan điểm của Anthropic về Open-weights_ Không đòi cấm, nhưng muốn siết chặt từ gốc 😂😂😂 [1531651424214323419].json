@@ -1,0 +1,102 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531651424214323419",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Quan điểm của Anthropic về Open-weights: Không đòi cấm, nhưng muốn siết chặt từ gốc \uD83D\uDE02\uD83D\uDE02\uD83D\uDE02",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:20:00.0066028+07:00",
+  "messages": [
+    {
+      "id": "1531651424214323419",
+      "type": "Default",
+      "timestamp": "2026-07-28T20:15:56.24+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hello mọi người, mấy hôm nay thấy nhiều người đồn đoán Anthropic đang vận động hành lang để cấm các mô hình open-weights nhằm bảo vệ chén cơm. CEO Dario Amodei vừa phải lên tiếng đính chính bằng một báo cáo khá dài. Mình tóm tắt lại các điểm chính với một chút góc nhìn thực tế để mọi người cùng đánh giá.\n * **Không hề có lệnh cấm:** Việc cấm open-weights là tin đồn thất thiệt \uD83D\uDE45‍♂️. Anthropic khẳng định các mô hình mở không chứa rủi ro nghiêm trọng là một tài sản công có giá trị. Lệnh cấm sử dụng open-weights đối với các doanh nghiệp hoàn toàn không giải quyết được bài toán an ninh mà chỉ mang tính chất bảo hộ cạnh tranh.\n * **Mối lo thực sự nằm ở cấp độ vĩ mô hơn:** Điều họ e ngại là việc các hệ thống AI bị lợi dụng để phát triển vũ khí sinh học hoặc quân sự hóa bởi các tổ chức độc tài ⚠️. Đối với rủi ro này thì mô hình đóng hay mở cũng đều gặp nguy hiểm như nhau.\n * **Ba giải pháp thực tế được đề xuất:** Thay vì cấm đoán, Anthropic đưa ra ba hướng tiếp cận cốt lõi:\n   * Siết chặt nguồn cung chip tính toán hiệu năng cao \uD83D\uDCBB.\n   * Đánh mạnh vào các hệ thống \"chưng cất\" (distillation) quy mô công nghiệp đang cố tình bòn rút chất xám từ các model hàng đầu.\n   * Bắt buộc kiểm thử an toàn đối với tất cả các mô hình có năng lực lớn trước khi tung ra thị trường \uD83D\uDEE1️.\n * **Mã nguồn mở không tự động giải quyết bài toán bảo mật:** Báo cáo phản bác luận điểm cho rằng open-weights luôn giúp phe phòng thủ mạnh lên. Trong các lĩnh vực như công nghệ sinh học, một AI đủ mạnh có thể giúp kẻ tấn công vũ khí hóa mầm bệnh rất nhanh, trong khi phe thủ phải mất nhiều năm mới tìm ra giải pháp \uD83E\uDDA0.\nTóm lại là Anthropic muốn kiểm soát rủi ro thông qua phần cứng và quy trình kiểm thử thay vì triệt hạ các mô hình nguồn mở. Nếu quy trình kiểm thử này thực sự được áp dụng, mọi người nghĩ nó sẽ làm chậm tiến độ ra mắt các mô hình open-source mạnh đến mức nào, và liệu chi phí triển khai các coding agent nội bộ có bị đội lên không? \uD83E\uDD14\nCre: https://www.anthropic.com/news/position-open-weights-models",
+      "author": {
+        "id": "1108061338044993607",
+        "name": "phongqk226",
+        "discriminator": "0000",
+        "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Our position on open-weights models",
+          "url": "https://www.anthropic.com/news/position-open-weights-models",
+          "timestamp": null,
+          "description": "Anthropic CEO Dario Amodei on open-weights models",
+          "color": "#141413",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/1D6S1M9a2fWp_ja758BZTWcz7HQqWoQ2Pet6wGsWDhE/https/cdn.sanity.io/images/4zrzovbb/website/62993bb857986e2808c2a75024f384e7b85312b6-2400x1254.png",
+            "canonicalUrl": "https://cdn.sanity.io/images/4zrzovbb/website/62993bb857986e2808c2a75024f384e7b85312b6-2400x1254.png",
+            "width": 2400,
+            "height": 1254
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1030659866081120346",
+              "name": "minhyeuem_",
+              "discriminator": "0000",
+              "nickname": "Đỗ Nhật Minh 2A202601085",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83E\uDD14",
+          "code": "thinking",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f914.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

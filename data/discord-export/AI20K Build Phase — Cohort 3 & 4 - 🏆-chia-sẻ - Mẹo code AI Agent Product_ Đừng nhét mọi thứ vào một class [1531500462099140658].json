@@ -1,0 +1,118 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531500462099140658",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Mẹo code AI Agent Product: Đừng nhét mọi thứ vào một class",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:07:38.8095128+07:00",
+  "messages": [
+    {
+      "id": "1531500462099140658",
+      "type": "Default",
+      "timestamp": "2026-07-28T10:16:04.067+07:00",
+      "timestampEdited": "2026-07-28T10:16:37.687+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Khi mới làm AI Agent, mình thấy nhiều bạn hay tạo một class `Agent` rồi cho hết mọi thứ vào đó: gọi LLM, gọi tool, tìm dữ liệu, lưu database, xử lý lỗi, ghi log... Làm demo thì cách này khá nhanh. Nhưng khi project lớn dần, class đó rất dễ phình ra, khó test và sửa một chỗ lại sợ ảnh hưởng chỗ khác.\nThực tế, nên nhìn Agent như một luồng xử lý, kiểu như thế này: \n\n> Input → Kiểm tra dữ liệu → Tìm context → Gọi LLM → Kiểm tra lại → Trả kết quả\n\nMỗi bước nên tách thành một function nhỏ. Như vậy khi Agent trả lời sai, mình còn biết lỗi nằm ở input, retrieval, prompt hay model. OOP vẫn dùng bình thường, nhưng nên dùng đúng chỗ. Những thứ như LLM client, retriever, database hay API client thường phù hợp với class. Còn đoạn nào chỉ nhận dữ liệu, xử lý rồi trả kết quả thì function thường gọn hơn.\nCó thể nhớ đơn giản là\n> Có state riêng hoặc nhiều cách triển khai thì dùng class.\n> Chỉ xử lý dữ liệu thì ưu tiên function.\n\nNgoài ra thì `State` cũng là phần khá quan trọng. Nó giữ input, dữ liệu đã tìm được, kết quả tạm, lỗi và các thông tin trong lúc Agent chạy. Nhờ vậy hệ thống dễ log, debug, retry và kiểm tra lại quá trình xử lý.\n\nMột lỗi phổ biến khác là cái gì cũng gọi LLM. Nhưng những việc như validate schema, kiểm tra dữ liệu thiếu, so sánh số hay áp dụng rule thì code thông thường thường làm tốt hơn.Nếu LLM không mang lại hiệu quả rõ rệt so với code thường thì không nên dùng, gây tốn kém.\n Tức là LLM chỉ nên đặt ở những phần thật sự cần hiểu ngôn ngữ, tổng hợp tài liệu, chọn tool hoặc giải thích kết quả. Và gọi xong vẫn nên có bước kiểm tra lại.\n\nVì vậy, một AI Agent Product thực tế không chỉ có thư mục `agents/`. Nó vẫn là một hệ thống backend với workflow, tools, prompts, database, tests và evaluations.\nCuối cùng, Agent tốt không phải Agent có nhiều class hay nhiều agent con nhất. Quan trọng là code có tách rõ trách nhiệm, có test được và khi chạy sai thì biết sai ở đâu. Nhiều khi, AI Agent chỉ là một backend được tổ chức tử tế, trong đó LLM được đặt đúng chỗ",
+      "author": {
+        "id": "908979326752522270",
+        "name": "thanh042440",
+        "discriminator": "0000",
+        "nickname": "T117 - Liên Thành - 01790",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/908979326752522270/5ea578a8fc87aee045d9ca3018a87fbf.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "670145855587876874",
+              "name": "_nguyentruong",
+              "discriminator": "0000",
+              "nickname": "trườngNgủYêu",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/670145855587876874/a7258882363e2bc44c5f2be147cea0e8.png?size=512"
+            },
+            {
+              "id": "993520344616935484",
+              "name": "thd4tt",
+              "discriminator": "0000",
+              "nickname": "thdat",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/993520344616935484/48c8a812ae4f0f747f96c1878df2a6a5.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531576199115964567",
+      "type": "Default",
+      "timestamp": "2026-07-28T15:17:01.179+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ each",
+      "author": {
+        "id": "993520344616935484",
+        "name": "thd4tt",
+        "discriminator": "0000",
+        "nickname": "G07-T117-Ngô Thành Đạt",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/993520344616935484/48c8a812ae4f0f747f96c1878df2a6a5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

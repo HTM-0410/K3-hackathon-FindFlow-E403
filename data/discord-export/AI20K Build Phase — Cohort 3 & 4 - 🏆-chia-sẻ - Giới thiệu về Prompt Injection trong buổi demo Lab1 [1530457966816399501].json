@@ -1,0 +1,849 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530457966816399501",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Giới thiệu về Prompt Injection trong buổi demo Lab1",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:13:05.707463+07:00",
+  "messages": [
+    {
+      "id": "1530457966816399501",
+      "type": "Default",
+      "timestamp": "2026-07-25T13:13:33.823+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hôm qua trong buổi demo bài Lab 1, mình thấy lớp thử \"hack\" con LLM bằng chiêu \"đào lửa\" nó. Thực ra đó là kỹ thuật tấn công có thật — **Prompt Injection** — top 1 trong OWASP Top 10 for LLM Applications (LLM01:2025).\n\n**Prompt Injection là gì?** Là kỹ thuật khiến AI làm việc ngoài ý muốn người thiết kế, bằng cách chèn một chỉ dẫn giả vào nơi AI tưởng là dữ liệu cần xử lý. AI làm theo vì nó không phân biệt được đâu là lệnh gốc, đâu là dữ liệu đọc thêm.\n\n**Vì sao đứng top 1?**\n- LLM không có ranh giới giữa \"lệnh\" và \"dữ liệu\" — cả hai đi chung một chuỗi văn bản, mô hình không tự phân biệt được. Đây là hạn chế kiến trúc, không phải bug có thể vá dứt điểm.\n- Dễ khai thác — chỉ cần ngôn ngữ tự nhiên, không cần biết code. Khi LLM nối với tool/RAG, bề mặt tấn công càng rộng.\n\n**Còn nếu là Agent hoặc AGI?** Khi LLM được giao quyền hành động thật (gọi API, thao tác hệ thống), một lần mất kiểm soát do injection không dừng ở \"trả lời sai\" mà thành hậu quả thật.\n\n**Giải pháp?** Không chặn được 100% vì injection khai thác chính cách LLM vận hành. Nền tảng là **Zero Trust** — coi mọi input là chưa đáng tin. Cụ thể hoá bằng **Guardrails**: một lớp kiểm tra độc lập, đứng ngoài LLM chính, chặn input trước khi vào model và output trước khi ra người dùng.\n\nGuardrail thế hệ mới dùng **mô hình NLP nhỏ, chạy nhanh** làm bộ lọc riêng (khác LLM chính, chỉ vài chục–vài trăm triệu tham số):\n- Classifier phát hiện injection/jailbreak (ví dụ dòng model DeBERTa nhỏ chuyên biệt cho việc này).\n- Topical/Relevance check — đo input/output có còn liên quan đúng chủ đề ứng dụng hay không (so sánh ngữ nghĩa), không cần biết chiêu cụ thể là gì. Bot ngân hàng bị hỏi chuyện không liên quan (bàn chuyện chính trị, xin system prompt...) sẽ bị gắn cờ vì lệch domain, bất kể chiêu gì.\n\nVẫn có false positive, và đây là một lớp trong nhiều lớp, không phải giải pháp toàn diện một mình.",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "471331498314956820",
+              "name": "_nguyenthang",
+              "discriminator": "0000",
+              "nickname": "T048 — Nguyễn Thắng — 01163",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+            },
+            {
+              "id": "695651549128556654",
+              "name": "mychos",
+              "discriminator": "0000",
+              "nickname": "MyChos",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/695651549128556654/6b59541001e353650a58056a1c952ca2.png?size=512"
+            },
+            {
+              "id": "781928455947157574",
+              "name": "phong2004",
+              "discriminator": "0000",
+              "nickname": "Phong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/781928455947157574/4029c9a9b2e0df11945611ccf253f583.png?size=512"
+            },
+            {
+              "id": "954174468132053033",
+              "name": "vodaothe3585",
+              "discriminator": "0000",
+              "nickname": "G03 - T017 - Trần Huy Hoàng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1528989895857668106",
+              "name": "cgdd_67287",
+              "discriminator": "0000",
+              "nickname": "cgdd",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530458366474715136",
+      "type": "Default",
+      "timestamp": "2026-07-25T13:15:09.109+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Vì văn mình non + bị giới hạn ký tự từ post nên đây là bản tóm tắt cắt xén từ AI nhé mọi người \uD83E\uDD79",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530458666606792746",
+      "type": "Default",
+      "timestamp": "2026-07-25T13:16:20.666+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ông  bạn cũng thử prompt injection con LLM à ? =))",
+      "author": {
+        "id": "954174468132053033",
+        "name": "vodaothe3585",
+        "discriminator": "0000",
+        "nickname": "G03 - T017 - Trần Huy Hoàng",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530459340647960626",
+      "type": "Reply",
+      "timestamp": "2026-07-25T13:19:01.37+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "mình thấy đây là vấn đề thật sự có impact lớn khi phát triển lên Agent và AGI nên có nghiên cứu nhiều tí.\nMình có một số thử nghiệm thành công như bắt Meta AI code mô hình Transformer hay kêu Chatbot hỏi đáp của Vietjet đi viết code <(\")",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "954174468132053033",
+              "name": "vodaothe3585",
+              "discriminator": "0000",
+              "nickname": "G03 - T017 - Trần Huy Hoàng",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "954174468132053033",
+          "name": "vodaothe3585",
+          "discriminator": "0000",
+          "nickname": "G03 - T017 - Trần Huy Hoàng",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530458666606792746",
+        "channelId": "1530457966816399501",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530459985014689792",
+      "type": "Default",
+      "timestamp": "2026-07-25T13:21:34.999+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hình như chatbot của VietJet phát triển bởi  VinBrain hay VinBigdata nếu mình nhớ không nhầm.\nĐợt mở devtool lên soi source thấy họ để cả nghìn dòng filter cho input prompt :v",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530460635304038542",
+      "type": "Default",
+      "timestamp": "2026-07-25T13:24:10.04+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "=)) trước tôi cũng hay nghịch mấy con chatbot của các bên công ty thì phải công nhận là prompt injection họ cũng làm kỹ thật",
+      "author": {
+        "id": "954174468132053033",
+        "name": "vodaothe3585",
+        "discriminator": "0000",
+        "nickname": "G03 - T017 - Trần Huy Hoàng",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530460659727470652",
+      "type": "Default",
+      "timestamp": "2026-07-25T13:24:15.863+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "+1 tym cho ông nhé",
+      "author": {
+        "id": "954174468132053033",
+        "name": "vodaothe3585",
+        "discriminator": "0000",
+        "nickname": "G03 - T017 - Trần Huy Hoàng",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1001846191836901486",
+              "name": "minu_2k5",
+              "discriminator": "0000",
+              "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530461995424415778",
+      "type": "Default",
+      "timestamp": "2026-07-25T13:29:34.318+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thông tin thêm cho anh em là cũng đang có 1 cuộc thi trên Kaggle về cái này á. Anh em rảnh tay có thể tham gia thử https://www.kaggle.com/competitions/ai-agent-security-multi-step-tool-attacks",
+      "author": {
+        "id": "471331498314956820",
+        "name": "_nguyenthang",
+        "discriminator": "0000",
+        "nickname": "T048 — Nguyễn Thắng — 01163",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "AI Agent Security - Multi-Step Tool Attacks",
+          "url": "https://www.kaggle.com/competitions/ai-agent-security-multi-step-tool-attacks",
+          "timestamp": null,
+          "description": "Develop attack algorithms to identify reproducible multi-step failures in tool-using AI agents.",
+          "color": "#008ABC",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE2E",
+            "code": "open_mouth",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f62e.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "471331498314956820",
+              "name": "_nguyenthang",
+              "discriminator": "0000",
+              "nickname": "T048 — Nguyễn Thắng — 01163",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+            },
+            {
+              "id": "738413553417191545",
+              "name": "youngs3108",
+              "discriminator": "0000",
+              "nickname": "T100 - Nguyễn Đức Đạt - 01633",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/738413553417191545/f87378f20d3cb19331ac67dafa7bf681.png?size=512"
+            },
+            {
+              "id": "1001846191836901486",
+              "name": "minu_2k5",
+              "discriminator": "0000",
+              "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530464327587332217",
+      "type": "Default",
+      "timestamp": "2026-07-25T13:38:50.349+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "KKK thanks ông nhé để tôi join thử xem thế nào",
+      "author": {
+        "id": "954174468132053033",
+        "name": "vodaothe3585",
+        "discriminator": "0000",
+        "nickname": "G03 - T017 - Trần Huy Hoàng",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE06",
+            "code": "laughing",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f606.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "471331498314956820",
+              "name": "_nguyenthang",
+              "discriminator": "0000",
+              "nickname": "T048 — Nguyễn Thắng — 01163",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530474718765781046",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:20:07.799+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Nói thật là LLM decoder-only (kiểu GPT, tức là hầu hết các LLM hiện tại ấy, encoder-only là kiểu BERT rồi), mình nghĩ là tránh được prompt injection do kiến trúc và tính chất của LLM là gần như không thể, ngay cả ở mức tốt cũng khó nữa.\n\nThì về lí do trong kiến trúc LLM khiến nó rất khó phòng tránh prompt inject, thứ nhất mình nghĩ kiến trúc nó không có phân loại các loại input khác nhau, đến mức cả ảnh, audio,... đều convert về dạng token (khác với text thì thường nó dùng một encoder không phải chỉ tokenizer) như text cho vào hết input của LLM. \n\nHơn nữa, cách LLM nó học instruction là từ quá trình pre-training + fine-tuning từ RLHF/DPO, nó không deterministic hay verifiable như rule-based system hay mấy ML model đơn giản hơn (kiểu decision tree hay SVM ấy), với LLM thì chỉ cần thay đổi từ ngữ, ngôn ngữ, câu trúc prompt,... là đã có thể ảnh hưởng tới LLM nhận biết các thành phần trong prompt rồi. \n\nCộng thêm việc là LLM thì rất dễ để inject hidden features (kiểu mấy cái quy tắc mà con người không nghĩ tới hoặc bỏ qua, mà model lại học trong quá trình training mà rất khó nhận biết) vào nhiều lớp/thành phần trong model của nó (gần đây nếu ai có nghe nói SynthID của Google cái mà cho phép \"dán nhãn\" text, video,... của AI ấy thì nó là kiểu inject hidden features để thay đổi vào quá trình chọn token output từ output của hidden layer dẫn đến xác suất chọn token của model thay đổi sao cho detector của SynthID có thể nhận biết), nên attacker có thể inject hidden features mà người thường với các guardrail không biết nhưng attention LLM lại nghĩ prompt đó có instruction nào đó mà attacker muốn (mặc dù thực sự không có trong prompt) để compromise system prompt và thực hiện prompt injection.",
+      "author": {
+        "id": "1050354288892846112",
+        "name": "keikikinky",
+        "discriminator": "0000",
+        "nickname": "T213 - Khang - 01101",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530474996013465682",
+      "type": "Default",
+      "timestamp": "2026-07-25T14:21:13.9+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cái này là theo mình nghĩ thế thôi, chứ mình không biết hay học chuyên sâu về deep learning và kiến trúc LLM",
+      "author": {
+        "id": "1050354288892846112",
+        "name": "keikikinky",
+        "discriminator": "0000",
+        "nickname": "T213 - Khang - 01101",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530487358669979668",
+      "type": "Reply",
+      "timestamp": "2026-07-25T15:10:21.387+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn Khang đã cung cấp thêm góc nhìn.\nBài post này mình làm trong context của Lab 1 nên chưa mở rộng sang Multimodel LLM (và kiến thức mình cũng chưa đạt tới đây ;-;)\n\nBạn phân tích cách LLM học theo phi tuyến và thay đổi dựa theo từ ngữ, ngôn ngữ, cấp trúc prompt, ... là đúng, nhưng cũng không hẳn. Token vẫn phải qua quá trình embedding để biểu diễn ngữ nghĩa trong latent space. Nên vector của nó vẫn sẽ có hướng nhất định, điều này dẫn đến nhận biết được input prompt hướng đến mục tiêu nào.\n\nỞ ý cuối của bạn thì nó hướng đến Adversarials attack, Backdoor attack, Data Poisoning. Tuy nó by pass được là đúng, nhưng nó vượt phạm trù và không còn là kỹ thuật Prompt Injection. \n\nAnyways, cảm hơn bạn đã cho mình thêm động lực để nghiên cứu nhiều hơn về chủ đề này. Vấn đề Prompt injection vẫn đang là bài toán chưa có giải pháp triệt để. Guardrails được mình giới thiệu vì nó là một trọng tài đứng ngoài LLM chính và hoạt động tốt về hiệu năng (vì nhỏ gọn, có thể tiết kiệm token hoặc chạy local).\nNếu các bạn có biết thêm về giải pháp chống Prompt Injection nào thì hãy cùng chia sẻ nhé.",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1050354288892846112",
+          "name": "keikikinky",
+          "discriminator": "0000",
+          "nickname": "T213 - Khang - 01101",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530474718765781046",
+        "channelId": "1530457966816399501",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530488157370585098",
+      "type": "Default",
+      "timestamp": "2026-07-25T15:13:31.812+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình thì chưa học nhiều kiến thức về NLP và vẫn đang trong quá trình học hỏi, rất vui nếu nhận được những phản hồi đóng góp ạ",
+      "author": {
+        "id": "1001846191836901486",
+        "name": "minu_2k5",
+        "discriminator": "0000",
+        "nickname": "T203-Nguyễn Hoàng Bảo Minh-01626",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1001846191836901486/484340da1ea53bfa3583a4d7fc8f242a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1015897618003542037",
+              "name": "kyanlulww",
+              "discriminator": "0000",
+              "nickname": "Kyanlulww",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1015897618003542037/030f8bfb3bf35147c66ea4cf78142516.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530491871896272907",
+      "type": "Reply",
+      "timestamp": "2026-07-25T15:28:17.424+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "=)) uầy để tgia thử",
+      "author": {
+        "id": "781928455947157574",
+        "name": "phong2004",
+        "discriminator": "0000",
+        "nickname": "T062 - Hà Tấn Phong - 01577",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/781928455947157574/4029c9a9b2e0df11945611ccf253f583.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDD23",
+            "code": "rofl",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f923.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "471331498314956820",
+              "name": "_nguyenthang",
+              "discriminator": "0000",
+              "nickname": "T048 — Nguyễn Thắng — 01163",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "471331498314956820",
+          "name": "_nguyenthang",
+          "discriminator": "0000",
+          "nickname": "T048 — Nguyễn Thắng — 01163",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530461995424415778",
+        "channelId": "1530457966816399501",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530915905545175190",
+      "type": "Reply",
+      "timestamp": "2026-07-26T19:33:14.924+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "lập team kaggle không bro ?",
+      "author": {
+        "id": "471331498314956820",
+        "name": "_nguyenthang",
+        "discriminator": "0000",
+        "nickname": "T048 — Nguyễn Thắng — 01163",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "781928455947157574",
+          "name": "phong2004",
+          "discriminator": "0000",
+          "nickname": "T062 - Hà Tấn Phong - 01577",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/781928455947157574/4029c9a9b2e0df11945611ccf253f583.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1530491871896272907",
+        "channelId": "1530457966816399501",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 15
+}

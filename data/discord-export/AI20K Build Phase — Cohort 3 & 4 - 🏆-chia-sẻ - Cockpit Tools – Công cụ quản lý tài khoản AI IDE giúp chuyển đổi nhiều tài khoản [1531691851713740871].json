@@ -1,0 +1,168 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531691851713740871",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Cockpit Tools – Công cụ quản lý tài khoản AI IDE giúp chuyển đổi nhiều tài khoản",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:21:56.046526+07:00",
+  "messages": [
+    {
+      "id": "1531691851713740871",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:56:34.907+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## 1. Cockpit Tools là gì?\n\n**Cockpit Tools** là một ứng dụng desktop mã nguồn mở dùng để quản lý nhiều tài khoản của các công cụ AI hỗ trợ lập trình trong cùng một giao diện.\n\nTheo tài liệu chính thức của dự án, Cockpit Tools hiện hỗ trợ các nền tảng như:\n\n- Antigravity IDE\n- Codex\n- GitHub Copilot\n- Windsurf\n- Kiro\n- Cursor\n- Grok CLI\n- CodeBuddy\n- CodeBuddy CN\n- Qoder\n- Trae\n- TRAE SOLO\n- Trae CN\n- TRAE SOLO CN\n- Zed\n- ZCode\n\nỨng dụng hỗ trợ Windows, macOS và Linux, đồng thời có giao diện tiếng Việt.\n## 2. Cockpit Tools dùng để làm gì?\n\nCockpit Tools được thiết kế cho người sử dụng nhiều tài khoản AI coding hoặc nhiều IDE AI khác nhau.\n\nCác chức năng chính gồm:\n\n- Quản lý nhiều tài khoản trong một giao diện.\n- Chuyển tài khoản nhanh mà không phải đăng xuất thủ công nhiều lần.\n- Theo dõi quota và thời gian reset.\n- Nhận diện loại gói tài khoản.\n- Gắn nhãn và phân loại tài khoản.\n- Chạy nhiều instance IDE song song.\n- Tách profile và thư mục dữ liệu giữa các instance.\n- Import tài khoản bằng OAuth, token, JSON hoặc trạng thái đăng nhập cục bộ, tùy nền tảng.\n- Đồng bộ tài khoản được chọn trở lại ứng dụng AI tương ứng.\n- Cung cấp local API service cho Codex.\n- Tạo wake-up task và tích hợp plugin cục bộ.\n\nVí dụ:\n\n```text\nCursor Instance 1 -> tài khoản cá nhân -> Project A\nCursor Instance 2 -> tài khoản công ty -> Project B\nCodex Instance 1  -> tài khoản Plus    -> Project C\n```\nChi tiết về repo và cách cài đặt: \n1. Cockpit Tools — repository chính thức  \n   https://github.com/jlcodes99/cockpit-tools\n\n2. Cockpit Tools — README tiếng Anh  \n   https://github.com/jlcodes99/cockpit-tools/blob/main/README.en.md\n\n3. Cockpit Tools — Releases  \n   https://github.com/jlcodes99/cockpit-tools/releases",
+      "author": {
+        "id": "1172395540185620504",
+        "name": "might_dugx",
+        "discriminator": "0000",
+        "nickname": "T141 - Mai Tiến Dũng - 01838",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1172395540185620504/c82b3fa769ed6e6ffdea579381ed5f5c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - jlcodes99/cockpit-tools: \uD83D\uDE80 通用 AI IDE 账号管理...",
+          "url": "https://github.com/jlcodes99/cockpit-tools",
+          "timestamp": null,
+          "description": "\uD83D\uDE80 通用 AI IDE 账号管理工具：支持 Antigravity / Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini-cli / CodeBuddy，多账号切换、配额监控、自动唤醒与多开实例管理。 \uD83D\uDE80 Universal AI IDE account manager for Antigravity / Codex / ...",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/Fh7I78S5YCRc_cTJc9YUZH-0die3ol1uvJM8Cd9CLfI/https/opengraph.githubassets.com/a7f63d836230266355633b50cc63101afeb4f998558c56e9ca77136265cc59e7/jlcodes99/cockpit-tools",
+            "canonicalUrl": "https://opengraph.githubassets.com/a7f63d836230266355633b50cc63101afeb4f998558c56e9ca77136265cc59e7/jlcodes99/cockpit-tools",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": [
+            {
+              "id": "",
+              "name": "\uD83D\uDE80",
+              "code": "rocket",
+              "isAnimated": false,
+              "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg"
+            }
+          ]
+        },
+        {
+          "title": "cockpit-tools/README.en.md at main · jlcodes99/cockpit-tools",
+          "url": "https://github.com/jlcodes99/cockpit-tools/blob/main/README.en.md",
+          "timestamp": null,
+          "description": "\uD83D\uDE80 通用 AI IDE 账号管理工具：支持 Antigravity / Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini-cli / CodeBuddy，多账号切换、配额监控、自动唤醒与多开实例管理。 \uD83D\uDE80 Universal AI IDE account manager for Antigravity / Codex / ...",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/KCYQJPNvMeBxCMwiTr8ipAvEyjEkRcH0ub1feKMGacE/https/opengraph.githubassets.com/41ee04d37bfb91f6a9105b6d66f64e516970d2fb1882b0a71608f0aed35707cc/jlcodes99/cockpit-tools",
+            "canonicalUrl": "https://opengraph.githubassets.com/41ee04d37bfb91f6a9105b6d66f64e516970d2fb1882b0a71608f0aed35707cc/jlcodes99/cockpit-tools",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": [
+            {
+              "id": "",
+              "name": "\uD83D\uDE80",
+              "code": "rocket",
+              "isAnimated": false,
+              "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg"
+            }
+          ]
+        },
+        {
+          "title": "Releases · jlcodes99/cockpit-tools",
+          "url": "https://github.com/jlcodes99/cockpit-tools/releases",
+          "timestamp": null,
+          "description": "\uD83D\uDE80 通用 AI IDE 账号管理工具：支持 Antigravity / Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini-cli / CodeBuddy，多账号切换、配额监控、自动唤醒与多开实例管理。 \uD83D\uDE80 Universal AI IDE account manager for Antigravity / Codex / ...",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/KCYQJPNvMeBxCMwiTr8ipAvEyjEkRcH0ub1feKMGacE/https/opengraph.githubassets.com/41ee04d37bfb91f6a9105b6d66f64e516970d2fb1882b0a71608f0aed35707cc/jlcodes99/cockpit-tools",
+            "canonicalUrl": "https://opengraph.githubassets.com/41ee04d37bfb91f6a9105b6d66f64e516970d2fb1882b0a71608f0aed35707cc/jlcodes99/cockpit-tools",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": [
+            {
+              "id": "",
+              "name": "\uD83D\uDE80",
+              "code": "rocket",
+              "isAnimated": false,
+              "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg"
+            }
+          ]
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1172395540185620504",
+              "name": "might_dugx",
+              "discriminator": "0000",
+              "nickname": "T141 - Mai Tiến Dũng - 01838",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1172395540185620504/c82b3fa769ed6e6ffdea579381ed5f5c.png?size=512"
+            },
+            {
+              "id": "1415146972972843051",
+              "name": "hoangtoan_zipper_52405",
+              "discriminator": "0000",
+              "nickname": "HToan_",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1415146972972843051/26575559e8bec9c0a693d3c2a58d4057.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

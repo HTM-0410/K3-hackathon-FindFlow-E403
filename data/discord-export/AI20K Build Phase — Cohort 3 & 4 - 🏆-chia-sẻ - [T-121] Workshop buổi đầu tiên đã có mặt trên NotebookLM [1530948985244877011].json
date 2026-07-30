@@ -1,0 +1,170 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530948985244877011",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[T-121] Workshop buổi đầu tiên đã có mặt trên NotebookLM",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:19:23.4224356+07:00",
+  "messages": [
+    {
+      "id": "1530948985244877011",
+      "type": "Default",
+      "timestamp": "2026-07-26T21:44:41.739+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "tl;dr: Mình tóm tắt slide hàng ngày để các bạn không phải làm.\n \uD83D\uDC49 https://notebooklm.google.com/notebook/5bb7f63c-716c-4f1a-906d-e81952f4d6d9  \uD83D\uDC48\n\nMình đã tóm tắt bài giảng slide của workshop buổi đầu tiên cho các bạn muốn ôn lại hoặc miss mất buổi nghe lên notebookLM để có thể xem lại và hỏi những phần chưa hiểu. Cho mình 1 tym nếu có thể nhé ❤️",
+      "author": {
+        "id": "713652099086417981",
+        "name": "qijanna",
+        "discriminator": "0000",
+        "nickname": "T121 - Lê Quang Huy - 01821",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Gemini Notebook | Your research and thinking partner, grounded in t...",
+          "url": "https://notebooklm.google.com/notebook/5bb7f63c-716c-4f1a-906d-e81952f4d6d9",
+          "timestamp": null,
+          "description": "Use the power of AI for quick summarization and note taking, Gemini Notebook is your powerful virtual research assistant rooted in information you can trust.",
+          "color": "#FFFFFF",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/U3az84nQiT2FZGFrZuSGBxWSKnpF4Gys4VxWoJlgrWc/https/notebooklm.google.com/_/static/branding/v6/og/notebook_lm_share.png",
+            "canonicalUrl": "https://notebooklm.google.com//_/static/branding/v6/og/notebook_lm_share.png",
+            "width": 2400,
+            "height": 1254
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 7,
+          "users": [
+            {
+              "id": "449131901454778370",
+              "name": "daotungbach",
+              "discriminator": "0000",
+              "nickname": "T121 - Đào Ngọc Bích - 01745",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/449131901454778370/4e706eecd9574d32a66087a7c59d8fd2.png?size=512"
+            },
+            {
+              "id": "713652099086417981",
+              "name": "qijanna",
+              "discriminator": "0000",
+              "nickname": "T121 - Lê Quang Huy - 01821",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/713652099086417981/933cbc7190ee69da47a622360a184c61.png?size=512"
+            },
+            {
+              "id": "750935911063355433",
+              "name": "quangson4773",
+              "discriminator": "0000",
+              "nickname": "T113 - Nguyễn Quang Sơn - 01956",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/750935911063355433/9cf3af221931c294e1d8f0f4f6e3e728.png?size=512"
+            },
+            {
+              "id": "853647680718241792",
+              "name": "noble_chipmunk_94959",
+              "discriminator": "0000",
+              "nickname": "kiyo",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "1050354288892846112",
+              "name": "keikikinky",
+              "discriminator": "0000",
+              "nickname": "T213 - Khang - 01101",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1050354288892846112/9bad1749d1e302e945040845fe54e276.png?size=512"
+            },
+            {
+              "id": "1267359134697918532",
+              "name": "letritung2005",
+              "discriminator": "0000",
+              "nickname": "Tèo Búng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1383372662268497971",
+              "name": "phamlien_05",
+              "discriminator": "0000",
+              "nickname": "T087 - Phạm Thị Liên - 01795",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1383372662268497971/d81567e0df0fa7727c80f7fbe9f37214.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDC49",
+          "code": "point_right",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f449.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC48",
+          "code": "point_left",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f448.svg"
+        },
+        {
+          "id": "",
+          "name": "❤️",
+          "code": "heart",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

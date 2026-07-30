@@ -1,0 +1,95 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531307972670656542",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Call API hay Mock Data? Khác nhau thế nào?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:21:47.7843936+07:00",
+  "messages": [
+    {
+      "id": "1531307972670656542",
+      "type": "Default",
+      "timestamp": "2026-07-27T21:31:11.011+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "sau bài lab day3 tại E403 chiều nay có bài  lab build demo về FAQs về tìm kiếm và check thời tiết đặt vé máy bay mà chỉ có 45p để vibe code. Sau khi team mình có build và cũng có kịp thời gian thì mình xin chia sẻ 1 tip nhỏ như sau về call API hay Mock data.\n\nKhi làm AI Agent hoặc chatbot, đây là hai cách phổ biến để lấy dữ liệu.\n\nCall API\n\n* Lấy dữ liệu thật từ hệ thống bên ngoài.\n* Luôn cập nhật theo thời gian thực.\n* Phù hợp với sản phẩm thực tế.\n* Nhược điểm: cần API key, có thể mất phí, dễ gặp lỗi timeout, giới hạn quota hoặc phụ thuộc vào mạng.\n\nMock Data\n\n* Sử dụng dữ liệu giả do chính mình tạo.\n* Nhanh, ổn định, dễ kiểm soát.\n* Phù hợp để demo, kiểm thử hoặc xây dựng prototype.\n* Nhược điểm: dữ liệu không phản ánh thực tế và không kiểm tra được quá trình tích hợp hệ thống.\n\nNên chọn cái nào?\n\n-  Nếu mục tiêu là hoàn thành một prototype trong vài giờ, hãy dùng Mock Data để tập trung vào workflow và logic của AI Agent.\n\n- Nếu mục tiêu là triển khai sản phẩm thật, hãy dùng API để đảm bảo dữ liệu luôn chính xác và cập nhật.\n\n*Một cách làm khá phổ biến là kết hợp cả hai: dùng Mock Data để phát triển nhanh, sau đó thay bằng API khi hệ thống đã ổn định. Điều này giúp tiết kiệm thời gian mà vẫn giữ được kiến trúc dễ mở rộng.",
+      "author": {
+        "id": "623416152973901834",
+        "name": "hoainem1401",
+        "discriminator": "0000",
+        "nickname": "G04-T138 - Hoài Nam",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "623416152973901834",
+              "name": "hoainem1401",
+              "discriminator": "0000",
+              "nickname": "G04-T138 - Hoài Nam",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "755413244394471514",
+              "name": "khoi1140329",
+              "discriminator": "0000",
+              "nickname": "T138 - Ngô Minh Khôi - 01927",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "1521412926391586907",
+              "name": "dfc12122002",
+              "discriminator": "0000",
+              "nickname": "Ga` Trầm Cảm",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

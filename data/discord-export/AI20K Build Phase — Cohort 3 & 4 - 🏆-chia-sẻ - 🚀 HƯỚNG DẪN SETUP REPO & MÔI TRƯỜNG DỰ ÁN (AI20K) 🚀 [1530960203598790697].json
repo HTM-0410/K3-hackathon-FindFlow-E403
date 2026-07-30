@@ -1,0 +1,152 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530960203598790697",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "\uD83D\uDE80 HƯỚNG DẪN SETUP REPO & MÔI TRƯỜNG DỰ ÁN (AI20K) \uD83D\uDE80",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:12:16.1889516+07:00",
+  "messages": [
+    {
+      "id": "1530960203598790697",
+      "type": "Default",
+      "timestamp": "2026-07-26T22:29:16.403+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Anh em chú ý đọc kỹ để tránh mất thời gian setup lại hoặc lộ API key nhé! Hệ thống đã tạo sẵn repo chuẩn cho từng đội rồi, chỉ việc clone và code thôi.\n1️⃣ Tìm & Clone Repo của Đội\n * Tên Repo: P-XXX (VD: Đội 7 là P-007), nằm trong org AI20K-Build-Phase-Cohort-3.\n * (Lưu ý: Kênh Discord là T-XXX nhưng repo trên GitHub là P-XXX nhé, đừng tìm repo T).\n * ⚠️ Quan trọng: Phải Accept Invite vào GitHub Org trước, nếu không link repo sẽ báo lỗi 404.\n * Thực thi:\n   git clone https://github.com/AI20K-Build-Phase-Cohort-3/P-XXX.git\ncd P-XXX\ngit checkout -b develop\ngit push -u origin develop\n\n\uD83D\uDEA8 LƯU Ý CỰC KỲ QUAN TRỌNG: Tuyệt đối KHÔNG chạy lệnh rm -rf .git rồi git init lại. Repo đã được set up sẵn remote và lịch sử commit sạch sẽ, xóa .git là bay luôn liên kết với repo gốc và phải setup lại từ đầu!\n2️⃣ Cấu trúc Project (Đã làm sẵn)\n * src/agent/: \"Bộ não\" AI (LangGraph, nodes, tools...).\n * src/api/: Backend FastAPI.\n * src/core/: Config & Logging.\n * tests/ & eval/: File kiểm thử và kịch bản đánh giá Agent.\n   \uD83D\uDC49 Mọi thứ đã được chia module rõ ràng (separation of concerns), anh em cứ đúng thư mục mà code.\n3️⃣ Setup Môi trường (Yêu cầu Python 3.11+)\nBắt buộc dùng Virtual Environment (venv) để tránh lỗi \"trên máy tôi chạy được\":\n# Tạo venv\npython3 -m venv .venv\n\n# Kích hoạt venv (MacOS/Linux)\nsource .venv/bin/activate\n# Kích hoạt venv (Windows)\n.venv\\Scripts\\activate\n\n# Cài đặt tất cả thư viện (bao gồm cả dev tools)\npip install -e \".[dev]\"\n\n\uD83D\uDC49 Test thử xem cài OK chưa: Chạy lệnh make test hoặc pytest tests/ -v.\n4️⃣ Biến môi trường (.env) - BẢO MẬT API KEY \uD83D\uDED1\n * Chạy lệnh copy file mẫu:\n   cp .env.example .env\n\n * Mở file .env vừa tạo và điền OPENAI_API_KEY thực tế của bạn.\n * \uD83D\uDEA8 CẢNH BÁO ĐỎ: KHÔNG BAO GIỜ hardcode API Key trực tiếp vào code. File .env đã được chặn push lên Git, tuyệt đối không tìm cách ép push file này lên để tránh mất tiền oan!\nChúc anh em code mượt mà! Cần hỗ trợ gì cứ ping vào channel nhé! \uD83D\uDD25",
+      "author": {
+        "id": "1529741929217261632",
+        "name": "huynbk_291",
+        "discriminator": "0000",
+        "nickname": "T081- Nguyễn Bá Khánh Huy -01591",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529741929217261632/163632ade6f90c532ec5bd87e3b71f7f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "974690047754379284",
+              "name": "tiendungssksy",
+              "discriminator": "0000",
+              "nickname": "Hing19",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1529741929217261632",
+              "name": "huynbk_291",
+              "discriminator": "0000",
+              "nickname": "T081- Nguyễn Bá Khánh Huy -01591",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529741929217261632/163632ade6f90c532ec5bd87e3b71f7f.png?size=512"
+            },
+            {
+              "id": "1529964064229429279",
+              "name": "tlam.work",
+              "discriminator": "0000",
+              "nickname": "T095 - Bùi Tùng Lâm - 01676",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "1️⃣",
+          "code": "one",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/31-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDEA8",
+          "code": "rotating_light",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6a8.svg"
+        },
+        {
+          "id": "",
+          "name": "2️⃣",
+          "code": "two",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/32-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "3️⃣",
+          "code": "three",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/33-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDC49",
+          "code": "point_right",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f449.svg"
+        },
+        {
+          "id": "",
+          "name": "4️⃣",
+          "code": "four",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/34-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDED1",
+          "code": "octagonal_sign",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6d1.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD25",
+          "code": "fire",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

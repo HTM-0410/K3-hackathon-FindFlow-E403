@@ -1,0 +1,236 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530407735114596372",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[TÌM TEAM SAO CHO TỐI ƯU?]",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:17:29.7492937+07:00",
+  "messages": [
+    {
+      "id": "1530407735114596372",
+      "type": "Default",
+      "timestamp": "2026-07-25T09:53:57.652+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "# Đừng tìm người giỏi nhất. Hãy tìm đội hình phù hợp nhất.\n\nLiệu đội của bạn đã có đủ những vai trò cần thiết chưa?\n\nĐối với một team 4 người xây dựng sản phẩm AI (đặc biệt là các sản phẩm Agentic AI), mình thấy một cơ cấu khá cân bằng sẽ là:\n\n1. **Product / Business**\n\n* Xác định bài toán cần giải quyết.\n* Hiểu người dùng.\n* Điều phối công việc.\n* Chuẩn bị pitch và kể câu chuyện của sản phẩm.\n\n2. **AI Engineer**\n\n* Thiết kế workflow của AI Agent.\n* Xây dựng RAG, tool calling, prompt, evaluation.\n* Biến mô hình ngôn ngữ thành một hệ thống thực sự giải quyết được bài toán.\n\n3. **Full-stack Engineer**\n\n* Xây dựng frontend và backend.\n* Kết nối AI với giao diện người dùng.\n* Hoàn thiện MVP để có thể demo.\n\n4. **Platform / Integration Engineer (Flex spot)**\n\n* Tích hợp API, MCP, dịch vụ bên thứ ba.\n* Triển khai lên cloud.\n* Thiết lập hạ tầng và xử lý các vấn đề kỹ thuật để sản phẩm chạy ổn định.\n\nMột common mistake của các builder khi cơ cấu team chính là **quá nhiều người làm cùng một việc.**\n\n* 3 AI Engineer nhưng không ai xây được sản phẩm hoàn chỉnh.\n* 3 Full-stack nhưng chưa ai thực sự hiểu cách xây dựng AI Agent.\n* Hoặc tất cả đều muốn làm kỹ thuật, trong khi không ai chịu trách nhiệm về bài toán hay phần trình bày.\n\nMột đội mạnh không cần ai cũng “biết tất cả”. Điều quan trọng hơn là mỗi người có một **vai trò rõ ràng và có thể phối hợp để tạo thành một sản phẩm hoàn chỉnh.**\n\nNếu bạn đang tìm đồng đội, thay vì chỉ hỏi:\n\n**\"Bạn dùng framework gì?\"**\n\nHãy thử hỏi thêm:\n\n*Bạn muốn chịu trách nhiệm phần nào của sản phẩm?\n*Bạn đã từng đảm nhận vai trò gì trong một dự án trước đây?\n*Điểm mạnh của bạn là xây dựng AI, phát triển sản phẩm hay kết nối các hệ thống?\n\n*Đôi khi, người phù hợp nhất không phải là người có CV ấn tượng nhất, mà là người giúp lấp đầy mảnh ghép còn thiếu của đội.*",
+      "author": {
+        "id": "1529844266573238354",
+        "name": "lolavine777",
+        "discriminator": "0000",
+        "nickname": "T082 - Nguyễn Đăng Long - 01934",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "454129205589049347",
+              "name": "jackouhai",
+              "discriminator": "0000",
+              "nickname": "Anh Rai",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            },
+            {
+              "id": "686586059408277579",
+              "name": "muwjc",
+              "discriminator": "0000",
+              "nickname": "Muwjc",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/686586059408277579/1a44c380d5684ca5e2cf239db959eac3.png?size=512"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            },
+            {
+              "id": "1220003381465321532",
+              "name": "sslongthanh_43268",
+              "discriminator": "0000",
+              "nickname": "T215-Phạm Thành Long-01259",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "1485332134079238215",
+              "name": "david_463771",
+              "discriminator": "0000",
+              "nickname": "David",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1485332134079238215/281a07ef718a5efff642c198b0d84fe9.png?size=512"
+            },
+            {
+              "id": "1529778154368008272",
+              "name": "victor2962004",
+              "discriminator": "0000",
+              "nickname": "Victor",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529778154368008272/38f2751b3d25941a0322e993e598e3b9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530408531206078505",
+      "type": "Default",
+      "timestamp": "2026-07-25T09:57:07.455+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ngoài ra team mình vẫn đang open 1 slot cho các bạn theo product/business nhé, DM mình nha ^^",
+      "author": {
+        "id": "1529844266573238354",
+        "name": "lolavine777",
+        "discriminator": "0000",
+        "nickname": "T082 - Nguyễn Đăng Long - 01934",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530411891464212561",
+      "type": "Default",
+      "timestamp": "2026-07-25T10:10:28.603+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "mình học tự động hóa của BKHN, cho mình hỏi team còn slot ko ạ",
+      "author": {
+        "id": "917027356328214569",
+        "name": "minhduc_24117976",
+        "discriminator": "0000",
+        "nickname": "T120 - Tô Minh Đức - 01043",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/917027356328214569/a987d3a5038a777ccc6ad55c872b0ae8.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1530418427020181719",
+      "type": "Default",
+      "timestamp": "2026-07-25T10:36:26.801+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@T041-Nguyễn Thị Thanh Hiền-01150",
+      "author": {
+        "id": "1029025130350915665",
+        "name": "phitruong21032004",
+        "discriminator": "0000",
+        "nickname": "T200 - Phi Trường - 01541",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1194429044859617321",
+          "name": "_hindayni_",
+          "discriminator": "0000",
+          "nickname": "T041-Nguyễn Thị Thanh Hiền-01150",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/guilds/1526532830627102781/users/1194429044859617321/avatars/8e057ee9dfe1438b6de6ccc286a79630.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

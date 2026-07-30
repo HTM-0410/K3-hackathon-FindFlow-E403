@@ -1,0 +1,172 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531208068061466634",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "Từ Chatbot đến AI Agent: Sự tiến hóa của tư duy tự động hóa",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:13.584755+07:00",
+  "messages": [
+    {
+      "id": "1531208068061466634",
+      "type": "Default",
+      "timestamp": "2026-07-27T14:54:11.896+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Dù thường bị dùng lẫn lộn, Chatbot và AI Agent là hai mô hình kiến trúc hoàn toàn khác biệt. Phân biệt rõ chúng là chìa khóa để thiết kế hệ thống hiệu quả:\n\n1. Chatbot: Hệ thống phản hồi (Knowledge-based System)\n\nBản chất: Là hệ thống \"Reactive\" (phản ứng) – \"hỏi gì đáp nấy\". Chỉ xử lý và trả lời dựa trên dữ liệu có sẵn (RAG) hoặc prompt.\n\nVòng đời: Input -> Retrieval -> LLM Inference -> Output (Kết thúc sau khi trả lời).\n\nVí dụ: Bot CSKH giải đáp thắc mắc dựa trên file PDF chính sách.\n\n2. AI Agent: Hệ thống tự trị (Task-based Autonomous System)\n\nBản chất: Là hệ thống \"Proactive\" (chủ động). Hoạt động như một \"nhân viên số\", tự suy nghĩ các bước và dùng công cụ (Tools/APIs) để đạt mục tiêu, có khả năng tự sửa lỗi.\n\nVòng đời: Goal -> Planning -> Tool Use -> Execution -> Observation -> Lặp lại (Iteration) đến khi xong việc.\n\nVí dụ: Nhận lệnh \"Phân tích file CSV từ email và gửi báo cáo lên Slack\", Agent sẽ tự động hoàn thành toàn bộ quy trình.\n\n\uD83D\uDCA1 Đúc kết cho kỹ sư:\n\nBài toán tra cứu & trình bày thông tin: Xây dựng Chatbot + RAG (Đơn giản, dễ kiểm soát).\n\nBài toán tự động hóa quy trình phức tạp: Thiết kế AI Agent (Cần quản lý vòng lặp suy nghĩ, trạng thái và gọi API).",
+      "author": {
+        "id": "1324073297507520593",
+        "name": "nghiabeooo235",
+        "discriminator": "0000",
+        "nickname": "T113 - Ngô Hữu Nghĩa - 01924",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1324073297507520593/a1ddaa58a5ebfaf4e2e1cffcca359c98.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1531208068216524911",
+          "url": "https://cdn.discordapp.com/attachments/1531208068061466634/1531208068216524911/47305280-a69d-4345-b884-91cbe96d4dfe.png?ex=6a6c54a3&is=6a6b0323&hm=d6ade41743cff3542a7d0f77074fc7dd4cacb69073d3d1a7b7d8946a33751ea6&",
+          "fileName": "47305280-a69d-4345-b884-91cbe96d4dfe.png",
+          "fileSizeBytes": 302744
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "894923988961206342",
+              "name": "lydat1704",
+              "discriminator": "0000",
+              "nickname": "Lý Đạt",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            },
+            {
+              "id": "1324073297507520593",
+              "name": "nghiabeooo235",
+              "discriminator": "0000",
+              "nickname": "T113 - Ngô Hữu Nghĩa - 01924",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1324073297507520593/a1ddaa58a5ebfaf4e2e1cffcca359c98.png?size=512"
+            },
+            {
+              "id": "1529844266573238354",
+              "name": "lolavine777",
+              "discriminator": "0000",
+              "nickname": "DangLongNg",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1529844266573238354/f031c635729f4fcf211d7fff1adc3a6f.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDCA1",
+          "code": "bulb",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531236761596858450",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:48:12.968+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Quá ý nghĩa\uD83D\uDC4F",
+      "author": {
+        "id": "894923988961206342",
+        "name": "lydat1704",
+        "discriminator": "0000",
+        "nickname": "G13-T020-Lý Thành Đạt-01469",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE02",
+            "code": "joy",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f602.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1324073297507520593",
+              "name": "nghiabeooo235",
+              "discriminator": "0000",
+              "nickname": "T113 - Ngô Hữu Nghĩa - 01924",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1324073297507520593/a1ddaa58a5ebfaf4e2e1cffcca359c98.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDC4F",
+          "code": "clap",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44f.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 2
+}

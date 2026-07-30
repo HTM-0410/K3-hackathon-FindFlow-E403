@@ -1,0 +1,113 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530792985523126375",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[Mindset] Làm sao để build sản phẩm tốt",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:14:54.1561647+07:00",
+  "messages": [
+    {
+      "id": "1530792985523126375",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:24:48.507+07:00",
+      "timestampEdited": "2026-07-26T11:31:05.788+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "*Summary*: Bạn có thể tập trung vào các khía cạnh sau khi lên ý tưởng và thiết kế 1 sản phẩm mới:\n1. Công năng tốt\n2. Chất lượng và giá thành\n3. Giá trị gia tăng\n\nDưới đây mình sẽ giải thích cụ thể cho từng ý ở trên.\n\n1️⃣  Công năng \uD83D\uDEE0️ \nNó chính là tính năng mà sản phẩm ai của bạn mang đến cho người dùng và theo mình cũng là phần quan trọng nhất. Tính năng này có được người dùng đánh giá tốt hay không phụ thuộc vào 2 thứ:\n- **Đúng đắn**: vấn đề mà tính năng này giải quyết có phải là pain point hay không\n- **Cải thiện**: tính năng của bạn có giúp giải quyết pain point tốt hơn không (tốc độ, chi phí, các nguồn lực thực thi)\n\n2️⃣  Chất lượng và giá \uD83D\uDCB0 \nNếu như sản phẩm của bạn đã có công năng tốt rồi, chất lượng sẽ là thứ giúp sản phẩm của bạn có sức cạnh tranh. Chất lượng ở đây được hiểu là:\n- **Sẵn sàng**: sản phẩm có thể sử dụng bất cứ khi nào, kể cả giờ cao điểm\n- **Ổn định**: với cùng input thì output tương đương\n- **Tin cậy**: sản phẩm được thử nghiệm và cho thấy kết quả tốt\n\nCòn về giá, bạn có thể cải thiện bằng một số cách sau:\n- **Giảm giá**: tối ưu system cho model chi phí thấp mà vẫn có hiệu quả tương đương\n- **Khẳng định giá**: thuyết phục được khách giá trị của sản phẩm là tương xứng với mức giá đó\n\n3️⃣  Giá trị gia tăng \uD83D\uDCC8 \nKhi 2 phần trên bạn đã làm tốt rồi, thì ở đây tùy vào tệp khách hàng cụ thể mà bạn có thêm các dịch vụ đi kèm nhằm tăng trải nghiệm để kích thích sức mua.\n- ** khách nữ**: các chương trình giảm giá khuyến mại\n- ** khách nam**: các tính năng, giao diện độc quyền\n-  **khách trẻ**: được khen và tư vấn chân thành\n-  **khách doanh nghiệp**: được thấy thuyết phục về lợi nhuận mà sản phẩm có thể đem lại\n\n---\n\nĐây là góc nhìn cá nhân của mình khi xây dựng 1 sản phẩm. Hy vọng chia sẻ của mình có thể giúp ích cho mọi người.\nVà mình rất vui nếu có thể nhận được góp ý cho bài viết đầu tay này của mình ạ. \nCảm ơn mọi người rất nhiều.",
+      "author": {
+        "id": "770920459268653086",
+        "name": "anhvd",
+        "discriminator": "0000",
+        "nickname": "T001 — Vũ Đức Anh — 01191",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/770920459268653086/5c82441107da67a93255680c3b20501c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "⬆️",
+            "code": "arrow_up",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2b06.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "835504208009494610",
+              "name": "sangdaden",
+              "discriminator": "0000",
+              "nickname": "Sang Phan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/835504208009494610/1cd8a4bdca4c435c3e3a2cfddd7cc6c6.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "770920459268653086",
+              "name": "anhvd",
+              "discriminator": "0000",
+              "nickname": "T001 — Vũ Đức Anh — 01191",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/770920459268653086/5c82441107da67a93255680c3b20501c.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "1️⃣",
+          "code": "one",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/31-20e3.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDEE0️",
+          "code": "tools",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6e0.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 1
+}

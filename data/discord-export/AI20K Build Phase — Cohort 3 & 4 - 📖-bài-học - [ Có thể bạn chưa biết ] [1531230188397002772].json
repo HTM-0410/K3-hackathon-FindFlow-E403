@@ -1,0 +1,86 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531230188397002772",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "[ Có thể bạn chưa biết ]",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:52:54.9631842+07:00",
+  "messages": [
+    {
+      "id": "1531230188397002772",
+      "type": "Default",
+      "timestamp": "2026-07-27T16:22:05.795+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "# Tổng quan về AI Agent\n\n**AI Agent** là một hệ thống có khả năng nhận yêu cầu, suy luận, lập kế hoạch, sử dụng công cụ và thực hiện hành động để hoàn thành mục tiêu.\n\nQuy trình cơ bản:\n\n```text\nNgười dùng → LLM hiểu yêu cầu → Lập kế hoạch\n→ Gọi công cụ → Nhận kết quả → Tổng hợp → Trả lời\n```\n\nKhác với LLM thông thường chủ yếu tạo văn bản từ dữ liệu đã học, Agent có thể lấy dữ liệu thực tế từ API, Database, công cụ tìm kiếm hoặc chương trình bên ngoài. Ví dụ, khi người dùng hỏi thời tiết hôm nay, Agent có thể gọi API thời tiết để lấy dữ liệu mới nhất thay vì tự dự đoán.\n\nMột Agent thường gồm 5 thành phần:\n\n```text\nAgent = LLM + Tool + Memory + Planner + Executor\n```\n\n* **LLM:** hiểu yêu cầu, suy luận, quyết định hành động và tổng hợp kết quả.\n* **Tool:** giúp Agent tìm kiếm, gọi API, truy vấn Database, chạy code hoặc tìm tài liệu trong Vector Database.\n* **Memory:** lưu và truy xuất thông tin. Short-Term Memory lưu lịch sử hội thoại; Long-Term Memory lưu dữ liệu lâu dài trong Database hoặc Vector Database.\n* **Planner:** chia nhiệm vụ lớn thành các bước nhỏ và lựa chọn hướng giải quyết.\n* **Executor:** thực hiện kế hoạch, gọi Tool, kiểm tra kết quả, xử lý lỗi và thử lại khi cần.\n\nCơ chế phổ biến của Agent là **ReAct**:\n\n```text\nThought → Action → Observation\n```\n\nAgent suy nghĩ, chọn hành động, quan sát kết quả rồi tiếp tục lặp cho đến khi đạt mục tiêu.\n\nAgent có thể gặp một số lỗi như tạo thông tin sai, chọn sai Tool, lập kế hoạch không hợp lý, lặp vô hạn hoặc vượt quá giới hạn Context. Vì vậy, hệ thống cần Validation, Error Handling, Retry Logic, Logging và giới hạn số vòng lặp.\n\nMột số mô hình thiết kế phổ biến gồm **ReAct**, **RAG**, **Toolformer** và **Multi-Agent**.\n\nTóm lại:\n\n```text\nLLM: Nhận câu hỏi → Tạo câu trả lời\n\nAgent: Nhận mục tiêu → Lập kế hoạch → Hành động\n→ Kiểm tra → Hoàn thành mục tiêu\n```\n\nCó thể hiểu đơn giản: **LLM là bộ não, còn Agent là một hệ thống hoàn chỉnh có bộ não, trí nhớ, công cụ và khả năng hành động.**",
+      "author": {
+        "id": "815924497931567115",
+        "name": "chiencute9066",
+        "discriminator": "0000",
+        "nickname": "T028 - Trung Chiến - 01391",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/815924497931567115/631dc24f1b66734e4e3040578df78603.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "815924497931567115",
+              "name": "chiencute9066",
+              "discriminator": "0000",
+              "nickname": "T028 - Trung Chiến - 01391",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/815924497931567115/631dc24f1b66734e4e3040578df78603.png?size=512"
+            },
+            {
+              "id": "1509890551334305904",
+              "name": "samsamsam0905_13163",
+              "discriminator": "0000",
+              "nickname": "T020-NguyenVanTuanAnh-01813",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1509890551334305904/c442a1bbd1c984ea832bd3bd81922471.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}

@@ -1,0 +1,86 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531553730661715979",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920188991864894",
+    "category": "\uD83D\uDCD6-bài-học",
+    "name": "AI-First",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T16:53:07.6819943+07:00",
+  "messages": [
+    {
+      "id": "1531553730661715979",
+      "type": "Default",
+      "timestamp": "2026-07-28T13:47:44.282+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "AI-First không sai, người sai là bạn.\n\nNgày trước, cứ có ý tưởng là mình mở AI lên prompt ngay. Kết quả không phải mất thời gian code, mà mất thời gian sửa bug vì ngay từ đầu mình còn chưa hiểu rõ bài toán.\n\nMình thật sự đã từng mất rất nhiều thời gian để đi debug AI mới nhận ra được rằng: AI-First không sai. Sai là prompt trước khi có Problem Statement.\n\nTrong phát triển phần mềm, trước khi code luôn phải trả lời:\n+ Mình đang giải quyết vấn đề gì?\n+ Người dùng thực sự cần gì?\n+ Input/Output là gì?\n+ Scope đến đâu?\n+ Edge case nào có thể xảy ra?\n\nKhi Problem Statement đủ rõ, prompt chỉ còn là cách diễn đạt để AI thực thi. AI-First không có nghĩa là AI nghĩ thay bạn. AI-First là bạn xác định đúng bài toán, còn AI giúp giải bài toán đó.",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "669187508122288159",
+              "name": "nhmanh.ai42e",
+              "discriminator": "0000",
+              "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+            },
+            {
+              "id": "1337056589814698064",
+              "name": "abcxyz4691a",
+              "discriminator": "0000",
+              "nickname": "T118-Nguyễn Mạnh Hiệp — 01319",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1337056589814698064/2f462a794bcbfbe3ce5abc0d5f2a4800.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 1
+}
