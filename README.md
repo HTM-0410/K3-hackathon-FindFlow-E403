@@ -74,6 +74,31 @@ Ba điều nên biết trước khi làm:
 - Kết quả đo **ghi nhận trung thực** — kể cả khi không đạt mục tiêu nhóm tự đặt — vẫn được tính đủ điểm. Số liệu bị chỉnh sửa hoặc che giấu sẽ không được tính.
 - Reflection cá nhân chấm riêng theo rubric của khoá. Điểm vòng demo, chấm chéo trong zone và thưởng thêm (nếu có) theo thể lệ công bố lúc khai mạc.
 
+## CP2 — Discord Knowledge Hub
+
+Frontend prototype nằm trong thư mục `codebase/`.
+
+```bash
+cd codebase
+npm install
+npm run dev
+```
+
+### Phạm vi đã triển khai
+
+- Flow A: tìm bằng câu tự nhiên, loading mô phỏng, Top 5, lọc Slide, xem chi tiết, mở nguồn mô phỏng và gửi phản hồi.
+- Flow B: duyệt toàn bộ 12 tài liệu, lọc theo chủ đề/loại/kênh, sắp xếp và xem metadata.
+- Flow C: truy vấn không liên quan hiển thị empty state với hai hành động khôi phục.
+- Không dùng AI, backend, Discord API, API key hay request mạng trong logic sản phẩm.
+
+### Các quyết định đơn giản hóa cho CP2
+
+- Dùng một Next/vinext client page và History API để giữ đúng các URL `/`, `/search?q=...` và `/resources` mà không cần backend.
+- “Mở nguồn” hiển thị thông báo mô phỏng thay vì mở `example.com`, giúp demo offline ổn định.
+- Bộ lọc được giữ trong state của trang; query nằm trên URL để Browser Back khôi phục đúng màn hình và truy vấn.
+- Feedback được lưu trong `localStorage` theo cặp tài liệu/query và chỉ gửi một lần.
+- Không triển khai đăng nhập, quản trị, RAG, crawl Discord hoặc đồng bộ dữ liệu.
+
 ## Luật chung
 
 1. Prototype có 3 mức **Sketch / Mock / Working** — mức nào cũng bắt buộc **≥1 lời gọi AI chạy thật**.
