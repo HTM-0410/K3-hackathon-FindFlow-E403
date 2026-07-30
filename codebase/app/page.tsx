@@ -71,9 +71,6 @@ function AppHeader({
         <button className={route === "resources" ? "active" : ""} onClick={() => navigate("/resources")}>
           Kho tài liệu
         </button>
-        <button onClick={() => window.location.assign("/feedback")}>
-          📊 Feedback
-        </button>
         <button onClick={() => window.location.assign("/realtime")}>
           ⚡ Realtime
         </button>
@@ -363,63 +360,34 @@ function EmptyState({
 function Drawer({
   resource,
   query,
-  status,
-  traceId,
-  matchScore,
   onClose,
   onToast,
 }: {
   resource: Resource;
   query: string;
-  status: string;
-  traceId: string;
-  matchScore: number;
   onClose: () => void;
   onToast: (message: string) => void;
 }) {
   const key = `feedback:${resource.id}:${normalizeText(query)}`;
   const [sent, setSent] = useState(false);
-  const [pending, setPending] = useState(false);
   useEffect(() => {
     setSent(Boolean(localStorage.getItem(key)));
     const escape = (event: KeyboardEvent) => event.key === "Escape" && onClose();
     document.addEventListener("keydown", escape);
     return () => document.removeEventListener("keydown", escape);
   }, [key, onClose]);
-  const sendFeedback = async (helpful: boolean) => {
-    if (sent || pending) return;
-    setPending(true);
-    const payload = {
-      resourceId: resource.id,
-      query,
-      helpful,
-      traceId,
-      status,
-      matchScore,
-    };
-    try {
-      const res = await fetch("/api/feedback", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      if (!res.ok) {
-        const data = (await res.json().catch(() => ({}))) as { error?: string };
-        onToast(`Không thể lưu phản hồi: ${data.error ?? res.status}`);
-        return;
-      }
-      // Chỉ đánh dấu đã gửi khi server xác nhận; cache local để lần sau UI biết.
-      localStorage.setItem(
-        key,
-        JSON.stringify({ resourceId: resource.id, query, helpful, createdAt: new Date().toISOString() }),
-      );
-      setSent(true);
-      onToast("Cảm ơn bạn! Phản hồi đã được lưu lên hệ thống.");
-    } catch (err) {
-      onToast(`Mất kết nối - phản hồi chưa được gửi (${err instanceof Error ? err.message : "lỗi"}).`);
-    } finally {
-      setPending(false);
-    }
+  const feedback = (helpful: boolean) => {
+    localStorage.setItem(
+      key,
+      JSON.stringify({
+        resourceId: resource.id,
+        query,
+        helpful,
+        createdAt: new Date().toISOString(),
+      })
+    );
+    setSent(true);
+    onToast("Cảm ơn bạn! Phản hồi đã được lưu lại.");
   };
   const copy = async () => {
     await navigator.clipboard?.writeText(resource.source.messageUrl || resource.sourceUrl);
@@ -497,17 +465,14 @@ function Drawer({
         <section className="feedback">
           <h4>Tài liệu này có đúng nhu cầu của bạn không?</h4>
           <div>
-            <button disabled={sent || pending} onClick={() => sendFeedback(true)}>
-              {pending ? "Đang gửi…" : "👍 Đúng tài liệu"}
+            <button disabled={sent} onClick={() => feedback(true)}>
+              👍 Đúng tài liệu
             </button>
-            <button disabled={sent || pending} onClick={() => sendFeedback(false)}>
-              {pending ? "Đang gửi…" : "👎 Chưa phù hợp"}
+            <button disabled={sent} onClick={() => feedback(false)}>
+              👎 Chưa phù hợp
             </button>
           </div>
-          {sent && <small>Đã gửi phản hồi của bạn lên hệ thống để cải thiện mô hình AI.</small>}
-          <small style={{ display: "block", opacity: 0.6, marginTop: 4 }}>
-            Trace {traceId.slice(0, 8)} • status: {status}{matchScore ? ` • score: ${matchScore}` : ""}
-          </small>
+          {sent && <small>Đã lưu phản hồi của bạn để cải thiện mô hình AI.</small>}
         </section>
       </aside>
     </div>
@@ -609,25 +574,7 @@ export default function Page() {
         if (!result.ok) throw new Error("Search request failed");
         return result.json() as Promise<SearchResponse>;
       })
-      .then((result) => {
-        setResponse(result);
-        const latencyMs = Date.now() - startedAt;
-        // Ghi log trace lên server (best-effort, không chặn UI)
-        fetch("/api/traces", {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({
-            traceId: result.traceId,
-            query,
-            status: result.status,
-            candidateCount: result.candidateCount ?? 0,
-            retrievalMode: result.retrievalMode ?? "",
-            latencyMs,
-          }),
-        }).catch(() => {
-          /* tracking tốt nhất có thể - nếu fail thì bỏ qua */
-        });
-      })
+      .then((result) => setResponse(result))
       .catch(() => {
         const traceId = crypto.randomUUID();
         setResponse({
@@ -780,9 +727,6 @@ export default function Page() {
         <Drawer
           resource={selected}
           query={query || "Kho tài liệu"}
-          status={response?.status ?? "unknown"}
-          traceId={response?.traceId ?? "no-trace"}
-          matchScore={selected.relevanceScore ?? 0}
           onClose={() => setSelected(null)}
           onToast={setToast}
         />
