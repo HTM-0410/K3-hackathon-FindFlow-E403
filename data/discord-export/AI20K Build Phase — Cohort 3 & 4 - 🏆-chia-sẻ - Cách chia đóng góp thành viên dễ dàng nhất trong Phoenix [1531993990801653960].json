@@ -1,0 +1,196 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531993990801653960",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Cách chia đóng góp thành viên dễ dàng nhất trong Phoenix",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:03:17.3025513+07:00",
+  "messages": [
+    {
+      "id": "1531993990801653960",
+      "type": "Default",
+      "timestamp": "2026-07-29T18:57:10.479+07:00",
+      "timestampEdited": "2026-07-29T19:06:28.231+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hôm nay mình khám phá trang web Demo day của Phoenix và phát hiện được component như ảnh dưới, thực hiện chia đóng góp.\n\nhttps://phoenix.note.transformerlabs.ai/demo-day\n\nKhi sử dụng, mình thấy rất khó để đạt được mức phân bố như mong muốn vì các thanh slider có đặc điểm: tổng luôn bằng 100% nên khi kéo một thanh thì các thanh khác lại bị ảnh hưởng theo.\n\nDo đó mình đã thực hiện reverse engineering và thấy được quy luật: bất cứ khi nào kéo 1 thanh nhỏ đi 1%, thanh lớn nhất còn lại sẽ giảm 1% và ngược lại. Và ưu tiên từ trên xuống nếu bằng nhau.\n\nBài toán này mình đã nghiên cứu và giải được. Solution rất đơn giản: ở thanh của người có đóng góp lớn nhất, kéo đến 100%, sau đó thực hiện phân chia còn lại theo đúng số mong muốn. Vì số điểm sẽ luôn được lấy từ thanh lớn nhất, mà thanh lớn nhất sẽ luôn lớn nhất nên các thanh còn lại không bao giờ bị chịu ảnh hưởng.\n\nCảm ơn đã lắng nghe",
+      "author": {
+        "id": "744508171556487168",
+        "name": "dakien9187",
+        "discriminator": "0000",
+        "nickname": "T162 - Đỗ Trung Kiên - 1287",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [
+        {
+          "id": "1531993990969163929",
+          "url": "https://cdn.discordapp.com/attachments/1531993990801653960/1531993990969163929/IMG_2684.png?ex=6a6be4d6&is=6a6a9356&hm=0312719cc5128d5261ef590356cdd77f5ce2ab9a68c832230768b6bacb174b5b&",
+          "fileName": "IMG_2684.png",
+          "fileSizeBytes": 219934
+        }
+      ],
+      "embeds": [
+        {
+          "title": "Demo Day | Phoenix Agent",
+          "url": "https://phoenix.note.transformerlabs.ai/demo-day",
+          "timestamp": null,
+          "description": "Nộp MVP, video demo và slides cho Demo Day.",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/ZGGjwiF4wybdHC2kblIE6qLdBfXW1zUT4Hc9KD5SHIA/%3F77c2886e803308f7/https/phoenix.note.transformerlabs.ai/demo-day/opengraph-image-rc56hx",
+            "canonicalUrl": "https://phoenix.note.transformerlabs.ai/demo-day/opengraph-image-rc56hx?77c2886e803308f7",
+            "width": 1200,
+            "height": 630
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "505578977692352512",
+              "name": "tuanhungbk",
+              "discriminator": "0000",
+              "nickname": "Ngô Tuấn Hưng — 01409",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/505578977692352512/319eab7dd9f630541a9aba7207726184.png?size=512"
+            },
+            {
+              "id": "744508171556487168",
+              "name": "dakien9187",
+              "discriminator": "0000",
+              "nickname": "T162 - Đỗ Trung Kiên - 1287",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "759055479723917364",
+              "name": "nhat_cuong",
+              "discriminator": "0000",
+              "nickname": "Vonhatcuong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/759055479723917364/4f7603045243b8c1ee5727c3061704b9.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531997244251701461",
+      "type": "Default",
+      "timestamp": "2026-07-29T19:10:06.162+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đó là lí do tại sao chúng ta có nút **Chia đều** đó :v",
+      "author": {
+        "id": "695948705278197781",
+        "name": "odinuray",
+        "discriminator": "0000",
+        "nickname": "Admin — ODIN",
+        "color": "#A72525",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527509817084739805",
+            "name": "Admin",
+            "color": "#A72525",
+            "position": 18
+          },
+          {
+            "id": "1527919786850390116",
+            "name": "Mod",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/695948705278197781/9b42056215012ffaf6d32979702b6128.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532068885723877447",
+      "type": "Default",
+      "timestamp": "2026-07-29T23:54:46.82+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tôi kéo thử cho mình 100% thì cũng đẹp đấy :))) mấy ông khác liệu mà làm. Ý ông là vậy đúng không \uD83D\uDE02",
+      "author": {
+        "id": "1444610995652661258",
+        "name": "26ai.huypb",
+        "discriminator": "0000",
+        "nickname": "T235-Phạm Bá Huy-01132",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1444610995652661258/79ee349b6511e2000af8a32fb8a6974e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE02",
+          "code": "joy",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f602.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 3
+}

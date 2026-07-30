@@ -1,0 +1,182 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1532021751561719818",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Đây là nơi để mọi người gửi link khảo sát người dùng của nhóm mình :>",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:02:22.8376587+07:00",
+  "messages": [
+    {
+      "id": "1532021751561719818",
+      "type": "Default",
+      "timestamp": "2026-07-29T20:47:29.16+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mọi người chéo bài khảo sát nha",
+      "author": {
+        "id": "1015897618003542037",
+        "name": "kyanlulww",
+        "discriminator": "0000",
+        "nickname": "T209 - Trần Lê Quý Đăng - 01408",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1015897618003542037/030f8bfb3bf35147c66ea4cf78142516.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "1015897618003542037",
+              "name": "kyanlulww",
+              "discriminator": "0000",
+              "nickname": "T209 - Trần Lê Quý Đăng - 01408",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1015897618003542037/030f8bfb3bf35147c66ea4cf78142516.png?size=512"
+            },
+            {
+              "id": "1038106528403689542",
+              "name": "8uandj",
+              "discriminator": "0000",
+              "nickname": "8uandj",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1038106528403689542/6bf3f8f88e9fa1b99ffffa030e288402.png?size=512"
+            },
+            {
+              "id": "1051505276798390334",
+              "name": "duykhanhlk2004",
+              "discriminator": "0000",
+              "nickname": "Nguyễn Duy Khánh - 01530",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1051505276798390334/62598fb65077d4fb02063cd917655035.png?size=512"
+            },
+            {
+              "id": "1529847496669401319",
+              "name": "damkien3004",
+              "discriminator": "0000",
+              "nickname": "Nguyễn Đàm Kiên",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "1015897618003542037",
+              "name": "kyanlulww",
+              "discriminator": "0000",
+              "nickname": "T209 - Trần Lê Quý Đăng - 01408",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1015897618003542037/030f8bfb3bf35147c66ea4cf78142516.png?size=512"
+            },
+            {
+              "id": "1038106528403689542",
+              "name": "8uandj",
+              "discriminator": "0000",
+              "nickname": "8uandj",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1038106528403689542/6bf3f8f88e9fa1b99ffffa030e288402.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532035036306477268",
+      "type": "Default",
+      "timestamp": "2026-07-29T21:40:16.49+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đề tài của nhóm mình nhắm đến đối tượng annotator khi gán nhãn cho object trong ảnh/video thường xảy ra lỗi, và việc kiểm tra lại thủ công là vô cùng mất thời gian do có những bộ dữ liệu rất lớn và không rõ lỗi xảy ra từ đâu. Mọi người giúp nhóm chúng tớ điền link khảo sát nhé. https://docs.google.com/forms/d/e/1FAIpQLSdXiCdOw8w-By4Tv5dlF2B8EhOxsXy_1214xOSv0LQSThpBvw/viewform?usp=header\n\nPs: Nhóm tớ sẽ nhận làm tất cả khảo sát của mọi người ở dưới post này nha :>",
+      "author": {
+        "id": "1015897618003542037",
+        "name": "kyanlulww",
+        "discriminator": "0000",
+        "nickname": "T209 - Trần Lê Quý Đăng - 01408",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1015897618003542037/030f8bfb3bf35147c66ea4cf78142516.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Khảo sát điểm đau trong quy trình gắn nhãn dữ liệu",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdXiCdOw8w-By4Tv5dlF2B8EhOxsXy_1214xOSv0LQSThpBvw/viewform?usp=header",
+          "timestamp": null,
+          "description": "Khảo sát này giúp đội ngũ hiểu rõ hơn những khó khăn bạn gặp khi gắn nhãn dữ liệu (bounding box, class, tracking ID...). Không có câu trả lời đúng/sai. Thời gian làm: khoảng 4-5 phút. Câu trả lời được dùng để ưu tiên cải thiện quy trình/công cụ, không dùng để đánh giá hi...",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/IEqLkUgD5pS2PSLtT1L8codTZlAla0RwtQ3hM176TW8/https/lh3.googleusercontent.com/4P4KR3WlQfdg5J79Edex03NMfsHGZ-Y7NufFmdC95SoE6UmdnMrRn41v4ErNeOpsOpMr4fMU2j-k1TE%3Dw1200-h630-p",
+            "canonicalUrl": "https://lh3.googleusercontent.com/4P4KR3WlQfdg5J79Edex03NMfsHGZ-Y7NufFmdC95SoE6UmdnMrRn41v4ErNeOpsOpMr4fMU2j-k1TE=w1200-h630-p",
+            "width": 200,
+            "height": 200
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

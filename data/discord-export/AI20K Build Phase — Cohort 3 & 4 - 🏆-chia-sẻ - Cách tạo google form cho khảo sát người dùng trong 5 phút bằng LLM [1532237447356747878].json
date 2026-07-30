@@ -1,0 +1,157 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1532237447356747878",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Cách tạo google form cho khảo sát người dùng trong 5 phút bằng LLM",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:01:56.0539122+07:00",
+  "messages": [
+    {
+      "id": "1532237447356747878",
+      "type": "Default",
+      "timestamp": "2026-07-30T11:04:35.045+07:00",
+      "timestampEdited": "2026-07-30T11:08:02.92+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Xin chào mọi người, hôm nay mình muốn chia sẻ tới mọi người cách nhóm mình tạo google form để khảo sát nhu cầu người dùng chỉ trong 5 phút sử dụng LLM.\n\nMọi người truy cập LLM, nhóm mình sử dụng Claude. Các bạn đưa ra những pain point, những gì mà nhóm muốn tìm hiểu về người dùng của mình. Sau khi đã có những điều trên thì **format các bạn muốn **LLM đưa ra là **AppScript** của Google. Start scripting  -> Paste code + Save -> cấp quyền truy cập cho AppScript ->  excute đoạn code. Google form sẽ được lưu lại ở trong google drive.\n\nPS: Nếu quyền truy cập không được cấp ở lần cập nhật đầu tiên thì các bạn làm lại lần 2 là được.\n\nSau khi đã có Form thì mng gửi vào đây và chéo với nhóm mình nhé https://discord.com/channels/1526532830627102781/1532021751561719818. Cảm ơn mọi người.",
+      "author": {
+        "id": "1015897618003542037",
+        "name": "kyanlulww",
+        "discriminator": "0000",
+        "nickname": "T209 - Trần Lê Quý Đăng - 01408",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1015897618003542037/030f8bfb3bf35147c66ea4cf78142516.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "1038106528403689542",
+              "name": "8uandj",
+              "discriminator": "0000",
+              "nickname": "8uandj",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1038106528403689542/6bf3f8f88e9fa1b99ffffa030e288402.png?size=512"
+            },
+            {
+              "id": "1529725540389355603",
+              "name": "daovanda2405",
+              "discriminator": "0000",
+              "nickname": "daovanda2405",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532237709706264676",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-30T11:05:37.594+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: Cách tạo google form cho khảo sát người dùng trong 5 phút bằng LLM",
+      "author": {
+        "id": "1015897618003542037",
+        "name": "kyanlulww",
+        "discriminator": "0000",
+        "nickname": "T209 - Trần Lê Quý Đăng - 01408",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1015897618003542037/030f8bfb3bf35147c66ea4cf78142516.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532238618767265954",
+      "type": "Default",
+      "timestamp": "2026-07-30T11:09:14.331+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Sau khi lưu thì bấm nút \"Chạy\"",
+      "author": {
+        "id": "1015897618003542037",
+        "name": "kyanlulww",
+        "discriminator": "0000",
+        "nickname": "T209 - Trần Lê Quý Đăng - 01408",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1015897618003542037/030f8bfb3bf35147c66ea4cf78142516.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1532238618419007588",
+          "url": "https://cdn.discordapp.com/attachments/1532237447356747878/1532238618419007588/image.png?ex=6a6c1fea&is=6a6ace6a&hm=31662ff9806809365c536243f67a86b34882ef5e14abbc8801c1f581a279b12e&",
+          "fileName": "image.png",
+          "fileSizeBytes": 162524
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

@@ -1,0 +1,200 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531841767064731688",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Kỹ năng làm việc nhóm – Chìa khóa quyết định thành công của mọi dự án",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:05:03.5065135+07:00",
+  "messages": [
+    {
+      "id": "1531841767064731688",
+      "type": "Default",
+      "timestamp": "2026-07-29T08:52:17.512+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trong bất kỳ dự án nào, đặc biệt là các dự án AI, kỹ năng chuyên môn là điều kiện cần nhưng **kỹ năng làm việc nhóm mới là điều kiện đủ** để tạo nên thành công. Một nhóm có nhiều thành viên giỏi chưa chắc sẽ đạt được kết quả tốt nếu thiếu sự phối hợp, giao tiếp và tinh thần đồng đội. Thực tế, không ít dự án thất bại không phải vì thiếu năng lực kỹ thuật mà vì các thành viên không thống nhất mục tiêu, không chia sẻ thông tin hiệu quả hoặc không biết cách hỗ trợ lẫn nhau.\n\nLàm việc nhóm không đơn thuần là chia nhỏ công việc cho từng người, mà là quá trình cùng nhau giải quyết vấn đề, trao đổi ý tưởng, lắng nghe phản hồi và phối hợp để đạt được mục tiêu chung. Khi mỗi thành viên hiểu rõ vai trò của mình, chủ động giao tiếp và sẵn sàng hỗ trợ đồng đội, hiệu quả của cả tập thể sẽ lớn hơn rất nhiều so với tổng năng lực của từng cá nhân.\n\nTrong các dự án AI, điều này càng trở nên quan trọng bởi sản phẩm thường cần sự phối hợp giữa nhiều vai trò như Data Engineer, Machine Learning Engineer, Backend Developer, Product Manager và UI/UX Designer. Nếu mỗi người chỉ tập trung vào phần việc của mình mà thiếu sự kết nối với các thành viên khác, dự án rất dễ gặp tình trạng chậm tiến độ, hiểu sai yêu cầu hoặc tạo ra một sản phẩm không đáp ứng nhu cầu thực tế của người dùng.\n\nCó thể nói, **một đội ngũ có kỹ năng chuyên môn tốt nhưng thiếu kỹ năng làm việc nhóm vẫn có nguy cơ thất bại**, trong khi một tập thể biết lắng nghe, phối hợp và tin tưởng lẫn nhau sẽ phát huy được tối đa năng lực của từng cá nhân. Thành công của một dự án không chỉ được xây dựng từ những cá nhân xuất sắc, mà còn từ khả năng biến những cá nhân đó thành một đội ngũ cùng chung mục tiêu và cùng hướng tới một kết quả tốt nhất.",
+      "author": {
+        "id": "698474313027682344",
+        "name": "nhat2kruoi",
+        "discriminator": "0000",
+        "nickname": "T060 - Lưu Quang Nhật",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "607559023805595653",
+              "name": "nson9116",
+              "discriminator": "0000",
+              "nickname": "baby dont hurt me",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+            },
+            {
+              "id": "698474313027682344",
+              "name": "nhat2kruoi",
+              "discriminator": "0000",
+              "nickname": "T060 - Lưu Quang Nhật",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+            },
+            {
+              "id": "839873884625829928",
+              "name": "aii4099",
+              "discriminator": "0000",
+              "nickname": "pl",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/839873884625829928/2fbbd173e29b6585c7e0a27e51e46e49.png?size=512"
+            },
+            {
+              "id": "1252976688728637492",
+              "name": "_todayis_meimei_50662",
+              "discriminator": "0000",
+              "nickname": "Nguyen Thi Xuan Mai",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531843542585180414",
+      "type": "Default",
+      "timestamp": "2026-07-29T08:59:20.829+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bổ ích nha",
+      "author": {
+        "id": "1302613926164303882",
+        "name": "khanhtruong04",
+        "discriminator": "0000",
+        "nickname": "T072 - Ngô Khánh Trượng - 01477",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1302613926164303882/6558bf95237da70073c751797e39986b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531843813633429685",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:00:25.452+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ x",
+      "author": {
+        "id": "607559023805595653",
+        "name": "nson9116",
+        "discriminator": "0000",
+        "nickname": "T060 - Nguyễn Ngọc Sơn - 01948",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531844232044744907",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:02:05.209+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hay quá bạn ơi",
+      "author": {
+        "id": "839873884625829928",
+        "name": "aii4099",
+        "discriminator": "0000",
+        "nickname": "G14 - T031 - Phùng Linh - 01992",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/839873884625829928/2fbbd173e29b6585c7e0a27e51e46e49.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

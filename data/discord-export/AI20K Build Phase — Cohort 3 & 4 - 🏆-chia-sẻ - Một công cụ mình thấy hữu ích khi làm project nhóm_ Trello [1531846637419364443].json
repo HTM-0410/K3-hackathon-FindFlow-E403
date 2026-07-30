@@ -1,0 +1,199 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531846637419364443",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Một công cụ mình thấy hữu ích khi làm project nhóm: Trello",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:04:24.0545127+07:00",
+  "messages": [
+    {
+      "id": "1531846637419364443",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:11:38.695+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Khi làm dự án nhóm, một vấn đề mình thường gặp là mọi người trao đổi công việc qua tin nhắn. Lúc đầu vẫn có thể theo dõi được, nhưng khi số lượng công việc tăng lên thì rất dễ quên ai đang làm phần nào, task nào đã hoàn thành và phần nào đang bị chậm.\nSau đó, nhóm mình thử sử dụng  Trello để quản lý công việc. Trello hoạt động giống như một bảng theo dõi trực quan, trong đó mỗi công việc được tạo thành một thẻ và di chuyển qua các trạng thái.\n\nMình thường chia bảng thành các cột đơn giản:\nCần làm → Đang thực hiện → Chờ kiểm tra → Hoàn thành\n\nTrong mỗi thẻ công việc, nhóm có thể ghi rõ:\n- Nội dung cần thực hiện.\n- Người phụ trách.\n- Thời hạn hoàn thành.\n- Checklist các bước nhỏ.\n- File hoặc đường dẫn liên quan.\n- Kết quả cần bàn giao.\n\nVí dụ, thay vì chỉ nhắn trong nhóm rằng “Bạn A làm phần chatbot”, mình sẽ tạo một task cụ thể hơn như:\nXây dựng API nhận câu hỏi từ người dùng, kết nối với module truy xuất tài liệu và trả kết quả về frontend.\nNhờ vậy, công việc rõ ràng hơn và mọi người cũng biết thế nào được xem là hoàn thành.\n\nMột điểm mình thấy hữu ích là khi có công việc mới phát sinh, nhóm chỉ cần thêm task vào bảng thay vì để nó trôi trong đoạn chat. Khi hoàn thành một phần, thành viên có thể cập nhật trạng thái để cả nhóm cùng theo dõi mà không cần hỏi lại nhiều lần.\nTuy nhiên, Trello chỉ thực sự hiệu quả khi nhóm cập nhật thường xuyên. Nếu tạo bảng xong nhưng vẫn tiếp tục giao việc hoàn toàn qua tin nhắn thì công cụ cũng không mang lại nhiều giá trị.\nQua trải nghiệm của mình, Trello không làm project tự động hoàn thành, nhưng nó giúp nhóm nhìn rõ ba điều quan trọng:\n\nCần làm gì – Ai đang làm – Công việc đang ở đâu.\n\nVới project sinh viên hoặc nhóm nhỏ, mình nghĩ không cần thiết kế bảng quá phức tạp. Chỉ cần task rõ ràng, có người phụ trách, có thời hạn và có tiêu chí hoàn thành là đã giúp quá trình làm việc có tổ chức hơn rất nhiều.\nĐiều mình rút ra là:\n\nMột project dễ bị chậm không hẳn vì thiếu người làm, mà đôi khi vì không ai nhìn thấy rõ toàn bộ công việc.",
+      "author": {
+        "id": "607559023805595653",
+        "name": "nson9116",
+        "discriminator": "0000",
+        "nickname": "T060 - Nguyễn Ngọc Sơn - 01948",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "607559023805595653",
+              "name": "nson9116",
+              "discriminator": "0000",
+              "nickname": "T060 - Nguyễn Ngọc Sơn - 01948",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/607559023805595653/c8f506c9d3558c78595aee57554b815d.png?size=512"
+            },
+            {
+              "id": "698474313027682344",
+              "name": "nhat2kruoi",
+              "discriminator": "0000",
+              "nickname": "T060 - Lưu Quang Nhật",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+            },
+            {
+              "id": "839873884625829928",
+              "name": "aii4099",
+              "discriminator": "0000",
+              "nickname": "pl",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/839873884625829928/2fbbd173e29b6585c7e0a27e51e46e49.png?size=512"
+            },
+            {
+              "id": "1100682537782751312",
+              "name": "hung1162",
+              "discriminator": "0000",
+              "nickname": "G14-T31 - Kim Mạnh Hưng - 01679",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1100682537782751312/d8b87a780122a1fbb48ba6a65cbf2efc.png?size=512"
+            },
+            {
+              "id": "1446866284443603206",
+              "name": "thien031916",
+              "discriminator": "0000",
+              "nickname": "Thiện",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531846797343985884",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:12:16.824+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://klipy.com/gifs/ronaldo-150",
+      "author": {
+        "id": "698474313027682344",
+        "name": "nhat2kruoi",
+        "discriminator": "0000",
+        "nickname": "T060 - Lưu Quang Nhật",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/698474313027682344/e55180d087a4aa2e8093d95a7b5442f4.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Ronaldo",
+          "url": "https://klipy.com/gifs/ronaldo-150",
+          "timestamp": null,
+          "description": "",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/l7tuc3A8w0fdL9fJzJRPbPHnaHZV7vovGp03QorAyYU/https/static.klipy.com/ii/4493325008d34b7bf8cd6813cd5c1619/43/a6/dyGfRa8zG6mEV.webp",
+            "canonicalUrl": "https://static.klipy.com/ii/4493325008d34b7bf8cd6813cd5c1619/43/a6/dyGfRa8zG6mEV.webp",
+            "width": 426,
+            "height": 426
+          },
+          "video": {
+            "url": "https://images-ext-1.discordapp.net/external/q4dJdHX-qkbvH4OIDrZ28B0pkrBnSiXA8XHKXMMMKjI/https/static.klipy.com/ii/4493325008d34b7bf8cd6813cd5c1619/43/a6/stwF5VXe6TzWWl0.mp4",
+            "canonicalUrl": "https://static.klipy.com/ii/4493325008d34b7bf8cd6813cd5c1619/43/a6/stwF5VXe6TzWWl0.mp4",
+            "width": 426,
+            "height": 426
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531847440049901578",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:14:50.057+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "rất bổ x!",
+      "author": {
+        "id": "839873884625829928",
+        "name": "aii4099",
+        "discriminator": "0000",
+        "nickname": "G14 - T031 - Phùng Linh - 01992",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/839873884625829928/2fbbd173e29b6585c7e0a27e51e46e49.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

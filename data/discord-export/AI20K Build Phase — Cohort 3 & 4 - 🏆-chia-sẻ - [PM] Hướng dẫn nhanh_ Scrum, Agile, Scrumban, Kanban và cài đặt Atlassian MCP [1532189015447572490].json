@@ -1,0 +1,301 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1532189015447572490",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[PM] Hướng dẫn nhanh: Scrum, Agile, Scrumban, Kanban và cài đặt Atlassian MCP",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:02:47.6876995+07:00",
+  "messages": [
+    {
+      "id": "1532189015447572490",
+      "type": "Default",
+      "timestamp": "2026-07-30T07:52:07.978+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "## Agile là gì?\n\n**Agile** là triết lý phát triển sản phẩm theo từng vòng lặp ngắn (iterative), ưu tiên **giao hàng sớm**, **liên tục cải tiến** và **thích ứng với thay đổi** thay vì lập kế hoạch cố định từ đầu.\n\n---\n\n## Scrum\n\n**Scrum** là framework phổ biến nhất để triển khai Agile.\n\nĐặc điểm:\n\n* Làm việc theo **Sprint** (1–4 tuần)\n* Có **Product Owner**, **Scrum Master**, **Development Team**\n* Các sự kiện chính:\n\n  * Sprint Planning\n  * Daily Scrum\n  * Sprint Review\n  * Sprint Retrospective\n\nPhù hợp với các dự án phát triển sản phẩm có yêu cầu thay đổi thường xuyên.\n\n---\n\n## Kanban\n\n**Kanban** là phương pháp quản lý **luồng công việc (Workflow)**.\n\nCông việc được theo dõi trên Kanban Board:\n\n```text\nBacklog → To Do → In Progress → Review → Done\n```\n\nNguyên tắc chính:\n\n* Hiển thị toàn bộ công việc\n* Giới hạn số lượng task đang thực hiện (WIP Limit)\n* Tối ưu tốc độ hoàn thành thay vì bắt đầu nhiều việc cùng lúc\n\n---\n\n## Scrumban\n\n**Scrumban** kết hợp Scrum và Kanban.\n\n* Lập kế hoạch theo Sprint như Scrum\n* Theo dõi công việc bằng Kanban Board\n* Áp dụng WIP Limit để giảm tắc nghẽn\n\nĐây là mô hình được nhiều startup và nhóm AI sử dụng vì vừa linh hoạt vừa dễ quản lý.\n\n---\n\n# Atlassian MCP trên ChatGPT\n\n**MCP (Model Context Protocol)** cho phép ChatGPT kết nối trực tiếp với các công cụ Atlassian như **Jira** và **Confluence** để tìm kiếm, đọc tài liệu hoặc tạo/cập nhật Issue theo đúng quyền của người dùng.\n\n### Cài đặt\n\n1. Đăng nhập **ChatGPT Web**.\n2. Vào **Settings → Connected Apps/Connectors**.\n3. Chọn **Atlassian** → **Connect**.\n4. Đăng nhập tài khoản Atlassian.\n5. Cấp quyền truy cập và chọn Workspace.\n6. Hoàn tất kết nối.\n\nSau khi kết nối, bạn có thể yêu cầu ChatGPT:\n\n* Tìm và tóm tắt Jira Issue.\n* Đọc tài liệu Confluence.\n* Tạo hoặc cập nhật Jira Task.\n* Tóm tắt Sprint, Backlog hoặc Epic.\n* Tìm blocker và theo dõi tiến độ dự án.\n\n> **Lưu ý:** ChatGPT chỉ truy cập được dữ liệu mà tài khoản Atlassian của bạn có quyền xem hoặc chỉnh sửa.",
+      "author": {
+        "id": "556771874885861386",
+        "name": "shayneeo",
+        "discriminator": "0000",
+        "nickname": "T086 - Phạm Quốc Thanh - 01407",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/556771874885861386/ff6b13cb2c103628a2854ef499853ef7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "505578977692352512",
+              "name": "tuanhungbk",
+              "discriminator": "0000",
+              "nickname": "Ngô Tuấn Hưng — 01409",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/505578977692352512/319eab7dd9f630541a9aba7207726184.png?size=512"
+            },
+            {
+              "id": "576599811890085908",
+              "name": "tienes2810",
+              "discriminator": "0000",
+              "nickname": "Tienes",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/576599811890085908/e3be5d41ffac148ee1b60f3d5c555343.png?size=512"
+            },
+            {
+              "id": "677173844590592004",
+              "name": "nhan02366",
+              "discriminator": "0000",
+              "nickname": "Nhân",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "878902192508137513",
+              "name": "nghiafl1",
+              "discriminator": "0000",
+              "nickname": "T018 - Nguyễn Huy Nghĩa - 01943",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/878902192508137513/2736e70d4f9d13fdc3fbad7ac73f6e8f.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDDE1",
+            "code": "orange_heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e1.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "402851939517202445",
+              "name": "tathankochi",
+              "discriminator": "0000",
+              "nickname": "tathan",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/402851939517202445/fb5c794b6968fe9599c2c9d24cac2980.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532190377539408012",
+      "type": "Default",
+      "timestamp": "2026-07-30T07:57:32.726+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bài viết hữu ích quá, cảm ơn bạn",
+      "author": {
+        "id": "402851939517202445",
+        "name": "tathankochi",
+        "discriminator": "0000",
+        "nickname": "T089 - Trần Xuân Lộc - 01671",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/402851939517202445/fb5c794b6968fe9599c2c9d24cac2980.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532190523081752756",
+      "type": "Default",
+      "timestamp": "2026-07-30T07:58:07.426+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hay quá bạn",
+      "author": {
+        "id": "576599811890085908",
+        "name": "tienes2810",
+        "discriminator": "0000",
+        "nickname": "G08 - T083 - Nguyễn Tiến - 01655",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/576599811890085908/e3be5d41ffac148ee1b60f3d5c555343.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532191158766272734",
+      "type": "Reply",
+      "timestamp": "2026-07-30T08:00:38.985+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bạn cần hỗ trợ gì thì cứ nhắn mình nhaaaa",
+      "author": {
+        "id": "556771874885861386",
+        "name": "shayneeo",
+        "discriminator": "0000",
+        "nickname": "T086 - Phạm Quốc Thanh - 01407",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/556771874885861386/ff6b13cb2c103628a2854ef499853ef7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "576599811890085908",
+          "name": "tienes2810",
+          "discriminator": "0000",
+          "nickname": "G08 - T083 - Nguyễn Tiến - 01655",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/576599811890085908/e3be5d41ffac148ee1b60f3d5c555343.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1532190523081752756",
+        "channelId": "1532189015447572490",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532191182229213455",
+      "type": "Reply",
+      "timestamp": "2026-07-30T08:00:44.579+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn bạn nhèo",
+      "author": {
+        "id": "556771874885861386",
+        "name": "shayneeo",
+        "discriminator": "0000",
+        "nickname": "T086 - Phạm Quốc Thanh - 01407",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/556771874885861386/ff6b13cb2c103628a2854ef499853ef7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "402851939517202445",
+          "name": "tathankochi",
+          "discriminator": "0000",
+          "nickname": "T089 - Trần Xuân Lộc - 01671",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/402851939517202445/fb5c794b6968fe9599c2c9d24cac2980.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1532190377539408012",
+        "channelId": "1532189015447572490",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}

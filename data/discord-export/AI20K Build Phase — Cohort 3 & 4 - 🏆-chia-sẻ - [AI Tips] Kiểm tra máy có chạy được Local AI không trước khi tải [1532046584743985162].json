@@ -1,0 +1,197 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1532046584743985162",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "[AI Tips] Kiểm tra máy có chạy được Local AI không trước khi tải",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:02:53.5335563+07:00",
+  "messages": [
+    {
+      "id": "1532046584743985162",
+      "type": "Default",
+      "timestamp": "2026-07-29T22:26:09.852+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Trước đây mỗi lần muốn thử một model AI mới, mình thường băn khoăn liệu máy có chạy được không, có đủ VRAM hay RAM hay không. Gần đây mình biết đến **canirun.ai **và thấy đây là một công cụ khá hữu ích để kiểm tra nhanh trước khi tải model.\n\nĐiều mình thích là không cần cài đặt gì. Chỉ cần chọn cấu hình máy, website sẽ ước lượng model nào chạy tốt, model nào chỉ vừa đủ hoặc quá nặng.\n\nWebsite đánh giá dựa trên các thông số như **CARD đồ họa, VRAM của card, Memory Bandwidth, RAM máy của bạn** và **dung lượng model **, sau đó phân loại thành các mức như **Runs great, Runs well, Tight fit** hoặc **Too heavy** để các bạn tham khảo.\n\nĐây chỉ là ước lượng dựa trên cấu hình phần cứng. Tuy nhiên mình thấy khá hữu ích để biết trước liệu máy có khả năng chạy một model hay không.\n\nChúc các bạn buổi tối vui vẻ!!!\n\nCác bạn có thể tham khảo website tại: https://www.canirun.ai/",
+      "author": {
+        "id": "877577707741933579",
+        "name": "fo2.fo3.fo4",
+        "discriminator": "0000",
+        "nickname": "G16-T048-Hồ Ngọc Quỳnh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [
+        {
+          "id": "1532046585083592905",
+          "url": "https://cdn.discordapp.com/attachments/1532046584743985162/1532046585083592905/ailocal.png?ex=6a6c15d1&is=6a6ac451&hm=94f501b0ca913332874fd6fb7c960cb9b4d7e6e2723db7e279be76c4303dd088&",
+          "fileName": "ailocal.png",
+          "fileSizeBytes": 178182
+        }
+      ],
+      "embeds": [
+        {
+          "title": "CanIRun.ai — Can your machine run AI models?",
+          "url": "https://www.canirun.ai/",
+          "timestamp": null,
+          "description": "Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser.",
+          "color": "#08080A",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/pJR8MMo6m6Ycyp8P0Lb3vnjh-bt1_lMuZcNOqLm1zCQ/https/canirun.ai/og/home.jpg",
+            "canonicalUrl": "https://canirun.ai/og/home.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "471331498314956820",
+              "name": "_nguyenthang",
+              "discriminator": "0000",
+              "nickname": "T048 — Nguyễn Thắng — 01163",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+            },
+            {
+              "id": "505578977692352512",
+              "name": "tuanhungbk",
+              "discriminator": "0000",
+              "nickname": "Ngô Tuấn Hưng — 01409",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/505578977692352512/319eab7dd9f630541a9aba7207726184.png?size=512"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "G16-T048-Hồ Ngọc Quỳnh",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532060272024354977",
+      "type": "Default",
+      "timestamp": "2026-07-29T23:20:33.154+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tình hình có vẻ hơi căng \uD83D\uDC40",
+      "author": {
+        "id": "471331498314956820",
+        "name": "_nguyenthang",
+        "discriminator": "0000",
+        "nickname": "T048 — Nguyễn Thắng — 01163",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1532060271575695512",
+          "url": "https://cdn.discordapp.com/attachments/1532046584743985162/1532060271575695512/image.png?ex=6a6c2291&is=6a6ad111&hm=1f6a217f6bfcec9efce11d0f39cb848b5d2ed917e0944b9f135f885521863db7&",
+          "fileName": "image.png",
+          "fileSizeBytes": 316611
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE06",
+            "code": "laughing",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f606.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "471331498314956820",
+              "name": "_nguyenthang",
+              "discriminator": "0000",
+              "nickname": "T048 — Nguyễn Thắng — 01163",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "G16-T048-Hồ Ngọc Quỳnh",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDC40",
+          "code": "eyes",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f440.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 2
+}

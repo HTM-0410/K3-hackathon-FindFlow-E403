@@ -1,0 +1,142 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531682452207046662",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "GÓC KỸ THUẬT: MẸO TỐI ƯU PROMPT & XỬ LÝ LỖI KHI XÂY DỰNG REACT AGENT",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:05:54.6515069+07:00",
+  "messages": [
+    {
+      "id": "1531682452207046662",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:19:13.89+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Khi làm Lab ReAct Agent hay xây dựng MVP, chúng ta rất dễ gặp các lỗi phổ biến như Agent bị lặp vô hạn (Infinite Loop), LLM bịa ra kết quả (Observation), hoặc trả về JSON lỗi làm crash code Python. Dưới đây là 4 mẹo thực chiến giúp hệ thống Agent của bạn chạy ổn định và mượt mà hơn.\n\n1. Triệt hạ vòng lặp vô hạn (Infinite Loop)\nVòng lặp xảy ra khi Tool trả về lỗi khiến LLM lúng túng và cố gọi lại đúng Tool đó với đúng tham số cũ cho đến khi chạm mốc giới hạn lượt chạy.\n\nCách xử lý: Bổ sung ngay quy tắc \"Self-Correction\" vào System Prompt:\n\nNếu Observation trả về lỗi, không được phép lặp lại Action cũ với tham số cũ.\n\nHãy phân tích lỗi trong Thought, sau đó thử đổi format/giá trị tham số hoặc chuyển sang gọi Tool khác.\n\nSau 2 lần thử không thành công, phải trả về Final Answer thông báo lý do thất bại.\n\n2. Chống \"bịa\" Observation (Observation Hallucination)\nNhiều LLM có xu hướng tự viết luôn phản hồi của Observation ngay sau khi sinh ra Action, thay vì dừng lại để chương trình Python thực thi Tool.\n\nCách xử lý: Kết hợp cả Prompt Discipline và cấu hình API:\n\nThêm Stop Sequence: Đặt stop=[\"Observation:\"] khi gọi API để ngắt chuỗi ngay lập tức khi LLM định tự sinh Observation.\n\nCủng cố Prompt: Ép LLM dừng viết ngay sau Action Input:, khẳng định Observation là dữ liệu thực tế chỉ do Hệ thống cung cấp.\n\n3. Parse JSON an toàn, chống crash Python\nLLM hay chèn thêm lời thoại hoặc Markdown code block (json ... ) vào Action Input, khiến hàm json.loads() mặc định của Python quăng lỗi JSONDecodeError.\n\nCách xử lý: Áp dụng cơ chế bảo vệ 2 lớp:\n\nCung cấp Few-shot Example: Mẫu chuẩn format JSON gọn gàng, không kèm lời giải thích thừa trong Prompt.\n\nRegex Extraction trong Python: Dùng Regular Expression (re.search(r'\\{.*\\}', text)) để bóc tách đúng phần JSON trước khi đưa vào json.loads().",
+      "author": {
+        "id": "1529788874090614854",
+        "name": "vuanhit245",
+        "discriminator": "0000",
+        "nickname": "G3-T009-Vũ Xuân Anh-02010",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "1132007414217048144",
+              "name": "dothanhloan",
+              "discriminator": "0000",
+              "nickname": "G16-T136 - Thanh Loan - 01654",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "1529788874090614854",
+              "name": "vuanhit245",
+              "discriminator": "0000",
+              "nickname": "G3-T009-Vũ Xuân Anh-02010",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531683980859019344",
+      "type": "Reply",
+      "timestamp": "2026-07-28T22:25:18.349+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thông tin thật bổ ích bạn ơi",
+      "author": {
+        "id": "1132007414217048144",
+        "name": "dothanhloan",
+        "discriminator": "0000",
+        "nickname": "G16-T136 - Thanh Loan - 01654",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1529788874090614854",
+          "name": "vuanhit245",
+          "discriminator": "0000",
+          "nickname": "G3-T009-Vũ Xuân Anh-02010",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1531682452207046662",
+        "channelId": "1531682452207046662",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

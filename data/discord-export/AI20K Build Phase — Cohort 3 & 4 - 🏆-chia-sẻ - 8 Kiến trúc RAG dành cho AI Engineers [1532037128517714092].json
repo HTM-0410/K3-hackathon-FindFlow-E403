@@ -1,0 +1,174 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1532037128517714092",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "8 Kiến trúc RAG dành cho AI Engineers",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:02:58.6207925+07:00",
+  "messages": [
+    {
+      "id": "1532037128517714092",
+      "type": "Default",
+      "timestamp": "2026-07-29T21:48:35.312+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hôm nay mình muốn chia sẻ với các bạn về các kiến trúc RAG và khi nào nên sử dụng chúng.\n\n### 1. Naive RAG\n\n* Truy xuất tài liệu dựa trên độ tương đồng giữa embedding của câu hỏi và tài liệu.\n* Phù hợp với các câu hỏi đơn giản, mang tính tra cứu thông tin.\n\n### 2. Multimodal RAG\n\n* Xử lý nhiều loại dữ liệu như: text, ảnh, âm thanh,...\n* Phù hợp với các bài toán đa phương thức, kết hợp nhiều loại dữ liệu để trả lời.\n\n### 3. HyDE (Hypothetical Document Embeddings)\n\n* Sinh ra một tài liệu giả định từ câu hỏi rồi dùng embedding của tài liệu đó để truy xuất.\n* Phù hợp khi cách diễn đạt của người dùng khác với tài liệu. Đổi lại sẽ tăng chi phí và độ trễ.\n\n### 4. Corrective RAG\n\n* Kiểm chứng kết quả truy xuất với các nguồn đáng tin cậy trước khi gửi cho LLM.\n* Phù hợp với các hệ thống cần thông tin luôn mới như tin tức, pháp luật, y tế,...\n\n### 5. Graph RAG\n\n* Chuyển nội dung thành Knowledge Graph để khai thác mối quan hệ giữa các thực thể.\n* Phù hợp với các bài toán cần suy luận. Có thể đọc thêm paper *Retrieval-Augmented Generation with Graphs (GraphRAG)*.\n\n### 6. Hybrid RAG\n\n* Kết hợp nhiều phương pháp truy xuất trong cùng một pipeline.\n* Phù hợp khi cần khai thác cả dữ liệu có cấu trúc và phi cấu trúc.\n\n### 7. Adaptive RAG\n\n* Tự chọn cách truy xuất theo từng câu hỏi. Câu hỏi phức tạp sẽ được chia thành nhiều truy vấn nhỏ trước khi tổng hợp kết quả.\n\n### 8. Agentic RAG\n\n* Sử dụng AI Agent để lập kế hoạch, suy luận và dùng các công cụ như Web Search, API,...\n* Phù hợp với các bài toán phức tạp, cần nhiều bước xử lý.",
+      "author": {
+        "id": "1258262646059438170",
+        "name": "thetrung8_67686",
+        "discriminator": "0000",
+        "nickname": "T133 - Phạm Thế Trung - 01299",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [
+        {
+          "id": "1532037128798863561",
+          "url": "https://cdn.discordapp.com/attachments/1532037128517714092/1532037128798863561/Screenshot_2026-07-29_162549.png?ex=6a6c0d03&is=6a6abb83&hm=0a5dd220dd62b6e248db71c9a0dce79586a79de05038667ab90b3efbaf165144&",
+          "fileName": "Screenshot_2026-07-29_162549.png",
+          "fileSizeBytes": 699532
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "505578977692352512",
+              "name": "tuanhungbk",
+              "discriminator": "0000",
+              "nickname": "Ngô Tuấn Hưng — 01409",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/505578977692352512/319eab7dd9f630541a9aba7207726184.png?size=512"
+            },
+            {
+              "id": "700136910030635068",
+              "name": "dog.renkyu",
+              "discriminator": "0000",
+              "nickname": "Renkyu",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            },
+            {
+              "id": "878590733232259084",
+              "name": "thanhnamit.",
+              "discriminator": "0000",
+              "nickname": "Thanh Nam",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/878590733232259084/28f33a0830af159f6469c19db512077a.png?size=512"
+            },
+            {
+              "id": "1169894248796131401",
+              "name": "dinhhoang171",
+              "discriminator": "0000",
+              "nickname": "dinhhoang",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1169894248796131401/0463dd652b602446a5868b8c328fe843.png?size=512"
+            },
+            {
+              "id": "1294940384111366245",
+              "name": "thanhduongw",
+              "discriminator": "0000",
+              "nickname": "Duong",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1532209452395004026",
+      "type": "Default",
+      "timestamp": "2026-07-30T09:13:20.526+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bổ x",
+      "author": {
+        "id": "878590733232259084",
+        "name": "thanhnamit.",
+        "discriminator": "0000",
+        "nickname": "T206 - Lê Thành Nam - 01397",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/878590733232259084/28f33a0830af159f6469c19db512077a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1258262646059438170",
+              "name": "thetrung8_67686",
+              "discriminator": "0000",
+              "nickname": "T133 - Phạm Thế Trung - 01299",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

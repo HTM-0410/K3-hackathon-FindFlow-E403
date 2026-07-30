@@ -1,0 +1,262 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531687765199159376",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Agent AI chạy thật ở production — những điều cần biết + giải pháp thực tế",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:05:43.9156178+07:00",
+  "messages": [
+    {
+      "id": "1531687765199159376",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:40:20.606+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tóm tắt nhanh\n•  Demo agent thường trông \"thông minh\" hơn thực tế; production mới lộ ra các lỗi: lỗi nhân lũy tiến, hallucination (nói bịa), vòng lặp vô tận tiêu tốn token, và mất trạng thái khi crash.\n•  Bài học chính: LLM là công cụ — đừng để nó ôm tất cả. Agent production đáng tin cậy là hệ thống do code deterministic điều phối, LLM chỉ được tham vấn ở vài điểm cần phán đoán, và toàn bộ state do phần mềm kiểm soát.\n\nVấn đề chính (vì sao agent gãy)\n1. Lỗi cộng dồn: chuỗi nhiều quyết định do model đưa ra → xác suất sai tăng theo cấp số nhân.  \n2. Hallucination: model trả lời tự tin nhưng sai → rủi ro lớn nếu agent thực thi hành động ngoài demo.  \n3. Loop runaway: thiếu điều kiện dừng → lặp mãi, tốn tiền.  \n4. State trong context: khi state chỉ nằm trong prompt/context, crash = mất toàn bộ tiến trình.\n\nNguyên tắc thiết kế:\n•  Context engineering — chọn lọc những gì model \"thấy\"; chất lượng > số lượng.\n•  Control flow ở code — loop, dừng, retry, timeout do code quản lý.\n•  State ngoài model — session/checkpoint/log trong DB để resume & audit.\n•  Scope nhỏ + least-privilege — agent hẹp nhiệm vụ, tool quyền tối thiểu, hành động nhạy cảm cần human-in-the-loop.\n\nChecklist 8 bước :\n1. Orchestration layer — code quyết định khi nào gọi model.\n2. Giới hạn loop — max iterations, timeout, token budget.\n3. Version prompts + schema — prompt trong repo, output JSON theo schema.\n4. Context pruning — chỉ đưa chunks cần thiết, summarize history.\n5. State/checkpoint — lưu event log vào DB để resume & audit.\n6. Validate & verify — Pydantic check → retry/fallback → human review.\n7. Least-privilege + sandbox — credential scoped per tool, staging cho side-effects.\n8. Observability — track token/pass-rate/hallucination, regression tests.\n\nMột flow đơn giản để implement\nUser → Gateway validate → Orchestrator (code) phân task → Retriever chọn context → Model trả JSON decision → Executor thực thi tool/db → Append result to state → Verifier/Human approval nếu cần → Done.",
+      "author": {
+        "id": "1078711817855053914",
+        "name": "ditionge12345",
+        "discriminator": "0000",
+        "nickname": "T151-Nguyễn Tiến Dũng-01707",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1078711817855053914/a930e55923a6c3622e02015f299fd1d0.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 6,
+          "users": [
+            {
+              "id": "549104035257516061",
+              "name": "nguyentungduong5510",
+              "discriminator": "0000",
+              "nickname": "Conca979",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/549104035257516061/73a20b35badbcd055615dc325d6bcda8.png?size=512"
+            },
+            {
+              "id": "657537583848357898",
+              "name": "nah0413",
+              "discriminator": "0000",
+              "nickname": "Hoàng Quang Minh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/657537583848357898/49b33015625a03e6ce6b02b9e43c08f4.png?size=512"
+            },
+            {
+              "id": "917327549493837824",
+              "name": "hieu5938",
+              "discriminator": "0000",
+              "nickname": "Hiếu",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/917327549493837824/f3a70b63d03c1b46f7b2e9dc1773ce09.png?size=512"
+            },
+            {
+              "id": "1078711817855053914",
+              "name": "ditionge12345",
+              "discriminator": "0000",
+              "nickname": "T151-Nguyễn Tiến Dũng-01707",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1078711817855053914/a930e55923a6c3622e02015f299fd1d0.png?size=512"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1446866284443603206",
+              "name": "thien031916",
+              "discriminator": "0000",
+              "nickname": "Thiện",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531688207068954825",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:42:05.956+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://klipy.com/gifs/hmmmm-20",
+      "author": {
+        "id": "917327549493837824",
+        "name": "hieu5938",
+        "discriminator": "0000",
+        "nickname": "T194 - Đào Trung Hiếu - 01238",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/917327549493837824/f3a70b63d03c1b46f7b2e9dc1773ce09.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Hmmmm Cat Thinking",
+          "url": "https://klipy.com/gifs/hmmmm-20",
+          "timestamp": null,
+          "description": "",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/5HoQ1rEP22N8T7Jn0yw8Kd77re2sj3wHJ2TbHAChqpI/https/static.klipy.com/ii/4e7bea9f7a3371424e6c16ebc93252fe/22/e8/NB8FPlOZFIPlMO9hcz.webp",
+            "canonicalUrl": "https://static.klipy.com/ii/4e7bea9f7a3371424e6c16ebc93252fe/22/e8/NB8FPlOZFIPlMO9hcz.webp",
+            "width": 480,
+            "height": 480
+          },
+          "video": {
+            "url": "https://images-ext-1.discordapp.net/external/3WEsqsLrecvh2ezgAs2b_hpaPBGktuhvW4lwdz1V51o/https/static.klipy.com/ii/4e7bea9f7a3371424e6c16ebc93252fe/22/e8/kjNFEV2sSSa9nagaVToZ.mp4",
+            "canonicalUrl": "https://static.klipy.com/ii/4e7bea9f7a3371424e6c16ebc93252fe/22/e8/kjNFEV2sSSa9nagaVToZ.mp4",
+            "width": 480,
+            "height": 480
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531688262052347974",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:42:19.065+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đáng suy ngẫm",
+      "author": {
+        "id": "917327549493837824",
+        "name": "hieu5938",
+        "discriminator": "0000",
+        "nickname": "T194 - Đào Trung Hiếu - 01238",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/917327549493837824/f3a70b63d03c1b46f7b2e9dc1773ce09.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531691914557132951",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:56:49.89+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://klipy.com/gifs/batman-thinking-16",
+      "author": {
+        "id": "549104035257516061",
+        "name": "nguyentungduong5510",
+        "discriminator": "0000",
+        "nickname": "T214-Nguyễn Tùng Dương-01534",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/549104035257516061/73a20b35badbcd055615dc325d6bcda8.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Batman Deep in Thought",
+          "url": "https://klipy.com/gifs/batman-thinking-16",
+          "timestamp": null,
+          "description": "",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/ei6Tp8FGuvhS_yub0OL2Wg33PKEPMTbHdFHZtWPbt1g/https/static.klipy.com/ii/6d10859e1c728518e7166aff5bc2c2ac/55/e1/JvqZjKv3.webp",
+            "canonicalUrl": "https://static.klipy.com/ii/6d10859e1c728518e7166aff5bc2c2ac/55/e1/JvqZjKv3.webp",
+            "width": 128,
+            "height": 128
+          },
+          "video": {
+            "url": "https://images-ext-1.discordapp.net/external/Nq7QVeRpuRx4Usd-E5vjlrs7NKUx77rBAz26EVd_CSs/https/static.klipy.com/ii/6d10859e1c728518e7166aff5bc2c2ac/55/e1/U3tW1Fb5.mp4",
+            "canonicalUrl": "https://static.klipy.com/ii/6d10859e1c728518e7166aff5bc2c2ac/55/e1/U3tW1Fb5.mp4",
+            "width": 128,
+            "height": 128
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

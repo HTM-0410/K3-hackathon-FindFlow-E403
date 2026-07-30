@@ -1,0 +1,182 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531492649960476813",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "\uD83E\uDDE0 AI trả lời dài quá? Thử ngay \"I Have ADHD\"",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:06:31.6915622+07:00",
+  "messages": [
+    {
+      "id": "1531492649960476813",
+      "type": "Default",
+      "timestamp": "2026-07-28T09:45:01.508+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Chắc ai cũng từng gặp cảnh hỏi AI một câu mà nó trả lời dài cả trang, đọc mãi vẫn chưa thấy đoạn mình cần đúng không ạ.\nmọi người có thể thử repo i-have-adhd này, nó giống như một bộ hướng dẫn để AI trả lời ngắn gọn, rõ ràng và đi thẳng vào vấn đề hơn.\nVí dụ khi mình hỏi lỗi code, thay vì AI giải thích một đoạn rất dài rồi cuối cùng mới đưa cách sửa, thì nó sẽ ưu tiên nói luôn:\n\n*Lỗi nằm ở đâu\n*Cần sửa file nào\n*Chạy lệnh gì\n*Làm bước nào trước\nSau đó nếu cần thì mới giải thích thêm.\nCách dùng cũng khá đơn giản. Mọi người vào repo:\nhttps://github.com/ayghri/i-have-adhd\nSau đó copy phần hướng dẫn trong repo và thêm vào phần instruction hoặc rules của công cụ AI đang dùng, ví dụ như Claude Code, Cursor, Codex hoặc ChatGPT.\n\nTừ đó cách AI trả lời sẽ gọn hơn, ít lan man hơn và chia từng bước rõ ràng hơn.\nMình thấy repo này khá phù hợp với những bạn thường dùng AI để code, debug hoặc học kiến thức mới nhưng không muốn đọc quá nhiều chữ.",
+      "author": {
+        "id": "940054719789948958",
+        "name": "brainluoibieng",
+        "discriminator": "0000",
+        "nickname": "G25-T195-Phan Trọng Đạt - 01138",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - ayghri/i-have-adhd: A skill for your coding agent to stop ...",
+          "url": "https://github.com/ayghri/i-have-adhd",
+          "timestamp": null,
+          "description": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output. - ayghri/i-have-adhd",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/gDridJIrbzNXDlD_mCZt4L9m4hOIrJdTxTCi72uvllo/https/opengraph.githubassets.com/f53adf4fcb94ad0ee58eb3f3bafff3f422b5f3f113b7ab71a175fc96b2f35bdd/ayghri/i-have-adhd",
+            "canonicalUrl": "https://opengraph.githubassets.com/f53adf4fcb94ad0ee58eb3f3bafff3f422b5f3f113b7ab71a175fc96b2f35bdd/ayghri/i-have-adhd",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1079747273052921947",
+              "name": "kiuhip",
+              "discriminator": "0000",
+              "nickname": "kiuhip",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531502134351364278",
+      "type": "Default",
+      "timestamp": "2026-07-28T10:22:42.763+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "bạn thử chưa bạn, mình xin trải nghiệm thực tế trước và sau với",
+      "author": {
+        "id": "669187508122288159",
+        "name": "nhmanh.ai42e",
+        "discriminator": "0000",
+        "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531613247193485322",
+      "type": "Reply",
+      "timestamp": "2026-07-28T17:44:14.129+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "mình thấy nó trả lời ngắn gọn hơn với sát hơn, đỡ lan man đấy bạn",
+      "author": {
+        "id": "940054719789948958",
+        "name": "brainluoibieng",
+        "discriminator": "0000",
+        "nickname": "G25-T195-Phan Trọng Đạt - 01138",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "669187508122288159",
+          "name": "nhmanh.ai42e",
+          "discriminator": "0000",
+          "nickname": "T213 - Nguyễn Hùng Mạnh - 01256",
+          "color": "#2ECC71",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1527648657325690961",
+              "name": "Learner",
+              "color": "#2ECC71",
+              "position": 2
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/669187508122288159/c8e5db9a606bb838d88051715c359fe1.png?size=512"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1531502134351364278",
+        "channelId": "1531492649960476813",
+        "guildId": "1526532830627102781"
+      },
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

@@ -1,0 +1,240 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531855509609648258",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Video giúp bạn tự tay code RAG từ con số 0 \uD83E\uDD2F",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:04:08.0582475+07:00",
+  "messages": [
+    {
+      "id": "1531855509609648258",
+      "type": "Default",
+      "timestamp": "2026-07-29T09:46:53.99+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bạn có đang cảm thấy kiến thức học mỗi ngày một dồn dập, học chưa kịp hiểu đã phải chạy sang bài mới? Nếu câu trả lời là \"có\", thì đây là 1 video mình nghĩ đáng để bạn dừng lại xem, vì nó không chỉ giải thích RAG mà còn code RAG từ con số 0.\n\n Mình vô tình xem được series video này build một hệ thống RAG (Retrieval-Augmented Generation) hoàn chỉnh bằng Python, từng bước một - không dùng thư viện RAG có sẵn (không LangChain, không vector DB ngoài) để hiểu rõ cơ chế phía sau thay vì chỉ biết gọi API.\n\nVài điểm mình thấy \"đắt\" nhất:\nTự code chunking: chia đoạn 800 ký tự, overlap 120 ký tự để không mất ngữ cảnh ở ranh giới\nTự code tìm kiếm: chuẩn hoá vector, dùng dot product tính cosine similarity - chạy local, chưa cần gọi AI ngoài\nChỉ khi có đúng đoạn liên quan mới ghép ngữ cảnh gọi Gemini trả lời, với rule bắt buộc: chỉ trả lời từ ngữ cảnh, không bịa, luôn trích nguồn\n\nXem xong mình hiểu RAG không còn mơ hồ nữa, mà là một pipeline cụ thể: đọc → chia → vector hoá → tìm kiếm → sinh câu trả lời có nguồn.\n\nLink video: https://www.facebook.com/share/v/1FA8kpUWbo/\n\nLesson nhanh: Hiểu \"bên trong\" RAG hoạt động thế nào giúp bạn debug và tuỳ biến dễ hơn nhiều, trước khi dùng các framework có sẵn.\n\nNguồn: Code4life - EdTech for Next Gen Coders",
+      "author": {
+        "id": "1263493356806475826",
+        "name": "quanghadev_78283",
+        "discriminator": "0000",
+        "nickname": "T059 - Nguyễn Quang Hà - 01424",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Log in or sign up to view",
+          "url": "https://www.facebook.com/share/v/1FA8kpUWbo/",
+          "timestamp": null,
+          "description": "See posts, photos and more on Facebook.",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "590017970101813288",
+              "name": "walte_2",
+              "discriminator": "0000",
+              "nickname": "Walte",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/590017970101813288/2b2b7c8945914c779e56465c03770743.png?size=512"
+            },
+            {
+              "id": "1075253803261108235",
+              "name": "ducmanhleave2110",
+              "discriminator": "0000",
+              "nickname": "Nguyen Duc Manh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1075253803261108235/e83b06b2a371761919a01b6bf394e607.png?size=512"
+            },
+            {
+              "id": "1263493356806475826",
+              "name": "quanghadev_78283",
+              "discriminator": "0000",
+              "nickname": "T059 - Nguyễn Quang Hà - 01424",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "✅",
+            "code": "white_check_mark",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2705.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1263493356806475826",
+              "name": "quanghadev_78283",
+              "discriminator": "0000",
+              "nickname": "T059 - Nguyễn Quang Hà - 01424",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE2E",
+            "code": "open_mouth",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f62e.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1263493356806475826",
+              "name": "quanghadev_78283",
+              "discriminator": "0000",
+              "nickname": "T059 - Nguyễn Quang Hà - 01424",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE31",
+            "code": "scream",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f631.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1263493356806475826",
+              "name": "quanghadev_78283",
+              "discriminator": "0000",
+              "nickname": "T059 - Nguyễn Quang Hà - 01424",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531857597244903527",
+      "type": "ChannelNameChange",
+      "timestamp": "2026-07-29T09:55:11.721+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Changed the channel name: Video giúp bạn tự tay code RAG từ con số 0 \uD83E\uDD2F",
+      "author": {
+        "id": "1263493356806475826",
+        "name": "quanghadev_78283",
+        "discriminator": "0000",
+        "nickname": "T059 - Nguyễn Quang Hà - 01424",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/1263493356806475826/372815565dae31c61d7e20fb0cec69c1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83E\uDD2F",
+          "code": "exploding_head",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f92f.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531872551599341649",
+      "type": "Default",
+      "timestamp": "2026-07-29T10:54:37.117+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hữu ích quá, cảm mơn bạn < 3",
+      "author": {
+        "id": "590017970101813288",
+        "name": "walte_2",
+        "discriminator": "0000",
+        "nickname": "T059 - Phạm Gia Bảo - 01506",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/590017970101813288/2b2b7c8945914c779e56465c03770743.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 3
+}

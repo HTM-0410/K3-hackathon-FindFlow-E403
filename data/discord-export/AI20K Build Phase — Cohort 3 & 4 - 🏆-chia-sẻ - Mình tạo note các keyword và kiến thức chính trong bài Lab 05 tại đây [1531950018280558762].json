@@ -1,0 +1,136 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531950018280558762",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Mình tạo note các keyword và kiến thức chính trong bài Lab 05 tại đây",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:03:28.2648158+07:00",
+  "messages": [
+    {
+      "id": "1531950018280558762",
+      "type": "Default",
+      "timestamp": "2026-07-29T16:02:26.613+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Đây là note cá nhân về bài học của mình. Mình ghi chú và hệ thống lại những kiến thức học được bằng Notion. Nhân tiện chia sẻ với mọi người, biết đâu sẽ hữu ích cho ai đó. Nếu có chỗ nào chưa rõ, AI của Notion cũng có thể giải thích và tóm tắt khá nhanh.\nhttps://app.notion.com/p/VinAI-Th-c-Chi-n-K3-b-i-5-AI-Product-Thinking-Requirements-3ac161d11b8b808da475e31653146c0b",
+      "author": {
+        "id": "1035030387753242674",
+        "name": "dongd22",
+        "discriminator": "0000",
+        "nickname": "T037 - Lại Duy Đông - 01913",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "387588408668585986",
+              "name": "negidayo_",
+              "discriminator": "0000",
+              "nickname": "Hnàh",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/387588408668585986/2b221ec17d51b09422a7957ca6d53401.png?size=512"
+            },
+            {
+              "id": "452011766717743105",
+              "name": "nhockiuzzz",
+              "discriminator": "0000",
+              "nickname": "nhockiuzzz",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/452011766717743105/67bccf98e516398c3eb78e58110415cd.png?size=512"
+            },
+            {
+              "id": "678982833628250148",
+              "name": "heromine99",
+              "discriminator": "0000",
+              "nickname": "Karma",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/678982833628250148/0cd5b9f797680d5304957dd953fdb5f1.png?size=512"
+            },
+            {
+              "id": "1035030387753242674",
+              "name": "dongd22",
+              "discriminator": "0000",
+              "nickname": "T037 - Lại Duy Đông - 01913",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531960866478756041",
+      "type": "Default",
+      "timestamp": "2026-07-29T16:45:33.025+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cảm ơn bạn nha",
+      "author": {
+        "id": "888819631198982205",
+        "name": "0333714071",
+        "discriminator": "0000",
+        "nickname": "T229-Nguyễn Đoàn Tiến Anh-01509",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

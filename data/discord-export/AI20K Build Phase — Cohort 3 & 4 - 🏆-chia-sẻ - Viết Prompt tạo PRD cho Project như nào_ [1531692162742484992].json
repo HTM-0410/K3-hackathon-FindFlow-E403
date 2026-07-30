@@ -1,0 +1,127 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531692162742484992",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Viết Prompt tạo PRD cho Project như nào?",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:05:24.5609547+07:00",
+  "messages": [
+    {
+      "id": "1531692162742484992",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:57:49.062+07:00",
+      "timestampEdited": "2026-07-28T22:59:06.336+07:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mình nhận thấy rất nhiều người sử dụng ChatGPT, Claude hay Gemini để tạo **Product Requirement Document (PRD)**. Tuy nhiên, kết quả thường khá sơ sài: thiếu bối cảnh, mục tiêu, yêu cầu kỹ thuật và chưa đủ chi tiết để đội phát triển triển khai.\n\nNguyên nhân không nằm ở AI mà nằm ở **prompt**.\nMột prompt tốt không phải là:\n\n> \"Đây là dự án của tôi, hãy viết PRD cho dự án.\"\n\nThay vào đó, hãy cung cấp cho AI đầy đủ ngữ cảnh như khi bàn giao dự án cho một Product Manager.\n\n## 1. Xác định vai trò của AI\nVí dụ:\n\n> \"Bạn là Product Manager, Business Analyst, CTO và AI Solution Architect với hơn 15 năm kinh nghiệm.\"\n\nViệc định nghĩa vai trò giúp AI phân tích đúng góc nhìn.\n\n## 2. Mô tả bài toán nghiệp vụ\nHãy nêu rõ:\n* Doanh nghiệp gặp vấn đề gì?\n* Ai là người sử dụng?\n* Quy trình hiện tại như thế nào?\n* Điều gì gây tốn thời gian hoặc chi phí?\n\n## 3. Nêu rõ mục tiêu\nVí dụ:\n* Giảm 70% câu hỏi lặp lại.\n* Luôn trích dẫn nguồn.\n* Từ chối khi không đủ căn cứ.\nMục tiêu càng cụ thể thì PRD càng dễ đo lường.\n\n## 4. Liệt kê chức năng\nĐừng để AI tự suy đoán. Hãy mô tả các tính năng theo từng vai trò.\n**Employee:** Đăng nhập, Chat AI, Lịch sử hội thoại, Tạo ticket.\n**Admin:** Quản lý tài liệu, Dashboard, Phân quyền.\n\n## 5. Cung cấp stack công nghệ\nVí dụ:\nLLM: Gemini Flash, Embedding: gemini-embedding-001, Vector Search: pgvector, Agent Workflow: LangGraph\nNếu không chỉ định stack, AI có thể đề xuất công nghệ không phù hợp.\n\n## 6. Yêu cầu đầu ra\n* Markdown\n* Mục lục\n* Bảng biểu\n* Mermaid Diagram\n* Decision Log\n* ADR\nMỗi chương cần đủ chi tiết để đội phát triển triển khai.\n\n## 7. Quy định nguyên tắc\n* Không tự ý thay đổi stack.\n* Nếu đề xuất phương án khác, phải nêu trade-off.\n* Thiếu thông tin thì ghi rõ giả định.\n* Tài liệu dài thì chia nhiều file.\n* Mỗi lần chỉ tạo một tài liệu.\n\n**Hãy xem prompt như một Project Brief dành cho AI. Càng nhiều ngữ cảnh, mục tiêu và ràng buộc, AI càng tạo ra PRD sát thực tế và có thể sử dụng ngay.**",
+      "author": {
+        "id": "820279880054865921",
+        "name": "noxxsanl",
+        "discriminator": "0000",
+        "nickname": "G08-T147-Nguyễn Hoàng Đạt-01460",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/820279880054865921/93f8acd1d60a3e26b3a7890967e6ae0e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "694571231600443392",
+              "name": "hoangtrunghai9239",
+              "discriminator": "0000",
+              "nickname": "Hải Hoàng",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/694571231600443392/c0f55bab4d1795403fd45afecfc7e2f5.png?size=512"
+            },
+            {
+              "id": "1108061338044993607",
+              "name": "phongqk226",
+              "discriminator": "0000",
+              "nickname": "T071 — Nguyễn Tuấn Phong — 01038",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1108061338044993607/efffe28e63c8044cfe68f9d37fab28cd.png?size=512"
+            },
+            {
+              "id": "1446866284443603206",
+              "name": "thien031916",
+              "discriminator": "0000",
+              "nickname": "Thiện",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531697065703506010",
+      "type": "Default",
+      "timestamp": "2026-07-28T23:17:18.019+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Bổ ích quá ạ",
+      "author": {
+        "id": "694571231600443392",
+        "name": "hoangtrunghai9239",
+        "discriminator": "0000",
+        "nickname": "T147 - Hoàng Trung Hải - 01054",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/694571231600443392/c0f55bab4d1795403fd45afecfc7e2f5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 2
+}

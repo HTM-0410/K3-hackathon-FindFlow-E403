@@ -1,0 +1,209 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1530791334166790175",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "Bộ MCP mình thấy hữu ích khi code với AI",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:03:46.1672566+07:00",
+  "messages": [
+    {
+      "id": "1530791334166790175",
+      "type": "Default",
+      "timestamp": "2026-07-26T11:18:14.793+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Gần đây mình thử setup một số MCP cho Cursor/VS Code và nhận ra MCP hữu ích nhất khi mình không cố dùng một tool cho mọi thứ.\nHiện tại mình chia MCP theo từng loại context.\nVí dụ:\nContext7 / documentation MCP\nDùng khi làm với library/framework mà model dễ trả lời dựa trên API cũ. Thay vì hỏi AI dựa hoàn toàn vào knowledge của model, mình cho agent lấy documentation trước rồi mới generate code.\nGitHub MCP\nKhá tiện khi cần hiểu một repository ngoài source code hiện tại: issues, PR, commit history, branch... Đặc biệt hữu ích khi debug một behavior và muốn biết nó xuất hiện từ thay đổi nào.\nCodeGraph\nMình dùng chủ yếu cho repository lớn. Nó hữu ích với các câu hỏi về relationship như caller/callee, dependency hoặc trace một execution flow.\nDatabase MCP\nCái này mình thấy rất tiện khi debug backend. Agent có thể xem schema/table trước khi phân tích repository, thay vì mình phải copy schema vào chat.\nPlaywright/browser MCP\nKhá thú vị cho frontend. Sau khi sửa code, agent có thể mở web, tương tác với UI và kiểm tra kết quả thay vì chỉ kết luận \"code looks correct\".\nĐiểm mình nhận ra là MCP không nhất thiết phải cung cấp thêm \"knowledge\" cho AI.\nNó cung cấp thêm capability + context.\nVí dụ một task fix bug có thể trở thành:\nGitHub issue\n→ tìm code liên quan\n→ CodeGraph / code search\n→ sửa code\n→ chạy app\n→ Playwright kiểm tra UI\n→ xem kết quả\nTrước đây mình thường phải làm từng bước rồi copy thông tin cho AI.\nSau khi setup MCP đúng use case thì workflow bắt đầu giống một coding agent thực sự hơn.",
+      "author": {
+        "id": "934298468002955324",
+        "name": "huygoodboy",
+        "discriminator": "0000",
+        "nickname": "T073 - Bùi Gia Huy - 01879",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/934298468002955324/2dbc50068255824281724ce931c4e753.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 5,
+          "users": [
+            {
+              "id": "934298468002955324",
+              "name": "huygoodboy",
+              "discriminator": "0000",
+              "nickname": "T073 - Bùi Gia Huy - 01879",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/934298468002955324/2dbc50068255824281724ce931c4e753.png?size=512"
+            },
+            {
+              "id": "1258262646059438170",
+              "name": "thetrung8_67686",
+              "discriminator": "0000",
+              "nickname": "T133 - Phạm Thế Trung - 01299",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            },
+            {
+              "id": "1392890973616476160",
+              "name": "heheboi0909",
+              "discriminator": "0000",
+              "nickname": "Đậu Quốc Duy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            },
+            {
+              "id": "1446866284443603206",
+              "name": "thien031916",
+              "discriminator": "0000",
+              "nickname": "Thiện",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+            },
+            {
+              "id": "1520438987473551476",
+              "name": "hoquangminh_ai20k",
+              "discriminator": "0000",
+              "nickname": "T073-Hồ Quang Minh-01906",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531887999942529156",
+      "type": "Default",
+      "timestamp": "2026-07-29T11:56:00.289+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Tôi có thể làm gì với thông tin này",
+      "author": {
+        "id": "1520438987473551476",
+        "name": "hoquangminh_ai20k",
+        "discriminator": "0000",
+        "nickname": "T073-Hồ Quang Minh-01906",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531889917339238461",
+      "type": "Default",
+      "timestamp": "2026-07-29T12:03:37.432+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "HAY",
+      "author": {
+        "id": "1258262646059438170",
+        "name": "thetrung8_67686",
+        "discriminator": "0000",
+        "nickname": "T133 - Phạm Thế Trung - 01299",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531890039087304835",
+      "type": "Default",
+      "timestamp": "2026-07-29T12:04:06.459+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "lô",
+      "author": {
+        "id": "853647680718241792",
+        "name": "noble_chipmunk_94959",
+        "discriminator": "0000",
+        "nickname": "T133 - Nguyễn Huy Đức - 01097",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 4
+}

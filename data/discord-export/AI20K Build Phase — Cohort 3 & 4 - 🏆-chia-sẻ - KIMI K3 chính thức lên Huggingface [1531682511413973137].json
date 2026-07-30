@@ -1,0 +1,279 @@
+{
+  "guild": {
+    "id": "1526532830627102781",
+    "name": "AI20K Build Phase — Cohort 3 & 4",
+    "iconUrl": "https://cdn.discordapp.com/icons/1526532830627102781/f605bf41f4d19baaa8a2039654056db5.png?size=512"
+  },
+  "channel": {
+    "id": "1531682511413973137",
+    "type": "GuildPublicThread",
+    "categoryId": "1527920185649008660",
+    "category": "\uD83C\uDFC6-chia-sẻ",
+    "name": "KIMI K3 chính thức lên Huggingface",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "exportedAt": "2026-07-30T15:05:49.5121909+07:00",
+  "messages": [
+    {
+      "id": "1531682511413973137",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:19:28.006+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**\uD83D\uDD25 KIMI K3: SIÊU MÔ HÌNH AI ĐANG KHUẤY ĐẢO CỘNG ĐỒNG CÔNG NGHỆ \uD83D\uDD25**\n__________________________________________________________________\n\n> *Tháng 7/2026, **Moonshot AI** đã chính thức tung ra bộ trọng số mở (open-weight) của mô hình flagship **Kimi K3**. Sự kiện này ngay lập tức tạo nên một làn sóng bùng nổ, khiến máy chủ của hãng quá tải chỉ sau 48 giờ công bố vì lượng tải về quá lớn!*\n\n### \uD83D\uDEE0️ 1. KIMI K3 LÀ GÌ?\nKimi K3 là mô hình AI đa phương thức bản địa (**native multimodal**) dạng tự chủ (**agentic AI**). Mô hình được thiết kế chuyên biệt để xử lý các tác vụ phức tạp đòi hỏi khả năng suy luận chuyên sâu.\n\n*   **Quy mô siêu khủng:** Sở hữu cấu trúc Mixture-of-Experts (MoE) với tổng số lên tới **2.8 nghìn tỷ tham số (2.8T)** — trở thành mô hình mở đầu tiên chạm đến phân khúc lớp 3 nghìn tỷ tham số trên thế giới.\n*   **Siêu ngữ cảnh:** Cửa sổ bối cảnh đạt tới **1 triệu token**, cho phép \"nuốt\" trọn toàn bộ các kho lưu trữ mã nguồn lớn hoặc hàng tập tài liệu dày cộp mà không bị mất dấu thông tin.\n*   **Công nghệ cốt lõi:** Xây dựng trên kiến trúc lai *Kimi Delta Attention (KDA)* kết hợp *Attention Residuals (AttnRes)* giúp tối ưu hóa hiệu suất truyền tải dữ liệu và tăng tốc độ xử lý chuỗi dài.\n\n### \uD83D\uDE80 2. TẠI SAO KIMI K3 LẠI CỰC KỲ \"HOT\"?\n\n*   **Vũ khí lật đổ thế độc quyền:** Khác với các siêu AI đóng như OpenAI hay Anthropic (yêu cầu thuê bao hoặc trả phí API đắt đỏ), Moonshot AI phát hành Kimi K3 dưới dạng **trọng số mở miễn phí**. Tổ chức/cá nhân có thể tải trực tiếp về hạ tầng nội bộ để tùy chỉnh.\n*   **Sức mạnh tiệm cận đỉnh cao toàn cầu:** Trên các bảng xếp hạng uy tín của *Arena Intelligence*, Kimi K3 đã xuất sắc vươn lên vị trí **Top 3 toàn cầu tại bảng Agent Arena** (về AI tự chủ) và Top 11 tại Text Arena. Hiệu năng thực tế được đánh giá là ngang ngửa, thậm chí vượt mặt một số phiên bản GPT hay Claude ở các tác vụ code và suy luận logic.\n*   **Bài toán bảo mật cho doanh nghiệp:** Việc tự lưu trữ (**self-hosting**) Kimi K3 giúp các tập đoàn lớn giải quyết triệt để rủi ro rò rỉ dữ liệu nhạy cảm ra máy chủ bên ngoài.\n\n### \uD83D\uDD17 3. LINKI VÀ TRẢI NGHIỆM CHÍNH THỨC (HUGGING FACE)\n\nHiện tại, anh em có thể truy cập, kiểm tra bảng điểm benchmark cũng như tải bộ trọng số của mô hình này tại các kho lưu trữ chính thức trên Hugging Face:\n\n*   **Trang nhà phát triển:** <https://huggingface.co>\n*   **Trọng số mô hình gốc (Nặng >1TB):** <https://huggingface.co/Kimi-K3>\n*   **Phiên bản tối ưu nén (Cộng đồng hỗ trợ):** <https://huggingface.co/unsloth/Kimi-K3-GGUF>\n\n*#ai #kimik3 #moonshotai #llm #huggingface #opensource*",
+      "author": {
+        "id": "540808926099275787",
+        "name": "tianz1",
+        "discriminator": "0000",
+        "nickname": "T048 - Võ Hà Minh Huy - 01373",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          },
+          {
+            "id": "1530929318652416141",
+            "name": "Server Booster",
+            "color": "#F47FFF",
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/540808926099275787/8ffdd7271dc834cafbc48fb68fc2463c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "471331498314956820",
+              "name": "_nguyenthang",
+              "discriminator": "0000",
+              "nickname": "T048 — Nguyễn Thắng — 01163",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+            },
+            {
+              "id": "540808926099275787",
+              "name": "tianz1",
+              "discriminator": "0000",
+              "nickname": "T048 - Võ Hà Minh Huy - 01373",
+              "color": "#2ECC71",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/540808926099275787/8ffdd7271dc834cafbc48fb68fc2463c.png?size=512"
+            },
+            {
+              "id": "558535514567737354",
+              "name": "mac8796",
+              "discriminator": "0000",
+              "nickname": "Mac",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/558535514567737354/cdd9c83c6610f5adf4928d0fbe439d30.png?size=512"
+            },
+            {
+              "id": "877577707741933579",
+              "name": "fo2.fo3.fo4",
+              "discriminator": "0000",
+              "nickname": "fo2.fo3.fo4",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDD25",
+          "code": "fire",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDEE0️",
+          "code": "tools",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6e0.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDE80",
+          "code": "rocket",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg"
+        },
+        {
+          "id": "",
+          "name": "\uD83D\uDD17",
+          "code": "link",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f517.svg"
+        }
+      ]
+    },
+    {
+      "id": "1531684526378455050",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:27:28.411+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "xịn xò con bò",
+      "author": {
+        "id": "877577707741933579",
+        "name": "fo2.fo3.fo4",
+        "discriminator": "0000",
+        "nickname": "G16-T048-Hồ Ngọc Quỳnh",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531685378225078435",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:30:51.507+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cảm ơn b nhaa",
+      "author": {
+        "id": "471331498314956820",
+        "name": "_nguyenthang",
+        "discriminator": "0000",
+        "nickname": "T048 — Nguyễn Thắng — 01163",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/471331498314956820/9a573942dc9eeb78c7cffa13fbc9b79f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531687030399041536",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:37:25.416+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "=)))",
+      "author": {
+        "id": "540808926099275787",
+        "name": "tianz1",
+        "discriminator": "0000",
+        "nickname": "T048 - Võ Hà Minh Huy - 01373",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          },
+          {
+            "id": "1530929318652416141",
+            "name": "Server Booster",
+            "color": "#F47FFF",
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/540808926099275787/8ffdd7271dc834cafbc48fb68fc2463c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1531687049147584673",
+      "type": "Default",
+      "timestamp": "2026-07-28T22:37:29.886+07:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ngại quá hihi",
+      "author": {
+        "id": "540808926099275787",
+        "name": "tianz1",
+        "discriminator": "0000",
+        "nickname": "T048 - Võ Hà Minh Huy - 01373",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1527648657325690961",
+            "name": "Learner",
+            "color": "#2ECC71",
+            "position": 2
+          },
+          {
+            "id": "1530929318652416141",
+            "name": "Server Booster",
+            "color": "#F47FFF",
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/540808926099275787/8ffdd7271dc834cafbc48fb68fc2463c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 5
+}
