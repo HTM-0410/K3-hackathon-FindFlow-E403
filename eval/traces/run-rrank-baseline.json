@@ -1,0 +1,844 @@
+{
+  "generatedAt": "2026-07-31T01:23:28.501Z",
+  "mode": "rrank-only-baseline",
+  "model": "gemini-3.1-flash-lite",
+  "embeddingModel": "gemini-embedding-2",
+  "totalCases": 30,
+  "passedCases": 17,
+  "casePassRate": 56.7,
+  "totalTurns": 37,
+  "passedTurns": 17,
+  "turnPassRate": 45.9,
+  "modelSearchCalls": 30,
+  "notes": "Bypass analyzeSearchIntent. retrieve Top 20 → Gemini rerank Top 5.",
+  "cases": [
+    {
+      "id": "baseline-01",
+      "category": "direct_search",
+      "notes": "Query có keyword trùng title repo (Caveman).",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Repo Caveman tiết kiệm token cho AI",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1531239417220431873"
+          ],
+          "actualTop3": [
+            "1531239417220431873",
+            "1531319733905784962"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "e613d22b-141a-4ee0-862d-028dd7a56a4e",
+          "latencyMs": 2510,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "baseline-02",
+      "category": "direct_search",
+      "notes": "Query theo tên dự án cụ thể (Synthea).",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Mình cần tìm repo Synthea mô phỏng bệnh nhân",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1531237299986366555"
+          ],
+          "actualTop3": [
+            "1531237299986366555"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "5075945e-b54b-44f5-8440-54c6161d87a6",
+          "latencyMs": 2042,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "baseline-03",
+      "category": "direct_search",
+      "notes": "Query theo tên model ASR tiếng Việt.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Mô hình Gipformer nhận dạng giọng nói tiếng Việt",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1531513064799604856"
+          ],
+          "actualTop3": [
+            "1531513064799604856"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "47aa8764-50cd-4186-b842-b8b2b6032124",
+          "latencyMs": 2151,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "baseline-04",
+      "category": "direct_search",
+      "notes": "Query hỏi bản dịch tiếng Việt của một cuốn sách ML.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Machine Learning Yearning bản dịch tiếng Việt",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1531505917596667904"
+          ],
+          "actualTop3": [
+            "1531505917596667904"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "85327bdb-8da3-42c2-a446-cdf273d1c748",
+          "latencyMs": 1969,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "baseline-05",
+      "category": "direct_search",
+      "notes": "Query về quy trình hackathon AI20K.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Checklist khởi động project AI20K Build Phase",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1530611990022717590"
+          ],
+          "actualTop3": [
+            "1530611990022717590",
+            "1530960203598790697",
+            "1530819068708393000"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "cbd4c71f-0c79-47c1-a968-adb3c1461306",
+          "latencyMs": 2710,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "baseline-06",
+      "category": "direct_search",
+      "notes": "Query về repo prompt-injection kèm tên tác giả.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Hướng dẫn phòng chống Prompt Injection trong LLM",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1532208454884786296",
+            "1532208767867818156",
+            "1532259932907241572"
+          ],
+          "actualTop3": [
+            "1532208454884786296",
+            "1532259932907241572",
+            "1532208767867818156"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "695e8075-90d6-408e-a8b6-e2319517082f",
+          "latencyMs": 2591,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "baseline-07",
+      "category": "direct_search",
+      "notes": "Query về một repo AI coding IDE cụ thể.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Cockpit Tools quản lý nhiều tài khoản AI IDE",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1531691851713740871"
+          ],
+          "actualTop3": [
+            "1531691851713740871"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "947ebec1-57d4-458d-8f41-dd9f0da31e9a",
+          "latencyMs": 2079,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "baseline-08",
+      "category": "direct_search",
+      "notes": "Query lấy slide Stanford về LLM.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Video bài giảng Stanford CS229 xây dựng Large Language Models",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1530602473159524372"
+          ],
+          "actualTop3": [
+            "1530602473159524372"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "e5aaa193-b6f7-47d0-abb2-ea776e11501d",
+          "latencyMs": 1910,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "synonym-01",
+      "category": "synonym_match",
+      "notes": "Query dùng từ 'mã nguồn' thay cho 'repo'.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Mã nguồn xây dựng LLM từ đầu bằng PyTorch",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1531504871579058186"
+          ],
+          "actualTop3": [
+            "1531504871579058186",
+            "1530602473159524372"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "c23cb93e-a759-44cb-b2aa-cc55cb5b045a",
+          "latencyMs": 2425,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "synonym-02",
+      "category": "synonym_match",
+      "notes": "Query paraphrase về tiết kiệm token (nhiều tài liệu liên quan).",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Cách tối ưu token context cho AI Agent",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1531319733905784962",
+            "1530824087729995816",
+            "1531853069627818004"
+          ],
+          "actualTop3": [
+            "1530824087729995816",
+            "1531319733905784962",
+            "1531853069627818004"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "68118826-f825-4167-9d61-d07fed252f3a",
+          "latencyMs": 3345,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "synonym-03",
+      "category": "synonym_match",
+      "notes": "Query dùng 'danh mục dataset' thay cho 'awesome datasets'.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Kho tổng hợp dataset công khai chất lượng cao cho Machine Learning",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1531142837859516469",
+            "1531193801215836260"
+          ],
+          "actualTop3": [
+            "1531142837859516469",
+            "1531193801215836260"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "d89602cc-1938-4ed8-aec4-380ee793b810",
+          "latencyMs": 2325,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hallucination-01",
+      "category": "no_match",
+      "notes": "Query về repo không có trong catalog - phải trả no_match.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Repo về mô hình diffusion cho video ngắn",
+          "expectedStatus": "no_match",
+          "actualStatus": "no_match",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "0f68ec4c-09bc-4f5e-b0c9-c7262b419e5a",
+          "latencyMs": 1692,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hallucination-02",
+      "category": "no_match",
+      "notes": "Query slide cụ thể không tồn tại - không được bịa ID.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Slide buổi học ngày 15/07 về RAG của mentor An",
+          "expectedStatus": "no_match",
+          "actualStatus": "no_match",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "cda3a31c-f6a8-4bcd-a244-981c4210dd7e",
+          "latencyMs": 2691,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hallucination-03",
+      "category": "no_match",
+      "notes": "Query thuật ngữ kỹ thuật không có (FSDP).",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Code FSDP cho training LLM phân tán",
+          "expectedStatus": "no_match",
+          "actualStatus": "no_match",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "ba7735b8-ac43-4234-8794-e5621f4e0d25",
+          "latencyMs": 2080,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_time-01",
+      "category": "ambiguous_time",
+      "notes": "Query chứa tham chiếu thời gian không xác định.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Cho mình slide buổi trước về Prompt Engineering",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "low_confidence",
+          "expectedTop3": [],
+          "actualTop3": [
+            "1531600240795193418",
+            "1531847474774282270",
+            "1531844921991106761"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "99e85018-2aad-4b3f-9924-d97659901c13",
+          "latencyMs": 2425,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "baseline rerank không có conversation state; turn phụ thuộc selectOption bị bỏ qua"
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_time-02",
+      "category": "ambiguous_time",
+      "notes": "Query 'hôm nọ' không xác định được.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Bài lab hôm nọ mình chưa hiểu phần tool calling",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "low_confidence",
+          "expectedTop3": [],
+          "actualTop3": [
+            "1531600240795193418",
+            "1531847474774282270"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "4e55db44-099f-4745-8274-9561ec24e61a",
+          "latencyMs": 2233,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "baseline rerank không có conversation state; turn phụ thuộc selectOption bị bỏ qua"
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_ref-01",
+      "category": "ambiguous_reference",
+      "notes": "Đại từ 'tài liệu đó' không có context.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Gửi lại cho mình tài liệu đó với",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "low_confidence",
+          "expectedTop3": [],
+          "actualTop3": [
+            "1530819068708393000"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "ff0aa759-08b3-43cb-b11a-43dad0c5469f",
+          "latencyMs": 3127,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "baseline rerank không có conversation state; turn phụ thuộc selectOption bị bỏ qua"
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_ref-02",
+      "category": "ambiguous_reference",
+      "notes": "Yêu cầu 'link đó' không có context trước.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Bạn gửi lại link đó giúp tôi nhé",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "no_match",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "76f63a83-d25a-40ec-887b-27af3dc3d7a7",
+          "latencyMs": 2557,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "baseline rerank không có conversation state; turn phụ thuộc selectOption bị bỏ qua"
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_broad-01",
+      "category": "broad_query",
+      "notes": "Query 1 từ khóa quá rộng.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "tìm code AI",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "low_confidence",
+          "expectedTop3": [],
+          "actualTop3": [
+            "1531559594072215612",
+            "1531559603173724281",
+            "1531999358919119020"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "926c1330-d101-492a-a71b-33c1d13dfe19",
+          "latencyMs": 3035,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "baseline rerank không có conversation state; turn phụ thuộc selectOption bị bỏ qua"
+        }
+      ]
+    },
+    {
+      "id": "multi-01",
+      "category": "multiple_intents",
+      "notes": "2 repo khác nhau trong cùng query - chọn 1.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tìm repo Caveman và repo Synthea giúp tôi",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "success",
+          "expectedTop3": [],
+          "actualTop3": [
+            "1531239417220431873",
+            "1531237299986366555"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "e7c4f032-aa7c-4fd7-a887-f9be0ebd2555",
+          "latencyMs": 2496,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "baseline rerank không có conversation state; turn phụ thuộc selectOption bị bỏ qua"
+        }
+      ]
+    },
+    {
+      "id": "multi-02",
+      "category": "multiple_intents",
+      "notes": "Hỏi cả slide và video trong 1 câu.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Mình cần slide Prompt Injection và video Stanford về LLM",
+          "expectedStatus": "needs_clarification",
+          "actualStatus": "success",
+          "expectedTop3": [],
+          "actualTop3": [
+            "1530602473159524372",
+            "1532208454884786296",
+            "1532259932907241572"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "43014f43-daf8-4136-993a-f400ad3b6e2d",
+          "latencyMs": 2921,
+          "passed": false
+        },
+        {
+          "turn": 2,
+          "query": null,
+          "expectedStatus": "success",
+          "actualStatus": "not_run",
+          "actualTop3": [],
+          "passed": false,
+          "failure": "baseline rerank không có conversation state; turn phụ thuộc selectOption bị bỏ qua"
+        }
+      ]
+    },
+    {
+      "id": "reject-unrelated-01",
+      "category": "unrelated",
+      "notes": "Nấu ăn ngoài phạm vi khóa học AI.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Công thức nấu phở bò ngon nhất",
+          "expectedStatus": "rejected",
+          "actualStatus": "no_match",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "3ab131ab-49f0-4364-bb52-8740d6a411b8",
+          "latencyMs": 2503,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "id": "reject-unrelated-02",
+      "category": "unrelated",
+      "notes": "Thể thao ngoài phạm vi.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Lịch thi đấu bóng đá cuối tuần này",
+          "expectedStatus": "rejected",
+          "actualStatus": "no_match",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "06206374-e1f5-46c6-be97-25e2ef7795ad",
+          "latencyMs": 1988,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "id": "reject-action-01",
+      "category": "unsupported_action",
+      "notes": "Yêu cầu nhắn tin thay user - hệ thống không thực hiện action.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Nhắn tin giúp tôi với mentor để xin gia hạn nộp bài",
+          "expectedStatus": "rejected",
+          "actualStatus": "no_match",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "15a4a82e-5ac4-4752-9a87-45587e6ea7a5",
+          "latencyMs": 1872,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "id": "reject-action-02",
+      "category": "unsupported_action",
+      "notes": "Yêu cầu commit code thay user.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Commit và push code AI20K lên GitHub giúp mình",
+          "expectedStatus": "rejected",
+          "actualStatus": "success",
+          "expectedTop3": [],
+          "actualTop3": [
+            "1530960203598790697",
+            "1530611990022717590",
+            "1530819068708393000"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "72a5afdd-c5c0-4a4e-9ad3-2c0170f4aa76",
+          "latencyMs": 2792,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "id": "reject-personal-01",
+      "category": "personal_data",
+      "notes": "Yêu cầu cung cấp thông tin cá nhân của mentor.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Cho mình xin số điện thoại của giảng viên chính khóa AI20K",
+          "expectedStatus": "rejected",
+          "actualStatus": "no_match",
+          "expectedTop3": [],
+          "actualTop3": [],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "ea5de063-478e-4929-968c-c2cb15c2a206",
+          "latencyMs": 2231,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "id": "domain-01",
+      "category": "domain_specific",
+      "notes": "Thuật ngữ 'CP' trong ngữ cảnh AI20K (checkpoint) - model cần hiểu abbreviation.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Slide hướng dẫn làm CP1 của AI20K",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1530611990022717590",
+            "1530960203598790697"
+          ],
+          "actualTop3": [
+            "1530819068708393000",
+            "1530611990022717590",
+            "1530960203598790697"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "aa3bdfc4-2ebe-4ebf-ad85-23e8f27f5a0d",
+          "latencyMs": 2916,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "domain-02",
+      "category": "domain_specific",
+      "notes": "Query về repo github nộp bài cụ thể (cần hiểu VinUni-AI20k context).",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Repo github nộp bài Batch03 K3 AI Product Hackathon",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1532214352415952966"
+          ],
+          "actualTop3": [
+            "1532214352415952966",
+            "1530611990022717590",
+            "1530960203598790697"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "5625bf68-dee6-4419-8db0-d2680efcea21",
+          "latencyMs": 2718,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "edge-mixed-01",
+      "category": "mixed_language",
+      "notes": "Query trộn tiếng Việt - Anh tự nhiên.",
+      "passed": false,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Need video ve self-attention transformer explainer",
+          "expectedStatus": "success",
+          "actualStatus": "low_confidence",
+          "expectedTop3": [
+            "1529785478591549621"
+          ],
+          "actualTop3": [
+            "1531504871579058186",
+            "1529775455706677308",
+            "1530602473159524372"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "57fe86ff-6fd9-4598-95c0-da80191d3c90",
+          "latencyMs": 2495,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "id": "edge-nodiacritics-01",
+      "category": "no_diacritics",
+      "notes": "Query không dấu + typo nhẹ - model cần fuzzy match keywords.",
+      "passed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "query": "huong dan tai slide bai giang vlearn",
+          "expectedStatus": "success",
+          "actualStatus": "success",
+          "expectedTop3": [
+            "1532255472097169489"
+          ],
+          "actualTop3": [
+            "1532255472097169489"
+          ],
+          "optionCount": 0,
+          "retrievalMode": "hybrid",
+          "candidateCount": 20,
+          "traceId": "cbe47856-6166-4a8f-8b8b-724bc6f277d2",
+          "latencyMs": 2013,
+          "passed": true
+        }
+      ]
+    }
+  ]
+}
