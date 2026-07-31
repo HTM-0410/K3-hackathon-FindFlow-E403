@@ -56,6 +56,9 @@ export default defineConfig(async ({ command, mode }) => {
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,
+    optimizeDeps: {
+      exclude: ["better-sqlite3"],
+    },
     plugins: [
       vinext(),
       sites(),

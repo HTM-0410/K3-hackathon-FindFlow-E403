@@ -1,15 +1,27 @@
 import { drizzle } from "drizzle-orm/d1";
-import Database from "better-sqlite3";
 import * as schema from "./schema";
 import { mkdirSync } from "node:fs";
 
-/** File SQLite local — Vite dev / preview dùng cwd là project root */
+// better-sqlite3 có thể không có trên Windows dev environment
+let Database: typeof import("better-sqlite3").default | null = null;
+try {
+  Database = require("better-sqlite3").default;
+} catch {
+  console.warn("[db] better-sqlite3 not available - using mock");
+}
+
 const LOCAL_DB_PATH = "./data/realtime.db";
 
 let _db: ReturnType<typeof drizzle> | null = null;
 
 function getLocalDb() {
   if (_db) return _db;
+
+  // Nếu không có better-sqlite3, trả về mock
+  if (!Database) {
+    console.warn("[db] Using mock database - realtime features disabled");
+    return null;
+  }
 
   try {
     mkdirSync("./data", { recursive: true });
@@ -86,3 +98,5 @@ export function getDb() {
 
   return getLocalDb();
 }
+
+export { schema };

@@ -144,9 +144,12 @@ function AppHeader({
         <button className={route === "demo" ? "active" : ""} onClick={() => window.location.assign("/demo")}>
           🧪 Demo ingest
         </button>
+        <button className={route === "labcoach" ? "active" : ""} onClick={() => navigate("/labcoach")}>
+          📋 LabCoach
+        </button>
       </nav>
       <span className="cp-badge">
-        Semantic Search
+        LabCoach Tracker
       </span>
     </header>
   );
