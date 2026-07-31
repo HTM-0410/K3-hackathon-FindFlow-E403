@@ -1,5 +1,11 @@
 {
   "project_id": "appgprj_6a6ad286e89881918d625abfd3030590",
-  "d1": null,
+  "d1": "DB",
+  "d1_databases": {
+    "DB": {
+      "id": "discord-knowledge-hub",
+      "database_id": "74c95267-452a-4827-bc05-4e1f990f4c6b"
+    }
+  },
   "r2": null
 }

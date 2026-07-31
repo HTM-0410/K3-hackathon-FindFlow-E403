@@ -2,7 +2,7 @@
   "name": "discord-knowledge-hub-cp2",
   "compatibility_date": "2026-01-01",
   "vars": {
-    "GEMINI_MODEL": "gemini-3.1-flash-lite",
+    "GEMINI_MODEL": "gemini-flash-latest",
     "GEMINI_EMBEDDING_MODEL": "gemini-embedding-2"
   }
 }

@@ -138,13 +138,12 @@ function AppHeader({
         <button className={route === "resources" ? "active" : ""} onClick={() => navigate("/resources")}>
           Kho tài liệu
         </button>
-        <button onClick={() => window.location.assign("/realtime")}>
+        {/* <button onClick={() => window.location.assign("/realtime")}>
           ⚡ Realtime
-        </button>
+        </button> */}
       </nav>
       <span className="cp-badge">
-        <span className="status-dot"></span>
-        AI Rerank
+        Semantic Search
       </span>
     </header>
   );
@@ -383,8 +382,9 @@ function SearchNotice({
       </section>
     );
   }
+  // fallback: kết quả vẫn hiển thị, không cần show notice
+  if (status === "fallback") return null;
   const copy = {
-    fallback: ["Tìm kiếm cơ bản đang được sử dụng", clarification],
     low_confidence: ["Hệ thống chưa đủ chắc chắn với truy vấn này", clarification],
     no_match: ["Không tìm thấy tài liệu phù hợp", "Hãy thử mô tả lại nhu cầu hoặc thay đổi từ khóa."],
     rejected: ["Yêu cầu nằm ngoài phạm vi hỗ trợ", clarification],
@@ -636,8 +636,6 @@ export default function Page() {
     }
     const controller = new AbortController();
     setLoading(true);
-    // Không reset response khi chỉ đổi filter; reset khi đổi query để tránh flash.
-    setResponse((current) => (current ? current : null));
     const startedAt = Date.now();
     fetch("/api/search", {
       method: "POST",
@@ -646,16 +644,27 @@ export default function Page() {
       signal: controller.signal,
     })
       .then(async (result) => {
-        if (!result.ok) throw new Error("Search request failed");
+        if (!result.ok) {
+          let detail = "";
+          try {
+            detail = JSON.stringify(await result.json());
+          } catch {
+            // ignore
+          }
+          throw new Error(`Search request failed (${result.status}) ${detail}`);
+        }
         return result.json() as Promise<SearchResponse>;
       })
       .then((result) => setResponse(result))
-      .catch(() => {
+      .catch((error) => {
+        // Abort do đổi filter nhanh không phải lỗi — bỏ qua để tránh
+        // đè response thật bằng fallback rỗng.
+        if (error?.name === "AbortError") return;
         const traceId = crypto.randomUUID();
         setResponse({
           status: "fallback",
           interpretedNeed: query,
-          clarification: "Không thể kết nối API; đang dùng tìm kiếm cơ bản ngay trên thiết bị.",
+          clarification: `Tạm thời chưa kết nối được máy chủ xếp hạng (${error?.message || "lỗi mạng"}); đang dùng tìm kiếm cơ bản.`,
           results: fallbackRank(query, filterResources(resources, filterKeys)),
           traceId,
         });
@@ -749,7 +758,7 @@ export default function Page() {
       ) : (
         <main className="listing">
           <div className="page-title">
-            <span className="eyebrow">{route === "search" ? "⚡ KẾT QUẢ AI XẾP HẠNG" : "📚 THƯ VIỆN KHÓA HỌC"}</span>
+            <span className="eyebrow">{route === "search" ? "📋 KẾT QUẢ TÌM KIẾM" : "📚 THƯ VIỆN KHÓA HỌC"}</span>
             <h1>{route === "search" ? "Tài liệu phù hợp với nhu cầu của bạn" : "Kho tài liệu Discord"}</h1>
             <p>
               {route === "search" ? (
@@ -802,7 +811,7 @@ export default function Page() {
                       </div>
                       <small>
                         {route === "search"
-                          ? `${response?.retrievalMode === "hybrid" ? "Semantic AI Search" : "Từ khóa cơ bản"} • Top 5 kết quả`
+                          ? "Top 5 kết quả phù hợp nhất"
                           : "Dữ liệu khóa học Discord"}
                       </small>
                     </div>

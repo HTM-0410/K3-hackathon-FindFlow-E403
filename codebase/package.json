@@ -18,6 +18,7 @@
     "bot": "node --experimental-strip-types --no-warnings scripts/discord-bot.ts"
   },
   "dependencies": {
+    "better-sqlite3": "^11.10.0",
     "discord.js": "^14.27.0",
     "drizzle-orm": "0.45.2",
     "next": "16.2.6",

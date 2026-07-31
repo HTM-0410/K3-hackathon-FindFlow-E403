@@ -800,12 +800,14 @@ main {
 }
 
 .card-actions {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 12px;
   margin-top: 20px;
 }
 
 .card-actions button {
+  min-width: 0;
   padding: 11px 18px;
   font-size: 14px;
 }
@@ -1088,6 +1090,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
+  padding-right: 8px;
 }
 
 .close {
@@ -1277,6 +1281,7 @@ footer span {
   .drawer-body { padding: 20px 20px 16px; }
   .drawer-footer { padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); }
   .drawer-actions { grid-template-columns: 1fr; gap: 10px; }
+  .card-actions { grid-template-columns: 1fr; gap: 10px; }
 }
 
 /* ============================================================ */
