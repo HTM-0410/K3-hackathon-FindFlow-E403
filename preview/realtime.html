@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trực tiếp — Discord Knowledge Hub</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <button class="brand" onclick="location.assign('index.html')">
+    <span class="brand-mark">DK</span>
+    <span>
+      <span class="brand-title">Kho tri thức</span>
+      <span class="brand-sub">Discord Knowledge Hub · Batch 03</span>
+    </span>
+  </button>
+  <nav class="site-nav">
+    <a href="index.html">Tra cứu</a>
+    <a href="resources.html">Kho tài liệu</a>
+    <a href="realtime.html" class="is-active">Trực tiếp</a>
+  </nav>
+  <div class="site-meta">
+    <span>Bot · discord.js v14</span>
+    <span class="dot"></span>
+    <span>Cloudflare D1</span>
+  </div>
+</header>
+
+<main class="rt-layout">
+
+  <!-- RT HEAD -->
+  <div class="rt-head">
+    <div>
+      <div class="listing-eyebrow">Demo trực tiếp · Bằng chứng kết nối Discord thật</div>
+      <h1 class="rt-title">Nhật ký sự kiện Discord theo thời gian thực</h1>
+      <p class="rt-sub">Bot Node.js đang cắm vào Gateway của Discord server khoá, đẩy sự kiện lên Cloudflare D1, web demo này đọc lại qua Server-Sent Events. Dữ liệu được sanitize trước khi lưu.</p>
+    </div>
+    <div class="rt-status">
+      <span class="dot"></span>
+      <span class="label">Đang thu</span>
+      <span class="time">14:32:01</span>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="rt-stats">
+    <div class="rt-stat">
+      <span class="rt-stat-icon">▤ MSG</span>
+      <span class="rt-stat-b">128</span>
+      <span class="rt-stat-s">Tin nhắn / 1h</span>
+    </div>
+    <div class="rt-stat">
+      <span class="rt-stat-icon">＋ JOIN</span>
+      <span class="rt-stat-b">6</span>
+      <span class="rt-stat-s">Thành viên mới</span>
+    </div>
+    <div class="rt-stat">
+      <span class="rt-stat-icon">✕ LEAVE</span>
+      <span class="rt-stat-b">2</span>
+      <span class="rt-stat-s">Rời kênh</span>
+    </div>
+    <div class="rt-stat">
+      <span class="rt-stat-icon">♥ RXN</span>
+      <span class="rt-stat-b">34</span>
+      <span class="rt-stat-s">Reactions</span>
+    </div>
+    <div class="rt-stat">
+      <span class="rt-stat-icon">♪ VOICE</span>
+      <span class="rt-stat-b">11</span>
+      <span class="rt-stat-s">Voice events</span>
+    </div>
+    <div class="rt-stat">
+      <span class="rt-stat-icon">⚙ UPT</span>
+      <span class="rt-stat-b">99.8<span style="font-size: 14px;">%</span></span>
+      <span class="rt-stat-s">Bot uptime</span>
+    </div>
+  </div>
+
+  <!-- GRID: feed + side -->
+  <div class="rt-grid">
+
+    <!-- LEFT: feed -->
+    <section>
+      <div class="rt-section-head">
+        <h2>Nhật ký sự kiện</h2>
+        <div class="meta">
+          <span style="color: var(--stamp); font-weight: 700;">● LIVE</span>
+          &nbsp; · &nbsp; SSE poll mỗi 2s
+        </div>
+      </div>
+
+      <ul class="event-list">
+        <li class="event">
+          <div class="event-time"><b>14:32:01</b>30.07</div>
+          <div class="event-icon message">▤</div>
+          <div class="event-body">
+            <div class="event-head">
+              <b>Lan</b>
+              <span class="chan">hackathon</span>
+              <span class="kind">message</span>
+            </div>
+            <p class="event-content">Vừa upload slide mới về rubric, các bạn xem lại trước khi nộp nhé. Bản v3 đã thêm ví dụ cho khối R5 (Prototype chạy được).</p>
+          </div>
+        </li>
+
+        <li class="event">
+          <div class="event-time"><b>14:31:48</b>30.07</div>
+          <div class="event-icon reaction">♥</div>
+          <div class="event-body">
+            <div class="event-head">
+              <b>7 người</b> reacted
+              <span class="chan">chia-se</span>
+              <span class="kind">reaction</span>
+            </div>
+            <p class="event-content">:fire: trên tin nhắn "Repo K3-AI-Product-Hackathon (skeleton)" của Mentor Q</p>
+          </div>
+        </li>
+
+        <li class="event">
+          <div class="event-time"><b>14:30:22</b>30.07</div>
+          <div class="event-icon message">▤</div>
+          <div class="event-body">
+            <div class="event-head">
+              <b>Thầy H</b>
+              <span class="chan">hackathon</span>
+              <span class="kind">message</span>
+            </div>
+            <p class="event-content">Nhắc lại: CP4 chốt tiến độ 17:30 hôm nay. Nhóm nào chưa push spec.md thì inbox TA.</p>
+          </div>
+        </li>
+
+        <li class="event">
+          <div class="event-time"><b>14:28:55</b>30.07</div>
+          <div class="event-icon join">＋</div>
+          <div class="event-body">
+            <div class="event-head">
+              <b>Minh</b> đã tham gia kênh
+              <span class="chan">general</span>
+              <span class="kind">member_join</span>
+            </div>
+            <p class="event-content" style="color: var(--ink-muted); font-style: italic;">Lần đầu vào kênh này trong hôm nay.</p>
+          </div>
+        </li>
+
+        <li class="event">
+          <div class="event-time"><b>14:27:10</b>30.07</div>
+          <div class="event-icon voice">♪</div>
+          <div class="event-body">
+            <div class="event-head">
+              <b>Nhóm 2</b> vào voice
+              <span class="chan">voice-hackathon</span>
+              <span class="kind">voice</span>
+            </div>
+            <p class="event-content">5 thành viên · voice channel dành cho nhóm đang chuẩn bị CP4.</p>
+          </div>
+        </li>
+
+        <li class="event">
+          <div class="event-time"><b>14:25:01</b>30.07</div>
+          <div class="event-icon message">▤</div>
+          <div class="event-body">
+            <div class="event-head">
+              <b>Mentor Q</b>
+              <span class="chan">codelab</span>
+              <span class="kind">message</span>
+            </div>
+            <p class="event-content">Sửa lỗi: doc Codelab Day 3 bị thiếu phần "How to verify". Đã update, link cũ vẫn trỏ đúng bản mới.</p>
+          </div>
+        </li>
+
+        <li class="event">
+          <div class="event-time"><b>14:22:33</b>30.07</div>
+          <div class="event-icon leave">✕</div>
+          <div class="event-body">
+            <div class="event-head">
+              <b>Hương</b> rời kênh
+              <span class="chan">lab-support</span>
+              <span class="kind">member_leave</span>
+            </div>
+            <p class="event-content" style="color: var(--ink-muted); font-style: italic;">Đã online 18 phút.</p>
+          </div>
+        </li>
+
+        <li class="event">
+          <div class="event-time"><b>14:20:08</b>30.07</div>
+          <div class="event-icon message">▤</div>
+          <div class="event-body">
+            <div class="event-head">
+              <b>BTC</b>
+              <span class="chan">general</span>
+              <span class="kind">message</span>
+            </div>
+            <p class="event-content">Cập nhật: nhóm nào cần support demo trước CP6 có thể đặt lịch với TA qua lệnh <code style="font-family: var(--font-mono); background: var(--paper-2); border: 1px solid var(--rule); padding: 1px 6px; font-size: 12px;">/demo-help</code>.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center;">
+        <button class="btn btn-ghost btn-small">‹ Tải thêm 20 sự kiện</button>
+        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em;">Đang hiển thị 8 / 128 sự kiện gần nhất</span>
+      </div>
+    </section>
+
+    <!-- RIGHT: side panel -->
+    <aside>
+      <div class="rt-section-head">
+        <h2>Kênh đang hoạt động</h2>
+        <span class="meta">1h qua</span>
+      </div>
+
+      <div class="rt-channels">
+        <div class="channel-row">
+          <span class="channel-name">hackathon</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 92%;"></div></div>
+          <span class="bar-count">42</span>
+        </div>
+        <div class="channel-row">
+          <span class="channel-name">chia-se</span>
+          <div class="bar-track"><div class="bar-fill tab-red" style="width: 70%;"></div></div>
+          <span class="bar-count">31</span>
+        </div>
+        <div class="channel-row">
+          <span class="channel-name">codelab</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 58%;"></div></div>
+          <span class="bar-count">22</span>
+        </div>
+        <div class="channel-row">
+          <span class="channel-name">general</span>
+          <div class="bar-track"><div class="bar-fill ink" style="width: 42%;"></div></div>
+          <span class="bar-count">18</span>
+        </div>
+        <div class="channel-row">
+          <span class="channel-name">tai-lieu</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 32%;"></div></div>
+          <span class="bar-count">11</span>
+        </div>
+        <div class="channel-row">
+          <span class="channel-name">lab-support</span>
+          <div class="bar-track"><div class="bar-fill tab-red" style="width: 24%;"></div></div>
+          <span class="bar-count">8</span>
+        </div>
+        <div class="channel-row">
+          <span class="channel-name">voice-hackathon</span>
+          <div class="bar-track"><div class="bar-fill ink" style="width: 18%;"></div></div>
+          <span class="bar-count">5</span>
+        </div>
+      </div>
+
+      <!-- Bot metadata card -->
+      <div class="rt-bot-card">
+        <h3>Bot & pipeline</h3>
+        <dl class="drawer-dl" style="grid-template-columns: 1fr;">
+          <div><dt>Bot client</dt><dd>discord.js v14 · Node 22</dd></div>
+          <div><dt>Storage</dt><dd>Cloudflare D1 (SQLite)</dd></div>
+          <div><dt>Realtime transport</dt><dd>Server-Sent Events</dd></div>
+          <div><dt>Last heartbeat</dt><dd>14:32:01 (2s trước)</dd></div>
+        </dl>
+
+        <h4 style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-muted); margin: 18px 0 12px; font-weight: 700;">API endpoints</h4>
+        <ul class="api-list">
+          <li><code>POST /api/realtime/ingest</code>Bot → D1 (header <code>x-ingest-token</code> nếu có)</li>
+          <li><code>GET /api/realtime/stats</code>Tổng quan · trạng thái bot</li>
+          <li><code>GET /api/realtime/messages</code>Feed sự kiện · DESC theo id</li>
+          <li><code>GET /api/realtime/events</code>SSE stream · poll 2s</li>
+        </ul>
+      </div>
+
+      <!-- Quick log -->
+      <div class="rt-bot-card" style="border-style: dashed;">
+        <h3 style="color: var(--stamp);">Sự kiện đáng chú ý</h3>
+        <ul style="list-style: none; margin: 0; padding: 0; font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); display: flex; flex-direction: column; gap: 10px;">
+          <li style="padding-bottom: 10px; border-bottom: 1px dashed var(--rule);">
+            <span style="color: var(--stamp); font-weight: 700;">14:32</span><br/>
+            Slide rubric v3 được upload — kho sẽ tự cập nhật sau khi bot đẩy event.
+          </li>
+          <li style="padding-bottom: 10px; border-bottom: 1px dashed var(--rule);">
+            <span style="color: var(--stamp); font-weight: 700;">14:31</span><br/>
+            7 reactions trên repo skeleton — tín hiệu cộng đồng tốt.
+          </li>
+          <li>
+            <span style="color: var(--stamp); font-weight: 700;">14:30</span><br/>
+            Thầy H nhắc deadline CP4 17:30 — bot đã gắn cờ reminder nội bộ.
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div>
+    <b>Discord Knowledge Hub</b>
+    Prototype phục vụ tra cứu tài liệu khóa học AI Thực Chiến. Không crawl Discord, không lưu DM, không có đăng nhập.
+  </div>
+  <div>
+    <b>Bảo mật dữ liệu</b>
+    Nội dung được sanitize trước khi lưu (che URL, truncate 600 ký tự). Không lưu DM. Tuân thủ quy định của khoá.
+  </div>
+  <div>
+    <b>Nhóm</b>
+    Hoàng (PM) · Nhật Minh (Evidence) · Đức Thiện (AI / Eval).
+  </div>
+</footer>
+
+</body>
+</html>

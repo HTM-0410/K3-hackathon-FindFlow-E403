@@ -1,4 +1,4 @@
-import { integer, sqliteTable, text, index } from "drizzle-orm/sqlite-core";
+import { integer, sqliteTable, text, index, uniqueIndex } from "drizzle-orm/sqlite-core";
 
 /**
  * Bảng realtime events — Discord Knowledge Hub
@@ -50,3 +50,62 @@ export const realtimeStats = sqliteTable("realtime_stats", {
   lastHeartbeat: integer("last_heartbeat").notNull().default(0),
   botStartedAt: integer("bot_started_at").notNull().default(0),
 });
+
+/* ====================================================================== */
+/* Demo document ingest — tách riêng khỏi dữ liệu thật                   */
+/* ====================================================================== */
+
+/** Status luồng xử lý tài liệu demo. */
+export const DEMO_DOC_STATUS = [
+  "queued",
+  "fetching",
+  "ready",
+  "failed",
+  "skipped",
+] as const;
+export type DemoDocStatus = (typeof DEMO_DOC_STATUS)[number];
+
+/**
+ * Bảng demo_documents — lưu metadata và nội dung đã xử lý từ link Discord
+ * thu được từ server test. Namespace `source=discord-demo`, tách hoàn toàn
+ * khỏi catalog production và bảng realtime_events.
+ */
+export const demoDocuments = sqliteTable(
+  "demo_documents",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    /** ID ngoài (messageId::url) — chống trùng */
+    externalId: text("external_id").notNull(),
+    source: text("source").notNull().default("discord-demo"),
+    guildId: text("guild_id").notNull().default(""),
+    channelId: text("channel_id").notNull().default(""),
+    channelName: text("channel_name").notNull().default(""),
+    messageId: text("message_id").notNull().default(""),
+    messageUrl: text("message_url").notNull().default(""),
+    authorName: text("author_name").notNull().default(""),
+    url: text("url").notNull(),
+    host: text("host").notNull().default(""),
+    title: text("title").notNull().default(""),
+    /** Text đã chuẩn hoá (HTML strip + truncate). */
+    body: text("body").notNull().default(""),
+    /** Trích đoạn ngắn dùng cho danh sách UI. */
+    snippet: text("snippet").notNull().default(""),
+    contentLength: integer("content_length").notNull().default(0),
+    /** Trạng thái xử lý. */
+    status: text("status").notNull().default("queued"),
+    /** Lỗi (nếu có). */
+    errorMessage: text("error_message").notNull().default(""),
+    /** Số lần thử fetch. */
+    fetchAttempts: integer("fetch_attempts").notNull().default(0),
+    /** Lưu vector embedding (JSON) phục vụ tìm kiếm demo. */
+    embedding: text("embedding").notNull().default("[]"),
+    detectedAt: integer("detected_at").notNull(),
+    processedAt: integer("processed_at").notNull().default(0),
+  },
+  (table) => ({
+    externalIdUnique: uniqueIndex("uq_demo_documents_external_id").on(table.externalId),
+    statusIdx: index("idx_demo_documents_status").on(table.status),
+    detectedIdx: index("idx_demo_documents_detected").on(table.detectedAt),
+  }),
+);
+

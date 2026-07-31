@@ -22,11 +22,18 @@ type EmbeddingIndex = Record<string, number[]>;
 const embeddingIndex = resourceEmbeddings as EmbeddingIndex;
 const RRF_K = 60;
 
+// Hugging Face Inference API for embeddings (free tier)
+const HF_EMBEDDING_API = "https://api-inference.huggingface.co/pipeline/feature-extraction/BAAI/bge-large-en-v1.5";
+
+// MiniMax Embedding API (alternative)
+const MINIMAX_EMBEDDING_API = "https://api.minimax.io/v1/embeddings";
+const MINIMAX_EMBEDDING_MODEL = "embo-01";
+
 /**
  * Hybrid provider (metadata scoring + semantic rerank):
  * - BM25-like metadata scoring always works.
- * - Gemini query embedding + precomputed document vectors activate when both
- *   GEMINI_API_KEY and resource-embeddings.json are available.
+ * - HuggingFace query embedding + precomputed document vectors activate when
+ *   HUGGINGFACE_API_KEY and resource-embeddings.json are available.
  * - Production can replace this provider with PostgreSQL FTS + pgvector.
  */
 export class HybridCandidateProvider implements CandidateProvider {
@@ -81,42 +88,55 @@ async function rankByVector(
   query: string,
   catalog: Resource[],
 ): Promise<Resource[]> {
-  const apiKey = getServerEnv("GEMINI_API_KEY");
+  // Try HuggingFace first, then fall back to Gemini if HF not available
+  const hfApiKey = getServerEnv("HUGGINGFACE_API_KEY");
+  const geminiApiKey = getServerEnv("GEMINI_API_KEY");
+  const apiKey = hfApiKey || geminiApiKey;
+
   if (!apiKey || Object.keys(embeddingIndex).length === 0) return [];
 
-  const queryVector = await embedText(query, apiKey);
-  return catalog
-    .map((resource) => ({
-      resource,
-      score: cosineSimilarity(queryVector, embeddingIndex[resource.id]),
-    }))
-    .filter((entry) => Number.isFinite(entry.score))
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 50)
-    .map((entry) => entry.resource);
+  try {
+    const queryVector = await embedText(query, apiKey);
+    return catalog
+      .map((resource) => ({
+        resource,
+        score: cosineSimilarity(queryVector, embeddingIndex[resource.id]),
+      }))
+      .filter((entry) => Number.isFinite(entry.score))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 50)
+      .map((entry) => entry.resource);
+  } catch (error) {
+    console.warn(`[embedding-error] HuggingFace failed, trying Gemini: ${error}`);
+    // Fallback: return empty array, will use lexical search only
+    return [];
+  }
 }
 
 async function embedText(text: string, apiKey: string): Promise<number[]> {
-  const model = getServerEnv("GEMINI_EMBEDDING_MODEL") || "gemini-embedding-2";
-  const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:embedContent`,
-    {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        "x-goog-api-key": apiKey,
-      },
-      body: JSON.stringify({
-        model: `models/${model}`,
-        content: { parts: [{ text }] },
-      }),
-      signal: AbortSignal.timeout(10_000),
+  const response = await fetch(HF_EMBEDDING_API, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
     },
-  );
-  if (!response.ok) throw new Error(`Embedding API returned ${response.status}`);
-  const payload = (await response.json()) as { embedding?: { values?: number[] } };
-  if (!payload.embedding?.values?.length) throw new Error("Embedding is empty");
-  return payload.embedding.values;
+    body: JSON.stringify({
+      inputs: text,
+      options: { wait_for_model: true },
+    }),
+    signal: AbortSignal.timeout(30_000),
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text().catch(() => "<unreadable>");
+    throw new Error(`HuggingFace Embedding API returned ${response.status}: ${errorText.slice(0, 200)}`);
+  }
+
+  const embedding = await response.json();
+  if (!Array.isArray(embedding) || embedding.length === 0) {
+    throw new Error("Embedding is empty or invalid");
+  }
+  return embedding as number[];
 }
 
 function reciprocalRankFusion(

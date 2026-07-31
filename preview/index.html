@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kho tri thức — Discord Knowledge Hub</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <button class="brand">
+    <span class="brand-mark">DK</span>
+    <span>
+      <span class="brand-title">Kho tri thức</span>
+      <span class="brand-sub">Discord Knowledge Hub · Batch 03</span>
+    </span>
+  </button>
+  <nav class="site-nav">
+    <a href="index.html" class="is-active">Tra cứu</a>
+    <a href="resources.html">Kho tài liệu</a>
+    <a href="realtime.html">Trực tiếp</a>
+  </nav>
+  <div class="site-meta">
+    <span>Hôm nay · 30.07</span>
+    <span class="dot"></span>
+    <span>AI xếp hạng</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <div class="hero-eyebrow">Trợ lý tra cứu tài liệu khóa học</div>
+    <h1 class="hero-title">Tra cứu tài liệu,<br/><em>không cần nhớ kênh.</em></h1>
+    <p class="hero-lead">
+      Nhập điều bạn đang cần bằng ngôn ngữ của bạn. Hệ thống xếp hạng tối đa 5 tài liệu gần nhất, kèm nguồn Discord và ngày chia sẻ — để bạn mở thẳng tài liệu gốc mà không phải đoán kênh nào.
+    </p>
+
+    <form class="hero-search" onsubmit="event.preventDefault(); location.assign('search.html?q=' + encodeURIComponent(this.q.value));">
+      <span class="hero-search-icon">⌕</span>
+      <input name="q" type="text" placeholder="Ví dụ: slide hackathon có rubric, hoặc 'bài lab hôm trước'..." />
+      <button class="btn btn-primary" type="submit">Tra cứu <span class="arrow">→</span></button>
+    </form>
+
+    <div class="topic-tabs">
+      <div class="topic-tabs-label">Tra cứu nhanh theo chủ đề</div>
+      <div class="topic-tabs-row">
+        <button class="topic-tab" onclick="location.assign('search.html?q=hackathon')">
+          Hackathon
+          <span class="topic-tab-count">12 tài liệu</span>
+        </button>
+        <button class="topic-tab" onclick="location.assign('search.html?q=prompt+engineering')">
+          Prompt Engineering
+          <span class="topic-tab-count">9 tài liệu</span>
+        </button>
+        <button class="topic-tab" onclick="location.assign('search.html?q=AI+agent')">
+          AI Agent
+          <span class="topic-tab-count">7 tài liệu</span>
+        </button>
+        <button class="topic-tab" onclick="location.assign('search.html?q=codelab')">
+          Codelab
+          <span class="topic-tab-count">8 tài liệu</span>
+        </button>
+        <button class="topic-tab" onclick="location.assign('search.html?q=tư+duy+sản+phẩm')">
+          Tư duy sản phẩm
+          <span class="topic-tab-count">6 tài liệu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side: recent additions -->
+  <aside class="hero-side">
+    <div class="hero-side-label">
+      <span>Tài liệu mới thêm</span>
+      <span style="color: var(--stamp);">●</span>
+    </div>
+    <div class="hero-recent">
+      <div class="hero-recent-item">
+        <div class="hero-recent-icon slide">▤</div>
+        <div>
+          <div class="hero-recent-title">Rubric chấm Hackathon Batch 03</div>
+          <div class="hero-recent-meta">#hackathon · Thầy H · 28.07</div>
+        </div>
+        <div class="hero-recent-time">2 ngày</div>
+      </div>
+      <div class="hero-recent-item">
+        <div class="hero-recent-icon lab">⚗</div>
+        <div>
+          <div class="hero-recent-title">Codelab Day 4 — Tool Calling</div>
+          <div class="hero-recent-meta">#codelab · Mentor Q · 27.07</div>
+        </div>
+        <div class="hero-recent-time">3 ngày</div>
+      </div>
+      <div class="hero-recent-item">
+        <div class="hero-recent-icon video">▶</div>
+        <div>
+          <div class="hero-recent-title">Video recap: buổi học về Prompt Injection</div>
+          <div class="hero-recent-meta">#video · Chia sẻ: Lan · 26.07</div>
+        </div>
+        <div class="hero-recent-time">4 ngày</div>
+      </div>
+      <div class="hero-recent-item">
+        <div class="hero-recent-icon github">⌘</div>
+        <div>
+          <div class="hero-recent-title">Repo K3-AI-Product-Hackathon (skeleton)</div>
+          <div class="hero-recent-meta">#github · Mentor Q · 25.07</div>
+        </div>
+        <div class="hero-recent-time">5 ngày</div>
+      </div>
+      <div class="hero-recent-item">
+        <div class="hero-recent-icon slide">▤</div>
+        <div>
+          <div class="hero-recent-title">Slide: Đặc tả chỗ khó trong 4 lớp</div>
+          <div class="hero-recent-meta">#slide · Thầy H · 24.07</div>
+        </div>
+        <div class="hero-recent-time">6 ngày</div>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<!-- Hero stats strip -->
+<div class="hero-stats">
+  <div class="hero-stat">
+    <span class="hero-stat-b">50</span>
+    <span class="hero-stat-s">Tài liệu đã chỉ mục</span>
+  </div>
+  <div class="hero-stat">
+    <span class="hero-stat-b">12</span>
+    <span class="hero-stat-s">Kênh Discord nguồn</span>
+  </div>
+  <div class="hero-stat">
+    <span class="hero-stat-b">5</span>
+    <span class="hero-stat-s">Kết quả mỗi tra cứu</span>
+  </div>
+  <div class="hero-stat">
+    <span class="hero-stat-b">100<span style="font-size: 14px; color: var(--ink-muted);">%</span></span>
+    <span class="hero-stat-s">Kèm nguồn Discord</span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div>
+    <b>Discord Knowledge Hub</b>
+    Prototype phục vụ tra cứu tài liệu khóa học AI Thực Chiến. Không crawl Discord, không lưu DM, không có đăng nhập.
+  </div>
+  <div>
+    <b>Bằng chứng</b>
+    Khảo sát n=73 · 95,9% xác nhận pain · 79,5% không nhớ kênh · 91,8% sẵn sàng thử.
+  </div>
+  <div>
+    <b>Nhóm</b>
+    Hoàng (PM) · Nhật Minh (Evidence) · Đức Thiện (AI / Eval).
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "gemini-proxy-singapore",
+  "compatibility_date": "2026-01-01",
+  "main": "src/index.ts",
+  "vars": {},
+  "placement": {
+    "mode": "smart"
+  }
+}

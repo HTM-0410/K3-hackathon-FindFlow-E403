@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kho tài liệu — Discord Knowledge Hub</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <button class="brand" onclick="location.assign('index.html')">
+    <span class="brand-mark">DK</span>
+    <span>
+      <span class="brand-title">Kho tri thức</span>
+      <span class="brand-sub">Discord Knowledge Hub · Batch 03</span>
+    </span>
+  </button>
+  <nav class="site-nav">
+    <a href="index.html">Tra cứu</a>
+    <a href="resources.html" class="is-active">Kho tài liệu</a>
+    <a href="realtime.html">Trực tiếp</a>
+  </nav>
+  <div class="site-meta">
+    <span>50 bản ghi · 12 kênh</span>
+    <span class="dot"></span>
+    <span>Cập nhật 30.07</span>
+  </div>
+</header>
+
+<main class="listing">
+
+  <!-- LISTING HEAD -->
+  <div class="listing-head">
+    <div>
+      <div class="listing-eyebrow">Toàn bộ kho tài liệu</div>
+      <h1 class="listing-title">Mục lục tài liệu đã được chỉ mục</h1>
+      <p class="listing-sub">50 tài liệu từ 12 kênh Discord, được tự động phân loại theo chủ đề, loại và kênh nguồn. Bấm vào từng thẻ để xem chi tiết và mở nguồn gốc.</p>
+    </div>
+    <form class="listing-search" onsubmit="event.preventDefault();">
+      <span style="font-family: var(--font-mono); color: var(--stamp); font-weight: 700;">⌕</span>
+      <input type="text" placeholder="Lọc nhanh trong kho..." />
+    </form>
+  </div>
+
+  <!-- BODY: filters + results -->
+  <div class="listing-body">
+
+    <aside class="filters">
+      <div class="filter-block">
+        <div class="filter-head">Loại tài liệu</div>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" checked /> Tất cả <span class="filter-num">50</span></label></li>
+          <li><label><input type="checkbox" /> Slide bài giảng <span class="filter-num">18</span></label></li>
+          <li><label><input type="checkbox" /> Bài lab <span class="filter-num">11</span></label></li>
+          <li><label><input type="checkbox" /> Video khóa học <span class="filter-num">7</span></label></li>
+          <li><label><input type="checkbox" /> GitHub / Code <span class="filter-num">6</span></label></li>
+          <li><label><input type="checkbox" /> Thông báo <span class="filter-num">4</span></label></li>
+          <li><label><input type="checkbox" /> Hướng dẫn <span class="filter-num">4</span></label></li>
+        </ul>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-head">Chủ đề</div>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" /> Tất cả <span class="filter-num">50</span></label></li>
+          <li><label><input type="checkbox" /> Hackathon <span class="filter-num">12</span></label></li>
+          <li><label><input type="checkbox" /> Prompt Engineering <span class="filter-num">9</span></label></li>
+          <li><label><input type="checkbox" /> AI Agent <span class="filter-num">7</span></label></li>
+          <li><label><input type="checkbox" /> Codelab <span class="filter-num">8</span></label></li>
+          <li><label><input type="checkbox" /> Tư duy sản phẩm <span class="filter-num">6</span></label></li>
+          <li><label><input type="checkbox" /> Đặc tả AI Spec <span class="filter-num">5</span></label></li>
+          <li><label><input type="checkbox" /> Bảo mật dữ liệu <span class="filter-num">3</span></label></li>
+        </ul>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-head">Kênh</div>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" /> #hackathon <span class="filter-num">12</span></label></li>
+          <li><label><input type="checkbox" /> #codelab <span class="filter-num">8</span></label></li>
+          <li><label><input type="checkbox" /> #tai-lieu <span class="filter-num">11</span></label></li>
+          <li><label><input type="checkbox" /> #chia-se <span class="filter-num">9</span></label></li>
+          <li><label><input type="checkbox" /> #general <span class="filter-num">5</span></label></li>
+          <li><label><input type="checkbox" /> #lab-support <span class="filter-num">5</span></label></li>
+        </ul>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-head">Sắp xếp</div>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" checked /> Mới nhất</label></li>
+          <li><label><input type="checkbox" /> Cũ nhất</label></li>
+          <li><label><input type="checkbox" /> Tên A–Z</label></li>
+        </ul>
+      </div>
+    </aside>
+
+    <section>
+      <div class="results-head">
+        <div class="results-count">
+          50 tài liệu <small>đã được chỉ mục · sắp xếp theo ngày</small>
+        </div>
+        <div class="results-sort">
+          Hiển thị
+          <select>
+            <option>Dạng danh sách</option>
+            <option>Dạng lưới</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="res-grid">
+
+        <!-- Row 1 -->
+        <article class="resource-card is-official">
+          <div class="perforations"><span></span><span></span><span></span></div>
+          <div class="stamp-corner"><span class="stamp">Official</span></div>
+          <div class="card-top-line">
+            <span class="card-type slide">Slide</span>
+            <span class="card-channel">#hackathon · <b>Thầy H</b></span>
+            <span class="card-date">28.07</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hackathon Batch 03 — Rubric & cách tính điểm (v3)</h3>
+            <p class="card-summary">5 tiêu chí nghiệm thu, thang điểm R1→R7, ví dụ minh hoạ cho mỗi khối.</p>
+            <div class="card-meta">
+              <span>Tags: <b>rubric · điểm</b></span>
+              <span class="score">v3</span>
+            </div>
+          </div>
+          <div class="archive-id"><b>DOC-014</b>Drawer A3 · Hackathon</div>
+        </article>
+
+        <article class="resource-card">
+          <div class="perforations"><span></span><span></span><span></span></div>
+          <div class="stamp-corner"><span class="stamp ink">Index</span></div>
+          <div class="card-top-line">
+            <span class="card-type lab">Lab</span>
+            <span class="card-channel">#codelab · <b>Mentor Q</b></span>
+            <span class="card-date">27.07</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Codelab Day 4 — Tool Calling & Function Schema</h3>
+            <p class="card-summary">Hướng dẫn xây dựng AI Agent gọi tool, định nghĩa schema, ví dụ với Gemini.</p>
+            <div class="card-meta">
+              <span>Tags: <b>tool-calling · agent</b></span>
+              <span class="score">v1</span>
+            </div>
+          </div>
+          <div class="archive-id"><b>DOC-013</b>Drawer B1 · Codelab</div>
+        </article>
+
+        <!-- Row 2 -->
+        <article class="resource-card">
+          <div class="perforations"><span></span><span></span><span></span></div>
+          <div class="stamp-corner"><span class="stamp ink">Index</span></div>
+          <div class="card-top-line">
+            <span class="card-type video">Video</span>
+            <span class="card-channel">#chia-se · <b>Lan</b></span>
+            <span class="card-date">26.07</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Video recap — Prompt Injection trong AI Agent</h3>
+            <p class="card-summary">Recap 45 phút buổi học về kỹ thuật chống prompt injection, ví dụ thật từ Discord.</p>
+            <div class="card-meta">
+              <span>Tags: <b>security · agent</b></span>
+              <span class="score">45'</span>
+            </div>
+          </div>
+          <div class="archive-id"><b>DOC-012</b>Drawer D2 · Video</div>
+        </article>
+
+        <article class="resource-card">
+          <div class="perforations"><span></span><span></span><span></span></div>
+          <div class="stamp-corner"><span class="stamp ink">Index</span></div>
+          <div class="card-top-line">
+            <span class="card-type github">GitHub</span>
+            <span class="card-channel">#chia-se · <b>Mentor Q</b></span>
+            <span class="card-date">25.07</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Repo K3-AI-Product-Hackathon (skeleton)</h3>
+            <p class="card-summary">Skeleton repo cho nhóm, có README mẫu và cấu trúc thư mục theo rubric.</p>
+            <div class="card-meta">
+              <span>Tags: <b>github · hackathon</b></span>
+              <span class="score">★ 4</span>
+            </div>
+          </div>
+          <div class="archive-id"><b>DOC-011</b>Drawer E1 · GitHub</div>
+        </article>
+
+        <!-- Row 3 -->
+        <article class="resource-card is-official">
+          <div class="perforations"><span></span><span></span><span></span></div>
+          <div class="stamp-corner"><span class="stamp">Official</span></div>
+          <div class="card-top-line">
+            <span class="card-type slide">Slide</span>
+            <span class="card-channel">#hackathon · <b>Thầy H</b></span>
+            <span class="card-date">25.07</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Slide giới thiệu Hackathon & 4 lớp chỗ khó</h3>
+            <p class="card-summary">Tổng quan 1,5 ngày, cấu trúc đề bài, định nghĩa 4 lớp chỗ khó theo taxonomy.</p>
+            <div class="card-meta">
+              <span>Tags: <b>hackathon · chỗ khó</b></span>
+              <span class="score">v1</span>
+            </div>
+          </div>
+          <div class="archive-id"><b>DOC-010</b>Drawer A3 · Hackathon</div>
+        </article>
+
+        <article class="resource-card">
+          <div class="perforations"><span></span><span></span><span></span></div>
+          <div class="stamp-corner"><span class="stamp ink">Index</span></div>
+          <div class="card-top-line">
+            <span class="card-type announcement">Thông báo</span>
+            <span class="card-channel">#general · <b>BTC</b></span>
+            <span class="card-date">24.07</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Thông báo: Lịch nộp checkpoint & demo</h3>
+            <p class="card-summary">Lịch CP1→CP6, quy định nộp muộn, hình thức chấm điểm.</p>
+            <div class="card-meta">
+              <span>Tags: <b>checkpoint · demo</b></span>
+              <span class="score">—</span>
+            </div>
+          </div>
+          <div class="archive-id"><b>DOC-009</b>Drawer F1 · Announce</div>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <div style="margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-muted);">
+        <span>Đang xem 1–6 / 50</span>
+        <div style="display: flex; gap: 4px;">
+          <button class="btn btn-small btn-ghost" disabled>‹ Trước</button>
+          <button class="btn btn-small btn-ghost">1</button>
+          <button class="btn btn-small" style="background: var(--ink); color: var(--paper); border-color: var(--ink);">2</button>
+          <button class="btn btn-small btn-ghost">3</button>
+          <button class="btn btn-small btn-ghost">…</button>
+          <button class="btn btn-small btn-ghost">9</button>
+          <button class="btn btn-small btn-ghost">Sau ›</button>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div>
+    <b>Discord Knowledge Hub</b>
+    Prototype phục vụ tra cứu tài liệu khóa học AI Thực Chiến. Không crawl Discord, không lưu DM, không có đăng nhập.
+  </div>
+  <div>
+    <b>Bằng chứng</b>
+    Khảo sát n=73 · 95,9% xác nhận pain · 79,5% không nhớ kênh · 91,8% sẵn sàng thử.
+  </div>
+  <div>
+    <b>Nhóm</b>
+    Hoàng (PM) · Nhật Minh (Evidence) · Đức Thiện (AI / Eval).
+  </div>
+</footer>
+
+</body>
+</html>

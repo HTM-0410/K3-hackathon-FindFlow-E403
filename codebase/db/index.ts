@@ -42,6 +42,33 @@ function getLocalDb() {
       bot_started_at INTEGER NOT NULL DEFAULT 0
     );
     INSERT OR IGNORE INTO realtime_stats (id) VALUES (1);
+
+    CREATE TABLE IF NOT EXISTS demo_documents (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      external_id TEXT NOT NULL,
+      source TEXT NOT NULL DEFAULT 'discord-demo',
+      guild_id TEXT NOT NULL DEFAULT '',
+      channel_id TEXT NOT NULL DEFAULT '',
+      channel_name TEXT NOT NULL DEFAULT '',
+      message_id TEXT NOT NULL DEFAULT '',
+      message_url TEXT NOT NULL DEFAULT '',
+      author_name TEXT NOT NULL DEFAULT '',
+      url TEXT NOT NULL,
+      host TEXT NOT NULL DEFAULT '',
+      title TEXT NOT NULL DEFAULT '',
+      body TEXT NOT NULL DEFAULT '',
+      snippet TEXT NOT NULL DEFAULT '',
+      content_length INTEGER NOT NULL DEFAULT 0,
+      status TEXT NOT NULL DEFAULT 'queued',
+      error_message TEXT NOT NULL DEFAULT '',
+      fetch_attempts INTEGER NOT NULL DEFAULT 0,
+      embedding TEXT NOT NULL DEFAULT '[]',
+      detected_at INTEGER NOT NULL,
+      processed_at INTEGER NOT NULL DEFAULT 0
+    );
+    CREATE UNIQUE INDEX IF NOT EXISTS uq_demo_documents_external_id ON demo_documents(external_id);
+    CREATE INDEX IF NOT EXISTS idx_demo_documents_status ON demo_documents(status);
+    CREATE INDEX IF NOT EXISTS idx_demo_documents_detected ON demo_documents(detected_at);
   `);
   _db = drizzle(sqlite, { schema });
   return _db;

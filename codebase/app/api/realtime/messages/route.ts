@@ -16,7 +16,7 @@
  *   }
  */
 
-import { desc, eq, gt, and, type SQL } from "drizzle-orm";
+import { desc, eq, gt, and, like, type SQL } from "drizzle-orm";
 import { getDb } from "../../../../db";
 import { realtimeEvents } from "../../../../db/schema";
 import { ALLOWED_KINDS } from "../../../lib/realtime";
@@ -91,6 +91,57 @@ export async function GET(request: Request): Promise<Response> {
           : message,
       },
       { status: 500 }
+    );
+  }
+}
+
+/**
+ * DELETE /api/realtime/messages?externalIdPattern=seed-%
+ *
+ * Xoá các event theo mẫu `externalId LIKE pattern`. Yêu cầu
+ * `x-admin-token` nếu `REALTIME_ADMIN_TOKEN` được cấu hình.
+ */
+export async function DELETE(request: Request): Promise<Response> {
+  const url = new URL(request.url);
+  const pattern = url.searchParams.get("externalIdPattern");
+  const confirm = url.searchParams.get("confirm");
+  if (!pattern || confirm !== "yes") {
+    return Response.json(
+      {
+        error:
+          "Cần query externalIdPattern=<SQL LIKE> và confirm=yes. Mặc định pattern=seed-%",
+      },
+      { status: 400 },
+    );
+  }
+
+  const expected = process.env.REALTIME_ADMIN_TOKEN;
+  if (expected) {
+    const got = request.headers.get("x-admin-token") || "";
+    if (got !== expected) {
+      return Response.json(
+        { error: "Invalid or missing x-admin-token" },
+        { status: 401 },
+      );
+    }
+  }
+
+  try {
+    const db = getDb();
+    const result = await db
+      .delete(realtimeEvents)
+      .where(like(realtimeEvents.externalId, pattern))
+      .returning({ id: realtimeEvents.id });
+    return Response.json({
+      ok: true,
+      deleted: result.length,
+      pattern,
+      mode: expected ? "token" : "open",
+    });
+  } catch (error) {
+    return Response.json(
+      { error: error instanceof Error ? error.message : "Delete failed" },
+      { status: 500 },
     );
   }
 }

@@ -63,8 +63,69 @@ function fmtRelative(ts: number): string {
 
 function fmtClock(ts: number): string {
   if (!ts) return "—";
-  return new Date(Number(ts)).toLocaleTimeString("vi-VN");
+  return new Date(ts).toLocaleTimeString("vi-VN");
 }
+
+/** Render text có URL thành các đoạn text + <a>. */
+function renderContentWithLinks(text: string): React.ReactNode {
+  if (!text) return null;
+  const urlRegex = /(https?:\/\/[^\s<>"'`]+)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = urlRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const raw = match[0].replace(/[)\]}>.,;]+$/g, "");
+    parts.push(
+      <a
+        key={`l-${key++}`}
+        href={raw}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-link"
+      >
+        {raw}
+      </a>,
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+  return parts;
+}
+
+function safeHost(url: string): string {
+  try {
+    return new URL(url).hostname.toLowerCase();
+  } catch {
+    return url;
+  }
+}
+
+interface DemoDocument {
+  id: number;
+  url: string;
+  host: string;
+  title: string;
+  snippet: string;
+  status: string;
+  channelName: string;
+  authorName: string;
+  contentLength: number;
+  detectedAt: number;
+  processedAt: number;
+  errorMessage: string;
+}
+
+const DOC_STATUS_META: Record<string, { label: string; tone: string }> = {
+  ready: { label: "Sẵn sàng", tone: "ready" },
+  queued: { label: "Đang chờ", tone: "queued" },
+  fetching: { label: "Đang tải", tone: "fetching" },
+  failed: { label: "Lỗi", tone: "failed" },
+  skipped: { label: "Bỏ qua", tone: "skipped" },
+};
 
 /* ------------------------------ UI ------------------------------ */
 
@@ -116,6 +177,19 @@ function EventList({ events }: { events: RealtimeEvent[] }) {
     <ul className="event-list" role="log" aria-live="polite">
       {events.map((ev) => {
         const meta = KIND_LABELS[ev.kind] || { label: ev.kind, icon: "•" };
+        const links = Array.isArray(ev.metadata?.links)
+          ? (ev.metadata?.links as unknown[]).filter(
+              (l): l is string => typeof l === "string",
+            )
+          : [];
+        const excerpt =
+          typeof ev.metadata?.messageExcerpt === "string"
+            ? (ev.metadata?.messageExcerpt as string)
+            : "";
+        const discordUrl =
+          typeof ev.metadata?.messageUrl === "string"
+            ? (ev.metadata?.messageUrl as string)
+            : "";
         return (
           <li key={`${ev.id}-${ev.externalId}`} className={`event kind-${ev.kind}`}>
             <span className="event-icon">{meta.icon}</span>
@@ -126,7 +200,91 @@ function EventList({ events }: { events: RealtimeEvent[] }) {
                 {ev.channelName && <span className="channel-tag">#{ev.channelName}</span>}
                 <span className="time">{fmtClock(ev.occurredAt)}</span>
               </div>
-              <p>{ev.content || "(không có nội dung)"}</p>
+              {(ev.kind === "message" && (ev.content || excerpt)) ? (
+                <p className="event-content">
+                  {renderContentWithLinks(excerpt || ev.content)}
+                </p>
+              ) : (
+                <p>{ev.content || "(không có nội dung)"}</p>
+              )}
+              {links.length > 0 && (
+                <div className="link-list">
+                  <span className="link-label">🔗 Link phát hiện:</span>
+                  <ul>
+                    {links.map((link, idx) => (
+                      <li key={`${ev.id}-link-${idx}`}>
+                        <a
+                          href={link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-link"
+                          title={link}
+                        >
+                          {safeHost(link) || link}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {(ev.kind === "message" || ev.kind === "reaction") && discordUrl && (
+                <div className="event-footer">
+                  <a
+                    href={discordUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="muted-link"
+                  >
+                    ↗ Mở trong Discord
+                  </a>
+                </div>
+              )}
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function DocumentList({ documents }: { documents: DemoDocument[] }) {
+  if (!documents || !documents.length) {
+    return (
+      <div className="muted">
+        Chưa có tài liệu nào trong dataset demo. Bật <code>DEMO_DOCUMENT_INGEST</code>
+        và gửi link trong Discord test.
+      </div>
+    );
+  }
+  return (
+    <ul className="doc-mini-list">
+      {documents.map((doc) => {
+        const meta = DOC_STATUS_META[doc.status] || DOC_STATUS_META.queued;
+        return (
+          <li key={doc.id} className="doc-mini">
+            <div className="doc-mini-head">
+              <span className={`status-tag ${meta.tone}`}>{meta.label}</span>
+              <span className="host">{doc.host || safeHost(doc.url)}</span>
+              <span className="time">{fmtClock(doc.detectedAt)}</span>
+            </div>
+            <a
+              className="doc-mini-title"
+              href={doc.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {doc.title || doc.url}
+            </a>
+            {doc.snippet && <p className="snippet">{doc.snippet}</p>}
+            {doc.errorMessage && (
+              <p className="error-message">⚠ {doc.errorMessage}</p>
+            )}
+            <div className="doc-mini-meta">
+              {doc.channelName && <span>#{doc.channelName}</span>}
+              {doc.authorName && <span>· {doc.authorName}</span>}
+              {doc.contentLength > 0 && (
+                <span>· {doc.contentLength.toLocaleString("vi-VN")} ký tự</span>
+              )}
             </div>
           </li>
         );
@@ -156,6 +314,8 @@ export default function RealtimePage() {
   const [error, setError] = useState("");
   const [filterKind, setFilterKind] = useState<string>("all");
   const [paused, setPaused] = useState(false);
+  const [hideHeartbeats, setHideHeartbeats] = useState(true);
+  const [documents, setDocuments] = useState<DemoDocument[]>([]);
   const [now, setNow] = useState<number>(() => Date.now());
   const cursorRef = useRef<number>(0);
 
@@ -181,6 +341,25 @@ export default function RealtimePage() {
     const t = setInterval(refreshStats, 10_000);
     return () => clearInterval(t);
   }, [refreshStats]);
+
+  // Polling danh sách tài liệu demo (cô lập khỏi catalog production).
+  const refreshDocuments = useCallback(async () => {
+    try {
+      const res = await fetch("/api/demo/documents?limit=20", { cache: "no-store" });
+      const data = await res.json();
+      if (data?.ok && Array.isArray(data.documents)) {
+        setDocuments(data.documents as DemoDocument[]);
+      }
+    } catch {
+      /* ignore — UI vẫn hiển thị danh sách cũ */
+    }
+  }, []);
+
+  useEffect(() => {
+    refreshDocuments();
+    const t = setInterval(refreshDocuments, 5_000);
+    return () => clearInterval(t);
+  }, [refreshDocuments]);
 
   // 2. Polling messages ban đầu — cho có dữ liệu hiển thị ngay khi mở trang
   const loadInitial = useCallback(async () => {
@@ -236,6 +415,8 @@ export default function RealtimePage() {
           cursorRef.current = Math.max(cursorRef.current, payload.id);
           const incoming = payload as RealtimeEvent;
           setEvents((prev) => {
+            // Dedupe: SSE có thể replay event đã có từ loadInitial (race since=0)
+            if (prev.some((e) => e.id === incoming.id)) return prev;
             const next = [...prev, incoming];
             // Giữ tối đa 200 dòng
             return next.length > 200 ? next.slice(next.length - 200) : next;
@@ -274,9 +455,20 @@ export default function RealtimePage() {
   }, []);
 
   const filteredEvents = useMemo<RealtimeEvent[]>(() => {
-    if (filterKind === "all") return events;
-    return events.filter((e) => e.kind === filterKind);
-  }, [events, filterKind]);
+    let list = events;
+    if (hideHeartbeats) {
+      list = list.filter((e) => e.kind !== "heartbeat");
+    }
+    if (filterKind !== "all") {
+      list = list.filter((e) => e.kind === filterKind);
+    }
+    return list;
+  }, [events, filterKind, hideHeartbeats]);
+
+  const recentDocsCount = useMemo(
+    () => documents.filter((d) => d.status === "ready").length,
+    [documents],
+  );
 
   const byChannel = useMemo<Record<string, number>>(() => {
     const map: Record<string, number> = {};
@@ -325,6 +517,12 @@ export default function RealtimePage() {
         <StatCard label="Rời server" value={stats.totalLeaves} icon="🚪" tone="danger" />
         <StatCard label="Reactions" value={stats.totalReactions} icon="⭐" tone="accent" />
         <StatCard label="Voice events" value={stats.totalVoice} icon="🔊" tone="violet" />
+        <StatCard
+          label="Tài liệu demo"
+          value={`${recentDocsCount}/${documents.length}`}
+          icon="📄"
+          tone="accent"
+        />
         <StatCard label="Uptime bot" value={`${Math.floor(stats.uptimeMs / 60000)}m`} icon="⏱" tone="muted" />
       </section>
 
@@ -333,24 +531,34 @@ export default function RealtimePage() {
           <header>
             <h2>Live feed</h2>
             <div className="feed-controls">
+              <label className="toggle">
+                <input
+                  type="checkbox"
+                  checked={hideHeartbeats}
+                  onChange={(e) => setHideHeartbeats(e.target.checked)}
+                />
+                <span>Ẩn heartbeat</span>
+              </label>
               <select
                 value={filterKind}
                 onChange={(e) => setFilterKind(e.target.value)}
                 aria-label="Lọc loại sự kiện"
               >
                 <option value="all">Tất cả</option>
-                {Object.entries(KIND_LABELS).map(([k, v]) => (
-                  <option key={k} value={k}>
-                    {v.icon} {v.label}
-                  </option>
-                ))}
+                {Object.entries(KIND_LABELS)
+                  .filter(([k]) => !(hideHeartbeats && k === "heartbeat"))
+                  .map(([k, v]) => (
+                    <option key={k} value={k}>
+                      {v.icon} {v.label}
+                    </option>
+                  ))}
               </select>
               <button onClick={() => setPaused((p) => !p)}>
                 {paused ? "▶ Tiếp tục" : "⏸ Tạm dừng"}
               </button>
             </div>
           </header>
-          <EventList events={paused ? events.slice(-50) : filteredEvents} />
+          <EventList events={paused ? filteredEvents.slice(-50) : filteredEvents.slice(-80)} />
         </article>
 
         <aside className="card side-panel">
@@ -409,8 +617,27 @@ export default function RealtimePage() {
             <li>
               <code>POST /api/realtime/ingest</code> — Discord bot đẩy event
             </li>
+            <li>
+              <code>GET /api/demo/documents</code> — tài liệu demo
+            </li>
           </ul>
         </aside>
+      </section>
+
+      <section className="documents-section">
+        <header className="section-head">
+          <div>
+            <span className="eyebrow">📚 DEMO INGEST</span>
+            <h2>
+              Tài liệu từ Discord test server{" "}
+              <span className="muted-text">cập nhật mỗi 5 giây</span>
+            </h2>
+          </div>
+          <a className="muted-link" href="/demo">
+            Mở trang quản lý chi tiết →
+          </a>
+        </header>
+        <DocumentList documents={documents} />
       </section>
     </main>
   );

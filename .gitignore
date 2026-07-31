@@ -4,3 +4,24 @@ node_modules/
 .env-cache.json
 bot.log
 dev.log
+
+# Local dev artifacts
+/tmp-server/
+/.tmp-server/
+eval/.tmp-server/
+*.tmp/
+
+# Stray wrangler caches
+proxy-worker/.wrangler/
+proxy/.wrangler/
+
+# Test scripts (không phải test suite chính)
+/test-*.json
+codebase/test-query.json
+codebase/test-gemini.mjs
+
+# Dev scratch / cache files
+/.dev-cache-*.json
+codebase/.dev-cache-*.json
+codebase/dev-output.log
+codebase/test-query.json

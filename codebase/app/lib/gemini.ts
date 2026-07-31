@@ -5,6 +5,8 @@ interface CloudflareEnv {
   GEMINI_API_KEY?: string;
   GEMINI_MODEL?: string;
   GEMINI_EMBEDDING_MODEL?: string;
+  GROQ_API_KEY?: string;
+  AI_PROXY_URL?: string;
   _aiAvailable?: boolean;
   _ai?: Ai;
 }
@@ -16,9 +18,14 @@ function getEnv(): CloudflareEnv {
   ) ?? (process.env as unknown as CloudflareEnv);
 }
 
+// Groq configuration (free tier)
+const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
+const GROQ_RERANK_MODEL = "llama-3.2-3b-instruct";
+
+// Fallback: Cloudflare Workers AI
 const AI_MODEL = "@cf/meta/llama-3.2-3b-instruct";
 const DEFAULT_MODEL = "gemini-3.1-flash-lite";
-const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models";
+const GOOGLE_AI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent";
 
 // System prompt được tinh chỉnh cho bộ dữ liệu mới
 const SYSTEM_INSTRUCTION = `Bạn là bộ xếp hạng tài liệu cho Discord Knowledge Hub của khóa AI Thực Chiến.
@@ -74,8 +81,11 @@ export async function rankWithGemini(
   const env = getEnv();
   const startedAt = Date.now();
 
+  // #region agent log
+  fetch('http://127.0.0.1:7649/ingest/0c95a8ef-4011-476f-ac84-1389a48e9386',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'a96cb1'},body:JSON.stringify({sessionId:'a96cb1',location:'app/lib/gemini.ts:81',message:'rankWithGemini entry',data:{traceId,queryLen:query.length,catalogLen:catalog.length,hasGeminiKey:!!env.GEMINI_API_KEY,hasGroqKey:!!env.GROQ_API_KEY,aiAvailable:env._aiAvailable,hasAI:!!env._ai,model:env.GEMINI_MODEL,geminiKeyPrefix:env.GEMINI_API_KEY?.slice(0,10)},timestamp:Date.now()})}).catch(()=>{});
+  // #endregion
+
   try {
-    // Chuẩn bị catalog với đầy đủ thông tin
     const catalogData = catalog.map((resource) => ({
       id: resource.id,
       title: resource.title,
@@ -94,14 +104,15 @@ export async function rankWithGemini(
       catalog: catalogData,
     });
 
+    let text: string;
+    let modelUsed = "groq";
+
     console.info(
-      `[ai-request] traceId=${traceId} model=${AI_MODEL} queryLen=${query.length} catalogLen=${catalog.length}`,
+      `[ai-request] traceId=${traceId} model=groq:${GROQ_RERANK_MODEL} queryLen=${query.length} catalogLen=${catalog.length}`,
     );
 
-    let text: string;
-    
+    // Priority 1: Cloudflare Workers AI (if available)
     if (env._ai && env._aiAvailable) {
-      // Use Cloudflare Workers AI
       const response = await env._ai.run(AI_MODEL, {
         messages: [
           { role: "system", content: SYSTEM_INSTRUCTION },
@@ -111,34 +122,68 @@ export async function rankWithGemini(
         temperature: 0.1,
       }) as { response?: string };
       text = response?.response ?? "";
-    } else {
-      // Fallback: Use Gemini API directly
-      const apiKey = env.GEMINI_API_KEY;
-      const model = env.GEMINI_MODEL || DEFAULT_MODEL;
-      if (!apiKey) throw new Error("No AI provider configured (GEMINI_API_KEY required for fallback)");
-      
-      const response = await fetch(
-        `${GEMINI_ENDPOINT}/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`,
-        {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({
-            systemInstruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
-            contents: [{ role: "user", parts: [{ text: userMessage }] }],
-            generationConfig: { temperature: 0 },
-          }),
+      modelUsed = "cloudflare";
+    }
+    // Priority 2: Groq API (free, fast) - uses GROQ_API_KEY
+    else if (env.GROQ_API_KEY) {
+      const response = await fetch(GROQ_API_URL, {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${env.GROQ_API_KEY}`,
+          "Content-Type": "application/json",
         },
-      );
-      
+        body: JSON.stringify({
+          model: GROQ_RERANK_MODEL,
+          messages: [
+            { role: "system", content: SYSTEM_INSTRUCTION },
+            { role: "user", content: userMessage },
+          ],
+          max_tokens: 1024,
+          temperature: 0.1,
+        }),
+      });
+
       if (!response.ok) {
         const errorBody = await response.text().catch(() => "<unreadable>");
-        throw new Error(`Gemini returned HTTP ${response.status}: ${errorBody.slice(0, 500)}`);
+        throw new Error(`Groq API returned HTTP ${response.status}: ${errorBody.slice(0, 500)}`);
       }
-      
-      const payload = await response.json() as {
-        candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>
-      };
-      text = payload.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
+
+      const payload = await response.json() as Record<string, unknown>;
+      const choices = payload.choices as Array<{ message?: { content?: string } }> | undefined;
+      text = choices?.[0]?.message?.content ?? "";
+    }
+    // Priority 3: Google Gemini (fallback) - uses GEMINI_API_KEY
+    else if (env.GEMINI_API_KEY) {
+      const response = await fetch(`${GOOGLE_AI_ENDPOINT}?key=${env.GEMINI_API_KEY}`, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "X-Goog-API-Client": "cloudflare-workers/1.0",
+          "X-Goog-AuthUser": "0",
+        },
+        body: JSON.stringify({
+          contents: [{
+            parts: [{ text: `${SYSTEM_INSTRUCTION}\n\n${userMessage}` }]
+          }],
+          generationConfig: {
+            maxOutputTokens: 1024,
+            temperature: 0.1,
+          },
+        }),
+      });
+
+      if (!response.ok) {
+        const errorBody = await response.text().catch(() => "<unreadable>");
+        throw new Error(`Gemini API returned HTTP ${response.status}: ${errorBody.slice(0, 500)}`);
+      }
+
+      const payload = await response.json() as Record<string, unknown>;
+      const candidates = payload.candidates as Array<{ content?: { parts?: Array<{ text?: string }> } }> | undefined;
+      text = candidates?.[0]?.content?.parts?.[0]?.text ?? "";
+      modelUsed = "gemini";
+    }
+    else {
+      throw new Error("No AI API key configured. Set GROQ_API_KEY or GEMINI_API_KEY");
     }
 
     if (!text) throw new Error("AI returned empty response");
@@ -146,13 +191,13 @@ export async function rankWithGemini(
     // Extract JSON from response (may have extra text)
     const jsonMatch = text.match(/\{[\s\S]*\}/);
     if (!jsonMatch) throw new Error("AI response does not contain valid JSON");
-    
+
     const parsed: unknown = JSON.parse(jsonMatch[0]);
     const guarded = guardRankedResponse(parsed, query, catalog, traceId);
     writeTrace({
       traceId,
       timestamp: new Date().toISOString(),
-      model: AI_MODEL,
+      model: modelUsed,
       query: sanitizeQuery(query),
       candidateIds: catalog.map((resource) => resource.id),
       parsedOutput: parsed,

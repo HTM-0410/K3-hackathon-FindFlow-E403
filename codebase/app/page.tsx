@@ -138,9 +138,12 @@ function AppHeader({
         <button className={route === "resources" ? "active" : ""} onClick={() => navigate("/resources")}>
           Kho tài liệu
         </button>
-        {/* <button onClick={() => window.location.assign("/realtime")}>
+        <button className={route === "realtime" ? "active" : ""} onClick={() => window.location.assign("/realtime")}>
           ⚡ Realtime
-        </button> */}
+        </button>
+        <button className={route === "demo" ? "active" : ""} onClick={() => window.location.assign("/demo")}>
+          🧪 Demo ingest
+        </button>
       </nav>
       <span className="cp-badge">
         Semantic Search

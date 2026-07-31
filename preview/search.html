@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kết quả tra cứu — Kho tri thức</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <button class="brand" onclick="location.assign('index.html')">
+    <span class="brand-mark">DK</span>
+    <span>
+      <span class="brand-title">Kho tri thức</span>
+      <span class="brand-sub">Discord Knowledge Hub · Batch 03</span>
+    </span>
+  </button>
+  <nav class="site-nav">
+    <a href="index.html">Tra cứu</a>
+    <a href="search.html" class="is-active">Kết quả</a>
+    <a href="resources.html">Kho tài liệu</a>
+    <a href="realtime.html">Trực tiếp</a>
+  </nav>
+  <div class="site-meta">
+    <span>Trace · 9F2A1B7C</span>
+    <span class="dot"></span>
+    <span>AI rerank</span>
+  </div>
+</header>
+
+<main class="listing">
+
+  <!-- LISTING HEAD -->
+  <div class="listing-head">
+    <div>
+      <div class="listing-eyebrow">Kết quả AI xếp hạng</div>
+      <h1 class="listing-title">Tài liệu phù hợp với nhu cầu của bạn</h1>
+      <p class="listing-sub">Xếp hạng ngữ nghĩa cho câu: <b>“slide hackathon có hướng dẫn cách tính điểm”</b></p>
+    </div>
+    <form class="listing-search" onsubmit="event.preventDefault();">
+      <span style="font-family: var(--font-mono); color: var(--stamp); font-weight: 700;">⌕</span>
+      <input type="text" value="slide hackathon có hướng dẫn cách tính điểm" />
+      <button class="btn btn-small" type="submit">Tìm lại</button>
+    </form>
+  </div>
+
+  <!-- BODY: filters + results -->
+  <div class="listing-body">
+
+    <!-- FILTER RAIL -->
+    <aside class="filters">
+      <div class="filter-block">
+        <div class="filter-head">Loại tài liệu <span class="count">(3)</span></div>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" checked /> Slide bài giảng <span class="filter-num">18</span></label></li>
+          <li><label><input type="checkbox" /> Video khóa học <span class="filter-num">7</span></label></li>
+          <li><label><input type="checkbox" /> Bài lab <span class="filter-num">11</span></label></li>
+          <li><label><input type="checkbox" /> GitHub / Code <span class="filter-num">6</span></label></li>
+          <li><label><input type="checkbox" /> Thông báo <span class="filter-num">4</span></label></li>
+          <li><label><input type="checkbox" /> Hướng dẫn <span class="filter-num">4</span></label></li>
+        </ul>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-head">Chủ đề <span class="count">(1)</span></div>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" checked /> Hackathon <span class="filter-num">12</span></label></li>
+          <li><label><input type="checkbox" /> Prompt Engineering <span class="filter-num">9</span></label></li>
+          <li><label><input type="checkbox" /> AI Agent <span class="filter-num">7</span></label></li>
+          <li><label><input type="checkbox" /> Codelab <span class="filter-num">8</span></label></li>
+          <li><label><input type="checkbox" /> Tư duy sản phẩm <span class="filter-num">6</span></label></li>
+          <li><label><input type="checkbox" /> Đặc tả AI Spec <span class="filter-num">5</span></label></li>
+          <li><label><input type="checkbox" /> Bảo mật dữ liệu <span class="filter-num">3</span></label></li>
+        </ul>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-head">Kênh Discord nguồn</div>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" /> #hackathon <span class="filter-num">12</span></label></li>
+          <li><label><input type="checkbox" /> #codelab <span class="filter-num">8</span></label></li>
+          <li><label><input type="checkbox" /> #tai-lieu <span class="filter-num">11</span></label></li>
+          <li><label><input type="checkbox" /> #chia-se <span class="filter-num">9</span></label></li>
+          <li><label><input type="checkbox" /> #general <span class="filter-num">5</span></label></li>
+          <li><label><input type="checkbox" /> #lab-support <span class="filter-num">5</span></label></li>
+        </ul>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-head">Nguồn gốc</div>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" /> Chính thức <span class="filter-num">17</span></label></li>
+          <li><label><input type="checkbox" /> Cộng đồng <span class="filter-num">33</span></label></li>
+        </ul>
+      </div>
+
+      <button class="btn btn-ghost btn-small" style="width: 100%; justify-content: center; margin-top: 16px;">Xóa bộ lọc</button>
+    </aside>
+
+    <!-- RESULTS -->
+    <section>
+      <div class="results-head">
+        <div class="results-count">
+          5 tài liệu <small>trong 12 ứng viên · AI rerank</small>
+        </div>
+        <div class="results-sort">
+          Sắp xếp theo
+          <select>
+            <option>Độ phù hợp (AI)</option>
+            <option>Mới nhất</option>
+            <option>Cũ nhất</option>
+            <option>Tên A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- CARD 1 — TOP official -->
+      <article class="resource-card is-official">
+        <div class="perforations"><span></span><span></span><span></span></div>
+        <div class="stamp-corner"><span class="stamp">AI · Top 5</span></div>
+        <div class="card-top-line">
+          <span class="card-type slide">Slide</span>
+          <span class="card-channel">#hackathon · Chia sẻ: <b>Thầy H</b></span>
+          <span class="card-date">28.07.2026 · v3</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Hackathon Batch 03 — Rubric & cách tính điểm (v3)</h3>
+          <p class="card-summary">Tài liệu chính thức của BTC: 5 tiêu chí nghiệm thu, thang điểm R1→R7, ví dụ minh hoạ cho mỗi khối, lưu ý về nộp checkpoint và điểm cá nhân.</p>
+          <p class="card-reason"><b>Vì sao khớp</b> Câu hỏi đề cập "cách tính điểm" và "slide hackathon". Tài liệu là phiên bản rubric chính thức mới nhất, có gắn nhãn <b>chính thức</b> trong kho.</p>
+          <div class="card-meta">
+            <span>Kênh: <b>#hackathon</b></span>
+            <span>Ngày: <b>28.07</b></span>
+            <span>Người chia sẻ: <b>Thầy H</b></span>
+            <span>Tags: <b>hackathon · rubric · điểm</b></span>
+            <span class="score">86% khớp</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary">Xem chi tiết <span class="arrow">→</span></button>
+            <button class="btn">Mở nguồn Discord <span class="arrow">↗</span></button>
+          </div>
+        </div>
+        <div class="archive-id">
+          <b>DOC-014</b>
+          Drawer A3 · Folder Hackathon
+        </div>
+      </article>
+
+      <!-- CARD 2 — TOP normal -->
+      <article class="resource-card">
+        <div class="perforations"><span></span><span></span><span></span></div>
+        <div class="stamp-corner"><span class="stamp">AI · Top 5</span></div>
+        <div class="card-top-line">
+          <span class="card-type slide">Slide</span>
+          <span class="card-channel">#hackathon · Chia sẻ: <b>Mentor Q</b></span>
+          <span class="card-date">25.07.2026</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Slide giới thiệu Hackathon & 4 lớp chỗ khó</h3>
+          <p class="card-summary">Tổng quan 1,5 ngày hackathon, cấu trúc đề bài, định nghĩa 4 lớp chỗ khó theo taxonomy. Phù hợp để đối chiếu khi viết AI Spec.</p>
+          <p class="card-reason"><b>Vì sao khớp</b> Có tag "hackathon" và "slide"; đề cập đến chỗ khó — khớp một phần với câu hỏi.</p>
+          <div class="card-meta">
+            <span>Kênh: <b>#hackathon</b></span>
+            <span>Ngày: <b>25.07</b></span>
+            <span>Người chia sẻ: <b>Mentor Q</b></span>
+            <span>Tags: <b>hackathon · chỗ khó</b></span>
+            <span class="score">72% khớp</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary">Xem chi tiết <span class="arrow">→</span></button>
+            <button class="btn">Mở nguồn Discord <span class="arrow">↗</span></button>
+          </div>
+        </div>
+        <div class="archive-id">
+          <b>DOC-007</b>
+          Drawer A3 · Folder Hackathon
+        </div>
+      </article>
+
+      <!-- CARD 3 — secondary, lab -->
+      <article class="resource-card">
+        <div class="perforations"><span></span><span></span><span></span></div>
+        <div class="stamp-corner"><span class="stamp tab-red">AI · Top 5</span></div>
+        <div class="card-top-line">
+          <span class="card-type lab">Lab</span>
+          <span class="card-channel">#codelab · Chia sẻ: <b>Mentor Q</b></span>
+          <span class="card-date">22.07.2026</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Codelab Day 3 — Viết AI Spec theo template</h3>
+          <p class="card-summary">Hướng dẫn từng bước điền template AI Spec, ví dụ thật về problem statement, evidence, golden set. Kèm checklist chấm điểm R1–R7.</p>
+          <p class="card-reason"><b>Vì sao khớp</b> Có tag "hackathon" gián tiếp (template dùng cho hackathon); cung cấp ngữ cảnh về cách cấu trúc bài nộp.</p>
+          <div class="card-meta">
+            <span>Kênh: <b>#codelab</b></span>
+            <span>Ngày: <b>22.07</b></span>
+            <span>Người chia sẻ: <b>Mentor Q</b></span>
+            <span>Tags: <b>codelab · AI Spec · hackathon</b></span>
+            <span class="score">58% khớp</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary">Xem chi tiết <span class="arrow">→</span></button>
+            <button class="btn">Mở nguồn Discord <span class="arrow">↗</span></button>
+          </div>
+        </div>
+        <div class="archive-id">
+          <b>DOC-021</b>
+          Drawer B1 · Folder Codelab
+        </div>
+      </article>
+
+      <!-- CARD 4 — low confidence -->
+      <article class="resource-card is-low">
+        <div class="perforations"><span></span><span></span><span></span></div>
+        <div class="stamp-corner"><span class="stamp warn">Low · Confidence</span></div>
+        <div class="card-top-line">
+          <span class="card-type guide">Hướng dẫn</span>
+          <span class="card-channel">#general · Chia sẻ: <b>Thầy H</b></span>
+          <span class="card-date">18.07.2026</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Mẹo chấm điểm khi rubric chưa rõ ràng</h3>
+          <p class="card-summary">Bài viết cộng đồng về cách đối phó khi rubric mơ hồ. Không phải rubric chính thức, chỉ là kinh nghiệm cá nhân.</p>
+          <p class="card-reason"><b>Vì sao khớp (thấp)</b> Có từ "điểm" trong tiêu đề nhưng không trực tiếp về rubric hackathon. Độ tin cậy thấp — đề xuất xem tài liệu ở trên trước.</p>
+          <div class="card-meta">
+            <span>Kênh: <b>#general</b></span>
+            <span>Ngày: <b>18.07</b></span>
+            <span>Nguồn gốc: <b>Cộng đồng</b></span>
+            <span>Tags: <b>điểm · rubric</b></span>
+            <span class="score" style="color: #8C6A1F;">34% khớp</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary">Xem chi tiết <span class="arrow">→</span></button>
+            <button class="btn">Mở nguồn Discord <span class="arrow">↗</span></button>
+          </div>
+        </div>
+        <div class="archive-id">
+          <b>DOC-039</b>
+          Drawer C2 · Folder Guides
+        </div>
+      </article>
+
+      <!-- Empty intent demonstration: another scenario block under same query? No, scroll done -->
+    </section>
+
+  </div>
+
+  <!-- ========================================================
+       ALTERNATE STATE 1: CLARIFICATION (in same file as design demo)
+       ======================================================== -->
+  <div style="margin-top: 80px; padding-top: 40px; border-top: 2px solid var(--rule);">
+    <div class="listing-eyebrow">Trạng thái khác · Cùng flow</div>
+    <h2 style="font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 8px 0 24px; color: var(--ink);">Khi hệ thống cần hỏi làm rõ</h2>
+
+    <div class="clarification">
+      <div class="clarification-row">
+        <div class="clarification-tag">Bạn hỏi</div>
+        <div class="clarification-msg" style="font-family: var(--font-display); font-style: italic;">
+          "slide buổi trước"
+        </div>
+      </div>
+      <div class="clarification-row">
+        <div class="clarification-tag">Trợ lý AI</div>
+        <div class="clarification-msg">
+          <b>Mình cần xác nhận một chi tiết trước khi tra cứu</b>
+          Câu này có thể trỏ đến 4 buổi học gần nhất trong khóa. Chọn buổi để mình tìm slide đúng hơn.
+          <div class="clarification-options">
+            <button>Buổi Hackathon · 28.07</button>
+            <button>Buổi Prompt Engineering · 24.07</button>
+            <button>Buổi AI Agent · 22.07</button>
+            <button>Buổi Codelab · 20.07</button>
+          </div>
+          <form class="clarification-input" onsubmit="event.preventDefault();">
+            <input type="text" placeholder="Hoặc nhập chi tiết bạn đang tìm..." />
+            <button type="submit">Gửi</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 40px 0 24px; color: var(--ink);">Khi câu hỏi nằm ngoài phạm vi</h2>
+
+    <div class="search-notice is-rejected">
+      <div>
+        <div class="search-notice-head">Phản hồi AI</div>
+        <div class="search-notice-title">Yêu cầu nằm ngoài phạm vi hỗ trợ</div>
+        <p class="search-notice-body">Kho này chỉ chứa tài liệu khóa học AI Thực Chiến. Hệ thống không nhắn tin, không nộp bài, không tra cứu ngoài Discord khoá. Bạn có thể hỏi TA trực tiếp trong <b>#lab-support</b> hoặc mở tài liệu liên quan trong kho.</p>
+      </div>
+      <div class="search-notice-actions">
+        <button class="btn">Mở #lab-support <span class="arrow">↗</span></button>
+      </div>
+    </div>
+
+    <h2 style="font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 40px 0 24px; color: var(--ink);">Khi không tìm thấy tài liệu</h2>
+
+    <div class="empty-state">
+      <div class="empty-state-stamp"><span class="stamp ghost tilt-r">No · Match</span></div>
+      <h3 class="empty-state-title">Chưa có tài liệu nào trong kho khớp với mô tả này</h3>
+      <p class="empty-state-body">Câu truy vấn không trỏ đến tài liệu nào trong 50 bản ghi đã được chỉ mục. Bạn có thể mô tả khác bằng tiếng Việt có dấu hoặc duyệt toàn bộ kho.</p>
+      <div class="empty-state-actions">
+        <button class="btn btn-primary">Xóa bộ lọc & thử lại</button>
+        <button class="btn" onclick="location.assign('resources.html')">Duyệt toàn bộ kho <span class="arrow">→</span></button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     DRAWER PREVIEW — separate floating aside, design demo only
+     ============================================================ -->
+<div style="margin-top: 80px; padding: 0 32px; max-width: 1320px; margin-left: auto; margin-right: auto;">
+  <div class="listing-eyebrow">Trạng thái khác · Drawer chi tiết</div>
+  <h2 style="font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 8px 0 16px; color: var(--ink);">Drawer mở khi bấm "Xem chi tiết"</h2>
+  <p style="color: var(--ink-2); margin-bottom: 28px; font-size: 15px;">Click thẻ trên cùng để mở drawer thật — dưới đây là bản xem trước tĩnh.</p>
+</div>
+
+<!-- Inline drawer for design demo -->
+<div class="drawer-mask" style="position: relative; background: transparent; max-width: 1320px; margin: 0 auto;">
+  <aside class="drawer" style="position: relative; height: auto; box-shadow: none; border-left: 2px solid var(--ink); border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); margin: 0 32px 80px;">
+    <div class="drawer-head">
+      <span class="stamp" style="transform: rotate(-3deg);">AI · Top 5</span>
+      <button class="drawer-close" aria-label="Đóng">×</button>
+    </div>
+    <h2>Hackathon Batch 03 — Rubric & cách tính điểm (v3)</h2>
+    <p class="drawer-summary">Tài liệu chính thức của BTC: 5 tiêu chí nghiệm thu, thang điểm R1→R7, ví dụ minh hoạ cho mỗi khối, lưu ý về nộp checkpoint và điểm cá nhân.</p>
+
+    <section class="drawer-section">
+      <h4>Thông tin chi tiết</h4>
+      <dl class="drawer-dl">
+        <div><dt>Chủ đề bài học</dt><dd>Hackathon</dd></div>
+        <div><dt>Kênh Discord gốc</dt><dd>#hackathon</dd></div>
+        <div><dt>Người chia sẻ</dt><dd>Thầy H</dd></div>
+        <div><dt>Nguồn gốc</dt><dd>Chính thức</dd></div>
+        <div><dt>Ngày đăng</dt><dd>28.07.2026</dd></div>
+        <div><dt>Phiên bản</dt><dd>v3</dd></div>
+        <div><dt>Mã tài liệu</dt><dd>DOC-014</dd></div>
+        <div><dt>Độ khớp AI</dt><dd style="color: var(--stamp);">86%</dd></div>
+      </dl>
+    </section>
+
+    <section class="drawer-section drawer-reason">
+      <h4>Vì sao tài liệu này phù hợp</h4>
+      <p>Câu hỏi đề cập "cách tính điểm" và "slide hackathon". Tài liệu là phiên bản rubric chính thức mới nhất (v3), có gắn nhãn <b>chính thức</b> trong kho, khớp đồng thời chủ đề và loại tài liệu được hỏi.</p>
+      <p style="margin-top: 10px; font-style: normal; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-muted);">Khớp các trường: title, tags, topic, type, isOfficial</p>
+    </section>
+
+    <section class="drawer-section">
+      <h4>Thẻ tìm kiếm</h4>
+      <div class="drawer-tags">
+        <span>#hackathon</span>
+        <span>#rubric</span>
+        <span>#điểm</span>
+        <span>#chính-thức</span>
+        <span>#R1-R7</span>
+        <span>#v3</span>
+      </div>
+      <p class="drawer-url">discord://hackathon/2026-07-28/rubric-batch-03-v3.pdf</p>
+    </section>
+
+    <div class="drawer-actions">
+      <button class="btn btn-primary">Mở tài liệu gốc <span class="arrow">↗</span></button>
+      <button class="btn">Sao chép liên kết</button>
+    </div>
+
+    <div class="drawer-feedback">
+      <h4>Tài liệu này có đúng nhu cầu của bạn không?</h4>
+      <div class="drawer-feedback-buttons">
+        <button>Đúng tài liệu</button>
+        <button>Chưa phù hợp</button>
+      </div>
+      <div class="drawer-feedback-sent">✓ Đã lưu phản hồi để cải thiện AI rerank</div>
+    </div>
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div>
+    <b>Discord Knowledge Hub</b>
+    Prototype phục vụ tra cứu tài liệu khóa học AI Thực Chiến. Không crawl Discord, không lưu DM, không có đăng nhập.
+  </div>
+  <div>
+    <b>Bằng chứng</b>
+    Khảo sát n=73 · 95,9% xác nhận pain · 79,5% không nhớ kênh · 91,8% sẵn sàng thử.
+  </div>
+  <div>
+    <b>Nhóm</b>
+    Hoàng (PM) · Nhật Minh (Evidence) · Đức Thiện (AI / Eval).
+  </div>
+</footer>
+
+</body>
+</html>

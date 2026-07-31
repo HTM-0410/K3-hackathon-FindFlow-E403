@@ -1,0 +1,13 @@
+name = "openrouter-proxy"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+# Deploy to US region to bypass geo-blocking
+# Options: enam, wor,europe-west, asia-east
+workers = { runtime = "v8", type = "esm" }
+
+[vars]
+OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
+
+# Secrets - set via CLI
+# wrangler secret put OPENROUTER_API_KEY

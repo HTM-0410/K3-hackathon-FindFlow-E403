@@ -11,7 +11,9 @@ function getGlobalEnv(): Record<string, string | undefined> {
 export type ServerEnvName =
   | "GEMINI_API_KEY"
   | "GEMINI_MODEL"
-  | "GEMINI_EMBEDDING_MODEL";
+  | "GEMINI_EMBEDDING_MODEL"
+  | "GROQ_API_KEY"
+  | "HUGGINGFACE_API_KEY";
 
 export function getServerEnv(name: ServerEnvName): string | undefined {
   const value = getGlobalEnv()[name];

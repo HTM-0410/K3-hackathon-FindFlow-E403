@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Header redesign — Discord Knowledge Hub</title>
+<link rel="stylesheet" href="header.css" />
+</head>
+<body>
+
+<div class="page-label">Header v2 · Radar console · So sánh cạnh header cũ</div>
+
+<!-- ============================================================
+     HEADER V2 (new)
+     ============================================================ -->
+<header class="site-header-v2">
+  <div class="header-row">
+    <!-- Brand -->
+    <button class="brand-v2" aria-label="Về trang chủ">
+      <span class="brand-mark-v2">DK</span>
+      <span class="brand-text-v2">
+        <span class="brand-title-v2">Discord Knowledge Hub</span>
+        <span class="brand-sub-v2">Kho tri thức · Batch 03</span>
+      </span>
+    </button>
+
+    <!-- Nav -->
+    <nav class="nav-v2" aria-label="Điều hướng chính">
+      <a href="#" class="is-active">Tìm kiếm <span class="nav-num">01</span></a>
+      <a href="#">Kho tài liệu <span class="nav-num">02</span></a>
+      <a href="#">Realtime <span class="nav-num">03</span></a>
+    </nav>
+
+    <!-- Status row -->
+    <div class="status-row-v2" role="status">
+      <div>
+        <span class="live-dot" aria-hidden="true"></span>
+        <span class="label">Bot</span>
+        <span class="value">Live</span>
+      </div>
+      <div>
+        <span class="label">Trace</span>
+        <span class="value">9F2A1B7C</span>
+      </div>
+      <div>
+        <span class="label">Top</span>
+        <span class="value">5 / 12</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Micro bar — signature -->
+  <div class="micro-bar" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ============================================================
+     COMPARE BLOCK
+     ============================================================ -->
+<section class="compare">
+  <h2>Header cũ vs Header mới</h2>
+  <p>Cùng một vị trí, cùng một chức năng (logo, nav, status). Khác về ngôn ngữ thiết kế: từ "AI landing template" sang "radar console".</p>
+
+  <div class="compare-stack">
+
+    <!-- OLD -->
+    <div class="compare-card">
+      <div class="compare-card-head">
+        <span class="tag old">Header cũ · v1</span>
+        <span class="note">backdrop-blur + gradient cyan→indigo + glow + emoji</span>
+      </div>
+      <div class="compare-card-body">
+        <header class="site-header-old">
+          <button class="brand-old">
+            <span class="brand-mark-old">⚡</span>
+            <span>
+              <b>Discord Knowledge Hub</b>
+              <small>Kho tri thức khóa học AI</small>
+            </span>
+          </button>
+          <nav class="nav-old">
+            <button class="active">Tìm kiếm</button>
+            <button>Kho tài liệu</button>
+            <button>⚡ Realtime</button>
+          </nav>
+          <span class="cp-badge-old">
+            <span class="status-dot"></span>
+            AI Rerank
+          </span>
+        </header>
+      </div>
+    </div>
+
+    <!-- NEW -->
+    <div class="compare-card">
+      <div class="compare-card-head">
+        <span class="tag new">Header mới · v2</span>
+        <span class="note">precision instrument · vermilion · mono · hairline</span>
+      </div>
+      <div class="compare-card-body" style="padding: 0;">
+        <!-- embedded copy of header v2 for true side-by-side -->
+        <header class="site-header-v2" style="padding: 14px 20px 0;">
+          <div class="header-row" style="grid-template-columns: 1fr auto 1fr;">
+            <button class="brand-v2">
+              <span class="brand-mark-v2">DK</span>
+              <span class="brand-text-v2">
+                <span class="brand-title-v2">Discord Knowledge Hub</span>
+                <span class="brand-sub-v2">Kho tri thức · Batch 03</span>
+              </span>
+            </button>
+            <nav class="nav-v2">
+              <a href="#" class="is-active">Tìm kiếm <span class="nav-num">01</span></a>
+              <a href="#">Kho tài liệu <span class="nav-num">02</span></a>
+              <a href="#">Realtime <span class="nav-num">03</span></a>
+            </nav>
+            <div class="status-row-v2">
+              <div>
+                <span class="live-dot"></span>
+                <span class="label">Bot</span>
+                <span class="value">Live</span>
+              </div>
+              <div>
+                <span class="label">Trace</span>
+                <span class="value">9F2A1B7C</span>
+              </div>
+              <div>
+                <span class="label">Top</span>
+                <span class="value">5 / 12</span>
+              </div>
+            </div>
+          </div>
+          <div class="micro-bar" style="padding: 0;">
+            <span></span><span></span><span></span>
+          </div>
+        </header>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DECISION NOTES -->
+  <div class="decisions">
+    <h3>Những gì đã thay đổi · vì sao</h3>
+    <ul>
+      <li class="old"><b>Logo gradient + glow</b>Mất 6–10ms render mỗi frame vì box-shadow blur 20px trên 42×42 logo. Trông "AI template".</li>
+      <li class="new"><b>Logo DK · hairline + ink</b>Border 1px, mono font 13px, zero shadow. Trông như serial number trên thiết bị.</li>
+
+      <li class="old"><b>Active nav · underline gradient</b>Box-shadow glow cyan→indigo. Mắt bị kéo theo mỗi lần scroll.</li>
+      <li class="new"><b>Active nav · chấm đỏ + nền tab</b>5×5px solid vermilion trước chữ. Không glow, không gradient. Dùng tab-group pattern quen thuộc.</li>
+
+      <li class="old"><b>Badge "AI Rerank" · pulse</b>Box-shadow halo quanh dot. Người dùng đọc "AI" trước khi đọc chức năng.</li>
+      <li class="new"><b>Status row · 3 chỉ số mono</b>Bot · Live / Trace ID / Top 5/12 — truyền đúng thông tin cần cho task, không marketing.</li>
+
+      <li class="old"><b>Emoji ⚡ trên logo + nav</b>Toy vibe, không nghiêm túc. Trùng với vibe của Discord nhưng trên Discord thật emoji có vai trò, ở đây chỉ là giả.</li>
+      <li class="new"><b>Không emoji, dùng chữ + số</b>DK monogram, "01/02/03" cho nav, "5/12" cho kết quả. Đọc được cả khi font fail.</li>
+
+      <li class="old"><b>Backdrop-filter blur 20px</b>Performance hit khi scroll. Không cần thiết vì header đặc (không có nội dung chui qua).</li>
+      <li class="new"><b>Nền đặc, hairline dưới</b>Border-bottom 1px `--line`. Nhanh, không reflow.</li>
+
+      <li class="old"><b>(không có)</b>Header cũ không có signature — chỉ là template.</li>
+      <li class="new"><b>Micro bar 3 đoạn vermilion</b>Mount animation duy nhất. Tượng trưng 3 chỉ số ở status row. Chỉ chạy 1 lần, không loop.</li>
+    </ul>
+  </div>
+
+</section>
+
+</body>
+</html>

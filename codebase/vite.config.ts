@@ -7,7 +7,7 @@ const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
   "00000000-0000-4000-8000-000000000000";
 
 const { d1, r2 } = hostingConfig;
-const USE_BINDINGS = false; // Search-only deploy: bỏ D1/R2/realtime
+const USE_BINDINGS = true; // Realtime enabled: D1 local binding cho bot
 
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
@@ -27,15 +27,13 @@ export default defineConfig(async ({ command, mode }) => {
           },
         }
       : {}),
-    d1_databases: USE_BINDINGS && d1
-      ? [
-          {
-            binding: d1,
-            database_name: "site-creator-d1",
-            database_id: SITE_CREATOR_PLACEHOLDER_DATABASE_ID,
-          },
-        ]
-      : [],
+    d1_databases: [
+      {
+        binding: "DB",
+        database_name: "discord-knowledge-hub",
+        database_id: "74c95267-452a-4827-bc05-4e1f990f4c6b",
+      },
+    ],
     r2_buckets: USE_BINDINGS && r2
       ? [
           {
