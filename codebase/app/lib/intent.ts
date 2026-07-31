@@ -92,23 +92,69 @@ export function analyzeSearchIntent(
     };
   }
 
-  // 5. Kiểm tra broad query (query quá rộng)
+  // 5. Kiểm tra broad query (query không có chủ đề cụ thể).
+  // Cách đếm: bỏ stopword + bỏ token là TYPE_WORDS (type word mơ hồ: "slide",
+  // "video", "tool", "tai lieu", "github"...) + bỏ từ chỉ thời gian.
+  // Lưu ý: "code", "lab" KHÔNG nằm TYPE_WORDS vì "lab 04", "code RAG" là chủ đề
+  // rõ ràng — user đang tìm nội dung cụ thể.
+  // Sau đó kiểm tra còn chủ đề không: acronym ngắn ("ai", "rag", "llm"...),
+  // từ dài >= 4 ký tự có chữ cái, hoặc identifier số ngắn ("04", "k3", "1").
+  // Ví dụ:
+  //   "tài liệu ngày 29/7" → ["29/7"] = 0 chủ đề → BROAD
+  //   "Về AI" → ["ai"] = acronym → PROCEED
+  //   "slide AI" → ["ai"] = acronym → PROCEED
+  //   "tài liệu ngày 29/7 Về AI" → ["29/7", "ai"] = có "ai" → PROCEED
+  //   "tài liệu về RAG" → ["rag"] = acronym → PROCEED
+  //   "tài liệu về prompt engineering" → ["prompt", "engineering"] → PROCEED
+  //   "slide hôm nay" → [] → BROAD
+  //   "Repo code lab 04" → ["code", "lab", "04"] = identifier số → PROCEED
+  //   "code RAG" → ["code", "rag"] = acronym → PROCEED
+  //   "tài liệu" → [] → BROAD
+  const TYPE_WORDS = new Set([
+    "tai", "lieu", "tai lieu", "slide", "video",
+    "github", "dataset", "repo", "tool", "cong", "cu", "cong cu",
+    "huong", "dan", "huong dan", "bai", "giang", "bai giang",
+  ]);
+  // "code", "lab" không phải TYPE_WORDS vì "lab 04", "code RAG" là chủ đề rõ ràng.
+  // Từ chỉ thời gian (không phải chủ đề cụ thể). Để query "tài liệu ngày 29/7"
+  // vẫn bị broad_query vì "ngay" không phải chủ đề.
+  const TIME_WORDS = new Set([
+    "ngay", "hom", "nay", "qua", "hom nay", "hom qua", "tuan", "thang",
+    "nam", "sang", "chieu", "toi", "trua", "gio", "phut", "giay",
+    "thu", "bay", "cn", "thu bay", "truoc", "sau", "truoc day",
+  ]);
   const meaningful = normalized
     .split(" ")
-    .filter((token) => token.length > 1 && !stopwords.has(token));
+    .filter((token) => token.length > 1 && !stopwords.has(token))
+    .filter((token) => !TYPE_WORDS.has(token))
+    .filter((token) => !TIME_WORDS.has(token))
 
-  if (
-    meaningful.length <= 2 &&
-    hasAny(normalized, [
-      "ai", "slide", "video", "lab", "code", "tai lieu", "github",
-      "dataset", "repo", "tool", "cong cu", "hướng dẫn"
-    ])
-  ) {
+  // Token chủ đề: chuỗi từ có chữ cái và ĐỦ DÀI (>= 4 ký tự) HOẶC là
+  // acronym ngắn phổ biến trong domain ("ai", "ml", "rag", "llm", "nlp"...)
+  // HOẶC là identifier số cụ thể ("04", "b3", "k3"...). Các số này thường
+  // là mã bài/bài lab/buổi học nên là một chủ đề hợp lệ.
+  // Loại bỏ token số thuần không có chữ cái ("29/7", "11") vì không phải chủ đề
+  // trừ khi nó ngắn (<= 4 ký tự) và đứng một mình — khi đó coi là mã định danh.
+  const DOMAIN_ACRONYMS = new Set([
+    "ai", "ml", "dl", "rag", "llm", "nlp", "cv", "rl", "gan", "rlhf",
+    "iot", "cv", "ui", "ux", "api", "sdk", "sql", "db", "orm",
+  ]);
+  const hasTopic = meaningful.some((token) => {
+    if (!/[a-z]/i.test(token)) {
+      // Token số thuần: là chủ đề nếu là identifier ngắn (vd: "04", "1", "k3")
+      // và không phải ngày/tháng (vd: "29/7", "11/2024")
+      return /^\d{1,3}$/.test(token);
+    }
+    if (DOMAIN_ACRONYMS.has(token)) return true;
+    return token.length >= 4;
+  });
+
+  if (!hasTopic) {
     return {
       kind: "clarify",
       reason: "broad_query",
       question:
-        "Nhu cầu này còn khá rộng. Bạn muốn tài liệu về chủ đề cụ thể nào?",
+        "Mình chưa hiểu rõ nhu cầu của bạn. Bạn muốn tài liệu về chủ đề cụ thể nào?",
       options: topicOptions(query, catalog),
     };
   }
@@ -235,10 +281,11 @@ function detectMultipleIntents(query: string): string[] {
   // Kiểm tra nội dung khác nhau giữa các segment (loại trừ type word và stopword).
   // Trường hợp điển hình: "tìm repo Caveman và repo Synthea" — cùng type "repo"
   // nhưng đề cập đến 2 tên riêng khác nhau, vẫn phải coi là multi-intent.
+  const typeKeys = new Set<string>(typeWords.keys());
   const hasDistinctContent = (() => {
     const contentSets = segments.map((segment) =>
       new Set(
-        contentTokens(segment).filter((token) => !typeWords.has(token)),
+        contentTokens(segment).filter((token) => !typeKeys.has(token)),
       ),
     );
     return contentSets.some((left, i) =>

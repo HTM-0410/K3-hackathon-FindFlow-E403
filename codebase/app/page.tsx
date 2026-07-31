@@ -2,7 +2,7 @@
 
 import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
 import { resourceById, resources } from "./data/resources";
-import { fallbackRank, normalizeText } from "./lib/search";
+import { fallbackRank, filterResources, normalizeText } from "./lib/search";
 import { MAIN_TOPICS, getMainTopic } from "./lib/topics";
 import type {
   ClarificationOption,
@@ -48,6 +48,73 @@ const defaultFilters: Filters = {
   sortBy: "relevance",
 };
 
+function BrandMark() {
+  return (
+    <span className="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="26" height="26" role="img">
+        <defs>
+          <linearGradient id="bm-orb" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stopColor="#67e8f9" />
+            <stop offset="1" stopColor="#a5b4fc" />
+          </linearGradient>
+          <radialGradient id="bm-spark" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stopColor="#ffffff" />
+            <stop offset="0.55" stopColor="#67e8f9" />
+            <stop offset="1" stopColor="#22d3ee" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+
+        {/* faint outer orbit — frames the mark */}
+        <ellipse
+          cx="16"
+          cy="16"
+          rx="13.4"
+          ry="9.6"
+          fill="none"
+          stroke="#cffafe"
+          strokeWidth="0.9"
+          strokeOpacity="0.45"
+          transform="rotate(-22 16 16)"
+        />
+
+        {/* bolder inner orbit — the visible track */}
+        <ellipse
+          cx="16"
+          cy="16"
+          rx="8.6"
+          ry="5.8"
+          fill="none"
+          stroke="url(#bm-orb)"
+          strokeWidth="1.4"
+          strokeOpacity="0.95"
+          transform="rotate(-22 16 16)"
+        />
+
+        {/* focal satellite with strong glow — the anchor */}
+        <circle cx="25.2" cy="20.6" r="2.2" fill="url(#bm-spark)" />
+        <circle cx="25.2" cy="20.6" r="1.1" fill="#ffffff" />
+
+        {/* secondary satellite, muted */}
+        <circle cx="6.8" cy="11.4" r="1.1" fill="#a5b4fc" />
+
+        {/* monogram — solid white, bold, large */}
+        <text
+          x="16"
+          y="20"
+          textAnchor="middle"
+          fontFamily="'JetBrains Mono', ui-monospace, monospace"
+          fontWeight="800"
+          fontSize="11"
+          letterSpacing="-0.6"
+          fill="#ffffff"
+        >
+          DK
+        </text>
+      </svg>
+    </span>
+  );
+}
+
 function AppHeader({
   route,
   navigate,
@@ -58,7 +125,7 @@ function AppHeader({
   return (
     <header className="header">
       <button className="brand" onClick={() => navigate("/")} aria-label="Về trang chủ">
-        <span className="brand-mark">⚡</span>
+        <BrandMark />
         <span>
           <b>Discord Knowledge Hub</b>
           <small>Kho tri thức khóa học AI</small>
@@ -400,6 +467,7 @@ function Drawer({
       onMouseDown={(event) => event.target === event.currentTarget && onClose()}
     >
       <aside className="drawer" role="dialog" aria-modal="true" aria-label={`Chi tiết ${resource.title}`}>
+        <div className="drawer-body">
         <div className="drawer-top">
           <span className="type-label">{typeLabels[resource.type]}</span>
           <button className="close" onClick={onClose} aria-label="Đóng">
@@ -451,17 +519,6 @@ function Drawer({
           </div>
           <p className="url">{resource.sourceUrl.replace("https://", "")}</p>
         </section>
-        <div className="drawer-actions">
-          <button
-            className="primary"
-            onClick={() => window.open(resource.source.messageUrl || resource.sourceUrl, "_blank")}
-          >
-            Mở nguồn Discord ↗
-          </button>
-          <button className="secondary" onClick={copy}>
-            Sao chép link
-          </button>
-        </div>
         <section className="feedback">
           <h4>Tài liệu này có đúng nhu cầu của bạn không?</h4>
           <div>
@@ -474,6 +531,20 @@ function Drawer({
           </div>
           {sent && <small>Đã lưu phản hồi của bạn để cải thiện mô hình AI.</small>}
         </section>
+        </div>
+        <div className="drawer-footer">
+        <div className="drawer-actions">
+          <button
+            className="primary"
+            onClick={() => window.open(resource.source.messageUrl || resource.sourceUrl, "_blank")}
+          >
+            Mở nguồn Discord ↗
+          </button>
+          <button className="secondary" onClick={copy}>
+            Sao chép link
+          </button>
+        </div>
+        </div>
       </aside>
     </div>
   );
@@ -550,6 +621,13 @@ export default function Page() {
     return () => removeEventListener("popstate", syncRoute);
   }, [syncRoute]);
 
+  // Khi query/route/filters đổi → gọi lại API để server-side ranking + filter.
+  // filters chỉ gửi 3 chiều (type/topic/channel) vì sortBy là client-side.
+  // Lưu ý: nếu filter ra rỗng, API trả về status="no_match" với message rõ ràng.
+  const filterKeys = useMemo(
+    () => ({ type: filters.type, topic: filters.topic, channel: filters.channel }),
+    [filters.type, filters.topic, filters.channel],
+  );
   useEffect(() => {
     if (route !== "search") return;
     if (!query) {
@@ -558,12 +636,13 @@ export default function Page() {
     }
     const controller = new AbortController();
     setLoading(true);
-    setResponse(null);
+    // Không reset response khi chỉ đổi filter; reset khi đổi query để tránh flash.
+    setResponse((current) => (current ? current : null));
     const startedAt = Date.now();
     fetch("/api/search", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ query }),
+      body: JSON.stringify({ query, filters: filterKeys }),
       signal: controller.signal,
     })
       .then(async (result) => {
@@ -577,7 +656,7 @@ export default function Page() {
           status: "fallback",
           interpretedNeed: query,
           clarification: "Không thể kết nối API; đang dùng tìm kiếm cơ bản ngay trên thiết bị.",
-          results: fallbackRank(query, resources),
+          results: fallbackRank(query, filterResources(resources, filterKeys)),
           traceId,
         });
       })
@@ -586,7 +665,7 @@ export default function Page() {
         setTimeout(() => setLoading(false), remaining);
       });
     return () => controller.abort();
-  }, [navigate, query, route]);
+  }, [navigate, query, route, filterKeys]);
 
   useEffect(() => {
     if (!toast) return;
@@ -600,6 +679,30 @@ export default function Page() {
     setRoute("search");
     setFilters(defaultFilters);
   };
+
+  // Khi user clarify, ghép truy vấn cũ + câu trả lời thành query hoàn chỉnh
+  // để Gemini/candidate-provider có đủ ngữ cảnh. Ví dụ:
+  // query="tài liệu ngày 29/7" (broad_query) + answer="AI" → "tài liệu ngày 29/7 AI"
+  // Tránh ghép trùng khi answer đã chứa sẵn keyword của query cũ.
+  const clarifyAnswer = (answer: string) => {
+    const trimmed = answer.trim();
+    if (!trimmed) return;
+    const prev = query.trim();
+    const lowerPrev = normalizeForCompare(prev);
+    const lowerAnswer = normalizeForCompare(trimmed);
+    const isAlreadyContained =
+      lowerPrev && lowerAnswer && lowerPrev.includes(lowerAnswer);
+    const composite = isAlreadyContained
+      ? prev
+      : prev
+        ? `${prev} ${trimmed}`
+        : trimmed;
+    performSearch(composite);
+  };
+
+  function normalizeForCompare(value: string): string {
+    return normalizeText(value).replace(/\s+/g, " ").trim();
+  }
 
   const searchResources = useMemo<Resource[]>(() => {
     if (!response) return [];
@@ -678,7 +781,14 @@ export default function Page() {
                   clarification={response.clarification}
                   options={response.clarificationOptions}
                   traceId={response.traceId}
-                  onClarify={performSearch}
+                  // Chỉ ghép khi status = needs_clarification. Các status khác
+                  // (no_match, low_confidence, rejected) không cần ghép vì user
+                  // đang refine theo hướng khác, không phải trả lời câu hỏi.
+                  onClarify={
+                    response.status === "needs_clarification"
+                      ? clarifyAnswer
+                      : performSearch
+                  }
                 />
               )}
               {response?.status !== "needs_clarification" && response?.status !== "rejected" && (
