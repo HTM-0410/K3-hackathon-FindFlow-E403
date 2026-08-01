@@ -138,10 +138,10 @@ function AppHeader({
         <button className={route === "resources" ? "active" : ""} onClick={() => navigate("/resources")}>
           Kho tài liệu
         </button>
-        <button className={route === "realtime" ? "active" : ""} onClick={() => window.location.assign("/realtime")}>
+        <button className={route === "realtime" ? "active" : ""} onClick={() => navigate("/realtime")}>
           ⚡ Realtime
         </button>
-        <button className={route === "demo" ? "active" : ""} onClick={() => window.location.assign("/demo")}>
+        <button className={route === "demo" ? "active" : ""} onClick={() => navigate("/demo")}>
           🧪 Demo ingest
         </button>
         <button className={route === "labcoach" ? "active" : ""} onClick={() => navigate("/labcoach")}>
@@ -615,8 +615,16 @@ export default function Page() {
 
   const navigate = useCallback(
     (nextPath: string) => {
-      history.pushState({}, "", nextPath);
-      syncRoute();
+      if (typeof window !== "undefined") {
+        // Các path có trang riêng thì dùng full navigation
+        const externalPages = ["/labcoach", "/resources", "/realtime", "/demo"];
+        if (externalPages.includes(nextPath)) {
+          window.location.assign(nextPath);
+        } else {
+          history.pushState({}, "", nextPath);
+          syncRoute();
+        }
+      }
     },
     [syncRoute]
   );
