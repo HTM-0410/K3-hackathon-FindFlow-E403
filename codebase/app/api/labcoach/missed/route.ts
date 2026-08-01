@@ -1,19 +1,13 @@
 /**
  * LabCoach Missed Questions API
- *
- * GET /api/labcoach/missed
- * Trả về danh sách câu hỏi chưa được LabCoach trả lời
- *
- * Query params:
- * - limit: số câu hỏi tối đa (default: 20)
- * - reference_time: thời gian tham chiếu (default: now)
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { readFileSync } from "fs";
-import { join } from "path";
 import { processLabCoachData, calculateLabCoachStats, getLabCoaches } from "../../../lib/labcoach-processor";
 import type { DiscordExportData } from "../../../types/labcoach";
+
+// Import data directly at build time
+import discordData from "../../../data/discord-data.json";
 
 export async function GET(request: NextRequest) {
   try {
@@ -21,35 +15,16 @@ export async function GET(request: NextRequest) {
     const limit = parseInt(searchParams.get("limit") || "20");
     const referenceTimeParam = searchParams.get("reference_time");
 
-    // Load Discord data
-    const dataPath = join(process.cwd(), "app/data/discord-data.json");
-    let data: DiscordExportData;
+    // Use imported data
+    const data = discordData as DiscordExportData;
 
-    try {
-      const fileContent = readFileSync(dataPath, "utf-8");
-      data = JSON.parse(fileContent);
-    } catch (err) {
-      return NextResponse.json(
-        {
-          success: false,
-          error: "Không thể đọc file dữ liệu Discord",
-          questions: [],
-          coaches: [],
-        },
-        { status: 500 }
-      );
-    }
+    console.log("[LabCoach API] Loaded", data.messages?.length, "messages");
 
-    // Xử lý data
-    const referenceTime = referenceTimeParam
-      ? new Date(referenceTimeParam).getTime()
-      : Date.now();
-
+    // Process
+    const referenceTime = referenceTimeParam ? new Date(referenceTimeParam).getTime() : Date.now();
     const result = processLabCoachData(data, referenceTime);
     const stats = calculateLabCoachStats(data);
     const coaches = getLabCoaches(data);
-
-    // Giới hạn số câu hỏi trả về
     const questions = result.questions.slice(0, limit);
 
     return NextResponse.json({
@@ -66,12 +41,7 @@ export async function GET(request: NextRequest) {
   } catch (err) {
     console.error("[LabCoach API Error]", err);
     return NextResponse.json(
-      {
-        success: false,
-        error: "Lỗi xử lý dữ liệu LabCoach",
-        questions: [],
-        coaches: [],
-      },
+      { success: false, error: "Lỗi xử lý dữ liệu", questions: [], coaches: [] },
       { status: 500 }
     );
   }
