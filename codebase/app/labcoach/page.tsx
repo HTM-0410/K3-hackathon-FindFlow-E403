@@ -44,6 +44,8 @@ function AppHeader() {
       <nav>
         <button onClick={() => window.location.assign("/")}>Tìm kiếm</button>
         <button onClick={() => window.location.assign("/resources")}>Kho tài liệu</button>
+        <button onClick={() => window.location.assign("/realtime")}>⚡ Realtime</button>
+        <button onClick={() => window.location.assign("/demo")}>🧪 Demo ingest</button>
         <button className="active" onClick={() => window.location.assign("/labcoach")}>📋 LabCoach</button>
       </nav>
       <span className="cp-badge">LabCoach Tracker</span>
