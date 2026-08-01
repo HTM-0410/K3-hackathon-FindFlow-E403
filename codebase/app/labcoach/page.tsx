@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useMemo } from "react";
-import type { LabCoachMissedResponse, LabCoachQuestion, LabCoachStats } from "../types/labcoach";
+import type { LabCoachQuestion, LabCoachStats } from "../types/labcoach";
 
 // BrandMark SVG
 function BrandMark() {
@@ -30,7 +30,7 @@ function BrandMark() {
   );
 }
 
-// Header component
+// Header
 function AppHeader() {
   return (
     <header className="header">
@@ -73,14 +73,14 @@ function UrgencyBadge({ urgency }: { urgency: LabCoachQuestion["urgency"] }) {
 function QuestionCard({
   question,
   index,
+  showResolve,
   onResolve,
-  showResolve = true,
   onRestore,
 }: {
   question: LabCoachQuestion;
   index: number;
+  showResolve: boolean;
   onResolve?: (id: string) => void;
-  showResolve?: boolean;
   onRestore?: (id: string) => void;
 }) {
   const timeAgo = new Date(question.timestamp).toLocaleDateString("vi-VN", {
@@ -97,22 +97,10 @@ function QuestionCard({
         <UrgencyBadge urgency={question.urgency} />
         <span className="channel-badge">#{question.channelName}</span>
         {showResolve && onResolve && (
-          <button
-            className="resolve-btn"
-            onClick={() => onResolve(question.id)}
-            title="Đánh dấu đã giải quyết"
-          >
-            ✓
-          </button>
+          <button className="resolve-btn" onClick={() => onResolve(question.id)} title="Đánh dấu đã giải quyết">✓</button>
         )}
         {!showResolve && onRestore && (
-          <button
-            className="restore-btn"
-            onClick={() => onRestore(question.id)}
-            title="Khôi phục câu hỏi"
-          >
-            ↩
-          </button>
+          <button className="restore-btn" onClick={() => onRestore(question.id)} title="Khôi phục câu hỏi">↩</button>
         )}
       </div>
 
@@ -128,12 +116,7 @@ function QuestionCard({
           <span className="clock-icon">⏱</span>
           <strong>{question.unansweredForFormatted}</strong>
         </span>
-        <a
-          href={question.messageUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="discord-link"
-        >
+        <a href={question.messageUrl} target="_blank" rel="noopener noreferrer" className="discord-link">
           Discord ↗
         </a>
       </div>
@@ -141,24 +124,29 @@ function QuestionCard({
   );
 }
 
-// Stats cards
-function StatsCards({ stats }: { stats: LabCoachStats | null }) {
-  if (!stats) return null;
+// Stats cards - computed from resolved state
+function StatsCards({
+  totalQuestions,
+  unansweredCount,
+  resolvedCount,
+}: {
+  totalQuestions: number;
+  unansweredCount: number;
+  resolvedCount: number;
+}) {
+  const answeredCount = totalQuestions - unansweredCount;
 
   const items = [
-    { label: "Tổng tin nhắn", value: stats.total_messages, color: "#a5b4fc" },
-    { label: "Câu hỏi Lab", value: stats.total_questions, color: "#67e8f9" },
-    { label: "Đã trả lời", value: stats.answered, color: "#34d399" },
-    { label: "Chưa trả lời", value: Math.max(0, stats.unanswered), color: "#f87171" },
+    { label: "Tổng câu hỏi", value: totalQuestions, color: "#a5b4fc" },
+    { label: "Đã trả lời", value: answeredCount, color: "#34d399" },
+    { label: "Chưa trả lời", value: unansweredCount, color: "#f87171" },
   ];
 
   return (
     <div className="stats-row">
       {items.map((item) => (
         <div key={item.label} className="stat-card">
-          <span className="stat-value" style={{ color: item.color }}>
-            {item.value}
-          </span>
+          <span className="stat-value" style={{ color: item.color }}>{item.value}</span>
           <span className="stat-label">{item.label}</span>
         </div>
       ))}
@@ -166,8 +154,7 @@ function StatsCards({ stats }: { stats: LabCoachStats | null }) {
   );
 }
 
-// Empty state
-function EmptyState({ message = "Không có câu hỏi nào!" }: { message?: string }) {
+function EmptyState({ message }: { message: string }) {
   return (
     <div className="empty">
       <div className="empty-icon">📭</div>
@@ -176,7 +163,6 @@ function EmptyState({ message = "Không có câu hỏi nào!" }: { message?: str
   );
 }
 
-// Loading skeleton
 function LoadingSkeleton({ count = 6 }: { count?: number }) {
   return (
     <div className="questions-grid">
@@ -187,7 +173,6 @@ function LoadingSkeleton({ count = 6 }: { count?: number }) {
   );
 }
 
-// Pagination
 function Pagination({
   currentPage,
   totalPages,
@@ -200,14 +185,10 @@ function Pagination({
   if (totalPages <= 1) return null;
 
   const getPageNumbers = (): (number | "...")[] => {
-    if (totalPages <= 5) {
-      return Array.from({ length: totalPages }, (_, i) => i + 1);
-    }
+    if (totalPages <= 5) return Array.from({ length: totalPages }, (_, i) => i + 1);
     const pages: (number | "...")[] = [1];
     if (currentPage > 3) pages.push("...");
-    for (let i = Math.max(2, currentPage - 1); i <= Math.min(totalPages - 1, currentPage + 1); i++) {
-      pages.push(i);
-    }
+    for (let i = Math.max(2, currentPage - 1); i <= Math.min(totalPages - 1, currentPage + 1); i++) pages.push(i);
     if (currentPage < totalPages - 2) pages.push("...");
     pages.push(totalPages);
     return pages;
@@ -217,54 +198,28 @@ function Pagination({
 
   return (
     <div className="pagination">
-      <button
-        className="page-btn"
-        disabled={currentPage === 1}
-        onClick={() => onPageChange(currentPage - 1)}
-      >
-        ←
-      </button>
-
+      <button className="page-btn" disabled={currentPage === 1} onClick={() => onPageChange(currentPage - 1)}>←</button>
       {pageNumbers.map((page, idx) =>
         page === "..." ? (
           <span key={`dots-${idx}`} className="page-dots">...</span>
         ) : (
-          <button
-            key={page}
-            className={`page-btn ${page === currentPage ? "active" : ""}`}
-            onClick={() => onPageChange(page)}
-          >
-            {page}
-          </button>
+          <button key={page} className={`page-btn ${page === currentPage ? "active" : ""}`} onClick={() => onPageChange(page)}>{page}</button>
         )
       )}
-
-      <button
-        className="page-btn"
-        disabled={currentPage === totalPages}
-        onClick={() => onPageChange(currentPage + 1)}
-      >
-        →
-      </button>
+      <button className="page-btn" disabled={currentPage === totalPages} onClick={() => onPageChange(currentPage + 1)}>→</button>
     </div>
   );
 }
 
-// Toast notification
 function Toast({ message, onClose }: { message: string; onClose: () => void }) {
   useEffect(() => {
     const timer = setTimeout(onClose, 3000);
     return () => clearTimeout(timer);
   }, [onClose]);
 
-  return (
-    <div className="toast" role="status">
-      {message}
-    </div>
-  );
+  return <div className="toast" role="status">{message}</div>;
 }
 
-// Filter bar
 function FilterBar({
   urgencyFilter,
   setUrgencyFilter,
@@ -280,77 +235,47 @@ function FilterBar({
     <div className="filter-bar">
       <div className="search-mini">
         <span className="search-icon">🔍</span>
-        <input
-          type="text"
-          placeholder="Tìm trong nội dung..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
+        <input type="text" placeholder="Tìm trong nội dung..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
       </div>
       <div className="urgency-filter">
-        <button
-          className={`filter-btn ${urgencyFilter === "all" ? "active" : ""}`}
-          onClick={() => setUrgencyFilter("all")}
-        >
-          Tất cả
-        </button>
-        <button
-          className={`filter-btn high ${urgencyFilter === "high" ? "active" : ""}`}
-          onClick={() => setUrgencyFilter("high")}
-        >
-          🔴 High
-        </button>
-        <button
-          className={`filter-btn medium ${urgencyFilter === "medium" ? "active" : ""}`}
-          onClick={() => setUrgencyFilter("medium")}
-        >
-          🟡 Medium
-        </button>
-        <button
-          className={`filter-btn low ${urgencyFilter === "low" ? "active" : ""}`}
-          onClick={() => setUrgencyFilter("low")}
-        >
-          🟢 Low
-        </button>
+        <button className={`filter-btn ${urgencyFilter === "all" ? "active" : ""}`} onClick={() => setUrgencyFilter("all")}>Tất cả</button>
+        <button className={`filter-btn high ${urgencyFilter === "high" ? "active" : ""}`} onClick={() => setUrgencyFilter("high")}>🔴 High</button>
+        <button className={`filter-btn medium ${urgencyFilter === "medium" ? "active" : ""}`} onClick={() => setUrgencyFilter("medium")}>🟡 Medium</button>
+        <button className={`filter-btn low ${urgencyFilter === "low" ? "active" : ""}`} onClick={() => setUrgencyFilter("low")}>🟢 Low</button>
       </div>
     </div>
   );
 }
 
-// Tab component
 function TabBar({
   activeTab,
   onTabChange,
-  counts,
+  unansweredCount,
+  resolvedCount,
 }: {
   activeTab: "unanswered" | "resolved";
   onTabChange: (tab: "unanswered" | "resolved") => void;
-  counts: { unanswered: number; resolved: number };
+  unansweredCount: number;
+  resolvedCount: number;
 }) {
   return (
     <div className="tab-bar">
-      <button
-        className={`tab-btn ${activeTab === "unanswered" ? "active" : ""}`}
-        onClick={() => onTabChange("unanswered")}
-      >
+      <button className={`tab-btn ${activeTab === "unanswered" ? "active" : ""}`} onClick={() => onTabChange("unanswered")}>
         📋 Câu hỏi chưa trả lời
-        <span className="tab-count">{counts.unanswered}</span>
+        <span className="tab-count">{unansweredCount}</span>
       </button>
-      <button
-        className={`tab-btn ${activeTab === "resolved" ? "active" : ""}`}
-        onClick={() => onTabChange("resolved")}
-      >
-        ✅ Đã giải quyết
-        <span className="tab-count resolved">{counts.resolved}</span>
+      <button className={`tab-btn ${activeTab === "resolved" ? "active" : ""}`} onClick={() => onTabChange("resolved")}>
+        ✅ Đã giải quyết gần đây
+        <span className="tab-count resolved">{resolvedCount}</span>
       </button>
     </div>
   );
 }
 
-// Main page component
+// Main page
 export default function LabCoachDashboard() {
   const [questions, setQuestions] = useState<LabCoachQuestion[]>([]);
-  const [stats, setStats] = useState<LabCoachStats | null>(null);
+  const [totalQuestions, setTotalQuestions] = useState(0); // Tổng câu hỏi trong data
   const [loading, setLoading] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -362,44 +287,38 @@ export default function LabCoachDashboard() {
   const [searchQuery, setSearchQuery] = useState("");
   const PER_PAGE = 12;
 
-  const [resolvedQuestions, setResolvedQuestions] = useState<Set<string>>(new Set());
+  // Resolved questions (local state)
+  const [resolvedIds, setResolvedIds] = useState<Set<string>>(new Set());
 
-  // Load resolved from localStorage
+  // Load from localStorage
   useEffect(() => {
     try {
       const saved = localStorage.getItem("labcoach-resolved");
-      if (saved) {
-        setResolvedQuestions(new Set(JSON.parse(saved)));
-      }
-    } catch {
-      // ignore
-    }
+      if (saved) setResolvedIds(new Set(JSON.parse(saved)));
+    } catch { /* ignore */ }
   }, []);
 
-  // Save resolved to localStorage
   useEffect(() => {
     try {
-      localStorage.setItem("labcoach-resolved", JSON.stringify([...resolvedQuestions]));
-    } catch {
-      // ignore
-    }
-  }, [resolvedQuestions]);
+      localStorage.setItem("labcoach-resolved", JSON.stringify([...resolvedIds]));
+    } catch { /* ignore */ }
+  }, [resolvedIds]);
 
-  const fetchMissedQuestions = useCallback(async () => {
+  const fetchData = useCallback(async () => {
     setLoading(true);
     setError(null);
-
     try {
       const response = await fetch("/api/labcoach/missed?limit=50");
       const data = await response.json();
-
       if (data.success) {
         setQuestions(data.questions || []);
-        setStats(data.stats || null);
+        // total_unanswered = số câu hỏi CHƯA được coach trả lời trong data
+        // total_questions = tổng số câu hỏi trong data
+        setTotalQuestions(data.stats?.total_questions || 0);
         setLastUpdated(new Date());
         setToast("Đã cập nhật!");
       } else {
-        setError(data.error || "Failed to fetch data");
+        setError(data.error || "Lỗi tải dữ liệu");
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Unknown error");
@@ -408,75 +327,41 @@ export default function LabCoachDashboard() {
     }
   }, []);
 
-  useEffect(() => {
-    fetchMissedQuestions();
-  }, [fetchMissedQuestions]);
+  useEffect(() => { fetchData(); }, [fetchData]);
 
-  // Resolve a question - update stats live
+  // Handle resolve - user đã trả lời câu này
   const handleResolve = useCallback((id: string) => {
-    setResolvedQuestions((prev) => {
-      const next = new Set(prev);
-      next.add(id);
-      return next;
-    });
-    setStats((prev) => {
-      if (!prev) return prev;
-      return {
-        ...prev,
-        answered: prev.answered + 1,
-        unanswered: Math.max(0, prev.unanswered - 1),
-      };
-    });
+    setResolvedIds((prev) => new Set(prev).add(id));
     setToast("Đã đánh dấu giải quyết ✓");
   }, []);
 
-  // Restore a question
+  // Handle restore - khôi phục lại câu hỏi
   const handleRestore = useCallback((id: string) => {
-    setResolvedQuestions((prev) => {
+    setResolvedIds((prev) => {
       const next = new Set(prev);
       next.delete(id);
       return next;
-    });
-    setStats((prev) => {
-      if (!prev) return prev;
-      return {
-        ...prev,
-        answered: Math.max(0, prev.answered - 1),
-        unanswered: prev.unanswered + 1,
-      };
     });
     setToast("Đã khôi phục ↩");
   }, []);
 
   // Clear all resolved
   const handleClearResolved = useCallback(() => {
-    const count = resolvedQuestions.size;
-    setResolvedQuestions(new Set());
-    setStats((prev) => {
-      if (!prev) return prev;
-      return {
-        ...prev,
-        answered: Math.max(0, prev.answered - count),
-        unanswered: prev.unanswered + count,
-      };
-    });
+    setResolvedIds(new Set());
     setToast("Đã xóa lịch sử");
-  }, [resolvedQuestions.size]);
+  }, []);
 
-  // Filter questions
-  const unansweredQuestions = useMemo(() => {
-    return questions.filter((q) => !resolvedQuestions.has(q.id));
-  }, [questions, resolvedQuestions]);
+  // Tính toán số liệu
+  // unansweredCount = câu hỏi trong data CHƯA được tick + CHƯA được coach trả lời
+  const apiUnansweredCount = questions.length; // Từ API (chưa được coach trả)
+  const resolvedCount = resolvedIds.size; // User đã tick
+  // Câu hỏi thực sự chưa trả = API unanswered - những câu đã tick
+  const unansweredCount = Math.max(0, apiUnansweredCount - resolvedCount);
 
-  const resolvedQuestionsList = useMemo(() => {
-    return questions.filter((q) => resolvedQuestions.has(q.id));
-  }, [questions, resolvedQuestions]);
-
+  // Lọc câu hỏi theo tab
   const applyFilters = (qs: LabCoachQuestion[]) => {
     let result = qs;
-    if (urgencyFilter !== "all") {
-      result = result.filter((q) => q.urgency === urgencyFilter);
-    }
+    if (urgencyFilter !== "all") result = result.filter((q) => q.urgency === urgencyFilter);
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
       result = result.filter(
@@ -488,26 +373,27 @@ export default function LabCoachDashboard() {
     return result;
   };
 
-  const filteredUnanswered = useMemo(
-    () => applyFilters(unansweredQuestions),
-    [unansweredQuestions, urgencyFilter, searchQuery]
+  // Tab unanswered: câu hỏi chưa được tick (trong list API)
+  const unansweredList = useMemo(
+    () => applyFilters(questions.filter((q) => !resolvedIds.has(q.id))),
+    [questions, resolvedIds, urgencyFilter, searchQuery]
   );
 
-  const filteredResolved = useMemo(
-    () => applyFilters(resolvedQuestionsList),
-    [resolvedQuestionsList, urgencyFilter, searchQuery]
+  // Tab resolved: câu hỏi đã được tick
+  const resolvedList = useMemo(
+    () => applyFilters(questions.filter((q) => resolvedIds.has(q.id))),
+    [questions, resolvedIds, urgencyFilter, searchQuery]
   );
 
-  const activeQuestions = activeTab === "unanswered" ? filteredUnanswered : filteredResolved;
+  const activeQuestions = activeTab === "unanswered" ? unansweredList : resolvedList;
   const totalPages = Math.ceil(activeQuestions.length / PER_PAGE);
   const paginatedQuestions = useMemo(() => {
     const start = (currentPage - 1) * PER_PAGE;
     return activeQuestions.slice(start, start + PER_PAGE);
   }, [activeQuestions, currentPage]);
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [activeTab, urgencyFilter, searchQuery]);
+  // Reset page when filter/tab changes
+  useEffect(() => { setCurrentPage(1); }, [activeTab, urgencyFilter, searchQuery]);
 
   return (
     <>
@@ -517,51 +403,33 @@ export default function LabCoachDashboard() {
         <div className="page-title">
           <span className="eyebrow">📋 LAB COACH TRACKER</span>
           <h1>Quản lý câu hỏi Lab</h1>
-          <p>
-            Theo dõi và quản lý các câu hỏi từ học viên.
-            Nhấn <strong>✓</strong> để đánh dấu đã giải quyết.
-          </p>
+          <p>Theo dõi và quản lý các câu hỏi từ học viên.</p>
         </div>
 
-        <StatsCards stats={stats} />
+        <StatsCards
+          totalQuestions={totalQuestions}
+          unansweredCount={unansweredCount}
+          resolvedCount={resolvedCount}
+        />
 
         <TabBar
           activeTab={activeTab}
           onTabChange={setActiveTab}
-          counts={{ unanswered: filteredUnanswered.length, resolved: filteredResolved.length }}
+          unansweredCount={unansweredList.length}
+          resolvedCount={resolvedList.length}
         />
 
         <div className="action-bar">
           <div className="action-info">
-            <span className="count">
-              <strong>{activeQuestions.length}</strong> câu hỏi
-            </span>
-            {lastUpdated && (
-              <span className="last-updated">
-                Cập nhật: {lastUpdated.toLocaleTimeString("vi-VN")}
-              </span>
-            )}
+            <span className="count"><strong>{activeQuestions.length}</strong> câu hỏi</span>
+            {lastUpdated && <span className="last-updated">Cập nhật: {lastUpdated.toLocaleTimeString("vi-VN")}</span>}
           </div>
           <div style={{ display: "flex", gap: "8px" }}>
-            {activeTab === "resolved" && filteredResolved.length > 0 && (
-              <button className="secondary" onClick={handleClearResolved}>
-                🗑 Xóa lịch sử
-              </button>
+            {activeTab === "resolved" && resolvedList.length > 0 && (
+              <button className="secondary" onClick={handleClearResolved}>🗑 Xóa lịch sử</button>
             )}
-            <button
-              className="primary reload-btn"
-              onClick={fetchMissedQuestions}
-              disabled={loading}
-            >
-              <svg
-                className={`reload-icon ${loading ? "spinning" : ""}`}
-                viewBox="0 0 24 24"
-                width="16"
-                height="16"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
+            <button className="primary reload-btn" onClick={fetchData} disabled={loading}>
+              <svg className={`reload-icon ${loading ? "spinning" : ""}`} viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
               {loading ? "..." : "Reload"}
@@ -578,10 +446,7 @@ export default function LabCoachDashboard() {
 
         {error && (
           <div className="search-notice no_match" role="alert">
-            <div>
-              <b>Lỗi tải dữ liệu</b>
-              <p>{error}</p>
-            </div>
+            <div><b>Lỗi tải dữ liệu</b><p>{error}</p></div>
           </div>
         )}
 
@@ -599,26 +464,18 @@ export default function LabCoachDashboard() {
           ) : (
             <>
               <div className="questions-grid">
-                {paginatedQuestions.map((question, index) => {
-                  const globalIndex = (currentPage - 1) * PER_PAGE + index;
-                  return (
-                    <QuestionCard
-                      key={question.id}
-                      question={question}
-                      index={globalIndex}
-                      showResolve={activeTab === "unanswered"}
-                      onResolve={activeTab === "unanswered" ? handleResolve : undefined}
-                      onRestore={activeTab === "resolved" ? handleRestore : undefined}
-                    />
-                  );
-                })}
+                {paginatedQuestions.map((question, index) => (
+                  <QuestionCard
+                    key={question.id}
+                    question={question}
+                    index={(currentPage - 1) * PER_PAGE + index}
+                    showResolve={activeTab === "unanswered"}
+                    onResolve={activeTab === "unanswered" ? handleResolve : undefined}
+                    onRestore={activeTab === "resolved" ? handleRestore : undefined}
+                  />
+                ))}
               </div>
-
-              <Pagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={setCurrentPage}
-              />
+              <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
             </>
           )}
         </section>

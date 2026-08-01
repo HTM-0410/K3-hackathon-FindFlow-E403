@@ -222,7 +222,7 @@ export function processLabCoachData(
   return {
     coach_id: null,
     total_questions: totalQuestions,
-    total_unanswered: allQuestions.length,
+    total_unanswered: allQuestions.length, // Câu hỏi chưa được LabCoach reply
     queried_at: new Date().toISOString(),
     reference_time: new Date(referenceTime).toISOString(),
     questions: allQuestions,
